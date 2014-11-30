@@ -1,0 +1,931 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">急性上呼吸道感染（小儿）
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=急性上呼吸道感染（小儿）"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">child acute upper respiratory tract infection
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">JIXINGSHANGHUXIDAOGANRAN（XIAOER）
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：伤风，感冒。简称:上感
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">呼吸系统疾病（儿科）
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">急性上呼吸道感染是因细菌、病毒引起的小儿上呼吸道的急性炎症，以发热恶寒，鼻塞流涕，咽痛咳嗽为主要临床特征。病毒引起者占90%以上，是小儿最常见的疾病。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">常见的病毒有鼻病毒、柯萨奇病毒、埃可病毒、流感病毒、副流感病毒、呼吸道合胞病毒等。经过病毒感染后，上呼吸道粘膜失去抵抗力，继发细菌感染或直接由细菌感染引起。常见的细菌大多属于A组β溶血性链球菌。肺炎支原体也可引起上呼吸道感染。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">上感于冬春季节发生较多。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">婴幼儿时期由于上呼吸道的解剖特点和免疫特点，易患呼吸道感染。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">致病病毒的传播一般通过飞沫及直接接触。具有传染性和传播快、潜伏期短的特点。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">正常人的鼻咽部常有上述各种病毒和细菌寄殖，营养不良、佝偻病及平素缺乏锻炼的小儿易患上感，环境因素及护理不周也可诱发本病。如居住拥挤，大气污染，间接吸入烟雾均可降低机体抗病能力和呼吸道粘膜的局部防御能力，而发生呼吸道感染。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病的发生主要是感受风、寒、暑、湿、燥、火六淫之邪，邪客于肺卫所致。小儿肺常不足，腠理空虚，卫外不固。并且肺主皮毛，口鼻为其窍。当气候变化冷热失常时，外邪或从皮毛或由口鼻而入，客于肺脏。肺卫被邪所困，故见发热、咽痛、咳嗽等上焦症状。又因小儿脏腑柔嫩，易虚易实，故而外感时常夹痰、夹食、夹惊。病位在肺，与心、肝、脾有关。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">开始病毒主要侵袭呼吸道粘膜上皮细胞，鼻腔和咽粘膜有明显充血和水肿，伴以淋巴细胞为主的单核细胞浸润，继而纤毛上皮细胞损伤，上皮细胞变性、坏死、脱落及形成浅表溃疡，有较多浆液和粘液分泌，以后基底细胞增生，恢复期有上皮再生，副流感病毒、腺病毒和呼吸道合胞病毒等感染时，病毒在上呼吸道上皮细胞内繁殖，并可见细胞内包涵体。伴细菌继发感染时，粘膜下层有中性粒细胞浸润和脓性分泌物。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">本病为表证，临证主要需辨别寒热，除症状外，舌脉为辨证要点。咽部红肿者，多以风热论治，纵有寒象，亦以寒包热郁居多。由于小儿生理病理特点，对兼夹证尤需注意。<br>
+一、常证<br>
+1.风寒束表<br>
+主证：发热轻，恶寒重，无汗，鼻塞流涕，喷嚏咳嗽，年长儿可诉肢体疼痛，头痛，舌苔薄白，脉浮紧。<br>
+分析：本证由风寒外袭而致。风寒外束，郁于肌腠，毛窍不通，故见发热恶寒，无汗，头痛。肺气不宣，外窍失利，故见鼻塞流涕等症。<br>
+2.风热犯表<br>
+主证：发热重，恶寒轻，有汗或无汗，头痛，鼻塞流稠涕，咳嗽，咽红，或目赤流泪，烦热口渴，舌质红少津，苔薄黄，脉浮数。<br>
+分析：本证多因风热之邪，客于腠理，伤及肺卫所致。邪在卫表，腠理开泄，故见发热汗出。风热上乘，故见咽红目赤。肺气不宣，故见咳嗽鼻塞。热伤肺津，故见烦热口渴等症。<br>
+3.暑湿袭表<br>
+主证：高热不退，或身热不扬，汗出不畅，头痛，倦怠，泛恶，鼻塞流涕，咳嗽，舌尖红，苔白腻，脉数。<br>
+分析：本证多因暑湿犯表，卫表失宣所致。伤于阳暑者可见高热不退，伤于阴暑者可见身热不扬，汗出不畅。邪束肺经，肺失清肃，故见咳嗽。湿困中焦，脾胃不和，故见泛恶。<br>
+二、兼证<br>
+1.感冒夹痰<br>
+主证：除外感本证外，兼有咳嗽，咳声重浊，喉中痰鸣，舌苔白腻，脉浮滑。&nbsp;&nbsp;&nbsp;<br>
+分析：本证多因感冒热盛，灼液成痰而致。外邪闭肺，肺气不宣，故见咳嗽。津液不布，聚而成痰，或热灼津成痰，痰阻气道，故咳声重浊，喉中痰鸣。<br>
+2.感冒夹滞<br>
+主证：除感冒本证外，兼有腹胀，不思乳食，或伴呕吐，口中气秽，大便溏臭或秘结，舌苔垢或黄厚，脉滑。<br>
+分析：本证多因脾胃素虚，或内伤饮食，复感外邪所致。食滞于中，故见不思乳食，大便溏臭或秘结。脾失健运，胃失和降，故见呕吐腹胀。浊气上泛，可见口中气秽。<br>
+3.感冒夹惊<br>
+主证：除感冒本证外，兼见烦躁不安，惊惕惊叫，甚至惊厥，舌尖红，脉弦数。&nbsp;<br>
+分析：本证多因感邪之后，化热伤阴，风热相搏，引动肝风所致。热扰神明，故见烦躁不安。热伤津液，筋脉失养，故见惊惕，甚则惊厥。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">急性上呼吸道感染诊断标准:<br>
+1.年长儿可有流涕、鼻塞、喷嚏、低热、咽部干痛不适等，婴幼儿呼吸道症状可不明显，常突然发热、呕吐、腹泻，甚至高热惊厥。新生儿可因鼻塞而拒奶或呼吸急促。<br>
+2.咽部充血和咽后壁淋巴滤泡增多。若炎症局限于上呼吸道某一器官，则以该部炎症命名，如急性喉炎、急性扁桃体炎，否则称急性上呼吸道感染。<br>
+3.发热、咽炎、滤泡性结合膜炎同时存在，颈或耳后淋巴结肿大称咽结合膜热。<br>
+4.病毒感染时白细胞总数偏低或正常，细菌感染时则白细胞总数和中性粒细胞增多。<br>
+5.流行性感冒有明显的流行病学史，全身症状重而呼吸道局部症状轻，常有发热、头痛、肌痛等。<br>
+<br>
+[附]上呼吸道感染的两种特殊类型<br>
+1.咽结合膜热：发热、咽炎、眼结膜炎（红眼病）三者同时存在。<br>
+2.疱疹性咽峡炎：发病急，高热、咽痛、流涎、咽部充血，咽腭弓、悬雍垂和上腭有疱疹或溃疡。<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">上呼吸道病毒感染可依靠流行病学和典型的临床表现，初步作出诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">(一)一般类型上感<br>
+1.起病急，有鼻塞、流涕、咽痛、咳嗽，发热或有或无，热度高低不一。<br>
+2.部分患儿在疾病早期伴有腹痛，可能由于肠蠕动增强或肠系膜淋巴结炎所致。&nbsp;<br>
+3.婴幼儿可出现呕吐、腹泻等胃肠道症状，起病1～2日内可发生高热惊厥。<br>
+4.病毒感染引起的咽炎，有时在咽后壁可见淋巴滤泡充血肿大，双侧颊粘膜可见散在出血点，扁桃体红肿，表面可见白色斑点状渗出物。<br>
+5.链球菌引起者，扁桃体弥漫性红肿，可见滤泡性脓性分泌物。<br>
+(二)特殊类型上感<br>
+1.疱疹性咽炎：病原体为柯萨奇A组病毒。夏秋季多发，可呈暴发或散发。急性起病，高热，咽痛、咽充血，咽腭弓、悬雍垂、软腭或扁桃体上可见灰白色疱疹，疱疹破溃后形成溃疡。病程1周左右。<br>
+2.咽结合膜热：病原体为腺病毒，最常见为3型；1、2、5和7、14型亦可引起感染。夏季多发污染的游泳池为重要感染场所。有时呈现流行。急性起病，以发热、头痛、急性结膜炎和咽炎的表现为特征，常伴有颈淋巴结肿大。病程约1周。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">1、鼻、咽拭子和咽喉洗液可分离出病毒，继发细菌感染时，可作细菌培养确诊。
+2、在病程早期1—3d内，收集上呼吸道分泌物，通过光镜可发现细胞内包涵体或在电镜下检测到病毒。用免疫荧光法检测呼吸道分泌物内脱落细胞的病毒抗原，能快速作出诊断。酶联免疫吸附测定法（ELISA）、放射免疫法亦为简便、灵敏、特异、快速的病毒抗原检测方法。
+3、病毒的血清学检查方法是检测特异性IgG抗体。需收集发病初期和2周后的双份血清作抗体滴度比较，效价升高4倍或4倍以上即可确诊。
+4、补体结合试验、血凝抑制试验和中和试验，这些方法仅为回顾性诊断，不能作早期诊断。病毒特异性的IgM抗体检测仅需病程早期的单份血清即可迅速作出早期诊断。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">病毒感染一般白细胞偏低或在正常范围，细菌感染则白细胞总数大多增高，中性粒细胞百分数可较高。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.急性传染病早期：如麻疹、风疹、猩红热、流行性脑脊髓膜炎，起病早期与上感相似，应结合流行病学史、临床表现进行综合分析，动态观察病情变化。<br>
+2．川崎病：除发热外，有球结膜充血，口唇及口腔粘膜病变，皮疹，颈部淋巴结肿大及手足硬肿等表现。<br>
+3.传染性单核细胞增多症：发热、咽峡炎、淋巴结肿大和肝脾肿大，可有皮疹，周围血象中淋巴细胞总数和异形淋巴细胞增多。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈：症状，体征消失。<br>
+2.好转：体温正常，上呼吸道症状明显好转。全身不适基本消失。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">一、一般治疗<br>
+1.充分休息，饮食宜清淡、易消化而有营养，多饮水。<br>
+2.必要时应用解热镇痛药如阿司匹林、扑热息痛等。<br>
+3.高热时也可采用物理降温，如冰枕、酒精擦浴等。<br>
+4.有鼻堵者，用新麻液滴鼻，在进食或睡眠前应用，每日3～4次。<br>
+二、抗病毒药物<br>
+可用三氮唑核苷(病毒唑)，为广谱抗病毒药，剂量为每日10～15mg/kg，分2次，肌注或静脉滴注，疗程5～7日。<br>
+三、抗生素治疗<br>
+疑有细菌感染时，一般多采用青霉素G每日3万～5万u/kg，分2次肌注，或口服复方新诺明，每日5Omg/kg，分2次口服。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">本病的治疗以宣肺解表为主。风寒感冒治以辛温，风热感冒治以辛凉，暑湿感冒重在清暑解表。并根据兼证的不同，配合化痰、消食、镇惊等法。<br>
+一、辩证选方<br>
+(一)常证<br>
+1.风寒束表<br>
+治法：辛温解表。<br>
+方药：荆防败毒散加减。荆芥、淡豆豉、前胡各10g，柴胡、羌活、独活各6g，桔梗、甘草各3g。发热恶寒轻者去羌活、独活；头痛加白芷；咳嗽重加杏仁、百部。<br>
+2.风热犯表<br>
+治法：辛凉解表。<br>
+方药：银翘散加减。银花、连翘、荆芥各1Og，牛蒡子、桔梗各6g，薄荷、甘草各3g。咽痛加射干、青黛；发热明显加生石膏；伴咳嗽加桑叶、杏仁、前胡。&nbsp;&nbsp;&nbsp; 3.暑湿袭表<br>
+治法：清暑解表。<br>
+方药：新加香薷饮加减。香薷、银花、连翘各12g，扁豆、藿香、厚朴各9g，甘草各6g。热重心烦加炒栀子、淡豆豉；偏湿重加佩兰、滑石；呕逆加竹茹、半夏。&nbsp;(二)兼证<br>
+1.感冒夹痰<br>
+治法：宣肺解表，化痰止咳。<br>
+方药：二陈汤加减。陈皮、半夏、前胡、茯苓各1Og，杏仁、苏叶、桑叶各6g，甘草3g。咽痛加连翘、桔梗；痰黄稠加黄芩、桑白皮；大便不爽加瓜蒌。<br>
+2.感冒夹滞<br>
+治法：宣肺解表，消食导滞。<br>
+方药：藿香正气散加减。茯苓、神曲、连翘各1Og，藿香、白芷、陈皮、厚朴各6g，苏叶、甘草各3g。腹胀满加枳实、苏梗；大便腥臭加焦军、山楂。<br>
+3.感冒夹惊<br>
+治法：宣肺解表，安神镇惊。<br>
+方药：桑菊饮加味。桑叶、菊花、钩藤各1Og，杏仁、桔梗、蝉衣各6g，薄荷、甘草各 3g。高热不退加生石膏、羚羊粉；烦躁不安加栀子、黄连；伴抽搐者加全蝎。<br>
+二、专方验方<br>
+1.清热丹：银花90g，蔓荆子6g，薄荷20g，法半夏30g，生石膏150g，橘红60g，浮萍 30g，生地90g，天竺黄60g，杏仁60g，大黄90g，杭菊90g。上药研细末，兑冰片3g，炼蜜为丸。每丸3g。周岁左右每服1g，1～6岁每服3g，6岁以上每服6g，日服2次。适用于风热感冒。<br>
+2.荆防葱豉汤：荆芥6g，防风3g，苏叶6g，羌活3g，白芷3g，淡豆豉6g，薄荷3g，黄芩6g，淡竹叶5g，葱白2节。水煎服。每日1剂，频服。适用于风寒感冒。<br>
+3.柴菊清热汤：柴胡12g，黄芩12g，野菊花12g，连翘9g，桔梗9g，百部9g，生甘草9g。水煎服。每日1剂。适用于小儿感冒属风热者。<br>
+4.退热灵：水牛角30g，黄连6g，栀子6g，滑石6g。共研细末。6个月～1岁每服0.3&nbsp;～O.5g，1～3岁每服0.5～0.9g，3～6岁每服0.9～1.2g，6～12岁每服1.5g。日服3次。适用于外感风热者。<br>
+5.清宣饮：菊花6～9g，桑叶6～9g，芦根15～30g。水煎。每日1剂，分3次服。适用于风热感冒轻证。1.拔火罐：风寒感冒时可在大椎穴、太阳穴、印堂穴处拔火罐。每日1次，每次10分钟。<br>
+三、其它疗法<br>
+1.药浴：银花20g，薄荷15g。加水煎至80ml药液，加入乙醇15ml。擦浴曲池、大椎、风池、风府穴及腋下。每次擦浴20分钟，每日1～2次。治疗外感高热。<br>
+2.灌肠：银花20g，青蒿10g，柴胡10g，生石膏10g，板蓝根15g，桔梗10g。每日1剂，水煎2次。药温36～37℃，保留灌肠20～30分钟，每日2次。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1.小儿清咽冲剂：具有清热解毒利咽的功效。适用于风热外感。周岁以下每服1/2袋，1～3岁每服2/3袋，3～6岁每服1袋，6～9岁每服1 1/2袋，9～12岁每服2袋，每日3次。<br>
+2.双黄连口服液：具有辛凉解表，清热解毒的功效。用于风热外感。1～3岁每服1/2支，3～6岁每服1支，6～9岁每服1 1/2支，9～12岁每服2支，每日2次。<br>
+3.双贯冲剂：具有清热解表的功效。适用于风热外感。1～3岁每服1/2袋，3～6岁每服1袋，6～9岁每服1 1/2袋，每日3次。<br>
+4.小儿清感灵片：具有发汗解肌，清热透表的功效。适用于风寒感冒。1岁以内每服1片，1～3岁每次2片，3～6岁每次3片，6～9岁每次4片，9～12岁每次5片，每日2次。<br>
+5.藿香正气软胶囊：具有解表化湿，理气和中的功效。适用于外感风寒，内伤湿滞者。3～6岁每服1～2粒，6～9岁每服3粒，9～12岁每服4粒，每日2次。<br>
+6.小儿清热灵：具有清热解毒，利咽止咳的功效。适用于风热感冒咳嗽、咽疼者。1～3岁每服2片，3～6岁每服3片，6～9岁每服4片，9～12岁每服5片，每日2次。<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1、风寒感冒取风池、列缺、合谷；风热感冒取大惟、风池、曲池、合谷。头痛加太阳、印堂；鼻塞配迎香；咽喉痛配少商；咳嗽配肺俞、太渊；感冒夹惊而见抽搐时，针刺人中、十宣。<br>
+2、贴敷：吴茱萸适量，研末配调。每次取蚕豆大小，贴敷双侧涌泉穴，6小时左右换药1次，连用3次。用于小儿外感高热。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">风寒感冒开天门、推坎宫、运太阳、推三关、掐揉二扇门、拿风池、肩井；风热感冒清天河水、揉小天心、清板门、运八卦、清肺、退六腑、揉小横纹。夹痰者加揉膻中、肺俞、乳根、乳旁，夹食滞者清板门、分腹阴阳，夹惊者多揉小天心、分手阴阳。
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">本病的治疗，目前多采用以中医为主的治疗方法。中医对本病成因、发病机理以及辨证论治有一整套完整的理论及成熟的经验，临床效果满意。另外对反复上呼吸道感染的易感儿，中医更有其独到之处。适时地使用中药补气养血，扶正固本，可调节机体的免疫功能，从而减少疾病的发生。对抗生素，一般主张没有明确的细菌感染证据时，不予使用。因大多数上呼吸道感染，特别是早期病毒感染，抗生素非但无效，反可引起菌群失调，有利于病菌的繁殖，所以必须避免滥用。在中医治疗的同时，可配合应用西医退热等对症疗法。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">改善营养状况与环境卫生，加强体格锻炼对预防本病十分重要。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">中医学对该病的证候及治法均有较详细论述。《景岳全书·伤风论证篇》指出：“伤风之病，本由外感，邪轻而浅者，上犯皮毛，即为伤风”。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

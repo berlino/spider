@@ -1,0 +1,917 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">支气管扩张症（小儿）
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=支气管扩张症（小儿）"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">bronchiectasis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">ZHIQIGUANKUOZHANGZHENG（XIAOER）
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:咳嗽,咯血,肺痈。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">呼吸系统疾病（儿科）
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">支气管扩张是由于支气管壁受炎症损坏而形成管腔扩张和变形的疾患。主要症状有慢性咳嗽，咳大量脓痰和反覆咯血,是一种慢性支气管疾病，。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">支气管扩张的病因可分为后天性及先天性两大类。后天性支气管扩张多发生于年长儿，常继发于麻疹、百日咳、重症肺炎特别是腺病毒肺炎以后，也可继发于支气管哮喘、肺结核等。发病的两个根本因素为感染及支气管阻塞。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">麻疹、百日咳、流行性感冒等都能诱发支气管和肺的感染，损害支气管壁各层组织，削弱其弹性，最终导致支气管扩张。肿瘤、异物吸人，或因管外原因如肿大的淋巴结、肿瘤，引起部分或全部支气管阻塞，都可导致远端支气管和肺的感染。支气管阻塞引起肺不张时，因胸腔内负压对病肺的牵引，促使支气管扩张。儿童的支气管较成人为细，壁薄，易受损坏而扩张。此外，在支气管结核狭窄管腔的远端，由于结核病灶愈合后纤维组织的牵引，或曲菌感染所导致的支气管壁损害，都可引起支气管扩张。先天性支气管扩张少见，常伴有右位心、鼻窦炎和胰腺囊性纤维病变。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病的发生主要是由于感受风热燥邪，或肝火犯肺，或虚火上炎，致使肺络损伤，气血凝滞，终成本病。小儿肺阴素虚，或内蕴痰热是发生本病的内在原因。病位在肺，与肝有关，久病不愈多涉及脾肾二脏。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">支气管扩张的病理改变主要表现支气管壁弹力组织、肌层及软骨均被破坏，为纤维组织所代替。形态可分为圆柱状或囊状。本症可发生于一侧肺叶或双侧肺叶，尤以左下肺叶多见。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">咳吐大量脓痰是本病常见的临床表现。痰液分层并有腥臭味是本病的特点，咯血可间断出现，感染的存在是造成咳痰、咯血的主要原因。临证需根据舌苔、脉象分析病证的寒热、表里、虚实、阴阳。为正确的辨证论治提供可靠的依据。<br>
+1.风热犯肺<br>
+主证：咳嗽痰多，痰稠色黄，可见血丝，口干欲饮，恶寒发热，咽喉痛痒，头痛，舌红苔薄黄，脉浮数。<br>
+分析：本证多由于风热犯肺，热伤肺络而致。肺失清肃，气逆而咳。邪热灼津，蒸液为痰，故见痰稠色黄。热伤肺络，血随痰出，故痰有血丝。恶寒、发热、头痛等症均为风热表证。<br>
+2.痰热蕴肺<br>
+主证：身热咳嗽，咯吐脓痰，痰量增多，痰中带血，血色鲜红，胸闷胸痛，口干引饮，便干溲赤，舌质红，苔黄腻，脉滑数。<br>
+分析：本证多由于痰热内蕴，热伤肺络所致。热盛于内，气机不利，故见身热咳嗽，胸闷胸痛。热伤肺津，炼液为痰，痰热交阻，损伤肺络，故见痰多带血。便干溲赤为热盛之象。<br>
+3.肝火犯肺<br>
+主证：烦躁易怒，啼哭无常，咳嗽，痰中带血，或咯血色深红，口苦咽干，咳则胸胁牵痛，大便干结，小便黄，舌红，苔薄黄，脉弦数。<br>
+分析：本证多由于肝郁气逆，肝火刑金灼肺而致。肝气不舒，故见烦躁易怒，啼哭无常，肝火犯肺，肺气不利，故见咳嗽，咳则胸胁牵痛。火热灼伤肺络，故见痰中带血。<br>
+4.肺脾两虚<br>
+主证：面白气短，神惫懒言，咳嗽痰多，纳少便溏，舌胖淡、苔白，脉虚细或浮而无力。<br>
+分析：本证多由于久病不愈，脾土受伤，土不生金而致。肺气虚故见气短懒言。脾气不&nbsp;足，气不化津，聚而成痰，故见痰多。纳少便溏均为脾虚之象。<br>
+
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1.慢性咳嗽、大量脓性痰、反复咳血、血量不等，反复在同一部位发生肺部感染，病情反复时可伴有慢性感染的中毒症状，病变肺部可闻中度湿性啰音，部分患者有杵状指（趾）。<br>
+2.X线检查：肺纹理增粗、紊乱；囊状支气管扩张可见蜂窝状（卷发状）阴影。断层摄影可见扩张和变形的支气管充气征。<br>
+3.支气管碘油造影以及经支气管镜选择性造影可明确支气管扩张的部位、性质和范围。<br>
+[附]病情分级<br>
+1.轻症：病变限局于一个肺段或以上，但不超越一个肺叶。咳白色痰，偶有黄痰或痰中带血，除支气管碘油造影明确病变具体部位外，X线胸片仅表现局部非特异性纹理增重，体检常呈阴性或仅有局部干湿啰音。中药、西药或中西药结合治疗很易控制症状。<br>
+2.中度：病变可超越一个肺叶，但仅限于一侧肺，咳嗽，咯黄痰，时有不同程度的咯血，反复肺部感染，除支气管碘油造影可确定具体肺段的分支外，X线胸片亦能显示肺的病变部位有蜂窝状阴影，听诊可闻到湿性啰音，即使经过系统抗炎治疗，局部湿性啰音亦不易完全消失，可采取手术治疗。<br>
+3.重度：两侧肺皆可显示病变，发热咳嗽，咯黄脓性痰，有绿脓杆菌感染时可咯黄绿色痰液，胸闷气短，常有杵状指（趾），有不同程度的咯血，甚至大咯血，反复肺部感染，支气管碘油造影及胸部X线胸片皆可辨识本病，肺功能呈中重度损害，已失掉手术时机
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据童年有麻疹、百日咳等支气管和肺部感染史，以后常有反覆发作的呼吸道感染、咳嗽，咳大量脓痰，反覆咯血等典型病史，结合体征和胸部X线表现作出临床诊断，支气管造影检查可确诊。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">慢性反复咳嗽。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">有重症肺炎、百日咳、麻疹或反复发作哮喘的病史，并反复咳嗽且健康状况较差。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">咳吐脓痰，痰量多少不定，痰液静置后分3层，上层为泡沫，中层为浆液，下层为脓液。多数病儿小量反复咯血。继发感染时可有发热，病程久者可见贫血和营养不良及慢性缺氧的表现。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">肺底可闻及湿罗音。如果存在肺不张或纤维性病变常可使纵隔和心脏移位于病侧。慢性病容，营养状况差，可见杵状指趾。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">1、X线胸部摄片：病变部位肺纹理增粗，走行紊乱，肺底部可见蜂窝状透明区，常伴肺不张或斑片状炎症浸润阴影。
+2.支气管造影：可示支气管呈柱状或囊状扩张。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">1.痰培养：常可查到致病菌。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1.血象：继发感染时外周血白细胞增高，中性粒细胞百分数增多，可见核左移。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.肺脓肿：多见于急性细菌性肺部感染之后，症状主要表现为发热、咳痰或出现咯血。X线片见脓腔，有液平面，周围环以炎症浸润影。<br>
+2.先天性肺囊肿：X线胸片上见孤立性液性囊肿，呈一界限清晰的圆形致密阴影。其周围肺组织无浸润，如囊肿与支气管沟通，则可见薄壁而含有气液平面的囊肿阴影。<br>
+3.肺结核病：常有结核接触史及结核中毒症状，X线胸片表现为原发综合征或支气管淋巴结结核，PPD阳性，有些患者痰中可查到结核菌。<br>
+
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">因本病支气管壁已破坏，内科治疗不可能根治，亦不可能痊愈，因此无痊愈项。<br>
+1.显效：经10天1个疗程后，咳嗽消失，或减轻90%以上，咯痰在20ml以下，痰已由黄变白色，不发烧，不咯血或亦无痰中带血，能参加一般工作，过正常生活，听诊肺部呼吸音清晰，除有限局部少许湿性啰音外，体征基本恢复至急性发作前。<br>
+2.好转：咳嗽已减轻30%以上，痰已降至原痰量的40%～50%，不发烧，不咯血，听诊湿性啰音己明显减少，精神体力好转。<br>
+3.无效：咳嗽减轻不足30%，痰量不减少，或减少不足40%～50%，体征同治疗前。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">一、一般治疗<br>
+1.注意加强营养，保证充足的阳光照射，居室内空气应新鲜。<br>
+2.重症有缺氧表现者应卧床休息并吸氧。<br>
+3.积极防治呼吸道传染病，去除呼吸道感染病灶。<br>
+4.有高热者给予降温处理。<br>
+二、清除支气管分泌物<br>
+1．体位引流：一般采用顺位排痰法，原则上应使病变支气管位置比气管分叉处的位置稍高，以便顺利排痰。每日2次，每次20～30分钟。<br>
+2.痰粘稠者应给予祛痰剂及超声雾化吸入。<br>
+三、抗生素应用<br>
+1.本症病原菌多为混杂的，可适当根据痰培养结果选用抗生素。一般首选青霉素或氨苄青霉素，疗程2周左右。<br>
+2.必要时可选用第二、三代头孢菌素如先锋必、菌必治、复达欣等。<br>
+四、外科治疗<br>
+1.手术适应证：①病肺不超过一个肺叶或一侧肺叶；②反复咯血、反复感染经内科治疗不易控制者；③对体位引流不合作者；④虽经内科治疗但健康状况日趋恶化者。<br>
+2.手术禁忌证：①病变范围广泛；②肺气肿严重、肺功能很差者。<br>
+3.应积极内科治疗，做好术前准备，应做支气管造影及肺功能检查，必要时做支气管镜检查。<br>
+4.选择适当的手术时机，一般主张早做手术。<br>
+
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">本病的治疗早期以肃肺化痰，清热止血为主要治则，后期当扶正祛邪，分别采用益气养阴，健脾化痰等法。由于本病往往虚实互见，临证需权衡标本缓急，或以攻为主，或攻补兼施。凡见暴血如涌，无论虚实，皆当首先益气固脱，"但使气不尽脱，则命犹可保。"<br>
+一、辩证选方<br>
+1.风热犯肺<br>
+治法：疏风清热，辛凉解表。<br>
+方药：桑菊饮加减。桑叶、菊花、黄芩、连翘各9g，杏仁、桔梗、薄荷各6g，甘草3g。热毒重加银花、马勃；咳血明显加白茅根、藕节；痰多而稠加浙贝、天竺黄。<br>
+2.痰热蕴肺<br>
+治法：清热解毒，祛痰化瘀。<br>
+方药：桔梗汤加减。桔梗、桑白皮、全瓜蒌各15g，海蛤粉、黄芩、鱼腥草各10g，当归、桃仁、薏苡仁、银花各9g。身热加公英、地丁；痰多加苇茎、鲜竹沥；咯血加地榆、茜草。<br>
+3．肝火犯肺<br>
+治法：清肝泻火，和络止血。<br>
+主药：黛蛤散合泻白散加减。桑白皮、地骨皮、海蛤壳各9g，青黛、粳米各6g，甘草3g。肝火甚加山栀子、黄芩；咯血明显加仙鹤草、旱莲草、白茅根。<br>
+4．肺脾两虚<br>
+治法：益气摄血，健脾化痰。<br>
+方药：拯阳理劳汤加减。黄芪、党参、白术各12g，茯苓、当归、陈皮各9g，五味子、大枣各6g。痰多加半夏、枳壳；气逆加旋覆花、代赭石；纳差加谷麦芽、砂仁。<br>
+二、专方验方<br>
+1.参蒲散：参三七、蒲黄各等份。研末吞服，每服0.5～1g，日服2次。适用于本病咯血明显者。<br>
+2.支扩咯痰方：鱼腥草、金银花、冬瓜仁、生苡仁各15g，桔梗10g，黄连、甘草各3g，黄芩、象贝母、桃仁各10g。水煎服，每日1剂。适用于反复咳嗽、咳吐脓痰者。<br>
+3.支扩成方：参三七、蒲黄炭、杏仁、款冬花、川贝母、橘白、橘络、阿胶(烊化)、党参各15g，海蛤粉、南天竺、百合、生白术、牡蛎各30g，糯米60g，白芨120g。上药碾末，贝壳类采用浸膏入药，制成散剂或片剂。每服5～15g，日服2次。适用于本病各期。<br>
+4.托里排脓汤：生黄芪6g，当归6g，川贝母4.6g，党参6g，孩儿茶1.5g，皂刺4.5g，生地6g，玄参6g，天花粉6g。水煎服，每日1剂，分3～4g次口服。适用于本病后期正气虚者。<br>
+5.干地榆1kg。加水煎煮两次过滤，浓缩至400ml。每服15～25ml，日服4次。适用于本病咯血明显者。<br>
+6.雾化吸入：鱼腥草、夏枯草、野菊花各500g，加水两次蒸馏，收集蒸馏液lOOOmI，加入吐温3ml，微温摇匀，再加入氯化钠8-5g，然后过滤备用。每次lOrnI雾吸，每日1～2次，10次为1疗程。<br>
+
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1.达肺丸：具有清热化痰，润肺止咳，宣肺平喘的功效。适用于本病早期伴咯血者。3～6岁每服1/2丸，6～9岁每服1丸，9～12岁每服2丸，日服3次。<br>
+2.犀角地黄丸：具有清热养阴，凉血止血的功效。适用于本病属血热者。6～9岁每服1丸，9～12岁每服2丸，日服2次。<br>
+3.十灰散：具有清热祛瘀，凉血止血的功效。适用于本病属肺热咯血者。6～9岁每服5g，9～12岁每服7.5g，日服2次。<br>
+4.川贝二冬膏：具有清肺润肺、化痰止咳的功效。适用于本病属肺热阴伤者。3～6岁每服5g，6～9岁每服10g，9～12岁每服15g，日服2次。<br>
+5.扶正养阴丸：具有扶正养阴，润肺止咳的功效。适用于本病属肺阴虚者。3～6岁每服3g，6～9岁每服5g.9～12岁每服7.5g，日服3次。<br>
+6.震灵丹：具有止血、化瘀、定痛的功效。适用于本病属瘀血内阻者。3～6岁每服3g，6～9岁每服6g，9～12岁每服9g，日服3次。<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1.体针：主穴取肺俞、巨骨、尺泽穴，配穴取列缺、孔最、太渊穴。每次针刺3～5穴，平补平泻法，留针5～10分钟，每日1～2次。<br>
+2.梅花针：取丰隆、内关、肺俞、脾俞、胃俞、中脘、膻中穴。以中等强度，采取点刺法叩打，每日1次，10次为1疗程。<br>
+3.穴位注射：取孔最穴。注入鱼腥草注射液1～2mg，每日2次，3天为1疗程。咯血停止后，改为每日1次，或左右穴位隔日交替注射，巩固治疗2～3天。<br>
+4.贴敷：肉桂末3g，硫黄18g，冰片9g。用大蒜汁或生姜汁调诸药成干糊状，敷两侧涌泉穴。用纱布包好固定，每24小时换药1次。亦可仅用大蒜捣泥，外敷涌泉穴。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">1.支气管扩张病情顽固，常常经久不愈，因而病程较长，治疗时大多采用多种疗法综合治疗，以发挥协同治疗作用，增加治疗力度，缩短病程。感染是本病发生及反复发作的主要因素，因此，消除或减轻支气管及其他感染灶为治疗的主要方面，在急性发作期宜用中西药物控制感染，可用抗生素静点或肌注，亦可用抗生素喷雾。但由于本病病程迁延，需长期反复使用抗生素，造成耐药菌株日渐增多。若配合中药清热解毒，可以协同西药发挥作用，增强抗菌效果，减少抗生素的使用次数，避免耐药菌株的产生。<br>
+2.咯血为本病的主要临床表现，中医治疗具有一定的优势，可采用清热泻火，凉血止血，兼祛伏痰的方法，常选用既可清热凉血又可止血之品，如地榆、三七、茜草、白及等。活血化瘀法亦为本病常规治法，常选用桃仁、当归、丹参等药加入方中。<br>
+3.支气管扩张病程迁延，病人日渐衰弱，此时中医中药有其独到之处，缓解期应以益气养阴，调补气血为主，以增强抗病能力，扶助正气。但不主张使用温补之品，以防造成"闭门留寇"之弊。<br>
+
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">巢元方《诸病源候论》谓："寒搏于血，蕴结成脓，热又加之，积热不散，血败为脓。"阐明了本病形成的原因。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

@@ -1,0 +1,912 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">黑热病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=黑热病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">kala-azar
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">HEIREBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：温疫
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">黑热病是由杜诺凡利什曼原虫引起的以白蛉为传播媒介的慢性地方性传染病。临床表现为长期不规则发热消瘦、进行性肝脾肿大、贫血、白细胞与血小板减少及血浆球蛋白增多等。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">由杜氏利什曼原虫所引起。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">黑热病属于中医学温病或疫病范围。任何温病、疫病的发生，不外内外两个因素；而本病既属温病或疫病，其外因之主因应为热疫毒邪，即感受时行的疫病之气而发为本病，正如 《素问·刺法论》所说：“五疫之至，皆相染易，无问大小，病状相似。”内因则为正气不足， 既邪之所凑，其气必虚。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">在我国北方，成蛉5月中、下旬出现，9月中、下旬后消匿，其活动高峰在6月。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">在我国，以患者为主要传染源的地区，有苏北、皖北、鲁南、冀南、豫东、鄂北、陕西关中及新疆南部的平原地区等；以病犬为主要传染源的地区有甘肃、青海、宁夏、陕西北部、河北北部、北京、天津、辽宁及四川北部的丘陵山区；犬的感染率很高，但常无明显症状；以患病野生动物（加胡狼、狼、赤狐、豪猪等）为主要传染源的地区主要在新疆、内蒙古与甘肃的荒漠地区，发病者多系外来的成年人。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">人群普遍易感；但利什曼原虫在人或实验动物体内能引起特异性免疫，且持续性较长。患者以青少年为主，患病者以10岁以内儿童居多。而犬很少被感染。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">1．传染源：为病人与病犬及受染的野生动物。
+2. 传播途径  本病主要通过白蛉叮咬而传播；中华白蛉是我国黑热病的主要传播媒介。 白蛉多栖息在室内外阴暗无风处（如房角、地窑、墙缝、鼠洞），雌岭在黄昏后至黎明前吸血。 此外，也可通过口、皮肤破损、胎盘或输血感染，但均较罕见。
+
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">本病曾是危害中国人民健康最严重的五大寄生虫病之一，流行于长江以北16个省、市、区的广大农村，全国约有53万病人。1949年新中国成立后，经积极防治，至1958年此病在绝大部分地区(广大平原地区)已基本消灭，且防治效果比较巩固。近年来仅在西北的荒漠和山丘地区尚有少数散发病例。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">当受杜氏利什曼原虫感染的白蛉叮咬人时，前鞭毛体侵入人的皮下组织，为网状内皮系统巨噬细胞所吞噬，一部分被消灭，一部分在胞质内转化为无鞭毛体生存繁殖，继而随淋巴液和血液到达内脏，尤其在含丰富网状内皮细胞的肝脾、骨髓、淋巴结等组织器官内大量繁殖，导致各脏器组织的病变。脾脏常显著增大，髓质内巨噬细胞大量浸润，几乎所有细胞内都充满利杜小体而极度膨胀，浆细胞亦明显增多，脾脏因此而肿大，被膜增厚。随着病程的迁延，脾索有网状和纤维组织增生，脾脏显著肿大并明显变硬。肝脏病变相似而稍轻，可呈轻度或中度肿大；骨髓组织显著增生，呈暗红色，骨髓内脂肪明显减少，其他如淋巴结、皮肤、扁桃体、心、肺、肠管、胰腺、肾上腺、睾丸、前列腺等处，均可发现含利什曼原虫的巨噬细胞。由于脾脏极度肿大引起明显的脾功能亢进，故虽骨髓造血功能旺盛，而临床上却出现全血细胞减少的现象。肝组织受到损害，引起肝功能减退，血浆白蛋白减低，球蛋白显著增多，从而出现白、球蛋白比例倒置。综合以上诸种原因，加以营养不良等因素，妇女可出现月经失调，儿童可发育不良，如治疗不及时，常于l～2年内死于并发症。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">当热疫毒邪侵入人体后，每伏藏干募原或半表半里，出入于营卫之间，故本病发作时，表现为不规则发热；若邪渐陷于阴，耗伤气血，故见患者消瘦、面色晄白；邪阻日久，正虚邪恋，气血运行不畅，瘀血病阻于胁下，则成痞块或瘫痪。黑热病病因虽是热疫毒邪，但发病却与体内的正气强弱有密切关系；若正气旺盛，营卫充沛，则可抗御外邪，即使感邪之后亦未必发病；若正气虚弱，腠理疏松，则易遭受邪气的侵袭而发病。若黑热病久病不愈或反复发作，势必导致气血亏虚，则可成虚劳之证。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">杜氏利什曼原虫进入人体后，在巨噬细胞内大量繁殖，使巨噬细胞大量破坏，同时刺激巨噬细胞和浆细胞大量增生而引起一系列病理变化，富含巨噬细胞的脾、肝、淋巴结和骨髓等病变最为显著。脾脏网状内皮细胞大量增生、巨噬细胞多数有原虫寄生，血循环受阻，致脾脏充血、显著增大，至晚期网状纤维与结缔组织增生，脾脏质地变硬，可发展至脾功能亢进，临床可呈全血细胞减少。肝脏、淋巴结也有类似变化。骨髓极度增生，呈暗红色，网状内皮细胞和浆细胞大为增加，中性粒细胞、嗜酸粒细胞大为减少，中幼粒细胞、有核红细胞增多，巨核细胞数正常，但血小板形成则显著减少。皮肤及皮下组织可见感染原虫的巨噬细胞。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1．早期（卫气同病）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：发热，热型多不规则，恶寒，食欲不振，腹胀或腹泻，呕吐，舌质红，苔薄黄腻&nbsp;脉滑数。<br>
+证候分析：热度毒邪侵入人体，每伏藏于募原，出入于营卫之间，正邪交争，故见发热&nbsp;&nbsp;不规则，恶寒。若影响及脾胃，致脾失健运，胃失和降，故见食欲不振、腹胀或腹泻、呕吐，&nbsp;&nbsp;舌红、苔黄腻、脉弦滑，均为热毒侵袭之象。<br>
+2．进展期:&nbsp;<br>
+（1）少阳阳明合病证：证候：寒热往来，纳呆，恶心呕吐，泄泻，脉弦滑或弦滑数。<br>
+&nbsp;&nbsp;证候分析：邪在半表半里，正邪相争，正胜则热，邪胜则寒，寒热交替出现，故寒热往来；邪犯少阳，影响脾胃，脾胃受损，运化功能失常，水湿内停，困于中焦，而使胃失受纳，&nbsp;&nbsp;胃气上逆，脾气不升随浊气而降，见纳呆恶心、呕吐泄泻，湿停日久化热，故可见滑数脉。&nbsp;<br>
+（2）瘀血阻滞、肠胃瘀积证：<br>
+证候：脾大过脐，腹胀大，发热，尤以手足心为甚，脉滑数。<br>
+&nbsp;证候分析：脾胃受损日久，湿浊凝聚成痰，痰阻气滞，气滞则血行不畅，脉络壅塞，痰&nbsp;浊与气血搏结，日渐增大而成证瘕，症见脾大过脐，腹胀大，阴血虚生内热，故见发热，尤&nbsp;以手足心为甚，脉滑细数为血虚夹痰浊湿热瘀血阻滞之征。 3．晚期（正虚邪恋）&nbsp;证候：发热反复起伏多次，全身消瘦，神疲倦怠，面色苍白或指甲及眼结膜苍白，皮肤粗糙干燥或毛发稀少无光泽，胁下痞块，舌质淡红，苔少，脉细弱。&nbsp;&nbsp;证候分析：疫热毒邪侵袭日久，耗伤气血，致正虚邪恋，故见发热反复起伏；气血亏虚故见全身消瘦、神倦，面色苍白或指甲及眼结膜苍白；血虚失于濡润，故见皮肤粗糙干燥或&nbsp;毛发稀少无光泽；正虚瘀结胁下故成痞块，舌淡红，苔少，脉细弱，力气血亏虚之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1.&nbsp;流行病学&nbsp;&nbsp;&nbsp;有于白蛉季节（5～9月）在流行地区旅居史。<br>
+2．临床特点<br>
+&nbsp;&nbsp;（1）发病缓慢，有长期不规则发热。典型者有双峰或三峰热型，发热时有食欲不振、鼻衄等症状，但中毒症状不很明显。发热持续3～5周后消退，数周后体温再升，呈复发与间歇相交替的特征性病程。病程久者出现消瘦、贫血、皮肤粗糙、有色素沉着、头发易脱落等表现。<br>
+&nbsp;&nbsp;（2）脾脏逐渐肿大，变硬，肝脏亦渐肿大，但程度较轻。<br>
+3．实验室检查<br>
+&nbsp;&nbsp;（1）血象：白细胞计数及中性粒细胞显著减少，血小板减少，中度贫血。<br>
+&nbsp;&nbsp;（2）血清球蛋白显著增加。球蛋白水试验、醛凝试验、锑试验及麝浊等均明显阳性。<br>
+&nbsp;&nbsp;（3）血清补体结合试验：于病程早期即呈阳性。<br>
+4.&nbsp;骨髓、脾、肝穿刺吸出物涂片染色找到利杜体或培养鞭毛体阳性。<br>
+5．免疫荧光检查，取血液或组织液涂片检查抗原阳性。<br>
+6．免疫电泳、ELISA等检测阳性。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">1．流行病学资料    白蛉季节（5～9月）旅居流行区。
+ 2. 临床特点  长期不规则发热，无明显中毒症状，临床复发与间歇交替出现，患者有乏  力、消瘦、贫血、鼻衄、齿龈出血等，进行性脾肿大及全血细胞减少。
+3．实验诊断   各种穿刺液找到利杜体为确诊依据，免疫学检查有辅助诊断价值。
+ 4. 治疗性诊断   可用葡萄糖酸锑钠试验治疗，如疗效迅速而显著，则有助于本病的诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">本病潜伏期较长，自10天至2年以上，一般多在3～5个月。病多缓起。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">1．早期多缓慢起病，主要表现为发热。热型多不规则，亦可呈稽留、间歇、弛张热等。约 1／3～1／2的病例在 24 小时之内热度有 2次升高，呈双峰热（double quotidian fever）。发热持续3～5个周后可自动退至正常，2～3周后体温再度上升，如此交替可迁延数月之久。部分患者有恶寒、盗汗、食欲不振、腹部不适以及腹泻、呕吐等。此期患者的一般情况尚好，多能照常生活。脾脏可见轻度肿大，表浅淋巴结轻度肿大。白细胞总数与中性粒细胞正常或稍有减少。2．进展期起病3～5个月后，发热已反复起伏多次，本病的特殊症状及体征逐渐显著。主要表现为：①发热：长期不规则发热伴消瘦、疲乏、皮肤色素增深等。②贫血与营养不良：表现为口唇、指甲及眼结膜等苍白。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．早期多缓慢起病，主要表现为发热。热型多不规则，亦可呈稽留、间歇、弛张热等。<br>
+约 1／3～1／2的病例在 24&nbsp;小时之内热度有 2次升高，呈双峰热（double quotidian fever）。发热持续3～5个周后可自动退至正常，2～3周后体温再度上升，如此交替可迁延数月之久。部分患者有恶寒、盗汗、食欲不振、腹部不适以及腹泻、呕吐等。此期患者的一般情况尚好，多能照常生活。脾脏可见轻度肿大，表浅淋巴结轻度肿大。白细胞总数与中性粒细胞正常或稍有减少。<br>
+2．进展期起病3～5个月后，发热已反复起伏多次，本病的特殊症状及体征逐渐显著。<br>
+主要表现为：①发热：长期不规则发热伴消瘦、疲乏、皮肤色素增深等。②贫血与营养不良：表现为口唇、指甲及眼结膜等苍白。严重者可出现贫血性心脏病，无心脏扩大、心率加速，有时并可出现心功能衰竭。皮肤常粗糙干燥。头发常稀少无光泽，易脱落。③脾脏肿大：自病期3～5周即可触及，质地柔软，以后随病期延长脾脏也随之逐渐增大变硬。病期数月脾下缘可平脐，继续肿大可进入盆腔内，使腹部膨隆。如发生脾内栓塞或出血，则可引起脾区疼痛和压痛，有时可出现摩擦音。④肝脏肿大；呈进行性，但常较脾脏肿大为晚，肿大程度也不若脾显著，质地亦较柔软。⑤淋巴结肿大：常呈轻度及中度肿大，个别病例耳后淋巴结呈肿块性肿大。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;病情波动，呈缓解与加重相交替，此乃本病病程中特点。大约在起病1个月后即进入初<br>
+次缓解期，缓解期常持续数日至数周不等。缓解期间，患者症状减轻，脾脏缩小，血象好转。病程愈长缓解期愈短，终至症状持续无缓解。<br>
+3．晚期&nbsp;&nbsp;&nbsp;病程逾一年。患者在长期发热之后，消瘦明显，精神萎靡，皮肤粗糙干燥，头发稀少而无光泽，面部色素沉着，贫血与浮肿常见，或见肝硬变，可有腹水与黄疸。以上临床经过，主要是利什曼原虫侵犯内脏而造成的，又称内脏利什曼病（Visceral&nbsp; leish－&nbsp; maniasis）。<br>
+&nbsp;&nbsp;偶可见特殊临床类型：<br>
+（一）皮肤型黑热病&nbsp;<br>
+&nbsp;多与内脏利什曼病并存，或在内脏利什曼病之后多年方出现，其中某些患者已接受过锑<br>
+&nbsp;剂治疗。少数为单纯的原发性皮肤感染。皮肤损害主要为结节与红色斑疹或褪色斑，多见于<br>
+面及颈部，亦可在身体其他部位发生。红斑在双颊与鼻部较多见；结节大小不一，小者似绿<br>
+豆，大者有花生米大小，偶有葡萄或胡桃大者，散在或密集，宛如瘤型麻风，但无感染征象，&nbsp;&nbsp;病人一般情况良好，能照常劳动与生活，但病程长而极少自愈。<br>
+（二）淋巴结型黑热病<br>
+&nbsp;主要是全身多处淋巴结肿大，以腹股沟和股部最多见。往往是同时或先后发现淋巴结肿<br>
+大，一般如花生米或蚕豆大小，局部无明显红肿。少数病人发热高低不定，伴有乏力，偶有<br>
+肝脾肿大。患者一般情况良好，骨髓和淋巴结内可找到利杜体（Leishman一Donovan&nbsp; body）即&nbsp;无鞭毛体（amastigote）。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">被感染白岭叮刺处，可呈淡红色或深红色斑丘疹，针尖大小，数月后消除，遗留色素较深的斑点，此种皮肤改变多被患者忽略，故临床上很少见到。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">确诊有赖于病原学检查。从各种穿刺液(骨髓、脾、淋巴结等)中找病原体。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">（一）血象
+全血细胞减少，白细胞减少，主要为中性粒细胞减少，出现较早，一般为（1．5～3）×109/L,重症者1×109／L以下，甚至出现粒细胞缺乏症。红细胞一般在3×1012／L左右，于发病后2个月血小板开始显著减少，在（40～80）×l09／L之间，常伴出血倾向。
+（二）血清球蛋白试验
+血清白蛋白减少，球蛋白显著增加，白球蛋白比例倒置。血清球蛋白试验（包括蒸馏水试验、醛凝试验）于病程3个月即可阳性。麝香草酚浊度和锌浊度试验在早期常已阳性。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">补体结合试验曾广泛应用于黑热病的诊断，阳性率可达95％以上、假阳性率甚低，因操作较繁，且病人血清常发生抗补体现象，现已少用。间接血凝试验、间接荧光抗体试验、对流免疫电泳试验、酶联免疫吸附试验等灵敏度均较高，但可与结核病、麻风锥虫病等出现交叉反应。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">骨髓（骼骨、脊突）或淋巴结穿刺作涂片染色找利杜体，必要时可将穿刺物进行培养。对皮肤型黑热病患者可从皮肤损害处刮取或吸取组织作涂片检查病原体，必要时也可进行培养或皮肤活组织检查。
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.&nbsp;结核病&nbsp;&nbsp;&nbsp;粟粒性结核有毒血症症状和明显气急，其他部位结核病灶多有特殊临床表现，&nbsp;胸部和胃肠X线检查、结核菌素试验对诊断有一定帮助。<br>
+2．伤寒&nbsp;&nbsp;&nbsp;常有相对缓脉，高热期间有不同程度的毒血症症状如神志模糊、听力减退、谵妄等，皮肤可出现玫瑰疹，血和骨髓培养、肥达反应等有助于诊断。<br>
+3．疟疾&nbsp;&nbsp;&nbsp;发病急，多有既往发作史，血液与骨髓涂片可查见疟原虫以及抗疟药的疗效皆可作为鉴别要点。<br>
+4．布氏杆菌病&nbsp;&nbsp;&nbsp;有牛羊接触史，常有关节痛、神经痛和大量出汗，轻度肝脾肿大，血、骨髓及尿培养阳性，血凝集试验阳性。<br>
+5．其他&nbsp;尚应与血吸虫病、阿杰金病、慢性粒细胞性白血病、亚急性细菌性心内膜炎相鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准：<br>
+1．体温正常，症状消失，一般健康状况改善。<br>
+2．肝脾回缩。<br>
+3．血象恢复正常。贫血纠正，球蛋白回降，球蛋白试验转阴，白／球蛋白比值趋于正常。<br>
+4．原虫消失。骨髓或肝脾穿刺吸出物涂片检查及培养均转阴性。<br>
+5．治疗结束后随访半年无复发。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">决定于早诊断、早治疗。若未能得到适当治疗的患者，除极少数例外，病情继续发展，于 2～3年内因各种感染或全身衰竭而死亡。运用锑剂治疗以来，治愈率达95％以上，病死率显  著降低。仅有少数（7．4％）复发。合并走马疳、肺部感染、急性粒细胞缺乏症等者，预后欠佳。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">黑热病易并发其他传染病和其他严重的感染，以坏死性口腔炎（走马疳）、肺炎最为严重，&nbsp;常成为本病的致死原因。另一严重并发症是急性粒细胞缺乏症，常因使用锑剂而诱发，亦常由于继发感染而死亡。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">（一）一般治疗：应卧床体息，予以高蛋白饮食，补充足够水分、电解质和维生素。严重患者及有并发症者应住院治疗。贫血者应给以铁剂、维生素B12、叶酸等；贫血特别严重或白细胞过低者，可&nbsp;考虑小量多次输血。<br>
+（二）病原治疗： 1．葡萄糖酸锑钠制剂&nbsp;&nbsp;&nbsp;我国生产的斯锑黑克，是治疗本病的首选药物，系五价锑制剂，毒性反应轻微，疗效迅速而显著，治愈率可达97．4％。其剂量与用法有6天疗法，总剂量成&nbsp;人按90～130mg／kg（50kg&nbsp;为限）计算，儿童按150～200mg／kg计算，均分为6次注射，每日1次；病原体消失率可达99％，是目前常规采用的。&nbsp; 16天疗法，开始4天每日1次；停药&nbsp; 10天后再注射2天，剂量同上；病情较重者为减少反应可用3周疗法，总剂量儿童按200mg／&nbsp; kg，成人按此剂量的2／3计算，每周注射2次，共6次；用于轻型患者或集体治疗可采用3天&nbsp;疗法，总剂量较6天疗法稍减，分6次注射，每日2次，连续3天，反应较多。<br>
+葡萄糖酸锑钠毒性较低，副作用少；少数可有鼻衄、脾区痛、发热、咳嗽、恶心、腹泻&nbsp;肌痛等，并不影响疗程。个别患者可发生严重休克、紫绀、呼吸困难，甚至死亡。有肺炎等<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;继发细菌感染、心脏病和肝病或大量出血病人应暂禁用或慎用葡萄糖酸锑钠。病情严重、体质较弱者可延长疗程，总剂量不变，每周注射2次，3周为一疗程。疗程中体温突然升高，血&nbsp;液白细胞数突然减少，及有严重鼻、齿龈或其他部位大出血，呼吸加速或剧烈咳嗽，脉搏不规则，出现水肿或腹水者，均应暂停注射。极少数治后复发，或症状略减或病情依然如故，其原因主要为疗程不足和剂量过小或由于耐锑虫株的出现。对治疗无效者，可换药；对复发病人可加大剂量或延长疗程重复治疗， 80％仍可治愈。过期药物慎勿使用。<br>
+2．非锑剂&nbsp;&nbsp;&nbsp;用于经锑剂治疗无效、对锑剂过敏或并发粒细胞缺乏症的患者。<br>
+（1）戊脘脒（Pentamidine）：用新鲜配制的10％水溶液作肌肉注射，每次剂量4mg/kg，&nbsp;每日或隔日一次，&nbsp; 10～15次为一疗程。肌注后可引起局部疼痛、红肿、硬结等。用较大剂量可产生肾脏与胰腺损害。其副作用在静脉注射后可出现血压下降、全身灼热感、头痛、心悸、&nbsp;眩晕、呼吸不畅等。尚可有药物过敏反应如荨麻疹等。该药即时疗效好，但复发率高，治愈&nbsp;率为36％～62％：如每次剂量提高至6mg／kg，疗程延长至16天，治愈率可达90％。但副作用较大，故一般不用。<br>
+（2）二脒替（stilbamidine）；剂量为每日1～2mg／kg，先用小量蒸馏水溶解，然后加10％&nbsp;&nbsp;葡萄糖液配成0．1％～0．2％溶液徐缓静脉注射，每日1次，总量达40～50mg／kg&nbsp;为1疗程。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一般为2～3周内热退。其副作用有全身蚁走感、流汗、呼吸困难，眩晕、恶心、呕吐、休克&nbsp;或癫痫样痉挛，有时较严重，但可很快恢复。对有黄疸、出血及肾炎患者慎用。<br>
+（3）羟脒替（hydroxystibamidine&nbsp; isethionate）：成人每日250mg，静注，每10天为1疗&nbsp;程，共3个疗程，疗程之间休息7天。本品毒性较二咪替的毒性稍低。<br>
+（4）其他：以酮康唑、别嘌醇治疗黑热病皆有报告，但应用病例数较少，疗效较差，尚不能做为常规用药。<br>
+（5）手术治疗问题：对锑剂、戊脘脒或羟脒替有抗药性的患者，且脾脏高度肿大并有脾&nbsp;功能亢进者，可考虑脾脏切除，待术后血象恢复时，再用上述诸药治疗，多数可达根治。<br>
+（6）并发症治疗：对走马疳及其他继发感染可即用青霉素治疗或其它抗生素治疗。粒细胞缺乏症可由黑热病本身引起，也可见于锑剂治疗过程中；辅酶A、肌苷、鲨肝醇、维生素 B族等可能有作用，必要时输新鲜血，亦可配合中医药治疗，以减轻锑剂的副作用。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1．早期（卫气同病）：&nbsp;治法：解表芳化，清热解毒。方药：三仁汤加连翘、黄芩。<br>
+2．进展期：（1）少阳阳明合病证：治法：和解攻里方药：柴平汤加减。（柴胡9g、半夏9g、党参9g、黄芩9g、陈皮9g、莱菔子9g、大黄 3～6g、干姜1．5g、甘草6g）。方中柴胡、黄芩和解半表半里；党参、半夏、陈皮、莱菔子、干姜起健脾和胃降逆作用、大黄驱逐污浊之邪；甘草调和诸药。&nbsp;<br>
+&nbsp;（2）瘀血阻滞、肠胃瘀积证：&nbsp;治法：活血消积，清热凉血。<br>
+方药：大黄&nbsp;&nbsp;&nbsp;元明粉各等分。用法：两药混匀，一日3次，一次2～6g。外用二龙膏一张&nbsp;（活甲鱼、鲜苋菜、莪术、三棱、乳香、肉桂、没药、沉香、射香）。服药时以大便微溏，一日2～3次为佳。内服外用药同时应用共起活血消积，清热凉血作用。&nbsp;<br>
+（3）并发症走马牙疳（口腔重度细菌感染）：治法①白信石少许。用法：研极细，放入冷水中，棉球浸入至湿，再用该棉球涂擦局部至出血，然后用浓茶水反复漱口。②雄黄：用法：研末。干棉球沾少许粉末，涂擦局部出血，再用茶水漱口。&nbsp;<br>
+3．晚期（正虚邪恋）治法：益气养血，祛除余邪。<br>
+方药：加减复脉汤加青蒿、地骨皮、柴胡鳖甲等；若兼胁下痞块者，可化痰祛瘀，合用鳖甲煎丸。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">积极采取防治结合的方针，着重做好控制传染源和消灭传播媒介（白蛉）的工作，就可以消灭黑热病。<br>
+&nbsp;&nbsp;&nbsp; 1．控制传染源&nbsp;&nbsp;&nbsp;应有组织地在白蛉季节到来之前普查、普治所有病人（包括皮肤型黑热病人）。对治疗过的病人，应走期随访，力求根治。若发现犬利什曼病，应予以杀死掩埋。<br>
+&nbsp;&nbsp;&nbsp; 2．消灭传播媒介&nbsp;&nbsp;&nbsp;在每年5～9月份白蛉活动季节的早期及高峰前，采用化学杀虫剂如敌敌畏等）对住房、畜舍内、外墙壁等处喷洒，可以起到良好的灭蛉作用。同时应注意保持住房透光通风和地面干燥，填塞鼠穴土洞，清除杂草垃圾以杜绝成蛉躲藏和幼蛉滋生之地。另外，亦应注意加强个人防护，防止白蛉叮咬。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">本病在解放前曾为严重危害人民健康的五大寄生虫病之一，流行于我国长江以北的广大农村；解放后通过大力开展防治工作取得巨大成绩，于1958年该病在绝大部分地区已基本消灭，多年来除西北荒漠地带和部分地区有散在的病例报告外，原主要流行区防治效果比较巩固。本病可见于亚、欧、非、美四洲。而以印度、地中海地区和我国（指解放前和解放初期）长江以北地区流行最盛;&nbsp;目前，它仍然是世界上不少地区危害人民健康的重要寄生虫病之一，因此世界卫生组织要求加强对黑热病的防治。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

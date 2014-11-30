@@ -1,0 +1,922 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">风湿性心脏病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=风湿性心脏病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">rheumatic heart disease
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">FENGSHIXINGXINZANGBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：心痹，心悸，怔忡，水肿，喘证。
+简称风心病。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">循环系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">风湿性心脏病是指风湿热后所遗留下的心脏病变，以心脏瓣膜病变为主。风湿性心脏病最常累及二尖瓣，约占病人的50％～60％，其次为主动脉瓣与二尖瓣联合损害、单纯主动脉瓣病变，三尖瓣常与二尖瓣或主动脉病变同时发生，风湿性肺动脉瓣病变则极少见。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">社会、经济条件差及居住环境是本病发生的重要因素。由链球菌引起的急性风湿热是本病发生的根本原因。链球菌膜抗原能使淋巴细胞及大单核细胞致 敏，对人心脏细胞产生毒性，使心脏细胞病变有淋巴细胞及单核细胞浸润，造成风湿性心脏炎。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">素体虚弱，外邪侵袭为本病的根本病因。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">中国
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">风心病为我国较常见的一种心脏病，发病年龄一般在20～40岁的青壮年为多见。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">近年来，在社会经济状况较好的国家中，本病发生率显著下降，但在一些社会经济状况较差的国家，发病率仍高，其瓣膜病变的发生年龄也较早。风湿性心脏病的病人近20年在中国已明显减少。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">风湿热的发病机制尚未十分明确，曾提出感染学说、链球菌毒素学说、过敏学说、病毒感染学说和毒性一免疫学假说。目前一般认为与甲组β型溶血性链球菌反覆感染有关，以毒性-免疫学假说最为盛行。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病初起，以外感风寒、湿热之邪而致病，邪气久羁，内舍于心、而成为心痹，发为本病。
+1．外邪致病风、寒、湿、热之邪是引起本病的外在因素，体质虚弱者，易于遭受外邪 的侵袭，但体壮之人由于久居湿地，或保暖失宜，或冒雨涉水，或汗出当风，外感风寒湿邪，或邪入日久化热也可成为本病。
+2．体虚感邪  患者先天不足或病后体质虚弱，气血不足，卫外不固，易于感受外邪。病后，又无力驱邪外出，以致风、湿、热之邪，逐渐深入，留连于筋骨血脉而为痹证。阳虚卫外不固，易为风寒湿邪所伤，故患者多为风寒湿痹；阴虚之体，阳气相对偏盛，脏腑经络，先有蓄热，故即使感受风、寒、湿邪，侵入人体后也会从阳化热，故成为风热湿痹。
+3．邪气归心  邪客于脉日久，或脉痹不已复感于邪，内舍于心，则心悸、胸闷。胸痹甚者，喘息不得卧，发为风湿性心脏炎的主要表现。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">风湿热引起的心脏病理变化，主要是机体的自身抗体和补体的复合物在心肌细胞膜及间质中血管壁上沉积，引起间质中结缔组织及其周围心肌细胞坏死和单核、淋巴细胞浸润，结缔组织发生纤维素样变性，形成风湿小体。后期有纤维组织增生造成纤维疤痕。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">风湿性心脏炎反复发作后，瓣膜相互粘连、增厚、变硬，使瓣膜不能完全开放，以致瓣 膜口径缩小，阻碍血流前进，称为瓣膜狭窄。若瓣膜增厚、缩短、畸形，或同时有乳头肌、腱 索的缩短，使瓣膜不能完全闭合，导致部分血流返流，则称为瓣膜关闭不全。临床上狭窄或关闭不全，均可产生血液动力学的改变。在早期，心脏通过代偿尚可维持其功能状态，如代偿失调，则出现心力衰竭的一系列临床表现。从瓣膜损伤到形成狭窄约有两年左右，按照病变程度，可分为以下几种类型： 1．隔膜型  轻者仅在瓣膜交界处有粘连，使瓣膜口缩小，瓣膜无增厚，活动尚好；重者 除粘连使瓣口缩小外，瓣膜本身增厚，其活动可受到一定的限制。2．漏斗型  瓣膜明显增厚和纤维化，腱索、乳头肌显著粘连和缩短，整个瓣膜形成漏斗状，瓣膜活动受到明显限制。常伴有不同程度的关闭不全。 关闭不全：由于慢性炎症及纤维化使瓣叶变硬、缩短、变形，或腱索粘连、融合、变粗等所致，病久者可加重关闭不全。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">急性期<br>
+（1）风热外袭：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：病初发热，咽痛，或咽喉乳蛾红肿疼痛，鼻塞，流黄涕，口渴欲饮，舌苔薄白微黄，舌边尖红，脉浮数。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;病机分析：风热外袭犯表，热郁肌腠，卫表失和，故见发热；风热上扰，熏蒸清道，故咽痛，或咽喉乳蛾红肿疼痛，鼻塞，流黄涕；热邪伤津，故口渴欲饮；舌苔薄白微黄，舌边尖红，脉浮数为风热侵于肺卫之征。<br>
+（2）气虚感邪：<br>
+证候：发热，恶寒较甚，全身酸楚，关节疼痛；咳嗽，咯痰无力，舌苔薄白，脉浮无力。&nbsp;&nbsp;病机分析：由于卫气不固，外感风寒，气虚托送无力，邪不易解，而出现发热、恶寒较甚，无汗；肌表被束，故全身酸楚，关节疼痛；气虚邪袭，肺气失宣，故咳嗽，咯痰无力；舌苔薄白，脉浮无力，为气虚感邪之征。<br>
+（3）阴虚发热：<br>
+&nbsp;证候：身热午后尤甚，微恶风寒，关节疼痛，少汗，头昏，心烦口干，干咳痰少，舌红少苔，脉细数。<br>
+病机分析：素体阴虚，阴津素亏，外感风热，津液不能作汗达邪，故身热，午后尤甚，微&nbsp;恶风寒，少汗；邪犯肌肤经脉关节，脉络不通，则关节疼痛。风热上犯，则头昏；阴虚生内热，故见心烦口干，干咳痰少；舌红少苔，脉浮细数，均为阴虚感邪之征。<br>
+（4）气阴两虚，余邪未清：证候：发热，心烦，自汗，心悸，少气懒言，乏力，口干少津，全身关节酸痛，舌质淡&nbsp;红，苔少，脉细数。<br>
+病机分析：外感风寒湿热之邪日久，邪留不去，气阴两伤，故见发热；邪扰心神，则心&nbsp;烦；气虚卫外不固，则自汗；气阴两虚，心失所养，则心悸；气虚则见少气懒言，乏力；阴&nbsp;虚津不上承，口子少津；邪滞关节，则全身关节酸痛；舌质淡红，苔少，脉细数则为气阴两&nbsp;伤之象。慢性期：证候：心痹：风寒湿热之邪内侵于心，心气、心阴、心血受伤而为心痹。临床表现属心悸,胸痹等病证。其表现为心动悸、胸闷气喘，动则尤甚，四肢关节疼痛，头晕目眩，或两颧暗赤，口唇紫暗，脉沉涩或结代。&nbsp;病机分析：风寒湿热之邪内侵于心，心气、心阴、心血受伤，心脉、心神失养，故表现&nbsp;为心动悸、胸闷气喘；动则耗气，故动则尤甚；清窍失养则头晕目眩；心华在面，心虚则两&nbsp;颧暗赤；关节气血运行不利，则四肢关节疼痛；口唇紫暗，脉沉涩或结代为心虚之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">见具体病症。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据各自的临床表现、体征及特殊检查可明确诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">1．心脏炎  单独发生心肌炎、心内膜炎、心包炎，也可同时出现。
+心肌炎：有心悸、胸闷等。严重者可有心力衰竭而出现咳嗽、呼吸困难、胸痛、疲劳、汗出、纳食减少等。
+心内膜炎：可无明显的症状及体征。
+心包炎：为全心炎及多发性浆膜炎的一部分，胸痛为唯一症状。
+2．二尖瓣狭窄  
+代偿期：病人能胜任一般的体力劳动，无症状或只有轻微的症状。
+左心房衰竭期：有呼吸困难和紫绀、咳嗽、咯血，及声音嘶哑、吞咽困难。
+右心衰竭期：体循环静脉瘀血、肝脾肿大和压痛，皮下及下肢水肿和腹水。肺硬化时可出现呼吸困难和紫绀。
+3．二尖瓣关闭不全  轻度二尖瓣关闭不全，可无自觉症状，当出现左心功能不全时症状较重，可有疲倦、乏力和心悸，或因肺充血而发生劳累后呼吸困难，后期也可出现右心功能不全的症状。
+4．主动脉瓣关闭不全  早期常无症状，或仅有心悸和头部搏动感，心尖区不适，晚期产生左心功能不全和肺瘀血的症状，如劳累后气急或呼吸困难，少数病人可有心绞痛和昏厥，最后发生右心衰竭。
+5．主动脉瓣狭窄  轻度者可无症状，狭窄程度加重时，最早自觉症状是疲乏，活动后呼吸困难，主要是眩晕或昏厥，心绞痛和左心衰竭。容易发生猝死。
+6．三尖瓣关闭不全  以右心室衰竭为主要临床表现。
+7. 三尖瓣狭窄  有疲倦、呼吸困难等右房压力增高以至衰竭为主要临床表现。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．二尖瓣狭窄&nbsp;&nbsp;两颧紫红色，口唇轻度紫绀。中度以上狭窄者，叩诊时心浊音界在胸骨左缘第三肋间向左扩大，第一心音亢进，心尖区可听到局限、低调、隆隆样的舒张中、晚期杂音。隔膜型瓣膜口病变时，可在心尖区的内上方听到二尖瓣开放拍击音。<br>
+2．二尖瓣关闭不全心尖向左下移位，心浊音界向左下扩大。左心室肥厚时，在心尖区可见局限性、抬举性搏动。心尖部可听到一响亮的性质粗糙、音调高、时限较长的全收缩期吹风样杂音，常向左腋下传导。心尖区常有第三心音出现。<br>
+3．主动脉瓣关闭不全&nbsp;&nbsp;颈动脉搏动显著，心尖搏动向左下移位，呈抬举性。心浊音界向左下扩大。在第3～4肋间可听到音调高、响度递减的吹风样舒张早期杂音，常向心尖区传导。此外，显著的主动脉瓣关闭不全可产生下述外周血管征：舒张压降低、脉压增宽、水冲脉、毛<br>
+细血管搏动征和动脉枪击音。<br>
+4．主动脉狭窄&nbsp;&nbsp;在胸骨右缘第二肋间，可听到一粗糙、响亮的收缩期杂音，向颈动脉及锁骨下动脉传导，有时可触到收缩期震颤。心功能不全时，可听到第四心音。由于左心室排血量减少，收缩压降低，以致脉压变小，脉搏呈迟滞型，心率常缓慢。<br>
+5．三尖瓣关闭不全&nbsp;&nbsp;右心扩大，胸骨左缘第3～5肋间有高调的全收缩期杂音，颈部静<br>
+&nbsp;&nbsp;&nbsp;&nbsp;脉显示收缩期搏动，肝脏肿大，晚期可有腹水。<br>
+6．三尖瓣狭窄&nbsp;&nbsp;右心房扩大，胸骨左缘第3～5肋间有低调的隆隆样舒张中期到后期杂音，深吸气时增强，可伴舒张期震颤。可有肝肿大、腹水和水肿。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">一、心电图检查：1、急性心脏炎：心电图约25％的病人有P一R间期延长成I度房室传导阻滞；ST段和T波改变以及Q一T间期延长；早搏；房颤 2、二尖瓣狭窄： 轻度可正常，典型改变为P波增宽且有切迹，或右胸导联出现增大的双向P波，并可有右心室肥大表现，晚期常合并房颤。 3、二尖瓣关闭不全：心电图检查，左心室肥大或合并劳损。超声心动图检查，见舒张期前叶EF斜率增大，主动脉瓣关闭减慢，左心室扩大，室间隔活动过度。右心导管检查，右心室、肺动脉和肺毛细血管压力或肺循环阻力可有不同程度的增高，心排血量降低。4、主动脉瓣关闭不全： 心电图检查，电轴左偏，左心肥大劳损。超声心动图检查，见主动脉瓣开放及关闭速度均增加，舒张期双波相距大于 1mm，舒张期二尖瓣前叶有细颤波。逆行性主动脉造影可见造影剂返流入左心室，据返流程 度，可估计关闭不全的程序。 5．主动脉狭窄 ： X线检查，左心室扩大，偶尔可见主动脉瓣钙化。6．三尖瓣关闭不全：  X线检查见右心房和上腔静脉在收缩期明显搏动，右心房极度增大。7．三尖瓣狭窄 ： X线检查示右心房极度增大而肺动脉无明显扩大。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">1、急性心脏炎：X线、超声心动图示心脏普遍增大。2、二尖瓣狭窄：  X线检查可发现左心房增大，严重者心房压迫食管向后移位，在后前位显示右缘心影呈重影，右心室增大，长期肺淤血病人，由于含铁血黄素增加肺野可出现点状阴影。 超声心动图检查，M超声见舒张期充盈速度下降，EF斜率下降，双峰形不明显，二尖瓣前叶、后叶在舒张期呈从属于前叶的同向运动。多普勒超声示缓慢而渐减的血流通过二尖瓣。3、二尖瓣关闭不全：X线检查，左心室扩大，肺动脉段突出，钡餐检查示右前斜位可见食管因左心房扩张而向后向右移位，左心室造影可见有二尖瓣返流。4、 主动脉瓣关闭不全：X线检查示左心室扩大，心影呈靴形。5．主动脉狭窄：心电图检查示左心肥厚及劳损。超声心动图检查，见主动脉瓣开放幅度减少，回声增厚，左心室后壁和室间隔肥 厚，二维超声心动图示主动脉瓣于收缩期呈向心性穹形运动。右心导管检查，在胸骨右缘第二肋间可听到一粗糙、响亮的收缩期杂音。6．三尖瓣关闭不全：查见右心房压较右心室压力高。超声心动图检查示右心室增大，室间隔呈从属于右 心室的运动即与左室后壁呈同向运动。多普勒超声可示右心房收缩期的返流血流。7．三尖瓣狭窄： 超声心动图检查示三尖瓣前叶于舒张期平斜型下降，EF斜率减小。心导管检查示右心房压力增高。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．二尖瓣狭窄&nbsp;&nbsp;应与先天性二尖瓣狭窄、左房粘液瘤、功能性二尖瓣狭窄相鉴别。<br>
+2．二尖瓣关闭不全&nbsp;&nbsp;应与先心病、二尖瓣乳头肌功能失调、二尖瓣脱垂综合征鉴别。<br>
+3．主动脉瓣关闭不全&nbsp;&nbsp;应与梅毒性主动脉瓣关闭不全、高血压和动脉粥样硬化、二叶式主动脉瓣、感染性心内膜炎、马凡综合征、先天性主动脉瓣关闭不全及夹层动脉瘤等鉴别。<br>
+4．主动脉狭窄&nbsp;&nbsp;主要与特发性肥厚性主动脉瓣下狭窄、主动脉瓣上狭窄相鉴别。<br>
+5．亚急性感染性心内膜炎&nbsp;&nbsp;多见于原有心脏瓣膜病变的病人，有进行性贫血、脾脏肿大、&nbsp;瘀斑、杵状指或栓塞现象。血培养阳性。<br>
+6.&nbsp;病毒性心肌炎&nbsp;&nbsp;为病毒感染引起的心肌炎，其原发感染的全身表现和心肌损害而出现的体征与心电图变化与风湿性心脏表现相似，而病毒性心肌炎的全身表现一般较轻，白细胞正常或降低，血沉不快，C反应蛋白多呈阴性，无心脏杂音。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">见具体病症。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">1．疾病初起，如积极治疗，病情尚可控制，愈后较好，如病人体质较弱，或治不及时，或治不彻底，疾病可进一步发展，损及关节及心脏，或疾病迁延，反复发作。
+2．慢性风心病病人以二尖瓣狭窄为主者，预后较好，其5年及10年生存率分别为80％和60％，若临床上无任何症状，可在20～30年内仍具有日常工作能力，一旦出现症状则往往于30～40岁死于顽固性充血性心力衰竭。有主动脉瓣病变者，预后较为严重，平均生存率为38％和20％。。如出现心绞痛、晕厥或心力衰竭，往往于3年内死亡。青年病人发生心绞痛常有猝死的危险性。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">风心病主要并发症有充血性心力衰竭、房颤、急性感染性心内膜炎、栓塞、急性肺水肿、肺部感染等。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．急性期治疗<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）抗生素：消除链球菌的潜藏感染，用青霉素80万～160万U／每日，肌肉注射，持续时间为10～14天。最好在风湿热第二年春季预防性治疗，肌肉注射同样剂量青霉素一周，或上呼吸道感染时（病毒感染除外），最少肌肉注射青霉素3～5天。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）抗风湿治疗：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①水杨酸制剂：单纯关节炎时，可选用此药。本类药有消炎、退热、止痛作用。常用的有阿司匹林，小儿100～150mg／kg，成人4～6g／日，分3～4次口服。控制症状或出现轻度毒性反应后，减少1／3用量，直到风湿活动停止2周后。对心功能不全、胃或十二指肠溃疡者，禁用水杨酸钠。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②皮质激素：本类药为免疫抑制剂，能降低组织反应性，控制炎症，但不能减少瓣膜病的发生。有心脏炎及高热或心功能不全时使用。常用的有地塞米松5～10mg，每天2～4次，氢化可的松200～400mg／日。直至风湿活动消失2～3周后方可减量或停用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③其它非激素类抗炎剂：常用的有消炎痛、风湿灵等，对发热、关节痛有效，水杨酸制剂不能耐受时亦可使用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．缓解期治疗&nbsp;&nbsp;慢性瓣膜病根治在于外科手术，在整个病变过程中，控制症状、改善心功能及适当地选择手术时机，是内科治疗的关键。心功能不全及房颤的治疗是慢性期治疗的两个主要问题。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）心功能不全：对于慢性二尖瓣狭窄、窦性心律的病人，若有轻度心功能不全，一般主张应用低钠饮食和利尿剂。洋地黄的应用应慎重，症状轻者，可不用，症状较严重者，可以应用，但剂量应小，防止中毒。在活动性心肌炎时，洋地黄应用更应小心，其心力衰竭往往由于急性心肌炎引起，应用激素治疗效果较好。近来有人主张，对于二尖瓣及主动脉瓣关闭不全，又有心功能不全的患者，加用血管扩张剂治疗有一定的效果。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）房颤：阵发性房颤首先应用洋地黄制剂治疗。对于新出现的房颤，未经复律治疗者，电复律为首选。如电复律后迅速回复为房颤者，则无必要多次反复电复律。慢性房颤病人除适当应用洋地黄制剂外，合并应用β受体阻滞剂。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．手术治疗&nbsp;&nbsp;慢性风湿性瓣膜病在病情稳定情况下，符合外科指征者，考虑手术治疗。二尖瓣分离术及人造瓣膜替换术、球囊导管瓣膜扩张成形术及瓣膜修复术等，据病变程度及性质不同，各有其适应证。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">急性期治疗：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）风热外袭：治疗原则：辛凉解表。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：银翘散（《温病条辨》）加减。用银花，连翘、竹叶、荆芥、牛蒡子、豆鼓、桔梗、&nbsp;甘草、芦根。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方中以银花、连翘为君，有辛凉透邪清热，芳香辟秽解毒之功；荆芥、豆鼓助君药开皮毛而透邪；牛子、桔梗宣肺利咽，甘草清热解毒；竹叶清上焦热；芦根清热生津。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减：若头胀痛较甚者，加桑叶、菊花清利头目。若咳嗽痰多者，加贝母、前胡、杏仁<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;化痰止咳：若咽喉红肿疼痛者，配土牛膝、元参解毒利咽。若热毒症状明显者，配大青叶、蒲公英等清热解毒。<br>
+（2）气虚感邪：治疗原则：益气解表，散风祛邪。<br>
+方药：参苏饮（《太平惠民和剂局方》）加减。用人参、苏叶、葛根、前胡、半夏、茯苓、&nbsp;&nbsp;陈皮、甘草、桔梗、枳壳、木香、羌活、独活。<br>
+&nbsp;&nbsp;&nbsp;方义分析：方中以人参、甘草、茯苓补气以祛邪；苏叶、葛根、前胡疏风解表，；半夏、枳壳、桔梗宣理肺气，化痰止咳；陈皮、木香理气和中；羌活、独活散风寒以祛邪。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减：若平素表虚自汗，易受风邪者，加防风。黄芪、煅牡蛎益气固表。若痰多者，加紫菀、杏仁化痰止咳。<br>
+（3）阴虚发热：治疗原则：滋阴解表。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：加减葳蕤汤（《通俗伤寒论》）化裁。用玉竹、生葱白、桔梗、白薇、淡豆鼓、苏薄荷、炙甘草、豨莶草、海桐皮、红枣。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方中以生葳蕤甘平柔润滋阴益液而资汗源；配生葱白、桔梗、淡豆鼓、苏薄荷解表宣肺，止咳利咽，为臣药；白薇凉血清热而除烦渴；炙甘草、红枣甘润滋脾。诸药配合，使滋阴清热而不碍解表，发汗解表而不伤阴气，故适用于阴虚而有风热表证之病人；豨莶草、海桐皮散风祛湿，通络止痛且药性不温，免燥伤阴之弊。<br>
+加减：若口干渴明显者，加沙参、麦冬以养阴生津。若热毒盛者，加公英、地丁、牡丹皮清热解毒。<br>
+（4）气阴两虚，余邪未清：治疗原则：益气养阴，清热解毒。<br>
+方药：生脉散（《内外伤辨惑论》）加减。用人参、麦冬、五味子、莲子芯、双花、连翘威灵仙、忍冬藤。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方中以人参大补元气，麦冬甘寒养阴生津，清虚热而止热，五味子酸收敛肺&nbsp;止汗；莲子芯清心火；双花、连翘清热解毒；威灵仙、忍冬藤通利关节。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减：若气虚明显者，加黄芪以加重补气之力量。若阴虚明显者，加用沙参、黄精等益&nbsp;气养阴。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;慢性期治疗：慢性期的治疗应为控制瓣膜病变的发展，增强机体抵抗力，预防链球菌感&nbsp;&nbsp;染，以避免风湿活动加重心脏瓣膜损害。慢性期：治疗原则：养心为主。<br>
+方药：心阴不足为主者，滋阴补血，养心安神，以天王补心丹（《摄生秘剖》）为主加减。<br>
+气阴两虚为主者，益气养阴，以生脉散（《内外伤辨惑论》）为主加减。<br>
+气血虚为主者，补气养血复脉，以炙甘草汤（《伤寒论》）为主加减，<br>
+&nbsp;心阳不振为主者，温实心阳，以拯阳理劳汤（《医宗必读》）为主加减。<br>
+食疗&nbsp;：<br>
+（1）大黑豆30g，小米90g，鸡蛋2枚，三味同煮至蛋熟，去壳再煮至粥熟，当晚饮食，服后以微汗出为妙。<br>
+（2）鲤鱼1条（约500g），去鳞及内脏，洗净、加入冬瓜250g、葱白5根，加水煎煮，不放盐食之，汤亦喝下。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">简易方治疗<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）老丝瓜1个，向日葵花盘10个，两味浓蒸取汁，用滚沸药汁冲生鸡蛋1枚，日一剂，<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不拘时。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）鲜冬瓜皮2009，煎汤代茶饮用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）大冬瓜一枚，切盖去瓤，以赤小豆填满；煨至火尽，取出切片，用豆焙干为末，水<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;糊为梧子大，每服70丸，煎冬子汤下，日服三服，小便利为度。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">体针：上肢取穴肩俞、曲池、合谷、臂臑、外关、中渚，阳池。下肢取穴环跳、风市、伏兔、梁丘，足三里、阳陵泉、昆仑、三阴交、照海、八髎。脊背取穴风池、天柱、大&nbsp;椎、身柱、命门、肺俞、脾俞。每次每组穴位选3～4个穴位，交替使用。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">急性风湿热引起的心脏炎时，应及时控制感染，抗风湿治疗，可配合中药以清热解毒、伴有气阴虚之象时，加用益气养阴中药。慢性风湿性心脏病阶段，据病情如符合手术指征，应外科手术治疗，出现心衰及房颤时，在洋地黄应用基础上，加用中药以活血、利水。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．预防风湿热发作&nbsp;&nbsp;风湿热者易反复发作，故迅速正确地治疗A族链球菌所致的感染，是预防风湿活动的有效方法。用青霉素或红霉素均可以防止风湿热发作，使心脏瓣膜不受损害。<br>
+2．长期预防&nbsp;&nbsp;对已有风湿性心脏病的患者，新近曾有急性风湿热发作者，或处于链球菌感染流行环境中，长期的预防方法是每月肌注120万U的苄星青霉素，预防期限不得少于5年。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">《内经》中类似本病的描述为:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;“脉痹不已，复感于邪，内舍于心”，发为心痹，又有“心痹者，脉不通，烦则心下鼓，暴上气而喘”等。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

@@ -1,0 +1,909 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">心脏神经官能症
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=心脏神经官能症"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">cardiac neurosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XINZANGSHENJINGGUANNENGZHENG
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:惊悸,怔忡,心痛。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">植物性神经疾病，循环系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">心脏神经官能症是神经官能症的一种特殊类型，以心血管系统功能失常为主要表现，可兼有神经官能症的其它表现。症状多种多样，时好时坏，临床上常有心悸、心前区疼痛、胸闷、气短、呼吸困难、头晕、失眠、多梦等症状。一般并无器质性心脏病证据，但可与器质性心脏病同时存在，或在后者的基础上发生。本症常与器质性心脏病的症状相混淆，并常影响到健康和劳动力。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">1．神经功能失调  不同个体的神经系统功能状态不同，对客观刺激的耐受程度也不同。同样环境或条件下，某些人较易发生神经功能失调，因而有易患神经官能症的倾向。精神因素在心脏神经官能症的发病上起重要作用，如焦虑、情绪激动、精神创伤或过度劳累均为常见诱因。也可由于患者缺乏对心脏病的认识，对某些生理性心血管功能改变或某些医学术语产生误解，或被错误地诊断为“心脏病”后，造成患者精神负担加重、紧张和焦虑而诱发本病。此外，由于器质性心脏病或重病后体力活动减少，循环系统缺乏适当锻炼以至稍事活动或少许劳累即不能适应或耐受者，也容易产生过度的心血管系统反应而致本病。
+2．β肾上腺素能受体功能亢进  此类患者多为年轻人，其对某些药物特别敏感，并常同时伴有高动力循环的表现，如左心室喷血速度增快，心排血量增加，动脉搏动增强和偶见的收缩压升高，此类病人对心得安等β受体阻滞剂反应良好，应用此类药物，常可使症状完全消失。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病的形成常与心胆气虚、肝郁气滞、心脾两虚、心阳不振、水饮内停、心血瘀阻等因素有关。除心脏本身气血阴阳失调外，还和肝、胆、脾、胃、肾的功能失调有关，而情志因素如精神刺激、事不遂愿或恼怒忿恨等是主要的诱发因素。
+1．心胆气虚  多发生于素体心胆虚怯之人，或大病久病之后，心气不足，子病及母，胆气亦怯；或肝胆气虚，木不生火，心气亦虚，皆可引起心胆两虚。
+2．心脾两虚  多因久病虚弱，或思虑过度，或劳倦太过，或饮食不节，损伤脾胃，脾气虚损，生化乏源，营血亏虚，不能上奉于心，以致心神不安发为本病。
+3. 阴虚火旺  久病体虚，疲劳过度，遗泄频繁，伤及肾阴；或肾水素亏，水不济火，虚火妄动，上扰心神而致本病。
+4．心阳不振  或因心气、心阴大伤，气虚可以及阳，阴损亦可及阳；或大病久病之后，阳气虚损，无以温养心脉，以致神不守舍，心悸不安。
+5．气滞血瘀  多为情志不舒，肝气郁滞，疏泄失职，胸阳不展，血脉失和，心血瘀阻，心神失养而发病。
+6．痰浊内阻  多因过食肥甘厚味和醇酒乳酪，损伤脾胃，脾虚无以运化水湿，湿聚成痰，痰浊内扰而发本病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">大多发生于青壮年，以20～40岁者最多，多见于女性，尤其是更年期的妇女。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病的中医病机主要涉及虚实两方面，虚力气、血、阴、阳的亏虚，导致心脏气血亏虚，心神失养；实则多为肝郁气滞，瘀血阻络，饮邪上泛，以致心脉不畅，心神失宁。总之，本病虚实之间常互相挟杂，互为因果，相兼为患。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">本病本身心血管系统无病理改变，与其它器质性心脏病并存或在器质性心脏病基础上发生者可见相应器质性心脏病的病理改变。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）实证：<br>
+&nbsp;①气滞血瘀：<br>
+&nbsp;&nbsp;&nbsp;证候：心悸不安，胸闷不适，心痛时作，痛有或无定处，时欲太息，遇情志不舒则发或疼痛加剧，舌质紫暗或有瘀斑，苔薄白，脉弦涩或结代。<br>
+&nbsp;&nbsp;&nbsp;证候分析：情志抑郁，气滞上焦，胸阳失展，血脉不和，故胸闷心痛，心悸不安，时欲太息；气行无着，故以气滞为主者常痛无定处；气滞日久，血瘀于胸，则常痛有定处，且均可因情绪波动而使得气机更加滞郁而加重诸证；舌质紫暗或有瘀斑，苔薄白，脉弦、涩或结代为血瘀气滞之征。<br>
+②痰浊内阻：<br>
+&nbsp;&nbsp;证候：心悸胸闷，脘腹痞满，眩晕，痰多，或恶心吐涎；食少，舌苔白腻或滑腻，脉弦滑。<br>
+&nbsp;&nbsp;证候分析：痰浊阻滞，上焦之气机不得宣畅，故见心胸痞闷胀满；中焦气机不畅，则食少腹胀；痰阻心包，则心神不宁，而见心悸；痰浊蒙蔽清阳故眩晕；胃失和降则见恶心吐涎；舌苔白腻或滑腻，脉弦滑为内有痰浊之象。<br>
+（2）虚证：<br>
+&nbsp;①心胆气虚：<br>
+&nbsp;&nbsp;&nbsp;证候：心悸，善惊易恐，坐卧不安，多梦易醒，恶闻声响，舌苔薄白，脉动数或虚弦。<br>
+&nbsp;&nbsp;&nbsp;证候分析：心虚则神摇不定，胆怯则善惊易恐，故心悸多梦而易醒；胆虚则易惊而气乱，故恶闻声响；舌苔薄白，脉动数或虚弦力气血逆乱之象。本型病情较轻者，心悸时发时止；重者则怔忡不宁，心慌神乱，不能自主。<br>
+②心脾两虚：<br>
+&nbsp;&nbsp;证候：心悸怔忡，面色不华，倦怠无力，头晕，腹胀便溏，少寐多梦，舌质淡红，苔薄白，脉细弱。<br>
+&nbsp;&nbsp;证候分析：心主血脉，其华在面，心脾两虚，心血不足，无以养心，故心悸怔忡、面色不华；不能上荣于脑，故头晕、少寐多梦；脾气亏虚则倦怠无力，腹胀便溏。舌淡红，苔薄白，脉细弱为心脾不足之象。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+③阴虚火旺：<br>
+&nbsp;&nbsp;证候：心悸不宁，心烦少寐，头晕目眩，手足心热，耳鸣腰酸，盗汗，口干，舌红少津，少苔或无苔，脉细数。<br>
+&nbsp;&nbsp;证候分析：心阴亏虚，心失所养，故心悸不宁；心阴不足，心火内生，故致心烦不寐，五心烦热；伤及肾阴，肾水不足，府窍失养，故腰酸耳鸣；虚火逼津外泄则盗汗；伤津耗液则口干少津；舌红少苔或无苔，脉细数为阴虚有热之象。<br>
+④心阳不振：<br>
+&nbsp;&nbsp;证候：心中空虚，惕惕而动，胸闷气短，形寒肢冷，面色苍白，舌质淡白，苔白滑，脉象虚弱或沉细。<br>
+&nbsp;&nbsp;证候分析：久病体虚，损伤心阳，心失温养，故心中空虚，惊惕不安；胸中阳气不足财胸闷气短；心阳虚衰，肢体失于温煦，故形寒肢冷，面色苍白。舌淡白，苔白滑，脉虚弱或沉细为心阳不足，鼓动无力之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">心脏神经官能症诊断标准:<br>
+1.本病诊断需慎重，必须首先除外甲状腺机能亢进、冠心病、心肌炎等器质性心脏病，以及慢性感染、药物影响等。<br>
+2.症状多种多样，可有心悸、心前区钝痛，疼痛部位多局限于心尖部附近，持续时间不定，疼痛常于劳累后休息时出现，非劳累后立即发生。常伴胸闷、气憋，喜做叹息样呼吸。此外，有头昏、失眠、多汗、易疲乏等一般神经官能症症状。<br>
+3.缺乏客观体征及实验室的阳性结果，患者血压易随情绪波动而轻微升高，心尖搏动较强而有力，心率稍快，熟睡时脉率正常，偶有期前收缩。心电图常有窦性心动过速，部分患者有非特异性ST段、T波改变。<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据上述心血管系统功能失调的症状，加上全身性神经官能症的表现，且经详细的全身和心血管方面的检查证实并无器质性心脏病的证据时，应考虑本病诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">症状繁多易变，时好时坏，反复发作，少数病人病程可达数年至十余年之久，除心血管系统的症状外，尚可有神经系统或其他系统的症状。本病症状常在受惊、情绪激动或久病后首次出现，入睡前、欲醒和刚醒时，以及情绪波动等状态下最易发作，过度劳累或情绪改变可使之加重。心血管系统最常见的症状是心悸、心
+前区疼痛、气短或过度换气；此外尚有乏力、头晕、失眠、焦虑等一般神经系统的症状。心悸是本病最常见的症状，患者能感觉到心跳、心前区搏动和心前区不适，运动后或情绪激动时症状更加明显；心前区疼痛的部位常不固定，以位于左前胸乳部或乳下者为多见，也可在胸骨下或右前胸，疼痛的性质不尽相同，大多为一过性刺痛，每次持续1秒至数秒，或呈持续性隐痛，发作可持续数小时或数天。体力活动当时常无心前区疼痛发作，但活动后或精神疲劳后，甚至休息时均可出现；气短主要是患者主观上感到空气不足、呼吸不畅，呼吸频率常不增快。屋内人多拥挤或通风较差的地方容易引起发作。喜叹长气，叹息样呼吸后便感舒适，长时间过度换气可致呼吸性碱中毒，伴四肢发麻、手足搐愵，头晕等表现。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">体格检查可无异常发现。患者可有焦虑和紧张，手掌及腋下多汗，两手颤抖，体温及血压有时略升高，心率增快，心音增强，心搏有力，可伴有胸骨左缘2、3肋间Ⅱ级左右的收缩期杂音，偶有过早搏动。心前区的肋骨、软组织及其表面皮肤可有压痛点。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">1、心电图
+    常有窦性心动过速，部分患者可见ST一T改变，其大多表现为ST段J点压低或水平样下移，和（或）T波低平、双相或倒置。ST一T改变主要局限于Ⅱ、Ⅲ、aVF或V4～V6导
+联，且较易改变，时而消失，时而加重。心率增快常使ST一T改变加重，而心率减慢时，ST一T改变可以完全恢复正常。
+2、心得安试验
+     心得安20mg，口服，一小时后查心电图，大多数本病患者的ST一T改变消失，恢复正常，为心得安试验阳性。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">运动负荷试验:双倍二级梯或活动平板运动负荷试验阳性者并不少见。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．甲状腺功能亢进&nbsp;&nbsp;多伴有甲状腺肿大，并常伴有血管杂音及震颤、多汗、多食、消瘦等，T3、T4&nbsp;及甲状腺131&nbsp;碘吸碘率增高。<br>
+2．嗜铬细胞瘤&nbsp;&nbsp;发作时除心率增快外大多伴有血压显著升高，尿中儿茶酚胺及其代谢产物增多，组织胺激发试验或酚妥拉明试验阳性。<br>
+3．冠心病心绞痛&nbsp;&nbsp;典型心绞痛多在体力活动的当时发作，部位大多固定，以胸骨后最常见，可放射至左肩和左臂。发作时有胸部紧束感，一般仅持续2～3分钟，常需停止活动或舌下含服硝酸甘油片才能中断发作，与心脏神经官能症的一过性刺痛或持续性隐痛且含服硝酸甘油片常无效不同。冠心病患者行心得安试验时ST一T改变大多不受影响，与心脏神经官能症不同。<br>
+4．病毒性心肌炎&nbsp;&nbsp;本病症状可与心脏神经官能症相似，但前者多于上呼吸道或肠道病毒感染后发病，血清相关病毒感染的抗体滴度增高，可资鉴别。<br>
+5．风湿性二尖瓣病及二尖瓣脱垂&nbsp;&nbsp;可有心悸，心前区第一心音增强和收缩期杂音，但二者有典型的超声心动图改变，不难鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈：治疗后症状消失，血压、心率、心电图恢复正常。<br>
+2.好转：治疗后症状改善，但心率仍较快或偶有期前收缩，有时心电图仍有非特异性ST、T改变。<br>
+
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病预后良好，但不正确地认识、对待本病，有可能影响患者的生活质量。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">本病的治疗原则与神经官能症相同。<br>
+一般患者不必卧床休息，但可根据病情轻重在治疗期适当减轻或调整工作，合理安排生活，适当参加体力活动，尤其应强调精神因素的调整，加强医患合作，充分做好疾病的解释、说明。<br>
+西药治疗：<br>
+1．小量镇静药&nbsp;&nbsp;安定5mg，每晚口服一次；利眠宁10mg，每晚口服一次。<br>
+2．植物神经调节剂谷维素10mg，口服，每日三次。<br>
+3．β受体阻滞剂心得安10～20mg，每日3～4次口服；倍他乐克25～50mg，口服，每日2～3次。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">辨证分型治疗<br>
+（1）实证：<br>
+&nbsp;&nbsp;①气滞血瘀：&nbsp;治法：活血化瘀，理气通络。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;方药：血府逐瘀汤加减。方中以当归、赤芍、川芎、桃仁、红花活血化瘀，柴胡、枳壳疏肝理气，调整气机，取气为血帅，气行则血行之意。若胸痛甚者，可配伍失笑散（蒲黄、五灵脂）或加用降香、郁金、延胡索、三七以加强活血止痛之力；以肝郁气滞为主者，可以选用柴胡疏肝散舒调气机。②痰浊内阻：&nbsp;治法：理气化痰，宁心安神。<br>
+&nbsp;&nbsp;方药：导痰汤加减。方中以半夏、陈皮理气化痰；茯苓健脾渗湿；枳实、南星行气除痰；甘草和中补土，方中可加炒枣仁、柏子仁、远志以养心安神。若痰浊郁久化热，痰热上扰，而见心神不宁，可选用温胆汤清热化痰，和胃降逆。<br>
+（2）虚证：<br>
+&nbsp;&nbsp;①心胆气虚：治法：益气养心，镇惊安神。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;方药：平补镇心丹加减。方中以人参、炙甘草、山药补益心气；生地、麦冬、天冬、当归补养心血；五味子收敛心气；肉桂配合上述诸药，有鼓舞气血生长之效；酸枣仁、茯神、远志养心安神；朱砂、龙齿镇惊定志。兼痰热上扰，头晕欲呕，心烦不安者，可加川连、胆星、半夏、竹茹以清热化痰；胆气虚怯，心神失养，彻夜不眠，头晕头痛者，加当归、丹参、白僵蚕、全蝎以补虚止痛；气虚不足，肢体乏力，自汗出者，加黄芪、防风、白术、浮小麦以益气固表。<br>
+②心脾两虚：治法：补益心神，益气养血。<br>
+&nbsp;&nbsp;方药：归脾汤加减。方中以人参、黄芪、白术、炙甘草益气健脾，以资生化之源；当归、龙眼肉补益心血；酸枣仁、远志养心安神；再辅以木香行气，使之补而不滞。如见心动悸，脉结代，力气虚血少，血不养心，可选用炙甘草汤益气养血，滋阴复脉；心血不足，心神不宁，心悸不安，善惊易恐明显者，可加煅龙骨、煅牡蛎、夜交藤以镇惊安神。<br>
+③阴虚火旺：&nbsp;治法：滋阴清火，养心安神。<br>
+&nbsp;&nbsp;方药：天王补心丹或朱砂安神丸。前者偏于补益，清心作用较弱，适宜于心气不足，阴虚内热者。方中以天冬、麦冬、玄参、生地养阴清热；当归、丹参补血养心；党参、茯苓补益心气；酸枣仁、柏子仁、五味子、远志养心安神；朱砂镇心安神；后者重在清热，滋阴作用不强，对阴虚不甚而心火内动者较为适合。方中以生地、当归滋阴养血；黄连清心泻热；朱砂镇心安神；甘草调合诸药。兼有五心烦热，梦遗腰酸者可用知柏地黄丸滋阴降火；心阴虚而神情焦虑，烦热不宁者，可酌加珍珠母、琥珀粉以镇静安神；盗汗较甚者，可加丹皮、地骨皮、浮小麦、糯稻根以收敛止汗。<br>
+④心阳不振：治法：温补心阳，安神定惊。<br>
+&nbsp;&nbsp;方药：桂枝甘草龙骨牡蛎汤加味。方中以桂枝、甘草温补心阳；龙骨、牡蛎安神定惊。可加人参、肉桂温阳益气。若病情进一步发展出现汗出肢冷，面色青紫，喘息不得平卧者，可冲服黑锡丹以回阳救逆。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）活心丸：4粒，每日三次，适用于心脉痹阻。<br>
+（2）麝香保心丸：2粒，每日三次，用于胸闷、心痛者。<br>
+（3）甘麦大枣汤：五味子10g、枣仁12g、麦冬20g、浮小麦30g、大枣30g、党参30g，水煎服，对心悸不安喜悲欲哭者有效。<br>
+（4）麻黄细辛汤：麻黄9g、桂枝8g、北细辛5g、炙甘草5g、制附片20g、补骨脂20g，用于心悸怔忡心动过缓。<br>
+（5）万年青根：成人用于品或鲜品30～40g，水煎成50ml，分三次服，用于心动过速型心悸。<br>
+（6）补骨脂：30g，水煎服，用于心动过缓型心悸。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1体针．&nbsp;&nbsp;取内关、神门、三阴交或心俞、巨阙、神门、内关，用泻法，留针15～30分钟，每日1次。<br>
+2．耳针&nbsp;&nbsp;取穴神门、心、交感、皮质下、小肠，可针刺，也可用王不留行籽贴敷。<br>
+3．气功疗法&nbsp;&nbsp;可调整大脑皮层功能，增强大脑皮层的抑制过程，调节神经系统功能，对本病有一定效果。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">保持心情愉快，避免情志刺激，注意劳逸结合，保证一定的休息和睡眠，避免外邪侵袭，注意饮食清淡。此外，本病治疗取效后，不宜立即停止治疗，否则容易引起复发，并加重患者的顾虑，甚至丧失信心，一般应维持治疗2～3月以上，以后可逐渐停药观察。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

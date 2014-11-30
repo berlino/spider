@@ -1,0 +1,968 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">疟疾
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=疟疾"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">malaria
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">NUEJI
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：正疟，温疟，寒疟，瘴症，劳疟，疟母，
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病，寄生虫病，
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">疟疾是疟原虫所引起的传染病，以间歇性寒战、高热、出汗和脾肿大、贫血等为临床特征。恶性疟有侵犯内脏引起凶险发作的倾向。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">病原:寄生人体的疟原虫有间日疟原虫、三日疟原虫、恶性疟原虫和卵形疟原虫4种，其生活史基本相同，分为无性生殖（或裂体增殖）与有性生殖（或孢子增殖）两个阶段，需要二个宿主，人为中间宿主，无性生殖全部在人体内进行，蚊为终末宿主，有性生殖小部分在人体红细胞内发育，大部分过程在雌性按蚊体内完成。1）疟原虫在人体内的发育：（1）红细胞外期：子孢子（sporozoite）随着按蚊唾液入人体血液后，经30分钟进入肝细 胞内发育行裂体增殖，生成不含色素的裂殖体（schozont）自感染后1周左右（间日疟原虫为8天，恶性疟原虫为5．5～6天，卵形疟原虫为9天，三日疟原虫为11～12天），裂殖体增殖形成数千至数万个裂殖子（merozoite），使肝细胞破裂、释放出大量裂殖子入血。一部分裂殖子被吞篮细胞吞食而消灭，一部分则侵入红细胞，开始红细胞内发育繁殖。
+（2）红细胞内期：可分为裂体增殖和配子体形成两个阶段。在红细胞内寄生的疟原虫可吞食细胞质，将其中的血红蛋白分解为血红蛋白和珠蛋白，血红蛋白不能被疟原虫所利用，存在疟原虫的细胞质内，即为疟色素。①裂体增殖：裂殖子侵入红细胞内发育成环状体或称小滋养体。进一步长大胞浆伸出不规则的伪足，称为大滋养体，最后核分裂，随着细胞质亦分裂形成许多裂殖子时称成熟裂殖体。裂殖子的数目，间日疟为12～24个，三日疟为6～12个，恶性疟为8～26个。被感染的红细胞破裂后，释放出全部裂殖子、疟色素和代谢产物，引起临床症状发作。血流中大部分裂殖子被吞噬细胞吞噬，一部分裂殖子侵入其它红细胞，重演其无性生殖。各种疟原虫在红细胞内裂体增殖周期长短不同：间日疟与卵形疟为48小时，三日疟72小时，恶性疟很不规则，为36～48小时，故临床上出现周期性发作。②配子体形成：疟原虫在红细胞内经过约5代裂体增殖后，部分裂殖子在红细胞内虫体逐渐增大，但也不分裂，发育成雌雄配子体。为疟原虫有性生殖的开始。2）疟原虫在蚊体内的发育：当按蚊叮吸疟疾病人或带虫者的血液时，各期疟原虫进入蚊胃，原虫无性体被消化、破坏，配子体则继续发育并进行配子生殖。在适宜的条件下，雄配子体伸出数条鞭毛状细丝，脱离母体在蚊胃中游动，成为雄配子，钻入雌配子体交配受精，形成合子。合子增长且能活动时称为动合子。动合子钻入蚊的胃壁外层发育为囊合子。囊合子经过10天左右发育成孢子囊，一外囊合子可含50个孑孢子，囊合子破裂后孑孢子散入蚊的体腔，最后集中于唾腺，一只蚊子的唾腺所含的孑孢子数可多达20万个，此时按蚊具有传染性。
+
+
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">疟疾病因复杂，且有其特殊性。疟疾因外感疟邪、疫瘴湿毒之气或风、寒，暑、湿之气，内则正气损伤而发病。如《疟论》云：“夫痎疟，皆生于风”，内经《生气通天论》言：“夏伤于暑，秋必痎疟”。疟疾发病，往往有几种病因相合）,如《疟论》谓：“夏伤于大暑，其汗大出，腠理开发，因遇夏气凄沧水寒，藏于腠理皮肤之中，秋伤于风，则病成矣”，即暑、寒、湿、风几种病因相加，从夏持至秋乃发病。疟邪为疟疾主因，《内经》称为疟气，如《疟论》言“疟气随经络以内薄”，“疟气者，必更盛更虚，当气之所在也”。疟疾之特殊性，一是与其它外感六淫不同，二具有传染性、地域性，如明·李挺《医学入门》云“疫疟一方，长幼相似”，“疫疟”是陈无择首先提出的；巢氏《病源》记载“此病生于岭南。由瘴湿毒气所致”。在病程中，一些病理产物易加重病情。与疟邪相合成为致病之因。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">全年均可发病，以夏秋季为多。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">疟原虫只在热带和亚热带的按蚊体内过冬。疟疾广泛流行于热带、亚热带和温带地区。我国地处亚热带和温带，各地疟疾流行程度相差悬殊，除寒冷的西南高原、西北及北部的干燥沙漠区，东北的山区和西北的黄土高原外，均有疟疾流行。其中以间日疟最多，恶性疟次之。三日疟仅在南方山区呈散在性分布，卵形疟少见。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">初生婴儿不论在疟区或非疟区，对疟原虫普遍易感，无免疫力的外来人员（包括旅游者、民工等）也易感染疟原虫。疟区居民，随免疫力逐渐提高，易感性相对降低。这种免疫力可暂时低下，如孕妇（特别初孕妇）、长期离疟区者以及接受免疫抑制剂治疗者。反复感染产生的免疫有细胞免疫和体液免疫2种。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">（1）传染源：疟疾病人和无症状的带虫者是唯一的传染源。雌性按蚊为传播媒介。疟原虫只在热带和亚热带的按蚊体内过冬。血中带配子体者对按蚊有传染性，配子体在血中的寿命较长，尤其恶性疟可长达数周。配子体的传染性与其数量，成熟程度和雌雄比例有关。
+（2）传染途径：我国较重要的传疟按蚊有4种，①中华按蚊，是平原地带。间日疟的主要传播媒介。②微小按蚊，是国内南方及台湾省山区的主要传播媒介。③雷氏按蚊，是长江中下游及南方低山丘陵地区传播媒介。④巴拉巴按蚊，是海南岛山林地区的传播媒介。此外，暗斑按蚊是新疆南部的主要传播媒介。传播媒介的嗜血习性、种群数量和寿命是直接影响传播过程的三个因素。输入带疟原虫者血或使用被疟原虫污染的注射器也可感染上疟疾。疟原虫也可通过破损胎盘传给胎儿，但较少见。
+
+
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">据WHO 1992年统计，世界上每年有1．2亿人发病，3亿人为疟原虫携带者，全世界约40％的人生活在疟区，每年有200万人死于该病，单非洲每年就有80万儿童因疟疾而死亡。中国疟疾发病率已大幅度降低（年发率约0．03％）。解放后，经过积极防治，并随着社会经济逐渐发展，疟疾发病率和死亡率已大幅度降低。1994年全国疟疾发病率为5．292／10万，死亡43人、疟疾流行最严重的是海南、云南2省；其中海南、云南、广东、四川4省发病率占全国疫情报告总病例数的67．56％。农村发病率较城市高。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">疟原虫在人红细胞内进行裂体增殖后使红细胞破裂，释放出大量裂殖子及疟原虫的各种代谢产物入血，使体温调节中枢功能失调出现典型寒战、高热，继而大汗出，此即为疟疾的发作。上述物质中相当一部分被巨噬细胞及多形核细胞吞噬，未被吞噬的裂殖体再侵入其它红细胞，发作停止。因4种疟原虫裂殖体成熟时间不一，故4种疟原虫所致疟疾发作时间随之而异。
+疟原虫寄生于红细胞内，且大量破坏红细胞，故病程中有进行性贫血。恶性疟原虫繁殖迅速，而且侵犯各期年龄的红细胞，短期内大量红细胞被破坏，因此贫血明显，甚至很严重；间日疟原虫常侵犯网织红细胞，三日疟多侵犯衰老的红细胞，且红细胞受侵率约1％～2％，故贫血轻。此外，疟疾病人脾脏吞噬红细胞功能增强，也是引起贫血原因之一。
+①裂体增殖：裂殖子侵入红细胞内发育成环状体或称小滋养体。进一步长大胞浆伸出不规则的伪足，称为大滋养体，最后核分裂，随着细胞质亦分裂形成许多裂殖子时称成熟裂殖体。裂殖子的数目，间日疟为12～24个，三日疟为6～12个，恶性疟为8～26个。被感染的红细胞破裂后，释放出全部裂殖子、疟色素和代谢产物，引起临床症状发作。血流中大部分裂殖子被吞噬细胞吞噬，一部分裂殖子侵入其它红细胞，重演其无性生殖。各种疟原虫在红细胞内裂体增殖周期长短不同：间日疟与卵形疟为48小时，三日疟72小时，恶性疟很不规则，为36～48小时，故临床上出现周期性发作。
+②配子体形成：疟原虫在红细胞内经过约5代裂体增殖后，部分裂殖子在红细胞内虫体
+  逐渐增大，但也不分裂，发育成雌雄配子体。为疟原虫有性生殖的开始。
+
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">疟疾的发生是由于疟邪、瘴毒侵入人体，兼感风、寒、暑、湿时令邪气，或复加饮食劳倦等诱发。疟疾发病病邪伏藏、发病与阴阳相移、卫气流行有关，邪伏于半表半里，出入营卫之间，正邪交争则发作；正邪相离，疟邪伏藏，不与营卫相争，则寒热休止。发作时，邪入营阴相争，则见恶寒，疟邪与阳相搏，则表现为高热，正胜邪退，病邪伏藏，则汗出，寒热休止。疟邪在三阳病位浅，则发作日早，邪舍三阴病位深，则发作日迟，故有一日一发，二 日一发，三日一发之不同。
+疟疾证候表现异同，则与兼感时令邪气不同及患者体质差异密切相关。感受疟邪，未兼 感时令邪气，则表现为正疟（即典型发作）。若素体阳盛，感受暑邪，则表现为温疟；若感受 瘴毒则致瘴疟，湿毒从热化发为热瘴，若素体阳虚，湿毒从寒化发为冷瘴；素体阳虚感受寒邪，则形成寒疟，兼感湿邪，则引起湿疟。若疟疾久而不已，气血方耗，正虚邪恋，则成久 疟即劳疟、虚疟，若血瘀痰凝，肋下结块，则形成疟母。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">主要病理改变为脾脏肿大、肝肿大、脑部及其它器官粘膜充血变性等。脾肿大：发生变化较早，脾充血水肿，髓内有含疟原虫的红细胞，吞噬细胞内可见疟原虫及疟色素。慢性疟疾脾肿大显著且质硬，包膜增厚，髓内网状组织呈弥漫性增生和纤维化脾窦扩张，髓内见多数大单核细胞。 肝脏肿大：肝仅轻度肿大。肝细胞可有混浊肿胀与变性，以小叶中心为甚：星状细胞大量增生，内含疟原虫和疟色素，重者可阻塞血窦引起循环障碍，出现散在性坏死灶。慢性疟疾者汇管区出现结缔组织增生，经久不愈者发生肝硬化。 脑部变化。多见恶性疟疾的脑型病人，软脑膜充血，脑毛细血管充血，血管内充满疟原虫及疟色素。含疟原虫的红细胞常凝集成血栓，阻塞微血管引起局灶性坏死，坏死灶周围出现血带，形成疟疾肉芽肿等。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">（1）红细胞外期（红外期）：子孢子随雌性按蚊的唾液注入人体，在30min内陆续侵入肝实质细胞进行裂体增殖，在肝细胞内的原虫逐渐发育为不含色素的裂殖体。自感染后1周左右（间日疟原虫为8d,恶性疟原虫为6d、卵圆疟原虫为9d，三日疟原虫为11-12d），肝细胞内的裂殖体发育成熟，其中裂殖子大量逸出而进入血循环，  一部分被巨噬细胞吞噬，一部分侵入红细胞。目前认为，子孢子在遗传学上有速发型和迟发型两种类型，前者入侵肝细胞后于1周左右迅速发育，产生大量裂殖子人血；后者进入肝细胞内经过不同时期的静止期，然后被激活发育为成熟的裂殖体，后一种子孢子也称为"休眠子"。
+（2）红细胞内期（红内期）：红外期所产生的裂殖子进入红细胞后成为早期的小滋养体（环状体），逐渐发育成大滋养体，然后成为裂殖体。裂殖体成熟后裂殖子逸出红细胞。一部分被巨噬细胞吞噬，一部分可再侵入正常红细胞，重演其无性生殖。此期原虫不再回到肝实质细胞内发育。经过数次裂体增殖后，部分裂殖子在红细    胞内逐渐发育成雌、雄（大、小）配子体。恶性疟原虫的裂体增殖后期在内脏微血管内进行，外周血液仅见环状体和配子体。
+（3）孢子增殖期：当雌性按蚊吸入疟疾患者血液，疟原虫随血液进入蚊胃后，雌、雄配子体可在蚊胃中继续发育。雌雄配子交配成为圆形的合子，合子很快发育成动合子。动合子穿过蚊胃壁的上皮细胞，在胃壁上皮细胞和外层弹性纤维膜之间发育成卵囊，在卵囊内经孢子增殖形成许多梭状子孢子。经过10多天孢子囊成熟，数以   千万计的子孢子从囊壁逸出，经过蚊体腔到达唾腺，此时按蚊具传染性。
+
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1．证型<br>
+（1）正疟：寒战壮热、休作有时。发病前呵欠乏力，继则寒战鼓颔，寒去后则内外皆热，&nbsp;头痛面赤，烦渴冷饮，然后全身大汗，热退身凉，神倦嗜卧。日作或间日而作。舌质红，舌苔薄白或黄腻，脉弦数或滑数。<br>
+（2）温疟：热多寒少，或但热不寒，汗出不畅，骨节烦疼，口渴引饮，头痛时呕，大便秘结，小便红赤，舌质红，苔黄，脉弦数或弦细数。<br>
+（3）寒疟：寒甚热微，或但寒不热，口不渴或渴喜热饮，胸胁痞满，神疲肢倦。苔白腻，&nbsp;脉弦迟。<br>
+（4）瘴症：瘴疟分为热瘴与冷瘴，其重证有闭证与脱证；<br>
+&nbsp;&nbsp;①热瘴：热甚寒微，或壮热不寒，头身烦疼，面红目赤，烦渴喜冷饮，胸闷呕吐，便秘尿赤，舌质红绛，苔黄腻或垢黑，脉洪数或弦数。其闭证见袜昏谵语，或抽搐，颈项强直，脉洪数；脱证见昏迷不醒，汗出淋漓，唇舌干红，脉虚数无力、<br>
+&nbsp;&nbsp;②冷瘴。寒甚热微，或但寒不热。汗多肢冷，皮肤唇甲苍白或发育，或有呕吐腹泻。苔白腻，脉弦细无力。其闭证见神昏不语，神志痴呆，面色晦暗，舌淡苔腻，脉沉缓；脱证见昏迷不醒，目合口开，手撒肢厥，汗出淋漓，二便自遗。舌淡，脉微欲绝。<br>
+（5）劳疟：疟久不愈，或差后复发，或小劳即发，寒热时作，倦怠乏力，面色不华，食少自汗，形体消瘦，舌淡，脉细无力。<br>
+（6）疟母：疟疾久发，面色萎黄，体倦乏力，肋下有结块，扪之有形，舌紫暗或瘀斑，脉&nbsp;细涩。<br>
+2.&nbsp;辨证要点本病辨证要点有三，一辨寒热，寒热往来发有定时，寒热过后，大汗淋漓<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为正症（即疟疾典型发作）；热多寒少，或但热而渴者为温疟；寒甚热微，或但寒无汗者为寒疟。二辨明病因，疟疾主要是感受疟邪，瘴毒所致，但亦可有风、寒、暑、湿诸邪侵入机体，形成各种夹杂证候。三辨正邪虚实，疟久不愈，气血方耗，正虚邪恋，遇劳则作，名为劳疟；若形癥块，则称疟母。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1.&nbsp;诊断标准<br>
+（1）有蚊季节旅居流行区，2年内有过疟疾发作或周内有输血史。<br>
+（2）周期性寒颤一高热一大汗发作，间日或3日发作1次。发作间隙无症状，发作数次后脾大。&nbsp;恶性疟疾热型不规则，可有超高热脑症状、休克等。<br>
+（3）白细胞减少，大单核细胞增多，红细胞内查见疟原虫。必要时采骨髓，查见疟原虫。<br>
+ 2．判定具备第（1）、（2）、（3）项可确诊。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">流行季节居住疫区或去过疫区的发热患者，以及输血后1-2周发热者均须考虑疟疾的可能。有疟疾往史当出现发热时亦应考虑本病的可能。周期性发作（发冷、发热、出汗）和症状消失为临床诊断的主要依据，脾肿大和口唇疱疹的出现也有助于诊断。血涂片中找到疟原虫，可以确诊。恶性疟在外周血内可见到环状体和配子体，而其余三种疟疾则可查见各个阶段的疟原虫。恶性疟以发作时查血最为合适，因间歇期多数原虫进入内脏毛细血管，其余3种疟疾在发作或间歇期均可查到疟原虫。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">疟疾的临床发作是疟原虫在红细胞内裂体增殖所引起，寄生在人体的疟原虫有间日疟原虫（Plasmodium  virax）、三日疟原虫（P．malaria）、恶性疟原虫（P. falciparum）和卵圆疟原虫（P.ovale）等4种，其生活史基本相同。可分为无性生殖（裂体增殖）与有性生殖（孢子增殖）两个阶段，即所谓"世代交替"。 无性生殖全部在人体内进行，有性生殖除小部分在人体红细胞内发育外，大部分在雌性按蚊体内完成，即所谓"宿主交替"。疟疾潜伏期，间日疟与卵形疟为10～17天，间日疟长潜伏期可达8～10个月）三日疟 20～28天，恶性疟9～17天。输血感染多数7～10天。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">典型发作分为三个阶段。
+（1）发冷期：先觉发冷，肌肉关节酸痛，继后有极度寒战，犹如严冬掉进冰水中，面色苍白，唇甲发绀，肢体厥冷，鸡皮样皮肤，持续半小时至1小时。
+        （2）发热期：寒战停止后继以高热，面色潮红，体温可达39～41℃，伴头痛、口渴、脉搏快，呼吸急促，持续2～6小时。
+        （3）出汗期：高热后患者突发全身大汗淋漓，体温骤降，恢复常温，除感到疲乏外，顿感全身轻松，常安然入睡，此时期持续2～3小时。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">典型发作可分为前驱期、发冷期、发热期与出汗期。 4种疟疾发作的症状大体相似：①前驱期：有疲乏、头痛、全身酸痛、厌食、畏寒和低热等。②发冷期：持续约数分钟至一二小时，呈寒战状态，先感四肢及背部发冷，逐渐波及全身，颜面苍白、唇甲发绀、肢体厥冷、鸡皮样皮肤等，常伴头痛、呕吐、恶心、体温迅速上升。③发热期：寒战停止后继以高热，脸色潮红，体温可达39-41℃。病者烦躁不安，重者可出现谵妄，此期一般为时4-8h。④出汗期：高热后突发全身大汗，体温骤然下降，病者除疲劳外，顿感轻松，安然入睡，此期约持续2-3h。此后视原虫虫种不同而呈现不同周期的间歇性发作。起病后3-4d，脾脏开始肿大，初期质软，有压痛，随着发作次数增加，脾肿大更为显著，质地变硬。肝肿大发生在脾肿大之后，程度较轻，肝功能试验大多正常。数次发作后可出现贫血，尤以恶性疟为著。<br>
+非典型发作&nbsp;&nbsp;&nbsp;缺乏周期性发作的临床过程，常见于：①同种疟原虫的二重或三重感染&nbsp;每日发作。②不同种疟原虫混合感染，可出现不规则热型。③疟疾病程后期，免疫力增强，出<br>
+&nbsp;&nbsp;&nbsp;&nbsp;现不典型症状，呈不规则热型。&nbsp; 3．间日疟与三日疟的临床特征&nbsp;&nbsp;间日疟和三日疟又称良性疟，其裂体繁殖均在外周血液中，血片可查到发育期的各种形态。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHO现将间日疟分为三个类型，我国都存在。第一型间日疟潜伏期12～20天，复发频<br>
+繁；第二型潜伏期短，但初发与第一次复发之间长达7～13个月，复发高峰在春季；第三型<br>
+潜伏期长，常在6个月以上，初发后有一连串间歇短的复发，流行季节无疟疾病史，次年春<br>
+&nbsp;季出现临床发作。间日疟初发时有先兆症状，起病缓慢，发热不高，起始3～5天呈弛张热型，&nbsp;后转为间日发作的间歇型，发热常持续1～2个月。<br>
+三日疟每隔72小时发作一次，发作症状与间日疟相似。常见于晚秋和初冬。自然病程可长达数月甚至数年。三日疟现在少见。<br>
+卵形疟与间日疟相似，每48小时寒热发作一次，症状较间日疟轻。二重、三重感染少见。<br>
+ 4．恶性疟的特征&nbsp;&nbsp;&nbsp;恶性疟临床症状较复杂多样变化，早期常有畏寒、乏力、恶心、呕吐、<br>
+头痛、肌痛、烦渴等症状较明显，热型不规则，每日或隔日间歇，但无明显的缓解间歇，热<br>
+后汗出较少。重症患者可出现凶险发作。<br>
+5．凶险发作&nbsp;&nbsp;凶险发作是指疟原虫所引起的特别严重的临床表现，主要见于重症恶性疟，<br>
+&nbsp;偶见间日疟。<br>
+（1）脑型：重症疟疾中脑型疟最易引起死亡，约占恶性疟住院病例的10％和死亡数的<br>
+ 80％。以儿童及外来人员为多见。成人脑型疟常在发热和其他非特异性症状出现数天后才发<br>
+&nbsp;生，儿童则常见于发病后两天以内。先有发冷高热，剧烈头痛、呕吐，继而谵妄，昏迷常在<br>
+&nbsp;全身抽搐后开始。少数病人可有精神错乱、狂躁等。可见颈项强直，肌腱反射亢进，全腹壁<br>
+反射阴性，脑膜刺激征及病理反射常为阳性。脑型疟昏迷还需与癫痫发作后一过性昏迷相区<br>
+&nbsp;别。<br>
+（2）胃肠型：临床表现类似急性胃肠炎，常见恶心、呕吐、水泻日可达数十次，甚至造<br>
+&nbsp;成脱水。还有些病例仅有下腹部剧烈疼痛，伴呕吐而无腹泻，类似急腹症。病情重者可出现<br>
+&nbsp;休克。<br>
+（3）肺型：常见于恶性疟病程第5天左右，表现为急性肺水肿而致急性呼吸衰竭，在此<br>
+症出现之前均有脑、肾并发症，出现昏迷、抽搐、尿毒症表现。WHO认为肺水肿是致死表现，<br>
+&nbsp;其中部分病例已证明是由于输液过多；高原虫血症、肾衰竭及妊娠有促进作用。<br>
+（4）寒冷型：体温低、出冷汗、发绀、昏迷与抽搐，血压低，1～5岁儿童收缩压＜6．67kPa&nbsp;（50mmHg），成人＜9．33kPa&nbsp;&nbsp;（70mmHg）。WHO认为首先要迅速找出原因，如脱水或内出血&nbsp;（胃肠道出血）、肺水肿或败血症。如肾功能无障碍，要想到肺、尿路、注射部位的感染。要排除低血糖。<br>
+（5）过高热型：体温达42℃，呼吸深快，昏迷、抽搐。可于数小时内死亡。WHO认为儿&nbsp;童高热抽搐时，还应除外低血糖。<br>
+&nbsp;<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">1．多次发作后脾脏明显肿大，质地硬有压痛，甚至出现自发性脾破裂。
+ 2．肝脏轻度肿大，有轻度压痛，可伴黄疸。
+ 3．疟疾反复发作或凶险发作后出现轻度、中度贫血，甚至重度贫血。
+  4．鼻唇部可有单纯性疱疹。
+  5. 凶险发作出现相应体征。
+
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">在疟疾多次发作或重症恶性疟病程中血细胞压积或血红蛋白呈进行性降低。急性发作时白细胞数与中性粒细胞偶见增高；重症者如中性白细胞增高，预后不良：慢性疟疾白细胞多正常或降低，大单核细胞增多。若有出血倾向时要查出凝血时、纤维蛋白原、抗凝血酶Ⅲ、三P 试验及血小板。
+血气分析及生化动脉血pH＜7．25，或血浆重碳酸盐浓度＜15mol／L提示有酸中毒。查K+、Na+、Cl一、BUN、glu，注意电解质平衡，尤其是全血葡萄糖低。
+肝功能：血清胆红素增高,尿胆原亦增高，1周内恢复正常。少数病人转氨酶略升高。恢复期血清白蛋白降低，球蛋白升高。
+血中查到疟原虫是确诊的最可靠依据。
+1．外周血涂片查疟原虫  一般在发冷期及发作6小时内，血内疟原虫较多，易检出。一般采用薄血片与厚血片检查方法、厚血片阳性率较高，是薄血片阳性率的10倍，但不易鉴别原虫形态，故鉴定虫种则需薄血片，尤其注意不同种疟原虫混合感染。
+2．浓缩法注射器盛2％枸橼酸钠注0．1ml，静脉取血1ml，以1000～1500转离心5～10分钟，吸取红白交界处血液，制作厚、薄血片之张，染色镜检。
+3．骨髓穿刺法取骨髓制薄血片染色镜检，检出率较高。
+4．荧光素吖啶橙染色法  薄血片先用甲醇固定后，或厚血片加荧光素染色液覆盖血片，2分钟后加盖玻片，在较暗环境中用荧光显微镜（5×40镜头）检查。原虫核质DNA呈明亮的黄绿色荧光，原虫胞浆RNA呈橙红色荧光。用高倍物镜观察，效率增加，与普法比较提高42％，但不能看到疟色素。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">必要时查脑脊液。
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">近年来疟疾免疫诊断进展较快，其中间接荧光抗体试验、间接红细胞凝集试验、酶联免疫吸附试验等较为常用，但均在发病后1周才出现阳性，且可持续数月至2年，故仅作为回顾性诊断、流行病学调查和防治效果考核的辅助检查。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">症状不典型的疟疾病例须与伤寒、败血症、钩端螺旋体病、流行性感冒、布氏杆菌病、丝虫病等鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准：<br>
+ 1．体温正常，症状消失，一般健康状况改善。<br>
+ 2．肝脾回缩。<br>
+ 3．血象恢复正常。贫血纠正，球蛋白回降，球蛋白试验转阴，白／球蛋白比值趋于正常。<br>
+ 4．原虫消失。骨髓或肝脾穿刺吸出物涂片检查及培养均转阴性。<br>
+ 5．治疗结束后随访半年无复发。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">疟疾治疗以抗疟药为主。常用的抗疟药分两类：一类对红内期无性虫体有杀灭作用，称为裂殖体杀灭剂，另一类对孢子体有杀灭作用，称为配子体杀灭剂。前者如氯喹（奎宁等4-氨基喹啉类药物）；后者如伯氨喹（简称伯喹）等8-氨基喹啉类药物。氯喹口服吸收完全，体内代谢与排泄较慢，成人药剂1g，第2、3d后各0．5g，一般用药后1-2d内发作停止。重硫酸奎宁疗效不及氯喹，吸取、&nbsp;排泄快，维持时间短，目前主要用于抗氯喹的疟原虫感染；剂量为第1日0.4g，每日3次，第2日0.36g，每日3次,连用7d。孕妇、视神经乳头炎患者、对奎宁过敏者等忌用。咯萘啶（pyronaridine）为中国首创的抗疟药，疗效优于氯喹，口服总量1.2g（基质），第1日0.4g,每日2&nbsp;次,第2日0.4g，副作用轻微。伯喹可在服用上述药物的同时或治疗结束后给予，起根治作用。磷酸伯喹每片含基质7.5mg，成人每日1次，每次4片，连服4d副作用一般较轻，极少数特异质者可出现发绀和急性溶血性贫血，&nbsp;可能属遗传性生化缺陷病，一旦发生，应立即停药。<br>
+某些地区疟原虫对氯喹、乙胺嘧啶有耐药性，尤以恶性疟为多。耐药性的产生可能与大规模长期预防用药和用量不足有关。奎宁配伍乙胺嘧啶、磺胺药与甲氧苄啶（甲氧苄氨嘧啶）合用均可一试。甲氟喹（mefloquine，4-喹啉甲醇类）1一1.5g顿服可获较好疗效。磷酸咯萘啶口服亦可。青蒿素为中国从黄花蒿中提取的奏效快的裂殖体杀灭剂，有较好疗效。适用于耐氯喹虫株的感染;3d内服药总量3-5g无明显副作用。<br>
+
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1．辨证施治<br>
+（1）正疟:&nbsp;治以和解少阳，解表达邪。常用小柴胡汤加入常山、草果、槟榔。小柴胡汤&nbsp;是和解少阳的代表方，柴胡、黄芩二味透达少阳之邪，清少阳之热；半夏燥湿化痰：甘草和中，姜、枣调和营卫；病初起不必过早用党参。常山、草果、槟榔截疟。<br>
+加减：若表实恶寒甚而汗少者，加桂枝、羌活、防风，以解表发汗；胸脘满闷，湿邪偏盛，加苍术、厚朴，以燥湿除满；口渴热盛，加知母、葛根，或加青蒿；或用蒿嗪清胆汤（青蒿、黄嗪、竹叶、半夏、枳壳、陈皮、赤苓、碧玉散）。重症可用清脾饮《济生方》青皮、厚朴、草果、白术、柴胡、黄嗪、半夏、茯苓、甘草、生姜。<br>
+（2）温疟，治以清热解表，和解祛邪。常用白虎加桂枝汤加减。方中石膏、知母祛热生津，甘草、粳米和中益胃以保津，桂枝解表，疏风散寒。加入青蒿、柴胡以透解少阳症邪。<br>
+&nbsp;加减：若但热不寒，口渴引饮，用白虎加人参汤（石膏、知母、粳米、甘草、人参），以清热益气生津：若热盛伤津，加玉竹、麦冬。石斛、天花粉，以润燥救阴，若系热羁留，阴液大伤、邪入阴分，舌光绛而干，加鳖甲、生地、知母、丹皮、或加入青蒿鳖甲汤（青蒿、鳖甲、知母、丹皮、生地），以滋阴搜邪；若胸闷泛恶、尿黄、舌红苔腻带黄，加黄连、黄柏、滑石、茯苓，以清热化湿；若兼痰多者，加枳实、栝篓仁、陈皮，以理气祛痰。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）寒疟：治以辛温达邪，散寒除湿。常用柴胡桂姜汤加减。方中柴胡、桂枝和解散寒；干姜、甘草辛温散寒除湿；黄芩、栝篓根、牡蛎清热解渴。合用草果、常山以截疟。<br>
+加减：若汗出不畅去牡蛎；若脘痞腹胀，苔白厚腻,重用草果以燥湿，加入厚朴、槟榔、&nbsp;藿香，共奏化湿除满；若畏寒较重，或泛吐痰涎，加附子以扶阳；若脾虚生湿，汗出神疲者，加入人参、白术、茯苓、炙甘草，以益健脾。此外,千金鲮鲤汤（穿山甲、乌贼骨、附子、常山）可合用，以截疟邪而扶阳。<br>
+（4）瘴疟：<br>
+①热瘴：治以辟秽除瘴，泻热保津。常用清瘴汤加减。药用柴胡、炒常山、生石膏、枳实、黄芩、青蒿、竹茹、半夏、陈皮、茯苓、知母、六一散（甘草、滑石）、黄连、朱砂。方中黄芩、黄连苦寒清热，且可燥湿；甘草、滑石甘寒清热:生石膏、知母，清热保津；柴胡、常山、青蒿，和解退热截疟；陈皮、半夏、茯苓、竹茹、枳实，理气消痰，辟秽化浊；朱砂宁心，尚能解毒。<br>
+加减：若热盛伤津，舌质深绛，加生地、玄参、石斛、栝篓根，养阴生津；若大便秘结，加生大黄、元明粉，以通腑泄热。<br>
+②冷瘴：治以芳香化浊，辟秽理气，常用方加味不换金正散加减。方中藿香、佩兰、陈皮、菖蒲、荷叶等芳香药，以辟秽化浊醒肠；厚朴、苍术、半夏、草果、甘草、槟榔，化湿和中、截疟。<br>
+加减：若痰湿重者加茯苓、莱菔子，白芥子，并重用陈皮、半夏；若中阳不振加大建中汤《金匮要略》（川椒、干姜、人参、饴糖）；若四肢厥冷加四逆汤。<br>
+③重证治法：常用开窍通关和扶正固脱两法。<br>
+开窍通关法治疗由热瘴引起的热闭和冷瘴引起的浊闭。热闭治以清心开窍，泄热护阴。清心开窍常用凉开三宝：至宝丹、安宫牛黄丸、紫雪丹；亦可用清营汤（《温病条辨》犀角、生地黄、玄参、麦门冬、金银花、丹参、连翘、黄连、竹叶心）加菖蒲、郁金。常用泄热护阴药物有黄连、黄芩、黄柏、生地、玄参、麦冬、银花、连翘、羚羊角。<br>
+针剂清开灵及醒脑静。<br>
+浊闭治以泄浊开窍，温阳化湿。常用右归饮《景岳全书》（熟地、山萸肉、杞子、山药、杜仲、菟丝子、附子、肉桂、当归、鹿角胶）煎汤送服苏合香丸，泻下法是危急重症的急救&nbsp;方法之一，根据上病下取，通其下窍，下窍通，上窍自利，只要有大便秘结或无大便均可下之。热闭用寒下法，可用生大黄10g水煎剂100～150ml；冷却后灌肠或鼻胃管灌入，阳明腑实证明显者用大承气汤（《伤寒论》大黄、厚朴、枳实、芒硝）煎汤鼻胃管灌入；浊闭用温<br>
+下法，可用熟大黄6～9g、肉桂等量，用沸水90ml浸泡，分3次饮服，温阳通腑，使肠道内宿垢污积排出为准；急者可用开塞露下之，且不伤正气。<br>
+扶正法适用于脱证。由热瘴所致热闭转化为亡阴者，治以救阴敛阳为主。方药首选生脉散加龙骨。牡蛎、黄精、萸肉。若出现虚阳浮越，面红足冷，方用地黄饮子（《宣明论》生地黄、巴戟天、山萸肉、石斛、肉苁蓉、五味子、肉桂、茯苓、麦冬、炮附子、石菖蒲、远志、生姜、大枣、薄荷）。若热闭与亡阴互见（内闭外脱），方用生脉散（人参、麦冬、五味子）加味调服至宝定。由浊闭转化为亡阳者，治以回阳救逆。首选参附汤（人参。附子）服用，或静脉滴注参附注射液。冷瘴所致内闭外脱怔，可选用参附汤加龙骨、牡蛎、菖蒲，调服苏合香丸。<br>
+&nbsp;（5）劳疟：治以益气和营，扶正祛邪。常用方何人饮加减。方中人参、当归、何首乌补气养血；陈皮、生姜行气和中、调和营卫。加酒炒常山，酒炒知母，以截疟祛邪。或用四兽饮（人参、白术、陈皮、法夏、草果、乌梅、生姜、大枣）。<br>
+（6）疟母：治以软坚散结，化痰消瘀。方剂用《金匮要略》中鳖甲煎丸方。方中重用鳖甲软坚散结，配合桃仁、大黄、蜣螂、ZHE虫活血化瘀；鼠妇、丹皮、紫葳、蜂房和血通络；人参、阿胶、桂枝、芍药调和营卫气血；乌扇（射干）、葶苈、瞿麦、石苇利尿通络；厚朴、干姜理气；半夏、赤硝化浊；以黄芩，柴胡直引少阳之枢，和解半表半里之疟邪。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）中成药及其针剂&nbsp;&nbsp;<br>
+①紫雪丹：功能清热解毒，止痉开窍。适用于疟疾热闭证。口服或鼻胃管灌入，每次3～&nbsp; 6g。&nbsp;<br>
+②至宝丹：功能清心开窍。适用于疟疾热闭证，或神昏谵语。口服，一次2g。&nbsp;&nbsp;③安宫牛黄丸：功能清热解毒，醒神开窍。口服，每次1丸。<br>
+④苏合香丸：功能开窍醒神，行气止痛。适用于疟疾浊闭证。口服；每次1～2粒。<br>
+⑤人参生脉饮：功能益气养阴。适用于疟疾热闭转为亡阴者。口服，每次10～20ml，一日2～3次。注射生脉饮60～100ml加入5％葡萄糖100～200ml静滴，一日1次，必要时可重复用。<br>
+⑥&nbsp;参附注射液：功能回阳益气固脱。适用于疟疾浊闭转为亡阳者，60～100m1加入5％葡萄糖100～200ml稀释后静点，一日1次，必要时加量且可重复用药。<br>
+⑦&nbsp;清开灵注射液：功能清热化痰、祛瘀通络、醒神开窍。适用于疟疾热闭证，或神昏谵语。口服，20ml日3～4次；静脉滴注60～80ml加5％葡萄糖250～500ml，每日1～2次。<br>
+&nbsp;⑧&nbsp;醒脑静：功能醒神开窍、止痉。用于疟疾神昏谵语、抽搐。5％葡萄糖250～500ml加&nbsp;醒脑静10～20ml静滴，一日1次，必要时可重复。<br>
+（2）单、偏、验方：<br>
+①青蒿30g，或鲜青蒿枝叶90～120g,水煎。于发作前2小时服，连服三日，用于截疟。<br>
+②鸦胆子去壳取仁，装入胶囊或直接吞服（勿咬破），每次服10粒，每日3次，连服7天，有截疟之效。<br>
+③马兰30g、白糖20g,用沸水冲泡，发病前半小时服用，治疟疾寒热症。<br>
+④蜂蜜20g，白酒稍温热，冲入蜂蜜内调匀，在疟疾发作前半小时服用，发作当日连服3&nbsp;次。有清热解毒功能、治疟疾。<br>
+&nbsp;⑤白矾1．5g，胡椒0.3g研细，用发酵面和为丸，发作前3小时顿服。治寒性疟疾。<br>
+⑥新鲜鸡蛋3个，陈醋120g，将蛋打碎调匀，和陈醋置砂锅内煎开，冷后顿服。补虚损，理气血。治疟疾。<br>
+⑦&nbsp;斑蝥或蜘蛛少许用纸包住塞鼻可截间日疟；或桃叶7片、胡椒7粒研碎成团，或辣椒根15g、洗净捣碎如泥糊，发作前2小时药团敷患者腕桡动脉处，祛风杀虫，治疗疟疾；胡椒15粒研细末，置于胶布中央，贴大椎穴上，敷贴1周，症状消失后再更换贴7日。治间日疟。青蒿素（黄蒿素）：本品为我国创新。系从青蒿中提取的一种含过氧基团的倍半萜内酯，其结构超越现有抗疟药范围，为一种高效、速效的抗疟药，主要作用于疟原虫的红内期，用于间日疟。恶性疟特别是抢救脑型疟有良效，其退热时间及疟原虫转阴时间都较氯喹短，对氯喹有抗药性的疟原虫，用本品亦有效。对间日疟的近期复发较氯喹高20％～30％，与伯氨喹合用复燃率降至10％左右。原虫血症于48小时内可被清除。片剂每片100mg，首剂1g，第&nbsp;&nbsp;&nbsp; 2、3天各0．5g。青蒿素水混悬剂，每毫升含100mg，首剂肌注600mg，第2、3天各300mg。蒿甲醚为青蒿素衍生物，保持了青蒿素速效、低毒的优点，而且制剂稳定，油剂每毫升含蒿&nbsp;&nbsp;&nbsp;&nbsp;甲醚100mg，首次肌注300mg，第2、3天各150mg。副作用较小。青蒿素：每片100mg，首剂1g，第2、3日各0.5g.
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">针灸是中医重要组成部分。经络内属脏腑，外络肢节，沟通于脏腑与体表之间，将人体脏腑、组织器官联系成为一个有机的整体；并借以行气血、营阴阳，使人体各部的功能活动得以保持协调和相对平衡。当机体患病时；经络在病理情况下，有反应病候和指导辨证的作用。通过行针、放血、灸法、耳针，以泻实补虚，达到阴阳平衡。<br>
+1.&nbsp;宣通阳气，祛邪解表，治疟疾。<br>
+主穴大椎、陶道，配穴后溪、间使。大椎是手足三阳经与督脉之会，可宣通诸阳之气而祛邪，为治疟要穴。陶道为督脉之穴，主治疟疾热病、头痛等。后溪是太阳经的输穴通于督脉，能宣发太阳与督脉之气祛邪外出。间使属于厥阴经，为治疟的验方效穴。四穴同用，可奏通阳祛邪之效。若热盛，用三棱针点刺商阳、关冲之穴，商阳为手阳明经井穴，关冲为手少阳经井穴，点刺出血，以清泄热邪。&nbsp;耳针&nbsp;&nbsp;取脑、屏间、下屏尖、肝、脾。在发作前1～2小时针刺，留针20～30分钟，连续针3天。<br>
+2.&nbsp;平肝息风，清热豁痰，开窍启闭，治疟疾闭证。<br>
+取穴水沟、十二井、太冲、丰隆、劳宫。针刺或三棱针点刺放血。取十二井穴或水沟，点刺放血，有开闭泄热、醒脑开窍的作用；泻太冲以平肝息风；丰隆为足阳明胃经的别络穴，以宣通脾胃二经之气机，蠲化浊痰。劳宫泻之以清心泄热。<br>
+3．醒脑开窍，回阳救逆，治疟疾脱证。<br>
+取关元、神阈（隔盐灸）。任脉为阴脉之海，关元为任脉与足三阴经之会穴，为三焦元气所出，联系命门真阳，为阴中含阳的穴位，元阳外脱，取之以救阳。神阀位于脐中，为真气所系，故用大艾柱重炙二穴，可回垂绝之阳。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．控制传染源对疟疾病人和带虫者应彻底治疗。在疟疾流行区对休止期病人应进行抗&nbsp;复发治疗，一般在春季或流行高峰前1个月进行。凡两年内有疟疾病史,血中查到疟原虫或脾肿大者应进行治疗。常用乙胺嘧啶或氯喹与伯氨喹啉联合治疗。伯氨喹啉每片含基质 7．5mg，总量120mg&nbsp;&nbsp;（16片），每日4片顿服，连服4日，加氯喹，每片含基质0．15g，总是 0．6g&nbsp;&nbsp;（4片），第1日顿服4片；或加乙胺嘧啶，每片含基质6．25mg，总量100mg&nbsp;&nbsp;（16片），第1、2日各服8片。<br>
+&nbsp;&nbsp; 2.&nbsp;灭蚊&nbsp;&nbsp;采用各种措施消灭蚊虫，消灭蚊子孽生场所；用化学药物杀灭幼虫和成虫。利&nbsp;用自然天敌和致病性的寄生虫消灭蚊虫，如用柳条鱼、食蚊索科线虫消灭蚴虫；用空肠直菌&nbsp;使蚊虫染病死亡。释放”Co辐照不育雄蚊与自然界雌蚊交配；产生不育后代，达到灭种的目的。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．保护易感者大力宣传防蚊意义，提高人民自我保健意识，使人认识到使用蚊帐，减少人蚊接触是不感染疟疾的有效方法。室内喷洒杀蚊剂，使用驱蚊香。在皮肤暴露部位涂擦&nbsp;驱蚊剂， 1990年沙盾牌战斗中，美军使用缓释驱虫皮肤洗液与长效作战驱避剂合用，有效地防止蚊虫传播疟疾。我国南方在地区内用菊酯类杀虫剂处理蚊帐也取得防蚊的很好效果。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．预防用药进入疟疾流行区或高疟区的易感者，包括旅游者，应服预防药。可服哌喹<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基质0．6g，或防疟片3号4片，每20～30日服1次；或乙胺嘧啶片1次，每半月服1次（或氯喹2片，每周服：次；或甲氟喹每周服180mg，或每2周服260mg等。在疟区接受输血者，可眼氯喹每日1片，连服3～5日。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5．免疫预防研究了近50年的疟原虫死疫苗及射线减毒的疟原虫活疫苗免疫效果不佳。&nbsp;某些地区疟原虫对氯喹、乙胺嘧啶有耐药性，尤以恶性疟为多。耐药性的产生可能与大规模长期预防用药和用量不足有关。奎宁配伍乙胺嘧啶、磺胺药与甲氧苄啶（甲氧苄氨嘧啶）合用均可一试。甲氟喹（mefloquine，4-喹啉甲醇类）1一1.5g顿服可获较好疗效。磷酸咯萘啶口服亦可。青蒿素为中国从黄花蒿中提取的奏效快的裂殖体杀灭剂，有较好疗效。适用于耐氯喹虫株的感染;3d内服药总量3-5g无明显副作用。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">中医古籍早在《黄帝内经》就列有《疟论》、《刺疟论》专篇，对疟疾作了较系统的论述，《内经》始称“疟”，《金匮要略》称疟病，《太平圣惠方》始称“疟疾”。疟疾，以寒热休作有时，病情残酷肆虐得名，如姚止庵云：“疟者……最为暴疟，故病名疟也”。《疟论》云：“疟之始发也，先起于毫毛，伸欠乃作，寒栗鼓颌，腰脊俱病，寒去则内外皆热，头痛如破，渴欲冷饮”，并提出寒疟、温疟、瘅疟。《刺疟论》有足六经之疟和五脏之疟：即肺疟心疟、肝疟、脾疟、肾疟及胃疟、胆疟、膀胱疟。内经《生气通天论》提出风疟。仲景《金匮要略》疟病篇提出瘅疟、温疟、牝疟、疟母。隋·巢元方《诸病源候论》中疟病诸候凡十四论记载风疟、痰实疟、劳疟、久疟、间日疟等。清·雷少逸《在时病论》中立有风疟、寒疟、温疟、瘅疟、牝疟、痰疟、食疟、疫疟、鬼疟、虚疟、劳疟、疟母、三日疟等十余种病名。当代一般将疟疾分为6个证型：正疟、温疟（瘅疟）、寒疟（牝疟）、瘴疟（疫疟）、劳疟与疟母。在治疗上神农本草经最早记载抗疟药常山。“主治伤寒，寒热温疟鬼毒，胸中痰结吐逆”；明《金匮要略》记有“蜀漆散”治疟疾；宋《太平惠民和剂局方》载有“常山饮”治疟疾，以后有常山为主的“截疟七宝饮”；晋·葛洪《肘后备方》记有单味青蒿绞汁服用治“寒热诸疟”，以及李时珍用青蒿治“疟疾寒热”等。常用截疟药物有蜀漆（常山叶）、常山、青蒿、槟榔、马鞭草、草果、鸦胆子等。70年代我国从青蒿中研制成功高效速效低毒抗疟新药——青蒿素，是抗疟史上继喹啉类药物之后的又一突破，治恶性疟优于氯喹，且对耐氯喹疟原虫有效，以及青蒿素衍生物蒿甲醚，均已广泛用于临床。当代中医在诊治疟疾上是辨病与辨证相结合的典范，辨病疟疾是由疟邪所致一种传染病，辨证是辨疟疾兼感不同的时令邪气及患者体质差异形成的不同证候群；施治则是在辨病前提下，针对病因祛邪截疟，在辨证基础上根据证型行理法方药。疟疾是一种典型时间性病证，截疟是其特点，即在将发之先（发病前2小时），阴阳未并之时，行针、放血、施药，可获事半功倍之效，符合《内经》“避实击虚”（即实者，邪盛或正虚；虚者，邪虚或正盛）的治疗思想。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

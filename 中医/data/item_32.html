@@ -1,0 +1,903 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">华支睾吸虫病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=华支睾吸虫病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">clonorchiosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">HUAZHIGAOXICHONGBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">肝吸虫病。中医：虫积，积证，虫臌（虫胀，蛊胀，蛊），虫证。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">寄生虫病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">华支睾吸虫主要寄生在人体的肝胆管内，引起华支睾吸虫病（肝吸虫病）。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">以胁痛，腹痛，食少，黄疸，胁下痞块，检查获肝虫（华支睾吸虫）卵为主要表现的寄生虫病。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">华支睾吸虫成虫体扁平，半透明，柔软，前端较窄，后端钝圆，外形似葵花籽。活时橙红色，死后灰白色。寄生在人体的成虫大小与虫体数量有关，寄生的虫数越多则虫越小。一般为10～25mm×3～5mm。口吸盘略大于腹吸盘，位于虫体的前端。腹吸盘位于虫体前近1／5 处。雄性生殖器官有睾丸一对，前后排列。雌性生殖器官有卵巢一个，细小，分叶，约在虫体中、后1／3交界处。子宫从卵膜开始盘绕而上，达腹吸盘水平，然后开口于生殖腔。虫卵：外形似芝麻籽，棕褐色，大小平均30μm×15μm，为人体寄生虫卵中最小的。从粪便中排出时，卵内已含有毛蚴。毛蚴：呈卵形，前端钝圆，后端较尖，大小约32μm×17μm，表皮有许多纤毛。囊蚴：圆形或椭圆形，平均大小为0．138mm×0．115mm，除末端外，表皮均有小棘。成虫主要寄生在人、犬、猫和猪等的肝脏、胆管内，虫数目多时，也可寄生在胆囊内、胰腺管内。虫卵随宿主胆汁进入小肠，然后随粪便排出体外。虫卵入水，毛蚴不孵出。进入水中为淡水螺（第一中间宿主），吞食后才能在螺体内孵出毛蚴，并发育成为胞蚴、雷蚴，最后形成大量尾蚴逸出螺体。尾蚴在水中遇到以鲤科为主的淡水鱼（第二中间宿主）及虾，侵入其体内形成囊蚴而传染人及其他动物，也就是人或犬、猫、猪等哺乳动物吃生鱼、虾或半生的鱼及虾后，鱼、虾肉中囊蚴后而发病。从感染囊蚴至成虫成熟排卵，大约需要一个月左右时间。成虫寿命约为20～30年
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">华支睾吸虫病的中医病因，认为虫邪侵袭人体，内舍于肝，肝失条达，肝郁乘脾，脾失健运，而临床上出现食欲低下。疲劳感、无力、脘闷不适、胁部满闷、腹胀便溏、消瘦、舌淡苔白、脉弦弱等肝脾不和的证候。肝郁、脾虚日久，必致气血运行不畅，瘀结胁下，则可见肝肿大的积证；若肝郁虫积，损伤肝之阴血，而出现胁痛、头痛、头昏、耳鸣、失眠、消瘦、倦怠无力、舌嫩红、苔薄、脉弦弱等肝阴不足之证。若病情日渐加重，不易好转时，出现肝不疏泄，脾阳不振，水湿内停，腹部日渐胀大，成为膨胀；部分患者，因虫积肝郁化火，加之脾不健运，湿浊内生，郁湿化热，而临床上出现胁痛、寒热往来、脘痞厌食、身肢倦重、黄疸、便溏、舌苔黄腻、脉滑数等湿热内郁证。华支睾吸虫病的病因在于虫积肝郁为本，脾虚为标，证候表现虚实并见，或虚多实少，或实多虚少，或虚实并重。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">分布限于亚洲的日本、朝鲜、东南亚国家、印度和中国。中国除西北地区外，有广东、河南、上海、广西、台湾、四川、湖北、云南等23个省、市、自治区有本病流行。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">华支睾吸虫的成虫，除寄生在人体外,还广泛地在家养及野生的哺乳类动物中寄生，如犬、猫、狐狸、野猫、獾、水獭及鼠类等。任何食鱼的哺乳动物，均有感染的可能性。我国部分地区华支睾吸虫保虫宿主最多的动物是猫、犬、猪等，它们是人类此病的重要传染源。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">人或猫狗等贮存宿主进食含有活囊蚴的淡水鱼、虾后，幼虫在十二指肠脱囊而出，成为童虫。童虫循胆总管、肝胆管至肝内胆管分支内寄生，在少数病例童虫还可进入胰管。亦有认为童虫可通过血管或穿过肠壁到达腹腔进入肝脏内胆管。约1个月后童虫发育成熟为成虫产卵。
+华支睾吸虫主要寄生在人体肝脏里中等大小的胆管内，也可在总胆管、胆囊、胰腺管、十 二指肠和胃内。病变主要发生在肝内胆小管，因虫体机械性阻塞，胆汁郁积而呈圆柱，或囊状扩张。成虫移行到总胆管或胆囊内造成梗阻和炎症，出现急性胆囊炎和胆管炎。并容易招致继发性细菌感染。在胆囊内的虫卵、死亡的虫体及其碎片、脱落的胆管组织等，有可能形成结石核心，产生胆石症。由于长期胆汁淤滞，也可发生胆汁性肝硬化。华支睾吸虫可诱发胆管上皮细胞的增生而导致癌变，主要为腺癌。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">根据脏腑学说可知，祖国医学所论之的肝与西医在解剖学上无异，如《医学入门》所说：“肝之系者，自膈下着右胁肋，上贯膈入肺，中与膈膜相连也”。但对其生理功能认识有所差别。西医所论肝脏，属消化系统。而从中医角度来认识，肝主疏泄而助脾之健运，主要是脾主运化。华支睾吸虫病是一系列脾虚不运之证，也有胁部不适、头痛、头昏、失眠等肝郁的 症状。因此，本病病位不单在于肝，更重要在于脾，从脏腑辨证而论，应属肝脾同病而以脾病为主之证，本病的病因病机是，湿热邪气外袭内蕴于脾胃与肝胆所致。若患者脾气本虚，或邪郁日久伤脾气，或肝郁日久横逆乘脾，可导致脾气虚亏，而病情迁延，久治不愈，也就是 脾虚之证。若脾虚不运，可致湿浊内生，湿邪日久则可化热；或气血运行失畅，而致瘀血内留；或气血生化之源不足，阳损及阴，而致肝阴不足；或脾虚及肾，而致脾肾两虚。临床上可出现各种相应的兼挟证候。肝虫病是进食未熟而含有肝虫（华支睾吸虫）幼虫的鱼虾之后，肝虫寄生于肝内胆道，湿热虫毒蕴结，肝胆疏泄失常。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">重度感染者胆管内壁上皮细胞有脱落和增生，管壁因结缔组织增生而变厚，并有大量腺体增殖，邻近的肝细胞有脂肪性变、萎缩和坏死现象，慢性患者的炎症性变化减低，而代之结缔组织增生。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">中医认为华支睾吸虫病是肝主疏泄而助脾之健运，主要是脾主运化。从脏腑辩证而论，&nbsp;应属肝脾同病而以脾病为主之证，是湿热邪气外袭内蕴于脾胃与肝胆所致
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">诊断标准：①在流行地区生活或去过流行地区，有生食或未煮熟食淡水鱼、虾史。②临床特点是：患者无症状或有食欲不振、胃部不适、消化不良、腹胀、腹泻等，病情严重者常有慢性胆管炎、胆囊炎症状，可有肝脏肿大、黄疸、肝功能异常。重复感染及迁延未治&nbsp;者，可发展到肝硬化。③患者嗜酸性细胞轻、中等度增加。④患者粪便或十二指肠引流胆汁中找到华支睾吸虫卵。⑤免疫学检查：如皮内试验、间接血凝试验、免疫电泳以及补体结合试验等，有辅助诊断价值。<br>
+<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">（一）临床表现
+     １．有生食或进食未经煮熟之鱼虾史。
+２．多起病缓慢，脘腹胀痛，胁痛不适，腹泻，或往来寒热，饮食减少，或神疲乏力，头晕，形体消瘦。
+３．轻度皮肤、巩膜发黄，右胁下有痞块，触之疼痛.
+（二）实验室检查
+        1．外周血象中嗜酸粒细胞轻度或中度增加，可达10％～40％。
+        2．多数患者的肝功能试验在正常范围内，仅有少数严重感染者肝功能异常。
+        3．免疫学检查，如皮内试验、补体结合试验、间接血凝试验和酶标记免疫吸附试验等免
+    疫学诊断方法，在临床上可作为辅助诊断的方法。
+        4．虫卵检查。华支睾吸虫虫卵小，容易漏检，粪便直接涂片法也易于漏检，采用集卵法，
+    提高检出率，如水洗沉淀集卵法或氢氧化钠消化法。另外，十二指肠引流液中也可检出虫卵。
+    华支睾吸虫卵易与异形类吸虫卵相混淆。由于二者虫卵在形态、大小极为相似，往往易造成 误诊，故应加以鉴别。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期不易确定，一般约为1～2个月，轻者常无症状，仅在大便中发现虫卵。感染严重有明显的营养不良，若是儿童则往往影响发育，出现智力迟钝等。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">1．胃肠炎型 2．肝炎型3．肝硬化型 4．营养不良型5．胆囊胆管炎型 6. 类侏儒型，以上症状见体征栏。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">根据临床表现分为以下6种临床类型：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．胃肠炎型&nbsp;&nbsp;患者出现食欲不振、乏力、胃部不适、消化不良、腹胀、腹痛和腹泻，大便每日4～5次，但无脓血便、肝脏肿大、贫血、消瘦等。患者胃肠道钡餐检查，无阳性所见。胃镜检查时，往往无异常所见。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．肝炎型&nbsp;&nbsp;患者出现全身无力、头昏、失眠、食欲不振、下肢酸软、胸闷、肝区隐痛等症状。患者常有肝脏肿大，轻度压痛和叩击痛，少数患者脾脏也有轻微肿大。化验室检查呈&nbsp;现血清转氨酶活力轻度或中度增高，血清白蛋白降低或正常。如果患者病情时间短，症状不严重时，往往容易误诊为肝炎。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．肝硬化型&nbsp;&nbsp;严重感染的患者，可出现食欲减退、恶心呕吐、疲倦乏力、腹泻等，而且，发生率较高。其原因可能是由于肠道水肿、脂肪吸收不良以及华支睾吸虫寄生等所导致。患者还可出现程度不同的腹痛、神经、精神症状。并能出现腹水、浮肿、黄疸、食管静脉曲张、脾功能亢进、消瘦、体重减轻等。化验室检查可见血清转氨酶活力增高、血清白蛋白减低等。此型患者的临床表现极似于门静脉性肝硬化。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．营养不良型&nbsp;&nbsp;患者出现消瘦、水肿、舌光滑、指甲苍白、皮肤粗糙、贫血、多发性神经炎、口角炎等。患者血浆蛋白减少，肝功能减退。此型发病后，病情较重，治疗效果欠佳，预后较差。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5．胆囊胆管炎型&nbsp;&nbsp;患者有轻重不一的腹胀、上腹或右上腹部不适、持续性钝痛或右肩胛区疼痛、胃灼热、嗳气等消化不良症状，有时则出现不规则低热或高热，常伴发胆囊炎或胆石症。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.&nbsp;类侏儒型&nbsp;&nbsp;此型多发生在严重感染的儿童，表现为发育障碍，体型均匀性矮小，身高体重明显低于同龄正常儿童，超过半数病儿的身高和（或）体重低于正常20％以上，缺少第二性征，成年后不能生育等。成年人生殖功能也同样减退，例如男性的睾丸萎缩与阳萎，女性的月经紊乱、腋毛及阴毛均减少等。内分泌机能发生紊乱。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">肝脏肿大、轻度压痛和叩击痛，少数患者脾脏也有轻微肿大，贫血、，肝硬化型出现腹水、浮肿、黄疸、食管静脉曲张、脾功能亢进、消瘦、体重减轻等。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">1．多数患者的肝功能试验在正常范围内，仅有少数严重感染者肝功能异常。2.十二指肠引流液中也可检出虫卵。免疫学检查成虫抗原皮内试验阳性率达９５％，抗体酶联免疫吸附（ＥＬ１ＳＡ）双夹心法阳性。粪便或十二指肠引流于胆汁中可找到肝虫（华支睾吸虫）虫卵。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">外周血象中嗜酸粒细胞轻度或中度增加，可达10％～40％。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">虫卵检查。华支睾吸虫虫卵小，容易漏检，粪便直接涂片法也易于漏检，采用集卵法，提高检出率，如水洗沉淀集卵法或氢氧化钠消化法。
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">皮内试验、补体结合试验、间接血凝试验和酶标记免疫吸附试验等免疫学诊断方法，在临床上可作为辅助诊断的方法。
+
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．病毒性肝炎&nbsp;&nbsp;病毒性肝炎患者常有与此病患者密切接触史，而无进食未煮熟的淡水鱼史。病毒性无黄疸型肝炎患者较为多见，约占全部甲型肝炎患者的80％以上，其临床症状不显著，起病多缓慢，主要症状有食欲不振、恶心、腹胀、肝区不适或隐痛、肝脏肿大、症状和体征，与黄疸型肝炎患者相仿，肝功能轻度损害。各型肝炎抗原、抗体检测可呈阳性，粪便检查无华支睾吸虫卵。<br>
+2.&nbsp;原发性肝癌&nbsp;&nbsp;原发性肝癌起病隐袭，患者早期症状往往不明显和缺乏特异性。患者主要症状以食欲减退、消瘦、乏力、肝区不适等为最多见。本病进展迅速。患者肝脏肿大、肝脏坚硬、表面不规则有大小不等的结节。同时，出现黄疸或急剧产生腹水，甲胎蛋白试验多为阳性。超声波和同位素扫描可协助诊断。肝脏穿刺取活组织检查，可以确定肝癌的诊断。患者粪便检查无华支睾吸虫卵。由此，可以确诊为肝癌。<br>
+3．肝硬化&nbsp;&nbsp;其他病因引起的肝硬化，应与华支睾吸虫引起的肝硬化进行鉴别。其他病引起的肝硬化，无去流行地区史，无食生鱼、虾史，患者粪便及十二指肠引流液中找不到华支&nbsp;睾吸虫卵，华支睾吸虫免疫学检查呈阴性反应，也有辅助诊断价值。其他原因引起的肝硬化亦可引起肝脏肿大，如慢性肝炎、原发性肝癌、肝脂肪浸润等。脾肿大，尤其是特发性门静脉高压需与华支睾吸虫病鉴别，其病理为：肝内窦前性门静脉纤维化与压力增高，临床表现为脾肿大、贫血、白细胞与血小板减少、胃肠道反复出血等。其他原因所致的腹水症，特别是充血性心力衰竭、缩窄性心包炎、肾病、结核性腹膜炎、腹膜癌肿及卵巢癌等疾病所致的腹水需与华支晕吸虫病进行鉴别。<br>
+4．肝片形吸虫病&nbsp;&nbsp;肝片吸虫病是牛、羊的寄生虫病，人同样也会受到感染。人食用含有该虫囊蚴的水生植物或被囊蚴污染的生水而被感染。此病的临床症状与华支睾吸虫病类似，常出现梗阻性黄疸和胆道出血。粪便中查到虫卵可明确诊断。<br>
+5．其他吸虫&nbsp;&nbsp;异形吸虫、猫后睾吸虫以及横川后殖吸虫的虫卵均同华支睾吸虫卵相似，
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">１．肝热病：常有较为明显的黄疸，肝功能明显异常，粪便或十二指肠引流液中找不到肝虫卵，病毒性肝炎抗原、抗体系统检测可明确诊断。<br>
+２．肝癌：右胁下痛较著，肝肿大可触及结节或肿块，血甲胎蛋白含量明显增高，同位素扫描或ＣＴ检查有助于诊断。
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈：<br>
+1.症状消失，体征消失或基本消失。<br>
+2.大便浓缩集卵3次阴性，十二指肠引流胆汁内查虫卵阴性。<br>
+3.治疗结束后6个月及1年复查大便浓缩集卵法3次及十二指肠引流查胆汁均无虫卵。<br>
+
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">早期发现、早期确诊的轻症患者，经特效药物治疗后，预后良好。重复感染并病情严重者，经特效药物反复治疗后，病情好转，也可得到良好的效果。重症患者已发展到肝硬化阶段者，经特效药物及支持疗法之后，一般情况和肝脏病变均可获得明显好转。华支睾吸虫病合并病毒性肝炎时，因病毒性肝炎症状重，病情复杂，病程迁延，也无特效疗法，因此，病情逐渐恶化，虽用治疗华支睾吸虫病的特效药物治疗，其效果往往不理想，患者的全身症状及肝功能异常状况不易恢复到正常水平，预后较差。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">1.急性胆囊炎、和胆管炎胆石症。2.胆汁性肝硬化。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．吡喹酮（praziquantel）吡喹酮对治疗华支睾吸虫病有良好的疗效，为本病治疗的首选药物。患者用吡喹酮治疗后，病情明显的好转，粪便虫卵减少率近100％；用药剂量较大者，粪便虫卵阴转率多在90％以上。吡喹酮具有代谢快的药代动力学的特点，适当增加每次剂量，一日3次给药，可以提高疗效。国内有用120mg／kg治疗中、重度感染者，第一天服75mg／kg，第二天服45mg／kg，分3次口服（每次剂量为25mg／kg，&nbsp; 15mg／kg），4个月后虫卵阴转率达 91．7％（醛醚法）。国外采用25mg／kg／次，2日疗法（总剂量150mg／kg），治疗虫卵阴转率为100％。国内曾采用总剂量180mg/kg与210mg／kg 5天疗法（每日3次，每次12mg／kg、14mg／kg，间隔4个小时），治疗3日后粪便检查（醛醚法）虫卵的阴转率分别为93.9％与100％。根据大量临床治疗效果分析，吡喹酮的近期和远期疗效与六氯对二甲苯相仿。目前认为，无论感染轻重，适当剂量用吡喹酮，均可获得满意疗效。吡喹酮治疗本病的用药剂量虽然比血吸虫病大，但副作用并不严重，一般反应于服药后1～2小时出现，24小时后减轻或消失。副作用的发生于剂量有关，其发生率虽高，但程度均&nbsp;轻，持续时间短暂，无迟延反应，病人均能足量按期完成疗程，疗效均获得满意结果。服药后出现的副作用，主要有消化道和神经系统症状，如恶心（11％）、腹泻（6％～10％）、腹痛（19％～33％）、头痛（16％～31％）、头昏（58％～66％）、乏力（26％～27％）等。少数患者应用吡喹酮治疗后，心电图出现ST及T波变化，主要是T波电压低、双相或倒置，说明有心肌损害。个别患者也可出现心律失常，如早搏等。患者肝功能也可出现轻度异常，停止用药后，能逐渐恢复正常。肾功能无异常所见。虽然患者用药后副作用较轻，但也要予以重视。<br>
+2．六氯对二甲苯（hexachloroparaxylene，hetol，血防846）六氯对二甲苯可抑制华支睾吸虫幼虫的生长发育，高浓度时有杀虫作用。虫体经药物作用后，其睾丸和卵巢均见破坏。采用本药的乳粉药物剂型，每日58～110mg／kg（以50kg为限）等不同剂量，每日剂量分2次服用，总剂量16.5g～18g，远期随访显示虫卵阴转率为：96．3％～100％。若采用聚乙二醇为基质的浓度为40％的滴丸制剂，剂量每日为100mg／kg，日服1次，连服4天后服80mg／kg／day，疗程共5天，3个月以后用沉淀法查虫卵，阴转率为100％，醛醚法为82％。本药的副作用主要表现在消化系统及神经系统，如食欲减低（13．8％）、腹泻（17．2％）、恶心（20．7％）、腹痛（13．8％）、头痛（37．9％）、头晕（79. 3％）、精神萎靡（17．2％）、行走不稳（10．3％），少数患者近期记忆力减退、幻觉、昏厥、抽搐或其他精神症状出现。副作用一般在患者服药后的第二、第三天出现，第四天后较多，但多数轻微，发病短暂，停药后大多自行消失。少数患者也可出现肝功能障碍及心电图、脑电图等异常改变，严重者精神失常，及出现重症肌无力、中毒性肝炎、急性溶血等药物反应。出现溶血反应者应立即采取以下紧急措施：①安静休息、保温、多喝水，并服碳酸氢钠以碱化尿液，每日6g，分次服用，用来减少血红蛋白的沉积，防止肾小管阻塞。②对速发型患者，应在短期内给与大量输血，以<br>
+度过危险期。③输液可用5％～10％的葡萄糖或5％的葡萄糖生理盐水静脉滴注。溶血反应导致死亡的主要原因是尿闭和尿毒症。因此，必须密切地观察肾功能的变化情况，若有肾功能衰竭发生，应及时作相应的处理。如果出现精神反应时，立即停药为佳。兴奋的患者，应给与氯丙嗪、利眠灵等药物。抑郁的患者可给与泰尔登等药物。有严重肝病、神经衰弱综合征、精神病史及血红蛋白病的患者忌用此药。服药期间要严密观察患者有无发热、尿色变化、巩膜黄染，以及其他神经、精神症状。服药期间忌饮酒类和多脂肪饮食。&nbsp;用六氯对二甲苯治疗华支睾吸虫病，有疗效高、服药方便、用药剂量小、疗程短、价格低廉等优点。但是，其副作用比吡喹酮要多，而且较严重。因此，临床上已多不采用，以吡&nbsp;喹酮取而代之。<br>
+3．丙硫苯咪唑&nbsp;&nbsp;服药剂量为每公斤体重8mg，分2次服用，总剂量为每公斤体重60～100mg。虫卵阴转率在90％以上。此药副作用轻。<br>
+4.&nbsp;阿苯哒唑&nbsp;&nbsp;此药对治疗华支睾吸虫有一定的疗效。&nbsp;感染较严重、有营养不良或肝硬化者，应进行支持疗法。如加强营养、保护肝脏、纠正贫血等。如果患胆囊炎、胆石症、总胆管炎、胆道梗阻等病时，应立即进行手术治疗。有继发感染者，应同时加用抗生素类药物进行治疗。患者健康情况好转、体力恢复时，可积极进行驱虫治疗。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">华支睾吸虫病的证候表现为邪实正虚，故治疗上应取方为：健脾扶正及驱虫疏肝，以祛邪、标本兼顾为主，以起到积极治疗的作用。主要方剂如下：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．榧槟汤&nbsp;&nbsp;榧子肉30g、槟榔15g，水煎服。每日1剂，2周为一疗程。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．疏肝驱虫汤，当归10g、柴胡6g、青皮6g、榧子肉25g、百部15g、槟榔15g、赤芍12g，水煎服。每日1剂，2周为一疗程。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．膈下逐瘀汤&nbsp;&nbsp;当归9g、桃仁12g、红花9g、枳壳6g、赤芍9g、甘草3g、川芎6g，加五灵脂、丹皮、乌药、延胡索、香附、槟榔适量。此方适用于气滞血瘀，胁下积块较著者。此汤剂疏肝行气止痛之力强，对于瘀阻膈下，肝气郁结所致的胁肋及腹部胀痛有较好地疗效。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.&nbsp;华支睾吸虫一方&nbsp;&nbsp;党参（或太子参）12g、服苓12g、白术10g、扁豆12g、山药15g、郁金10g、槟榔25g、使君子10g、甘草4．5g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5．华支睾吸虫二方&nbsp;&nbsp;郁金10g、苦楝根皮15g、榧子肉25g、槟榔25g。用法：先用一方，每天1剂，服3～4天，改用二方，每天1剂，服5～7天。如患者大便中仍有虫卵，可交替重复使用二付方，服至病愈为止。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据临床证候差异，于一方适当加减，二方不变。若兼见脘闷、恶心呕吐、肢体困重、湿困明显者，加半夏、陈皮、砂仁、苍术易白术，以化湿燥；若胁痛明显、嗳气顺逆、脘闷、肝气横逆者，可酌加枳壳、白芍、柴胡以舒肝；若头昏、头痛、失眠、肝阴并有不足者，酌加女贞子、早莲草、白芍、党参，以养护肝阴；若有肝硬化腹水者，酌加丹参、首乌、菟丝子、<br>
+&nbsp;&nbsp;&nbsp;&nbsp;楮实子、人参易党参、以增强健脾除湿柔肝之效。体质强者，则先服二方，后服一方，剂次不变，感染轻者，一般服1～2个疗程可愈；感染重者，一般3个疗程可治愈，最多服4个疗程可治愈。<br>
+6．大柴胡汤、柴胡9g、黄芩9g、芍药9g、半夏9g、枳实9g、大黄6g、大枣4枚、生姜12g，水煎服。<br>
+7．合茵陈蒿汤&nbsp;&nbsp;茵陈蒿15g，栀子6g、大黄6g，水煎服。患者可大柴胡汤合茵陈蒿汤加减，适用于兼肝胆湿热，恶寒、发热、胁痛，目黄口苦、小便发赤、舌红苔黄腻、脉弦数者用此方剂治疗。<br>
+辨证论治：<br>
+１．肝胆湿热证：往来寒热，胸胁苦满，或右胁下胀痛，口苦咽于，两目发黄，或恶心呕吐，大便不解，小便短黄，舌红苔黄腻，脉弦数。清利肝胆湿热，茵陈蒿汤加川楝、延胡索、榧子等。<br>
+２．肝郁脾虚证：右胁胀痛，脘痞不适，腹泻，神疲乏力，纳食减少，舌淡苔白，脉弦细，疏肝健脾。逍遥散加使君子、槟榔等。<br>
+３．肝郁血瘀证：右胁下有痞块，推之不移，触之疼痛，伴胸胁胀满，面黯形瘦，舌质有瘀点或瘀斑，脉弦涩。疏肝理气、化瘀消积。血府逐瘀汤加槟榔、鳖甲等。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1.体针&nbsp;对此病针灸治疗有辅助治疗作用，病人患华支睾吸虫病后，内伤肝脾、络脉瘀&nbsp;阻、升降失常、清浊相混，渐积而成鼓胀。肝胃不和时针刺脾俞胃俞、足三里、内关、太冲。&nbsp;气滞血瘀时，针刺肝俞、膈俞、阳陵泉、太冲。气阴两亏时，针刺期门、章门、三阴交、太溪、足三里、太冲。寒湿中阻时，针刺脾俞。胆俞、至阳、中脘、足三里、三阴交。还可以根据患者的有关症状进行加减配穴，如脘腹痞满加中脘，恶心呕吐加内关，神疲无力加关元，失眠多梦加神门、足三里等。针刺治疗每日或隔日1次。<br>
+ 2．耳针&nbsp;&nbsp;针刺耳朵相应肝、胆、脾、胃穴位。食欲不振者加胰胆、脾；肝区疼痛加神门、&nbsp;皮质下；腹胀者加皮质下、胰胆、大肠；失眠者加神门、心、皮质下。每次选4～6穴，留针1个小时，每日或隔日1次。10次为1疗程。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">１．驱虫治疗：可选用吡喹酮、丙硫咪唑、甲苯咪唑、六氯对二甲苯等药。<br>
+２．单方验方：<br>
+（１）榧子肉３０ｇ，槟榔１５ｇ，使君子１０ｇ，水煎服，１剂／日，１５天为１疗程。<br>
+（２）南瓜子３０～６０g，制成粉未，１次／日，连服２周。<br>
+１．驱虫治疗：可选用甲苯咪唑、酚嘧啶双羟萘酸盐、丙氧咪唑等。<br>
+２．单方验方：<br>
+（１）乌梅、茯苓、山楂各１２ｇ，仙鹤草３０ｇ，木香、苦参、白术各６ｇ，槟榔、使君子各９ｇ，当归５ｇ，水煎服，１剂／日，连服数日。<br>
+（２）苦参子、炙百部各６ｇ，甘草１．５ｇ，水煎服，１剂／日，连服５天。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">华支睾吸虫病是完全可以预防的。预防措施可以结合群众性卫生运动。华支睾吸虫病是人畜共患的寄生虫病，要想比较彻底地消灭此病，首先应注意该病在人群中的流行，并采取行之有效的措施，除此之外，对动物的华支睾吸虫病也要加以重视。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp;应用不同的形式和方法大力开展卫生宣传教育工作，使群众了解本病的传播途径及其危害性，不吃生的或未煮熟的鱼、虾，这是预防本病最有效的措施。同时，不要用生鱼、虾喂猫、犬和猪等动物。此外，切过生鱼、虾的刀和盛过生鱼、虾的器皿必须洗干净、消毒后再用，以免再污染其他食物，使人感染此病。<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 2．加强对饮食业工作人员的卫生宣传和卫生监督，不出售未经煮熟的鱼虾和污染的肉食。<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 3．华支睾吸虫病流行地区应进行普查和普治。<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 4．做好粪便管理，对猫、狗、猪等的粪便应加强管理，不使未经无害处理的粪便进入鱼塘，也不能将其存放在可能与食物有接触机会的地方。同时，要防止水源的污染。<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 5．管理好猫、犬、猪等保虫宿主，减少其传播机会，这也是本病预防流行的重要措施之一。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">华支睾吸虫病于1874年被发现。在我国，1908年已证实有此病。1975年在我国湖北省江陵西汉古尸的粪便中查到本虫虫卵，说明本虫在我国已有2100多年的历史。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

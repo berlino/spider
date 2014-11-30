@@ -1,0 +1,876 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">动脉粥样硬化
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=动脉粥样硬化"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">atherosclerosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">DONGMAIZHOUYANGYINGHUA
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：瘀证，痰证，脉痹，中风，胸痹，坏疽。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">循环系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">动脉粥样硬化是由多种病因引起动脉管壁局部脂质和复合糖类物质聚积，形成黄色粥样斑块等病变，使动脉管壁增厚、变硬，失去弹性，管腔缩小。。动脉粥样硬化是动脉硬化中常见的类型。动脉硬化是动脉的一种非炎症性、退行性及增生性病理改变。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">AS的发病原因尚不十分明了，近年来的研究表明，本病是多因素的疾病，为多种因素作用于不同的环节所致，主要危险因素有高血脂、肥胖、高血压、糖尿病、遗传、高脂饮食、吸烟等。关于本病的发病机理，主要学说有脂质浸润学说；血小板凝聚、血栓形成学说；内皮细胞损伤反应学说；平滑肌细胞单性繁殖学说以及神经、内分泌改变；动脉壁基质内酸性蛋白多糖质和量的改变学说等。目前较为一致的认识是内皮细胞功能和结构的改变是AS发生的始动因素，而导致动脉内皮细胞功能改变和结构损伤的原因则是多方面的，如血脂过高、载脂蛋白平衡失调, 脂质过氧化物增多，血液动力学、流变性改变，吸烟，毒血症等；血小板
+粘聚、释放活性物质、血栓形成、脂质沉积是AS发生发展的重要环节；平滑肌细胞增生、迁移，巨噬细胞浸润，平滑肌细胞、巨噬细胞吞噬脂滴，坏死、溶解则是AS形成的直接原因。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">1．饮食失节  恣食高梁厚味，或饥饱无常，日久损伤脾胃，运化失司，饮食不能化生气血，凝聚成痰，痰湿浸渍于血脉，痰瘀交阻，而发本病。
+ 2．肝肾亏虚  年老体衰或久病劳伤及肝肾，阳虚不能化气行水，温运血脉，阴虚不能滋养血脉，血脉损伤，痰瘀内滞，故发本病。
+ 3. 七情内伤，忧思恼怒肝气郁滞，气滞血瘀，血脉不畅，气机不利，津液代谢受碍而致痰湿停滞，痰瘀互结于经脉，发为此病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">其病因病机主要为年老体虚，精气不足，精微不能充养四肢百脉，痰浊、瘀血阻脉。病位主在血脉，虚主在肾、肝、脾，实主力痰浊、瘀血，兼有气滞。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">AS的病理变化主要累及体循环系统的大型弹力型动脉和中型弹力型动脉（以冠状动脉和脑动脉罹患最多，肢体动脉、肾动脉和肠系膜动脉次之，脾动脉亦可受累，而肺循环动脉极少受累。
+ 1. 脂质条纹病变  ：特征是内膜的少数平滑肌细胞呈灶性积聚，细胞内外有脂质沉积。脂质成分主要是胆固醇和胆固醇脂，还有磷酯和甘油三酯等；
+2. 纤维斑块病变 由内膜增生的结缔组织及含有脂质的平滑肌细胞所组成。脂质主要是胆固醇和胆固醇酯，细胞外周由脂质、胶原、弹力纤维和糖蛋白围绕。病灶处纤维组织增生形成一纤维膜，覆盖于深部大量脂质之上；脂质沉积物中混有细胞碎片和胆固醇结晶。斑块体积增大时，向管壁中膜扩展，可破坏管壁的肌纤维和弹力纤维而代之以结缔组织和增生的新生毛细血管。
+3．复合病变  为纤维斑块发生出血、坏死、溃疡、钙化和附壁血栓所形成。可因内膜表面破溃而形成所谓粥样溃疡，破溃后粥样物质进入血流成为栓子，破溃处可引起出血，溃疡表面粗糙易产生血栓，附壁血栓形成又加重管腔的狭窄甚至使之闭塞。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1．痰浊内阻<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：病人体肥少动，嗜睡，晨起口中粘腻乏味，舌淡胖或淡暗，边有齿痕，苔白腻，脉沉缓或滑。<br>
+2．气滞血瘀<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：平素易怒心烦，时感胸肋胀闷不适，时或头晕，舌质暗或有瘀斑，舌下静脉迂曲，脉弦或涩。<br>
+3．肾精亏虚<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：眩晕，头痛，失眠，记忆力减退，腰膝酸软，发脱齿摇，耳聋耳鸣，动作迟缓，精神呆钝，苔薄白，舌淡暗，脉细。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">本病发展到相当程度，尤其是有器官明显病变时，诊断并不困难，但早期诊断很不容易。年长病人如检查发现血脂增高，动脉造影发现血管狭窄性病变，应首先考虑诊断本病。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">主要是有关器官受累后出现的临床症状，本病早期多无特殊症状，脑动脉受累，脑缺血可引起眩晕、头痛和记忆力减退等症状；肠系膜AS可能引起消化不良、肠道张力减低、便秘和腹痛等症状；下肢AS可引起下肢发凉、麻木和间歇性跛行，严重者可引起持续性疼痛、坏疽；冠状AS可引起冠心病心绞痛、心肌梗死等。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">主AS，叩诊时可发现胸骨柄后主动脉浊音区增宽，主动脉瓣区第二心音亢进而带金属音调，并有收缩期杂音。收缩期血压升高，脉压增宽。X线检查可见主动脉弓向左上方凸出，主动脉扩张与扭曲，有时可见片状斑块内钙质沉着阴影。主AS形成主动脉瘤，以发生在肾动脉开口以下的腹主动脉处为最多见，其次在主动脉弓和降主动脉。腹主动脉瘤多在体检时腹部发现有搏动性肿块，腹壁上相应部位可听到杂音，股动脉搏动可减弱。胸主动脉瘤X线检查可见主动脉的相应部位增大；主动脉造影可显示梭形或囊样的动脉瘤。二维超声显象显示瘤样主动脉扩张。四肢AS，以下肢为多见，可出现间歇性跛行，动脉管腔如完全闭塞可产生坏疽。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线检查除前述主AS的表现外，选择性或电子计算机数字减影检查，有助于判断四肢动脉和肾动脉的血流情况。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1. 血生化检查  主要表现为脂代谢异常改变。①血总胆固醇、甘油三脂升高；②低密度脂蛋白（LDL）升高，高密度脂蛋白HDL-C降低；③载脂蛋白β增高、载脂蛋白A降低等。
+2．血流变学检查  血粘滞度增高。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">主AS引起的主动脉变化和主动脉瘤，需与梅毒性主动脉炎和主动脉瘤以及纵隔肿瘤鉴别。冠状AS引起的心绞痛和心肌梗死，需与其他冠状动脉病变所引起者相鉴别。心肌纤维化需与其他的心脏病特别是心肌病相鉴别。脑AS所引起的脑血管意外，需与其他原因引起的脑血管意外相鉴别。肾动脉粥样硬化所引起的高血压，需与其他原因的高血压相鉴别。肾动脉血栓形成需与肾结石相鉴别。四肢AS所产生的症状需与其他病因的动脉病变所引起者鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病预后随病变部位、程度、血管狭窄发展速度、受损器官受累性情况和有关并发症而不同。心、脑、肾的动脉病变而发生心肌梗死、脑血管意外或肾功能衰竭者，预后不好。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">调整脂质代谢是目前治疗本病的主要措施和研究热点，新的药物不断涌现，临床可选用以下药物：<br>
+&nbsp; 1．氯贝丁酯&nbsp;&nbsp;口服每日3～4次，每次0．5g，以后酌情减量维持。其降血甘油三脂的作用强于降胆固醇，并使HDL增高，减少组织胆固醇沉积；降低血小板粘附性，增加纤维蛋白溶解活性和减低纤维蛋白原浓度。少数病人有胃肠道反应。皮肤发痒和荨麻疹，以及一过性血清转氨酶增高和肾功能改变。同类药物还有非诺贝特，每日3次，每次100mg；益多酯每日2次，每次250mg：吉非罗齐每日2000mg，分次服；必降脂每日2～3次，每次200mg等。<br>
+2．烟酸&nbsp;&nbsp;口服每日3次，每次剂量由0．1g逐渐增到最大1．0g。有降低血甘油三脂和胆固醇，增高HDL以及扩张外周血管的作用。可引起皮肤潮红、皮肤发痒、咽部不适等副作用，长期应用要注意检查肝功能。同类药物有烟酸肌醇酯，口服每日3次，每次0. 4g等。<br>
+3．不饱合脂肪酸&nbsp;&nbsp;抑制脂质在小肠的吸收和抑制胆汁酸的再吸收，从而减少胆固醇的合成。在玉米油、豆油、米糠油、红花油中含量较高。药用有亚油酸丸，每日3次，每次300mg，易有胃肠道反应。用亚油酸乙酯1．5～2g，每日3次。胃肠道刺激则较轻。从鱼类提取的多价不饱和脂酸制在临床中试用，显示有一定的作用。<br>
+ 4．胆络胺&nbsp;&nbsp;为阴离子交换树脂，服后吸附肠内胆酸，阻断胆酸的肠肝循环，加速肝中胆固醇分解为胆酸，与肠内胆酸一起排出体外而使血胆固醇下降。每日3次，每次4～5g，易有便秘等肠道反应。同类药物有考来替泊、降胆葡胺等。新制剂用微粒型，作用快而副作用少。<br>
+5．普罗布可&nbsp;&nbsp;口服500mg，每日2次，阻碍肝脏中胆固醇的乙酰乙酸酯生物合成阶段，而起降低血胆固醇的作用。副作用有胃肠道反应、头痛、眩晕等。<br>
+ 6．谷固醇&nbsp;&nbsp;为结构与胆固醇近似的植物固醇，口服20％混悬液20～30ml，每日3次饭前服，能抑制小肠吸收胆固醇，副作用主要为胃肠道反应。<br>
+ 7.&nbsp;维生素&nbsp;&nbsp;维生素C,&nbsp;每日至少1g，口服或加入25％葡萄糖液20～40ml内静脉注射，可能有加强肝脏排出胆固醇的作用。维生素B6，通过参与脂肪代谢中的亚油酸转变为花生四烯酸过程而起降胆固醇的作用，每日3次，每次50mg口服。泛酸的生物泛硫乙胺，每日3次，每次200mg；有抗氧化作用的维生素E，每日3次，每次100mg；可能均有降血脂作用。<br>
+8.&nbsp;β羟β甲戊二酰辅酶（HMG一CoA）还原酶抑制剂lovastatin，20mg每日2次；synvino-lin，40mg，每日2次。<br>
+9．其他&nbsp;&nbsp;对狭窄或闭塞的血管可进行经皮血管腔内成形术（PTA）、斑块激光旋切及动脉内支架等介入性治疗，以恢复动脉血运。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1．痰浊内阻：治法：化瘀，降浊，燥湿。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：二陈汤加减。药用半夏、陈皮、橘红、茯苓、生姜、甘草、泽泻、茵陈。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中半夏辛温性燥，功专燥湿化痰；橘红理气燥湿，气顺则痰消；佐以茯苓健脾渗湿，使湿去脾旺，痰无由生；生姜降逆化饮，既制半夏之毒，又助半夏、橘红行气消痰；泽泻、茵陈利湿降浊；甘草调和诸药。诸药合用，共奏燥湿化痰降浊之功。现代药理研究证实，泽泻、茵陈具有良好的降脂作用，泽泻可明显抑制粥样硬化斑块的形成。若脾虚痰盛者，可加炒白术、党参益气健脾化痰；痰热明显者，加竹茹清热化痰；大便结者，加大黄通腑降浊。<br>
+2．气滞血瘀：治法：疏肝理气，活血化瘀。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：血府逐瘀汤加减。药用桃仁、红花、当归、生地、川芎、赤芍、牛膝、桔梗、柴胡、枳壳、甘草。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中桃仁、红花、当归、生地、川芎、赤芍活血化瘀、养血；柴胡、赤芍、甘草、行气和血；桔梗开肺气，载药上行，合枳壳则升降气机而宽胸；牛膝通利血脉，引血下行。诸药配合，使血活气行。现代药理研究证实，活血化瘀药在改善脂质代谢、抑制脂质过氧化反应、减轻内皮细胞损伤、抗血小板凝集和对斑块的消退等方面均有明显作用。胁肋胀痛明显者，加青皮、白芥子，以增强理气通络止痛的作用；气郁日久化火者，加山栀、丹皮、川楝子以清热疏肝调气。临证若为气虚血瘀，症见疲乏无力，活动后气短，嗜睡懒言，易汗出，面色少华，舌淡暗或有瘀斑，苔薄白，脉细弱或涩，治宜益气活血，方用补阳还五汤加减，药用黄芪、人参、地龙、当归尾、赤芍、桃仁、红花等。<br>
+3．肾精亏虚：治法：补肾填精。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：右归丸加减。药用熟地、山药、茱萸、枸杞、鹿角胶、菟丝子、杜仲、当归、肉桂、附子。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中熟地、山茱萸、山药、菟丝子、枸杞、杜仲滋阴益肾，养肝补脾；肉桂、附子、鹿角胶温补肾阳、填精补髓，以期“阴中求阳”，达到培补肾中元阳之效；当归补血养肝。诸药合用，共奏补肾填精之功。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按此分型，是为了辨证治疗的需要，但临证常肾虚、痰浊、瘀血兼见，只是以某一病理变化为主而已。如痰浊为主者，多合以肾虚、血瘀，治疗上以化痰降浊为主，兼以活血补肾。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;而以肾虚为主者，多兼有痰浊、瘀血。因此，临证应用不可拘泥。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．合理的膳食，膳食总热量勿过高，以维持正常体重为度，40岁以上者尤应预防发胖，超过正常标准体重者，应减少每日进食的总热量，食用低脂饮食，限制糖的摄入。<br>
+2.&nbsp;饮食清洁，多食富含维生素（如新鲜蔬菜、瓜果）和植物蛋白（如豆类及其制品）的食物。<br>
+3．适当的体育锻炼。<br>
+4．提倡不吸烟，不饮烈酒或大量饮酒（有报道，少量饮低浓度酒则有提高血HDL的作用）。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

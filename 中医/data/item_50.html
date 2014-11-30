@@ -1,0 +1,942 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">原发性心肌病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=原发性心肌病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">primary myocardiopathy
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">YUANFAXINGXINJIBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：惊悸，怔忡，喘证，水肿，胸痹，厥证。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">循环系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">原发性心肌病是一组原因未明的以心肌病变为主的心脏疾病。本病分为三型：①扩张型心肌病：该型特征为左或右心室或双侧心室扩大，并伴有心肌肥厚，心室收缩功能减退，伴或不伴有充血性心力衰竭，心律失常多见，病情呈进行性加重，死亡可发生于疾病的任何阶段，此型最为常见，占70％～80％。②肥厚型心肌病：其特征为心室肌肥厚，典型者在左心室，以室间隔为甚，偶呈同心性肥厚，左心室腔容积正常或缩小，偶尔病变发生于右心室，通常为常染色体显性遗传。该型也较为常见，约占10％～20％。③限制型心肌病：本型特征为原发性心肌的浸润性或非浸润性病变，或心肌心内膜纤维化，引起心脏充盈受阻的舒张期功能障碍，较为少见。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">1．扩张型心肌病
+  （1）病毒感染免疫反应学说：认为心肌病是在病毒感染后发生的免疫性心肌损害所造成，是扩张型心肌病的主要发病学说。
+   （2）心肌内小冠状动脉分支的病变，引起痉挛和阻塞所致。
+   （3）有些病例有心肌代谢过程中某些酶的缺乏也可能是其机理之一。
+   （4）部分病例与营养障碍有关，如食物中缺乏微量元素硒可能引起心肌改变。
+2. 肥厚型心肌病  目前认为该病与遗传有关。
+3. 限制性心肌病  病因未明。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病的内因在于先天禀赋特异体质，外因则在于感受外邪、毒邪，邪气乘虚侵袭，深 入腠理，深入血脉，内舍于心，留而不去，痹阻脉络，心脉阻滞而为病；或因饮食所伤，劳倦思虑，致使脾胃受损，气血生化无源，心失所养；或脾失健运，致使水湿内停，聚而成痰，痰浊上承而发病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">心肌病的病机比较复杂。主要为先天禀赋特异体质，后天失调，反复感受“毒邪”，致使 气滞血瘀，心脉痹阻；或伤及气阴，气阴两虚，日久及阳，心肾阳虚，水气凌心射肺，进一 步发展则为阳虚欲脱之危象。总之，本病以脾肾阳虚，心阳不振为本，毒邪、瘀血、水饮、痰 浊为标，其病位在心，波及脾、肺、肾诸脏。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">1.扩张型心肌病  心脏重量增加，各心腔扩大，心肌灰白而松弛；室壁厚度近乎正常， 心内膜也可增厚，可有心腔内附壁血栓，常有心肌纤维化，也可心壁成片受损，心脏起搏系 统亦可受侵。
+    显微镜下可见心肌纤维肥大，细胞核固缩、变形或消失，胞浆内有空泡形成。纤维组织增多，心肌纤维可被条索状纤维组织所分割，心内膜中胶原和弹性纤维也增多，可见有不同程度的退行性变，多为心肌细胞溶解，尤其是病程长的病例。
+电镜下可见心肌细胞的线粒体肿胀，嵴断裂或消失，肌浆膜间隙扩大，有纤维状物质与颗粒状脂褐素；肌原纤维可以消失。
+2．肥厚型心肌病  分为两型：①肥厚型梗阻性心肌病：室间隔高度肥厚向左心室腔内突出，收缩时引起左心室流出道梗阻，②肥厚型非梗阻性心肌病：室间隔肥厚程度较轻，收缩期不引起左室流出道明显梗阻。
+3。限制型心肌病  在浸润性病变所致的限制型心肌病中，有淀粉样变性、类肉瘤、血色病、糖原累积症等种类。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）实证：<br>
+&nbsp;①气滞血瘀：<br>
+&nbsp;证候：胸闷，憋气，活动后发作性胸痛，固定不移，舌质紫暗,&nbsp;脉沉涩或弦。<br>
+&nbsp;证候分析：先天禀赋特异体质，又感“毒邪”，外邪侵入腠里，深入血脉，血行不畅而瘀滞，由血及气；或因情志不畅，由气及血，终成气滞血瘀的病理状况，而见胸闷、憋气；心脉痹阻，不通则痛，故常发作胸痛，瘀血有形故疼痛固定不移；舌质紫暗，脉沉涩或弦为血瘀气滞之征。<br>
+②痰瘀痹阻：<br>
+证候：胸闷心悸，动则胸痛，头晕，甚则晕倒，不省人事，或咳嗽喘息，恶心纳呆，舌质暗淡，苔薄或腻，脉弦滑。<br>
+证候分析：饮食不调，恣食油腻生冷，损伤脾胃，致使水湿内停，聚而生痰，痰湿阻络，&nbsp;加之外邪侵袭，内犯于心，舍而不去，脉络瘀滞，痰瘀互结，上犯心肺故胸闷、心悸、胸痛或见咳喘；痰阻中焦，脾失健运，升降失常，故恶心纳呆；清空失养，清窍闭阻故头晕，甚则晕厥不省人事，舌暗淡，苔薄或腻，脉弦滑为痰湿痹阻之象。（2）虚证：<br>
+&nbsp;&nbsp;①气阴两虚：&nbsp;&nbsp;证候：心悸气短，神疲乏力，胸闷自汗，口干舌燥，舌红少津，脉细数或结代。证候分析：反复感受“毒邪”，耗伤气阴，气阴两虚，心失所养，故心悸气短，神疲乏力；心气不足，卫外不固，故胸闷自汗；心阴不足故口干舌燥；舌红少津，脉细数或结代为气阴不足之象。&nbsp;②阳虚水泛：<br>
+&nbsp;证候：心悸自汗，形寒肢冷，神疲尿少，下肢浮肿，咳喘难以平卧，唇甲青紫，舌质淡暗或紫暗，苔白滑，脉沉细。<br>
+证候分析：疾病日久及阳，致使心肾阳虚，命门火衰，失于温煦，心失所养，卫外不固，故心悸神疲、自汗；阳虚阴寒内盛，无以化水，开阖失可，故形寒肢冷，尿少浮肿；水气上凌心肺，故咳喘难以平卧，阳虚无以推动血液运行，血行瘀滞，故唇甲青紫；舌淡暗或紫暗，苔白滑，脉细沉为阳虚血瘀、水湿停滞之象。③阳虚欲脱：<br>
+证候：心悸气急，不能平卧，大汗淋漓，四肢厥冷，尿少浮肿，舌淡或紫，苔薄，脉微欲绝。<br>
+证候分析：疾病发展至后期，心阳暴脱，宗气大泄，神失所主，故心悸气急，不能平卧，大汗淋漓，四肢厥冷，甚至神志模糊；心阳暴脱，诸阳亦衰，无以化气行水，故尿少浮肿。舌淡或紫，苔薄，脉微欲绝为阳虚欲脱，血运瘀滞之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">见扩张性和肥厚性心肌病的诊断标准。<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">原发性心肌病的诊断需除外其它原因的心脏病。如临床上有心脏扩大、心律失常、晕厥、充血性心力衰竭，而无常见的风心、冠心、先心、高血压性、肺原性心脏病或心包疾病等时，应考虑本病。进一步详细询问病史及体检，超声心动图、X线检查、心电图、心肌酶谱等检查有助于诊断及分型，明确诊断有时依赖于心肌活检、心血管造影。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">1．扩张型心肌病 : 以充血性心力衰竭为主，其中以气急和浮肿最为常见。最初在劳动或劳累后气急，以后在轻度活动或休息时也有气急，或有夜间阵发性气急，并常见头晕，心前区疼痛等症状，少数患者有晕厥，各种心律失常均可见到，还可发生栓塞及猝死。2．肥厚型心肌病  起病多缓慢。约1／3的患者有家族史，症状大多开始于30岁以前，男
+女同样罹患。主要症状为：①呼吸困难，多于劳累后出现；②心前区疼痛，亦多在劳累后出现，似心绞痛，但可不典型;③乏力、头晕与昏厥，多在活动时发生；④心悸；⑤心力衰竭，多见于晚期患者，常合并有心房纤颤。
+3．限制型心肌病  我国较少见，多发生在南方，呈散发分布，起病比较缓慢。早期可有发热，逐渐出现乏力、头晕、气急，气急程度较扩张型心肌病为轻，以下肢水肿、腹水为突出表现。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．扩张型心肌病&nbsp;&nbsp;心尖搏动向左下移位，可有抬举性搏动，心浊音界向左扩大，常可听到第三、第四心音，心率快时呈奔马律，二尖瓣或三尖瓣听诊区可闻及收缩期吹风样杂音，该杂音在心功能改善后减轻，血压多正常，但晚期患者血压可下降，脉压小，出现心力衰竭时舒张压可轻度升高，心力衰竭时可出现交替脉，脉搏常减弱，两肺底可闻及湿罗音，并可见肝脏肿大，浮肿，甚或胸、腹水，各种心律失常均可出现，为首见或主要的表现，并有多种心律失常合并存在而构成复杂心律失常，可以反复发生。此外可有脑、肾、肺等处栓塞的体征。<br>
+2．肥厚型心肌病&nbsp;&nbsp;常见体征有心浊音界向左扩大、心尖搏动向左下移位，可见抬举性冲动或心尖双搏动；胸骨左缘下段心尖内侧可听到收缩中期或晚期喷射性杂音，向心尖部传播，可伴有收缩期震颤，见于有左心室流出道梗阻的患者。凡增加心肌收缩力或减轻心脏负荷的措施（如给予洋地黄类、异丙肾上腺素，亚硝酸异戊酯、硝酸甘油、做Valsalva动作、体力劳动后或早搏后）均可使杂音增强；凡减弱心肌收缩力或增加心脏负荷的措施（如给予血管收缩药、β受体阻滞剂、下蹲、紧握拳等）均可使杂音减弱，约半数患者同时可闻及二尖瓣关<br>
+闭不全的杂音；第二心音可呈反常分裂，呼气时明显（由于左心室喷血受阻，主动脉瓣延迟<br>
+关闭所致）。心律失常以心房纤颤为多。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;非梗阻肥厚型心肌病仅心脏轻度增大，肺动脉瓣第二音分裂，无反常的逆分裂，杂音较<br>
+少且较轻。<br>
+3。限制型心肌病&nbsp;&nbsp;病变以左心室为主者可有左心衰竭和肺动脉高压的表现，如两肺底可闻及罗音，肺动脉瓣第二音亢进等；病变以右心室为主者有右心室回流受阻的表现，如颈静脉怒张，吸气时膨胀（库氏征），肝大、下肢浮肿、腹水等，心尖搏动常减弱，心脏浊音界轻度增大，心音低钝，心率快，可有舒张期奔马律及心律失常，心包积液也可存在，可有内脏栓塞。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">心电图检查:
+ 1．扩张型心肌病以心脏扩大，心肌损害及心律失常为主。左心室肥大多见，常合并心肌劳损，晚期可有右心室肥大，也可有左或右心房肥大；常有ST段压低，T波平坦、双向或倒置，10％患者可有病理性Q波（部位多在前间隔V1、V2导联），常见房性、室性早搏、心房纤颤、束支传导阻滞、房室传导阻滞等心律失常。
+2．肥厚型心肌病  80％以上的患者有ST一T改变，少数可见巨大的倒置T波；  60％患者有左心室肥大征象；可见异常Q波，在I、aVL、V5、V6导联上出现深而不宽的Q波，有 时在Ⅱ、Ⅲ、aVF、V1、V2导联上也可有Q波；约25％的患者有左心房波型异常：部分患者合并有预激综合征。
+3．限制型心肌病  低电压，心房或心室肥大，束支传导阻滞，ST一T改变，心房颤动， 亦可在V1、V2导联上出现异常Q波。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线检查:  1扩张型心肌病  心脏普遍增大，呈球型，外形类似心包积液；少数以左心室、左心房或右心室增大为主，外观类似二尖瓣病变。透视下可见心脏搏动较正常为弱，主动脉一般不 扩张。病程较长者常有肺淤血和肺间质水肿，亦常见胸腔积液。
+2．肥厚型心肌病  普通胸片见左心室增大，但也可在正常范围，晚期可有左房增大、肺淤血。主动脉不扩大，X线或核素心血管造影可显示室间隔增厚，左心室腔缩小。核素心肌扫描可显示心肌肥厚的部位和程度。 3．限制型心肌病可见心影扩大，心内膜心肌钙化的阴影，心室造影可见心室腔缩小。 超声心动图检查  1．扩张型心肌病早期即可见心腔轻度扩大，尤其是左心室，室壁运动减弱，后期各心腔均扩大，室间隔及左室后壁运动也减弱，二尖瓣前叶双峰可消失，而前后叶呈异向活动，左心室喷血指数常减至50％以下，心肌缩短比数也减小，可有少量心包积液。   2．肥厚型心肌病  可见不对称性室间隔肥厚，室间隔厚度与左室后壁厚度之比大于1．3 ：1；二尖瓣前叶收缩期前移；左心室腔缩小，流出道狭窄；左心室舒张功能障碍，包括顺应性降低，快速充盈时间延长，等容时间延长等。
+ 3．限制型心肌病  可见心内膜增厚，心尖部心室腔闭塞，心肌心内膜结构超声回声密度异常，室壁运动减弱。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">心肌病早期心肌酶谱检查活性增高，尤以磷酸肌酸激酶同功酶（CPK一MB）、乳酸脱氢酶同功酶（LDH1）增高有价值。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">心导管检查①扩张型心肌病：早期近乎正常，左右心室舒张末期压可以稍增高，有   心力衰竭时心排血指数减小，动静脉血氧差大，肺动脉及左房压增高。心室造影示心腔扩大，  室壁运动减弱。②肥厚型心肌病：示心室舒张末期压增高，有左室流出道梗阻者在心室腔与  流出道间有收缩期压力差。③限制型心肌病：示心室舒张末期压逐渐上升，造成下陷后平台   波型，在左室为主者肺动脉压可增高，在右室为主者右房压高，右房压力曲线中显著的v波 取代a波。
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．风湿性心脏病&nbsp;&nbsp;心肌病亦可有二尖瓣或三尖瓣区的收缩期杂音，但一般不伴有舒张期杂音，且在发生心力衰竭时杂音较响，而心力衰竭控制后杂音减弱或消失，与风湿性心脏病者不同，此外，扩张型心肌病常多心腔同时增大，不似风湿性心脏病者以左房、左室或右室&nbsp;扩大为主。超声心动图检查有助于区别。<br>
+2．心包积液&nbsp;&nbsp;心肌病时心尖搏动向左下移位，与心浊音界的左外缘相符；心包积液时心尖搏动常不明显或处于心浊音界左外缘的内侧。超声检查心包积液者见心包内多量液体平段&nbsp;或暗区；而心肌病者主要为心脏的扩大，虽亦可有少量的心包积液，但不足以引起心脏压塞，&nbsp;亦不致影响心脏的功能及体征，此外心肌病者多可闻及心脏杂音，心电图上见心室肥大、异&nbsp;常Q波及各种复杂心律失常，收缩时间间期（STI）在心肌病时明显异常，而心包疾病则正常。<br>
+3.&nbsp;高血压性心脏病&nbsp;&nbsp;心肌病者可有暂时性的血压增高，但舒张压多不超过14．67kPa（110mmHg），且出现于急性心力衰竭时，心力衰竭好转后血压下降，眼底、尿常规、肾功&nbsp;能检查正常。<br>
+4．冠心病&nbsp;&nbsp;二者常较难鉴别，有高血压、高血脂或糖尿病等易患因素，室壁活动呈节段性异常者有利于冠心病的诊断。明确区分有时须靠冠状动脉造影。<br>
+5．先天性心脏病&nbsp;&nbsp;多数具有明显的体征，不难鉴别。三尖瓣下移畸形有三尖瓣区的杂音，并可有奔马律、心音减弱、右心扩大及衰竭，应与心肌病鉴别，但前者出现于早年，左心室不大，紫绀明显；超声心动图检查可明确诊断。<br>
+6．继发性心肌病&nbsp;&nbsp;全身性疾病如系统性红斑狼疮、硬皮病、血色病，淀粉样变性、糖原累积症、神经肌肉疾病等都有其原发病的表现可资鉴别。尤其是与心肌炎的区别，急性心肌炎常发生于病毒感染的当时或其后不久，而慢性心肌炎与心肌病较难区分，心内膜心肌活检有一定的帮助。其次实验室检查中和抗体、补体结合或血凝抑制试验阳性，冠脉造影阴性有助于鉴别。<br>
+需与肥厚型心肌病鉴别的有：<br>
+&nbsp;&nbsp;&nbsp; 1．心室间隔缺损&nbsp;&nbsp;二者收缩期杂音的部位相近，但室间隔缺损者的收缩期杂音为全收缩期，心尖区多无杂音。超声心动图、心导管检查及心血管造影可肯定室水平分流存在。<br>
+&nbsp;&nbsp;&nbsp; 2．主动脉瓣狭窄&nbsp;&nbsp;症状及杂音性质相似，但主动脉瓣狭窄者的杂音部位较高，并常有主动脉瓣区收缩期喷射音，向颈部传导，可伴震颤，第二音减弱，还可有舒张期杂音。X线检查示升主动脉扩张。生理动作和药物作用对杂音影响不大。超声心动图示主动脉狭窄。左心导管检查显示收缩期压力差存在于主动脉瓣前后，无移行区，而肥厚型心肌病压差存在于左室与流出道之间，左室与主动脉之间有移行区存在。<br>
+&nbsp;&nbsp;&nbsp; 3．风湿性二尖瓣关闭不全&nbsp;&nbsp;杂音与肥厚型心肌病相似，但前者多为全收缩期，血管收缩药或下蹲动作使杂音加强，常伴有心房颤动，左心房较大。超声心动图有助于鉴别。<br>
+&nbsp;&nbsp;&nbsp; 4．冠心病&nbsp;&nbsp;二者均有心绞痛、心电图ST一T改变及异常Q波，但冠心病者无特征性杂音，主动脉多增宽或有钙化，高血压及高血脂者较多，超声心动图上无室间隔增厚，但可有节段性室壁运动异常。<br>
+需与限制型心肌病鉴别的有：<br>
+1．缩窄型心肌病&nbsp;&nbsp;有急性心包炎病史，X线示心包钙化。<br>
+2．风湿性心脏病&nbsp;&nbsp;可有风湿病史，典型心脏杂音，超声心动图有典型改变。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈：经治疗后症状消失，心衰被控制，心影缩小。<br>
+好转：治疗后症状好转，心衰基本被控制。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">扩张型心肌病病程长短不一，短者在发病后1年内死亡，长者可存活20年以上。约50％患者在3～5年内因心衰和心律失常而死亡。凡心脏明显扩大，心力衰竭持久或有顽固性心律失常者预后不良。尚有不少患者发生猝死。
+肥厚型心肌病病程发展较缓慢，预后不定，可以稳定多年不变，但一旦出现症状可以逐渐恶化。猝死和心力衰竭为主要的死亡原因。少数患者有感染性心内膜炎或栓塞等并发症。
+限制型心肌病的病程发展快慢不一，左室病变为主者比右室病变为主者预后略好。近年来本型手术治疗有一定希望。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">由于本病病因未明，目前尚无特效疗法。主要针对心肌损害、心力衰竭、心律失常和血栓栓塞等治疗。由于病理改变不同，在对症治疗时也有差异。<br>
+1.&nbsp;扩张型心肌病&nbsp;&nbsp;控制心力衰竭，防治心律失常，预防栓塞。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）一般治疗：避免过劳，注意休息，心衰者应卧床休息，有感染者应积极控制感染，以免病情恶化。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）纠正心功能不全：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①强心甙：地戈辛0．125～0．25mg，口服，每日一次。注意本病由于心肌损害广泛，洋地黄类药易于中毒，应减量应用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②非洋地黄类强心药：多巴酚丁胺每分钟以2．5μg～10μg／kg速度静点，给药后1～2分&nbsp;钟起效。氨吡酮静脉给药负荷量1．5～3mg／kg，再以每分钟10μ/kg静滴维持，口服100mg，每日3次。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③血管扩张剂：消心痛5～10mg，每日3～4次，开搏通12．5mg～25mg，每日3次，严重病例可用硝普钠25～50μg/分静点。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④利尿剂：双氢克尿噻25～50mg，每日1～3次；氨苯喋啶50～100mg，每日1～3次；&nbsp;水肿明显或有急性左心衰时可用速尿口服或静脉给药。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）纠正心律失常：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①房早、房颤：扩张型心肌病可用地戈辛0．125mg，口服，每日1次，心室率过快时，可加服小剂量β受体阻滞剂，如氨酰心安6．25mg，每日2～3次。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②频发或多源性室早或室性心动过速，可用慢心律100～200mg，每日3～4次；乙胺碘呋酮0．1～0．2g，每日3次。静脉用药可选利多卡因、普鲁卡因酰胺、心律平、溴苄胺等。注意抗心律失常药物对心肌的抑制作用。药物治疗无效，危及生命或意识丧失者可考虑电击复律。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③缓慢性心律失常可考虑安装人工心脏起搏器。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）预防栓塞：阿斯匹林40～80mg，每日1～2次。<br>
+2．肥厚型心肌病&nbsp;&nbsp;减轻左室流出道梗阻，控制严重心律失常，防止晕厥或猝死。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）β受体阻滞剂：可选用心得安10mg，每日3～4次。可根据情况逐渐增大剂量以改善症状，或氨酰心安12．5～25mg，每日2次，或倍他乐克25～50mg，每日2次。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）钙拮抗剂：异搏定40～120mg，每日3～4次，可使症状长期缓解；也可选用硫氮卓&nbsp;酮30～60mg，每日3次，β受体阻滞剂与钙拮抗剂含用可以提高疗效并减少副作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）禁用洋地黄类、异丙基肾上腺素、硝酸甘油等可能加剧左室流出道梗阻的药物。仅当发生快速房颤而无预激综合征时方考虑应用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）控制心律失常：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①房性心律失常：可选用异搏定，剂量同上。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②室性心律失常：双异丙吡胺0．1g，每日3次，或乙胺碘呋酮0．2g，每日2次，5～7天后改为0．1～0．2g，每日4次，长期服用者需注意其副作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5）预防栓塞：当房颤或左房大并有附壁血栓，或以往有栓塞史者，应予抗凝治疗。阿斯匹林40～80mg，每日1～2次。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（6）预防感染性心内膜炎：必要时可予抗生素。<br>
+3．限制型心肌病&nbsp;&nbsp;对症治疗，控制心衰，预防栓塞。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有房颤者可予洋地黄类药；有浮肿、腹水者可予利尿剂；预防栓塞可用阿斯匹林。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）实证：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①气滞血瘀：治法：活血化瘀，理气止痛。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：血府逐瘀汤加减。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方中桃仁、赤芍、川芎、当归、生地、丹参、鸡血藤活血化瘀而养血；柴胡、枳壳、赤芍、郁金、甘草行气活血而舒肝；桔梗开肺气，载药上行，合枳壳则升降调合气机而宽胸；牛膝通利血脉，引血下行。诸药合用，使血活气行，瘀去痛消。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心痛甚者，可配合失笑散（蒲黄、五灵脂）加强理气止痛作用。②痰瘀痹阻：治法：理气活血，化痰通痹。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：桃红四物汤合瓜蒌薤白半夏汤加减。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方选桃仁、红花、当归、川芎、赤芍、全瓜蒌、薤白、半夏、竹茹、胆南星、柴胡、香附。方以桃红四物去生地以活血化瘀；柴胡、香附理气；瓜蒌、半夏、胆南星、竹茹化痰；薤白宣痹通阳。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;痰瘀化热，苔黄腻者可加黄连等。<br>
+（2）虚证：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①气阴两虚：治法：益气养阴。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：生脉散加味。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方用太子参（或西洋参）、麦冬、五味子、生地黄、炙甘草。方以太子参或西洋参、炙甘草益气生津；麦冬、生地黄养阴；五味子敛气生津。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;若属心脾两虚、气血不足者，可选用归脾汤；若为心血不足、心气亏虚者，可选用炙甘草汤。<br>
+②阳虚水泛：治法：温阳利水。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：真武汤加减。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方用附子、茯苓、白芍，白术、生姜、猪苓、桂枝。方以附子温肾助阳；白术、茯苓、猪苓健脾利水；桂枝、生姜温散水寒之气；白芍调和营阴。若兼见腹满便溏者，可合用理中汤；兼见恶心呕吐者，加法半夏、陈皮。<br>
+③阳虚欲脱：治法：回阳固脱。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：参附龙牡汤加味。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方选人参、附子、煅龙骨、煅牡蛎、五味子。方以人参大补元气，附子回阳救逆；煅龙骨。煅牡蛎、五味子敛汗固脱。心阳暴脱，肾不纳气，喘急不能平卧者，加服黑锡丹、蛤蚧粉以益元补肾纳气；阳脱兼<br>
+阴伤，舌质偏红，脉细数无力者，加太子参、天冬、麦冬、玉竹以养阴生津。临诊之时尚需注意阳虚暴脱，阴寒极盛，在使用大剂量人参、附子时，有时会因阴阳格拒而影响药力的发作，此时可于上述药中加入葱白、薤白等宣通阳气的药物，对挽救阳脱有所裨益。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">成药及简易方治疗<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）生脉饮，每次1～2支，每日3次。用于心气下足，心功能不全者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）人参、三七、沉香等量研末，每次1g，每日3次。用于心功能不全早期或有心绞痛<br>
+&nbsp;&nbsp;&nbsp;&nbsp;者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）菖蒲3g、远志6g、茯神10g，水煎服。用于心悸。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）乳香、没药各10g、血竭15g、冰片6g，共研细末，每次1g，每日3次。用于有心<br>
+&nbsp;&nbsp;&nbsp;&nbsp;绞痛者。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">（1）体针：主要用于心肌并发症的治疗。心力衰竭时取内关、间使、通里，少府、心俞、&nbsp;神门、足三里等穴位。每次取4～5个穴，每日1次，采用平补平泻手法，7天为一疗程。合并有栓塞时，取肩髃、曲池、外关、合谷、环跳、阳陵泉、足三里、解溪、昆仑、地仓、颊车、内庭、太冲等穴位，视栓塞部位选择用穴。针刺强度随病程、体质而定，一般原则为补&nbsp;健侧泻患侧。每次取穴多少亦随栓塞部位而定。每日1次，7天为一疗程。<br>
+（2）耳针：常用穴位为交感、心、肾，内分泌、肺、神门等。用于心律失常及缓解心肌&nbsp;病引起的症状。一般采用埋皮内针或用王不留行籽穴位按压法，每次取2～5穴。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">心肌病病因未明，预防尚缺乏有效措施。预防主要针对并发症，应避免劳累，预防感染，以减少心衰、感染性心内膜炎等的发生。有烟酒嗜好者应予以戒除。心脏扩大、心功能减退者，宜长期休息，以避免病情恶化。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

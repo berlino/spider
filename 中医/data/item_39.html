@@ -1,0 +1,900 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">结节病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=结节病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">sarcoidosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">JIEJIEBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">结缔组织病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">结节病是一种原因不明的全身性疾病，表现为多系统的非干酪样上皮肉芽肿。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">病因至今未明。因绝大部分病例侵犯肺门，纵隔淋巴结及肺部，故认为致病因子可能通过呼吸道感染而发病。有认为致病因子系感染性，包括结核杆菌，L型结核杆菌、非典型抗酸杆菌、溶原性抗酸杆菌、霉菌，麻风杆菌、病毒等，但均未被证实。支原体感染和花粉学说已被否定。据文献报道结节病集中在200个家族内，且发病以单卵挛生高于双卵挛生。人白细胞抗原的特异性与结节病症状有关等，表明结节病与遗传基因不无关系。但并没有十分肯定的有关此种关系的证据。有许多报道发现急性结节病人，尤其是有结节性红斑的病人，其循环中免疫复合物含量增多明显，且由免疫复合物介导引起的结节红斑在肉芽肿组织形成之前，参与了肉芽肿的形成。从这个意义上说，结节病的形成与是否发展是由感染宿主对起始因素的免疫反应性所决定的。结节病人中有相当一部分会病情迁延，甚至转化为慢性，形成纤维化，如果免疫复合物对结节病的进展存在影响，那么对这种影响的研究将是十分重要的。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">肺主气、司呼吸、外合皮毛，开窍于鼻，为五脏华盖，故易受外邪六淫侵袭，又易为饮食、情志、劳倦等内伤诸因素所干。若禀赋不足，肺气虚弱，感受内、外之邪，肺虚，气不布津，不能通调水道，津停为痰，痰湿稽留于肺而形成“夙根”。每因复感外邪或复因饮食，情志，劳倦等不利因素触及而诱发本病的发生。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">本病多见于较寒冷的国家，温带次之，热带地区较少见。如日本的寒、温、亚热带发病率为4：2：1。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">欧洲发病率较高，瑞典为55～64／10万人。过去认为亚洲患病人数少，近来日本发病人数已增多到7000例，我国自1958年以来陆续有病例报告，到1986年10月已报道564例。在人种方面，黑人发病率比白人明显为高。  Edmonstone报告1971年结节病发病率黑人为19．8／10万，白人仅为1．5／10万，而黄种人居中为16.8／10万。美国黑人的发病率高出白人10倍。发病年龄，好发于20～50岁。老人及儿童患病仅为5％，但不同国家可不相同。日本以20～29岁最高，欧洲则以30～39岁多见。我国患病情况根据资料看，多在40岁以上。女性高于男性。爱尔兰男性为120／10万，女性则高达200／10万。死亡率（1968 ～1977年统计）男性平均0．21／10万，女性为0．28／10万。以50～60岁死亡为多见。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">肺虚日久，不能通调水道，痰湿停伏于肺。湿邪困脾阳，脾失健运，水湿不化，停聚为痰，上贮于肺，引动伏饮，肺失宣降，痰气交阻，壅阻气道，肺气上逆发为咳喘。原本正气不足，邪难以去，致病缠绵不愈，反复发作。久病及于肾以致肺不主气，肾不纳气，清气难入，浊气难出，积于胸中，壅塞于肺，胸胁胀满而致肺胀。肾虚不能蒸化水液，水饮泛溢，水气凌心则出现水肿心悸。部分病者因肺气亏虚不能助心行血，瘀血内停，痰瘀互结，血脉瘀阻，则见皮肤红斑，甚至颜面，四未紫绀。病变晚期，多脏气衰败，可出现喘汗致脱或痰浊蒙蔽神窍，神昏，阴阳离绝而死亡。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">病理特征为非干酪性类上皮样细胞肉芽肿。肉芽肿中有巨噬细胞、类上皮细胞和多核巨细胞，其外围有少量淋巴细胞，多形核细胞及成纤维细胞包绕。初发阶段为单核细胞、巨噬细胞广泛浸润的肺泡炎，累及肺泡壁和间质。淋巴细胞为激活的T细胞，释放出单核细胞趋化因子，吸引血中单核细胞在局部形成肉芽肿。继有双侧肺门淋巴结肿大。肺泡炎肉芽肿都可自行消散。在慢性阶段，肉芽肿周围的纤维母细胞胶原化和玻璃样变，成为非特异性纤维化，一般多见于右肺上叶，伴肺叶收缩，余肺呈代偿性肺气肿，纤维化可能很广泛。肺结核变化，形成直径0．2～1．0cm的束性空隙和支气管扩张，即所谓蜂窝肺。镜检：活动期肺泡和小叶间隔有上皮样细胞肉芽肿，伴巨细胞浸润（肺泡炎）。纤维化的蜂窝肺，肺泡被覆立方上皮细胞，取代I型肺泡上皮细胞。在肉芽肿的上皮样细胞和巨细胞内，可见三种包涵体：①Schaumann小体，系多核巨细胞，直径约100μm，胞浆中含有嗜酸性、不甚规则的圆形或椭圆形分层的钙化小结，中央可有折光的结晶；②在多核巨细胞质中的嗜酸性“星状小体”，由脂蛋白形成约1～5μm大小；③残余体，系溶菌酶的残余物，由细胞浆蛋白形成。直径约1μm。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">结节病患者的细胞免疫功能下降，周围血淋巴细胞总数与T淋巴细胞减少；而体液免疫的B淋巴细胞功能亢进，血中B淋巴细胞增加，血清r球蛋白增高；对各种延迟型超敏试验的反应减弱或阴性；在体外血中单核细胞对分裂素（mitogen）的增生反应受损。抗核抗体和风湿因子阳性，血清中有免疫复合物。结节病时生成肉芽肿是机体防卫力量与抗原抗衡的结果。在抗衡中肺泡巨噬细胞和T淋巴细胞起着重要作用。巨噬细胞被抗原刺激后可产生的白介素I（IL一1）。后者也可以激活T淋巴细胞使其活化。活化的辅助性T淋巴细胞可产生白介素Ⅱ（IL一2），IL-2可使已经活化的辅助性T淋巴细胞和抑制性T淋巴细胞在活动性结节病时其增殖程度是悬殊的。辅助性T淋巴细胞与抑制性T淋巴细胞的比例，从肺泡灌洗液中可观察到较非活动性结节病高10倍以上。IL-2还可以使T淋巴细胞产生淋巴素。淋巴素有三个重要作用：①通过趋化因子使骨髓产生的单核细胞向肺内病灶部位集聚；②通过巨噬细胞聚集因子使巨噬细胞集聚于病灶部；③通过移动抑制因子的释放，使巨噬细胞储留在病灶部，避免其移到其他部位。巨噬细胞的集聚加上抗原的刺激形成多核巨细胞，另一方面巨噬细胞又可演变成为上皮样细胞。以多核巨细胞、上皮样细胞为中心，加上辅助性T淋巴细胞便形成肉芽肿，肉芽肿的四周可以见到抑制性T淋巴细胞。随着病程的演化，一部分患者可有成纤维细胞浸润肉芽肿，使纤维组织增生导致肺纤维化。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1.&nbsp;肺气亏虚，肺失宣降<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主证：神倦乏力，气短、发热、鼻塞、咽痛、咳嗽有少量白痰，舌淡苔薄白，脉细弱。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：肺虚不能主气则神倦乏力，气短。肺气虚弱，卫外不固易感受外邪，则见发热、鼻塞、咽痛。外邪犯肺，肺失宣降则咳嗽，肺不布津，停聚为疾，故有少量白痰。舌淡、苔薄白、脉细弱为肺气亏虚之象。&nbsp;<br>
+2．肺脾两虚，痰浊阻肺<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主证：神倦乏力，气短，咳嗽，咳吐白痰，自汗怕冷，脘腹胀满，饮食减少、大便溏，舌淡体胖，苔白腻，脉虚弱。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：肺脾气虚，肺不主气，脾失健运，气血化源不足，无以濡养周身则神倦乏力，气短，阳气不足不能敛汗及温煦周身故自汗怕冷。脾失健运则水湿停聚为痰，上贮于肺，肺失宣降则咳嗽，咳吐白痰。脾气虚弱，气机升降失调则脘腹胀满，饮食减少，大便溏。舌淡体胖，苔白腻，脉虚弱为肺脾两虚，痰浊阻肺之象。&nbsp;<br>
+3．气阴不足，血脉瘀阻<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主证：气短乏力，咳嗽，咳痰色白少而粘，偶有少量咳血，潮热盗汗，皮肤见结节红斑，或颜面四末紫绀，脉弦细，舌暗红，边有齿痕，苔薄白少津。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：久病缠绵不愈，反复发作、肺脾气虚，则气短乏力，痰湿内蕴，肺失宣降则咳嗽。痰湿郁久化热，热灼伤阴液则痰少而粘，热灼伤肺络则见咳血。阴虚内热则潮热盗汗。气虚血行受阻，瘀血内停，痰瘀互结则见皮肤结节红斑，血行不畅则见颜面四末紫绀。脉弦细，舌暗红，边齿痕，苔薄白少津力气阴亏虚，血脉瘀阻之象。&nbsp;<br>
+4．阴阳俱虚<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主证：气喘咳嗽，动则喘甚，胸胁胀满，心悸汗出，畏寒肢冷，小便短少，下肢浮肿或口咽干燥，五心烦热，潮热盗汗，面唇四肢紫绀，脉细微，舌暗红，边有齿痕，苔少津亏。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：久病肺肾俱虚，肺不主气，肾不纳气，则气喘咳嗽，动则喘甚。肺气壅滞，不能敛降则见胸胁胀满。心肺气虚，则心悸汗出。阳气虚衰不能外达则畏寒肢冷。阳虚不化水，水邪泛溢则小便短少，下肢浮肿。气虚不帅血故面唇四肢紫绀。若阴液亏损，阴不制阳，则见口咽干燥，五心烦热，潮热盗汗。脉细微，舌暗红边齿痕，苔少津亏为阴阳俱虚之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1．早期无症状及异常体征，常于常规胸部X线检查时发现。有时可有咳嗽、少量咯血、乏力、发热等症状。<br>
+2．肺外表现常见者有淋巴结肿大，眼或皮肤病变，其他如神经、消化、心血管、内分泌系统有时也可受累。<br>
+3．胸部X线检查，胸内结节病分3期：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅰ期：两侧对称性肺门淋巴结肿大，半数以上有右侧气管旁淋巴结肿大。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅱ期：肿大的肺门淋巴结缩小，肺野可见颗粒状，纤维结节状或絮状阴影。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅲ期：肿大的淋巴结影消失或缩至很小，肺浸润吸收呈纤维化改变。<br>
+4．活动期可有贫血、血细胞减少，血沉增快、血清球蛋白增加、白蛋白减少、血清血管紧张素转化酶（SACE）活性增高，血清钙和24小时尿钙增高。<br>
+5．100结素单位结核菌素试验阴性或弱阳性。<br>
+6．Kveim&nbsp;试验阳性。<br>
+7．纤维支气管镜取支气管或肺活体组织、淋巴结或皮肤结节病理检查阳性者。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">诊断除依据临床，胸部X线改变作出拟诊外，须作病理组织学检查以确诊，并了解疾病有无活动性，确诊以病理组织学活检及Kveim 试验为主要依据，该病的活动性及预后判断，以 S-ACE 测定，67镓扫描，BAL为依据。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">结节病属多器官疾病，常侵及肺、淋巴结、皮肤、肝、眼、脾、骨、腮腺及心脏等。经体检发现伴有症状者约40．9％。症状有体重减轻，疲乏、衰弱、发热、干咳、痰少、气短、胸痛、咯血等。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">约1／4的病例有眼或皮肤病变，眼病有虹膜睫状体炎、急性色素质炎、角膜－结膜炎、白内障、青光眼等，皮损最常见者为结节性红斑（约占皮损1／3）。常见于面部颈部、肩部或四肢，也有冻疮样狼疮、斑疹、丘疹等。腮腺肿大，肝、脾肿大，面神经麻痹，浅表淋巴结肿大。结节病心肌炎时可有心律失常、传导阻滞、心室瘤，亦可多发性关节炎。指骨有囊性改变，见于5～10％的病例。过去认为出现胸水者少于1％，但近来的统计有积液者可达10％，它多见于多脏器受侵的慢性病例。可有少量叶间胸水。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">（一）X线检查
+        几乎有90％～100％结节病累及肺和（或）肺门淋巴结，故胸片是发现结节病的主要手段。
+    胸内结节病的X线表现可分为四期，国际上已趋一致。我国规定用Ⅲ期的分类法，与国际分类不同之处在于无“O”期存在，Ⅰ、Ⅱ、Ⅲ分期方法相同。 O期：属于早期结节样肺泡炎阶段，肺部X线检查阴性。约占总病例的8％。Ⅰ期：两侧肺门和（或）纵隔淋巴结肿大，常伴右支气管旁淋巴结肿大，约占51％，最后消散者占65％。Ⅱ期：肺门淋巴结肿大，伴肺浸润，作为初发现者占29％；约49％可消散。肺部病灶常为弥漫粟粒样至1cm以上片状，棉絮状或结节状浸润，可伴网织状改变。Ⅲ期：仅见肺部浸润或纤维化，而无肺门淋巴结肿大。作为初发病的表现很少见（约占12％）。约20％可消散。肺部病变可从浸润到不同程度的纤维化，伴囊肿性改变的蜂窝肺。此外，可见呈边缘不正的棉团状阴影，其内部密度也不均一，可被疑为转移性肺癌。偶见肺段实变或分散不整的肺实变区，肺不张，空洞阴影及胸腔渗出液。Rubinstein报告80例结节病中有25例（29％）X线与一般结节病不同，出现肺部结节样病变，腺泡样浸润，不典型淋巴结肿大及大量胸腔积液。X线片与局限性慢性纤维空洞性肺结核难鉴别。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">肺功能测验:
+早期肺功能可完全正常，待到肺肉芽肿及纤维组织广泛增生后，可引起限制性通气障碍，肺活量及肺总量减低，残气量可正常或稍减退。并发阻塞性肺气肿时，可出现混合性通气功能障碍。动脉血气可正常或有低氧血症。
+结素试验、kveim 试验、支气管肺泡灌洗（BAL）、血清血管紧张素转化酶（简称S一ACE）测定、γ射线闪烁照相术（简称67镓扫描）、溶菌酶（LZM）
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血常规检查无明显改变，活动进展期可有血细胞减少，贫血，血沉增快。约有1／2患者血清球蛋白（γ和β）增加，白蛋白减少。钙代谢障碍引起高血钙。血清碱性磷血酶于急性期约30～45％的病例增加。血管紧张素Ⅰ转化酶（ACE）存在于肺毛细血管内皮细胞，在本病急性期，血清ACE连同a1抗胰蛋白酶，溶菌酶增加。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">高尿钙，尿氨基酸羟基脯胺酸增加。
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa"><br>
+
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">凡临床疑为结节病者，应将淋巴结，皮肤丘疹，皮下及肌肉结节，肿大腮腺等进行活检。
+    纤维支气管镜行粘膜活检阳性率高达66％；肺活检阳性率达71％～90％。必要时可行纵膈镜
+    取淋巴结活检，阳性率为95％。开胸活检阳性率可达100％。
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．中心型肺癌常表现为肺门肿块影，但常为单侧性，可通过气管分叉体层、选择性支气管造影、纤维支气管镜检查和活检、痰细胞学检查进行鉴别。<br>
+2．肺门转移癌&nbsp;&nbsp;无症状的双侧对称性肺门淋巴结肿大极少由转移癌引起。原发肺癌或肺外肿瘤转移，常有下叶淋巴管性癌病改变，而且病变发展快，患者全身情况差等与结节病截然不同。<br>
+3.&nbsp;肺门淋巴结结核多见为单侧性或双侧不对称，常可见钙化，结素反应阳性，痰中找到结核菌，Kveim&nbsp;试验阴性。<br>
+4．淋巴瘤&nbsp;&nbsp;何杰金氏病：在临床X线和免疫学改变上与结节病颇相似，发病年龄也相仿，但以男性较多（3：1），常见全身症状有发热，体重减轻，贫血等；血白细胞增加，淋巴细胞减少，嗜酸粒细胞增加。胸内淋巴结肿大，常为单侧或双侧不对称的肺门淋巴结肿大，累及上纵隔，隆凸下和纵隔淋巴结。肺门淋巴结倾向于与右心缘相融合（结节病的肺门淋巴结则常与右心缘分开），常有肺门淋巴结的压迫症状。何杰金氏病的肺门淋巴结肿大常继肺部浸润而发生，而结节病的肺门淋巴结肿大常发生在肺部浸润前或与之同时发生。何杰金病的骨损害为硬化性或溶骨性，见于脊椎，骨盆；结节病的骨损害则多见于指骨。为囊性改变。<br>
+5．外源性变应性肺泡炎慢性阶段常引起肺部肉芽肿改变，易与结节病相混淆。本病常吸入植物性粉尘和霉草尘等的职业史，伴反复发生的咳嗽、哮喘，为第Ⅲ型过敏反应表现。血清与有关抗原可引起沉淀反应，Kveim&nbsp;试验阴性。<br>
+6．慢性弥漫性间质纤维化&nbsp;&nbsp;有逐渐增剧的气短、干咳、紫绀、杵状指，肺下野可闻干性与爆裂性水泡音。组织细胞增生症，X线改变与Ⅲ期结节病相似，有时呈蜂窝状改变。根据临床症状及淋巴结、皮肤或肺活检等可与本病鉴别。<br>
+7．局限性慢性纤维空洞性型肺结核与亚期结节病肺纤维化病例的右肺上叶萎缩，肺门阴影上提，肺叶有支气管扩张及肺大泡者不易区分。慢性纤维空洞型肺结核病例有慢性咳嗽、吐痰、咯血、气短、盗汗、食欲不振等症状。空洞壁厚、痰菌阳性。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．治愈标准症状、异常体征消失、肺部X线检查病变吸收。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．好转标准&nbsp;&nbsp;症状、异常体征好转、肺部X线检查病变较前缩小。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">急性发病的结节性红斑，肺门淋巴结肿大，眼病（眼角素层）和腮腺炎，约3／4可在1～2年自行消散。慢性病例的预后不易估计。肺、眼、皮肤的纤维化常不可逆。结节病过去死亡率为8％～9％，使用激素治疗后，病死率下降为1 ％～3％。死亡年龄60岁以下者占71％，多数为50～60岁。死亡原因为心、肺、脑、肾的结节病等。因长期使用激素治疗未抗结核治疗，并发结核病也为死亡原因之一。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">结节病病因未明，无特效疗法，肾上腺皮质激素可使结节病肉芽肿发生退行性变，从而达到控制症状的目的；适用于系统性症状明显和功能障碍者，如气急和病变呈进行性，血钙和尿钙增加的病例，但对适应症，疗程、用量及疗效的看法并未一致。有人认为无肺外结节病的Ⅰ期患者，预后佳，有65％～80％可自行消退，不需激素治疗。但也有人认为皮质激素可抑制T淋巴细胞增殖和T淋巴效应细胞的功能，防止淋巴因子的释放，抑制肺泡炎及肉芽肿形成，从而减少肺功能损害，故主张早期应用。因结节病有自限性，Ⅰ期病人，可不需治疗，6个月复查一次。治疗方法及剂量如下：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．强的松初次剂量30～40mg／日，重症用40～60mg／日，6个月后减少用量，直到维持量为10～15mg／日，疗程1～2年。间日疗法可防止或减少激素的副作用，首次从60mg开始，隔日用药两个月，逐渐减量，如获缓解，约1．5年完成治疗。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．羟保泰松&nbsp;&nbsp;如对皮质激素不能适应，或用后疗效不佳者可以使用羟保太松治疗，用量为每次100mg，每日4次，疗程3个月，疗效似皮质激素。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．氯奎&nbsp;&nbsp;对抑制肺纤维化及皮肤病变有效。用量为每次250mg，每日3次，3个月后改为250mg每周两次，疗程6个月。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．氨基苯酸钾&nbsp;&nbsp;对肺纤维化、冻疮性狼疮有效，可与皮质激素、氯奎交替使用，以避免单独长期用药的副作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5．眼部治疗&nbsp;&nbsp;眼部结节病可局部加0．5～1.0％激素滴剂或软膏，同时加用0．5％～1．0％阿托品软膏散瞳，以避免虹膜粘连。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外临床上对激素治疗无效者，尚有使用免疫抑制药，如氨甲喋呤、苯丁酸氮芥、硫唑嘌呤有效的报道。也有试用免疫增强剂，如左旋咪唑、转移因子、胸腺素等其效果有待观察。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结节病病人对维生素D特别敏感，可引起高血钙和高尿钙症状，使血尿素增加，应列为禁忌。结节病患者怀孕后不必中止妊娠，但分娩后，特别是6个月后可能复发，故应注意摄片观察。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1.&nbsp;肺气亏虚，肺失宣降&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;治法：补益肺气，宣肺止咳。<br>
+&nbsp;方药：生黄芪15g、太子参20g、白术10g、防风6g、紫菀15g、前胡10g、知母6g、百部10g、贝母10g、甘草6g。&nbsp;<br>
+2．肺脾两虚，痰浊阻肺<br>
+治法：补肺健脾，燥湿化痰。<br>
+方药：黄芪15g、党参10g、茯苓15g、白术10g、半夏10g、杏仁12g、贝母10g、枇杷叶15g、厚朴10g、丹参15g、川芎10g。<br>
+ 3．气阴不足，血脉瘀阻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+治法：益气养阴，活血通脉。<br>
+方药：黄芪15g、太子参20g、麦冬15g、五味子6g、贝母10g、百合15g、元参15g、丹参15g、当归10g、赤芍10g、知母10g、地骨皮15g。&nbsp;<br>
+4．阴阳俱虚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+治法：滋阴温阳<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：人参（单煎）6g、熟附片6g&nbsp;&nbsp;（先煎）、桂枝6g、生熟地各15g、茯苓15g、泽泻15g、猪苓15g、山萸肉10g、生龙牡各15g、炙麻黄6g、丹参15g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减：若口咽干燥，五心烦热，潮热盗汗，去人参、附片、桂枝，改用西洋参、麦冬、五味子，益气养阴。若痰浊粘稠，蔽阻心窍出现嗜睡，神昏，言语错乱可灌服苏合香丸。<br>
+1．气功疗法：主要功法内养功，配合功法，简化太极拳，保健功，行步功。<br>
+2．饮食疗法：常吃白木耳、猪、羊、牛肺脏，脾阳虚者加服山药、海米，小豆、大枣。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;肾阳虚者加服蘑菇，核桃仁、胡桃肉、蛤蚧粉、阴阳两虚者加服梨汁、紫菜头、鲜百合、牛奶、桑椹。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">取肺俞、大椎、合谷、三阴交、足三里、内关，留针15分钟，隔日一次，脾虚加胃俞、脾俞。阴阳两虚者加血海、命门。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">采用脊背提拿法，摩按季肋下法，点按侧胸肤法。脾阳虚者加上肤横摩法。<br>
+按柔胃俞法，点按足三里法。肾阳虚者加点按命门。阴阳两虚者加按柔大椎，点按血海、命门及足三里。
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">激素治疗适用于症状明显和有明显功能障碍者，再加辨证分型论治，临床症状可有所改善。无症状的肺门淋巴结肿大患者，不必采用激素治疗，按辨证分型服用汤药，可望自行消散。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">加强锻炼身体，生活要有规律，摄取多种营养食物。防治上呼吸道病变，从而调整免疫机制。中医治病必求其本，这个本就是人体自我稳定及防卫反应，使机体恢复正常生理功能达到防病的作用。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">结节病于1875年由Hutchinson首先描述，1899年Boeck命名，1940年国际上开始采用结节病这个名称。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

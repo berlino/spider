@@ -1,0 +1,953 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">血栓性静脉炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=血栓性静脉炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">thrombotic phlebitis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XUESHUANXINGJINGMAIYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：脉痹，恶脉。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">外周血管疾病，循环系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">血栓性静脉炎包括血栓性浅静脉炎和深部静脉血栓形成。常先有静脉内的血栓形成，以后发生静脉对血栓的炎性反应，亦可继发于创伤或脓毒病引起的静脉壁的炎症。血栓性浅静脉炎主要累及四肢浅静脉，深部静脉血栓形成则可累及任何部位的深静脉，而以下肢深静脉受累多见。（参见“下肢血栓性静脉炎”条。）
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">血栓性浅静脉炎的病因主要有：
+1．血管壁损伤。肢体外伤时血管壁的损伤、静脉插管或输入各种刺激性溶液或高渗液体以及细菌毒素作用等。
+2．静脉曲张引起静脉内血液郁滞，造成静脉内膜缺氧和变性。
+深部静脉血栓形成的病因主要有：
+1．引起血栓性浅静脉炎的各种原因，或由浅静脉炎延伸所致。
+2．静脉血流郁滞，多见于长期卧床、充血性心力衰竭、腹内压增高或下肢静脉曲张者。
+3．异常的血液高凝状态。如创伤、烧伤或严重脱水所致的血液浓缩；纤维蛋白原和第Ⅷ因子增多；脾切除术后血小板急剧升高和骨髓增生性疾病，尤其是红细胞增多症的血液粘稠度增高；某些药物，如长期口服女性避孕药致抗凝血酶Ⅲ的水平降低：或某些癌肿、感染等均可使血凝状态增高，造成静脉内血栓形成。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">湿热之邪外侵，以致气血瘀滞，脉络滞塞不通；或外伤、染毒或经脉创伤等均可导致气血瘀滞而引发本病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">湿热外侵或外伤、疫毒、创伤等，导致气血运行不畅，血流迟缓，瘀血阻络，不通则痛；络道阻塞，血运受阻，水津外溢，聚而为湿，停滞肌肤则肿；血瘀湿浊郁久化热，故肢体发热；气虚无以统摄脉络，瘀血结聚，则表浅络脉显露。总之，脉络湿阻血瘀是本病的病机关键。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">血栓性浅静脉炎的静脉壁常有不同程度的炎变和增厚，血管腔内的血栓多与静脉壁紧贴而不易脱落。深部静脉血栓形成时，静脉壁常无炎变或增厚，血栓与管壁粘连不紧，易脱落。静脉血栓主要由红细胞组成，其尾部游离浮动，常破碎，引起肺栓塞。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）血栓性浅静脉炎：<br>
+&nbsp;①脉络湿热：<br>
+&nbsp;&nbsp;&nbsp;证候：沿脉络走行突然出现疼痛、色红、肿胀、灼热，可摸到硬结节或索条状物，以下肢多见，可伴有全身不适、发热等症状。舌红苔薄黄或黄腻，脉象弦数或滑数或濡数。<br>
+&nbsp;&nbsp;证候分析：湿热之邪侵及脉络，气血瘀滞，脉络不通，故沿脉络走行出现疼痛、红肿；瘀血结于脉络，故可触及硬结或条索状物；湿热交争，故可见周身不适、发热等症状。舌红苔薄黄或黄腻，脉弦数、滑数、濡数均为湿热阻滞脉络之象。<br>
+②脉络瘀阻：<br>
+&nbsp;&nbsp;证候：脉络走行呈硬条索状，粗细不均，可有不同程度的自发痛、触痛及牵拉痛，本症多发于胸腹部、上肢，其次为颈部。无明显全身症状。舌质淡紫，苔薄白，脉缓涩或沉细涩。<br>
+&nbsp;&nbsp;证候分析，脉络瘀阻，瘀血结聚，故可见硬索条状脉络，粗细不等；脉络不通，不通则痛，故可见局部自发痛、触痛或牵拉痛。舌质淡紫，苔薄白，脉缓涩或沉细涩为脉络瘀阻之象。<br>
+（2）深部静脉血栓形成<br>
+&nbsp;①脉络湿热：<br>
+&nbsp;&nbsp;&nbsp;证候：患肢突然肿胀、疼痛，皮色黯红，皮温升高，全身症状不明显、有的患者体温可升高。舌质淡紫或有瘀点、瘀斑，苔黄腻，脉滑数或弦数。<br>
+&nbsp;&nbsp;&nbsp;证候分析：湿热外侵，脉络瘀滞，血运受阻，水津外溢，故肢体肿胀、疼痛，皮色黯红；湿热交争，故皮温升高或见体温升高；舌质淡紫或有瘀点、瘀斑，苔黄腻，脉滑数或弦数为湿热阻滞脉络之象。&nbsp;&nbsp;<br>
+②脉络湿瘀：<br>
+&nbsp;&nbsp;证候：患肢肿胀、疼痛，皮色苍白或正常，皮肤温度升高，全身症状不明显，舌质淡紫，或有瘀点、瘀斑，苔白腻，脉沉紧或濡涩。<br>
+&nbsp;&nbsp;证候分析：本型常为脉络湿阻型的恢复期。血瘀湿浊，阻滞脉络，致使肢体肿胀、疼痛，而皮色可为苍白，亦可正常，皮肤微热。舌淡紫，或有瘀点、瘀斑，苔白腻，脉沉紧或濡涩为湿瘀互阻脉络之象。&nbsp;<br>
+③脾虚湿阻：<br>
+&nbsp;&nbsp;证候：身疲乏力，患肢肿胀，沉重胀痛，皮肤温度不高或仅有微热，肤色正常或色暗，或伴肢体脉络迂曲、舌质淡暗，苔白腻，舌体胖边有齿痕，脉缓或濡。<br>
+&nbsp;&nbsp;证候分析：久病脾虚，水湿不运，停滞肌肤，湿性重浊，故疲乏无力、肢体肿胀、沉重；湿浊停滞日久亦可阻滞血脉，致血运不畅，瘀血结聚，而见肤暗、肢体脉络迂曲。舌质淡暗，苔白腻，舌体胖大，边有齿痕，脉缓或濡为脾虚湿阻，脉络不畅之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">血栓性浅静脉炎诊断标准:<br>
+1.浅层的静脉呈炎症表现，表面红、肿、热、痛，可触及索状物。发生在不同部位有不同的病名。<br>
+2.此起彼伏，反复发作，不用特殊治疗，即可自行消退，但常反复。<br>
+3.全身反应轻，少数患者仅有低热，白细胞稍有增高。<br>
+4.排除结节性红斑，硬红斑，硬结节，结核疹，淋巴管炎等。<br>
+5.经病理切片检查证实。<br>
+<br>
+深静脉血栓形成诊断标准:<br>
+（一）急性期<br>
+1.临床上发病突然，患肢肿胀、疼痛、皮肤颜色呈暗红色，肢体皮温升高。<br>
+2.急性髂股静脉血栓形成（具有患肢肿胀、浅静脉扩张、股三角区压痛）应该与盆腔肿瘤、急性弥散性淋巴管炎以及急性动脉栓塞相鉴别。<br>
+3.小腿深静脉血栓形成（小腿深部酸胀痛、局部压痛及Homan's及Neuhof氏症阳性）应与小腿肌炎、小腿纤维组织炎、小腿肌劳损及腘窝囊肿，以及小腿深部组织肿瘤相鉴别。<br>
+（二）慢性期<br>
+即为深部静脉血栓形成后遗症。因静脉血回流障碍，故下肢肿胀为凹陷性肿胀，站立、久坐、远行后明显，休息或平卧后减轻，晨轻暮重，长时间后，肢体呈郁滞性皮炎，甚则皮肤色素沉着、浅静脉怒张、浅表性溃疡，进一步演变为“老烂腿”、“裙边疮”，长期不愈。即使创口愈合，但很快又复发。<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据浅表静脉区的红肿和扪及压痛的条索状物等特点，血栓性浅静脉炎的诊断即可成立。
+        凡在术后、产后或因全身性疾病长期卧床的患者中，突然出现小腿深部疼痛、压痛、肿 胀，Homans征和Neuhof征阳性时，应首先考虑小腿深部静脉血栓形成的可能。结合超声检查、放射性核素检查和静脉造影即可确诊。根据疼痛、肿胀、压痛的部位和范围的不同、浅 静脉扩张的有无及其范围，结合静脉造影尚可作出阻塞处的精确定位。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">有静脉血管损伤史，静脉曲张、静脉淤血及手术、产后卧床史等。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">血栓性浅静脉炎者患部疼痛，一般无全身症状。深部静脉血栓形成者局部疼痛，行走时加重。轻者仅有局部沉重感，站立时明显。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">血栓性浅静脉炎者沿静脉有炎症反应，局部红肿，有明显压痛，可触到索条静脉。1～3周炎症消退后，局部遗留硬索条状物和皮肤棕色色素沉着，常经久不退。本病有复发倾向。深部静脉血栓形成者患肢肿胀、发热、压痛，可触到有压痛索条，&nbsp; Homans征和Neuhof征阳性，还可见远端浅静脉曲张。髂、股静脉血栓形成时，患肢呈痉挛性剧痛，整个下肢呈弥漫性可凹性水肿，大腿和腹股沟区域可见浅静脉曲张，股三角区有明显压痛，股静脉部位可触到有压痛的索条。如血栓向下腔静脉延伸引起下腔静脉阻塞时，则疼痛向上扩展，两下肢及下腹部均出现明显的水肿，后期水肿减轻后，腹壁可见许多浅静脉扩张。上肢深静脉和上腔静脉血栓形成较少见，一旦发生，上述表现可出现于上肢或胸壁、颈和头面部。脓毒病性静脉炎者可有发热，波及浅静脉时局部的红、热反应更明显。深部静脉血栓形成的病人，血栓脱落可造成肺栓塞，产生相应的症状和体征。浅静脉炎者血栓脱落者少见。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">电阻抗体积描记法和静脉血流图
+      正常时肢体容积随吸气及压迫肢体远端而增加，如无此变化，表明检查部位近端有静脉血栓形成。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">一、Doppler血管超声图
+    正常时在股、腘及胫后静脉上可闻及血流通过的响声，响声随呼吸而变化，肢体远侧加压时响度增加。如听诊区的近端发生静脉血栓形成，则上述现象消失。
+二、放射性核素检查
+1．125碘－纤维蛋白原摄取试验  局部血栓形成时，125 碘标记的纤维蛋白原可进入局部血栓，使患病部位的放射性增高。此法特别适用于膝关节以下的静脉血栓的定位检查，但不适宜对腹股沟韧带以上的静脉血栓检查。
+三、静脉造影
+      本法无禁忌证。可显示静脉阻塞的部位、程度、范围和侧支血管的情况。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">一、静脉压测定周围大静脉的正常压力平均为0．58～1．18kPa  （6～12cm  H2O）。患肢的静脉压升高，常 大于1．96kPa（20cmH2O）。二、高99m 锝酸盐法 
+ 左或右髂总静脉完全闭塞时，显影延迟30秒。本法适用于骨盆及下肢深静脉血栓形成的诊断。三．99m碍一聚合白蛋白（MAA）或99m锝大颗粒微球体（MS）法检查
+静脉无病变时，可显示大隐静脉畸形、静脉血栓阻塞、侧支血流或延迟显影。阻塞部位有放射性降低或缺损区；病 变区的远端有放射性潴留，并可观察到一支或多支侧支循环。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．结节性红斑多见于青年女性，与结核和风湿有关。结节多发生于小腿，伸屈侧无明显区别，呈圆形、片状或斑片状，结节不发生溃破，可有疼痛、发热、无力、关节痛、小腿浮肿等。<br>
+2．结节性动脉周围炎多见于中年男性，皮损为多形性，有红斑，瘀斑、紫癜、网状青斑等，以皮下结节为多见，结节沿小动脉分布，可活动，皮色红，有疼痛，可发生溃疡，反复发作，全身可出现发热、关节痛、汗出等，可累及内脏、神经、肌肉、脑等组织。<br>
+3．小腿蜂窝织炎&nbsp;&nbsp;为溶血性链球菌或葡萄球菌等感染所致。患部红肿界限不清，中心部颜色深暗，有程度不同的疼痛和压痛，中心部可软化形成脓肿。<br>
+4．下肢急性动脉栓塞&nbsp;&nbsp;多由于风心病、冠心病、房颤所致。突然发生肢体剧烈疼痛，以肢端为重，患肢厥冷。苍白，感觉丧失，肢体挛缩，浅静脉萎缩，栓塞平面以下动脉搏动消失，可发生广泛肢体坏疽。<br>
+5.腘窝囊肿&nbsp;&nbsp;骨关节炎、风湿性关节炎或膝关节构造异常者可致本病，其症状、体征与静脉血栓形成相似，Homans&nbsp;征阳性，可借助X线关节造影或关节腔内注射131碘人血清白蛋白检查以鉴别。<br>
+6．下肢急性丹毒&nbsp;&nbsp;常由足癣或下肢感染所致，发病较急，往往首先有寒颤、高热，与发烧同时可出现足部。小腿大片状红斑，边缘清楚，发热肿胀，灼热疼痛，可迅速向周围扩散，严重者可扩延累及大腿。由于反复发作，下肢淋巴管受累，发生阻塞，引起肢体增厚、粗肿，最后形成象皮肿。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">血栓性浅静脉炎疗效判定标准:<br>
+1.治愈：局部炎症消退，索状物消失，无任何自觉症状（除皮肤仅剩色素沉着），3个月内不再复发。<br>
+2.有效：索状消失，无自觉症状，但其他部位又复出现。<br>
+3.无效：治疗期间，又出现新的病变。<br>
+<br>
+<br>
+深静脉血栓形成疗效判定标准:<br>
+1.临床治愈<br>
+（1）站立20～30min或行走1500m后无明显肿胀疼痛，无沉重感，亦无压痛。<br>
+（2）下肢浮肿明显消退或完全消退（以平面周长作对比，大腿在髋骨上缘15cm、小腿胫骨粗隆下10cm），同健侧相比，大腿不大于2cm，小腿不大于1cm左右。<br>
+（3）有条件者可做静脉阻抗式血流图或超声血流显像图。静脉最大排泄量（MVO）比治疗前改善2/3的血流量（正常值34.9士7.85ml/100ml组织/min，超声血管显像可见静脉管腔甚至见到其瓣膜）。<br>
+2.显效<br>
+（1）站立15～20min，行走1000m后疼痛及肿胀比治疗前明显好转。<br>
+（2）下肢肿胀明显减轻，平面周长同健侧相比，大腿不大于3cm，小腿不大于2cm左右。<br>
+（3）静脉阻抗式血流图或超声血管显像图：静脉最大排泄量（MVO）比治疗前改善1/3血流量，超声血管显像图见到静脉管壁不规则，甚则有充盈缺损。<br>
+3.进步<br>
+（1）站立10min以内、行走500m后，仍有疼痛、肿胀，但比治疗前轻。<br>
+（2）下肢浮肿减轻、肢体平面周长同健侧相比较治疗前好转。<br>
+（3）静脉阻抗式血流图或超声血管显像图静脉最大排出量（MVO）比治疗前改善1/4血流量；超声血管显像示静脉管腔不全梗阻，可以见到血栓。<br>
+4.无效<br>
+治疗后症状与体征均无明显改善，甚则患肢肿张加重，少数患者并发肺栓塞，或者出现肺栓塞的征兆者，为无效。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">血栓性浅静脉炎预后较好；深部静脉血栓形成常造成静脉瓣膜功能不全以及并发肺栓塞，可危及生命。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．血栓性浅静脉炎的治疗<br>
+（1）卧床，抬高患肢超过心脏水平，局部热敷，必要时可穿弹力袜或用弹性绷带包扎。<br>
+（2）药物：保泰松：0．1，3次／日；炎痛喜康：1mg，1次／日；消炎痛：&nbsp; 25mg，3次／日；阿司匹林：0．5～1．0mg，3次／日。一般不必用抗生素或抗凝剂治疗。<br>
+2．深部静脉血栓形成的治疗<br>
+（1）卧床1～2周，抬高患肢超过心脏水平，膝关节稍屈曲位。保持大便通畅，防止血栓脱落；起床后穿长统弹力袜，穿着时间6周至3个月。<br>
+（2）腰交感神经阻滞：可以解除动脉痉挛，缓解疼痛。<br>
+（3）溶栓疗法：适用于发病后3天内或并发肺栓塞时。<br>
+&nbsp;①链激酶：药前半小时先静注氢化考的松25mg～50mg或地塞米松5～10mg，然后予链激酶50万U溶于5％葡萄糖或0．9％NS&nbsp; 100ml内，静滴30分钟以后，以每小时10万U的速度静滴维持，直到症状消失，再继续滴注3～4小时，或链激酶60万U和地塞米松0．5～5mg或氢化考的松25mg溶于5％葡萄糖250～500ml内静滴，每6小时一次。通常用药后8～10小时，症状开始缓解，一般不超过3～5天；局部滴注5000U／小时，共8小时。<br>
+②尿激酶：初剂量3万～5万U溶于5％葡萄糖或低分子右旋糖酐250～500ml内静滴，于1～2小时内滴完，每日2～3次，维持量可根据每日测定的纤维蛋白原量或优球蛋白溶解时间来调节。使用时间可长达1～2周；局部滴注4000U／小时，共12小时。<br>
+③纤维蛋白溶酶：5万～15万U溶于5％葡萄糖250ml内静滴30分钟，以后可5万U，静滴，每日2～3次，持续7日；也可进行局部血栓内注药。<br>
+④组织型血浆纤溶酶原激活剂（t一PA）：每小时用0．5mg／kg，静滴2～4小时；合并肺栓塞时，先给25mg／小时，静滴2小时，如无效可追加40mg，以10mg／小时的速度静滴4小时。<br>
+（4）低分子右旋糖酐： 500ml静滴，1～2次／日，&nbsp; 10～15天为一疗程；或500ml中加入丹参20ml静滴，1～2次／日，&nbsp; 14天为一疗程。<br>
+（5）手术治疗：上述治疗48～72小时无效时，可考虑做静脉血栓摘除术或Fogarty导管取栓术、下腔静脉结扎术或滤网成形术、大隐静脉旁路移植术。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">辨证分型治疗<br>
+（1）血栓性浅静脉炎：<br>
+&nbsp;①脉络湿热：治法：清热利湿，化瘀通络。<br>
+&nbsp;&nbsp;&nbsp;方药：五神汤加减。药用金银花、紫花地丁、茯苓、车前子、丹参、桃仁、红花、牛膝。方以金银花、紫花地丁清热解毒，茯苓、车前子清利湿热，丹参、桃仁、红花活血化瘀，配牛膝破血通经，并引药下行。红热甚者加公英、连翘、黄柏加强清热解毒之力；肿胀甚者加苍术、泽泻以利湿消肿；疼<br>
+痛甚者加制乳香、制没药以活血止痛。<br>
+②脉络瘀阻：治法：活血化瘀，通络止痛。<br>
+&nbsp;&nbsp;方药：桃红四物汤加减。药用桃仁、红花、当归、白芍、川芎、丹参、元胡、鸡血藤、水蛭。<br>
+&nbsp;&nbsp;方以桃仁、红花、当归、白芍、川芎、丹参、元胡、鸡血藤、水蛭共用可达瘀血去脉络通、疼痛止之效。发生于下肢者可加牛膝，发生于上肢者可加桑枝；肿胀者加滑石、桂枝通阳利水；红肿者加公英、地丁清热解毒；浮肿晨轻暮重者加升麻、黄芪升阳利水。<br>
+（2）深部静脉血栓形成<br>
+&nbsp;①脉络湿热：治法：清热利湿，活血通络。<br>
+&nbsp;&nbsp;&nbsp;方药：清热通络汤加减。药用金银花、蒲公英、地丁、茯苓、车前子、生苡仁、白花蛇舌草、丹参、炮甲珠。<br>
+&nbsp;&nbsp;&nbsp;方以金银花、蒲公英、地丁、车前子、生苡仁、茯苓、白花蛇舌草清热利湿解毒；丹参、炮甲珠活血散结消肿，肿胀明显者，皮色光亮者，加土茯苓、泽泻；疼痛明显者，加制乳香、制没药；气虚者加党参、黄芪。&nbsp;<br>
+&nbsp;②脉络湿瘀：治法：活血化瘀，利湿通络。<br>
+&nbsp;&nbsp;&nbsp;方药：活血通脉饮加减。药用丹参、赤芍、当归、川芎、金银花、土茯苓、赤小豆、生苡仁。方以丹参、赤芍、当归、川芎活血化瘀；金银花、土茯苓、赤小豆、生苡仁清热利湿通络。痛甚者加炮甲珠、制乳香、制没药活血止痛；素体阳虚，畏寒肢冷者，去银花，加桂枝、细辛、附子温阳；气虚者加党参、黄芪益气健脾。&nbsp;<br>
+③脾虚湿阻：&nbsp;治法：健脾渗湿，活血化瘀。<br>
+&nbsp;&nbsp;方药：健脾通络汤加减。药用黄芪、党参、生苡仁、茯苓皮、车前子、姜片、扁豆、白术、鸡血藤、丹参、川牛膝。方以黄芪、党参、生苡仁、茯苓皮、车前子、姜片、扁豆、白术健脾利湿；鸡血藤、丹参、川牛膝活血化瘀。<br>
+加减可参考上述两型。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）凉血解毒丸：1丸，3次／日，适用于脉络湿热证的患者，配合二妙丸内服有一定的疗效。<br>
+（2）活血止痛散：每次6g，3次／日，适用于脉络瘀阻的患者，可活血、通络、止痛。<br>
+（3）金银花、益母草、白茅根各100g，水煎代茶饮。<br>
+（4）野菊花、金银花各100g，生甘草20g，水煎代茶饮。<br>
+（5）大黄蛰虫丸：每次9g，3次／日，适用于各型有血瘀证者。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">（1）体针：上肢取极泉、曲池透少海、神门、合谷；下肢取髀关、阴包、血海、支沟、三阴交、太冲，均用泻法。<br>
+&nbsp;（2）耳针：常用穴为心。肝、皮质下，内分泌、交感、神门以及与下肢相对应的穴位，留针30分钟，每10分钟行针一次。身体虚弱者可用王不留行籽压穴，不时揉按之。<br>
+（3）梅花针：2．5％碘酒涂擦患部，&nbsp; 75％酒精脱碘，沿疼痛部位轻轻叩刺，然后再拔走罐或闪罐，有一定的疗效。<br>
+（4）水针：取足三里、三阴交、地机、丰隆、阳陵泉等穴，以丹参注射液4ml，每次注射2穴位，每日一次，各穴位交替轮流应用，得气后注入药物，每15～30天为一疗程。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">对久病卧床者，应鼓励多在床上做下肢的主动活动，并做深呼吸和咳嗽动作，必要时可穿长统弹力袜。术后的病人要早期下床活动。长期卧床而又需静脉补液者，应尽量避免输入对静脉有刺激性的溶液，并应经常更换注射或输液的部位，或做深部的静脉插管输入。应积极治疗慢性小腿静脉曲张。手术的病人于术前2小时，急性心肌粳死的病人于头3天，用小剂量肝素（每12小时皮下注射5000U），术后第4天口服华法令、康力龙或采用肝素5000U和二氢麦角胺0．5mg联合皮下注射，每日2次，共5天，有预防静脉血栓形成的作用。也可口服潘生丁或阿司匹林预防。手术中操作应轻巧，避免对静脉壁的损伤，术后避免在小腿或腘窝下垫枕，以免影响小腿静脉回流。术前、后各用低分子右旋糖酥（分子量之万～4万）500ml静滴，以后隔日一次，共3次，亦有预防作用。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

@@ -1,0 +1,917 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">慢性肾小球肾炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=慢性肾小球肾炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">chronic glomerulonephritis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">MANXINGSHENXIAOQIUSHENYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：水肿，虚劳，腰痛，血尿。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">泌尿系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">慢性肾小球肾炎是由多种病因引起的一组渐进性、免疫性炎症性、原发性肾小球疾病。多具有起病缓慢或隐匿，病情迁延、病程较长，有不同程度的蛋白尿、血尿及管型尿，伴或不伴水肿、高血压和不同程度的肾功能减退等临床特点。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">大多数慢性肾炎的病因不清楚。急性链球菌感染后肾炎迁延不愈病程在1年以上，可转入慢性肾炎。但大部分慢性肾炎并非由急性肾炎迁延而致，其他细菌及病毒感染亦可引起慢性肾炎。慢性肾炎大部分是免疫复合物疾病，可由循环内可溶性免疫复合物沉积于肾小球，或由肾小球原位的抗原（内源或外源）与抗体形成而激活补体，引起组织损伤。也可不通过免疫复合物，而由沉积于小球局部的细菌毒素、代谢产物等通过“旁路系统”激活补体，从而引起一系列的炎症反应而导致肾炎。继局部免疫反应之后，非免疫介导的肾脏损害在慢性肾炎的发生与发展中亦可能起很重要的作用。根据目前研究结果提示：①肾小球病变能引起肾内动脉硬化，加重肾实质缺血性损害。②肾血流动力学代偿性改变引起肾小球损害。③肾性高血压可引起肾小球结构和功能的改变。④肾小球系膜的超负荷状态可引起系膜区（基质及细胞）增殖，终至硬化。
+
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">慢性肾炎的病因，根据中医文献中的有关论述，可以归纳为素因、主因、诱因三大类。
+1．素因  本病的发生多由于外邪侵袭，内伤脾肾，但外因必须通过内因而起作用，因此脾肾虚损实为本病的素因。
+2．主因   外界气候的寒冷、潮湿，可以引起身体沉重，腹大胫肿。在五行中湿属土，寒属水，外湿侵袭多能伤脾，寒水外受多致伤肾。另外，脾虚则易有湿邪为患，肾阳不足则可寒水泛滥，某些慢性肾炎脾肾阳虚而无水肿的患者，故慢性肾炎的主因与风、寒、湿有关。
+3．诱因 慢性肾炎一般多属阴水，故其诱因与酒色、饮食、劳累有关。慢性肾炎急性发作者，亦可属于阳水，当与外感客邪诱发有关。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">本病以成人多见，起病时多在20—40岁间，男性多于女性，约2—3：1。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">慢性肾炎水肿的病机主要是与肺、脾、肾三脏及三焦对水液代谢功能的失调有关。因为慢性肾炎在急性发作时，由于风邪外袭，肺的治节、肃降失司，可以出现面部水肿，或加重 原来脾、肾两虚所引起的水肿；脾虚不能运化则水湿贮留也可以水肿；肾虚不能化气，亦可水湿贮留而肿。三焦为水液运行的道路，三焦气化的正常与否，直接与肺、脾、肾三脏的功能有关，另外肝主疏泄，肝气失于条达，亦可使三焦气机塞塞，决渎无权，而至水湿内停，因此间接也与肝的功能有关。同时在临床上还应注意气、血、水三者的关系。关于蛋白尿的病机：蛋白是人体的精微物质，精微物质由脾生化，又由肾封藏，因此蛋白尿的形成，实与脾肾两脏的虚损密切相关，脾能升清，脾虚则不能升清，谷气下流，精微下注；肾主闭藏肾虚则封藏失固，肾气不固，精微下泄。因此，蛋白尿发生的机理，可以从脾肾气虚，即脾气下陷，肾气不固来理解。另外，他脏功能失调或邪扰肾，亦可影响肾之封藏而致蛋白尿。临床所见肾性高血压以肝肾阴虚，肝阳上亢者居多，亦有气阴两虚肝阳上亢者，这是因为肝肾阴虚，迁延不愈阴损及气，必然同时出现脾肾气虚现象，故见气阴两虚，同时又见肝阳上亢，以致眩晕耳鸣。也有一部分肾性高血压是在脾肾阳虚、水湿泛滥的基础上产生的，这是因为水湿上扰清窍以致引起眩晕。有的肾性高血压加入活血化瘀的治疗，可使血压稳定或下降，这是因为肝气郁滞、疏泄失畅的缘故。 慢性肾炎血尿的病因病机可以概括为热、虚、瘀三个方面，其中以阴虚内热为最常见，如属肝肾阴虚，多因阴虚生内热，以致血热妄行而出血，随精微下泄而有血尿；如属脾肾气虚者，则是脾不统血，气不摄血，以致血不归经而出血，随精微下流而出现血尿。既然已经发生出血则必有瘀滞，如何处理好止血与活血的关系，可能有助于血尿的治疗。营血来源于中焦，当慢性肾炎经久不愈，脾气进一步虚损时，由于运化失职，生化无权，必然逐渐发生贫血；肾藏精，精血同源，由于肾气失固，精微不断下泄，故亦必然逐渐产生贫血，因此慢性肾炎经久不愈出现贫血者，在一定程度上反映了脾肾亏损的情况。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">简述几种常见病理类型。①系膜增殖性肾炎：常见有肾小球系膜细胞弥漫增殖和基质增多。②膜增殖性肾炎：病理显示有较多新月体形成者预后差。③局灶性肾小球硬化：由于本病早期病变始于髓旁单位，易造成肾活检漏诊或误诊。④膜性肾病：缓解者使用肾毒性药物或有损害肾功能因素时可使病情较快恶化。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">中医辨证分型标准
+1．本证  下列4个证型中，凡具备任何3项者即可辨证为该型。
+(1）肺肾气虚：①面浮肢肿，面色萎黄；②少气乏力；③易感冒；④腰脊酸痛；⑤舌淡、苔白润、有齿痕，脉细弱。
+（2）脾肾阳虚：①浮肿明显，面色晄白；②畏寒肢冷；③腰脊酸痛或胫酸腿软。足跟痛；④神疲、纳呆或便溏；⑤性功能失常（遗精、阳萎、早泄）或月经失调；⑥舌嫩淡胖，有齿痕，脉沉细或沉迟无力。
+（3）肝肾阴虚：①目睛干涩或视物模糊；②头晕、耳鸣；③五心烦热，口干咽燥；④腰脊酸痛或梦遗或月经失调；⑤舌红少苔，脉弦细或细数。
+（4）气阴两虚：①面色无华；②少气乏力或易感染；③午后低热或手足心热；④口干咽燥或长期咽痛，咽部暗红；⑤舌质偏红，少苔，脉细或弱。
+2．标证凡具备下列任何1项者,即可确定。
+（1）外感：有风寒或风热。
+（2）水湿：全身中度以上水肿或胸腹水。
+（3）湿热：①皮肤疖肿、疮疡；②咽喉肿痛；③脘闷纳呆，口干不思饮；④小便黄赤、灼热或涩痛、不利；⑤舌苔黄腻，脉濡数或滑数。
+（4）血瘀：①面色黧黑或晦暗；②腰痛固定或呈刺涌；③肌肤甲错或肢体麻木；④舌色紫暗或有瘀点、瘀斑；⑤脉细涩；⑥尿纤维蛋白降解产物（FDP）含量升高；⑦血液流变学检测全血粘度、血将粘度升高。
+（5）湿浊：①纳呆、恶心或呕吐；②身体因倦或精神萎靡；③血尿素氮、肌酐偏高。
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）水肿期：此期病因病机有虚实两方面，实为风邪外侵，水湿内停，气滞血瘀，虚则主在脾肾，可表现为气阴两虚，脾肾阳虚等。①风水相搏：本型多见于慢性肾炎急性发作者。由于体虚感受风邪，邪客肌表内舍于肺，肺失宣肃，水道不通，乃致风水相搏，风遏水阻，泛滥肌肤而发为水肿。证候：头面部先肿，继而遍及全身，水肿按之凹陷，但恢复较快，水便不利，并伴有恶寒发热，骨节酸沉，咳嗽胸闷，或咽痛，舌淡苔薄，脉浮紧或浮数，体检呈肾炎面容，血压大多数升高，尿检有蛋白、血尿、管型尿等。②脾虚湿困：本型多见于慢性肾炎患者病程较长者，由于水湿内停，湿邪困脾，脾气被遏，则气伤而运化呆滞，由此导致水肿日久不消。证候：面色萎黄或苍白，腹大胫肿，脘闷腹胀，甚或上泛清水，纳少，少气懒言，神疲乏力，体胖，苔白，脉濡缓，体检双下肢指凹性浮肿，甚者伴有腹水。尿检有大量蛋白尿。血浆白蛋白降低。&nbsp;③脾肾阳虚：本型多见于慢性肾炎病程日久水肿不退的患者。由于脾阳不足，不能制水，肾阳虚衰，不能主水，以致水湿泛滥，泛溢肌肤，甚至全身漫肿。证候：全身高度浮肿，甚至胸腹水并见，面色晄白，皮肤发亮，按之之凹陷恢复较慢，伴畏寒肢冷，腰酸腿痛，倦怠肢软，腹胀纳差，大便溏薄，舌体胖大而润，苔白滑或腻，脉沉迟无力。④气滞水停：盖因水停三焦日久，阻塞气机，或因肝郁气滞，肝失疏泄，皆使气机不畅，水道不通，终致气滞水停而成水肿。证候：除水肿外，必有胀满较著如膺胀膨大，胸腹满闷，呼吸急促，四肢肿胀紧迫光亮，小便不利，或有胁痛，舌质暗苔白，脉沉弦。⑤湿热蕴结：由于土壅木郁，三焦气化不利，水湿内蕴，积久化热，热蒸湿郁，湿热搏结，水肿乃成。证候：头面与下肢浮肿，甚至全身浮肿，皮肤或黄，身热汗出，口渴不欲饮水，脘腹痞满，食少纳呆，尿黄或呈茶色，淋漓涩涌，大便不爽，舌红苔黄腻，脉滑数。⑥血瘀停滞：慢性水肿日久不消，邪入络脉，以致络脉瘀阻，盖因血能病水，水能病血之故，长此以往则瘀水互结互化，从而导致本病的发生。证候：病程较长，水肿皮肤有赤缕血痕，尿血，皮色苍黯粗糙，舌质紫暗或有瘀点、瘀斑，或见爪甲青紫，脉涩等。⑦阴虚水肿：由于本病病程绵长，日久伤阴，或过用激素，温补之品耗伤阴津，加之水肿本身即可伤阴（血管水分有余，而血管内水液不足），故临床阴虚水肿也颇为常见。证候：水肿口渴，渴不多饮，腰膝酸软，手足心热，心烦不寐，面部潮红，舌红少苔，脉细数。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（2）水肿消退期（或从无水肿者）：本期（或无水肿型慢性肾小球肾炎）病机以正气亏虚为主要矛盾，根据正虚不同，临床常见以下证型。①脾肾气虚：慢性肾炎发展至水肿消退阶段，脾肾必受所合戕，即使无有水肿者，由于慢性肾炎迁延日久，亦必有脾肾亏虚。证候：面色苍白或淡黄无华，气短倦怠，食少纳差，食入腹胀，大便溏薄，腰膝酸软，小便频数清长，夜尿频多，舌淡胖苔薄，脉沉弱。②脾肾阳虚：<br>
+慢性肾炎水肿消退阶段，并不意味着脾肾阳虚病理机理的撤除。肾阳不足，命门火衰，则不能生土；脾阳虚衰，久必及肾，终成脾阳肾阳两虚。证候：面色晄白，腰膝酸痛，畏寒肢冷，倦怠无力，纳差腹胀，便溏，夜尿频多，舌体胖润，边有齿痕，脉沉细或沉迟无力。水肿时消时现。③肝肾阴虚：本证多因温补脾肾太过，或用激素较长，日久伤阴所致。证候：面红烦燥，口干咽燥，渴喜冷饮，腰膝酸软，手足心热，目睛干涩，或视物模糊，尿色黄，大便干结，舌红少津，脉象细数。④气阴两虚：气阴两虚证是慢性肾炎临床最常见的证型，主要原因是慢性肾炎一部分病人过多使用激<br>
+素治疗，激素易致病人出现阴虚内热，随着激素的减量，又逐渐转化为气阴两虚证，再者，慢性肾炎病情缠绵反复，在其病变过程中，气虚者，日久气损及阴，肾阴虚者，日久阴损及气，最终皆可导致气阴两虚。阴阳两虚证经过治疗后，病情好转，也可以转化为气阴两虚证。证候：全身乏力，腰膝酸软，畏寒或肢冷但手足心热，口干而不欲饮，纳差腹胀，大便先干后稀，小便黄、舌暗红，舌体胖大则有齿痕，脉沉细而数或弦细。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">慢性肾小球肾炎诊断标准:<br>
+1985年第二届全国肾脏病学术会议（于南京）讨论修正<br>
+1.起病缓慢，病情迁延，时轻时重，肾功能逐步减退，后期可出现贫血、视网膜病变及尿毒症。<br>
+2.有不同程度的蛋白尿、血尿、水肿及高血压等表现，轻重不一。<br>
+3.病程中可因呼吸道感染等原因诱发急性发作，出现类似急性肾炎的表现。也有部分病例可有自动缓解期。<br>
+4.根据临床表现可进一步区分为：<br>
+（1）普通型：有肾炎的各种症状，但无突出表现。<br>
+（2）高血压型：除一般肾炎症状外，还有高血压的突出表现。<br>
+（3）急性发作型：在慢性过程中出现急性肾炎综合征表现。<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">凡具有上述临床表现，持续1年以上者，均应考虑本病。肾穿刺活组织检查不仅有助于确诊，而且能估计预后指导治疗。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">在慢性肾炎发展过程中，常见的加剧因素有：①应用肾毒性药物。②感染：尤其是泌尿道或呼吸道感染。③血流动力学改变：如持续高血压或血压骤降、休克或心力衰竭等。④水、电解质、酸碱平衡失调和其他代谢紊乱：如低钙高磷血症及甲状旁腺功能亢进等。⑤妊娠：有大量蛋白尿、高血压或肾功能减退时，妊娠可加重肾脏病变，胎儿生长受影响。⑥其他：任何预防接种均可加重病情。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">有急性链球菌感染后肾炎迁延不愈病程在1年以上的病史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">慢性肾炎由于起病方式不同，故临床表现也不一，常见的症状有水肿、血尿、高血压，以及全身乏力、食欲不振、头晕头痛、腰酸腰痛、面色苍白等症状，严重时可出现恶心、呕吐、腹泻，甚至消化道出血等。<br>
+大部分患者起病隐匿，多以水肿为首发症状，也有以高血压或乏力、贫血、多尿、夜尿等为首发症状。常有不同程度的蛋白尿、血尿、水肿或高血压。病情大多进展缓慢，逐渐出现肾功能减退；部分患者在疾病过程中因某种因素影响，病情可在短期内迅速恶化而进入尿毒症。<br>
+临床上可分为五型：①普通型：最常见。表现为轻至中度蛋白尿（＋—＋＋），离心尿红细胞＞10个／高倍视野及不同程度管型尿。可伴有轻至中度高血压和水肿，后期可有肾功能减退。本型进展缓慢，可持续多年。②高血压型：除上述普通型的表现外，以持续性中等度以上血压尤以舒张压升高为特点。本型常伴心血管损害和眼底改变，肾功能恶化较快。③肾病型（又称类肾病型）：1985年将本型划归肾病综合征Ⅱ型。突出的临床表现是大量蛋白尿（＞3．5g/d），且多为非选择性蛋白尿；常有中至高度水肿和血浆白蛋白降低（常＜30g／L）；可有高胆固醇血症（＞6．4mmol／L）。尿沉渣检查可见有红细胞及各种管型。血压可有轻度持续增高。肾功能常有轻度损害，多见内生肌酐清除率下降。酚红排泌率减少和血液氮质潴留。多伴有不同程度贫血，血沉常增快。本型虽可缓解但常复发，招致肾功能缓慢减退。④混合型：同时具有高血压型和肾病型表现者可称混合型。本型多有一定程度之肾功能减退。⑤急性发作型：在病情相对稳定或缓慢进展过程中，由于呼吸道或全身感染、劳累等因素影响，经较短潜伏期（多为3—5d，甚至1—2d），出现类似急性肾小球肾炎的临床表现，血压常升高，肾功能可有明显恶化。经适当处理后，病情可趋向缓解或稳定，肾功能可恢复至或接近急性发作前水平。但也有肾功能持续恶化，或经多次发作后进入尿毒症。值得指出，临床各型之间的区分不是绝对的，可相互转化。另外．慢性肾炎患者常有高血压引起的眼底改变，其中高血压型及混合型尤为严重。表现为视网膜动脉变细纤曲，动静脉交叉压迫现象；严重时可有絮状物渗出，眼底出血和视乳头水肿，可影响视力。后者也见于急性发作型。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">（一）浮肿。（二）高血压。（三）眼底改变动：动静脉交叉压迫明显。眼底出血、絮状渗视及神经乳头水肿。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">有一些病理类型如分叶性肾小球肾炎，其小球滤过率并不降低。在疾病的晚期除小球滤过率降低外，肾小管功能也受损害，酚红排泄试验、尿浓缩及稀释功能都减退，与此同时出现电解质紊乱，经常有酸中毒，血钙降低，但很少低血钾症。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血红蛋白:轻度贫血是很常见的，血色素与红细胞成比例下降，较严重的贫血只有在肾功能衰竭时才出现。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">（一）蛋白尿:中等或中等以上程度的蛋白尿（通常大于2g／日），是诊断慢性肾炎的主要依据。患者常常表现为非选择性蛋白尿（即尿中出现除白蛋白以外的其他大、中、小分子的蛋白质），且常因大量蛋白尿引起水肿，以致出现肾病综合征的表现。一般患者尿中蛋白量的多少对预后并无意义。
+（二）血尿:血尿是诊断慢性肾炎的另一主要依据。目前用相差（位相）显微镜检查，对血尿的鉴别诊断有很大帮助。相差显微镜检查，90％以上的肾小球源性血尿表现为变（畸）形红细胞血 尿；而90％以上的非肾小球源性血尿表现为均一（正常）红细胞尿。肾小球源性血尿常伴有中等或中等量以上的蛋白尿。一般来说，尿中红细胞增多反映疾病在活动期。 慢性肾炎患者的尿改变除蛋白尿和血尿外，尚可有管型尿，且根据患者蛋白尿的严重程度与肾功能损害程度，可有少尿或多尿的变化，尿比重和尿渗透压亦随病情出现变化。
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">在慢性肾炎的诊断过程中最重要的鉴别诊断为除外肾病综合征和系统性疾病引起继发的肾脏改变。下面简述如下：<br>
+&nbsp;&nbsp;&nbsp; 1．肾病综合征&nbsp;&nbsp;大量蛋白尿、高度水肿、低蛋白血症和高脂血症是诊断肾病综合征的主要依据。慢性肾炎的部分患者，由于大量蛋白尿致低蛋白血症，可以呈现肾病综合征的表现。<br>
+&nbsp;&nbsp;&nbsp; 2．慢性肾盂肾炎&nbsp;&nbsp;慢性肾盂肾炎晚期可有较大量蛋白尿和高血压，有时与慢性肾炎很难鉴别。后者多见于女性，多有泌尿系感染史。肾功能的损害多以肾小管损害为主，可有高氯酸中毒、低磷性肾性骨病，而氮质血症和尿毒症较轻，且进展很慢。静脉肾盂造影、同位素肾图及肾扫描有助于诊断。<br>
+&nbsp;&nbsp;&nbsp; 3．原发性高血压继发肾损害&nbsp;&nbsp;肾炎多发生在青壮年，高血压继发肾损害发生较晚。病史非常重要。是高血压在先，还是蛋白尿在先，对鉴别诊断起主要作用。在高血压继发肾脏损害者，尿蛋白的量常较少，罕见有持续性血尿和红细胞管型。而肾功能的损害相形之下较严重。肾穿刺常有助鉴别，有人发现20％初步诊断为原发性高血压者，经肾穿刺确诊为慢性肾炎。<br>
+&nbsp;&nbsp;&nbsp; 4．红斑狼疮性肾炎&nbsp;&nbsp;狼疮肾炎的临床表现与肾的组织学改变均可与慢性肾炎相似。不过红斑狼疮在女性好发，且为一系统性疾病，可伴有发烧、皮疹、关节炎等。血细胞下降，免疫球蛋白增加，并有狼疮细胞和抗核抗体。血清补体水平下降。肾脏组织学检查可见免疫复合物广泛沉着于肾小球各部位，复合物中1gG免疫荧光染色呈强阳性。<br>
+&nbsp;&nbsp;&nbsp; 5．IgA肾病&nbsp; IgA肾病好发于青年男性，发作性血尿为其特点。常在劳累或呼吸道感染后很快（1～4天）出现血尿（镜下或肉眼），但多只持续数日后即消失或遗留少许红细胞，蛋白尿多不明显。确定诊断常须肾穿刺活体组织检查以与慢性肾炎鉴别。<br>
+&nbsp;&nbsp;&nbsp; 6．其他如过敏性紫癜性肾炎、糖尿病毛细血管间肾小球动脉硬化、痛风肾、多发性骨&nbsp;髓瘤、淀粉样变累及肾脏等，各有其特点，在诊断慢性肾炎时，均予以除外。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1．完全缓解&nbsp;&nbsp;水肿等症状与体征完全消失，尿蛋白检查持续阴性，或24小时尿蛋白定量持续小于0．2g，高倍镜下尿红细胞消失，尿沉渣计数正常，肾功能正常。2．基本缓解&nbsp;&nbsp;水肿等症状与体征基本消失，尿蛋白检查持续减少50％以上，高倍镜下尿红细胞不超过3个，尿沉渣计数接近正常。肾功能正常或基本（与正常值相差不超过15％）。<br>
+3．好转&nbsp;&nbsp;水肿等症状与体征明显好转，尿蛋白持续减少一个（＋），或24小时尿蛋白定量持续减少25％以上，高倍镜下尿红细胞不超过5个，肾功能正常或有改善。<br>
+4．无效&nbsp;&nbsp;临床表现与上述实验室检查均无明显改善或加重。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">慢性肾小球肾的预后因各种根底病理类型的不同而有很大的差异。一般来说，高血压型者预后较差，普通型及急性发作型较好，但如有较明显的高血压及（或）肾功能损害，则预后亦不好。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">本病常并发心脏损害，包括心脏扩大、心律失常，甚至心力衰竭，主要与高血压、贫血、动脉硬化及水、电解质平衡失调有关，偶可出现恶性高血压或高血压脑病。感染也是常见合并症，多因患者抵抗力降低所致，以呼吸道、泌尿道感染为常见。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．一般治疗&nbsp;&nbsp;对有水肿、大量蛋白尿和（或）血尿、高血压、肾功能受损者，应强调适当的休息。对有水肿、高血压及肾功能差者，注意限制食盐入量，液体入量亦不宜过多。肾功能不良的慢性肾炎患者，蛋白质入量不宜过高。<br>
+2．对症治疗<br>
+（1）利尿：有水肿的慢性肾炎患者，常应用利尿药物以减轻症状，常用的利尿药有噻嗪类利尿药如双氢克尿噻，亦可与保钾利尿药安体舒通或氨苯蝶啶合用。水肿重者可用强利尿剂如速尿等。如水肿严重，血浆白蛋白明显下降<15g/L（1.5g／dl者，可给以血浆、血浆白蛋白等以提高血浆胶体渗透压后加用利尿剂以加强利尿效果。<br>
+（2）降压：有高血压的慢性肾炎患者，往往病情恶化较快。所以控制血压对这些患者是非常重要的治疗措施。但降压不宜过快或过低，以防肾血流量迅速减少，加重了肾功能损害。常用的降压药物可以联合使用。噻嗪类利尿药或速尿等，对贮水贮钠导致血容量扩张引起的高血压有效，还有降低外周血管阻力的作用。血压较高者可选用利血平、肼苯达嗪、甲基多巴、可乐宁等。低压唑及硝普钠作用快而猛，故应慎用。在肾功能差的患者，因硝普钠排出困难易蓄积中毒，更要慎用。大剂量β受体阻滞剂（如心得安可逐渐加量到100mg／日对肾素&nbsp;&nbsp;依赖型高血压有效。顽固难治的高血压，可用巯甲丙脯酸（captopril）&nbsp; 12．5～25mg，一日3次，降压效果明显。<br>
+（3）特殊治疗：糖皮质激素及细胞毒类药物仍为目前治疗慢性肾炎的主要药物。可采用强的松40～60mg／日，顿服或分次服用，6～8周，有效者渐减少用量，每2周减原用量的10％～20％，减量到15～20mg／日时，可改为隔日服1次的办法或原量维持一段时间，以防止反跳，全疗程不应少于1年。或与盐酸氮芥静脉注射合用（1疗程总量为1．5～2mg／kg体重，肾功能差者慎用），或强的松40～60mg／日与环磷酰胺100～200mg／日（口服或静脉注射，1疗程总量为6～8g，肝功不良者禁用）合用。亦可根据病性及用药后的反应，先用硫唑嘌呤、长春新碱或苯丁酸氮芥。抗凝及抗血小板凝集药物如肝素、潘生丁、阿斯匹林等亦可联合应用。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">一、辨证分型治疗&nbsp;<br>
+（1）水肿期：①风水相搏：治法：宣肺利水。<br>
+方药：越婢加术汤合五皮饮加减。药用陈皮、茯苓皮、桑白皮、大腹皮、生姜皮、牛膝、车前子、麻黄、石膏、白术。外感风寒者和（或）素体阳虚者，可用麻黄附子细辛汤合五皮饮，以温阳解表散寒。外感风热者，加连翘、菊花、荆芥以清热解表。此为急则治之法，表证去则应因证治之。<br>
+②脾虚湿困：治法：健脾利水。<br>
+方药：防己黄芪汤合春泽汤加减。汉防己、生黄芪、白术、茯苓、猪苓、泽泻、党参、桂枝、生姜、大枣。方中以黄芪益气固表，防己利水湿；白术、甘草培土胜湿，生姜、大枣调和营卫。通过临床观察，慢性肾炎普通型和肾病综合征属脾虚之证者较为多见，因而应用本方的机会也较多。据临床观察，药后患者不仅症状改善，部分患者还可见尿蛋白逐渐减少。应用本方时，黄芪量一般小于30g，不宜大量。个别病例由于黄芪量大，反见尿量减少，水肿加重。对于肾炎水肿患者，由于肺脾气虚，表气不固常自汗出而易感风寒者，常以本方合玉屏风散，即本方加防风。为加强防己黄芪汤的利水消肿作用，常于本方加车前子、怀牛膝。春泽汤是在五苓散化气利水的基础上，再加人参以增益气之力，本方气味平淡，无壅中之弊，药后常使尿量增加，而水肿消退。由于本方益气活血、化气利水并进，故可恢复正常的水液代谢。<br>
+&nbsp;③脾肾阳虚：&nbsp;治法：温肾健脾，通阳利水。<br>
+方药：偏脾阳虚者，用实脾饮。制附片、干姜、茯苓、白术、大腹皮、川朴、广大香、大瓜、甘草、白蔻仁。偏肾阳虚者，用真武汤合五皮饮。制附片、干姜、茯苓、白术、白芍、桑白皮、陈皮、大腹皮、牛膝、车前子。实脾饮与武汤同为温阳利水之剂，二方相较，实脾饮重在温运脾阳，真武汤主要温补肾阳而利水，临床运用时当细为分辨，临床脾肾阳虚往往并存，再者，脾阳虚，肾阳虚，两者相互影响。临床治脾不宜忘肾，温先天以暖后天，治肾不宜忘脾，温后天以暖先天。故两方临床上需结合化裁，以治脾肾阳虚水肿症。两方皆为辛温助阳散寒利水之剂，水肿消其大半，则应易真武汤为济生肾气丸法，以阴阳双补，阴中求阳。化气行水，勿致辛温劫伤真元。<br>
+④气滞水停：治法：行气利水。<br>
+方药：导水茯苓汤加减。茯苓、泽泻、麦冬、白术、桑白皮、紫苏叶（槟榔、木瓜、大腹皮、陈皮、砂仁、木香、灯芯草。本方是行气利水的代表方剂，主要用于肾炎水肿证属气滞壅塞不通，水道因之不利。宗“气行则水行”之旨，本方行气与利水并进，行气之中又重在宣降肺气及疏理脾气，俾肺得清肃，脾能健运，则水湿自去。方中桑白皮清肃肺气，大腹皮、槟榔宽中导滞；陈皮、砂仁、木香、紫苏叶，斡旋中焦气机；茯苓、泽泻、灯草淡渗利水；白术、木瓜燥湿醒脾；麦冬清热养阴，以防利水伤阴。气滞水肿者运用本方后常使尿量骤增，水肿迅速退。<br>
+⑤湿热蕴结：治法：清热利水。<br>
+方药：三仁汤加减。淡竹叶、川朴、滑石、通草、法半夏、白蔻仁。苡仁、杏仁、车前子、白茅根。本方以杏仁升宣肺气，蔻仁芳香化湿畅口，苡仁渗湿导下；配以半夏、川朴苦温除湿；通草、滑石、竹叶清利湿热。共奏宣化畅中，清热利湿之效。淡竹叶虽利尿作用弱，但增加尿中氯化物的作用较猪苓、黄芪、木通还强。滑石、通草有明显的利水作用。此处不用疏凿饮子，八正散清热利水者，缘慢性肾炎，正气多虚，不耐损害也，此处取三仁汤芳香清化、使气清湿去，而无苦寒伤阴败胃之弊。<br>
+&nbsp;⑥血瘀停滞：治法：活血利水。<br>
+方药：当归芍药散加减。当归、川芎、赤芍、茯苓、泽泻、白术、怀牛膝、车前子。当归芍药散出自《金匾要略》、是治疗瘀血水肿的代表方剂。一是水肿患者有瘀血的指征，如面唇发黯、舌暗或有瘀斑等；二是女性肾炎水肿者，常有痛经及月经不调史，如月经后期，量少色暗有块等。且水肿常于经前加重。本方以当归、赤芍、川芎养血调肝活血；以白术健脾运湿，茯苓、泽泻渗湿泄浊，如此肝脾两调，活血利水并进，药后常瘀血去，肿渐消，现代药理研究证实：当归、川芎、赤芍具有扩张血管、抗栓、抗凝的作用；而茯苓、泽泻具有很好的利尿消肿作用。<br>
+⑦阴虚水肿：治法：养阴利水。<br>
+方药：猪苓汤：猪苓，茯苓、泽泻、滑石、阿胶、怀牛膝、车前子。猪苓汤为育阴利水的代表方剂，主要适用于湿热蕴结阴液亏虚者，本方以猪苓、茯苓甘淡利水，泽泻咸寒渗泄肾浊；滑石利水道；阿胶滋阴清热；全方共奏滋阴利水之功效。药理研究证实：本方具有利尿、调整机体内水液代谢、改善血液循环和血液动力等功效。低蛋白血症、水肿甚者，方中可重用阿胶至30g，《医学衷中参西录》有重用阿胶治阴虚水肿的记载，亦可加用鳖甲、龟版等，以滋阴充脉利水。根据病情需要，有时可将两法或三法合用，如导水茯苓汤是宣肺利水与行气利水合用。有时是先攻后补，有时攻补兼施，方能取得较好疗效。<br>
+&nbsp;（2）水肿消退期:①脾肾气虚：治法：益气健脾、固肾摄精。<br>
+方药：补中益气汤加减。黄芪、人参、白术、当归、陈皮、柴胡、升麻、甘草、菟丝子、山萸、怀牛膝、桑螵蛸。补中益气汤是调补脾肾、益气升阳、甘温除热的代表方剂。对于慢性肾炎证属脾气虚者，常选用本方。方中黄芪、人参健脾益气；白术健脾化湿；陈皮理气和胃以防补而壅滞；气血同源，气虚易致血虚，故用当归以补血。柴胡、升麻益气升提，甘草调和诸药。本方益脾气而无补肾之功，故加菟丝子、怀牛膝滋补肾精；山萸肉、桑螵蛸温肾固摄涩精。肾气虚明显者，加用水陆二仙丹、药用金樱子、芡实等以补肾固精。气虚夹瘀者，加桂枝茯苓丸，益气补肾、活血化瘀。<br>
+②脾肾阳虚：治法：温补脾肾。<br>
+方药：济生肾气汤。生地、丹皮、茯苓、泽泻、山药、山萸肉、制附片、肉桂、牛膝、车前子。济生肾气汤是温补脾肾的常用方剂。该方具有温补脾肾化气行水之功。用于慢性肾炎证属脾肾阳虚者，每能取得较好疗效。方中以肾气丸补益肾阳，加牛膝、车前子利水渗湿；方中附子不仅温肾阳，而且可助脾阳。现代药理研究证实：本方具有扩张外周血管。降低血压、抗炎、利水等功效。若脾阳虚明显者，去肉桂加桂枝、党参、生姜以辛甘温脾助肾。<br>
+③肝肾阴虚：治法：滋养肝肾。<br>
+方药：六味地黄汤。生地、山药、山萸肉、丹皮、茯苓、泽泻。六味地黄汤是滋补肝肾的基础方剂，也是当代治疗肾炎证属肾阴亏虚公认的常用方；方中重用地黄滋养肾阴是为主药，辅以山萸肉、山药兼顾肝、脾之阴，以泽泻、茯苓、丹皮为佐，渗湿泻火，本方的组成特点是以补为主，补中有泻，寓泻于补，通补开合，相辅相成。我们临床上常以生地易熟地，因为阴虚易生内热，生地性寒，在滋阴补肾的同时，兼具清热之功，且其滋腻碍胃之弊亦逊于熟地，故选生地较熟地更适宜。生地用量一般为15～30g。如肝肾阴虚，肝阳上亢，表现为头晕、胀痛、两耳轰鸣者，加菊花、枸杞、夏枯草、刺蒺黎，即杞菊地黄丸加夏枯草、刺蒺藜以滋阴平肝；舌燥咽干为主症者，可用本方加麦冬、五味子、忍冬藤，即麦味地黄丸加忍冬藤；兼夹湿热者，加石苇、滑石、车前子、白花蛇舌草、白茅根等清利湿热；兼夹瘀血者，合血府逐瘀汤加减，滋阴补肾，活血化瘀。<br>
+④气阴两虚：治法：益气养阴。<br>
+方药：参芪地黄汤。人参、黄芪、生地、丹皮、生地、山萸肉、茯苓、泽泻生姜、大枣。参芪地黄汤是治疗慢性肾炎证属气阴两虚的常用方剂。本方即六味地黄汤加人参、黄芪而成。方以人参、黄芪益气健脾，六味地黄汤滋养肾阴，共扶气阴两虚之本。<br>
+二、食疗<br>
+（1）鲤鱼汤：鲜鲤鱼一条，重500g左右，去肠杂，生姜15g，葱15～30g，米醋30～50ml，水炖，不放盐，喝汤吃鱼，适用于慢性肾炎水肿久久不消者。<br>
+（2）玉米须煎剂：玉米须60g（干），洗净煎水服，连服6个月，用于儿童慢性肾炎轻度水肿或尿蛋白不消者。<br>
+（3）益母草膏：益母草120g，加水800ml，煎至30ml，4次分服，每日2次。<br>
+（4）白果蛋：白果5个，鸡蛋1个，将蛋壳穿一个小洞，将白果肉装入蛋中，用袋封口，在饭锅上蒸熟，每日吃1～2个。<br>
+（5）芡实合剂：芡实30g、白术10g、茯苓12g、山药15g、菟丝子24g、金樱子24g、黄精24g、百合18g。枇杷叶9g。适用于慢性肾炎证属脾肾气虚，蛋白尿长期不消者。尿中蛋白过多者，可加山楂肉15g，有红细胞者，可加旱莲草18g。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">针灸治疗慢性肾炎尚无确切报道，针灸对改善慢性肾炎的症状，诸如水肿、腰痛、蛋白尿等可能有益，但其确切疗效，尚有待于今后的深入研究。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">近年来许多中医、中西医结合工作者通过肾穿刺活检病理与中医辨证的相关性研究，发现治疗慢性肾炎要注意以下几点：①不同病理类型的肾炎临床表现各异，中医辨证分型也有所不同，如膜性肾病与IgA肾病就有很大的差异。②临床应根据不同病理类型选择不同的治疗方案。如微小病变对激素及免疫抑制剂疗效较好，但容易复发，长期使用又有明显的副作用。若同时配合中医药治疗，不但可以提高疗效，减少复发，还可能减轻其毒副作用。特别是对IgA肾病、局灶节段性肾小球硬化、膜增生性肾炎等西医治疗较为棘手的慢性肾炎，运用滋阴益肾，益气健脾、清利湿热、活血化瘀等治则的中医药治疗可获一定的疗效。③不同病理类型的慢性肾炎，不但影响其治疗效果，而且影响其预后。如膜增生性肾炎不仅疗效较差，而且预后也不佳。④采用中医辨证分型时，只有将本证和标证联系起来，方能对疾病病机有更完善的认识。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．避免受冷、受湿、过度疲劳，以免诱发慢性肾炎的发生。<br>
+2．预防感染，以免肾炎病情恶化。<br>
+3.&nbsp;除非病情严重，一般可以适当活动，以免体力减弱，抵抗力减退。<br>
+4．避免使用对肾脏有毒害作用的药物。<br>
+5．恢复期要预防病情反复，防止外感。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">中医学解释此病的病因：如《医宗必读·水肿胀满》说：“虚人水肿者，土虚不能制水也，水虽制于脾，实统于肾，肾本水脏而元阳寓焉，命门火衰，既不能自制阴寒，又不能温养脾土，则阴水不从阳而精化为水，故水肿之证多属火衰也”。《金匮要略》有：“肾著之病，其人身体重，腰中冷，形如水状，反不渴，水便自利，饮食如故，病属下焦，身劳汗出，表里冷湿，久久得之”等。《医宗必读·水肿胀满》说：“凡诸实证，或六淫外客，或饮食内伤，阳邪急&nbsp;促，甚至必暴，每成于数日之间；若是虚证，或情志多劳，或酒色过度，日积月累，其来由渐，每成于经月之后。”《医学入门》也说：“阳水多外因，涉水冒雨，或兼风寒暑气而见阳证；阴水多内因，饮水及茶酒过多，或饥饱劳役房欲而见阴证。”
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

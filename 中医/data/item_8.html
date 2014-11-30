@@ -1,0 +1,887 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">急性重型肝炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=急性重型肝炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">acute hepatitis gravis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">JIXINGZHONGXINGGANYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">暴发性肝炎，暴发性肝功衰竭，中医:急黄候.
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">急性重型肝炎（急重肝）相当于国外报道的暴发性肝炎或暴发性肝功衰竭。急重肝系指因肝细胞功能损害在起病10天以内出现肝性脑病，严重凝血机制障碍，具有起病急、预后差、病死率高等特点。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">引起急重肝有很多病因，包括肝炎病毒感染、药物诱导、代谢及自身免疫性肝炎等。             
+在急重肝病因中以肝炎病毒为主，甲、乙、丙、丁、戊型肝炎病毒均可引起，但以HBV为最常见。与HBV有关的急重肝中，可以是单独HBsAg阳性，也可以是HBsAg与抗-HB-cIgM同时阳性；可以是急性感染HBV，也可以是HBV慢性携带者发展而成。血清学检查证实，在急重肝发展过程中，同时HDV阳性率可达33．8％，而在非急重肝人群中仅4．4％，提示HBV、HDV重叠感染易引起急重肝。HBV基因突变与急重肝发生有明显联系，常为HBV-DNA前C区突变，产生终止密码，停止产生HBeAg。HBeAg的缺失可提高宿主对受感染肝细胞的免疫应答，引起急重肝，这种变异株可通过性传递导致急重肝。
+HCV也是引起急重肝的重要病原。  HCV也可发生变异。其变异基因与病情加重有关。
+HEV也可引起急重肝，特别是妊娠期妇女。感染HEV更易发展为急重肝。
+HEV极少引起急重肝，但与HBV重叠感染时易发生急重肝。
+在使用细胞毒性药物、进行免疫抑制治疗时，疱疹病毒、腺病毒感染可引起急重肝。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">急黄候之病因病机为火盛。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">HAV进入人体后，形成短暂的病毒血症，然后汇集于肝脏，繁殖致病.
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">急黄之病因病机主要为热盛发黄。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">急重肝的肝细胞病变随病因不同而异，但最后形成肝细胞大块坏死。病毒引起的急重肝很可能与免疫功能有关。免疫过强的机理虽尚不清楚，在某种情况病毒可直接引起肝细胞损伤，单核细胞、巨噬细胞产生的细胞因子如白细胞介素-I（interlekin-I，LK-I）、肿瘤坏死因子（tumor  necrosis  factor，TNF）、内毒素及病毒显露抗原反应均可引起肝细胞坏死。                                  
+      在急重肝病人中，因凝血机制太差，不经常进行肝活检。死后尸检光镜下有2种组织模式，一是由病毒或药物引起的大块肝细胞坏死，（坏死面积≥肝实质的2／3）或亚大块坏死，或大灶性的肝细胞坏死伴肝细胞的重度水肿，几乎无残留肝细胞。残留的肝细胞形态也异常，网状支架塌陷，有不同程度的变性及淤胆；另一种是酒精性肝炎。Reye’s 综合征等诱导的急重肝以肝细胞空泡状脂肪变性为特征。两种组织学类型均可能有播及全小叶的炎性细胞浸润。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1.&nbsp;可疑饮食史或与病人、禽、畜密切接触史。<br>
+2.急性发热，右下腹痛或脐周腹痛，可有压痛、反跳痛和肌紧张。大便每日4～8次，稀水样，有粘液无脓血，镜检少许脓细胞、红细胞。<br>
+3.偶可发生感染后结节性红斑，反应性关节炎。<br>
+4.细菌可侵入肠系膜淋巴结，发生炎症、坏死和化脓性病变；病菌入血则致败血症和各组织器官的迁徙性脓肿。<br>
+5.大便、血或脓液培养有肠炎或假结核耶森菌即可确诊。直接凝集试验效价≥1：160。，被动血凝效价≥1：512，或双份血清上升4倍者均有诊断意义。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">本病起病急，以发热、腹痛和腹泻为主要症状。体温一般为39-40℃，继之微热，可持续数周至一月以上。腹痛多在右下腹部，也可全腹痛或限于脐周围，伴肌紧张、反跳痛和压痛，常易误诊为阑尾炎。腹泻多为胆汁绿色水泻，伴粘液，日3-10次，持续1-2周，少数间歇腹泻可绵延数月之久。此外尚有食欲不振、恶心、呕吐、头痛、乏力。有些病人在病程中出现结节性红斑和多发性无菌性关节炎，后者往往持续较久。临床症状常因年龄不同而异，婴幼儿多见发热、腹泻和呕吐；较大儿童和成人则多以类似典型的阑尾炎征群起病。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">B型超声波。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">肝炎病毒指标检查。
+
+
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血液生化指标  包括T／D  Bi1、PA、ALT、AST、A／G、血脂（TC、TG）、乳酸脱氢酶等可作为辅助诊断指标。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">本病根据病史与特殊检查，需与代谢性（肝豆状核变性、妊娠脂肪肝、Reye综合征、镰状细胞病、半乳糖血症）、药物性（扑热息痛、异烟肼、苯妥英钠、三氟溴氯乙烷、甲基多巴、四环素、烟酸及其它）、自身免疫性肝病（Amanita&nbsp; phal1oides、Budd-Chaiari综合征、静脉闭塞病、高热等）及肿瘤所引起的急重肝相鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">临床治愈——经治疗症状、体征消失及各项生化指标正常；好转——主要症状、体征基本消失，生化指标明显好转（T.Bil＜85．5μmo1／L、PA＞40％）并存活3个月以上；无效——经治疗后病情恶化或死亡。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病预后与某些症状有关。早期诊断治疗及预防并发症是改善本病预后的关键。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">急重肝主要死于肝功衰竭及肝肾综合征、脑水肿、脑疝、出血、感染等并发症。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">一般治疗包括静脉输入葡萄糖、支链氨基酸、维持电解质平衡等。<br>
+特殊治疗包括肾上腺皮质激素（激素）、前列腺素E、胰高血糖素-胰岛素（G-I）、N-乙酰半胱氨酸、肝细胞生长刺激物（hepatic&nbsp; stimu1etory&nbsp; substance，&nbsp; HSS）、人工肝、肝移植（0LT）等。&nbsp;&nbsp;&nbsp;&nbsp;<br>
+并发症治疗：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+①脑水肿的治疗：&nbsp; ICP升高时可用20％甘露醇0．5～1．0g/kg快速静滴。应当早用，当ICP＞8kpa则难以奏效。&nbsp;&nbsp;肾功能正常者可重复使用。甘露醇的作用机理在于提高血浆渗透压，在血-脑及血-脑脊液之间形成渗透梯度，将脑实质、间质及脑脊液中部分水摄入血液，从而减轻脑水肿，降低ICP。但当血浆渗透压增高达320m Osm／L，甘露醇则失去作用。有肾功衰竭患者采用血液透析或腹膜透析，但当ICP降低时不宜采用。因为持续透析可能发生ICP反跳性增高。对顽固性ICP增高，可以用巴比妥类药物诱导昏迷。开始用戊巴比妥5mg/kg静注，之后以每小时1～3mg／kg静脉输入，其间应严密监测ICP和动脉压。因为动脉压是脑灌注压（cerebral perfusion pressure,CPP）的关键因素。虽然保持ICP在3．0kPa之下是重要的，但维持CPP在7kPa左右更为重要。因此应将ICP维持在2．7kPa以下，CPP即平均动脉压与ICP之差，维持在6．7kPa以上。此外应尽量减少促进ICP增高的因素，如呼吸道吸引、呼气未正压呼吸、咳嗽、呕吐、打喷嚏、颈静脉受压、动脉压升高、血管扩张剂、频繁变动体位、躁动、发热、严重低氧血症和高碳酸血症。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;②出血的防治：严重凝血机制障碍，应给予维生素K1&nbsp; 10mg/日静推，输入新鲜冰冻血浆及血小板。为避免导致脑水肿，可采用血浆交换疗法。应用凝血酶Ⅲ有助于拮抗H2受体，预防消化道出血。避免使用凝血因子浓缩物而促进DIC的发生。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;③感染的治疗：约80％急重肝血、痰、尿培养有细菌生长，1/3有白色念珠菌或其它真菌。因此对急重肝患者应预防肺部感染，至少72小时更换一次血管内导管，有可疑感染时，可选用广谱抗生素防治。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;④肾衰的治疗：尿量减少时，可用小剂量多巴胺；当有高血钾症、尿素氮、肌酐明显升高、液体过多和酸碱失衡时应进行血透或血液超滤。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;⑤呼吸系统并发症：保持呼吸道清洁非常重要。理疗、插管、支气管抽吸及移动病人均可使ICP升高，宜给氧。新的机械性通气可使成人呼吸窘迫综合征（ARDS）和肺顺应性下降的氧合作用得到改善，还可用高频喷射通气法、神经肌肉阻滞剂；心律失常应补充晶体、胶<br>
+体制剂。但应避免用过多的血管收缩剂，以免力，重组织缺氧。用小、剂量多巴胺可选择性扩张微血管，防止发生低血压。对心律失常可用常规药物治疗。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;总之，对急重肝宜做到有计划、有针对性治疗。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">阳明腑实证：<br>
+治则：急则治其标，以釜底抽薪、清心开窍，清营解毒。<br>
+方药：牛黄承气汤（清心开窍，釜底抽薪），安宫牛黄丸（每4小时1次，每次2丸，加牛黄0．5g），大黄10g煎汁送服丸药。&nbsp;注意事项：安宫牛黄丸量要大，时间要长，服至清醒后再减量继续服，防止再昏迷。有反复者再用，疗程较第一次要长。服安宫牛黄丸可加牛黄以助其效。应用大黄为釜底抽薪，保持大便每日2～3次。<br>
+肝风内动：<br>
+治则：养阴清营，平肝熄风。<br>
+方药：犀角地黄汤加减或与局方至宝丹并用。水牛角、生地、白芍、甘草、茵陈、丹皮、川连、生石膏、知母、柴胡、黄芩、栀子、黄柏。安宫牛黄丸2丸，3／日。牛黄得日月之精，通心主神；犀角治热毒，珍珠通神明，合犀角补水救火；郁金和梅片为草木之香，雄黄为金石之香，麝香系精血之香，合四香使热毒一齐向外透出。若有燥屎加大黄10～20g煎汤送服（牛黄承气汤）。阳明腑实不通，有消失肾液之虞，用牛黄开于少阴（心）之闭，大黄急泄阳明，救少阴（肾）之消，此为两少阴合治之法。若有严重狂躁可选加朱珀汤：朱砂（补心体泻心火）、琥珀（镇心安神）、牛黄（清心山神，熄风止痉）冲服（朱砂不宜久眼）。蝎子尾粉（末节为黑色者-又称蝎子梢，祛风镇痉力强，毒性较大，如蝎尾分不清，可以用七条蝎子研细末内服）。全虫、僵虫、白芍煎水送服紫雪丹或安宫牛黄丸（全虫-全蝎、僵虫祛风止痉，白芍平肝泄肝火）。玳瑁粉、牛黄粉、水牛角粉冲服，熄风止痉，清心安神。&nbsp;<br>
+谵语严重者，重用安宫牛黄丸。兼有昏迷者加牛黄粉、水牛角粉、栀子、郁金煎服，清血凉血，治痰热蒙心窍。兼有发烧者加竹叶。兼有抽搐者加羚羊角粉、玳瑁粉或犀角粉送局方至宝丹开窍安神力最强，如气血两燔则紫雪丹更为适宜。经上述处理，如病人仍无大便，狂躁加重，舌起芒刺，苔黄或焦黄，脉滑实，当利胆通便，救阴泻热，急下阳明，用大承气汤：大黄、川朴、枳实、元明粉。如肝风内动明显，频繁抽动，当加羚羊粉以平肝。如肝风已平，而心包胃腑肝胆热势仍盛，为防止昏迷，要集中力量保护心包，加大牛黄安宫丸的用量。<br>
+湿浊蒙蔽（痰）：<br>
+治则：清热涤痰、醒神开窍。<br>
+方药：清热用黄连、黄芩、生地、山栀、知母、赤芍等。若腑气内闭、脉实有力者加大黄、元明粉、全瓜蒌、枳实。若舌红而干，阴虚液少而火重者，宜加元参、麦冬、沙参、石斛、芦根。涤痰用陈皮、半夏、远志、胆星、富菖、竹沥、竺黄。<br>
+血结瘀阻：<br>
+治则：活血导瘀。方药：当归、桃仁、红花、大黄、川芎、赤芍。气阴两竭：<br>
+治则：益气滋阴，救逆固脱。方药：人参，气脱者用甘草、五味子、附子、龙骨、山药等。偏于阴虚者用生地、麦冬、阿胶、鸡子黄、山萸肉、枸杞、白芍等。生附子敷脚心，并灸关元、气海亦有回阳救逆之功。<br>
+按病期论治：<br>
+中医对于急性、亚急性肝坏死引起的肝昏迷，常根据在气宜清气，入营犹望其转气，入血则须清血凉血的治疗原则，按不同病期进行治疗，为了便于和西医的分期结合起来。按肝昏迷前期、昏迷期、恢复期进行论治。<br>
+肝昏迷前期：<br>
+治则：清营解毒、凉血平肝，用苦寒之剂以直折其热而解毒。<br>
+方药：白虎汤，可清气分热。因这个时期气分热未解或未完全解，清气分热有两个意义：一是清除气分热，二是保存津液。故清气分热的重点是“清热保津”。旨在使“热邪外散”。黄连解毒汤：使热邪从下泄，热去则津液得复，故清热又常常相互为用，这就是苦寒直折其热。&nbsp;犀角地黄汤：清营凉血育阴。由于引起昏迷的原因是气血两燔，内热炽盛，牛黄丸虽能清热开窍，但在病邪发展的严重阶段，特别是阴液随着内耗，因此在这一阶段中必须注意养阴、凉血、清肾解毒。清营汤：用于浅昏迷，有气分证，由气入营。清宫汤：用于深昏迷，无气分证者。若药后仍大便秘结者，还须急下存阴，用黄龙汤或大承气汤。<br>
+肝昏迷期：可按阳明腑实证肝昏迷治疗。<br>
+恢复期：这一期内应注意防止死灰复燃，影响心包而再昏迷，故安宫牛黄丸应用时间要长，清醒后半个月再撤除。在这期内要注意处理好以下几个问题：<br>
+黄疸：此时病人黄疸未退，治疗上容易作为主要矛盾处理，用苦寒清热利胆，这样会使病情恶化。因为这种病人发黄固然是由于肝胆受热熏灼，或湿热内阻，但多兼有热盛伤阴，此时再用清利之剂，加重伤阴，故当用苦辛寒法，一般用杏仁石膏汤加减：杏仁、石膏、栀子、枳实、赤芍、黄柏、姜夏、姜汁、茵陈、葛根、茜草。<br>
+呕吐：在恢复期或早期胃肠症状较多见，如恶心呕吐，食欲不振，也有频繁呕吐，饮食难进，兼见呃逆，本来苦寒之品中有清胃和降作用，可以不必照顾，如很重，难以控制，要看大便，如系胃肠实热，大便秘结，甚至几日或十几日不大便，此时浊气不降，火势愈炽，伤津耗液，因阴液耗伤而火势更烈，造成一片燎原之势，当采取急下存阴之法，为治疗之关键，当用大承气汤。若系小陷胸证，当用小陷胸汤加减。<br>
+发斑：治则：为防止热盛神昏，宜清营清气。方用：安宫牛黄丸，以保心包，每次另加牛黄0．5g；清营汤合化斑汤加减。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">①对重型肝炎一律采用中医辨证论治及有针对性的西药治疗。如用HGF、凝血酶原复合物、肝素、激素等。<br>
+②对有合并症者，宜针对不同情况应用中医药，如发生腹膜炎宜用抗生素，加服中药（以黄芪、双花、穿心莲等为主）以达到菌毒并治；有电解质紊舌，宜用静脉；腕与纠正电解质。<br>
+③对重型肝炎恢复阶段，宜用中西药调理，达到巩固疗效，防止病情反复。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">做好肝炎的预防工作。减少其发病率。详见“病毒性肝炎”。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">中医认为本病起病时主要表现为热盛，如大渴，喜凉饮，大便干结，身目轻黄或不黄，舌苔焦黄或黑；脉洪大，但当病情进一步发展则表现为衄血、躁动等。如《伤寒论》（111条）中所述“阳盛则欲衄，口干咽烂，或不大便，久则谵语，甚者至哕，手足躁扰，捻衣摸床…”《内经》中曰“火气内发，上为口渴，咽烂者，火热上蒸也”。热气入胃，消耗津液，则大便硬，久则胃中燥热必发谵语。”《内经》又曰“病深者其声吵，火气大甚，正气逆乱则哕”。又曰“四肢诸阳之本也”。阳盛则四肢实，火热大甚，故手足躁扰，捻衣摸床扰乱也。”《广济》中云“疗急黄，身如金色，瓜蒂散”。《延年秘录》中“疗急黄，心下坚硬，渴欲得水吃，气息喘粗，眼黄，但有一候相当，即须服此瓜蒂散”。《必效》中“疗急黄疸内等，大黄汤”。《近效》中“疗急黄方，取蔓青子油一盏，顿服之，临时无油，则以蔓青子捣取汁，水和之吃亦得。候颜色黄，或精神急，则是此病”。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

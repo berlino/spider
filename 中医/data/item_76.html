@@ -1,0 +1,888 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">流行性感冒
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=流行性感冒"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">influenza
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">LIUXINGXINGGANMAO
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">简称:流感。中医：时行感冒，重伤风。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">流行性感冒是由流感病毒引起的急性呼吸道传染病。流感病毒在呼吸道上皮细胞内复制引起表面炎症，表现为急性上呼吸道炎和全身中毒症状。
+
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">谓之“疫者感天地之疬气，此气之来，无论老少强弱，触之即病，邪自口鼻而入”（明代：《温疫论》）。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">流感病毒属正粘病毒科，系RNA病毒。病毒内部的核心由单链核糖核酸及核蛋白组成，根据核蛋白的抗原性不同可分为A、B、C三型。核心外有一层脂质囊膜，从脂质中伸出许多微粒，即血凝素(H）与神经氨酸酶（N），后两者是流感病毒的表面抗原，根据H与N的不同可区分为不同亚型。血凝素可和红细胞表面的糖蛋白受体结合而发生白细胞凝集现象，具有亚型和株的特异性。流感病毒有变异的特点，主要是H与N的变异。H有H0、H1、H2、H3而N仅有Nl及N2，有时只有一种抗原发生变异，有时两种同时变异。小的变异是抗原的量变，称抗原漂移，形成新的毒株称为变种，A型变异较快，每2-3年可发生一次，B型变异较慢。当抗原发生较大的变异时，与前次流行株完全不同，是抗原的质变，称为抗原株变。此时产生了新的亚型。由于人群对此新的亚型缺乏抗体，故常可引起大的流行。这种变异只见于A型流感，可导致世界性流行。B型流感可局部流行，而C型流感未见变异，常呈散发流行。
+        A型流感病毒自1918年世界大流行后己发生了5次大变异。1933年首次分离出A0型，相继变异为Al（亚甲型，1946年分离）、A2（亚洲A型，1957年分离）、A3（香港亚洲A 型1968年分离）与 新A1型（1977年分离）。人群对流感病毒免疫力的强弱是流感能否流行的主要因素，也是引起流感病毒变异的基本因素。一般用测定正常人群血清中抗体的阳性率与平均滴度来了解人群的免疫状态。北京、   上海均有流感监测站，每年在人群中采样，同时了解病毒变异的情况。
+为了适应流感病毒抗原变异，1971年国际流感工作会议对流感病毒命名法规定如下：型别／分离地点／毒株序号／分离年代（H、N）。中国应用的命名顺序是：型别（亚型）／分离地点，分离单位，年代一毒株号，例如A3／京科68-1（H3N2）。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">1．感受风邪，“，风邪袭人，不论何处感受必内归于肺”（“《杂病源流犀烛·感冒源流》），而风性轻扬，故“伤于风者，上先受之”，风邪侵袭人体，先入肺卫。
+2．外感疫疬之邪  “五疫之至，皆因染易，无问大小，病状相似”（《素问·补遗·刺激论》），“时行病者，是春时应温而反寒，夏时应热而反冷，秋时应凉而反热，冬时应寒而反温，非其时而有其气，是故一岁之中，病无少长，率相似者，此则时行之气也”（《诸病源候论》）。认为寒热异常，温凉失节，岁时不和是时行感冒的主要病因。
+3．体虚邪凑  “邪之所凑，其气必虚”。平昔元气虚弱，表疏腠松，略有不谨，即感风邪。亦有饮食劳倦伤及脾胃，致脾肺气虚；中虚卫弱，不能输精于肺，肺气虚则不能输精于皮毛，致表卫不固，腠理疏松，易感风邪而发病。亦有素体阳虚、阴虚或病后、产后调摄不慎阴血亏损，复感外邪而发病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">四季均可流行，但以冬春为多。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">世界各地
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">5-20岁的发病率较高，但新亚型大流行则无显著年龄差别。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">本病的传染源为病人及隐性感染者，经飞沫传播，人群普遍易感，本病除散发外，易发生暴发、流行、大流行甚至世界性大流行，本世纪以来已发生5次世界性大流行。A型流感，可导致世界性流行。B型流感可局部流行，而C型流感未见变异，常呈散发流行。常沿交通线迅速蔓延，先集体后散居，先城市后农村。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">病毒侵入呼吸道的纤毛柱状上皮内进行复制，释放后再侵入其他上皮细胞。受染的细胞发生变性、坏死和脱落，局部有炎症反应，一般不发生病毒血症。2周后上皮细胞重新出现和修复。流感病毒偶可进入下呼吸道可导致肺炎，其病变特征为肺脏充血、水肿呈暗红色，气管与支气管内有血性分泌物。潜伏期1-2d,短者仅数小时。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">感冒、流感等病毒性上呼吸道感染，在祖国医学属“表证”和“外感热证”。病邪侵入人体，先从肺卫开始，风蒸之邪多从口鼻而入；风寒之邪则多从皮毛而入。其认识素有“伤寒论”和“温病论”两种，初期病位于表（肺卫）按“伤寒”（六经）则属于太阳经表证（表热）；按“温病”，（卫、气、营、血、三焦），卫分相当于人体的肌表、皮肤、上呼吸道、头部，故称“温邪上受”即“卫分热证”。是温病的初级阶段，亦相当于“伤寒”的“表热”。太阳经俞不利，卫气与之抗争，卫阳之气不能畅于外，故见恶寒发热、鼻塞流涕、咽疼咳嗽等肺卫之证。太阳经络邪阻不舒，则头痛身重，关节酸痛。肺主皮毛，上通于鼻，外邪犯肺，则气道受阻；肺气上逆则咳嗽；鼓邪外出则喷嚏；邪逼液出则流涕。咽喉属于肺系，受风寒则痒，热郁则痛。若正不胜邪，内侵胸胁、肺胃，则谓“气分热证”，亦相当于阳明经腑证和里证。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">2周后上皮细胞重新出现和修复。流感病毒偶可进入下呼吸道可导致肺炎，其病变特征为肺脏充血、水肿呈暗红色，气管与支气管内有血性分泌物。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1．风热型：&nbsp;&nbsp;发热重恶寒轻，头痛，有汗，口渴，咽干且痛，小便短赤，苔薄黄，脉浮数。<br>
+2．风寒型：&nbsp;&nbsp;恶寒重发热轻，身痛较重，头痛，无汗，鼻塞流涕，咽痒咳嗽，痰稀，四肢酸楚，苔薄白而润，脉浮。<br>
+3．兼证<br>
+（1）夹湿：身热不扬，头晕目胀，四肢困倦，骨节痛重，苔白腻，脉弦滑。<br>
+（2）夹暑：除见风热及夹湿之症外，虽汗出而身热不解，心烦，尿赤，苔黄腻，脉濡数。<br>
+（3）夹燥：除见风热之症外，鼻干唇裂，口舌生疮或干咳无痰，舌质赤红，苔黄少津，脉细数。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1978年全国防治感冒科研协作座谈会（于江西鹰潭）制订（草案）<br>
+系指流感病毒引起的急性上呼吸道传染病，起病急骤，以全身症状为主，可分四型。<br>
+单纯型：畏寒发热（可高达40℃）、鼻塞、咳嗽、胸痛、颜面潮红、眼结合膜及咽部充血。<br>
+肺炎型：发热、剧咳、咯粘液脓痰、痰中带血、气促、发绀。<br>
+中枢神经型：持续高热，中枢症状明显、严重头痛、头晕、呕吐、谵妄、虚脱甚至昏迷，并可出现脑膜刺激症状及脑炎体征。<br>
+胃肠型，除全身症状外，有明显胄肠道症状，如恶心、呕吐、腹痛、腹泻等。<br>
+注：治疗观察对象为单纯型及胃肠型患者，除临床诊断外，须采取双份血清和病毒分离作病原学诊断。在预防对象中，上述四型均须计算。<br>
+[附]感冒和流感的鉴别诊断<br>
+1.主要根据流行病学资料。流感流行快，在短期内有很多人发病。<br>
+2.流感一般全身症状重。感冒全身症状轻，鼻部症状重。<br>
+3.病毒分离及血清学诊断。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">感冒，流感流行期间，根据接触史和群体发病史、典型临床症状和体征及实验室检查，不难作出临床诊断。散发病例，因与许多急性病初期症状相似，诊断较为困难。只要全面掌握流行病学和临床特征及一些必要的实验室检查（血白细胞计数和分类、咽拭子培养、胸部X线检查等），临床诊断也并不困难。在诊断分析中，应注意以下几点：
+    1．流感、感冒等病毒性呼吸道感染，短期内在同一群体中往往有较多人发病。流感常无任何年龄限制；鼻病毒和冠状病毒主要引起成人普通感冒，症状较轻；  RSV、副流感病毒和腺病毒感染则多见于3岁以下婴幼儿。
+    2．从治疗角度考虑，需首先排除常见的细菌性和肺炎支原体感染，如链球菌性咽峡炎、肺炎球菌性肺炎，流行性脑脊髓膜炎及肺炎支原体感染等，以便及时针对其病原采取有效治疗
+    3．早期鼻咽部涂片细胞学检查，对判定感染性质有较大的参考意义，如发现多数上皮细胞CCP改变及胞浆或胞核内包涵体，而中性粒细胞较少见，则应考虑为病毒性感染。并要积极创造条件，及早进行细胞内病毒抗原检测。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期1-2d,短者仅数小时。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">急性畏寒、高热（体温可达39-40℃），有显著头痛、乏力、全身酸痛等全身毒血症状；同时有咽痛、鼻塞、流涕等呼吸道症状，但一般全身症状重而呼吸道症状轻。少数病人可有腹泻，水样便。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">（1）单纯型流感：最常见。骤起畏寒发热、体温在数小时至24小时内升达高峰，39～40℃。热程一般为3～4日，退热后全身症状好转，上呼吸道症状常持续1～2周后逐渐消失，体力恢复较慢。轻症者类似普通感冒。<br>
+（2）流感病毒肺炎：少部分病人感染流感病毒后，病变沿上呼吸道向下蔓延累及肺实质，引起肺炎。轻者发病时类似单纯型流感，但发热持续时间较长，咳嗽、胸痛较剧，咯片块状淡灰色粘痰，肺部体征较少。胸部调线检查可见两肺炎性阴影。一般在1～2周内症状逐渐消失，肺部炎症消散。重者高热持续，剧咳血痰，气急、紫绀，并可伴发心功能障碍；X线检查两肺散在云絮状和片状炎性阴影，由肺门向四周扩展；病程长达3～4周。<br>
+ 3）中毒型和胃肠型流感：中毒型极为少见主要表现为高热及循环功能障碍，血压下降，可出现休克及DIC等严重症候，病死率高。胃肠型则以吐泻为特征。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">体检见眼结膜轻度充血，咽部充血，肺部有干罗音。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">细胞学检查  鼻咽部吸取物沉渣或鼻咽拭子涂片，采用姬姆萨或苏木素-伊红染色，光镜检查可发现柱状纤毛上皮细胞坏变（简称CCP）及细胞浆或胞核内包涵体（嗜酸性或嗜碱性）。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血象  在急性期，一般白细胞总数正常或略有减少，分类比例正常或淋巴细胞相对增加。少数病人在病初1～2日内白细胞总数及中性比例增高，数日内迅速降至正常或偏低。
+血清学检查  采用血凝抑制或ELISA等方法，检测急性期和病后第3～4周双份血清，抗体效价增长4倍以上，提示近期感染，作为回顾性诊断。采用捕获法ELISA检测病毒特异性IgM抗体，单份血清阳性作为早期诊断依据。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">采用酶、荧光或其他标记单克隆抗体染色，可检出感染细胞内相应的病毒抗原，作为早期特异性诊断。
+
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">病毒分离  取病程早期含嗽液或鼻咽拭子，经处理后接种于敏感细胞管内培养，分离病毒。
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">普通感冒起病较缓，症状较短，中毒症状常不明显，容易与本病鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">１．感冒：无流行性，一般全身症状较轻，血清学和免疫荧光等检验可明确诊断。２．春温（瘟）：好发于冬春季节，发热，剧烈头痛，喷射状呕吐，项强，易见发斑、神昏、惊厥等，脑脊液压力增高、混浊。３．肺热病：以骤起发热，咳嗽，烦渴，头痛为主要表现，Ｘ线检查肺纹增多呈斑点状、片状、网织状或均匀阴影。４．麻疹：有麻疹流行，流泪、畏光、流涕明显，有“麻疹斑”及皮肤出疹。５．稻瘟病：多有疫水接触史，或食品被鼠尿污染，小腿肌肉痛及压痛，腹股沟臖核肿大与压痛。
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈：48h内热退，症状、阳性体征消失。<br>
+2.显效：48h内热退，症状减轻。<br>
+3.有效：72h内热退，症状减轻。<br>
+4.无效：病情无好转或恶化。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">普通感冒和单纯型流感预后良好。流感病毒肺炎或（和）继发细菌性肺炎，发生在婴幼儿、孕妇，原有慢性心肺疾患和老年患者预后较差，可能因心衰和呼吸衰竭而导致死亡。与流感相关的Reye综合征，病死率高。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">此外，流感病毒亦可引起脑膜炎和脑炎，&nbsp; Reye综合征也与流感有关；亦可引起心肌炎、心包炎、急性肌炎、出血性膀胱炎、肾炎等。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">主要是对症治疗，包括解热止痛和防治继发细菌感染。金刚烷胺和金刚乙胺可阻断病毒复制，对A型流感有预防和治疗作用，后者副作用较小。剂量为每日成人200mg（2.5mg／kg）。可缩短病程并减少病毒的释放。须在发病后第1d开始应用，疗程3一5d,在A型流感暴发后对易感者可考虑预防应用，对象是老年人（特别是生活在福利院的老年人），慢性心、肺、肾疾病患者，免疫抑制药应用者，住院病人及医务工作者。副作用有头痛、兴奋、眩晕、共济失调等。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">根据病情，辨证施治。<br>
+1．风热型&nbsp;&nbsp;治宜辛凉解表、宣肺泄热。以银翘散加减（金银花、连翘、贯众、淡竹叶、牛蒡子、鲜芦根、桔梗、芥穗、薄荷、甘草）。<br>
+2．风寒型&nbsp;&nbsp;治宜辛温解表，宣肺散寒。以荆防败毒散加减（荆芥、防风、柴胡、前胡、羌活、桔梗、川芎、白芷、葛根）。<br>
+3．风兼暑湿&nbsp;&nbsp;治宜疏散风邪，清暑利湿。以藿香正气散（藿香、苏叶、白芷、桔梗、半夏、茯苓、白术、陈皮、生姜）或香薷饮（银花、连翘、香薷、扁豆花、佩兰、藿香、厚朴、六一散）。<br>
+4．风邪兼燥&nbsp;&nbsp;治宜疏散风邪，清肺润燥。以桑杏汤加减（桑叶、杏仁、沙参、川贝、豆豉、栀子、薄荷、山豆根）。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1．鲜葱白5节、生姜5片，水煎服。<br>
+2．通宣理肺丸：每服1～2丸，日服2次。<br>
+3．感冒清热冲剂：每服1～2包，日服2次。（以上适用于各型感冒或流感初期）&nbsp;<br>
+4．藿香正气丸（水丸），每服6g，或藿香正气水每服10～20m1，日服2～3次。（适用于暑湿型外感）<br>
+5．其它尚有板蓝根冲剂、重感灵等。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">病情轻者，选用1、2种中成药或中西药复合制剂或以简易验方治疗。病情重者，按辨证分型服用汤剂，同时加用病毒唑等抗病毒药物；高热惊厥者加用解热镇静剂；咽喉炎症较重者，予以雾化吸入。合并细菌性咽炎或肺炎者，应针对病原选用抗菌药物。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">加强全球性的流感监视系统，及时了解世界各地流感的发病动态及流感病毒变异的情况，以采取有效的预防措施。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前应用的疫苗有：①流感灭活疫苗：皮下接种，对象是婴幼儿、老年人，有慢性心、肺、肾等慢性疾病以及应用免疫抑制剂者，因为这些人患流感后，病情重，病死率高。一般秋季进行接种，基础免疫为皮下注射2次，每次1ml，间隔6-8周，以后每年加强一次，lml，免疫效果较好。如换用新亚型疫苗，应重新做基础免疫。国外常与肺炎双球菌疫苗同时应用，无不良反应。②流感减毒活疫苗：经鼻腔喷雾接种以产生较多的呼吸道局部抗体。接种对象为健康成人及儿童，每次双侧鼻腔各0．25ml，一般在当地流行季节前1-3个月内接种。疑有本病流行时应及时上报疫情，采集急性期病人标本进行病毒分离及抗原检测。对病人进行呼吸道隔离治疗以减少本病的传播。流行期间宜减少大型集会和集体活动，公共场所宜加强通风或用乳酸熏蒸。接触者应戴口罩。病人须隔离到热退后2d。<br>
+&nbsp;&nbsp;&nbsp; 1．隔离患者。早期患者予以呼吸道隔离，减少传播。患者外出就医或到其他公共场所应戴口罩，并应尽量避免集中就诊。<br>
+&nbsp;&nbsp;&nbsp; 2．流感流行期间，应暂停集会和集体娱乐活动，不到病家串门。对婴幼儿、原有心或肺慢性疾病患者、孕妇和老年人，应重点保护。<br>
+3．急性期患者用过的餐具、衣物、手帕、玩具等应煮沸消毒或阳光曝晒2小时，患者住过的房间则以过氧乙酸0．75g／m3熏蒸消毒。<br>
+&nbsp;&nbsp;&nbsp; 4．在已有流感流行趋势的群体中，重点保护人群可服用病毒唑或金刚烷胺，或以病毒唑滴鼻，连续1～2周。金刚烷胺和金刚乙胺可阻断病毒复制，对A型流感有预防和治疗作用，后者副作用较小。剂量为每日成人200mg（2.5mg／kg）。可缩短病程并减少病毒的释放。须在发病后第1d开始应用，疗程3一5d,在A型流感暴发后对易感者可考虑预防应用，对象是老年人（特别是生活在福利院的老年人），慢性心、肺、肾疾病患者，免疫抑制药应用者，住院病人及医务工作者。副作用有头痛、兴奋、眩晕、共济失调等。<br>
+&nbsp;&nbsp;&nbsp; 5．应用流感疫苗。<br>
+
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">时行感冒之名出《类证治裁·伤风》。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

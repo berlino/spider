@@ -1,0 +1,1014 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">慢性肾功能衰竭
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=慢性肾功能衰竭"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">chronic renal failure
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">MANXINGSHENGONGNENGSHUAIJIE
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：水肿，虚损，关格，癃闭。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">泌尿系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">慢性肾功能衰竭，是指各种慢性肾脏疾病，或全身性疾病累及肾脏，使肾脏受损，肾脏参与和调节的排泄和内分泌功能减退，而致体内代谢产物潴留，水、电解质及酸碱平衡紊乱，多系统受累的一系列临床表现综合征。
+
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">慢性肾衰是指病久正衰之肾衰。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">指引起慢性肾衰的原发性疾病
+1．原发或继发性肾脏疾病  慢性肾小球肾炎、慢性肾盂肾炎、遗传性肾炎、多囊肾、肾小管酸中毒等原发性肾脏疾病；狼疮肾、糖尿病肾病、过敏性紫癜肾损害。痛风肾、肾淀粉样变、前列腺肥大、肿瘤等引起的尿路狭窄或梗阻等。在国外止痛剂肾病引起的慢性肾衰亦不少见。个别情况可由急性肾衰转化而来。
+2．全身性疾病后期影响至肾脏  如原发性高血压、动脉粥样硬化、充血性心力衰竭、亚急性心内膜炎、风湿性心脏病。
+
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病的病因甚为复杂，常包括以下几个方面：
+1．禀赋不足、脏腑失健  先天因素引起疾病。
+2．久病失治，伤及脾肾患者素有水肿、淋证，腰痛诸疾，若误治、失治，久则湿热不去，损伤脾肾；或一味攻伐、泻下利水太甚，均可伤及阴阳。
+3．饮食不节，起居失常劳倦过度。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">根据资料统计全球每年约100万～150万人发生慢性肾衰，我国终末肾衰的发生率约为568／百万人口。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">1．肾小球血流动力学改变  有效肾单位的丢失，残余肾单位有明显的肾小球毛细血管压（PGc）增高，其基本的血流动力学特征是肾小球内毛细血管扩张、血流量增加和单个肾小球滤过率（SNGFR）增加。
+2．生长因子的异常  应用分子生物学技术和免疫组化技术，不断地阐明了生长因子在肾小球硬化和间质纤维化方面的作用。生长因子以旁分泌（paracrine）、自分泌（autocrine）或胞内分泌（intracrine）的方式起作用。与进行性肾损害密切相关的有：转移生长因子（TGF-β）、血小板由来生长因子（PDGF）、胰岛素样生长因子（IGF）、表皮生长因子（EGF）、肿瘤坏死因子（TNF）等。
+ 3．氧自由基的损伤  残余肾组织结构上代偿期肥大伴随着高代谢，残余肾耗氧量增加，氧自由基产生增多。但由于肾脏清除自由基的功能降低，而引起氧自由基堆积，肾组织细胞上的脂肪酸、脂质的过氧化，
+4．脂质代谢异常  高脂血症既是肾脏病的常见临床表现，又参与肾脏的进行性损害，其中LDL异常为其突出表现。LDL在系膜细胞上存在其氧化受体，通过受体介导途径促使系膜细胞增殖和ECM的产生，并通过与单核一巨噬细胞的相互作用，释放炎性介质和细胞因子，加速肾小球硬化。
+5．小管-间质损害对肾小球滤过功能的作用在某些小管-间质性疾病，由于小管萎缩或阻塞，造成小管内阻力增加或无管小球；或由于间质纤维化使血管床减少，正常渗透压梯度消失等原因均可影响到小球的功能。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">中医学认为肾为五脏之本、司膀胱气化、主骨生髓。《景岳全书·癃闭》曰：“夫膀胱为藏水之腑，而水之入也，由气以化水，故有气斯有水，水之出也，由水以达气，故有水始有溺”。脾主运化、升清降浊、化生气血。若久病失治，或饮食、起居所复，或感受湿热之邪致脾肾衰败，水液气化不利、健运失司，久则蕴成湿浊、湿热、痰湿和溺毒。而湿浊、湿热等可中困脾胃、下注伤肾，或困遏阳气、或耗伤气阴，终至正愈伤、邪愈盛之危重证候。由于慢性肾衰病程较长，病势笃深，病机变化多端。临床可见气虚推动无力，或湿阻气机，气行不畅，或血虚血脉枯否，或离经之血溢于脉外而致瘀血阻滞。脾肾衰败，中焦不能“受气取汁，变化而赤”，又失下焦肾精的充养而致血虚。湿浊弥漫，在中焦可致胃失和降，而出现恶心、呕吐、纳少等证候；浊邪上蒙清窍则可出现心烦不安、循衣摸床，甚则神昏抽搐。水气太甚，上凌心肺，可致心悸、汗出、喘满不得卧，甚至出现喘脱证候。若血虚生风，肌肤失其濡养可出现筋惕肉瞤、皮肤瘙痒等证候。若气虚推动无力，或有津亏肠燥而出现大便不通的腑实证候。综上所述，慢性肾衰的发病机理以脾肾衰败为本，可表现力气、血、阴、阳的不足，同时可以兼有湿浊、湿热、溺毒、水气、瘀血、肝风、风燥等复杂的标实证候。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">慢性肾衰的发病机制较复杂，目前有四种学说解释。①“完整”肾单位学说：慢性肾衰时，一部分肾单位完全毁损，另一部分肾单位受损程度较轻，尽管同一肾单位肾小球和肾小管受损程度可不一致，但通过自身调节，可保持相对“完整”的功能，如当肾小球滤过率下降，滤过Na+减少时，肾小管重吸收Na+也相应减少，从而维持了机体Na+平衡。这部分肾单位，称为“完整”肾单位。②肾小球高灌注学说：慢性肾衰时，大部分肾单位毁损，剩余肾单位肾小球入球小动脉较出球小动脉扩张更明显、使肾小球毛细血管内压和血流量增加，单个肾小球滤过率增加，代偿肾功能；同时也使剩余肾单位加快毁损。③矫枉失衡学说：慢性肾衰时，机体为了矫正某一不平衡而进行相应调整，其结果又造成新的不平衡。如肾功能减退时，尿磷排出减少，血磷升高，血钙降低，从而刺激甲状旁腺激素分泌增加，后者一方面增加肾小管排磷并动员骨钙入血，纠正高磷低钙血症，另一方面则可出现继发性甲状旁腺功能亢进导致肾性骨病、心血管及神经系统损害，并加重贫血。④尿毒症毒素：可部分地解释尿毒症表现，主要由尿毒症时肾脏排泄或灭活减少致某些物质潴留及某些物质生成过多而成。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">1．正虚诸证  凡具备任何三项者，即可辨证为该型。（1）脾肾气虚：①面色无华；②少气乏力；③纳差腹胀，大便偏稀；④口粘口淡不渴或渴不欲饮或饮亦不多；⑤腰膝酸痛、手足不温；⑥夜尿频多；⑦舌淡有齿痕，脉象沉细。
+（2）脾肾阳虚：①面色苍白或晄光；②神疲乏力；③纳差便溏或有水肿；④口粘口淡不渴；⑤腰膝酸痛或腰部冷痛或有畏寒肢冷；⑥夜尿频多清长；⑦舌淡嫩胖，齿痕明显，脉象沉弱。（3）肝肾阴虚：①面色痿黄；②口苦口干喜饮或喜凉饮；③目睛干涩；④大便干结；⑤腰膝酸痛，脉细或弦细；⑥头晕耳鸣；⑦舌淡红形瘦，无苔或薄黄。（4）气阴不足：见脾证气虚二证及肝肾阴虚二证者即可确立。（5）阴阳两虚：见脾肾阳虚二证及肝肾阴虚二证者即可确立。 
+2．邪实诸证凡具备任何一项者，即可辨证为兼挟该邪实。（1）外感：风热或风寒。（2）痰热：①咳痰黄稠；②苔白粘但舌苔黄厚腻。（3）水湿：全身中度以上水肿或胸腹水。（4）湿浊：①呕吐频作舌苔白腻；②口有尿味、口粘不欲饮。（5）湿热：①呕吐频作舌苔黄腻；②口有尿味口苦口粘喜凉饮；③小便灼热，涩痛不利。（6）瘀血：①面色晦暗，唇暗；②腰痛固定或刺痛；③肌肤甲错或肢体麻木；④舌质紫暗或有瘀点，瘀癍。（7）风动：①筋惕肉瞤，手指蠕动；②抽搐痉厥。（8）风燥：皮肤干燥、瘙痒。
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1.&nbsp;本证<br>
+一、辨证分型：<br>
+（1）气阴两虚，热毒壅盛型：<br>
+主证：面色萎黄，口干，口苦，胸腹满闷纳差，恶心呕吐；五心烦热，或有耳鸣，少腹拘急，小便短赤或频数，大便秘结，舌质淡红少津，舌苔黄腻或焦褐，脉细滑数。<br>
+（2）脾肾虚衰、湿浊内壅型：<br>
+主证：面色萎黄或苍白无华，疲乏无力，少气懒言，恶心纳差，呕吐痰涎，或有水肿，腰腿酸软，小便清长或少，大便溏或粘滞不畅或形寒肢冷，骨节疼痛，舌体胖边有齿痕，质淡暗，苔薄白或白腻，甚则厚如积粉，脉细滑或沉细。<br>
+二、参考范围：<br>
+１．有慢性肾脏疾病病史。<br>
+２．早期患者仅有原发病症状，部分病人病史不清，而以乏力、厌食、恶心、贫血、高血压就诊。<br>
+３.尿毒症期出现多系统症状和体征。如：<br>
+（１）脾胃症状：食欲不振，厌食，恶心，呕吐，顽固性呃逆，口有尿臭气等。终末期多有腹泻，或消化道出血。<br>
+（２）脑神症状：烦躁不安，头痛，乏力，记忆力减退，或睡眠习惯颠倒，嗜睡，甚至昏迷，四肢烧灼感，疼痛，麻木，抽搐，震颤。<br>
+（３）血液症状：贫血，严重者有出血倾向，晚期则血液呈高凝状态可致血栓形成。<br>
+（４）心脉症状：血压升高，心悸怔忡等。<br>
+（５）肺系症状：呼气有尿味，气喘咳嗽，或有胸胁疼痛，胸腔积液。<br>
+４．体格检查：面色苍白，萎黄而灰暗，双眼睑肿胀（尿毒症面容），皮肤干燥有尿霜，色素沉着，肌肤甲错，紫癜等，全身水肿，血压高等。<br>
+
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">分期标准，根据疾病的发展进程，慢性肾衰一般分为以下四期：<br>
+第1期（肾功能不全代偿期）：肾小球滤过率GFR&nbsp; 50～80ml／分（通常用肌酐清除率代表 GFR），血清肌酐（Scr）133～177μmol／L<br>
+第2期（肾功能不全代偿期）：GFR&nbsp; 50～20ml／分Scr&nbsp; l46～442μmol／L<br>
+第3期（肾功能衰竭期）：GFR&nbsp; 20～10ml／分，Scr&nbsp; 451～707μmol／L<br>
+第4期（尿毒症期或肾衰终末期）：GFR＜10ml／分，&nbsp; Scr＞707μmol／L<br>
+<br>
+慢性肾功能衰竭诊断标准:<br>
+1.有慢性肾脏病病史。<br>
+2.肾功能减退持续3个月以上。<br>
+3.B超检查示双肾缩小。<br>
+附：慢性肾衰分期标准<br>
+(一)国内四级分类法<br>
+1.肾功能代偿期：Scr<1，5mg/dl，Ccr>50ml/min，一般无症状。<br>
+2.氮质血症期：Scr1.5～2.5mg/dl，Ccr25～50ml/min，有多尿、贫血、过度劳累和蛋白饮食过多后症状加重。<br>
+3.&nbsp;肾功能衰竭-尿毒症早期：Scr2.5～5mg/dl，Ccr10～25ml/min，有较明显消化道症状及贫血、轻度酸中毒等。<br>
+4.肾功能衰竭终末期-尿毒症晚期：Scr>5mg/dl，Ccr<10ml/min，伴明显贫血、尿少、恶心、呕吐以及各种水电解质失衡、酸中毒、各种神经系统症状等。<br>
+（二）美国风湿病学会六级分类法<br>
+1.Ccr>100ml/min，Scr<2.0mg/dl；<br>
+1.Ccr100～50ml/min，Scr2.0～2.4mg/dl；<br>
+3.Ccr50～20ml/min，ScrCⅰ2.5～3.4mg/dl；ScrCⅱ3.5～4.9mg/dl；4.Ccr20～10ml/min，ScrDⅰ5.0～5.9mg/dl；Dⅱ6.0～7.9mg/dl；<br>
+5.Ccr10～5ml/min，Scr8.0～12.Omg/d；<br>
+6.Ccr<5ml/min，Scr>12mg/dl。<br>
+<br>
+[附1]肾功能不全分期诊断标准<br>
+1977年肾炎座谈会（于北戴河）制订<br>
+1.肾功能正常期<br>
+肌酐清除率正常，血肌酐正常。<br>
+其它肾功能：尿浓缩试验、酚磺酞排泄率均正常。<br>
+2.肾功能不全代偿期<br>
+肌酐清除率降低为正常值的50%，血肌酐正常，血尿素氮（非蛋白氮）正常。<br>
+其他肾功能出现减退。<br>
+3.肾功能不全失代偿期<br>
+肌酐清除率低于正常值的50%，血肌酐>2mg%，血尿素氮增高（非蛋白增高）。<br>
+其它各项肾功能进一步损害。<br>
+出现一些临床症状，如疲乏、不安、胃肠症状、瘙痒等。<br>
+4.尿毒症期<br>
+血尿素氮>60mg%（非蛋白氮>80mg%），常伴有酸中毒。<br>
+出现严重的尿毒症临床表现。<br>
+[附2]腹膜透析并发腹膜炎诊断标准<br>
+1986年中华肾脏病学会上海分会透析学组专题讨论会（于上海）制订<br>
+一、感染性腹膜炎<br>
+（一）确诊：具有下列三条中的二条。<br>
+1.有腹膜炎的症状或体征。<br>
+2.透出液（宜选用每日首次透析后透出液）混浊，或其白细胞计数超过100个/mm3，其中多核白细胞大于50%，<br>
+3.微生物学检查（包括霉菌、需氧、厌氧和微嗜氧）培养阳性。<br>
+若诊断霉菌性或结核性腹膜炎，则必须具有微生物学证据。<br>
+（二）疑似：具有上述三条中的任何一条。<br>
+二、非细菌性腹膜炎<br>
+（一）&nbsp;具有腹膜炎症状或体征，或者透出液中白细胞计数大于100个/mm3，而多核白细胞少于50%，反复细菌培养阴性，未经抗吊仞治疗而在2日内痊愈者，可诊为非细菌性（或非感染性）腹膜炎。<br>
+（二）有化学性或内毒素污染等原因可寻找到，经更换适合的透析液，在2日内可缓解或痊愈者，可分别诊为“化学性”或“内毒素性”腹膜炎。<br>
+三、透出液白细胞瑞氏染色后，嗜中性白细胞少于50%，嗜酸性白细胞多于15%，不经治疗可自行缓解或痊愈者，可诊为嗜酸性白细胞增多性腹膜炎。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据临床表现及肾功能检查，诊断不难。部分早期患者无明显临床表现，因某些诱因肾功能急剧恶化，易误诊为急性肾功能衰竭。如同时有贫血、肾性骨病、长期高血压、多尿、夜尿增多以及双侧肾脏缩小等，有助于本病的诊断。某些患者某些系统表现突出，如恶心、呕吐、腹泻、上消化道出血、贫血及神经精神症状等，易误诊或漏诊，应注意鉴别。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">按肾功能损害程度，分为三期：
+①肾功能不全代偿期：肾小球滤过率（GFR）在50—70ml／min。临床上除原发病表现外无其他症状，只在蛋白质摄入过多或应激状态（如感染、休克和大手术等）时，才出现氮质血症。
+②肾功能不全失代偿期或氮质血症期：GFR＜50ml／min。可有轻度乏力、纳差、贫血及多尿和夜尿增多等表现。
+③肾功能衰竭期或尿毒症期：GFR＜25ml／min，出现明显尿毒症症状，如GFR＜10ml／min及＜5ml／min；则分别称尿毒症晚期和尿毒症终末期。慢性肾功能不全的分期应将临床表现与血生化指标结合判定更为可靠。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">（一）毒素所致的各系统临床表现<br>
+1．胃肠道：前期出现食欲减退、腹部不适渐至恶心呕吐，至后期可出现口臭、带氨味，口腔粘膜溃疡；严重者可有消化道大出血。消化道症状系尿素从胃肠道排泄增多，在细菌或肠道水解酶的作用下分解成氨而刺激粘膜所致。同时，胍类等尿毒症毒素对中枢神经系统的刺激亦可引起或加重上述症状。<br>
+2．心血管：<br>
+（1）高血压：依其原发病类型和肾衰不同阶段高血压的发生率有异，至终末肾阶段，发生率可高达90％，引起高血压的原因主要有以下几个方面：容量负荷加大；肾素－血管紧张秦系统功能异常（RAAS）；血管内皮系统受损及内皮素（ET）和内皮舒张因子（EDRF／NO）功能异常；前列腺素（PGS）、缓激肽－激肽、髓质降压脂丙异常变化以及利尿因子及其受体异常等。肾衰时高血压表现为高容量负荷为优势。肾实质性高血压临床表现可不明显。有些患者甚至在体检时发现有血压增高，且高血压引起的眼底改变亦各异，从仅有血管痉挛、反光增强，至严重出血、渗出等等。<br>
+（2）心包炎：发生率高达50％，部分患者可有胸痛，卧位或深呼吸时加重；心包摩擦音等。如渗出增多，可有心包积液，甚至出现心包填塞，表现为劳力性气促，阵发性夜间呼吸困难，端坐呼吸，胸痛等。此时心包摩擦音可消失，心音遥远，心界扩大，脉压减少，心力衰竭，至脑缺氧而昏迷。<br>
+（3）心肌病：转移性心肌钙化、尿毒病毒素刺激，酸中毒、贫血、缺氧、高血压，高容量负荷加大等因素均会损害心肌。临床可见心脏扩大、心功能降低和各种心律失常等。<br>
+（4）心力衰竭：常与前负荷增加（高容量）和后负荷增加（阻力负荷）有关。此外，尿毒症心肌损害、贫血、心律失常亦为常见诱因。&nbsp;<br>
+3．血液系统：<br>
+（1）贫血：是尿毒症主要临床表现之一。属正细胞正色素型贫血。贫血原因主要有：①毒素作用使红细胞寿命缩短；②肾脏分泌促红细胞生成素减少；③毒素对骨髓造血功能的抑制作用，如BUN、PTH、红细胞生长抑制因子等；④尿毒症的厌食，腹泻以及失血造成缺铁、叶酸缺乏和蛋白质不足。<br>
+（2）出血：如皮下瘀斑、鼻衄、牙龈出血、黑便等，主要是因为血小板功能较差，及酸中毒时毛细血管脆性增加。<br>
+（3）高凝状态：多种凝血因子活性增高和抑制凝血的因子活性减弱，或因血液浓缩，血液可呈高凝状态。易致血管内全栓形成，特别是肾静脉内血栓形成。<br>
+4．呼吸系统表现&nbsp;&nbsp;酸中毒时可见呼吸深而长。代谢产物的潴留可引起尿毒症性支气管炎、胸膜炎、肺炎，并有相应的症状和体征。<br>
+5．神经系统表现<br>
+（1）中枢神经系统，早期表现疲乏无力，注意力不集中，记忆减退，失眠，继而出现扑翼样震颤、多发性肌痉挛、手足抽搐，进一步出现意识模糊，昏迷。这可能是水电解质代谢紊乱、代谢性酸中毒、毒素刺激和高血压共同作用的结果。<br>
+（2）外周神经系统：与中分子物质毒素、多种维生素缺乏有关。表现为远端对称性的感觉运动神经病变，有肢体麻木、烧灼感、“下肢不安综合征”。后期有腱反射减退、消失。<br>
+6．内分泌功能失调&nbsp;&nbsp;肾脏分泌的促红细胞生成数减少，1一25（OH）2D3&nbsp;水平下降。血浆肾素和利钠因子水平改变与其功能不一致。整个机体代谢降低、甲状腺功能低下、性腺功能低下，而表现为体温降低、肢冷、阳痿、闭经、不孕或不育等。<br>
+（二）各种代谢紊乱引起的临床表现&nbsp;<br>
+1.&nbsp;水代谢&nbsp;&nbsp;主要表现为脱水或水肿。肾衰早期，残余肾单位排出尿液主要靠渗透性利尿，以提高单个肾单位的滤过量，降低其重吸收，尿浓缩功能降低而出现夜尿多。若严格限制水的摄入，可出现脱水。随着肾衰的发展，尿渗透压渐接近血渗透压，尿比重渐降至1．010，以保持水分的外平衡。晚期肾衰健存肾单位进一步减少，肾小球滤液绝对减少，而致少尿甚至无尿。此时水钠潴留严重，可致脑水肿、肺水肿、心力衰竭。<br>
+2．钠代谢&nbsp;&nbsp;大部分肾小球疾病患者可较早地出现钠的潴留，表现为总体钠水平较高而致水肿，以及高血压，甚至心衰。若过分限盐、利尿药不当使用或腹泻，或在某些疾病如多囊肾，小管－间质性疾病时因其肾小管回收钠功能低，也可致低钠血症＜130mmol／L（130mEq/L）。<br>
+3．钾代谢&nbsp;&nbsp;慢性肾衰存在高钾倾向，这可能与酸中毒时细胞内K+外逸及细胞膜Na+&nbsp;-K+ATP酶活性下降有关。在创伤、手术、输血或外源性钾摄入过多可引起高血钾症，部分病人无症状，但有些患者可有肌无力、麻痹、心律失常，甚至停搏死亡。由于在肾衰阶段，一般限制钾摄入或因食欲不振，患者总体钾偏低，在某些小管-间质疾病患者中因调节钾平衡功能丧失，亦可出现需经常补钾的持续性低血钾。<br>
+4．钙磷代谢&nbsp; GFR降低至20ml／分以下时，高磷血症常出现，同时伴有血钙降低。这主要是因血磷升高，从肠道排出与钙结合，限制钙的吸收，同时肾脏分泌1一25（OH）2D3减少，亦致肠道吸收钙减少。高磷血症和低血钙症可刺激PTH的分泌，肝肾降解PTH减少，引起继发性甲状旁腺功能亢进，致骨质钙化障碍。在儿童引起肾性佝偻病，在成人则出现肾性骨病，如纤维性骨炎、骨软化症、骨质疏松、骨硬化症，而表现为骨痛、病理性骨折等。病分病人可出现抽搐，特别是在酸中毒纠正时游离钙浓度下降易出现。<br>
+5，酸碱平衡紊乱&nbsp;&nbsp;在GFR降至20ml／分时，肾小管重吸收碳酸氢盐的功能下降，同时由于酸性代谢产物的蓄积，小管生成氨、排出氢离子的能力下降，或因腹泻致碱性肠液的丢失，常出现代谢性酸中毒。轻者HCO3-在22～16mmol／L（50～35wl／dl）之间，重者可降至4.5mmol／L（10wl／dl）以下。酸中毒时病人易出现疲乏。感觉迟钝、深长呼吸，甚至昏迷。一般小管-间质疾病较小球疾病更易出现代谢性酸中毒，且较严重，若酸中毒与GFR不相称，高血钾、高氯血症及低肾素低醛固酮血症可能同时存在于Ⅳ型肾小管酸中毒。<br>
+6．代谢紊乱&nbsp;&nbsp;可有低蛋白血症和消瘦。由于脂肪代谢紊乱，常出现高脂血症，特别是甘油三脂的升高会引起动脉粥样硬化。由于肾脏对胰岛素的降解减少，部分病人会出现自发性低血糖。<br>
+<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线腹部平片对了解肾脏大小和形态有帮助，在GFR明显下降时，不宜行肾盂造影。
+放射性核素肾图、肾扫描对了解两侧肾大小、血流变、分泌和排泄功能有帮助；肾超声、计算机X线断层摄影（CT）对确定肾脏的位置、大小、厚度以及肾盂有无积液、结石、排除肿物等有帮助。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">（一）血常规不同程度的贫血。为正细胞正色素性贫血，白细胞多正常。在酸中毒或合并感染时可增高，血小板数正常或降低，贫血和低蛋白血症可致血沉加快。
+（二）血生化检查血浆蛋白降低，总蛋白常低于60g／L其中白蛋白降低较明显；常出现血钾的升高，亦可出现血钾的降低，需随病情而定；血钙常于2mmol／L  （8mg／dl），血磷多高于1．7mmol／L（5mg／dl）。血脂改变常见：胆固醇、甘油三酯可增高伴高密度脂蛋白降低。
+（三）肾功能 在肾功能不全代偿期，  GFR下降，但Scr、Bun可正常。当GFR＜20ml／分时，Scr  Bun可明显升高，并伴有HCO3-的降低。
+
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">尿常规：不同程度的蛋白尿，红、白细胞，管型数亦不等。一般有不同程度的尿渗透压下降，多尿晨尿在450m  Osm／kg以下，尿比重＜1．018各次尿比重均＜1．020，晚期可固定在1．010。尿量减少甚至无尿，尿比重低，呈等张尿，尿蛋白（＋～＋＋＋＋）及红细胞、白细胞和颗粒管型等。
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．与急性肾衰相鉴别&nbsp;急性肾衰病史较短贫血较轻或无，肾脏大小正常或稍大。有时慢性肾衰患者可因急性应激状态（感染、吐泻、药物或食物中毒等）而致肾功能急剧下降，注意区别。<br>
+2．与血液病鉴别&nbsp;&nbsp;部分以贫血为主要临床表现者，需与血液病相鉴别。慢性肾衰为正色素正细胞性贫血，网织红细胞正常或稍降低，贫血常合并有高血压。骨穿和尿液检查、肾功检查可帮助鉴别。&nbsp;<br>
+3．与消化道肿瘤鉴别&nbsp;&nbsp;慢性肾衰常出现食欲不振、恶心呕吐、消瘦等，常被怀疑为消化道肿瘤（胃癌、肝癌等），肾功检查及消化道造影、B超、CT等可帮助鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">１．急性肾衰：有引起急性肾衰的病因，短期内血肌酐、血尿素氮迅速升高，临床多呈少尿期、多尿期及恢复期经过，贫血一般不严重，Ｂ超示双肾增大或正常。<br>
+２．消渴：亦有呕吐，嗜睡，酸中毒，蛋白尿甚至昏迷等，但尿中有酮体，尿糖阳性，血糖升高可鉴别。
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">疗效标准:&nbsp;以逐月或略长间隔时间血肌酐倒数值判定为适用。<br>
+好转：尿毒症症状有明显改善。BUN、Scr稳定或有下降。代谢性酸中毒、低血钙、高血磷等基本纠正。<br>
+慢性肾衰中医疗效判定参考意见（修改稿）<br>
+第二届全国中医肾脏病会议通过<br>
+1.根据肾功能分级判定疗效（以2个月为1疗程）<br>
+Ⅰ级肌酐2.0～2.4mg/dl；Ⅱ级肌酐2.5～4.9mg/dl；<br>
+Ⅲ级肌酐5.0～7.9mg/dl；<br>
+Ⅳ级肌酐8.0～12.Omg/dl；<br>
+Ⅴ级肌酐>12mg/dl。<br>
+（1）&nbsp;显效：自觉症状消失，肾功能提高1级者（如由Ⅴ级变为Ⅳ级）。<br>
+（2）有效：症状基本消失，肾功能提高不到1级者。<br>
+（3）稳定：症状减轻，肾功能无变化。<br>
+（4）无效：症状加重，肾功能变坏。<br>
+2.分析自身观察期与治疗期回归直线斜率（b）的变化，对治疗结果做出判断。<br>
+
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">慢性肾衰为不可逆的进行性病变，预后较差。随着血液净化和肾移植的推广和水平的提高，越来越多的终末肾患者可延长生命。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">慢性肾功能不全治疗原则是阻止肾功能进一步恶化，去除诱因，调整饮食，防治感染，纠正水、电解质和酸碱失衡，解除或减轻症状、防治并发症和替代治疗等。<br>
+（1）去除可逆因素：包括一些患者原发病经适当治疗后肾功能可得到一定程度改善或停止恶化。积极防治前述诱发肾功能恶化的因素，是保护肾功能的重要措施。<br>
+（2）饮食营养：低蛋白饮食可以延缓肾功能恶化，减轻尿毒症症状。传统主张较晚期肾衰患者蛋白摄入量20—25g／d（每日0．3—0．6g/kg体重），并以高生物效价的动物蛋白为主，如蛋、乳品、鱼、肉等，对植物性蛋白如谷物等应予限制。蛋白质的实际给量应根据肾功能、营养状况；有无蛋白丢失（如蛋白尿和透析丢失量等）及蛋白消耗（如感染等）情况决定；儿童应适当增加，必要时应计算氮平衡。可给予必需氨基酸或必需氨基酸的对应α酮酸。同时保证足够热量（每日146．3J/kg体重）及维生素，避免高钾食物（如红枣、鲜蘑菇、榨菜、卷心菜、柑橘、柠檬、香蕉等）和高磷（500—900mg／d）饮食，酌情补充微量元素。有高血压和水肿者宜限制钠摄入量。<br>
+（3）纠正水、电解质和酸碱平衡紊乱：失水宜分次适量补充葡萄糖盐水。体液潴留时给予利尿剂，除非有严重容量依赖性高血压或心衰，否则钠盐限制不宜过严。低钠血症除稀释性外，多同时伴失水、低氯血症，可适量给予复方氯化钠液或葡萄糖盐水。低钾血症时应根据体内缺钾程度酌情补钾盐；高钾血症常有致命危险，除去除诱因外，应根据高钾血症的严重程度和机体对容量扩张的耐受情况，给予克分子乳酸钠60—20Oml或5％NaHCO3 250ml、10％葡萄糖酸钙10—20ml或5％氯化钙10—20ml、胰岛素高渗葡萄糖液，以及静注大剂量呋塞米（速尿）或布美他尼（丁尿胺）等。低钙血症可服乳酸钙或葡萄糖酸钙10—20ml。高磷血症除限制磷的摄入量外，可口服磷结合剂如碳酸钙等。代谢性酸中毒，轻症可口服碳酸氢钠，重者静脉补充碱剂，但应注意防止钠盐量和容量增加的不良影响。严重水、电解质和酸碱失衡应作紧急透析，以挽救生命。<br>
+（4）利尿：对较早期患者，应用排钾利尿剂，可促进机体排水、排钠、排钾，并有助于维持水、电解质平衡，纠正高血压和心衰等，且可使血氮质水平有一定程度的下降，但对晚期患者无效。噻嗪类利尿剂在肾衰时不宜使用，故常用襻利尿剂如呋塞米和布美他尼等，氨苯蝶啶和螺内酯（安体舒通）引起K+潴留。<br>
+（5）降压：控制高血压是保护肾功能的重要措施。对容量依赖型高血压应限制水钠摄入。对轻中度患者可加用利尿药，必要时加用降压药。后者常选不降低肾血流量和不增加肾素活性者为宜。可逐渐增加剂量或加药，但应避免血压下降过快，减少肾灌注。常用药物如硝苯地平（硝苯吡啶）、哌唑嗪、肼屈嗪（肼苯哒嗪）、可乐定、甲基多巴、米诺地尔（敏乐啶）等；对于肾素依赖型高血压，常用普萘洛尔（心得安）和卡托普利（巯甲丙脯氨酸），后者可引起高血钾，应注意。对于高血压危象者，可静脉滴注硝普钠、酚妥拉明（苄胺唑啉）等，严重钠、水潴留者可行单纯超滤或序贯透析等血液净化疗法。对极少数严重肾素依赖型高血压者经积极治疗后仍无改善甚或继续恶化，可摘除双肾，继以血液透析维持生命，然后作肾移植。<br>
+（6）心力衰竭：除限制水钠摄入及强心、利尿降压治疗外，必要时可行透析治疗。洋地黄制剂治疗时，应按肾衰程度适当减量，并保持适当血钾浓度，以减少毒性作用。<br>
+（7）心律失常：去除诱因如低钾或高钾血症等，必要时予抗心律失常药物治疗，高度及完全房室传导阻滞者也可安装临时心脏起搏器。充分的血液净化治疗常可防治心律失常。对并发冠状动脉粥样硬化性心脏病者的心律失常，应按冠心病治疗。<br>
+（8）心包炎：大部分患者对透析，尤其是血液滤过治疗反应较佳，可使心包积液消失。少数透析无效者，其发病可能与容量过多无关，而与病毒感染或变态反应等有关，应予抗病毒或抗变态反应治疗，部分血透患者出现血性心包积液时，应注意调整肝素剂量或用体外肝素法，以减少心包填塞危险性。吲哚美辛（消炎痛）及糖皮质激素能减轻症状，但不能减少心包积液，防止心包填塞及缩窄性心包炎。心包内注射不易吸收的糖皮质激素如曲安西龙（去炎松），可减轻症状。当出现急性心包填塞，持续或逐渐增多的心包积液及缩窄性心包炎时，应考虑手术<br>
+治疗。手术方法有心包穿刺排液或引流、心包开窗术及全心包切除术等。<br>
+（9）贫血：红细胞生成素治疗效果显著，起始剂量50—l00U／kg体重，每周3次，皮下或静脉注射，待血球压积升至30％时减量，并维持在此水平左右，治疗期间应注意血压升高和凝血增加。有铁、叶酸、维生素B12等缺乏时，应予补充。严重贫血者可少量多次输血。<br>
+（10）蛋白质同化激素的应用：有促进蛋白质合成，减少分解作用，可减少氮质潴留；并有促进骨髓干细胞增殖而改善贫血。常用丙酸睾丸素或苯丙酸诺龙等。但长期应用有明显肝毒性，并有引起女性男性化和男性前列腺肥大等副作用，现因疗效有限和不良反应较大已少用。<br>
+（11）防治肾性骨病：除控制磷摄入，补充钙剂外，对严重高磷者可加用磷结合剂。对软骨病和严重继发性甲状旁腺功能亢进者，还可加用活性维生素D。常用的有1，25-二羟维生素D3（罗钙全）0．25—1．0μg／d。活性维生素D治疗前应首先降低血磷，并在治疗中避免高钙血症或钙磷乘积过高，以防止转移性钙化和维生素D中毒。如经上述治疗后，甲状旁腺功能亢进症状仍无明显改善，可行甲状旁腺次全切除术。<br>
+（12）其他对症治疗：恶心和呕吐可予甲氧氯普胺（胃复安）或氯丙嗪口服或肌注，皮肤瘙痒，除充分透析外，可予皮肤润滑剂或抗组胺药等；神经精神症状，如烦躁可予镇静剂，抽搐可予地西泮（安定）、苯妥英钠等。<br>
+（13）血液净化疗法：即用人工方法替代肾脏功能，清除体内代谢产物，净化血液，借以维持机体内环境平衡。治疗慢性肾功能衰竭主要应用血液透析、血液滤过、腹膜透析和口服胃肠透析等。应用的指征是：①血尿素氮＞37．7mmol／L（100mg/dl）。②血肌酐＞707．2μmol／L（8mg／dl）。③内生肌酐清除率＜10ml／min。④充血性心力衰竭经常规保守治疗无效或有尿毒症性心包炎者。⑤难以控制的高磷血症，并有转移性软组织钙沉着者。⑥明显神经系统表现。⑦尿毒症患者需施行手术，估计血液净化治疗可提高手术耐受能力，减少并发症。临床上决定是否施行血液净化治疗及其方法的选择，应根据患者具体病情综合分析。过早施行血液净化治疗固然没有必要，但在肾外脏器受到明显损害或全身情况恶化时，应及时施行，可明显提高存活率，延长生存时间，提高生活质量。<br>
+（14）肾移植：肾移植是慢性肾功能衰竭有效的生物替代疗法。目前已开展的有同种异体亲属肾或尸体肾移植，异种间肾移植虽有报道，但还未成熟，70年代以来，组织相容性配型技术和免疫抑制治疗方法的进步已使患者生存率有显著提高。<br>
+（15）药物的选择和应用：慢性肾衰时，一些原来由肾脏排泄或代谢的药物其灭活、清除减少，同时组织对一些药物的耐受性也降低，易出现药物的不良反应。因此，必须充分了解各种药物在体内的代谢排泄途径及其毒副作用，并根据肾功能损害程度选择药物和调整剂量。对氨基糖甙类抗生素及多粘菌素等肾毒性药物，应特别慎用或避免应用。在内生肌酐清除率＜20ml／min，不宜使用磺胺类、呋喃妥因（呋喃坦啶）、氢氯噻嗪、甘露醇、汞利尿剂和水杨酸类药物。另外，不少药物尤其是分子量较小或蛋白结合率较低的药物，可经透析清除，必须在透析当天适宜加大剂量或于透析后补充剂量。慢性肾功能衰竭时可依据肾功能损害程度或测定药物动力学参数决定所选用药物的剂量或给药时间间隔，以保持有效治疗血浓度和减少药物毒副反应。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">由于慢性肾衰原发病不同，病情发展阶段不同，其病位在脾肾，但可出现累及五脏六腑，寒热虚实变化的复杂证候。将其分为本证和兼证进行治疗：<br>
+1.&nbsp;本证<br>
+（1）气阴两虚，热毒壅盛型：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+治则：益气养阴，清热利湿，和胃降逆。方药：生脉饮合小柴胡汤加减：西洋参（或用太子参、北沙参）、麦冬、柴胡、黄芩、清半夏、银花、连翘、丹皮、蒲公英、茯苓、车前草、焦大黄等。<br>
+（2）脾肾虚衰、湿浊内壅型：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+治则：健脾益肾利湿，和胃降浊。方药：六君子汤合旋复代赫汤加减。白人参（或党参）、陈皮、半夏、茯苓、仙灵脾、川断、鸡血藤、旋复花、代赭石、焦大黄等。两型后期，均可发生呕吐剧，不能进食，尿闭，喘息不得卧，呕血，衄血，抽搐，循衣摸床，神昏谵语，最终气血逆乱，阴阳离绝而死亡。&nbsp;<br>
+2．兼证<br>
+（1）恶心呕吐：辨证属脾胃气虚，湿浊或湿热弥漫而致胃气上逆、呕吐痰涎者，可用小半夏汤（半夏、生姜）、茯龙肝、藿苏梗、焦大黄等；热毒壅盛，胃气不降，腑气不通伴有大便秘结，可用小承气汤（生大黄、厚朴和栀实），或用大黄苏打片等纠酸药物。<br>
+（2）衄血（鼻衄、齿衄、肌衄）、呕血、便血等血证：脾虚不能统血可选用归脾汤，便血尚可用黄土汤；热毒炽盛，迫血妄行可用犀角地黄汤（犀角用水牛角代替），亦可在原方基础上根据出血部位和性质选用仙鹤草、茜草、丹皮、生侧柏叶、蒲黄炭、藕节炭、地榆炭、三七粉和云南白药等。如妇人月经过多可用艾叶炭。<br>
+（3）高血压的治疗：辨证多见气虚血瘀、水湿内停，治疗宜益气活血、健脾利水；少数患者以阴虚而致肝阳上亢者可用建瓴汤加减。<br>
+（4）贫血的治疗：治疗宜补肾养血活血，方用当归补血汤或八珍汤加用首乌、菟丝子、枸杞子、鸡血藤、阿胶、紫河车、代赭石等。<br>
+（5）水饮证的治疗：证见心悸，胸憋闷，咳喘不得卧，治疗宜益气养血活血，通阳利水，方用春泽汤合生芪、当归、丹参、栀壳、郁金、葶苈子、沉香面。<br>
+(6）心烦不寐，四肢抽搐：多为血虚不能柔肝养筋，治疗宜养血柔肝。方用当归、白芍、甘草、女贞子、旱莲草、怀牛膝、煅龙牡。<br>
+（7）皮肤瘙痒：多属血虚生风，宜养血熄风止痒，药用生地、丹参、白癣皮等。（8）热毒壅盛，蒙蔽清窍：或引动肝风，证见：躁动不安，循衣摸床，惊厥抽搐等，可用羚角钩藤汤，或选用安宫牛黄丸、紫雪丹、至宝丹，亦可用大黄灌肠以通腑泻浊。<br>
+（9）便秘：实邪壅滞，腑实不通，可用大黄、厚朴、栀实；阳气不足，推动无力可用黄芪、肉苁蓉等；阴血不足、津亏肠燥可用增液承气汤治疗。亦可中药保留灌肠。<br>
+（10）骨节疼痛：可用补肾方药加用煅龙牡等治疗。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）至灵胶囊，4粒，一日三次，此为虫草制剂适用于慢性肾衰脾肾气虚者。<br>
+（2）丹参注射液：10～20ml加入5％葡萄糖250ml静点。半月为一疗程。<br>
+（3）川芎嗪：100～160mg加入5％葡萄糖250ml静点，半月为一疗程。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">针灸治疗：少尿或无尿者，可选内关、人中、秩边透水道、中极、归来等穴，用捻转提插泻法，以通闭、利尿；配合肾俞、命门、脾俞、关元等穴，用捻转提插法，以补肾健脾、温阳利水。吐逆而小便不利者，灸气海、天枢等穴。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">１．积极治疗原发病，减轻工作强度，避免过劳，防止感冒，预防感染，不使用损害肾脏的药物。<br>
+２．饮食疗法：采用优质低蛋白饮食，并补充足够能量及维生素，有水肿者应限盐及水的摄入。<br>
+３．配合西药维持水、电解质平衡，纠正酸中毒。<br>
+４．合并感染时，及时选用抗生素，注意避免使用对肾脏毒性大的药物，主要从肾脏排泄的抗生素要减少剂量。<br>
+５．配合西医降压、止呕，输血或使用促红细胞生成素纠正贫血等对症治疗。<br>
+６．有条件者进行透析疗法（包括腹膜透析、血液透析及结肠透析等）及肾移植。<br>
+单方验方：<br>
+（１）大黄、槐花、积雪草各３０ｇ，水煎至２００ｍ１，保留灌肠，１次／日，２周为１疗程。<br>
+（２）大黄３０ｇ，附子３个，生牡蛎３０ｇ，水煎浓缩至１５０ｍ１，保留灌肠，每晚１次。<br>
+（３）生大黄、茜草、白花蛇舌草、生牡蛎各１２～２４g，水煎至２００ｍ１，保留灌肠，１次／日，２周为１疗程。<br>
+（4）呕吐频繁者，玉枢丹０．６ｇ，吞服，１次／３小时。<br>
+（５）制附片２片，生大黄未０．６ｇ，白芥子未６ｇ，分贴两侧涌泉穴。<br>
+（６）生黄芪３０ｇ，桑白皮１５ｇ，杏仁１５ｇ，生姜３片，鲤鱼１尾（去鳞及内脏），共煮至熟，去药渣，食鱼喝汤。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">积极治疗原发性肾脏疾病。如Ⅱ型糖尿病积极控制血糖；慢性肾盂肾炎积极控制感染；可预防肾衰的发生。合理的饮食、起居对患者有益。有家族史的人群宜进行产前诊断，对减少多囊肾、遗传性肾炎有积极意义。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

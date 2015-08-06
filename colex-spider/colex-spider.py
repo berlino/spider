@@ -37,8 +37,6 @@ LoginUrl="https://www.colex-export.com/colex/AppServlet?m=CustomerLoginCtrl.requ
 if not os.path.exists("img"):
     os.makedirs('img')
 
-SpiderList=[]
-
 #get proxy from kuaidaili
 def GetProxy(api):
     req=requests.get(api)
@@ -79,31 +77,42 @@ class Spider(threading.Thread):
         self.InQueue=InQueue
         self.OutQueue=OutQueue
         self.proxy=proxy
-    def SetProxy(self,proxy):
-        self.proxy=proxy
+
+    def update(self):
+        if proxyQueue.empty():
+            Refresh()
+        self.proxy=proxyQueue.get()
+        proxyQueue.task_done()
+        print "Update to "+self.proxy["https"]
+
     def run(self):
         while True:
+            #queue gets block util queue.put
             itemSoup=self.InQueue.get()
-            if not self.session.cookies or self.session.proxies!=self.proxy:
-                self.session.proxies=self.proxy
-                #print threading.currentThread(),self.session.proxies
-                r=self.session.get("https://www.colex-export.com/colex/en/home",verify=False)
-                r=self.session.post(LoginUrl,data=payload,verify=False,headers=headers)
-            iUrl=itemSoup.contents[0]['href']
-            iNo=iUrl.split('/')[-2]
-            iName=itemSoup.contents[0].contents[0]
-            #print iUrl
             try:
+                if not self.session.cookies or self.session.proxies!=self.proxy:
+                    self.session.proxies=self.proxy
+                    #print threading.currentThread(),self.session.proxies
+                    r=self.session.get("https://www.colex-export.com/colex/en/home",verify=False)
+                    r=self.session.post(LoginUrl,data=payload,verify=False,headers=headers)
+                iUrl=itemSoup.contents[0]['href']
+                iNo=iUrl.split('/')[-2]
+                iName=itemSoup.contents[0].contents[0]
+                #print iUrl
                 r=self.session.get(iUrl,verify=False)
                 tResult=ResolveItem(r.content)
                 if tResult:
                     pc,box,price,imgUrl=tResult
                     self.OutQueue.put([iNo,iName,price,pc,box])
                     RetrieveImg(iNo,imgUrl,self.session)
+                print threading.currentThread(),iNo
                 self.InQueue.task_done()
             # if error occurs,put it into queue for another processing
             except:
                 self.InQueue.put(itemSoup)
+                #update to another proxy
+                self.update()
+                self.InQueue.task_done()
 
 
 class Storer(threading.Thread):
@@ -143,12 +152,10 @@ def FetchInfo():
     text.insert(END,u"抓取完毕\n")
 
 def Refresh():
-    ReProxy=GetProxy(API_REFRESH)
-    for i in range(0,12):
-            if i<len(ReProxy):
-                SpiderList[i].SetProxy({"https":"https://"+ReProxy[i]})
-            else:
-                SpiderList[i].SetProxy({"https":"https://"+ReProxy[0]})
+    ReProxy=GetProxy(API)
+    for p in ReProxy:
+        proxyQueue.put({"https":p.encode('ascii','ignore')})
+        #proxyQueue.task_done()
 
 root = Tk()
 root.title("Colex抓取工具")
@@ -163,42 +170,26 @@ V_2.grid(row=1)
 v2.set("http://colex-export.com")
 B_O=Button(root, text="抓取", fg="blue",bd=2,width=20,command=FetchInfo)
 B_O.grid(row=2)
-B_O2=Button(root, text="刷新代理", fg="blue",bd=2,width=20,command=Refresh)
-B_O2.grid(row=2,sticky=E)
 
-
-
-# CheckVar=IntVar()
-# CheckVar2=IntVar()
-# CheckVar3=IntVar()
-# C_O=Checkbutton(root,text=u"使用代理1",variable=CheckVar,onvalue=1,offvalue=0,height=5,width=20)
-# C_O.grid(row=3,sticky=W)
-# C_O2=Checkbutton(root,text=u"使用代理2",variable=CheckVar2,onvalue=1,offvalue=0,height=5,width=20)
-# C_O2.grid(row=3,sticky=N)
-# C_O3=Checkbutton(root,text=u"使用代理3",variable=CheckVar3,onvalue=1,offvalue=0,height=5,width=20)
-# C_O3.grid(row=3,sticky=E)
 
 proxy_list=GetProxy(API)
-
-# proxy=StringVar()
-# proxy.set(proxy_list[0])
-# X=apply(OptionMenu,(root,proxy)+tuple(proxy_list))
-# X.grid(row=2,sticky=E)
+print proxy_list
 
 itemQueue=Queue.Queue()
 printQueue=Queue.Queue()
+#proxyqueue for updating the proxy in real time
+proxyQueue=Queue.Queue()
+for p in proxy_list:
+    proxyQueue.put({"https":p.encode('ascii','ignore')})
+
 for i in range(0,4):
     if i<len(proxy_list):
-        tmp={"https":"https://"+proxy_list[i].encode('ascii','ignore')}
-        t=Spider(itemQueue,printQueue,tmp)
-        print tmp
+        t=Spider(itemQueue,printQueue,proxyQueue.get())
+        #print tmp
     else:
-        tmp={"https":"https://"+proxy_list[0].encode('ascii','ignore')}
-        t=Spider(itemQueue,printQueue,tmp)
-        print tmp
+        t=Spider(itemQueue,printQueue,{})
     t.setDaemon(True)
     t.start()
-    SpiderList.append(t)
 Storer_1=Storer(printQueue)
 Storer_1.setDaemon(True)
 Storer_1.start()

@@ -14,10 +14,7 @@ import threading
 
 
 MainUrl=u"https://www.colex-export.com"
-PROXY1={"http":"socks5://127.0.0.1:1080","https":"socks5://127.0.0.1:1080"}
-PROXY2={"http":"http://113.10.188.148:808","https":"https://113.10.188.148:808"}
-PROXY3={"http":"http://116.255.208.193:808","https":"https://116.255.208.193:808"}
-
+PROXY=[{},{"http":"socks5://127.0.0.1:1080","https":"socks5://127.0.0.1:1080"},{"http":"http://113.10.188.148:808","https":"https://113.10.188.148:808"},{"http":"http://116.255.208.193:808","https":"https://116.255.208.193:808"}]
 headers={'user-agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36',
          'X-Requested-With': 'XMLHttpRequest',
          'Referer':'https://www.colex-export.com/colex/en/home',
@@ -36,6 +33,8 @@ LoginUrl="https://www.colex-export.com/colex/AppServlet?m=CustomerLoginCtrl.requ
 #data.headers=Header
 if not os.path.exists("img"):
     os.makedirs('img')
+
+ExtendedUrl="https://www.colex-export.com/colex/AppServlet?m=PaginationCtrl.requestPage&page=2"
 
 #get proxy from kuaidaili
 def GetProxy(api):
@@ -111,8 +110,8 @@ class Spider(threading.Thread):
                 tResult=ResolveItem(r.content)
                 if tResult:
                     pc,box,price,imgUrl=tResult
-                    self.OutQueue.put([iNo,iName,price,pc,box])
                     RetrieveImg(iNo,imgUrl,self.session)
+                    self.OutQueue.put([iNo,iName,price,pc,box])
                 print threading.currentThread(),iNo
                 self.InQueue.task_done()
             # if error occurs,put it into queue for another processing
@@ -144,16 +143,31 @@ class Storer(threading.Thread):
 def FetchInfo():
     text.insert(END,u"抓取中\n")
     targetUrl=v2.get()
-    filename=targetUrl.split("/")[-1]+".csv"
+    FetchName=targetUrl.split("/")[-1]
+    filename=FetchName+".csv"
+    FetchNo=FetchName.split('-')[-2]
+    if int(FetchNo)>50:
+        Extended=True
+    else:
+        Extended=False
     file=codecs.open(filename,'w',encoding='utf-8')
     file.write(u'id,name,price,pc,box\n'.encode('utf-8'))
     Storer_1.SetFile(file)
-    r=requests.get(targetUrl,verify=False,proxies=PROXY3)
+    FetchItemSession=requests.Session()
+    FetchItemSession.proxies=PROXY[3]
+    r=FetchItemSession.get(targetUrl,verify=False)
     soup=BeautifulSoup(r.text,'html.parser')
     itemList=soup.find_all('td','description')
     #session is not thread safe,so make request before the queue
     for i in itemList:
         itemQueue.put(i)
+    if Extended:
+        r=FetchItemSession.get(ExtendedUrl,verify=False)
+        soup=BeautifulSoup(r.text,'html.parser')
+        itemList=soup.find_all('td','description')
+        print "Extended ",len(itemList)
+        for i in itemList:
+            itemQueue.put(i)
     itemQueue.join()
     printQueue.join()
     file.close()

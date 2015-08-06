@@ -31,7 +31,7 @@ LoginUrl="https://www.colex-export.com/colex/AppServlet?m=CustomerLoginCtrl.requ
 if not os.path.exists("img"):
     os.makedirs('img')
 
-
+ExtendedUrl="https://www.colex-export.com/colex/AppServlet?m=PaginationCtrl.requestPage&page=2"
 
 def ResolveItem(content):
     global MainUrl
@@ -115,16 +115,31 @@ class Storer(threading.Thread):
 def FetchInfo():
     text.insert(END,u"抓取中\n")
     targetUrl=v2.get()
-    filename=targetUrl.split("/")[-1]+".csv"
+    FetchName=targetUrl.split("/")[-1]
+    filename=FetchName+".csv"
+    FetchNo=FetchName.split('-')[-2]
+    if int(FetchNo)>50:
+        Extended=True
+    else:
+        Extended=False
     file=codecs.open(filename,'w',encoding='utf-8')
     file.write(u'id,name,price,pc,box\n'.encode('utf-8'))
     Storer_1.SetFile(file)
-    r=requests.get(targetUrl,verify=False,proxies=PROXY[3])
+    FetchItemSession=requests.Session()
+    FetchItemSession.proxies=PROXY[3]
+    r=FetchItemSession.get(targetUrl,verify=False)
     soup=BeautifulSoup(r.text,'html.parser')
     itemList=soup.find_all('td','description')
     #session is not thread safe,so make request before the queue
     for i in itemList:
         itemQueue.put(i)
+    if Extended:
+        r=FetchItemSession.get(ExtendedUrl,verify=False)
+        soup=BeautifulSoup(r.text,'html.parser')
+        itemList=soup.find_all('td','description')
+        print "Extended ",len(itemList)
+        for i in itemList:
+            itemQueue.put(i)
     itemQueue.join()
     printQueue.join()
     file.close()

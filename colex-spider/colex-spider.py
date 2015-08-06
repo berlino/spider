@@ -78,10 +78,18 @@ class Spider(threading.Thread):
         self.OutQueue=OutQueue
         self.proxy=proxy
 
+    #update the proxy of not in use
     def update(self):
+        usingSet.remove(self.proxy["https"])
         if proxyQueue.empty():
             Refresh()
-        self.proxy=proxyQueue.get()
+        p=proxyQueue.get()
+        while p["https"] in usingSet:
+            if proxyQueue.empty():
+                Refresh()
+            p=proxyQueue.get()
+        self.proxy=p
+        usingSet.add(self.proxy["https"])
         proxyQueue.task_done()
         print "Update to "+self.proxy["https"]
 
@@ -179,12 +187,15 @@ itemQueue=Queue.Queue()
 printQueue=Queue.Queue()
 #proxyqueue for updating the proxy in real time
 proxyQueue=Queue.Queue()
+usingSet=set()
 for p in proxy_list:
     proxyQueue.put({"https":p.encode('ascii','ignore')})
 
 for i in range(0,4):
     if i<len(proxy_list):
-        t=Spider(itemQueue,printQueue,proxyQueue.get())
+        tmp=proxyQueue.get()
+        t=Spider(itemQueue,printQueue,tmp)
+        usingSet.add(tmp["https"])
         #print tmp
     else:
         t=Spider(itemQueue,printQueue,{})

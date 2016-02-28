@@ -65,6 +65,7 @@ def RetrieveImg(iNo,imgUrl,session):
             imgFileName="./img/"+iNo+'.jpg'
             if imgUrl!='0':
                 #print iNo+" Getting image from "+imgUrl
+                imgUrl=imgUrl.replace('200x200','500x500')
                 tmpObj=Image.open(cStringIO.StringIO(session.get(imgUrl,verify=False).content))
                 tmpObj.save(imgFileName)
                 del tmpObj

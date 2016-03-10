@@ -1,0 +1,7 @@
+.DS_STORE
+.git
+*.zip
+*.csv
+dist/
+build/
+img/

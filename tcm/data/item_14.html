@@ -1,0 +1,935 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">流行性脑脊髓膜炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=流行性脑脊髓膜炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">epidemic cerebrospinal meningitis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">LIUXINGXINGNAOJISUIMOYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">脑膜炎球菌脑膜炎，流脑，中医：温病：春温，风温，温疫。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">流行性脑脊髓膜炎是由脑膜炎双球菌引起的化脓性脑膜炎（简称流脑）。致病菌由鼻咽部侵入血循环，形成败血症，最后局限于脑膜及脑脊髓膜，形成化脓性脑脊髓膜病变。主要临床表现有发热、头痛、呕吐、皮肤瘀点及颈项强直等脑膜刺激征。脑脊液（CSF）呈化脓性改变。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">脑膜炎双球菌属奈瑟菌属，革兰染色阴性，呈卵圆形，常成对排列，直径为0．6～0．8μm。该菌仅存在于人体，可从带菌者鼻咽部及患者皮肤瘀点、血液和CSF中检出。CSF中的细菌多见于中性粒细胞内，仅少数在细胞外。普通培养基上不易生长，通常采用血液琼脂或巧克力琼脂培养基，在5％～10％二氧化碳环境下生长更好。本菌对寒冷、干燥及日光极为敏，如在室温下3小时，紫外线照射15分钟，加热55℃5分钟均可被破坏。于体外甚易自溶，故采取标本后应立即送检。对一般消毒剂如氯胺、来苏、石炭酸等即使浓度很低，在1分钟内也可杀死、
+脑膜炎双球菌的细胞壁复合物由荚膜多糖、蛋白质、酯多糖、类酯质等4种成份组成。据据荚多糖免疫特异性的不同，采用血清凝集试验将其分为A、B、C、X、Y、Z、W135、29E（Z’）、H、I、K和L等12个血清群。根据外膜蛋白的不同，目前至少可分为20个血清型示10个亚型。依其酯多糖的差异又可分为11个免疫型。国外感染多由B和C群引起，根据我国资料，引起发病和流行者仍以A群为主，分离到的致病菌中，A群占97．3％，B群占1．93％，C群仅占0．39％。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病外因主要为感受温疫邪毒，若人体正气不足，不能抗御温邪，即可发病。小儿脏腑娇嫩，气血未充，更易传染。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">以冬春季为高峰。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">世界各地均有流行，我国各地亦有本病发生，呈流行或散发。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">发病年龄大城市以6个月至2岁为最高；中小城市则以2-4岁或5-9岁为最高。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">本病流行或散发于世界各国，以非洲中部流行地带发病率为最高。中国1896年首次在武昌证实本病后，曾多次发生过大小流行，解放后发病率明显下降。人为本病唯一的传染源。致病菌借飞沫直接传播，发病率随冬季来临而增加。  脑膜炎球菌可用血清凝集试验加以分群，国外将其分为A、B、C、D、X、Y、Z、29E、W135 9个血清群。中国除A、B、C、D与国外相同外，另列1916、1889、1892、319群，实为X、Y、29E、及W135群，国内的新菌群有1890、1486及1811群。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">性别在发病率及带菌率上无明显差异。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">病原体自鼻咽部侵入人体，如人体免疫力强，则可迅速将其杀灭，或成为带菌状态；若体内缺乏特异性杀菌抗体，或细菌毒力较强时，则病原菌可从鼻咽部粘膜进入血液，发展为败血症，继而累及脑脊髓膜，形成化脓性脑脊髓炎。
+     在败血症期，细菌常侵袭皮肤血管内壁引起栓塞、坏死、出血及细胞浸润，从而出现瘀点瘀斑。由于血栓形成，血小板减少及内毒作用，内脏有不同程度的出血。
+    多年来，细菌的毒力被认为是致病的重要因素。近年的研究发现，细胞因子网络失调在发病机理中起重要作用。细菌及其成分，如细胞壁、酯多醣等可刺激中枢神经系统（CNS）的血管内皮细胞、巨噬细胞、星形细胞和小胶质细胞产生细胞因子，如肿瘤坏死因子（TNF）、白细胞介素（IL）等。TNF和IL-1β在诱导炎症反应过程中起协同作用，一方面活化脑血管内皮细胞上的白细胞粘附受体，促使白细胞粘附于血管壁，释放蛋白溶解酶，破坏内皮细胞间的联接，导致血脑屏障通透性显著增加，血白细胞及血浆成分大量进入CSF中；另一方面，激活花生四烯酸代谢酶类，促进产生其代谢产物前列腺素（PG），并诱导产生血小板活化因子（PAF），使血脑屏障通透性进一步增加，脑血管微血栓形成，引起蛛网膜下腔炎症反应，导致颅内压增高，脑水肿，脑血流降低，脑细胞功能及代谢紊乱。在炎症后期，IL-1β调节纤维母细胞的增殖，使炎症组织局部纤维化。颅内粘连和CSF循环不畅，引起脑积水。
+    重症流脑败血症是一种特殊类型，过去称为华-佛氏综合征，曾认为是由于双侧肾上腺皮质出血和坏死，引起急性肾上腺皮质功能衰竭所致。现已证实肾上腺皮质功能多数并未衰竭，在发病机理中并不起主要作用，而是由于内毒素、细胞因子，酶类及免疫系统的体液和细胞成分在活化作用中分泌的其他效应物质，破坏血管内皮间的联接，引起血小板、中性粒细胞和单核细胞的聚集，导致血管内血栓形成，血管通透性增加，激活凝血过程，导致血压下降及播散性血管内凝血（DIC），多脏器功能衰竭。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">温热疫病之邪首先侵入人体，多从口鼻而入，故称“温邪上受，首先犯肺”，致卫气郁阻，皮毛开合不利，肺失宣降，出现发热。恶寒、咳嗽等肺卫证象，邪犯太阳经脉，则出现颈项强直。但本病卫分症状极短且不显，迅速传入气分，临床多见卫气同病。如发病即见高热、烦渴、有汗不解，多属于伏寒化热的伏气温病。卫气分邪热不解，热邪化火，入于营分、血分，出现气营同病，营血同病，气营有热，心神被扰则壮热，神昏谵语，咽燥口渴。热亦化火犯胃，火性上炎，则头疼、呕吐频频，甚则呈喷射性呕吐。邪入营血，热毒炽盛，里气壅闭，毒气不得外透，而出现发斑，或吐血便血，本病热象偏重，极易化火化燥伤阴、病初即见肺胃津伤的口渴、唇燥、颈强。病的末期往往消灼肝肾之阴，出现抽搐、瘈疭、惊厥甚至角弓反张。
+    重症流脑多起病急骤，热毒直迫营血，迅速出现“逆传心包”， 出现神昏谵语，惊厥抽搐，或全身瘀斑迅速扩大及出血等。因邪热疫毒炽盛，病情进展急剧，邪毒蒙闭清窍，阳气不过四末，出现壮热，剧烈头痛，频繁抽搐，四肢厥冷，胸腹灼热，面赤气粗，牙关紧闭等热甚厥深的窍闭证。或正气不足，邪毒沟陷致阳气暴脱，出现面色青灰，大汗出，血压下降，呼吸衰微，肢冷脉厥，甚至气不摄血、全身瘀斑迅速增多或出血、衄血。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">败血症期的主要病变为血管内皮损害，血管壁有炎症、坏死和血栓形成，同时血管周围有出血，皮下、粘膜及浆膜也可有局灶性出血。
+重症流脑败血症的皮肤和内脏血管有内皮细胞坏死和脱落，血管腔内有血栓形成。皮肤、心、肺、胃肠道和肾上腺均有广泛出血。心肌炎和肺水肿亦颇为常见。     脑膜炎期的病变以软脑膜为主，早期有充血，少量浆液性渗出及局灶性小出血点，后期则有大量纤维蛋白，中性粒细胞及细菌出现。病变累及大脑半球及颅底。颅底部由于脓性粘连压迫及化脓性改变的直接侵袭，可引起视神经、外展神经、面神经、听神经等颅神经短暂
+性、甚或永久性损害。此外，炎症可沿着血管侵入脑组织，引起充血、水肿、局灶性中性粒细胞浸润及出血。
+重症流脑脑膜炎的脑组织病变严重，有明显充血水肿，颅内压明显增高，可出现昏迷及惊厥等脑炎症状，部分病人有天幕裂孔疝及枕骨大孔疝，即出现瞳孔改变、偏瘫、去大脑强直、呼吸衰竭等严重症状。少数慢性病人有脑室孔阻塞和CSF循环障碍而发生脑积水。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）肺卫型：证见发热、微恶寒、头痛，鼻塞流涕，咽喉肿痛，苔薄白，脉浮数。证候分析：瘟邪上受，致卫气郁阻，皮毛开合不利，出现发热、恶寒、鼻塞流涕。<br>
+（2）卫气型：证见发热，恶寒或寒战，无汗或有汗，全身疼痛，头痛项强、恶心、呕吐，口微渴，或见咳嗽，嗜睡，或烦躁不安，皮下斑疹隐隐。舌质略红或正常。苔白或微黄，脉浮数或弦数。证候分析：瘟邪内蕴，或瘟疫之气由口鼻而入，由表入里，邪犯肺胃，卫气同病。<br>
+（3）气营型：证见高热以夜间为甚，咽燥口渴，心烦躁扰不宁，时有谵语，头痛如裂，呕吐，频繁抽搐，肢体厥逆。证候分析，疫毒传里，盛于气营之间，气分热炽，则壮热烦渴；火毒上冲，在头则头痛如裂，在胃则呕吐如喷；热盛则暴强直，频繁抽搐，肢体厥逆；热陷营分、心宣通于营，则神昏谵语。<br>
+（4）营血型：证见头疼呕吐，身灼热，躁扰不安，昏狂澹妄，斑疹紫黑或吐衄便血，舌深绛，脉数。证候分析：热在营血，热蒸而阴伤，壮热不已则身灼热；血热妄行则出血严重；营血为心肝所主，病在极期，厥阴受邪，热闭心包则昏狂谵妄；舌脉的变化，皆为热陷营血之证。<br>
+（5）窍闭型：证见身热肢厥，神昏谵语，或嗜睡昏蒙、舌蹇。证候分析：邪毒内陷，闭队心包，则身热肢厥，神昏谵语。<br>
+（6）厥脱型：证见面色苍白，发绀，四肢厥逆，出冷汗，神情淡漠或烦躁，甚至不省人事，脉微细数欲绝或乱，肢体强直，呼吸短促。证候分析：邪毒内陷，气脱于外，则出冷汗，面色苍白，四肢厥逆，脉细欲绝，呼吸短促。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1979年全国传染病防治工作学术座谈会流行性脑脊髓膜炎筹备组制订<br>
+一、&nbsp;早期诊断<br>
+早发现、早诊断、早治疗抢救，是防治流行性脑脊髓膜炎（以下简称流脑）及降低其病死率的重要关键。早期发现疑似流脑的病人，及时采取隔离措施，并投以全程、足量的磺胺类药物治疗，以控制病情的发展，并消灭传染源。<br>
+1.&nbsp;在流行季节（冬春季）及流行地区，突然发热及全身不适、头痛、咽痛、咳嗽、鼻塞等上呼吸道感染症状的患者，应作为疑似流脑的病例，并注意观察其症状的发展，当发现有典型的皮肤、粘膜出血点时，即可确诊为流脑。<br>
+2.&nbsp;注意两岁以内婴儿患者与其他年龄有所不同；有时发热不明显，常表现为易受椋；哭闹不安、高声尖叫、拒乳、呕吐、眼神呆滞、惊厥等。前囟不一定膨隆、紧张，脑膜刺激征不一定出现，要仔细检查皮肤、粘膜出血点。<br>
+3.在流行季节，对无其他理由可解释的精神萎靡、嗜睡、面色苍白、皮肤发花、肢端发凉的病人应密切观察，如为脑膜炎双球菌感染都在短期内易发展为暴发型循环衰竭的病例。<br>
+二、诊断<br>
+（一）普通型<br>
+1.急性起病、发热、头痛、烦躁，伴上呼吸道感染的症状，大多数病人皮肤有出血点，散在分布于躯干、四肢，初为红色斑丘疹，迅速转变为大小不等、边缘不整、暗红色的出血点，也可出现于眼结膜及口腔粘膜。<br>
+2.具有脑膜炎的症状体征时，尚可出现剧烈头痛、喷射性呕吐、精神萎靡、嗜睡、烦躁、谵妄，儿童可有惊厥，并出现颈部抵抗（5岁以下儿童可不明显），克氏征及布氏征阳性。<br>
+3.在整个病程中，呼吸、脉搏、血压均正常，神志清楚。<br>
+（二）暴发型<br>
+1.休克型（循环衰竭型）：休克多在发病后24小时左右发生，病情进展多迅速。①严重的感染中毒症状；表现为高热（有时体温不高或低于正常），精神极度萎糜，可有程度不同的意识障碍，有时有惊厥。②迅速增长的皮肤出血点或瘀斑，可融合成片，甚至坏死。③循环衰竭的症状：早期为面色苍白、四肢发凉、唇周或指、趾轻度发绀（并非因脱水或寒冷所致），血压轻度下降或明显波动，脉搏增快但尚有力，尿量略少，眼底动脉轻度痉挛。晚期为面色苍灰、肢端厥冷或湿冷（接近膝、肘关节）、皮肤发花，唇、唇周及指、趾明显紫绀，脉搏细速、心音低钝或可出现奔马律，血压明显下降或测不出、脉压差小（≤20mmHg）、尿量明显减少或无尿、眼底动脉明显痉挛。④可并发休克肺、急性心力衰竭或肾功能衰竭。<br>
+2.脑膜脑炎型，常于病后1～2日内出现下述表现：①明显的感染中毒症状：表现为高热，面色苍白、表情呆滞、眼神凝视；②有脑膜刺激征，多有皮肤、粘膜出血点，虽经抗菌药物治疗后，意识障碍进行性加重，深昏迷时脑膜刺激征可消失；③颅内压增高的表现：脑水肿所致的颅内压增高的症状与体征。亦有早期（轻症）及晚期（重症）的不同发展阶段，主要包括以下表现：剧烈而难忍的头痛，躁动或狂躁，可有多次喷射性呕吐，面色迅速呈苍灰色；意识障碍急剧加深，呈浅昏迷或深昏迷，可有频繁或持续的惊厥；肌张力增强，初呈阵发性或持续性的肢体强直，上肢多内旋，下肢呈伸性强直，直至角弓反张，发生脑症时，肌张力反而降低，全身肌肉松弛；血压明显增高，脉压差可增大，成人患者的脉搏及呼吸早期可增快，晚期减慢，儿童则不明显；瞳孔早期忽大忽小，边缘不整，发展为两例大小不等（小脑幕切迹疝时）或两侧扩大（枕骨大孔疝时），对光反射迟钝或消失，眼神凝视，固定（多向下呈落日状，偶见向上），可见眼球震颤、眼睑下垂，眼底动脉痉挛，静脉纡曲，常见视乳头明显水肿或消失。<br>
+中枢性呼吸衰竭是脑疝的表现之一。主要表现为各种形式的呼吸节律不整，早期呈叹息样呼吸或潮式呼吸（深浅不均），渐发展为中枢性过度换气（呼吸快而浅，成人可达30～60次/分），间歇呼吸（毕奥氏呼吸）、抽气样呼吸，终至下颌运动式呼吸（无效的呼吸）而呼吸停止。发生枕骨大孔疝时，呼吸节律的变化发展甚速，呼吸可骤停。<br>
+3.混合型：兼有上述两型表现者。<br>
+三、实验室检查<br>
+1.血象：末梢血白细胞计数多在1～2万以上，中性多核白细胞多占80%以上。<br>
+2.脑脊液检查：早期外观多清亮，约12～24小时左右变混浊或脓样，白细胞计数在500以上，甚至超过1万，以中性多核白细胞为主，蛋白量增高，糖量降低（静脉点滴输入葡萄糖时，脑脊液中糖量低于当时血糖量的40%）。涂片检查可见革兰氏阴性双球菌，细菌培养可分离出脑膜炎双球菌。注意及时检查（涂片及作培养），以免细菌自溶，经过不规则抗菌药物治疗的患者，脑脊液检查结果常不典型；涂片及培养常阴性。<br>
+3.皮肤出血点涂片检查：选中等大小、色较鲜红的皮肤出血点，经用酒精消毒干燥，再用消毒盐水擦洗后，以消毒针头轻轻刺破出血点，取少量血液及组织液作涂片，在空气中干燥后染色寻找革兰氏阴性双球菌，但缺乏细菌学的鉴定，只能供参考。如作出血点细菌培养，则有病原学诊断意义。<br>
+4.血液细菌培养。<br>
+5.有条件时，可选用免疫血清学检查来协助及提高诊断，包括对流免疫电泳、间接血凝、血凝抑制、反向血凝、乳胶凝集、炭末凝集及免疫荧光抗体等方法。<br>
+对流脑患者确诊的条件是：临床表现，参考流行病学资料，最后根据病原学检查来确诊。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">凡在流行季节突起高热、呕吐、头痛，伴神志改变，体检皮肤、粘膜有瘀点、瘀斑，脑膜刺激征阳性者，临床诊断即可初步成立。确诊有赖于CSF检查及病原菌发现，免疫学检查有利于及早确立诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期1～7天，一般2～3天。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">流脑的病情复杂多变，轻重不一，一般可有三种临床表现，普通型、重症和慢性败血症型。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">（一）普通型<br>
+占全部病人的90％左右，按其发展过程可分为上呼吸道感染期、败血症期及脑膜炎期三个阶段。<br>
+1．上呼吸道感染期&nbsp;大多数病人无症状，部分病人有咽喉肿痛，鼻咽部粘膜充血及分泌物增多；鼻咽拭子培养可发现病原菌、一般情况下很难确诊。<br>
+2．、败血症期&nbsp;&nbsp;患者突然发热、畏寒、寒战，伴头痛、食欲减退及神志淡漠等中毒症状。幼儿常有啼哭吵闹，烦躁不安。皮肤感觉过敏及惊厥等。少数病人有关节痛和关节炎。70％病人有皮肤粘膜瘀点或瘀斑，见于全身皮肤粘膜，大小约1～2mm至1cm。病情严重者的瘀点、瘀斑可迅速扩大，其中央因血栓形成而发生皮肤大片坏死，约10％病人口唇周围等处可见单纯疱疹，多发生于病后2日左右。少数&nbsp;病人有脾肿大。多数病人于1～2日内发展为脑膜炎。<br>
+3．脑膜炎期&nbsp;&nbsp;病人高热及毒血症持续，全身仍有瘀点、瘀斑，但CNS症状加重。因颅内压增高病人出现头痛欲裂，呕吐频繁，血压增高而脉搏减慢，常有皮肤过敏、怕光、狂躁及惊厥。1～2日后病人进入谵妄昏迷状态，可出现呼吸或循环衰竭。由于神经根受刺激而出现颈项强直，克氏征及布氏征阳性等脑膜刺激征，严重者可见角弓反张。<br>
+婴儿因颅缝和前囱未闭，CNS发育不成熟，临床表现多不典型，除高热、拒奶、烦躁及啼哭不安外，惊厥、咳嗽及腹泻较成人多见，而脑膜刺激征可能缺如，前囱未闭者大多凸出，对诊断极有帮助，但有时因频繁呕吐、脱水反而出现下凹。<br>
+（二）重症&nbsp;<br>
+少数病人起病急骤、病情凶险，若不及时抢救，常于12～48小时内死亡；死亡的直接原因为DIC、中枢性呼吸衰竭、脑疝和多脏器功能衰竭。&nbsp;&nbsp;<br>
+1．重症流脑败血症（又名暴发败血症型）<br>
+多见于儿童，但近年成人病例有所增加。以高热、头痛、呕吐开始，中毒症状严重，精神极度萎靡，可有轻重不等的意识障碍，时有惊厥。常于12小时内出现遍及全身的瘀点、瘀斑，且迅速扩大融合成片伴皮下坏死。继之出现面色苍白，皮肤发花、四肢厥冷、唇及指端发绀、脉搏细数、血压迅速下降或测不出、脉压缩小等外周循环衰竭表现，或伴有呼吸急促，尿量减少或无尿，甚则昏迷。脑膜刺激征大多缺如，CSF大多澄清、仅细胞数轻度升高。血及瘀斑培养多为阳性，实验室检查可证实有DIC存在。<br>
+2．重症流脑脑膜脑炎（又名暴发脑膜脑炎型）<br>
+亦多见于儿童。起病急骤，突然高热，剧烈头痛，烦燥不安，喷射性呕吐，面色苍白或发绀，频繁抽搐，继之转入昏睡可昏迷。血压升高不，脉率相当缓慢，肌张力增高或全身强直，甚则角弓反张。脑膜刺激征及病理反射阳性，眼底可见视乳头水肿。部分病人发展为脑疝，天幕裂孔疝为颞叶钩回或海马疝入天幕裂口所致，能压迫间脑及动眼神经，致使双侧瞳孔扩大，光反应消失，眼球固定或外展，对侧肢体轻瘫，继之出现呼吸衰竭。枕骨大孔疝可压迫延髓，很快出现呼吸衰竭，表现为呼吸快慢和深浅不均、呼吸暂停、抽泣样呼吸等。呼吸衰竭出现前可有下列预兆：①面色苍白。呕吐频繁、头痛剧烈、烦躁不安。②突然发生昏迷，惊厥不止、肌张力持续增高。③瞳孔大小；不等、明显缩小或扩大、边缘不整齐、对光反应迟钝或消失、眼球固定。④呼吸节律改变。⑤血压上升。<br>
+3．重症流脑混合型<br>
+起病急骤，有暴发性紫癜及外周循环衰竭症状；同时伴有反复惊厥、肌张力增高、昏迷等颅压增高症状。<br>
+（三）慢性败血症；<br>
+不多见，成人患者较多。病程大约持续10周～6个月。患者常有间歇热、反复出现瘀斑及脉管炎性皮疹、膝腕关节疼痛及脾肿大等。诊断主要依据发热期血培养，常需多次检查才可获阳性。瘀点涂片阳性率不高。病程中有时可发展为化脓性脑膜炎或心内膜炎而使病情急剧恶化。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">早期颅脑CT无异常发现，随病情发展，基底池及脑沟显影模糊，局限或广泛的脑水肿表现为不规则形低密度区，局部脑实质可增强。软膜、蛛网膜可见线形化。并发脑积水时脑室系统变形与扩大，侧脑室前角周围因CSF渗出可出现低密度影。硬脑膜下积液或积脓表现为颅骨内板下新月形低密度区，一侧或双侧，形成的包膜可强化。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">一、细菌学检查:
+1．涂片检查  皮肤瘀点及CSF涂片作革兰染色,镜检可见革兰阴性双球菌，前者阳性率高达80％以上，后者阳性率为60％～70％。但CSF不宜搁置太久，否则病原菌易自溶而影响检查。
+2．细菌培养可选择CSF、血，皮肤出血点或鼻咽拭子进行培养。血培养阳性率较低，但对普通型败血症期、重症流脑败血症及慢性败血症的诊断甚为重要故必须注意在应用抗菌药物前采血作细菌培养，并宜多次采血送检。  CSF应于无菌试管内离心，取沉渣直接接种。
+皮肤出血点、血和CSF培养阳性即可确诊。鼻咽拭子培养亦可获阳性结果，但对诊断仅有参考价值。
+3．脑膜炎双球菌DNA检测采用聚合酶链反应（PCR）扩增脑膜炎奈瑟菌1S1106插入序列的方法，检测CSF和血清中脑膜炎双球菌DNA，具有高度的特异性和敏感性，且不受抗生素治疗的影响，是诊断流脑简便快速、灵敏特异的方法。
+二、其他：
+血清电解质、二氧化碳结合力、尿素氮、肌酐、血气分析和有关DIC的试验，以及休克时的中心静脉压和肺动脉楔压的监护对估计病情和指导治疗均有一定帮助，必要时可选择有关项目。流脑患者CSF中的乳酸、乳酸脱氢酶、β2-微球蛋白、纤维结合蛋白、TNF、IL-1等常增高，对鉴别化脑和病脑、估计预后有帮助，但不能鉴别由哪种化脓菌引起。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">白细胞总数明显增加，一般在20×109／L左右或更高，中性粒细胞占0．80～0．。90以上。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">病程早期仅有压力增高，外观正常。典型脑膜炎期，压力高达1．96kPa以上，外观混浊或呈脓样，白细胞数达数千至数万，以中性粒细胞为主。蛋白质显著增高，糖含量低于2．5mmol／L，有时可测不出，氯化物降低。若临床有脑膜炎症状及体征而早期CSF检查正常，应于12～24小时后复验。流脑经抗菌药物治疗后，CSF改变可不典型。
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">1．测定抗原测定CSF，血清或尿液中的细菌可溶性抗原，简便快速，敏感性高，特异性强，且不受抗生素治疗的影响，适用于早期诊断，阳性率可达90％左右。检测方法有乳胶凝集试验、反向间接血凝试验、对流免疫电泳、协同凝集试验、免疫荧光、酶联免疫吸附试验等。
+2．测定抗体 抗体检测不能作为早期诊断方法、其敏感性和特异性均较差，故临床应用日渐减少。方法有间接血凝试验、对流免疫电泳、放射免疫测定法等，如恢复期血清抗体效价高于急性期4倍以上，具有诊断价值。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．其他化脓性脑膜炎：&nbsp;&nbsp;依侵入途径可初步区别。肺炎球菌脑膜炎多继发于肺炎、中耳炎基础上；葡萄球菌脑膜炎大多发生在葡萄球菌败血症过程中；革兰阴性杆菌脑膜炎大多发生于颅脑手术后；流感杆菌脑膜炎多发生于婴幼儿；大肠杆菌脑膜炎多发生于新生儿；绿脓杆菌脑膜炎常继发于腰穿、麻醉、造影或手术后。&nbsp; CSF和血培养出病原菌即可明确诊断。<br>
+2．流行性乙型脑炎：&nbsp;&nbsp;发病季节多在7～9月，脑实质损害严重,昏迷、惊厥多见，皮肤一般无瘀点、CSF多澄清，细胞数大多在0．5×109／L以下，糖及蛋白定量正常或稍偏高，氯化物正常。血清和CSF特异性IgM检测可作早期诊断。&nbsp;&nbsp;<br>
+3.中毒性菌痢：&nbsp;&nbsp;发病季节在夏秋季,主要见于儿童。起病急骤，有高热、惊厥、嗜睡、昏迷、迅速发生休克和呼吸衰竭。肠道症状轻，甚至无腹泻。无瘀点和疱疹，多无脑膜刺激征，CSF检查正常。冷盐水灌肠排出物可见粘液，镜检有成堆脓细胞和红细胞，培养有痢疾杆菌生长。<br>
+4．虚性脑膜炎：&nbsp;败血症、伤寒、大叶性肺炎、恶性疟疾等急性感染病人有毒血症时，可出现脑膜刺激征，但CSF除压力稍高外，余均正常。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈：症状及体征消失，血液白细胞计数及分类恢复正常，脑脊液细胞数少于0. 05×109/L&nbsp;（50／mm3），全部为淋巴细胞，糖及蛋白定量正常；咽拭子培养阴性。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">自采用磺胺及青霉素等抗菌药物治疗以来，病死率已降至5％以下。预后与下列因素有关：老年人及2岁以内小儿预后较差；重症或有反复惊厥、休克、昏迷、DIC、体温>40℃或37℃，外周血白细胞>20×10的9次幂/L或<5.0×10的9次幂/L ,血小板<50×10的9次幂/L , CSF中白细胞> 10×10的9次幂/L 或IL-1β≥500pg/ml者预后差；流行高峰发病较流行末期发病预后差；治疗不及时或给药时间短者预后较差，且易发生并发症和后遗症。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">病程中可并发支气管肺炎、肺水肿、肺梗塞、呼吸窘迫综合征、眼结膜炎、中耳炎、副鼻窦炎、面神经麻痹、视神经炎、心内膜炎、心肌炎、心包炎、睾丸炎、化脓性关节炎、急性肾功能衰竭、脑脓肿、皮肤坏死等。后遗症常有耳聋、失明、失语、吞咽困难、肢体瘫痪、智力及性格改变、精神异常、脑积水及硬脑膜下积液等。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．普通型流脑的治疗<br>
+（1）抗菌治疗：根据当地耐药情况选用。<br>
+①磺胺类药：SMZ-TMP（SMZ 0．4g，TMP 0．08g）每次3片，每日2次；儿童每日按SMZ50～80mg／kg，分2次口服或肌注或静注。复方磺胺嘧啶（SD 0．4g，TMP&nbsp; 0．08g）每次4片或4支，每日2次；儿童按每日SD75～100mg／kg计算，分2次口服或肌注或静注。疗程5日。可同时给予等量碳酸氢钠，保证每日入量，尿量在1500ml以上，注意查尿常规及血白细胞等检查。<br>
+②青霉素G：成人每日1200万U，儿童每日20～30万U／kg，分3～4次加入10％葡萄糖或生理盐水100ml（儿童液体酌减）于1小时内静脉滴完，疗程3～5日。<br>
+③氯霉素：如对青霉素过敏者可改用。成人每日2～3g，小儿每日40～80mg/kg，分4次口服或静滴，疗程3～5日。注意复查血象。<br>
+④氨苄青霉素：每日100～150mg／kg，分3～4次静滴或肌注。适用于难以确定病原菌的患者。<br>
+⑤三代头孢菌素类：该类药物抗菌谱广，杀菌力强，对β-内酰胺酶稳定，副作用小。适用于对青霉素G耐药菌株、儿童及病原不明的脑膜炎患者。常用者为头孢三嗪，成人每日2～4g，儿童100mg／kg一次静滴；头孢噻肟钠成人每日6～8g，儿童150～300mg／kg，分3～4次静滴，疗程4～7日。主要缺点是价格昂贵，患者经济负担较大。<br>
+⑥耐药菌株感染的治疗：脑膜炎球菌对青霉素G耐药菌株主要为B群和C群，对绝对耐药者（MIC≥250μg/m1，由细菌产生β内酰胺酶所致），可改用氯霉素和三代头孢菌素类；而相对耐药者（MIC为0．16～1.28μg/m1，由细菌的青霉素结合蛋白分子结构发生改变所致，而不产生β内酰胺酶），加大青霉素G剂量仍然有效。<br>
+（2）减轻脑水肿，降低颅内压：由于细胞因子参与了脑膜炎的炎症过程，如何抑制或消除这些因子的致病作用是提高治愈率的重要辅助措施。动物实验及临床观察均证实，病程早期CSF和血清中细胞因子水平即明显上升，抗菌治疗则可使其进一步增高，而大剂量地塞米松治疗可显著降低TNFα、IL-Iβ及PGE2的浓度，减轻脑水肿，降低颅内压,增加脑血流及改善脑代谢，促进脑代谢的恢复，降低病死率，减少后遗症等。故应与抗生素同时或稍前应用地塞米松，特别是首次应用抗生素时更应如此。常用剂量为0．6mg／kg，静脉滴注，每日1次，疗程2～4日。另外，消炎痛等非激素类抗炎药物有抑制花生四烯酸转化成PGE2，阻止脑水肿发展的作用，亦可使用。<br>
+（3）一般治疗：<br>
+①按呼吸道传染病隔离，予流质、半流质饮食。<br>
+②高热时用物理降温或安乃近滴鼻。<br>
+③恶心、呕吐时可用冬眠灵或胃复安，并防止吸入。<br>
+④惊厥可用安定静脉注射，或用苯巴比妥钠，复方氯丙嗪,10％水合氯醛等。<br>
+<br>
+2.重症流脑败血症的治疗<br>
+（1）抗菌治疗：此期因外周组织灌注不足，故必须采用静脉内给药，以青霉素G或氯霉素为首选，剂量同前。<br>
+&nbsp;（2）抗休克治疗：<br>
+①扩充血容量及纠正酸中毒：首批液体儿童15～20m1／kg，成人400～500m1，为2：1等张液（2份生理盐水，1份1．4％碳酸氢钠）于1小时内静脉推入，继续补液根据病情选用低分子右旋糖酐、5％碳酸氢钠、生理盐水、10％葡萄糖液、人血白蛋白等，总量儿童60～80m1／kg，成人2000～2500m1。重症酸中毒者首批液体亦可用5％碳酸氢钠5ml／kg静脉推入，以后再依二氧化碳结合力、pH值等酌情补充。<br>
+②血管活性药物的应用：在扩充血容量和纠正酸中毒的基础上，可酌情选用山莨菪碱，儿童0．5～1mg/kg，成人40mg，静脉注射，&nbsp; 10～15分钟1次。如无山莨菪碱，也可用阿托品代替，剂量每次0. 03～0．05mg／kg。一般经数次注射后，如面色红润，微循环改善、尿量增多，血压回升，即可延长给药时间,减小剂量并逐渐停用。如用10次左右仍无效则改用多巴胺每分钟2～20μg/kg；&nbsp;或与间羟胺（阿拉明）、异丙肾上腺素联合应用。<br>
+③强心药的应用：如经前述处理休克仍无好转，中心静脉压反而上升者、应用西地兰或毒毛旋花子甙K快速洋地黄化。<br>
+④肾上腺皮质激素的应用:可选用氢化可的松每次2～4mg／kg，1日3～4次或地塞米松，剂量同前。<br>
+⑤抗DIC治疗：若休克经综合治疗后不见好转，出血点即使未见增加，也应考虑有DIC存在，应作有关凝血及纤溶的检查，并开始肝素治疗。若皮肤淤点不断增多，且有融合成淤斑的趋势，不论有无休克，均可应用肝素。首次剂量为1．5mg／kg，静脉推注或置于100m1溶液内缓慢静滴，以后每4～6小时静滴1mg／kg一次，疗程一般为1～2日。使用肝素时应作试管法凝血酶原时间测定，控制在正常值的2倍左右（15～30分钟）。治疗中若出现严重出血，应立即静推硫酸鱼精蛋白，后者lmg可中和1mg&nbsp;&nbsp;（125U）肝素。重症休克时纤维蛋白溶酶增多，使血管内纤维蛋白溶解而加重出血，故处理大片出血的患者，可于肝素化后给予6-氨基己酸，剂量为4～6g，置于100ml葡萄糖溶液中静滴。于30分钟内滴完。<br>
+<br>
+3.&nbsp;重症流脑脑膜脑炎的治疗<br>
+（1）抗菌治疗：同重症流脑败血症。<br>
+（2）脱水疗法：以甘露醇为主，每次1～2g／kg。根据情况每4～8小时静脉快速滴注或推注一次，至呼吸、血压恢复正常、瞳孔等大及其他颅内高压症状好转为止。脱水时应适当补充液体、钾盐等，以保持轻度脱水状态为宜。甘露醇可与速尿40～100mg合用，亦可与50％葡萄糖交替使用，每次40～60m1。<br>
+（3）亚冬眠治疗：氯丙嗪和异丙嗪各1～2mg／kg，肌注或静注，安静于枕后、颈部、腋下，腹股沟放置冰袋，使体温降至36℃左右，以后4～6小时再肌注一次，共3～4次。<br>
+（4）肾上腺皮质激素：地塞米松用法及剂量同前。<br>
+（5）呼吸衰竭的处理：可用洛贝林、可拉明等；亦可用东莨菪碱0．02～0．04mg／kg，静脉注射，每10～30分钟一次。保持呼吸道通畅并给氧，必要时行气管插管或气管切开，进行辅助人工呼吸。<br>
+<br>
+4．慢性败血症的治疗抗菌治疗为主。如有脑脓肿时应行引流治疗。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">１．应用收剑剂：本病初期可涂龙胆紫溶液或涂１％惶绿酒精或涂氧化锌糊剂和抗生素眼膏，以加速其干燥促进结痂形成，缩短病程。<br>
+２．抗感染：局部应用抗生素眼膏的同时，全身应用抗生素，防止继发感染。<br>
+３．治疗原发病：应积极治疗原发病，加强营养，增强体质；同时可加眼抗病毒口服液、板蓝根冲剂等凉血解毒的中成药。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

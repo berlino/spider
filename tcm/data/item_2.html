@@ -1,0 +1,938 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">败血症
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=败血症"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">septicemia
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">BAIXUEZHENG
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医: 疔疮走黄，疽毒内陷,毒邪内攻,脓毒流注。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">感染性疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">败血症是致病菌或条件致病菌侵入血循环，并在血中生长繁殖、产生毒素和其他代谢产物而引起的严重全身性感染，一般在人体免疫力减退时发生。临床上主要表现为寒战、高热、毒血症症状、感染性休克、迁徙性病灶等。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">1． 常见致病菌
+（1）革兰阳性菌：
+①葡萄球菌：包括金黄色葡萄球菌（金葡菌）、表皮葡萄球菌（表葡菌）及腐生葡萄球菌三种，其中金葡菌为败血症最常见的致病菌，腐生葡萄球菌仅偶尔引起膀胱炎。既往认为血培养出表葡菌多为污染，近年发现该菌可引起免疫缺陷病人院内感染，并已成为败血症的常见致病菌之一。
+②链球菌：按菌落溶血现象可分为甲型、乙型溶血性链球菌和非溶血性链球菌三类。临床上所见的链球菌感染大多由乙型引起，按细胞壁中碳水化合物抗原性的不同，可将其分为A～H、K～T18个族，A、B两族为链球菌败血症的主要致病菌。肠球菌的毒力强，对抗生素敏感性差，近年所致感染有所增加。
+③肺炎球菌：其致病力主要与荚膜中所含的多糖类抗原有关。，肺炎球菌败血症多见于免疫缺陷者、老年人和婴幼儿，常继发于该菌所致的局部感染，主要为肺炎。
+④其他：炭疽杆菌、单核细胞增多性李司忒菌、梭状产气荚膜杆菌等也可引起败血症。
+（2）革兰阴性菌：
+①大肠杆菌：为革兰阴性杆菌败血症中最常见致病菌。大肠杆菌是人类肠道常居菌之一，一般情况下不致病，但在人体正常屏障受损，抵抗力下降等情况下，可致严重感染。
+②绿脓杆菌：为院内感染的革兰阴性杆菌败血症常见的致病菌。多发生于全身免疫力下降或局部损伤病人，如任何原因引起的白细胞减少症，化疗的肿瘤病人及大面积烧伤病人。
+③克雷白菌属：以肺炎杆菌最为重要，常引起呼吸，泌尿系统感染和败血症。肺炎杆菌败血症多发生于免疫功能障碍的病人及老年人，入侵途径主要为胆道和呼吸道。
+④肠杆菌属：引起全身感染者为产气杆菌。
+⑤其他：一些常属于肠道内的通常不致病的革兰阴性杆菌，如产碱杆菌、不动杆菌、沙雷杆菌属等在某些特定情况下，亦可引起败血症。
+（3）厌氧菌：占败血症病原的5％～10％，包括革兰阴性脆弱类杆菌、革兰阳性消化球菌和链球菌等。
+（4）真菌：最常见者为白色念珠菌、毛霉菌及曲菌等。发生真菌败血症的病人大多数有严重的基础疾病，因长期或大量使用广谱抗生素、皮质激素或抗代谢药物等，使正常菌群失调或抵抗力下降所致。 
+2.致病菌的变迁
+抗生素间世以前败血症以肺炎球菌及其他链球菌为主，其次是葡萄球菌，革兰阴性杆菌仅占少数。抗生素应用后50多年来，特别是随着新型抗生素的不断问世和广泛应用于临床，致使革兰阳性球菌有所下降，革兰阴性菌及耐药菌株逐年上升。革兰阳性球菌中，金葡菌已取代肺炎球菌而占主导地位，革兰阴性菌中肺炎杆菌、假单胞菌属、阴沟杆菌、不动杆菌、产碱杆菌等大幅度增加，厌氧菌、真菌及复数菌败血症的发生率也逐渐增多。近20年来，由于医学科学的发展、肾上腺皮质激素等免疫抑制剂及抗肿瘤药物的广泛应用，使许多慢性病患者延长了生命，但机体防御机能降低加之各种导管检查、器官移植、心瓣膜及关节等人工装置、透析疗法和高能量输液等逐渐增多，致使一些既往认为不致病或致病力弱的条件致病菌引起败血症亦有所增加。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">主要为正气内虚和外邪入侵所致。正虚是外邪入侵的重要条件。正虚可由饮食不节、起居失常、素体不足，或因病致虚，或治疗失当，峻泻伤正，或过汗耗气伤阴，或严重烧伤，皮垮肉灼，或疮毒脓血、气血津液损伤，或疮疖挤伤、局部气血功能障碍，或摔伤后造成气血瘀滞、荣气不行、痈疖失治等，正不胜邪，导致邪毒内陷。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">侵入人体的细菌是否会引起败血症，与入侵菌的毒力、数量和人体防御免疫功能有密切联系。皮肤、粘膜发生破损和发炎如创伤和伤口感染、大面积烧伤、开放性骨折、疖、痈、感染性腹泻、化脓性腹膜炎等，细菌易从破损、炎症处进入淋巴或血循环而引起败血症。尿路和胆道出现感染时，如同时有机械性梗阻（结石嵌顿、通道狭窄等），则可因内容物和排泄物积滞、压力增高、管壁紧张等而使细菌容易进入淋巴径路和血液循环。新生儿易发生败血症，可发生在出生前、产程中或出生后，这是由于皮肤粘膜屏障功能差、胃酸少、肠道通透性高、单核吞噬细胞作用弱、抗体（IgM、血清型和分泌型IgA）及补体浓度低等因素所致。各种慢性病如营养不良、血液病（特别伴白细胞缺乏者）、肾病综合征、肝硬化、糖尿病、恶性肿瘤、先天性免疫球蛋白合成减少、白细胞吞噬作用减弱等，容易诱发细菌感染和败血症。挤压皮肤疮疖，尤其是在血供丰富的面部时，细菌可大量进入血循环。大面积烧伤患者的广大创面为细菌入侵敞开门户，皮肤坏死、血浆渗出、焦痂形成又为细菌繁殖创造良好环境，故败血症的发生率较高。各种免疫抑制药物如肾上腺皮质激素、抗代谢药、抗肿瘤药以及放射治疗等可削弱细胞或体液免疫，某些更可使白细胞减少或抑制炎症反应而有利于细菌蔓延、扩散。长期应用抗菌药物易导致耐药菌株繁殖而增加感染机会。各种检查或治疗措施加内镜检查、插管检查、大隐静脉插管、留置导尿管、静脉高营养疗法、各种透析术、脏器移植等均可导致细菌进入血循环，或发生感染性血栓而形成败血症。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">目前认为，本病的发生，外因温毒侵袭，内因正气亏虚不能御外，正不胜邪，邪热嚣张，热毒充斥表里，客于营血，入窜经络，入陷脏腑，表里三焦俱病。初期犯卫，发热恶寒。热毒化火，传变迅速而致里热炽盛。邪入营血，则见壮热、神昏、闭脱、出血等证，热毒流注则见多发脓肿。此与病菌入血繁殖引起全身严重中毒症状及迁徙病灶一致。本症复杂多变的险证、危证丛生的临床表现，即中医学所谓的“毒入心则昏迷，入于肝则痉厥，入于肺则喘嗽，入于肾则目暗手足冷，入于六腑亦皆各变端，七恶叠见。”
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">败血症的病理变化随致病菌的种类、病程长短、有无原发病灶和迁徒性病灶等而异。细菌毒素播散至全身引起各脏器的细胞变性，心、肝、肾等可呈混浊肿胀、灶性坏死和脂肪变性。毛细血管损伤则皮肤、粘膜、胸膜、心包等处可有出血点。病原菌经血循环集中某些组织脏器形成迁徙性病灶，如肺炎、心内膜炎、心包炎、骨髓炎、肝脓肿、脑膜炎、脑脓肿和软组织脓肿等。单核吞噬细胞系统增生活跃，肝脾常肿大、骸髓高度增生。伴胆道感染或严重肝损害可出现黄疸。骨髓粒系统增生活跃。发生于血液病基础上的败血症，由于免疫功能受抑，炎性反应减弱，病变以充血。坏死为主，渗出反应及细胞浸润明显减少。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）热毒炽盛：证见壮热烦渴多汗，或神昏抽搐，或斑疹出血，舌红苔黄，脉洪数。证候分析：邪热入里，热盛伤津，则壮热烦渴多汗；热入营血，心神被扰，故神昏抽搐；营热蒸腾，波及血络则斑疹出血；舌红苔黄，脉洪数则为热邪亢盛之象。<br>
+（2）湿热蕴结：证见恶寒发热，头痛身重，或有黄疸，神疲体倦，恶心呕吐，胸闷腹胀，腹痛泄泻，纳少口粘，舌红苔黄腻，脉滑数。证候分析：湿热蕴蒸肝胆，肝失疏泄，胆汁不循常道则可见寒战高热，寒热往来，胸闷腹胀，腹痛泄泻，神疲身黄；舌红苔黄腻，脉滑数则是湿热内盛，热重于湿之象。<br>
+（3）阴竭阳脱：证见大汗淋漓，口干微渴，四肢厥冷，气短懒言，眩晕少神，脉微欲绝。证候分析：热的真阴，血脉不充则脉微欲绝；热病经久耗伤元气，或由阴伤及阳，或汗多亡阳，而致阴竭阳亡，则四肢厥冷。<br>
+（4）正虚邪恋：证见烦热盗汗，舌红脉细数，或形寒肢冷，舌淡脉虚。证候分析：热邪耗伤气阴，则烦热盗汗，舌红脉细数：气血虚弱，不能充达四肢，则形寒肢冷，舌淡脉虚。<br>
+（5）热毒伤阴：证见发热不退，口干唇燥，胃纳不振，大便燥结，小便短赤，或神志昏糊，渴喜冷饮，舌绛苔光剥或焦干，脉细数或虚数。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">败血症诊断标准:<br>
+1.病灶感染史。<br>
+2.起病急、寒颤高热、体温波动大，出汗较多，一般情况进行性衰竭，可有大关节疼痛。中毒症状严重者可有谵妄、昏迷及休克。<br>
+3.肝、脾肿大，皮肤粘膜淤点，可有黄疸、贫血。<br>
+4.迁徙性病灶（多见于化脓球菌，特别是金葡菌感染）。<br>
+5.白细胞总数及中性粒细胞增多，酸性粒细胞减少或消失，严重感染或某些革兰氏阴性菌感染者，白细胞总数可减少。<br>
+6.淤点、淤斑涂片找细菌。<br>
+7.血或骨髓培养阳性，排除污染者可确诊。<br>
+<br>
+[附]败血症常见类型<br>
+1.&nbsp;金葡菌败血症原发病灶多为皮肤及伤口感染。有典型的临床表现，如起病急，寒战，高热，皮疹及大关节肿痛等。白细胞总数及中性粒细胞增多，易发生迁徙性脓肿，以肺部最为常见。<br>
+2.&nbsp;大肠杆菌败血症：原发病灶常为内脏的炎性病灶，如胆囊炎、肾盂肾炎等。患者病前的一般情况较差，女性、老年及婴儿患者多见，起病较急、寒战高热及大汗，易发生感染性休克及DIC。部分患者起病缓慢，类似伤寒。<br>
+3.产碱杆菌败血症：患者多有腹泻史，呈轻型伤寒表现。多见关节症状，及产碱杆菌心内膜炎的迁徙病灶而见皮肤淤点、血尿、脾梗塞和脑栓塞等动脉栓塞症状。<br>
+4.厌氧菌败血症：原发病灶常为女性生殖道及腹腔内感染，其次为褥疮溃疡或坏疽。病灶中的分泌物有特殊腐臭味。可有严重的溶血性贫血、血栓性静脉炎以及局部病灶的气体形成。<br>
+5.烧伤后败血症：多在烧伤后2～15天之间及焦痂剥离时发生。毒血症症状显著，可出现过高热、中毒性心肌炎、休克等。若患者发生坏死斑、坏疽性皮疹，应首先考虑有绿脓杆菌败血症的可能。<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">败血症的诊断主要根据病史和实验室检查。病史为诊断的重要依据，必须详细询问。败血症多发生于原有严重影响机体防御机能的疾病（如肝硬化、重症肝炎、糖尿病、肾病综合征、再生障碍性贫血，白血病、严重烧伤等）或应用肾上腺皮质激素、抗肿瘤药物、放疗或进行插管检查、内窥镜检查。全静脉营养疗法、透析术或各种手术者。病前常有皮肤、粘膜、中耳、呼吸道、泌尿道、生殖道、肠道、胆道等感染，或有挤压疖肿、切开未成熟脓肿、外伤等病史。突然起病，畏寒或寒战。高热、白细胞及中性粒细胞明显增多，而又无明显原因或局限于某一系统倾向时，即应考虑败血症的可能。若皮肤或粘膜有瘀点、瘀斑，或发现迁徙性病灶或脓肿，或并发感染性休克，败血症的诊断基本可以确定。血和骨髓培养出致病菌则可确诊。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">起病多急骤。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">原发感染灶的特点为病灶局部红、肿、热、痛和功能障碍，毒素入血也可引起不同程度毒血症表现。
+毒血症症状常有寒战和高热，热型不规则，以弛张热多见，伴头痛、呕吐、腹胀、呃逆等。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">毒血症可见肝脾肿大，皮疹，呼吸和心率增快等。严重者可出现神志改变和感染性休克、中毒性肝炎。心肌炎。少数病例可伴发播散性血管内凝血（DIC）和多脏器功能衰竭（MS0F）。迁徙性病灶&nbsp;随病原菌而不同，多见于化脓性球菌及厌氧菌败血症。常见者有皮下及深部肌肉脓肿、肺炎，渗出性胸膜炎、肺脓肿、脓胸、感染性心内膜炎、化脓性心包炎、脑脓肿、骨髓炎等。<br>
+一、常见的几种败血症：<br>
+1．革兰阳性球菌败血症和革兰阴性杆菌败血症：由于革兰阳性球菌（主要为金葡菌）和革兰阴性杆菌（主要为大肠杆菌）败血症占败血症总数的70％以上）两者应用抗生素种类截然不同，因而，根据临床表现作出初步诊断极为重要。<br>
+2．厌氧菌败血症：引起厌氧菌败血症的致病菌主要为脆弱类杆菌（占80％～90％），其他有厌氧链球菌和产气荚膜杆菌等，厌氧菌常与需氧菌混杂一起，引起复数菌败血症。临床特征为①黄疸发生率为10％～40％，可能与脆弱类杆菌的内毒素直接作用于肝脏，或与产气荚膜杆菌α毒素的溶血作用有关；②局部或迁徙性病灶中有气体形成，以产气荚膜杆菌败血症最为显著；③局部病灶中的分泌物有特殊腐臭气味；④易引起脓毒性血栓性静脉炎，而有胸腹腔、心、脑、肺。骨、关节等处的迁徙性损害和脓肿，以脆弱类杆菌和厌氧链球菌败血症多见；⑤可引起较严重的溶血性贫血，主要见于产气荚膜杆菌败血症，并可伴发肾衰。<br>
+3．真菌败血症：近年来发病率明显上升，大多由白色念珠菌引起。临床表现较细菌性败血症轻，某些病例可无热或低热，无明显症状或症状被原发病所掩盖，相当一部分病例在尸检时始确诊为本病。<br>
+真菌败血症一般发生在严重基础疾病的后期，病情进展较缓慢，除血培养可检出致病真菌外，口咽拭子。痰、大便、尿等培养可获得相同真菌。体内各组织脏器均可累及，出现多发性小脓肿，并可导致心内膜炎、脑膜炎等危及生命的并发症。<br>
+二、特殊类型的败血症：<br>
+1、复数菌败血症：是指从同一患者血液或骨髓液标本中培养分离到2种或2种以上细菌或其他微生物的败血症。发生率为14％～17％，常在其他慢性疾病或其它原因致病人机体抵抗力非常低下的基础上发生。致病菌种类繁多，主要有金葡菌、大肠杆菌、绿脓杆菌、脆弱类杆菌、四联球菌及部分真菌等。临床表现与单一菌败血症相似但较严重，如出现寒战、高热或体温不升，病情加重恶化，有关体征较原来明显，以及血象等实验室检查改变时，则应考虑本病的可能性，应及时行血培养，最好同时抽动静脉血做需氧菌与厌氧菌及真菌培养。<br>
+2、儿童败血症：儿童败血症因其解剖、生理、免疫等特点与成人败血症有所不同。即使同为儿童时期的败血症，也因年龄不同而有差异。发病率以新生儿为最高，约为1％～5％；常见致病菌为金葡菌、大肠杆菌、克雷白杆菌、变形杆菌、假单胞菌、沙雷菌属、表葡菌及B族乙型溶血性链球菌等。临床表现为起病急，变化快，可在几小时内突发衰竭及休克。①较大儿童除寒战、高热、谵妄、面色青灰、循环不良外，神经系统和呼吸系统症状出现早而重，消化系统症状如呕吐、腹泻（肝脾肿大较突出。一旦呼吸衰竭，循环衰竭亦相继出现。②新生儿败血症无明显特征性，如出现拒奶、反应差、哭声弱、体重不增、黄疸加深、发热或体温不升即提示该病；若面色青灰。四肢冰冷或突然出现的全身衰竭已示休克。由于新生儿血脑屏障功能尚不健全，25％～30％的患儿可扩散到中枢神经系统。血培养阳性加以下一项即可确诊，一项指两个以上脏器感染；或全身感染中毒症状（如高热或体温不升、黄疸、出血、腹胀、外周循环不良、频发呼吸暂停、酸中毒等）二项或两项以上加一个脏器感染。如血培养阴性，除上述一项外，短期抗生素治疗无效，亦应考虑败血症。<br>
+3．老年败血症：常发生于肺心病、胆石症、前列腺肥大、糖尿病、血液病、肿瘤及心肝肾等慢性病的基础上。起病急，进展快，常缺乏典型症状，可发生休克和MSOF，预后差，病死率高。致病菌以革兰阴性杆菌和金葡菌多见，常继发于肺部和褥疮感染。<br>
+4．医院感染败血症：耐药性绿脓杆菌及金葡菌是其顽固的病原，常易发生复数菌感染。临床症状较一般败血症为重，可出现高热、休克。中毒性心肌炎、中毒性肝炎等表现，病死率极高。<br>
+5.烧伤败血症：常于烧伤后36小时组织液由外渗开始回吸收时细菌随之入血所致。耐药晶绿脓杆菌及金葡菌是其顽固的病原，常易发生复数菌感染。临床症状较一般败血症为重，可出现高热、休克。中毒性心肌炎、中毒性肝炎等表现，病死率极高。<br>
+6．细菌L型败血症：细菌L型是缺失了细胞壁的革兰阳性和阴性细菌，生长困难但可在加有血清和维持高渗透压的培养基上生长。细菌L型广泛分布于自然界，也可在几乎所有类型的临床标本中分离到。既往认为无致病性，但近年临床分离到的L型多数有致病作用，引起亚急性心内膜炎、脑膜炎、骨髓炎、胆囊炎、肾盂肾炎、败血症和关节炎等。临床特点为慢性。反复发作的不规则发热，在使用抗生素后体温一度下降而再上升，白细胞不高或轻度增加，中性粒细胞胞浆出现中毒颗粒或空泡。<br>
+三、少见的几种败血症：<br>
+1．表葡菌败血症：表葡菌是广泛存在于皮肤表面的非致病菌，可引起免疫损伤病人院内感染，包括伤口感染、插管感染和败血症。诊断表葡菌败血症的依据为①必须血培养2次以上阳性；②分离到的表葡菌生物型与抗生素型相似；③临床感染体征包括不能解释的发热,病情恶化（如低血压、神志改变或败血症表现）和适当抗生素治疗后病情改善等，否则多为污染。病死率为22％～36．9％，死因除基础疾病外，未能及时认识该病和进行有效治疗也是原因之一。<br>
+2．四联球菌败血症：多见于儿童及免疫机能受损者。临床特点为发热、皮疹、黄疸等全身感染中毒症状重，菌血症持续时间长，易出现肺、脑、心等多脏器严重并发症和迁徒病灶。<br>
+3．胎儿弯曲菌败血症：临床可呈三种类型①隐匿性败血症：其临床症状轻微，血中可分离到弯曲菌，可呈自限性或对抗生素反应良好，②继发于局部感染：如化脓性关节炎、脑膜炎、肺炎和栓塞性静脉炎，50％以上病人属于此型。③慢性或复发性败血症：病程可持续数月以上。典型临床表现为回归热型，体温可达38～40℃，伴寒战，盗汗、不适和体重减轻。意识障碍和嗜睡多见，中毒症状明显，白细胞升高。若治疗不当，病死率可达50％。<br>
+4．不动杆菌败血症：多见于老人和婴儿，特别是有严重基础疾病者。感染可发生于多部位，其中败血症最为严重，病死率达30％以上。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线摄片用于判断金葡菌肺炎、骨髓炎及化脓性关节炎等。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">细菌培养：
+1．血和骨髓培养：血培养有致病菌生长是确诊败血症的重要依据，但一次血培养不一定能获阳性结果，故需在身体不同部位连续采血3次（每次相隔10～15分钟）以上。尽量争取在应用抗生素之前及寒战高热时采血，已用抗生素者宜在培养基中加入硫酸镁、β内酰胺酶、青霉素酶、对氨苯甲酸等以破坏抗生素，或避开血中抗生素的高峰浓度时间抽血或采用血块培养法。若静脉血反复多次培养阴性时，可抽动脉血培养；有条件的实验室应做细菌L型、厌氧菌及真菌培养。骨髓培养阳性率略高于血培养。如为条件致病菌应两次血培养获同一细菌，或血培养与胸水、腹水、脑脊液、尿、脓液等培养结果一致才有诊断价值。
+采用集菌法细菌培养可提高细菌浓度，有助于细菌生长。自动血培养法有助于早期检出细菌，可用于细菌的快速诊断。
+2．脓液或分泌物培养：原发感染灶的脓液或分泌物培养有助于判断败血症的病原菌。迁徙性病灶的脓液或分泌物细菌培养则有助于确定败血症及其病原菌。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">(一）血常规：白细胞计数大多显著增加，一般为（10～30）×l09／L，中性粒细胞多在0．80以上，呈核左移，常有中毒颗粒。大肠杆菌与其他革兰阴性杆菌败血症的白细胞总数也可增加，甚至超过20×l09／L ，仅有少数病人在正常范围或稍低。红细胞及血红蛋白在重症病人常下降。
+（二）血清学试验
+1．鲎试验 可检测血清中革兰阴性细菌的内毒素，有助于判断革兰阴性杆菌败血症。
+2．自身菌血清凝集试验 用病人血培养获得的细菌作抗原检测病人血清中的凝集抗体。在血培养有条件致病菌生长而难以判断其是否为致病菌时，可作此试验，有一定参考意义。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．伤寒与副伤寒&nbsp;起病较缓，发热多呈梯形上升，1周后持续高热，可有玫瑰疹，听力减退，白细胞降低，嗜酸细胞消失。肥达氏反应阳性,血培养有伤寒或副伤寒杆菌生长。血清伤寒抗原及伤寒杆菌DNA检测可资早期诊断。<br>
+2．粟粒性结核&nbsp;起病缓慢，持续高热，血培养阴性。起病2周后胸部X线摄片可见粟粒性肺结核影像。痰结核杆菌PCR检测有助诊断。<br>
+3．变应性亚败血症&nbsp;其临床表现与败血症相似，发热可持续数月之久，但全身中毒症状相对较轻，且可有缓解期；皮疹可反复短暂出现，反复多次血培养阴性，抗生素治疗无效，肾上腺皮质激素治疗有效。<br>
+4．肾综合征出血热&nbsp;有地区性、季节性，先出现发热，热退后症状反而加重，并相继出现低血压休克、少尿。早期呈酒醉貌，皮肤粘膜出血点，结膜水肿、蛋白尿、血小板降低。血清特异性IgM抗体检查可作早期诊断。<br>
+5．恶性组织细胞增多症&nbsp;持续发热，热型不规则，常出现贫血、消瘦、白细胞减少。多次血培养阴性，抗生素治疗无效。血液和骨髓涂片、淋巴结活检可见恶性组织细胞。、
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准：<br>
+1．症状、体征及并发症消失。<br>
+2．血白细胞及分类恢复正常。<br>
+3．血和骨髓细菌培养转阴。<br>
+
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">败血症虽经现代抗生素治疗，其病死率仍高达30％～40％。各种病原菌的病死率不尽相同，如金葡菌在10％～20％以下，革兰阴性杆菌败血症约在40％左右，其中绿脓杆菌病死率仍在50％以上。真菌败血症的病死率在60％以上。有基础疾病患者的病死率均较高。近年来新抗生素的研究进展，广谱强效，特别是对革兰阴性杆菌与绿脓杆菌及真菌等有效的新型抗生素日渐增多，败血症的治愈率有望提高。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1.&nbsp;病原治疗：由于近年来败血症致病菌的种类逐渐发生变迁，广谱抗生素的大量应用，各类细菌耐药性自然发生率高及败血症引发MSOF极为常见，病死率较高。故致病菌的鉴别及对抗菌药物敏感性的测定是败血症临床治疗的基础，而合理选用敏感的抗生素则是治疗的关键。<br>
+（1）病原菌明确的败血症：在药敏结果未出来前，针对已知病原菌选用有效的抗生素，尽可能低的花费并避免毒副作用。革兰阳性球菌败血症以金葡菌和表葡菌多见，但金葡菌对青霉素G普遍耐药、近年发现其对苯唑青霉素也已有耐药菌株，故主张选用头孢噻吩、万古霉素或壁霉素。革兰阴性杆菌败血症疗效最佳者为第三代头孢菌素及氟喹诺酮类药物。厌氧菌败血症常与需氧菌形成复数菌败血症，选用甲硝唑、克林霉素、氯霉素及上述抗革兰阴性杆菌药物。如系严重复数菌败血症又经多体治疗方案仍无效时，可考虑选用泰能。真菌败血症可选用二性霉素B或氟康唑，但应注意前者的副作用。细菌L型败血症可选用氯霉素、克林霉素、利福平。红霉素及多粘菌素等。一旦药敏试验报告，则应根据其结果更改抗菌药物。<br>
+（2）病原菌不明的败血症：致病菌尚未确定之前，应根据临床资料加以判断，选用较合理的治疗方案，可先用广谱抗生素或β内酰胺类加氨基糖甙类抗生素治疗。<br>
+2.内毒素血症及其治疗：尽管临床上使用了一系列新的抗生素，败血症和败血症休克的病死率仍很高。其主要原因是由于革兰阴性细菌释放大量内毒素，激活巨噬细胞释放细胞因子，引起机体各种病理生理改变，导致内毒素休克和MSOF的结果。故中和血中的内毒素，可提高抗生素的疗效，改善预后。<br>
+（1）内毒素单克隆抗体：该类抗体能中和肉毒素的毒性基因，阻止其与靶细胞的结合，从而抑制毒性因子的合成和释放而发挥保护作用。用大肠杆菌J5突变株作抗原制备的鼠型和人型抗脂质A IgM单克隆抗体治疗革兰阴性杆菌败血症患者，能迅速改善临床症状，显著降低病死率。<br>
+（2）免疫球蛋白：符合下列条件者应尽早使用①体温＞38．5℃；②败血症局灶感染证据；③内毒素血症；④血培养阳性；⑤败血症休克；⑥临床症状持续时间≤24小时。选用β球蛋白静脉注射，第1天600m1，第2～3天再静注300m1。该制剂含有高价的抗内毒素核心决定簇的特异性IgG、IgM和IgA抗体，争取在败血症出现24小时内使用。&nbsp;&nbsp;&nbsp;&nbsp;采用重组人白细胞介素Ⅰ受体拮抗剂治疗败血综合征患者，能明显提高败血症合并MSOF和具有多个高危预后因素患者的生存时间。<br>
+3．肾上腺皮质激素&nbsp;败血症患者能否使用肾上腺皮质激素仍未定论。普遍认为短期使用合适剂量可以对急性炎症产生抑制作用。在内毒素激活单核巨噬细胞之前应用，则可显著减少细胞因子的产生。故应注意使用时机、用量和疗程。<br>
+4．局部处理&nbsp;应积极寻找原发感染灶和迁徒性病灶并进行有效处理。包括广泛切除坏死组织、清除异物、充分引流等。<br>
+5．支持治疗&nbsp;败血症病人常有血流动力学不稳定，可发展成败血症休克，应加强监护，保持水、电解质和酸碱平衡。对病情严重或营养较差者，可予以输血或人血白蛋白等。<br>
+6. MSOF的防治&nbsp;败血症是MSOF的最重要原因之一，而MSOF则是败血症死亡的主要原因。积极预防和治疗MSOF是降低败血症病死率的关键。对MSOF应采取营养，代谢和免疫支持治疗为主要措施的综合治疗，早期预防和控制感染、早期系统器官功能支持，以维持组织氧平衡和机体内环境稳定。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">一般实证治宜清热败毒为主，虚证则扶正祛邪。<br>
+（1）&nbsp;热毒炽盛：治宜清热败毒、清营凉血。常用清瘟败毒饮加减。方中水牛角、栀子清热凉血；丹皮、赤芍凉血活血；玄参、生地以护营阴；黄连、黄芩、连翘苦寒直折，清热解毒；石膏、知母、甘草清气分实热。神昏加安宫牛黄丸或紫雪丹。大便秘结，阳明腑实者用泻热汤或增液承气汤加减。<br>
+（2）&nbsp;湿热蕴结：治宜清热利湿解毒。常用茵陈蒿汤合黄芩滑石汤加减。方中茵陈清利湿热退黄；黄芩、栀子清利湿热泻火；车前草、泽泻清利湿热。<br>
+（3）阴竭阳脱：治宜益气养阴、固阳固脱。常用参附龙牡汤合生脉散。方中人参大补元气，补脾益肺，生津止渴；麦冬、五味子益气养阴；附子、龙骨、牡蛎固阳固脱。<br>
+（4）正虚邪恋：前者治宜扶正祛邪、滋阴解毒。常用复脉汤合青蒿鳖甲汤加味。后者治宜益气扶正解毒。常用托里消毒饮。<br>
+（5）热毒伤阴：治宜养阴生津、清热解毒。常用增液汤或竹叶黄芪汤合黄连解毒汤加减。方中生地、沙参、麦冬滋阴增液，润肠通便；黄连、连翘、栀子清热解毒。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）银花30g、野菊花15g、生甘草6g，水煎代茶饮。<br>
+（2）公英、地丁、半边莲各30g，水煎服。、<br>
+（3）牛黄醒消丸&nbsp;功能清热解毒，消肿止痛，适用于热入营血，各种脓肿。每日1～2次，每次3g，温黄酒送服。<br>
+（4）连翘败毒丸&nbsp;功能清热解毒消炎。适用于邪毒炽盛者。1日2次，每次6g，口服。<br>
+（5）止痉散&nbsp;全蝎、蜈蚣、僵蚕各等份，共研细未，每服1g，羚羊角或水牛角粉煎水冲服，适用于各种原因导致的四肢抽搐。角弓反张。<br>
+（6）银黄片&nbsp;功能清热解毒，抗菌消炎。适用于发热、头痛和脓肿。每次2片，1日3～4次。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1．体针<br>
+（1）取水沟、大椎、风池、曲池、合谷等穴，有清热开窍的作用，适用于高热神昏。每日2次，每次留针15分钟，用强刺激，泻法。<br>
+（2）取合谷、太冲、素髎、长强、阳陵泉等穴，有泻热止痉的作用。适用于高热惊厥、抽搐、角弓反张。每日1次，留针20分钟，长强不留针。<br>
+（3）取颊车、下关、人中、地仓等穴，有醒神开窍的作用，适用于口禁不开者。用泻法，不留针。<br>
+（4）取十宣或十二井穴，用三棱针点刺出血，1～2滴为度，有清热解毒、开窍镇惊的作用，适用于高热神昏者，每日1次。<br>
+2．灸法<br>
+（1）取合谷、然谷、大椎、膏盲等穴，用艾柱灸，有固表止汗的作用，适用于自汗不止者，每次灸10～20分钟。<br>
+（2）取神阙、气海、关元、肾俞等穴，用大艾柱灸，有固阳固脱的作用，适用于虚脱、脱汗等证，每日2～4次，每次灸15分钟。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">败血症发病急骤，病情严重，证候多端，变化迅速，必须严密观察，采用中西医结合的综合治疗。早期静脉给以联合、足量、长程抗菌治疗为主的综合治疗，绝大多数均可治愈。若治疗效果不理想时，可依据所犯病位及虚实的不同施以清热解毒，凉血透营的汤药治疗，以加速疾病恢复。若高热不退、抽搐不止，药物疗效不佳时，可采用非药物治疗。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．做好宣传，注意劳动保护，避免外伤。对已发生的疖肿，不要挤压，也不要过早地切开，以免细菌扩散而形成败血症。<br>
+2．做好婴儿室、手术室、外科病房以及免疫缺陷病人的消毒隔离，以防致病菌引起交叉感染。<br>
+3．在进行各种手术、诊断器械操作和检查时、应严格遵守无菌技术。<br>
+4．合理应用肾上腺皮质激素和广谱抗生素，在应用过程中应严加观察，特别注意有无消化道、泌尿道和呼吸道的真菌感染。<br>
+5.&nbsp;治疗或控制原发病，如糖尿病、白血病、肝硬化等。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">首见宋朝《疮疡经全书》。明《外科正宗》有详实记述。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

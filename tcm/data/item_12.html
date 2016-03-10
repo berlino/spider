@@ -1,0 +1,892 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">传染性单核细胞增多症
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=传染性单核细胞增多症"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">infectious mononucleosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">CHUANRANXINGDANHEXIBAOZENGDUOZHENG
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：温病，温疫，痰核，黄疸，症积，
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病,血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">传染性单核细胞增多症是由埃巴病毒所致的急性传染病。以发热、咽峡炎、淋巴结及肝脾肿大、外周血中异型淋巴细胞增加，血清中出现嗜异凝集素及特异抗体的增长为特征。多呈良性经过，但有时也可发生严重并发症，偶有死亡病例报告。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">本病主因是EB病毒感染，该病毒在形态和结构上与其它疱疹病毒相似，属疱疹病毒群，病毒外层有脂蛋白包膜，内有衣壳，核心有双链DNA。目前已证实EBV为本病病原。下列事实可说明：该病毒只能在淋巴网状系统的细胞中生长、增殖；在培养过程中EBV能刺激淋巴细胞的生长；从本病的典型患者可分离出EBV；患者血清中有该病毒的高滴度特异抗体；无特异抗体的人对本病易感，有特异抗体的人中可询问出患本病的既往史。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病之因多为外感风邪，热毒内生或外感寒邪化热入里而发生本病一系列的临床症状和体征。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">四季均可发病，稍多见于秋冬季。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">人群普遍易感，婴幼儿时期感染常呈亚临床型或不典型表现，多发于15～30岁年龄组。病后可获持久免疫力。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">常呈散发，可在学校、军营、幼儿园等集体机构中流行。本病传染源为健康带毒、隐性感染及患者。病后刚因部排毒可持续数周，约25％的病例排毒时间长达半年。故口腔分泌物的密切接触是主要传播途径，飞沫传播亦可发生，儿童可通过接触玩具、餐具而受染。
+
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">本病的发病原理尚未十分清楚。常以免疫病理解释其发病。易感者密切接触传染源，EB病毒在鼻咽部淋巴组织中繁殖，后进入血液循环而致病毒血症，进一步累及淋巴网状系统的各组织和脏器。由于B淋巴细胞表面具有EBV受体，故首先受累，导致B淋巴细胞抗原性改变，继而引起T淋巴细胞强烈反应，成为毒性效应细胞，可直接对抗被EBV感染的B细胞而使B淋巴细胞受损。外周血液中的异常淋巴细胞主要是T淋巴细胞。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病因风寒或温热之邪自口鼻而入，先犯肺卫，肺主宣发肃降，开窍于鼻，外合反毛，气机升降出入的通道。肺为邪侵，肺气失于宣降，卫外功能失调，而致发热、咳嗽、咽痛等、若高热不解致肺胃热盛，则皮毛、肌肉皆热而出现大热汗出等阳明气分热证及里热壅盛，内迫于肺则出现喘息气急等证。热邪继续深入而入营血，损伤血络，迫血妄行，可见皮肤发斑。邪热内蕴，血热互结，为气滞血瘀出现瘰疬、癥瘕之象，若温热夹湿则可见发热缠绵，体倦，舌苔厚腻等湿热蕴蒸不解之象。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">本病病理形态变化主要是全身淋巴网状组织的良性增生，以淋巴结、扁桃体、增殖体及肝脾最明显，显微镜下观察，呈局灶性以及血管周围的正常和异常的淋巴细胞浸润，心、肺、肾、肾上腺、中枢神经系统及皮肤等均可受累。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）热犯肺卫：主证：发热，咳嗽，少汗，咽红肿痛，口微干，舌边尖红，苔薄白，脉浮数。<br>
+（2）热入气分：主证：热甚汗出，面赤心烦，口渴引饮，咳喘气急，胸胁满闷，便干，舌红，苔黄，脉洪大而数。&nbsp;<br>
+（3）热伤营阴：主证：身热夜甚，口干而不思饮，皮肤斑疹隐隐，舌红降而无苔，脉细数，热甚入血分而见衄血、尿血等。&nbsp;<br>
+（4）气阴两虚：主证：低热盗汗，气短神疲，纳谷不香，时有泛恶，舌红少苔，脉数无力。&nbsp;<br>
+（5）热毒夹湿：主证：发热缠绵，四肢咽倦无力，胃脘胀满，恶心，呕吐，舌红苔黄腻，脉濡数。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1.流行病学：当时当地有本病流行，并有与本病患者接触史。<br>
+2.临床特点：发热，咽峡炎，颈部淋巴结（可伴其它各处淋巴结）肿大，但压痛轻微；部分病例可出现肝、脾肿大；少数病例可出现黄疸、皮疹、肺炎、脑膜炎等。<br>
+3.实验室检查<br>
+（1）周围血象：白细胞总数在病初正常或偏低，继而轻度增多；淋巴细胞自第3～4病日开始增多，10天后可达50%以上，其中异常淋巴细胞占10%（或绝对值IOOO/ul3）以上。<br>
+（2）嗜异性凝集试验：效价在1：56以上，并经豚鼠肾吸收后达1：28以上，有诊断意义。<br>
+（3）抗EB病毒抗体测定：出现IgM抗体，并在病程中效价增高者，可确诊。<br>
+（4）牛红细胞溶血素试验：溶血素效价可达1：480以上。<br>
+临床诊断主要依据第2项和第3项中的（1）、（2）项，其中后两项经多次检查，有动态变化，则诊断意义更大。若两项检查有困难，根据周围血象，结合临床也可作出诊断，但需与其它类似疾病相鉴别。<br>
+（3）、（4）两项可选用于疑难病例。<br>
+当出现流行时，流行病学资料有重大参考价值。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">本病诊断以临床症状，典型血象及阳性嗜异性凝集试验为主要诊断依据。流行病学资料亦不可忽视。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期约4～15日，成人可长达50日。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">当时当地有本病流行，并有与本病患者接触史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">起病或急或缓，症状轻重不一，年龄越小越不典型，且病情较轻，2岁以下的小儿，肝、脾、淋巴结肿大及一般症状均不显著，在青少年表现较重。前驱一般表现为全身不适、疲乏、发热、头痛、恶心、呕吐、咽痛、淋巴结肿大等上呼吸道症状。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．发病期（症状期）<br>
+（1）发热：绝大多数病人均有程度不同的发热，热型不定，高低不一，自38～40℃以上，热程自数日至数周或更久后下降，本病虽高热但中毒表现一般不明显。<br>
+（2）淋巴结肿大：淋巴结肿大为本病的一个特征表现，几乎每例均有。肿大部位常见为前后颈部、腋下、肱骨内上踝及腹股沟等浅表淋巴结，两侧不对称，无压痛，粘连、化脓现象，一般在恢复期逐渐缩小，但消退缓慢，有时可达数月之久。<br>
+（3）咽峡炎：约有半数患者有咽峡炎症状，扁桃体充血肿大。严重者局部水肿而致喉梗阻。<br>
+（4）&nbsp;肝脾肿大：约有30％的病人肝脾肿大，肝区叩击痛，还可出现肝炎症忧如纳呆、恶心、呕吐、腹痛，腹胀、黄疸，约75％病例可出现肝功能异常，亦有个别发生肝昏迷。大多数病例在起病1周可触及脾脏肋缘下可达1～3cm，触痛，在第二周脾脏急剧肿大而致左上腹胀满或触痛。触诊时应轻压，警惕脾破裂的危险。<br>
+（5）皮疹：皮疹的出现率约为10％～15％，多在病程的4～10天出现，皮疹形态多样，常见为斑丘疹，也有腥红热样、水疱样或荨麻疹样皮疹。皮疹多分布于躯干及前臂伸侧，多为暂时性，可反复出现。偶有皮肤粘膜出血。个别报道本病患者应用氨苄青霉素后往往有过敏反应，促使皮疹发生率增加。至80％左右，应予引起注意。<br>
+（6）其他系统的症状：年幼儿起病时偶见眼周围水肿，婴幼儿常见支气管炎、肺炎。急性期偶可发生心包炎，心肌炎，个别病人累及神经系统，临床上表现为急性无菌性脑膜炎、脑膜脑炎或多发性神经根炎等。脑脊液正常或蛋白增加，单核细胞增多，并可见异常淋巴细胞，预后大多良好，其他少见的尚有肾炎、胃肠道出血、溶血性贫血等。<br>
+2．恢复期全身症状逐渐消退，乏力可持续较久，淋巴结肝脾肿大消退缓慢，数周至数月才恢复。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">发热，咽峡炎，颈淋巴结或伴有其他处浅表淋巴结肿大，轻度压痛，部分病人可出现肝脾肿大，少数可出现黄疸、皮疹、肺炎、脑膜炎等体征。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">主要是白细胞的改变，在发病早期白细胞总数正常或稍低，发病后第一周末呈轻、中度增高，单核细胞数及淋巴细胞逐渐增多，可高达白细胞总数的70％～90％，异常淋巴细胞出现于发病的第1～21日，高达10％～35％，阳性率与年龄有关，年龄越小，阳性率越高。异型淋巴细胞可能起源于T细胞，此类细胞在病毒性肝炎、水痘、腮腺炎等病毒性传染病也可出现，但其百分率一般少于10％。
+血清丙氨酸氨基转移酶（ALT）大多异常，亦可出现血清胆红素升高，一般于病程第1周即见升高，
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">第2周达高峰，5周内下降至正常范围，有神经症状者，可有脑脊液改变、压力增高、细胞数增多，以淋巴细胞为主，也可出现异常淋巴细胞；蛋白增高而糖正常，偶可蛋白增高而细胞数正常。
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">1．血清嗜异凝集反应  嗜异凝集试验的阳性率达80％～90％，主要是病人血清中含有IgM嗜异性凝集抗体，可和绵羊红细胞凝集。此抗体在发病后1～2周上升，4～6周达高峰，以后则下降并逐渐消失。由于正常人、血清病、结核病、何杰金病以及白血病患者也可出现阳性凝集反应，故其凝集效价在1：64以上，并随疾病进展效价逐渐递升才有临床意义。并可进一步作豚鼠肾吸附试验以区别之。因正常人血清中的凝集抗体能被豚鼠肾所吸收，而本病患者的凝集抗体经豚鼠吸收后并不减少。近年来采用玻片凝集法，用马红细胞代替绵羊红细胞，凝集反应出现早，持续较久，阳性率也高。
+2．EB病毒抗体测定  病程早期出现壳膜抗原特异性IgM抗体，持续4～8周，对疾病有早期诊断价值。对临床表现和血象类似传染性单核细胞增多症而嗜异凝集试验阴性的病例，可考虑测定该抗体，进一步明确诊断。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">本病临床表现多样，与某些疾病易混淆。<br>
+1．本病出现发热、咽痛，扁桃体肿大时应与上呼吸道感染、疱疹性咽峡炎、扁桃体炎、奋森咽峡炎等相鉴别。<br>
+2．淋巴结肿大，尤其是颈淋巴结肿大，应与结核、淋巴网状细胞肉瘤等鉴别。<br>
+3．有皮疹者需与麻疹、猩红热、风疹、肠道病毒感染所致的皮疹、药物疹、血清病等鉴别。<br>
+4．有黄疸肝功能损害时应与病毒性肝炎鉴别。<br>
+5．有神经系统表现者注意与各种脑膜炎、脑炎区别。<br>
+与以上疾病的鉴别，可根据咽拭子培养、血培养、病毒分离、骨髓象、脑脊液、血清病毒标志等检查不难确诊。<br>
+6．在儿童中本病尚需与传染性淋巴细胞增多症鉴别，后者多见于幼儿，但上呼吸道症状和淋巴结肿大少见，无脾肿大，白细胞总数增多，主要为成熟淋巴细胞，嗜异凝集试验阴性，血清中无EB病毒抗体出现。<br>
+7．巨细胞病毒病的临床表现酷似本病，但很少出现咽痛和淋巴结肿大，嗜异凝集试验阴性，通过巨细胞病毒分离及血清巨细胞病毒IgM抗体测定可以确诊。尿中发现巨细胞病毒包涵体也有助于鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1．隔离期满，发病后1周以上。<br>
+2．症状体征消失，并发症治愈。<br>
+3．血象、肝功能均恢复正常。<br>
+4．出院一个月后随访无复发。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">预后一般良好，但此病较易复发，复发时症状大多较前缓和。病死率1％～2％，大多死于胃肠出血、脾破裂、脑炎、心肌炎、肝功衰竭及继发感染等并发症，免疫缺陷综合征或免疫功能低下患者，本病易转重，甚至死亡。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">有胃肠出血、脾破裂、脑炎、心肌炎、肝功衰竭及继发感染，但很少。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">本病治疗为对症治疗，大多能自愈。急性期卧床休息，出现黄疸肝功异常时，按病毒性肝炎的治疗原则。抗生素及磺胺药对本病无效，仅在并发继发感染时应用，一般可用青霉素G，疗程7～10天，而氨基苄青霉素可致皮疹而＝般不用。有认为甲硝唑（灭滴灵）、氯林可霉素对咽峡炎病例有效，提示合并厌氧菌感染的可能，但氯林可霉素亦可导致皮疹。肾上腺皮质激素用于喉头水肿、血小板减少性紫癜、溶血性贫血、心包炎、心肌炎、中枢神经系统病变等严重并发症时。因激素并不能缩短病程，故一般病例不宜使用。脾肿大患者注意预防脾破裂，如排便不可太使劲，体检时触诊要轻柔。<br>
+抗病毒药物的应用，可能对本病有一定疗效，阿糖腺苷等其他抗病毒药物，可能对治疗本病亦能起一定作用，但确切疗效有待证实。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）热犯肺卫：<br>
+治则：清热解毒。<br>
+方剂：银翘散加减。方中银花、连翘、竹叶、薄荷为清凉宣透；牛蒡子、马勃清热解毒利咽；桔梗、甘草宣肺止咳。热甚者可加知母、黄芩、栀子以清热。<br>
+（2）热入气分：<br>
+治则：清气化热。<br>
+方剂：白虎汤加减。方中石膏清热解肌，除气分之高热、知母清热解渴除烦；生甘草泻火解毒。咳嗽喘促，加炙麻黄配生石膏宣肺平喘，加杏仁助麻黄宣肺止咳；大便秘结加厚朴、生大黄解大肠之热结。<br>
+（3）热伤营阴：<br>
+治则：清营解热，惊血生津。<br>
+方剂：清营汤加减，方中水牛角凉血清热，如有出血症，则应根据出血部位不同，酌加茅根、侧柏叶、地榆、小蓟等凉血止血之品。淋巴结、肝脾肿大者加赤芍、丹参、桃仁、红花、当归等以起活血化瘀散结之效。<br>
+（4）气阴两虚：<br>
+治则：益气养阴，清热和胃。<br>
+方剂：竹叶石膏汤加减，方中竹叶、石膏、黄芩清解余热；党参、麦冬益气养阴生津；半夏、陈皮降逆和胃健脾。<br>
+（5）热毒夹湿：<br>
+治则：清热解毒去湿。<br>
+方剂：甘露消毒丹加减，方中茵陈、滑石、木通清热利湿；黄芩、黄连清热燥湿，霍香、菖蒲、豆蔻芳香化湿；连翘、射干清热解毒。淋巴结肿大者可加昆布，赤芍，浙贝等活血软坚之品。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）紫雪散：每日1．5～3g，日月医2次，适用于热入气营，高热不解。<br>
+（2）生脉散：每次5～10m1，日服3次，用于热后气阴两虚。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">本病多于短期内自行痊愈，主要采取隔离、休息、护理、对症治疗等综合措施。急性期应卧床休息，发热、食欲明显减退者可给予口服或静脉补液，补充溶液的质和量需根据血液电解质及酸碱平衡失调情况来决定；发热头痛较重者可给阿司匹林解热、镇痛；淋巴结肿痛者局部热敷；肝功损害者保肝治疗。中药应以清热解毒为主的方剂适当加减。根据疾病发展、转归的不同阶段所表现的不同证象予以对症治疗及辨证论治。本病一般不需用抗生素及磺胺药治疗，在合并继发细菌感染时应用。干扰素、阿糖腺苷等抗病毒药物，可能对本病有一定疗效，可在对症治疗的基础上选择应用。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">目前尚无特效预防方法，急性期应进行呼吸道隔离，呼吸道分泌物及其污染物要严格消毒。患者恢复后病毒血症高达数月，故如为献血员，其献血期限至少必须延至发病后6个月。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

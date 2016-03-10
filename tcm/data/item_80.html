@@ -1,0 +1,914 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">血友病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=血友病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">hemophilia
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XUEYOUBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：血证，血病，
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">血友病是指一组最常见的遗传性凝血活酶生成障碍所致的出血性疾病。包括下列三种：血友病甲又称凝血因子Ⅷ缺乏症或抗血友病球蛋白（AHG）缺乏症；血友病乙又称因子Ⅸ缺乏症或血浆凝血成分（PTC）缺乏症；血友病丙又称因子Ⅺ缺乏症或血浆凝血活酶前质（PTA）缺乏症。其临床特征：①患者具有终身轻微外伤或手术后长时间的出血倾向，严重出血者可致命。②反复发生关节出血和血肿，甚至造成畸形或假性肿瘤。③约2/3病例有家族史。④实验室检查可见凝血时间延长，部分凝血活酶时间延长，凝血酶原消耗时间缩短，简易凝血活酶生成不良。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">1．血友病甲  其发病原理主要是由于患者血浆中缺乏因子Ⅷ的凝血活性（Ⅷ:C）所致。据目前的研究分析，有下述几点可能：①真正缺乏因子Ⅷ。②因子Ⅷ凝血活性因存在抑制物而受到障碍。③因子Ⅷ的分子结构异常，不具生物活性。
+2．血友病乙  是由于血浆中凝血因子Ⅸ的活性减低所致，其中包括因子Ⅸ量的减少和质的异常。
+3．血友病丙  凝血因子Ⅺ又称血浆凝血活酶前质（PTA），在凝血机理中是内源性凝血系统的一个因子。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医学认为当各种原因导致脉络损伤或血液妄行时就会引起血液溢出脉外而形成血证。引起血证的原因甚多，但就血友病而言，主要归纳如下：1．先天不足，肾精亏损 阴虚火旺，虚火灼络，迫血妄行而致出血，这是血友病出血的主要原因。2．七情所伤  思虑恼怒过度，以致肝气上逆或肝郁化火损伤脉络而导致出血。3．饮食不节  嗜食醇酒厚味，饮酒过多以及过食辛辣厚味，或是滋生湿热，热伤脉络，或是损伤脾胃，血失统摄而导致出血。4．劳倦过度  劳倦过度损伤心、脾、肾。若伤气致气不摄血，伤精则致阴虚火旺，进而引起出血。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">约2/3病例有家族史。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">本病以欧美人居多，在中国和日本发病率较低，约占男子出生人口的1—2万。三种血友病的发病率中以血友病甲最多，约10倍于血友病乙，血友病丙较少见。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">血友病的病因是由于Ⅷ、Ⅸ及Ⅺ因子的缺乏，而这些因子均为血液内活性凝血活酶形成所必需。缺乏这些因子后，凝血活素生成障碍，因而凝血时间延长。
+血友病甲和乙的遗传规律大致有以下三种：①女性传递者与正常男性结婚所生子女，儿子中1/2为患者，1/2为正常，女儿中1/2为传递者，1/2为正常。②正常女性与男性患者结婚所生子女，儿子均正常，女儿均为传递者。③女性传递者与男性患者结婚所生子女，儿子1/2正常， 1/2患病，女儿1/2患者，1/2传递。这种情况极为少见，因为女性患者极少。
+血友病丙则为常染色体（显性或不完全隐性）遗传。因此，男女均可患病。故临床遇到女性患者，应首先考虑为血友病丙。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">中医学认为血友病引起的血证，其病机病理变化主要归纳为两类：火盛和气虚。在火盛 之中，又有实火和虚火之分。肝郁化火，湿热内蕴等皆属实火，而阴虚火旺之火则属虚火。气虚之中又有仅见气虚和气损及阳，阳气亦虚之别。从证候虚实来说，由于热亢盛和瘀血阻络所致者属于实证，而由阴虚火旺及气虚不摄所致者属于虚证。实证和虚证其病因病机虽各有不同，但在疾病发展过程中，又常发生实证向虚证的转化。如开始为火盛气逆，迫血妄行，但在反复出血之后，则会导致阴血亏损，虚火内生，或因出血过多，血去气伤，以致气虚阳衰。不能摄血。因此在有的情况下，阴虚火旺及气不摄血既是出血导致的后果，又是继续引起出血的病理因素。
+此外，出血之后，若已离经脉而未排出体外，留积体内，蓄结而为瘀血，则会妨碍新血的生成及气血的正常运行。瘀血阻络，同样可以引起出血。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">1．血友病甲 现知凝血因子Ⅷ是由两部分所组成的复合物。a：分子量小的部分内含因子Ⅷ的促凝成分，称为Ⅷ：C及其抗原成分，即Ⅷ：CAg， b：分子量大的部分称为因子Ⅷ相关蛋白，简称ⅧR或 Von-Willebrand因子（VWF），内含四种活性：①ⅧR：Ag即ⅧR的抗原部分。②ⅧR：RCOF 即因子Ⅷ瑞斯托霉素辅因子。③ⅧR：WF／BT，即因子Ⅷ出血时间相关活性。④ⅧR：WF／GB，即因子Ⅷ玻璃珠粘附相关活性。现已明确血友病甲所缺乏的是Ⅷ:C。因子Ⅷ:C是内源性凝血系统中激活X的主要成分。当血浆因子Ⅷ凝血活性缺乏时，则不能与因子Ⅸa，Ca2+及磷脂组成复合物，以致血液凝血活酶的形成发生障碍，凝血酶原不能转变为凝血酶，纤维蛋白原也不能转变为纤维蛋白。关于血友病甲缺乏因子Ⅷ凝血活性的原因未明。
+2．血友病丙 据目前所知凝血因子Ⅺ是通过因子调Ⅻa使其激活成为因子Ⅺa。在钙离子的存在下，形成因子Ⅻ和因子Ⅺ复合物，然后激活因子Ⅸ。当因子Ⅺ缺乏时，因子Ⅸ不能被激活，因而表现为类似血友病样的凝血障碍。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）热郁血分，迫血妄行型：证候：出血量多，颜色鲜红，烦躁不安，小便黄赤，大便干结；舌质红，苔薄黄，脉弦数。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：本证为热入血分，迫血妄行之证。热扰心神，心神被扰故烦躁不安。热蒸阴津，故尿赤便干，舌质红，苔薄黄，脉弦数。<br>
+（2）阴虚内热，迫血妄行型：证候：出血较严重，出血量多而色鲜，伴有潮热，心烦，口渴不欲饮，手足心热，腰部酸软，舌质红、苔净，脉细数。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：腰膝酸软，潮热，心烦，手足心热属肾阴不足，阴虚火旺之证。虚火灼络血热妄行则血出。阴不制阳，阴虚火旺则口干不欲饮，虚火上炎故舌红少苔，脉细数。<br>
+（3）气虚不摄，血不循经型：证候：反复出血，绵绵不断、血色淡，头晕目眩，面色苍白，唇甲不华，神疲体倦，食欲不振，心悸，动则气短，多汗、舌质淡，脉细弱。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：本型主证为神疲体倦，面色苍白，舌淡苔白，脉细弱，属脾虚气弱。脾不统血则反复出血，绵绵不断，血色淡。心血虚则心悸，脾主思而统血，心藏神而主血，思虑过度，则劳伤心脾，脾胃气虚，运化无力，化源不足，故体倦食少，面色苍白，唇甲不华，食欲不振，动则气短，多汗，舌淡苔白，脉细弱，脾虚统摄无权则出血，气虚血衰，心失所养故见心悸。<br>
+（4）瘀血阻络，血不循经型：证候：出血色紫暗，关节肿痛，痛有定处，舌质暗，或有瘀点，苔薄白，脉细涩。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：瘀血阻络，血不循经而致出血，血色紫暗，舌质暗，有瘀点，脉细涩，均为血瘀之象，血瘀气滞，不通则痛故关节肿痛，痛有定处。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1．血友病甲<br>
+诊断依据：<br>
+（1）&nbsp;临床表现&nbsp;男性患者，有或无家族史，有家族史者符合性联隐性遗传规律，女性纯合子型极少见。关节、肌肉、深部组织出血。有或无活动过久、用力等创伤史，术后（包括小手术）出血史，关节反复出血引起的关节畸形。<br>
+（2）实验室检查&nbsp;凝血时间（试管法）：重型延长，中型可正常，轻型、亚临床型正常。活化的部分凝血活酶时间（APTT）：重型明显延长，能被正常血浆及新鲜吸附血浆纠正，&nbsp;轻型稍延长或正常，亚临床型正常。血小板计数、出血时间、血块收缩正常。凝血酶原时间（PT）正常。因子Ⅷ促凝活性（Ⅷ：C）减少或极少。血管性血友病因子抗原（VWF：Ag）正常，Ⅷ：C/VWF：Ag明显降低。<br>
+2．血友病乙<br>
+（1）临床表现：同血友病甲。<br>
+（2）实验室检查凝血时间、血小板计数、出血时间、血块收缩及PT同血友病甲。APTT延长、能被正常血清纠正、但不能被吸附血浆纠正。轻型可正常，亚临床型亦正常。血浆Ⅸ：C测定示Ⅸ：C减少或缺乏。<br>
+3.&nbsp;血友病丙&nbsp;<br>
+（1）&nbsp;临床表现&nbsp;<br>
+&nbsp;不完全性常染色体隐性遗传。<br>
+&nbsp;纯合子有出血倾向，杂合子可无出血症状。<br>
+&nbsp;出血轻，表现为鼻衄，月经过多，小手术后（拔牙，扁桃体切除）出血，关节、肌肉出血很少见。<br>
+（2）实验室检查<br>
+&nbsp;凝血时间正常或接近正常。血小板计数、出血时间、PT正常。APTT延长或Biggs凝血活酶生成试验示生成障碍，能被正常吸附血浆及血清纠正。血浆ⅩⅠ：C及（或）ⅩⅠ：Ag&nbsp;测定减少或明显减少，纯合子＜1％～10％，杂合子10％～20％，有的达30％～65％。血浆Ⅷ：C、Ⅸ：C及VWF：&nbsp; Ag水平都正常。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">1．详细询问家族史，约1/2～1/3患者有阳性家族史。经追问三代：包括兄弟、姐妹的儿子、母亲家族史的舅父、外祖母、姨表兄弟。因基因可变，无阳性家族史者，不可轻易否定。
+2．临床出血症状和体征  有出血、自发或外伤、拔牙手术后等病史。应询问何时出血、每次出血时间和数量。首次出现症状时诊断较难，应提高警惕。必须指出，出血症状越早，病情越严重，出血最突出为皮下和肌肉，而粘膜出血以口腔出血和鼻衄为多。脐带出血较少见。
+3．实验室检查  以KPTT试验为最简易而敏感。用简易凝血活酶生成试验进一步决定类型。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">出血症状多在1岁左右出现。早者可在出生后数周开始，晚者出现于童年甚至成年以后，而继续终身。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">有家族史，患者具有终身轻微外伤或手术后长时间的出血倾向的病史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">全身各个部位程度不等的自发性出血倾向，部位以皮肤、肌肉出血最为常见。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">血友病的主要临床表现为出血倾向。出血症状多在1岁左右出现。早者可在出生后数周开始，晚者出现于童年甚至成年以后，而继续终身。最突出的表现为全身各个部位程度不等的自发性出血倾向，或受轻微伤害后出血不止。如拔牙、扁桃体摘除术等。出血部位以皮肤、肌肉出血最为常见。关节腔出血次之，内脏出血虽不多见，但病情往往较为严重。<br>
+1．脐带出血较少见。<br>
+2．皮下及肌肉出血&nbsp;&nbsp;此为最突出的表现，其发生率约占90％左右，多可波及全身，形成大小不等血肿，有疼痛、热感。好转时中央部分先吸收。腓肠肌、大腿肌、臀肌、前臂肌、腰大肌为好发部位。可并发Volkmann挛缩及血循环障碍。咽喉及颈部血肿可引起呼吸道阻塞而致窒息，压迫附近血管产生坏疽，或压迫神经产生麻痹等症状。<br>
+3．粘膜及内脏出血&nbsp;<br>
+（1）口腔出血：鼻衄、牙龈出血、舌尖破碎出血等，最为普遍。常为就诊的原因，其中较突出的是拔牙后出血最为常见，出血常在拔牙后立即出现，可延长至一周以上。<br>
+（2）胃肠道出血：较为少见。有呕血、便血或黑便。腹腔出血伴腹痛酷似急性阑尾炎、肠梗阻或溃疡病穿孔等出血性腹膜炎症状。腹膜后出血及血肿形成，则可产生股神经受压症状（疼痛）及髋关节屈曲等。<br>
+（3）泌尿系统出血：肾脏、输尿管及膀胱出血引起血尿，可突然发作或缓慢进行，持续 3～5周，血块可引起肾绞痛。<br>
+（4）肺及胸膜出血：主要发生于肺、支气管及胸膜。有咳血、咯血、血胸、纵隔血肿，但较少见。<br>
+（5）颅内出血：较少见，约占6％。年幼者较多，可自发或头部外伤后发生。出血部位可在脑实质、硬脑膜上下、蜘蛛膜下、脊髓内。预后较差。<br>
+4．关节出血为本类疾病出血的特征之一。发生率为70％～80％，多见于中、重型血友病患者。最多见于膝、踝关节，其次为肘、髋、肩、腕、手足小关节及脊柱。出血至关节腔内，可引起滑膜损害及运动障碍。<br>
+以上出血倾向，以血友病甲最严重，常反复发作，血友病乙较轻。血友病丙虽然为自发性出血、关节出血者少，但多发生颅内出血。<br>
+症状轻重与血浆Ⅷ因子浓度有关。可分为：Ⅰ：重度（自幼出血，关节出血），Ⅷ因子水平＜正常的1％。Ⅱ：中度（偶有关节出血，到成年尚无畸形），Ⅷ因子水平为正常的1％～ 5％。Ⅲ：轻度（生活正常，成年时方被诊断），Ⅷ因子水平为正常的6％～30％。Ⅷ因子浓度正常值为100％（50％～200％）。女性传递者Ⅷ因子浓度降至1/2～1/3。<br>
+患者智力、面貌正常。皮下及肌肉出血，可形成大小不等血肿、硬结，隆起作紫黑色（俗称乌青块）。关节出血，其进程可分为三期。<br>
+1．急性关节炎期&nbsp;&nbsp;关节红、肿、热、痛，易误诊为急性炎症，检查发现肌肉痉孪，受累关节活动受阻。病程短者，可完全吸收痊愈。<br>
+2．慢性关节炎期&nbsp;&nbsp;尚未吸收的血液刺激骨膜，引起慢性增生性滑膜炎、全关节炎，关节可持续肿胀数月至数年。<br>
+3.&nbsp;骨质破坏期&nbsp;&nbsp;关节滑膜及软骨破坏，骨质侵蚀，以致关节肿胀、畸形、强直、挛缩。并且肌肉萎缩、功能丧失。患者一般无肝、脾、淋巴结肿大。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">可在相应的部位发现不同的体征。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">Ⅷ因子活性测定
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">（一）血常规
+红细胞和血红蛋白水平可正常。根据出血量多少，可有相应程度的贫血。贫血形态属正常细胞，正常色素性。血小板计数正常、白细胞计数一般正常或稍高。
+（二）出凝血试验
+出血时间、血块收缩时间、毛细血管脆性试验以及凝血酶原时间正常。        凝血时间延长为本病的特征，可能长至1～12小时或更长，但少数轻型病例凝血时间可能正常。用毛细血管法作凝血时间极不可靠，因混有组织中凝血活酶，可使凝血时间缩短。试管法较佳，但不够敏感。仅在因子Ⅷ浓度＜1％时，才能延长。
+（三）凝血酶原消耗时间
+凝血酶原消耗时间缩短（＜20秒），此试验也不敏感。因子Ⅷ活动度约＜3％时，才能异常。血友病中约70％病例血浆凝血酶原消耗不良，但轻型病例可以正常。
+（四）白陶土部分凝血活酶时间
+白陶土部分凝血活酶时间（KPTT）延长。正常范围为31．5～43．5秒，此试验是一项既敏感又简便的过筛试验，但不能定型，因子活性到40％以下时，即可异常。
+（五）简易凝血活酶生成纠正试验（简易TGT）。
+（六）凝血活酶生成试验（Biggs法）
+此法敏感性高，可以检出目前其他方法不能检出的血友病患者。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．血肿应与深部脓肿、肉瘤、肾肿瘤等鉴别，当血友病关节出血时应和结核和类风湿性关节炎鉴别。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．与先天性低凝血酶原血症（包括Ⅱ、Ⅴ、Ⅶ、Ⅹ因子缺乏症）相鉴别。此等因子参与凝血第二相，缺乏时均有凝血酶原时间延长，V因子缺乏症有类似血友病的表现，又称“副血友病”，维生素K缺乏症和肝病均有凝血酶原时间延长。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．与血管性假性血友病相鉴别。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．要与血中有抗AHG&nbsp;&nbsp;（或抗PTC）抗体存在相鉴别&nbsp;&nbsp;甲状腺功能低下、原发性纤维蛋白溶解症和DIC等，都可产生抗体。其临床酷似血友病甲（或血友病乙），血浆中AHG（或 PTC）也降低，但前者无阳性家族史，无出血史，不限年龄和性别。此时应进一步作复钙交叉试验和KPTT交叉试验。若加等量正常血浆也不能纠正此两种试验的异常结果时，提示有抗凝物质存在。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1．血友病甲&nbsp;&nbsp;因本病是一种先天性缺陷性疾病，目前无根治方法，只有在出血发作时用替代疗法治疗，判断治疗效果的方法是①根据出血症状的改善或消失情况；②检测血浆Ⅷ：C水平。<br>
+2．血友病乙&nbsp;&nbsp;原则同血友病甲。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">目前，遗传性出血性疾病尚不能治愈。但近年来，治疗方法有较大进步。发达国家已做到7岁儿童自己治疗，并能长期存活。英、美等国由国家组织设备极为完善的包括血液学家、内科、儿科、骨科、妇产科、神经科、口腔科等专业医师、护士、心理学家、社会学家等组成的血友病专业中心，进行严重并发症的治疗，特别是各种手术，并提供足量的浓缩因子。设有登记制度及遗传咨询。由社会学家每半年～1年定期对患者随访。儿童继续上学，但活动不宜过多。英、法等国设有与治疗中心相联系的专门学校，认为此法行之有效。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">血友病常见的并发症有：①关节积血；②疼痛和感染问题。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．对症处理<br>
+（1）切伤及擦伤：局部加压冷敷，或用凝血酶、纤维蛋白海绵。深部伤口须外科缝合，并在术前提高Ⅷ因子水平。口腔、舌出血一般不严重。除非有严重贫血，一般可不输血。<br>
+（2）鼻衄：可用填塞方法，用扎在橡皮导管上的小指套伸入鼻腔，然后充气，使出血点受压，以阻止出血。明胶海绵，中药黑山栀、马勃、云南白药、参三七均可用于鼻衄局部填塞。<br>
+（3）关节出血：患者须住院治疗，卧床休息，抬高局部，并用弹性绷带或舒适的夹板加以固定，最好提高血浆Ⅷ因子浓度到20％～30％，如24小时不见好转，再给一次。一般情况下，经休息、固定，疼痛肿胀可消退。中药止血粉如马勃、白芍、三七可作局部敷贴。有血肿时用双花、乳香、没药等外敷。成年前第1次关节出血，应积极用替代疗法，尤其对血友病乙的患者要注意此点。<br>
+（4）拔牙：血友病患者应经常与牙科医师取得联系。乳牙脱落常无妨。每次拔牙不得多于2枚，拔牙前输新鲜冰冻血浆或AHG浓缩剂，提高血浆Ⅷ因子浓度至50％，拔牙后用凝血酶纱布敷之局部压迫或用明胶海绵填塞牙孔。<br>
+（5）外科手术：应尽量避免，慎重考虑。但随着有效替代疗法的应用，手术危险性已大为减轻。右下腹疼痛可由于右侧髂腰肌血肿而非急性阑尾炎。在天然光线下仔细观察，可见腰部皮肤变色，应采取保守疗法，手术列为禁忌。慢性关节痛国外有进行骨科手术者，如髂关节替换或膝关节固定术。<br>
+2．替代疗法&nbsp;&nbsp;输全血、血浆、提纯的Ⅷ因子及凝血酶原复合物（PPSB，包括Ⅱ、Ⅷ、Ⅸ、Ⅹ四种凝血因子），为治疗的有效措施。<br>
+（1）输全血：大出血后应立即输入全血，以补充血容量。新鲜血较储存血为佳。在AHG缺乏症储存全血应短于24小时，而PTC则短于5天。<br>
+（2）血浆：有新鲜血浆及冰冻-20℃冷沉淀剂（Cryoprecipitate），AHG缺乏症必须输新鲜血浆或冷沉淀剂。PTC缺乏症可采用储存血浆（5天以内为宜），剂量为15ml／kg，以后每12小时1次，剂量10ml／kg，直至14天。避免输血过量引起心脏负担过重。冷沉淀剂可能引起过敏反应或急性过敏性肺水肿<br>
+（3）抗血友病球蛋白浓缩剂：为干冻制品，应用时以50～100ml注射用水稀释成内含200U&nbsp;Ⅷ因子的浓缩剂（1U&nbsp;&nbsp;Ⅷ&nbsp;因子＝1ml新鲜血浆内Ⅷ因子），应用剂量可用下列方程式计算。R=患者体重（kg）×&nbsp;希望提升的Ⅷ&nbsp;因子（％平均正常）/Ⅷ&nbsp;因子剂量（总单位数）&nbsp;&nbsp;&nbsp; R代表转输的每单位Ⅷ因子／kg体重，使患者血浆中升高的Ⅷ因子％。每个制剂的R值相当恒定，如血浆为2.01,&nbsp;冷沉淀剂为1．68。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;或：需要输入血浆量＝（要求达到血浆浓度％-测得血浆浓度％）×&nbsp;血浆容量。血浆容量估计值＝体重（kg）× 0．07×（1-血细胞压积％）。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简单估计法：为成人于45分钟内输入新鲜血浆1000ml，可使Ⅷ因子浓度上升18％～ 30％。小儿每公斤体重输入血浆1ml可使因子Ⅷ提高2％。<br>
+3．其他药物治疗<br>
+（1）抗纤维蛋白溶解药物：少数血友病患者可以伴有纤维蛋白溶解亢进现象，可能为应用抗纤维蛋白溶解药物的理论根据。这类药物不能代替因子Ⅷ，也不能提高因子Ⅷ的浓度。但他们都具很强的抗血纤维蛋白溶解作用。能够保护已形成的少量血块不被溶解，从而达到凝血的作用。临床上常用制剂有6－氨基己酸、对羧基苄胺、止血芳酸等。<br>
+（2）&nbsp; DDAVP治疗：捷克科学院有机化学和生物化学研究所于1966年合成具有强利尿作用的治疗尿崩症药物—加压素类似药“1-脱氨基－8－D－精氨酸加压素”简称DDAVP&nbsp;&nbsp;（亦称为Pesmo-pressin或Adiuretin&nbsp; SD或DAVRitter），目前各国所用系瑞典产品DDAVP。DDAVP治疗本病的机理尚未完全清楚，目前认为在该药作用下积蓄血管内膜中的PA和第Ⅷ因子被释放的结果。本药因能使PA上升，应同时配合抗纤溶药物。副作用可有暂时性面部潮红和水潴留。宜用于拔牙及其他手术，以及血肿、关节出血、血尿等。<br>
+（3）女性避孕药：疗效不定。<br>
+（4）花生衣制剂和其它中草药：近年来，认为花生衣对轻型血友病甲的出血有一定疗效，可以减少出血，但不能提高因子Ⅷ浓度。其特点是用量大，止血作用缓慢且不持久，对急性大量出血时无明显作用。其作用机理可能与抗纤维蛋白溶解药物相类似，其有效成分主要在花生衣的表层。目前由花生衣制成的成品有血宁糖浆（每100ml含生药50g），每日3次，每次10～30ml。止血宁片：每日3次，每次3～4片。止血宁注射液，每日肌肉注射2～3次，每次2ml，或30～50ml加于葡萄糖溶液或生理盐水200ml内，静脉滴注每日1次，必要时可重复使用。可作为轻型血友病甲患者止血的辅助药物。<br>
+（5）皮质激素：皮质激素治疗血友病甲出血的疗效，意见不一。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）热郁血分，迫血妄行型：治法：治宜清热解毒，凉血止血法。方药用犀角地黄汤加减。药用细生地、赤芍。丹皮、银花、连翘、生侧柏、水牛角（或用广角），犀角地黄汤为治疗热入血分的代表方。方中水牛角（或广角）咸寒，清营凉血，清心解毒；生地甘苦凉，清热凉血，滋阴生津；赤芍，丹皮即可增强清热凉血之力，又可防止瘀血停滞，四药相配，使热清血宁，止血而无留瘀之弊。加银花、连翘清热解毒，生侧柏凉血止血。<br>
+（2）阴虚内热，迫血妄行型：治法：治宜滋阴清热，凉血止血法。方药用茜根散加减。药用：茜草根、生地黄、阿胶、侧柏叶、白芍、黄芪、当归、女贞子、旱莲草。茜草止血而又活血，止血而不留瘀，故可用于各种出血性疾病。生地黄、阿胶、白芍、侧柏叶滋阴养血，凉血止血。阴虚血热之出血，多为长期慢性出血证，血出则气伤故用当归补血汤（黄芪、当归）益气生血。女贞子、旱莲草为二至丸，滋阴凉血止血。<br>
+（3）气虚不摄，血不循经型：治法：治宜益气健脾摄血法。方药用归脾汤加减。药用黄芪、党参、白术、茯苓、当归、阿胶、龙眼肉、木香、远志、艾叶、炙甘草、炒枣仁。本方为治疗思虑过度，劳伤心脾的常用方剂。本方重在益气生血，故以黄芪、党参为君，补中益气，化生气血。酸枣仁、龙眼肉、当归、阿胶补血和营，养心安神，为臣药。白术、木香健脾理气，以防滋腻滞气。茯神、远志交通心肾，安神定志。甘草益气和中，调和诸药。艾叶温经止血。<br>
+（4）瘀血阻络，血不循经型：治法：治宜活血通络，佐以止血。方药用四物汤加减。药用当归、生熟地、川芎、赤芍、丹参、鸡血藤、茜草、仙鹤草、大小蓟、参三七等。方中当归补血活血，调经止痛；生地滋阴清热凉血，熟地甘温，大补肝肾，养血滋阴：赤芍散瘀活血；川芎辛温，为血中气药，活血行血，开郁止痛，使熟地补而不滞；加丹参、鸡血藤活血通络；茜草、参三七活血止血；仙鹤草、大小蓟凉血止血。全方共奏养血通络，活血止痛之功效。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">血友病为先天性遗传性疾病，目前中西医均无根治方法。西主要以输注凝血因子的替代疗法为主。中医主要根据其证候辨证施治以滋阴清热凉血或补气摄血为主。作者认为血友病既然为先天性遗传性疾病，而中医认为肾为先天之本，故应以补肾为主，以寻求根治方法。在平时出血不严重时，以中药治疗为主。出血严重或需外科手术时，以输注全血、血浆，提纯的Ⅷ因子及凝血酶原复合物（PPSB，包括Ⅱ、Ⅷ、Ⅸ、Ⅹ四种凝血因子）为主。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">尽量避免肌肉注射，但皮下、皮内各种免疫注射仍应进行，注射后局部加压。静脉注射应谨慎（颈或股静脉穿刺禁忌），避免过劳和暴饮暴食，少吃刺激食物和硬性食物，以免上消化道出血。严防外伤，避免手术。防止感染发烧，向家属和患者介绍防治知识。对患者的精神支持和鼓励非常重要。成年患者应选择较为安全适当的工作。禁服阿司匹林、保泰松、消炎痛、潘生丁和前列腺素E等，使血小板凝聚受抑制，以及导致血管扩张、脆性增加等药物。国外止痛用pentazocine和promazine。进行传递者预测、产前诊断、羊膜穿刺可确诊胎儿血友病，以便终止妊娠。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

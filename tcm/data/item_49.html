@@ -1,0 +1,905 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">感染性心内膜炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=感染性心内膜炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">infective endocarditis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">GANRANXINGXINNEIMOYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：温病，瘀证，心悸，发热。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">感染性疾病，循环系统疾病，
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">感染性心内膜炎，是指因细菌、真菌和其它微生物（如柯萨奇病毒、立克次体等）直接感染而产生的心内膜、心瓣膜的急性、亚急性炎症病变。临床以发热、心脏杂音、栓塞现象，血培养阳性等为特点。临床分为急性和亚急性两种。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">1、急性感受染性心内膜炎：致病菌主要为葡萄球菌，约占本病致病菌50％以上；溶血性链球菌、肺炎球菌、革兰阴性杆菌、真菌亦可致病。
+2、亚急性感性心内膜炎：最常见的病原菌是草绿色链球菌，其次为金黄色和表皮葡萄球菌、肠 球菌、革兰阴性杆菌及真菌，立克次体及衣原体也可致病。
+
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病多见于先天禀赋不足，或久病体虚，或饮食不节，或房劳过度，或情志失调，耗伤 气血阴精，导致正气不足，卫外不固，温热毒邪乘虚而入。或经卫传气血，由表及里；也可 直中气分，或直达营血，热的营阴，迫血妄行，甚至逆传心包，变生危证。病至后期，余邪 末尽，阴液已伤，热邪恋于阴分，或阴虚血涩，瘀血内停，或虚热内扰心神，湿热之邪，耗 气伤阴，气阴两虚，气血不足，心失所养，则诸证丛生。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">本病因抗生素的应用，使得发病有所下降，并且临床表现亦变得不典型，但同时因心血管病各种创伤性检查如各种导管插管、心脏手术及其他手术等的开展，又使得本病的发生率有所增加。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">1、急性感染性心内膜炎的病人， 60％心脏原无异常，通常由机体其他部位或全身性感染时，如并发肺炎球菌脑膜炎、败血性血栓性静脉炎、甲组链球菌蜂窝织炎或葡萄球菌性脓疡， 病原直接侵犯心内膜所致。
+2、亚急性感染性心内膜炎：病人多先有心瓣膜病或先天性心脏病。前者多为风心病，也可见于动脉粥样硬化、瓣膜 脱垂、肥厚型梗阻性心肌病等；后者以法乐四联症、室间隔小缺损、动脉导管未闭多见，次为二叶式主动脉瓣。心内异物如心脏手术缝线、补片、人工瓣膜、起搏器电极以及心内膜附 壁血栓，或心房粘液瘤均可成为感染处所。细菌多由口腔、泌尿生殖道或胃肠粘 膜或皮肤伤口侵入致菌血症，再引起心内膜炎。拔牙、导尿、内窥镜检术、刮宫，尤其是安置保留 尿管、漂浮微导管、静脉高营养疗法、腹膜或血液透析等均易致菌血症。骨髓炎、肺炎、肾盂肾炎亦可成为感染来源。在西方，药瘾者使用未经消毒注射用具是一重要致病途径。一般情况下，细菌进入血流后，由于机体防御机制作用而被消灭，但当心血管内膜存在病理损害或缺陷时，细菌即在损害部位粘着，继之有血小板和纤维蛋白附着。成为赘生物的基础，使细菌能够在局部滋长繁殖；当赘生物破裂时，细菌被释放进入血流。此外，细菌亦可经毛细血管到达心瓣膜，形成赘生物。心内膜的病变多发生于血液流速高、高压腔至低压腔以及压力较低区域，如左房室瓣返流的心房侧、主动脉瓣关闭不全的左心室侧、室间隔缺损的右心室侧等。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">心主血脉，正气亏虚，温热邪毒内舍于心脉营血，则可致肌肤内脏出血；温热邪毒煎熬营血，热血互结，阻遏血脉，则可致血脉栓塞诸征。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">1、急性感染性心内膜炎病理改变的特点为赘生物大而脆，易脱落，栓塞发生早，皮肤粘膜病变多见，转移性脓肿及化脓性脑膜炎、肺炎较多见。本病瓣膜毁损严重，迅致穿孔、破裂，常引起腱索或乳头肌断裂及心肌脓肿，心力衰竭出现早而急。
+2、亚急性感染性心内膜炎本病的基本病理改变为赘生物形成，多发生于主动脉瓣和左房室瓣，肺动脉瓣和右房室瓣甚为少见。赘生物系由细菌、纤维蛋白、红细胞、白细胞和血小板集聚构成，大小及形状不一，细菌多隐藏于其内层。赘生物的形成可使瓣膜产生溃疡或穿孔，腱索或乳头肌断裂。赘生物脆弱，易破碎及脱落，造成周围动脉栓塞。发生在瓣膜病的赘生物多在左心瓣膜上，故栓塞多发生于体循环，尤以在脾、肾和脑最为常见。发生在左至右分流的先天性心血管病者，赘生物可进入肺动脉，造成肺栓塞。动脉营养血管栓塞可使管壁削弱，形成微小的细菌性动脉瘤，常位于动脉分支处。本病的血管病变还有动脉炎，以毛细血管和小动脉的动脉炎为最常见。心肌有程度不一的病灶，肌纤维可呈退行性变化，通常力不同愈合阶段的小疤痕，偶尔出现心肌坏死或粟粒大小的脓肿。肾脏病理变化除梗死外，还有局灶性栓塞性肾小球肾炎和弥漫性肾小球肾炎。脾脏通常增大，梗死和脾周围炎常见。中枢神经系统最常见的病变为大脑栓塞和弥漫性脑膜脑炎。细菌性动脉瘤在颅内破裂时，常致蛛网膜下腔出血。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">急性感染性心内膜炎50％以上为金色葡萄球菌感染，产生心瓣膜和腱索的急剧损害，迅速发展为急性充血性心力衰竭。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）热毒炽盛、血瘀阻脉：<br>
+证候：高热汗出，心悸胸闷，气喘气急，口干口渴，皮肤瘀斑，烦躁不安，其则神昏谵语，苔黄燥，舌质红，脉数或细数。<br>
+（2）气阴两虚、热毒内结：<br>
+证候：发热汗出，胸闷气急，心悸心痛，咳嗽无力，神疲倦怠，皮肤瘀斑、斑点，苔薄白或黄燥，舌红，脉细弱。<br>
+（3）阴虚火旺：<br>
+证候：午后或夜间发热，或手足心热，两颧发红，口燥咽干，心烦心悸，尿少色黄，舌质红而干，苔少，脉细数。<br>
+（4）气阴两虚、血脉瘀滞：<br>
+证候：倦怠乏力，动则气短，心悸怔忡，失眠多梦，自汗或盗汗，五心烦热，或有身痛，便秘或食少便溏，或皮色暗红，或紫红或肌肤甲错，或肢体偏瘫，舌质紫黯或有瘀点、瘀斑，脉细涩。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">见急性和亚急性心内膜炎的诊断标准。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">1．基本可以确定诊断的标准
+（1）血培养阳性结果二次以上并伴有下列一项以上条件者：
+①新出现的返流性杂音或原有的返流性杂音强度增加二级者，或杂音呈突变者；
+②栓塞表现；
+③皮肤、粘膜微栓塞或微血管炎表现；
+④超声心动图发现心瓣膜上新团块回声或原有团块增大。
+（2）血培养阴性但同时具备以下三项条件者：
+①原因不明的持续发热一周以上；
+②杂音发现同前；
+③栓塞表现。
+2. 拟诊标准
+（1）血培养同一种细菌阳性结果二次以上并伴有下列一项以上条件者：
+①停用抗生素后菌血症复发者；
+②具有心瓣膜病、先天性心脏病或其他心血管易患因素（如动静脉瘘）者。     （2）人工心瓣膜替换术后血培养阳性伴原因不明发热者。
+（3）血培养阴性但同时具备以下三项条件者：
+①原因不明发热持续一周以上；
+②具有心血管病成为易患因素者；
+③栓塞表现或典型的皮肤、粘膜、眼底改变，如Roth点、Osler结或中心发白的出血点。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1.&nbsp;急性感染性心内膜炎:&nbsp;起病急骤，病程短，病情较重，常为全身感染的一部分,主要为败血症的症状，如高热、寒战、进行性贫血、肌肉关节疼痛、乏力、多汗等。此外可发生急性心力衰竭、器官栓塞及转移性脓肿，并出现相应的症状。&nbsp;瓣膜受损或腱索断裂时，可短期内出现高调的杂音或心脏杂音迅速变化。手掌及足底常易出现栉斑样或小结节状出血点，无压痛，称詹恩威（Janeway）结。部分病人眼底可见小出血区，中心呈圆形白点，称罗特（Roth）点，此外，可有急性心力衰竭及器官栓塞的体征。病程短而急，如不积极治疗，多在6周内死亡。&nbsp;<br>
+2．亚急性感染性心内膜炎&nbsp;&nbsp;起病缓慢，发热，热型不规则，体温常在37．5～39℃之间，或伴畏寒、心悸、胸闷，气短、消瘦乏力，亦可有肌肉关节酸痛。心功能不全呈缓慢进展，后期可有器官栓塞症状出现。新出现病理性杂音，原有的病理性杂音强度增加二级以上或杂音的性质、强度突然改变，表明赘生物破裂或腱索、瓣膜破裂，心肌脓肿可致房室传导阻滞引起心律失常。浅表损害：如瘀点，多见于颈、胸、口腔及眼结合膜，其中心呈白或浅黄色；条纹状指甲下出血、杵状指趾；Osler结，位于指趾末节腹面，足底或大小鱼际处，呈红色或紫红色，略高于皮面，有明显压痛；hneway：结，系位于手掌或足底的无痛性小结节。内脏损害：如Roth点，系视网膜有中心灰白的絮状出血区；颅内如颅底菌性动脉瘤及弥漫性脑膜脑炎；肾脏病变如显微镜下血尿，局灶性肾炎及球性肾炎；心脏病变如心肌炎、化脓性心包炎及心肌脓肿。以上病变根据病理损害部位及程度，出现相应症状及体征。栓塞表现：多见于病程后期，甚至在体温已降至正常后；约1／3病人以栓塞为首发症状。脑栓塞，最多见，常发生于大脑中动脉，有偏瘫、失语等症状；肾栓塞引起腰痛、肉眼血尿；脾栓塞引起左上腹剧痛、压痛，随膈式呼吸及体位改变而加剧，有时可闻及脾区呼吸摩擦音；冠状动脉栓塞引起急性心肌梗死；肠系膜动脉栓塞引起急性腹痛、呕吐、血便或似肠梗阻症状；肢体动脉栓塞致肢体剧痛、苍白，温度降低，脉搏消失，以后发生干性坏疽；肺动脉栓塞可致急性右心衰竭或引起突然胸痛、气促、紫绀，或咯暗红色粘稠血痰。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">心电图检查
+新出现的房室阻滞、束支阻滞或室性早搏常提示心肌脓肿。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">1、超声心动图检查
+M 型与实时二维图联合使用，可提高赘生物检出率。
+2、放射性核素检查
+镓心脏扫描及铊灌注技术有助于发现心肌脓肿。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa"> 90％以上的病人红细胞沉降率增快，免疫复合物试验阳性。部分病人血清C反应蛋白阳性，球蛋白增多，补体降低，类风湿因子滴度增高，核酸抗体试验阳性。浓缩静脉血检查，在吞噬细胞内可发现细菌。显微镜下血尿常见，1／3病人有肾功能不全。对疑有立克次体、衣原体、布氏杆菌及真菌感染者还可作血清抗体试验。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血象呈进行性贫血。白细胞数轻度增多或正常，核左移；脾大明显时白细胞数减少。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．风湿热&nbsp;&nbsp;有风湿活动症状，心电图示P一R间期延长，抗溶血性链球菌抗体滴度增高。抗风湿治疗有效。<br>
+2．系统性红斑狼疮&nbsp;&nbsp;常有颊面部蝶形红斑，白细胞计数减少，血液或骨髓液内可找到狼疮细胞，抗核抗体阳性，血培养阴性，抗生素治疗无效，而糖皮质激素可使其缓解。<br>
+3．心房粘液瘤&nbsp;&nbsp;可有发热、栓塞及心脏杂音，酷似感染性心内膜炎，唯血培养阴性，无脾肿大，超声心动图可显示肿瘤回声图像。<br>
+此外，尚需与伤寒、结核、上呼吸道感染等疾病相鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">见急性和亚急性心内膜炎的疗效标准。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">急性感受染性心内膜炎的预后取决于治疗早晚、抗生素对原发感染细菌控制能力、感染病灶迁移范围、心脏瓣膜损伤程度和病人的抵抗力。
+亚急性感染性心内膜炎的预后取决于原有心脏病的性质及严重程度，由于有效抗生素的应用，细菌感染性心内膜炎多可得到控制。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1.&nbsp;抗生素治疗<br>
+（1）一般原则：①应用要早，于24～48小时中采血培养3～5次后即可根据可能入侵途径选用抗生素，先按经验用量给药，三天后视病情作调整。②用杀菌药，并可长时间或大量使用而无严重毒性者，还可加用有协同作用的药物。③剂量要足，应取决于用试管法测定的药物敏感试验得出的最低抑菌浓度及用病人血清稀释8倍后仍具杀菌能力的最低杀菌浓度。④疗程要长，一般应为4～6周，有严重栓塞或转移性脓肿者疗程应延长，人工瓣心内膜炎者疗程应更长。<br>
+（2）药物选择：一般首选青霉素，本药毒性较小，属杀菌抗生素，剂量可适当调整，本病的大多数致病菌对其敏感，亦可根据药敏试验选用。<br>
+&nbsp;①致病菌未明：常用青霉素，480万～800万U／日，分3～4次静注，链霉素1g／日，肌肉注射。如用药后三天热不退者，青霉素可加至2000万～4000万U／日，静滴。②革兰阴性杆菌感染：主要根据药敏试验结果用药。常见有大肠杆菌、肺炎杆菌或变形杆菌感染，可选用氨苄青霉素每日6g，分次静注，加用卡那霉素每日1～1．5g，分次肌注，或庆大霉素每日3～5mg／kg，分次肌注或静滴。产碱杆菌选用链霉素或氯霉素2g／日静滴。厌氧杆菌可用林可霉素8g／日，或红霉素和氯霉素联合应用。③革兰阳性球菌感染：多见草绿色链球菌、肠球菌及葡萄球菌感染。均可选用青霉素，剂量为1000万～2000万U／日，分次静滴，链霉素或庆大霉素12万～24万U／日，静滴或肌注。肠球菌感染亦可用氨苄青霉素6～129静滴，或万古霉素2～3g,分次静注和链霉素或庆大霉素合用。④葡萄球菌耐药菌株：许多葡萄菌对青霉素耐药。对此可选用新型青霉素，如苯唑青霉素6～10g／日，或二氧萘青霉素8～12g/日，分次静注。亦可用先锋霉素Ⅴ号或先锋霉素Ⅵ号4～8g／日，分次静滴。⑤对青霉素反应或过敏者：选用万古霉素每日2～3g，分次静注，或先锋霉素、先锋必素、菌必治等治疗。⑥真菌和立克次体感染：前者选用二性霉素B，首剂为0．1mg／kg，逐步增量，最大不超过每日1mg／kg，总量2～3g，或与5－氟胞嘧啶联合应用，每日以50一150mg／kg，缓慢静滴。立克次体感染可用四环素2g／日，静滴，或0．5g&nbsp;口服，每6小时1次，疗程6周。<br>
+2.&nbsp;外科治疗&nbsp;&nbsp;大部分病人经内科保守治疗后多可痊愈。部分病人因严重感染不能控制，需紧急切除病变瓣膜，安置人工瓣膜，清除脓肿和栓塞，修补缺损。对于难治心力衰竭、大赘生物、心肌或瓣膜脓肿、移植之异体瓣膜感染等，可作为手术指征；但目前手术死亡率仍较高，置换人工瓣膜后再次感染的危险性也很大。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">一、辨证治疗：<br>
+（1）热毒炽盛、血瘀阻脉：治法：清热解毒，凉血活血。<br>
+方药：清营汤合五味消毒饮加减。药用犀角（可用水牛角代）、生地、玄参、麦冬、金银花、连翘，黄连、黄芩、公英、丹参、紫花地丁、丹皮、赤芍。<br>
+&nbsp;感染性心内膜炎多为毒力较强的致病菌感染，心内膜细菌赘生物生成，或伴有多处转移性脓肿，出现严重的毒血症状。中医治疗一应清解热毒、控制感染；二应活血凉血、防止赘生物生成。故方用犀角、生地清热凉血；玄参、麦冬清热解毒养阴；金银花、连翘、黄芩、黄连、公英、紫花地丁大剂清热解毒，气营两清，控制感染；丹参、丹皮、赤芍活血凉血，一利于血分热毒散解，二则活血散血之性有助于防止心内膜血小板沉积，赘生物形成，高热、大便秘结者，加大黄清热解毒，泻下热结。即使无有大便秘结，也可加用大黄，使郁结热毒自大便而解；神昏谵语者，送服安宫牛黄丸清热解毒，辛凉开窍；惊厥抽搐者，加钩藤，地龙清热平肝熄风。<br>
+（2）气阴两虚、热毒内结：治法：益气养阴，清热解毒。<br>
+方药：生脉散合济生解毒汤加减。药用人参、五味子、麦冬、金银花、连翘、当归、赤芍、玄参，蒲公英、紫花地丁、红花、黄芩。<br>
+此型多见于素体正虚心内膜感染者。邪毒感人，易伤气耗阴。方中人参补元气、益心气；五味子甘温而酸，固护心阴；麦冬、玄参清热养阴；金银花、连翘、蒲公英、紫花地丁、黄芩清热解毒，控制感染；当归、赤芍、红花活血化瘀，通心脉；诸药合用，对控制感染、预防心衰、防止心内膜赘生物生成，皆可望收到较好效果。皮肤瘀斑、斑点者，加丹参、丹皮、茜草活血化瘀通络；胸闷、气急、喘息者，为心衰之症，可加桑白皮、葶苈子、车前子、益母草合方中生脉散强心活血利水。出现器官栓塞症状者，请参照有关章节进行治疗。<br>
+（3）阴虚火旺：治法：滋阴清热。<br>
+方药：清骨散加减。药用银柴胡、胡黄连，秦艽、鳖甲、地骨皮、青蒿、知母、生甘草。<br>
+方中银柴胡清虚劳骨蒸之热；胡黄连、知母、地骨皮入阴分而退虚火；青蒿、秦艽善透伏热，使邪从外解；鳖甲滋阴潜阳，并能引诸药入阴分以清热；甘草调和诸药。共成滋阴清热之剂。心悸失眠者，加酸枣仁、夜交藤以养心安神；盗汗自汗者，加煅牡蛎、浮小麦、糯稻根，以固表止汗；倦怠懒言者，加黄芪、太子参以益气。<br>
+（4）气阴两虚、血脉瘀滞：治法：益气养阴，活血祛瘀。<br>
+方药：六味地黄汤合补阳还五汤加减。药用黄芪、熟地黄、赤芍、丹皮、川芎、桃仁、红花、山茱萸、山药、茯苓、泽泻、当归、地龙。<br>
+此型多为心内膜炎症已被基本控制，但仍可有潜伏病灶，原有心内膜损害已不再发展，疤痕形成，心内膜上仍可有附壁血栓，其脱落可造成多发性梗塞，因温热邪毒伤气耗阴，血脉不利，故治宜益气养阴，活血化瘀。方中黄芪益气；六味地黄汤滋补心肾之阴；桃仁、红花、赤芍、丹皮、地龙、当归、川芎养血活血，祛瘀通络。诸药相合共奏益气养阴，活血祛瘀之效。心悸怔忡、失眠多梦明显者，可加酸枣仁、柏子仁，珍珠母养心重镇安神；自汗盗汗重者，可加五味子，牡蛎以敛汗。<br>
+二、简易方治疗：<br>
+（1）亚急性细菌性心内膜炎方：忍冬藤、紫花地丁、蒲公英、野菊花、大青叶、板兰根、大蓟、小蓟、连翘、黄芩、甘草，主治亚急性细菌性心内膜炎出现发热及皮肤瘀点者。<br>
+（2）金银花、连翘、紫花地丁、黄连、黄芩，栀子、菖蒲、郁金、丹皮、麦冬、生地、当归、川芎、党参、丹参、桂枝、甘草，同时服用太乙紫金锭1～2g，1日二次，主治感染性心内膜炎。<br>
+（3）三黄汤：黄芩15～20g、黄连10g、黄柏10g。生石膏20～30g，每日一剂，水煎服，对气分热盛或热入营血均适用。<br>
+（4）黄连10g、蒲公英30g、大青叶30g，水煎服，每日一剂或每日二剂，适用于气分热盛症。<br>
+（5）黄芩15g、紫花地丁30g、连翘15g，水煎服，每日一剂或二剂，对气分热盛或热入营血均适用。<br>
+（6）地黄玄参膏：熟地黄、当归、栀子、黄柏、知母、山萸肉、白芍、生地、玄参、肉苁蓉、麦冬、天花粉、天冬、黄芩各20g，五昧子，红花、生甘草各15g。用麻油煎熬后，再用黄丹，铅粉各半收膏，石膏120g搅匀，贴心前区，适用于阴虚内热型患者。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）四季青注射液2～4ml／次，每日三次，适用于气分热盛症。<br>
+（2）穿心莲注射液2～4ml／次，每日三次，具有清热解毒作用。<br>
+（3）鱼腥草注射液2ml／次，每日三次，肌肉注射。<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">有心瓣膜病或心血管畸形及人造瓣膜的患者应增强体质，及时清除感染性，预防上呼吸道感染。进行外科手术（尤其是牙科手术）时，预防性地应用抗生素。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

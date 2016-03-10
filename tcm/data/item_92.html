@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">新生儿坏死性小肠结肠炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=新生儿坏死性小肠结肠炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">necrotizing enterocolitis of newborn
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XINSHENGERHUAISIXINGXIAOCHANGJIECHANGYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:呕吐，便血。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">新生儿疾病（儿科）
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">新生儿坏死性小肠结肠炎是由于多种引起肠粘膜损害，使之缺血、缺氧的因素，导致小肠、结肠发生弥漫性或局部坏死的一种疾病。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">本病的病因：
+(1)肠道缺氧和缺血：本症多发生于下列情况①新生儿窒息：出生时Apgar评分低。肠壁缺氧和缺血，组织受损，容易继发肠道细菌感染。②交换输血后：采用脐静脉插管者易发生循环障碍而致肠壁缺血。③新生儿呼吸窘迫综合征：患儿缺氧，尤当呼吸衰竭时肠系膜和全身血流量减少，更使肠壁缺血。④严重败血症：可能发生休克和DIC，使肠壁缺氧和缺血。
+(2)饮食因素，如高渗乳汁或高渗药物溶液可损伤肠粘膜，食物中的营养物质有利于细菌生长和碳水化合物发酵产生氢气；
+(3)细菌感染，如大肠杆菌、克雷白杆菌、绿脓杆菌、沙门氏菌、梭状芽胞杆菌等过度繁殖，侵入肠粘膜造成损伤，或引起败血症及感染中毒性休克加重肠道损伤。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">早产儿由于免疫功能差，肠道局部免疫能力低下，发病率较高，足月儿也可患病。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病的发生是由于正气内虚，感受热邪所致。热毒内蕴，下移大肠，灼伤阴络，致血不循经，妄动妄行，胃肠功能障碍，血从大便而下。热邪耗伤津血，血少津枯，影响血的运行，血阻脉络而成瘀血。病久气血乏源，而见气虚之证。本病病位在肠，与脾胃有关。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">肠腔充气，肠壁见不同程度积气，坏死性病变可仅限于数厘米范围以内，也可广泛累及空肠及结肠，最常受侵的部位为回肠。肠粘膜呈斑片或大片状坏死，肌肉层也可能有坏死区，严重者整个肠壁层坏死伴肠穿孔。显微镜下肠粘膜呈凝固性坏死，粘膜下层有广泛出血和坏死，并见大量幻影细胞和不同程度的中性粒细胞浸润。肠腔充气，肠壁见不同程度积气，坏死性病变可仅限于数厘米范围以内，也可广泛累及空肠及结肠，最常受侵的部位为回肠。肠粘膜呈斑片或大片状坏死，肌肉层也可能有坏死区，严重者整个肠壁层坏死伴肠穿孔。显微镜下肠粘膜呈凝固性坏死，粘膜下层有广泛出血和坏死，并见大量幻影细胞和不同程度的中性粒细胞浸润。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">本病初以邪实为主，病久气血亏虚，病情轻重悬殊，进展迅速，临证首先应辨别虚实。恨据其不同的临床表现，常将其分为以下两种证候类型。<br>
+&nbsp;&nbsp;&nbsp; 1.热毒蕴结<br>
+&nbsp;&nbsp;&nbsp;&nbsp;主证：腹泻，便血，发热，腹胀，腹痛，呕吐，精神萎靡，面色苍白，舌质红或暗紫，舌苔黄腻。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;分析：本证多由邪热蕴于大肠，热伤血络而致。热蕴于内，故见发热。热伤阴络，血不循经，故见便血。胃肠湿热，运化失常，故见腹泻，腹胀等症。血溢脉外而成瘀血，瘀血阻滞而见腹痛等血瘀之象。<br>
+&nbsp;&nbsp;&nbsp; 2.气血亏虚<br>
+&nbsp;&nbsp;&nbsp;&nbsp;主证：为本病恢复期，上述临床表现明显缓解，见面色huang白，倦怠乏力，腹胀，唇舌色淡，苔薄白，脉细数，指纹沉稳色淡。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;分析：本证多由于病后脾胃功能失调所致。脾胃运化无力，气血来源不足，故见面色huang白，倦怠乏力等症。气为血帅，气虚则血滞，故在气虚的同时，亦可见血瘀之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">新生儿坏死性小肠结肠炎诊断标准:<br>
+1.多见于未成熟儿或低出生体重儿，伴有缺氧、感染、高渗乳汁喂养或换血输血等情况。<br>
+2.多数于生后2周内发病。腹张、呕吐、便血为主要表现。呕吐物含胆汁或咖啡色血性液体。水样腹泻1～2天后出现血便并带粘液。随病情进展腹胀加重，肠鸣音降低或消失，体温不升，四肢厥冷，皮肤出现花纹，阵发性呼吸暂停，甚至休克。<br>
+3.严重者常并发败血症、肠穿孔或DIC。<br>
+4.X线腹部平片：肠腔扩大有气液面，腹壁呈囊样积气。<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">常发生于生后3～10天。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">早产儿或低出生体重儿，常有缺氧、窒息、交换输血、红细胞增多症、肠道感染及败血症等病史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1.腹胀：常为首发症状，伴肠鸣音减弱或消失。<br>
+2.呕吐：呕吐物带胆汁或咖啡样物。无呕吐的患儿常可自胃中抽出含胆汁或带咖啡样胃内容物。<br>
+3.便血：轻者仅为大便潜血阳性，重者则为果酱样或鲜血便。<br>
+4.全身症状：早期可有反应差、嗜睡、体温不稳、呼吸暂停、心动过缓等。大多数病儿病情进展快，很快出现较重的感染中毒症状，精神萎靡、体温不升、青紫或苍白、四肢凉、休克、酸中毒，甚至频繁呼吸暂停、呼吸衰竭、DIC、败血症及肠穿孔而死亡。<br>
+由于对本症的认识日益深入，可发现不少轻型病例，仅表现腹胀、呕吐、厌食，大便次数稍增多，隐血试验阳性，约4—5d后病情好转。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线检查：以小肠扩张为主要表现，伴多个细小液平面，肠曲排列紊乱，肠壁间隔增宽。肠壁间积气，呈多囊状、细条状或环状透亮影。胃壁和结肠壁也可有积气。门静脉积气，自肝门向肝内呈树枝样充气影。肠穿孔时出现气腹。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1.血白细胞计数可正常、升高或减低。
+ 2 血气分析可有代谢性酸中毒。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">便隐血试验阳性。
+粪便和血培养可阳性，以杆菌多见。
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.中毒性肠麻痹：当原发病为腹泻或败血症时，易将坏死性小肠结肠炎误诊为中毒性肠麻痹，但后者无便血，X线片上无肠壁间积气等。<br>
+2.机械性肠梗阻：X线腹平片上液平面的跨度较大，肠壁较薄，无肠壁间隙增宽模糊，无肠壁积气，再结合临床不难区别。<br>
+3.肠扭转：此时机械性肠梗阻症状重，呕吐频繁，腹部X线平片示十二指肠梗阻影像，腹部阴影密度均匀增深，并存在不规则多形气体影，无明显充气扩张的肠曲。<br>
+4.先天性巨结肠：有腹胀，X线片上有小肠、结肠充气影，需与早期坏死性小肠结肠炎鉴别。前者有便秘史，无血便，X线片动态观察无肠壁积气征。<br>
+5.新生儿出血症：生后2～5天出现，可以胃肠道出血为主，需鉴别。本病有生后未给予维生素K注射史，无腹胀，X线片也无肠道充气和肠壁积气，维生素K治疗有效。<br>
+6.自发性胃穿孔：多由于先天性胃壁肌层缺损引起，常见于胃大弯近贲门处。病儿生后3～5天突然进行性腹胀，伴呕吐、呼吸困难和发绀，X线平片腹部仅见气腹，无肠壁积气或肠管胀气。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈：症状、体征消失，吃奶好，大便潜血试验阴性。<br>
+2.好转：症状好转，无呕吐、腹胀，大便潜血试验阴性。<br>
+
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">治疗上以禁食、维持水电解质和酸碱平衡、供给营养及对症为主。近年来由于广泛应用全静脉营养，加强支持疗法，使本病的预后大大改善。<br>
+一、禁食<br>
+1.禁食时间：一旦确诊应立即禁食，轻者5～10天，重者10～15天或更长。腹胀明显时给予胃肠减压。<br>
+2.恢复进食标准：腹胀消失，大便潜血转阴，腹部X线平片正常，一般状况明显好转。如进食后患儿又出现腹胀、呕吐等症状，则需再次禁食。<br>
+3.喂养食品：开始进食时，先试喂5%糖水3～5ml，2～3次后如无呕吐及腹胀，可改喂稀释的乳汁，从每次3～5ml开始，逐渐加量，每次增加1～2ml，以母乳最好，切忌用高渗乳汁。<br>
+二、静脉补充液体及维持营养<br>
+禁食期间必须静脉补液，维持水电解质及酸碱平衡，供给营养。<br>
+1.液量：根据日龄每日总液量为100～150ml/kg。<br>
+2.热卡：病初保证每日209.2kJ/kg(5Okcal/kg)，以后逐渐增加至418.4～502.1kJ/kg(100～120kcal/kg)。其中40～50%由碳水化合物提供，45～50%由脂肪提供，10～15%由氨基酸提供。<br>
+3.碳水化合物：一般用葡萄糖，每天5～18g/kg，周围静脉输注浓度<10%，输注速度为每分钟4～12mg/kg，监测血糖和尿糖，如尿糖>++、血糖>7.28mmol/L，应减少糖的输入；如血糖多次测定>11.2～16.8mmol/L，应加用胰岛素0.25～0.5u/kg。<br>
+4.蛋白质：常用6%小儿氨基酸注射液，开始以每日0.5g/kg，按每日0.25～0.5g/kg递增，最大量为每日2.5g/kg。输注氨基酸的主要目的是在保证热量的前提下，有利于蛋白质的合成，故使用时要求非蛋白质与蛋白质热量之比约10：1，每克氨基酸氮输入时要求热量为628～837kJ。<br>
+5.脂肪：常用10%&nbsp; Intralipid，开始每日0.5g/kg，按每日0.25～0.5g/kg递增，最大量每日3g/kg，输注速度为，胎龄<33周者每小时不超过1.6ml/kg，胎龄>33周者每小时不超过3.0ml/kg。<br>
+6.电解质：一般每日供给钠3～4mmol/kg，钾2～3mmol/kg，氯2～3mmol/kg，与上述营养物质配成1/4～1/5张液体输入。但应监测血电解质浓度，随时调整。钾的浓度不应大于3‰。如有额外丢失(呕吐、腹泻及胃肠减压)则需提高氯化钠的供给，一般配成1/3张液体输入。如存在酸中毒，可每次给5%碳酸氢钠3～5ml/kg，必要时根据血气检测调整。<br>
+7.各种微量元素及维生素：常用安达美(含各种微量元素)每日1ml/kg，水乐维他(含各种水溶性维生素)每日1ml/kg，维他利匹特(含各种脂溶性维生素)每日5ml。<br>
+三、抗感染<br>
+常用氨苄青霉素及丁胺卡那霉素，也可根据培养药敏选择抗生素。<br>
+四、对症治疗<br>
+病情严重伴休克者应及时治疗，扩容除用2：1含钠液外，还可用血浆、白蛋白、10%低分子右旋糖酐。血管活性药物可选用多巴胺、酚妥拉明等，并可给氢化可的松每次10～20mg/kg，每6小时1次。缺氧时应面罩吸氧。<br>
+五、外科治疗指征<br>
+肠穿孔、腹膜炎症状体征明显，腹壁明显红肿或经内科治疗无效者应行手术治疗。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">本病的治疗可按脏腑气血进行辨证，急性期重在祛邪，恢复期重在补虚。由于血瘀为其主要病机，故活血化瘀法应贯穿始终。<br>
+一、辨证选方<br>
+1.热毒蕴结<br>
+治法：清热解毒，活血化瘀。方药：葛根芩连汤加减。葛根、黄柏、红花、三棱、莪术各6g，黄连、丹参各3g，大黄2g。呕吐加姜半夏、旋覆花、代赭石；腹痛加金铃子、延胡索。<br>
+2.气血亏虚<br>
+治法：益气健脾，活血化瘀。方药：四君子汤加减。党参、茯苓各9g，当归、川芎、白术各6g，甘草、红花各3g。血虚明显加鸡血藤、阿胶珠；余热末尽加黄连、葛根。<br>
+二、专方验方<br>
+1.三七白及散：参三七粉、白及粉各3～6g。以温开水调成糊状，口服或鼻饲给药，每服3g，日服2次，便血停止后药量减半，继服3日。<br>
+2.导毒化瘀汤：黄连6g，黄芩1Og，大黄1Og，炒地榆1Og，炒槐花1Og，白头翁1Og，丹皮1Og，炒枳实1Og，甘草3g。水煎，1剂分4次口服或鼻饲。另煎1剂保留灌肠，日2次。<br>
+3.解毒活血汤：紫花地丁16g，凤尾草16g，刘寄奴16g，红藤16g，地榆16g，仙鹤草31g。每日1剂，频服。<br>
+4.清肠解毒汤：川军6g，当归6g，败酱草6g，白芍6g，玄明粉2g，桃仁5g，丹皮5g，红藤5g，地榆5g，枳实1Og。水煎，川军后入，玄明粉冲服。日1剂，分3次服。<br>
+5.马齿苋合剂：马齿苋200g，生大黄1Og，蒲公英30g，槐花30g，桃仁5g，赤芍1Og，白芍1Og，生地榆1Og，槟榔1Og。马齿苋取汁兑入煎液中，生大黄后下，全药水煎。每剂药服2日，频服。<br>
+
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1.八宝五胆药墨：具有凉血止血，清热解毒，熄风定惊之功效。适用于本病属热毒蕴结者。每服0.25g，日服2次。<br>
+2.黄明胶：具有养阴止血的功效。适用于本病便血属阴虚者。每服2g，日服2次。<br>
+3.止血胶：具有滋阴止血的功效。适用于本病便血属气阴两虚者。每服2ml，日服3次。<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">中西医结合可提高治愈率，早期需禁食，但不禁药，腹胀严重者给予胃肠减压，可在服药前将胃内容物抽空，然后喂中药，服药后将胃管夹住4小时。脱水严重者需及时纠正。对感染性休克可采用扩容、纠酸等措施，并有针对性的使用抗生素。中药使用清热解毒和活血化淤两类药物，可抗凝、消淤、改善微循环，还能抑制炎症反应，促进炎症吸收。中西医结合治疗可使临床症状迅速缓解。对病情迅速恶化，有肠梗阻症状或有肠穿空者，应及时手术治疗。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

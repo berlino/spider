@@ -1,0 +1,961 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">流行性出血热
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=流行性出血热"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">epidemic hemorrhagic fever
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">LIUXINGXINGCHUXUERE
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">出血性肾病肾炎，肾综合征出血热，出血热，中医:温疫,疫疹,疫病。国际上将本病及相关疾病称为肾综合征出血热（HFRS）。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">流行性出血热是由汉坦病毒属（Hantavirus HV）一些病毒引起的自然疫源性疾病。在俄罗斯称出血性肾病肾炎或肾综合征出血热；在朝鲜称朝鲜出血热；在日本和中国则称流行性出血热。北欧斯坎的纳维亚半岛各国流行性肾病与远东地区流行性出血热同属一病，仅临床表现轻而已。本病主要病变是全身小血管和毛细血管广泛性损害，临床上以发热、出血、休克和肾脏损害等为特征。临床过程具有明显阶段性，一般不留后遗症。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">本病病原为汉坦病毒，为有膜DNA病毒，呈圆形或卵圆形，外为双层膜，浆内由疏松颗粒状线状结构所组成。平均直径122nm。从形态学特征显示，本病毒可能属布尼亚病毒的一种新属。本病毒对脂溶剂敏感、乙醚、氯仿、丙酮、苯、氟化碳、去氧胆酸盐等均可灭活。一般消毒剂及戊二醛也可灭活。在pH5．O以下，温度60C  1小时，紫外线照射30分钟可使之灭活。感染本病毒后最早出现的抗体IgM。急性期患者血清IgM 95％为阳性，同时IgM  50％阳性。  IgM抗体在体内持续时间一般为半年，而IgG抗体可能长期存在。病后有持久的免疫力。近年来发现本病毒抗原决定簇存在着地区性差异。但我国大多数省市的流行病毒株与M25-1单克隆抗体发生反应，证明存在我国大多数病毒株具有共同抗原决定簇。根据血清学方法系统检测，本病毒至少可分为8个抗原性不同的血清型。我国发现和已成功分离鉴定有汉滩病毒（HTNV）和汉城病毒（SEDV）。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为本病主要是热疫毒邪导致机体营阴损害所致。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">本病发病有十分明显季节性和相对集中性。我国流行季节发病高峰有双峰和单峰两种类型。多数地区为单峰型即秋冬季（10～12月份），少数地区为双峰型即除秋峰外在春夏之间（4～6月）有小峰。野鼠型以秋冬季为多；家鼠型以春夏季为多。除季节性外，一年四季均可散发。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">野鼠型出血热发病有明显地区性。许多疫区沿河流分布，随河流走向扩大的趋势。根据流行病学调查，疫源地分布特征有：①自然疫源性，其特征表现为地势低洼、潮湿、近水、多草，成片荒草地带；②散在性，发病以单发型为主，即使多发型，其疫源灶属一过性特点。小流行后无续发病例；③边缘性，多数在居住区边缘、野外的住房；④局限性，我国野鼠型主要分布于农村，家鼠型包括实验动物型，主要分布于城市。一些疫区野鼠型和家鼠型混合流行。近年有家鼠型逐年增多，野鼠型相对减少的趋势。本病流行甚广，见于欧亚两洲，包括中国、朝鲜、日本、前苏联、芬兰、丹麦、瑞典、挪威、波兰、捷克、斯洛伐克、匈牙利、罗马尼亚、保加利亚、希腊、瑞士、比利时、土耳其等国。中国于30年代初在东北黑龙江流域首先发现本病，现除少数省外，已蔓延至全国各地。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">人群对本病有普遍易感性，隐性感染少见。发病年龄组以青壮年为主，儿童发病者少见。病后2周血清抗体可达高峰，一般可获得稳固而持久的免疫。罕见有第二次感染发病者。本病多见于青壮年，感染后可获得终身免疫。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">（一）传染源
+鼠类是主要传染源。分野鼠型、家鼠型和实验动物型三种。野鼠型出血热主要传染源和宿主动物为黑线姬鼠；家鼠型为褐家鼠；实验动物型主要是大白鼠。城市型主要传染源为褐家鼠。根据流行病学调查，我国已查出70余种动物自然携带病毒抗原。欧洲棕背鼬是欧洲地区主要传染源、黑线姬鼠是亚洲地区主要传染源。近年来已在猫、虎、犬等动物体内检出本病毒或抗原。说明本病的宿主动物分布广泛。一些食肉目动物可自然携带病毒。故在疫区不宜提倡养猫、狗等。
+（二）传播途径
+本病传播途径迄今还未完全阐明，或许并非单一途径。
+1．动物源传播近年来病原学和实验流行病学研究得出，带毒的宿主动物（如鼠）排泄物接触，包括直接经破损皮肤伤口和粘膜，污染尘埃及饮食后经呼吸道和消化道传播，其中尤以鼠排泄物污染尘埃扬起形成气溶胶经呼吸道传播可能性最大，而受到重视。但本病以散发为主，尚难用呼吸道或消化道传播为主得以解释。可能还有其他途径。
+2．虫媒传播  早在40年代日本学者观察到寄生在黑线姬鼠身上的革螨属吸血习性虫媒。将其革螨制成悬液注射人体可出现典型流行性出血热临床症状。近年又从革螨体内分离到本病毒，故认为革螨通过叮咬吸血引起鼠间传播，也是鼠一人之间传播本病的途径之一。但韩国李镐汪等未能证实。有人提出恙螨也是本病传播媒介等。
+近年来观察到本身经胎盘垂直传播方式，作为保持自然疫源地有一定意义。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">近来研究越来越倾向于病毒是流行性出血热发病的直接致病因素。免疫应答及一些炎性介质参与了该病的发病过程。病毒侵入人体后，经一定潜伏期，形成病毒血症，出现发热、全身不适等中毒症状。病毒对脏器宿主细胞吸附和穿入有赖于病毒受体的介导。研究证实出血热病毒对人体脏器感染是泛嗜性的。大多数免疫器官和某些脏器的主质细胞（如肾脏）血管内皮细胞、单核吞噬细胞可能是主要耗器官，引起机体全身微小血管广泛性受损，伴以组织水肿、变性、坏死。在疾病早期病毒作为始动因子导致免疫异常反应（Ⅰ型和Ⅲ型变态反应），表现为体液免疫反应亢进，补体下降，细胞免疫反应受到抑制，抗原抗体循环免疫复合物迅速形成。免疫复合物广泛沉积于小血管内膜和肾小管肾小球基底膜上，引起组织免疫病理损伤，进一步加重微小血管的损伤。通透性和脆性增加，导致大量血浆外渗，血管浓缩，血容量急剧减少，引起低血压、休克。免疫复合物沉积于肾小球肾小管引起肾循环障碍和肾组织缺氧，肾小球滤过率下降，最终导致肾功能低下甚至肾功能衰竭。
+出血是本病常见症候，其发生系多种因素，血管损伤，血小板数质量改变，凝血系统激活，弥漫性血管内凝血（DIC）形成以及失凝性出血和继发性纤溶，均使临床出血加重。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">邪从外入，上侵于肺，流伏于下，毒害肾阴，郁久势张，毒邪外发，正邪相抗，形成胜负转化过程。其全程卫气营血并合交错；由热转闭，由闭转脱。
+1.邪盛正实阶段（发热期）病邪初犯肌表，郁遏卫气具发热头痛、恶寒、身重，苔黄，脉浮数等卫表脉症。卫分证时间不长，时有毒热肆虐，正邪拮抗而面红目赤，口渴烦躁，舌质红。脉洪而数。也有毒邪燔化营血，表里俱热，热盛劫阴，血瘀气滞热血相结，迫血妄行。
+2.邪盛正伤，虚实错杂阶段（低血压，少尿期）此期湿热内炽或引动肝风，风火相煽，出现手足抽搐或热盛炼液成痰，痰火扰心，上蒙清窍，则神昏谵语，若热邪内陷，正不胜邪：，则汗止肢冷脉伏等气阳两脱之险证。热毒伤肾，肾阴亏损，肾水枯竭，症见尿少、尿闭，口渴舌燥、此阶段变证丛生，可素伤营血，深陷厥阴，证见神昏、痉厥等。也可肾气亏损，气不化津，水道阻塞。
+3.邪退正虚阶段（多尿期、恢复期）邪热渐衰，正气未复，肾气不固，水不蓄存，津不上承，膀胱失约。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">流行性出血热基本病变是全身小血管广泛性损害，血管内皮细胞肿胀，管腔膨胀疏松，重者血管壁发生纤维蛋白样坏死。脏器静脉和毛细血管高度扩张和淤血，腔内血栓形成，尤以肾脏、脑垂伴前叶、右心房内膜下、后腹膜、肾上腺皮质等是最常见受损部位,肾小管上皮细胞损害、坏死、脱落.
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">在疾病早期体液免疫反应呈亢进，补体下降，细胞免疫反应受抑制，循环免疫复合物迅速形成，免疫复合物广泛沉积于组织，引起组织免疫病理损伤，导致低血压休克、广泛出血、肾功能衰竭等一系列病理生理变化，即Ⅲ型变态反应参与发病。早期时，补体旁路途径已被激活，促使肥大细胞和受损血小板释出血管活性物质、凝血因子等，引起早期血管扩张和通透性增加等变化，后免疫复合物沉积血管壁，补体则经典途径参与反应，加重了血管损害，导致大量血浆和血液有形成分外渗，有效循环血量迅速下降，引起低血压休克。免疫复合物沉积血小板表面，导致血小板聚集和肢坏，引起血小板数明显下降。免疫复合物又引起血小板功能障碍，加上肾功能损害时尿素氮等潴留，加重血小板功能障碍，在血管损害的基础上，可引起广泛出血。血管壁损害又激活凝血系统，导致弥散性血管内凝血（DIC），DIC形成消耗大量凝血因子和血小板，引起失凝性出血和继发性纤溶，加重出血。肾小球和肾小管基底膜上沉积免疫复合物，前者引起蛋白尿，后者引起肾小管上皮细胞损害和坏死，导致肾功能衰竭。肾脏的缺血，加重肾小管上皮细胞损害、坏死、脱落、阻塞管腔，造成少尿和尿闭。间质内血管通透性增加，引起肾间质水肿而压迫管腔，使尿流阻塞加重。由于肾脏血流量下降，刺激人球动脉的旁器产生肾素，引起血管紧张素Ⅱ和醛固酮增高，引起内分泌性少尿。因尿素氮、酸性代谢产物和钾等不能排出，在血液内大量蓄积，而导致严重尿毒症、酸中毒和高钾血症等。在少尿期阶段，外渗的液体又重新回流入血管内，循环血量相对增多面引起高血容量综合征，故有发生肺水肿、心力衰竭等倾向。随着肾组织的修复，肾小管再吸收功能尚未恢复时出现多尿，大量尿液的排出可引起水和电解质平衡失调。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1．发热期<br>
+（1）邪郁卫分：证见恶寒发热，头痛腰痛，目眶痛，无汗或微汗，口子，颜面潮红，两目微赤，轻微浮肿，舌苔薄白，舌边红，脉浮数。&nbsp;<br>
+（2）热在气分：证见壮热口渴，汗出气粗，面红目赤，小便赤短，大便秘结，舌红苔腻，脉洪大而数。<br>
+（3）热入营血：气营两燔：证见壮热口渴，心烦不宁，皮肤显斑，甚者便血、衄血、神昏谵语或抽搐，舌质红绛，脉弦细数。<br>
+2．低血压期<br>
+（1）热厥：见于低血压早期。证见手足厥冷，脐腹灼热，恶热口渴，烦躁不安，神情恍惚，口唇发绀，或恶呕、便秘，尿黄或汗出而热不退，舌绛苔黄黑而干，脉弦数或沉细而数。<br>
+（2）寒厥：内闭外脱。证见畏寒肢厥，汗出气凉，踡卧不渴，气微神疲，面色苍白，口唇发绀，舌质淡，苔黄，脉微欲绝。<br>
+3．少尿期<br>
+（1）热瘀阻闭：证见尿少尿闭，头昏头痛，全身衰软无力或嗜睡或谵妄，甚则神昏，唇舌干燥色赤而枯萎，苔黄黑厚，脉沉细数。<br>
+（2）肾阴衰竭：证见极度衰竭，精神萎靡，腰酸痛，小便短少或完全无尿，心烦不眠，口干咽燥，舌赤枯萎，脉细数无力。<br>
+（3）湿热犯肺：证见尿少尿闭，全身浮肿，心悸气喘，痰涎壅盛，神志昏蒙，头痛如裹，舌淡苔白，脉滑濡。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1991年卫防字第20号文颁发<br>
+1.疑似病例：疫区及流行季节，有急起发热，全身高度衰竭、无力，有头痛、眼眶痛、腰痛和面、颈、上胸部潮红者，或伴有少尿低血压。<br>
+2.确诊病例<br>
+（1）皮肤粘膜出血征象、末梢血血小板减少，出现异型淋巴细胞，尿蛋白阳性；<br>
+（2）特异性IgM抗体阳性；<br>
+（3）恢复期病人血清中的特异性IgG抗体滴度比急性期有4倍以上升高者；<br>
+（4）从病人血液或尿中检查到出血热病毒抗原；<br>
+（5）从病人血液或尿中分离到出血热病毒，或检测到病毒RNA；<br>
+临床诊断：疑似病例加（1）。<br>
+实验确诊：疑似病例加（2）、（3）、（4）、（5）项之一。<br>
+[附1]临床分型<br>
+1.轻型：体温在39℃以下，中毒症状轻，血压正常，皮肤粘膜有少量出血点，无其他出血现象。肾脏损害轻微，尿蛋白在（+～++），没有明显少尿症状。<br>
+2.中型：体温39℃～40℃，全身中毒症状较重，有明显的球结膜水肿，低血压，血压低于11.97kPa（90mmHg）。皮肤粘膜及其他部位有明显出血现象。肾损害明显，尿蛋白（＋＋＋），有明显少尿。<br>
+3.重型：体温≥40℃，全身中毒症状及渗出现象严重或出现中毒性精神症状者。血压低于9.31kPa（70mmHg），出现休克。出血现象较重，皮肤淤点，腔道出血。肾损害严重，少尿持续在5日以内，尿闭2日以内。<br>
+4.危重型：在重型基础上，出现以下任何严重症候群者：难治性休克；出血现象严重，有重要脏器出血；肾脏损害严重，少尿超过5日以上，尿闭2日以上，尿毒氮＞85.2mmol/L；合并心力衰竭、肺水肿、脑水肿、脑出血、严重继发感染。<br>
+5.非典型型：发热在38℃以下，没有中毒症状，皮肤粘膜散在出血点。尿蛋白（±）。但血、尿特异性抗原抗体检测阳性。<br>
+6.特殊临床类型：少数流行性出血热患者，突出表现为某一脏器损害或其他非出血热的常见症状。常见的有：<br>
+（1）急腹症型：以腹痛为突出表现，常伴有恶心呕吐，腹壁紧张，有压痛、反跳痛。<br>
+（2）急性胃肠炎型：以发热、腹痛、腹泻为主。日大便10余次，为稀水粘液便，常伴有恶心呕吐。<br>
+（3）脑膜脑炎型：高热、头痛、呕吐、颈强，布氏征、克氏征阳性。重者意识障碍，甚至昏迷。脑脊液可见炎性改变。<br>
+（4）眼病型：眼结膜充血、出血，视物模糊，一过性复视、近视及急性青光眼。<br>
+7.小儿及老人流行性出血热的特点：小儿流行性出血热发病急、高热、消化道症状明显；恶心呕吐、肝大，肝功能异常。但全身中毒症状轻，缺乏典型的“三红”征，眼结膜水肿不明显，出血倾向较少。皮肤出血点常见于腋下、颈部。腔道出血罕见。肾脏损害轻，很少出现尿少。多尿期明显。病情轻，预后好。<br>
+老人流行性出血热临床表现不典型，高热者少，具有典型出血点和淤斑者少。病情重，低血压、休克出现早，其发生率高。肾脏损害严重。常见有消化道出血、肺水肿、肺部感染等合并症。病死率较高。<br>
+[附2]临床分期<br>
+1.发热期：起病急，有畏寒、发热，体温在1～2日内高达39℃&nbsp;～40℃，热程一般约3～6日，伴头痛、腰痛和眼眶痛，全身不适、食欲不振，恶心呕吐。重者可有嗜睡、兴奋不安等神经精神症状。发热2～3日后出现三红征。患者颜面、颈部、前胸皮肤充血潮红，面&nbsp;呈酒醉貌。眼睑、球结膜可见水肿。皮肤可见出血点，常见于两腋下皮肤，呈条束状、簇状或抓痕状。重者可有鼻衄、咯血或呕血。束臂试验阳性。<br>
+2.血压休克期：一般在病程第3～7日，体温下降或热退后不久，出现低血压或休克。轻者血压略有波动，脉压差减小；重者血压骤降，脉搏细弱，血压测不到。患者颜面潮红，四肢温暖，汗多，口渴，尿量减少。全身中毒症状和出血现象更加明显，恶心呕吐，烦躁不安、谵妄，皮肤粘膜出血点增多，重者可有鼻衄、消化道出血。球结膜水肿，腰痛加重。<br>
+此期一般持续1～3日。也有此期不明显而迅速进入少尿期者。<br>
+3.少尿期：多出现在病程第5～7日。血压上升，24h尿量少于400ml。少于50ml则为尿闭。尿色深褐、红黄甚至呈血色，部分患者尿内出现膜状物或絮状物。此期由于尿少、尿闭和组织间隙液的回吸收，而产生高血容量综合征；患者血压增高，颈静脉怒张、头痛、烦躁不安。严重者可发生充血性心力衰竭，气促，肺部啰音、肝大。可合并肺水肿、脑水肿。另由于肾功能受损，可导致尿毒症、酸中毒和电解质紊乱；患者头痛、厌食、呃逆、恶心呕吐、腹胀腹泻、嗜睡甚至昏迷抽搐。可出现高钾、低钠、低钙血症。此期出血现象更重，常见皮肤淤斑和腔道出血，尤以消化道出血最多。少尿期一般持续2～5日，个别可达10日以上。<br>
+4.多尿期：大多从病程第10～12日开始，以每日尿量增至2000ml为进入此期，为疾病开始好转的标志。每日尿量超过3000ml者为多尿。在多尿期初，氮质血症、高血容量综合征等继续存在，甚至加重。直至尿量明显增多时，少尿期的症状才随之消失。此期持续1～2周，少数可达数月。此期要注意脱水和电解质的丢失及继发感染。<br>
+5.恢复期：尿量恢复正常，夜尿逐渐消失，体力开始恢复。一般需1～3个月。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">1．流行病学资料发病前两个月内曾有疫区居住和逗留史；有鼠类直接或间接接触史。
+2．临床表现有短程发热、充血和出血、肾脏损害以及5期临床经过。
+3．外周血象有异常淋巴细胞出现、血小板减少，热退尿蛋白骤增及红白细胞及各种管型。
+4．血清学检查特异性IgM或抗原阳性即可确诊。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期8-39d，一般为2周,起病急.
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">整个病程约1-2月。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">（1）发热期：起病急骤，有畏寒、发热、头痛、腰痛、眼眶痛、羞明、视力模糊、口渴、恶心、呕吐、腹痛、腹泻等。
+（2）低血压期：一般于病程第4-6d出现，也可出现于发热期。轻者血压略有波动，持续时间短。重者血压骤然下降，甚至不能测出。休克时（除晚期者外）患者的皮肤一般潮红、温暖、出汗多，口渴，呕吐加重，尿量减少。可有烦躁不安、谵语、摸空等，重者有狂躁、精神错乱等。
+（3）少尿期：多出现于病程第5-7d。此期胃肠道症状、神经系统症状和出血显著。患者有口渴、呃逆、顽固性呕吐、腹痛、谵语、幻觉、抽搐、鼻出血、呕血、便血、咯血、尿血等，皮肤、粘膜出血点增多。血压大多升高，脉压增大。
+（4）多尿期：多出现于病程第10-12d。由于循环血量增加，肾小球滤过功能改善，肾小管上皮细胞逐渐修复，但再吸收功能仍差；加上少尿期在体内潴留的尿素等代谢产物的排泄，构成渗透性利尿的物质基础，故出现多尿和夜尿症。每日可排出3000-6000ml低比重的尿液，甚至可达10 000ml以上。恢复期：一般在病程的第4周开始恢复，尿量逐渐回复正常，夜尿症消失，尿浓缩功能恢复。一般情况好转，除软弱外，无明显自觉症状。实验室检查都恢复正常。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">典型临床过程可分为发热期、低血压期、少尿期、多尿期、恢复期等5期。临床可出现多期重叠（如发热休克少尿三期重叠），预示病情重笃，预后差。<br>
+（一）发热期<br>
+急性起病，大多有畏寒、发热，体温在1～2日达高峰，&nbsp; 39～40C以上，热型多为稽留或弛张热，热程一般为3～6日，重者出现嗜睡、烦躁不安等神经系统症状。病后2～3天，皮肤可见出血点，主要分布于两侧腋下，上臂内侧皮肤呈条索状或抓痕状。束臂试验阳性。重者出现鼻衄、咯血或呕血。与此同时，渗出体征明显，颜面、眼睑浮肿，两眼球结合膜下水肿。<br>
+（二）低血压期<br>
+为容积性休克，多发生于病程3～6天，往往热退休克随之出现；多为暖型。尿量减少，脉搏细速。重者出现谵妄、精神错乱、抽搐或出现心力衰竭。此期并发症有弥漫性血管内凝血（DIC），临床表现休克顽固而不易逆转，并出现内脏出血；其次是呼吸窘迫综合征（RDS），表现为呼吸窘迫，血氧下降，肺部调线阴影形成。个别患者合并垂体休克，预后更差。<br>
+本期一般持续1～3天，可出现在发热期，也可直接跳期到少尿期。<br>
+（三）少尿期<br>
+病程第5～7日休克同时或休克逆转时开始少尿（每日尿量少于400ml）到尿闭（每日尿量少于50m1）、尿蛋白、红白细胞、管型增多，部分患者尿中出现膜状物，血中尿素氮（BUN）升高，患者出现一系列高血容量综合征。尿毒症症状以及酸中毒、高血钾等症。本期常见而凶险并发症有①出血：血管壁及组织损伤，凝血因子消耗性降低，DIC或回收引起高血容量分流性出血。临床表现为鼻衄、胃肠出血、皮下渗血、呼吸道出血、肾及肾周围囊出血、脑出血等。②脑水肿：颅压升高综合征和抽搐。③心衰、肺水肿：血管外渗停止，组织间液回收增加，加上少尿或尿闭，出现高血容量综合征，患者表现心烦意乱，血压升高，脉压增大；颈静脉怒张，肺部听诊啰音出现以及咯血性痰。④合并感染，如肺炎、败血症等而再次发热，预后不良。<br>
+（四）多尿期<br>
+大多从10～12日开始，每日尿量达3000m1，进入多尿期，其它症状随之好转。此期持续时间1～2周，少数达数月至1年。此期主要并发症是水电解质紊乱和继发性感染，个别并发出血。<br>
+（五）恢复期<br>
+尿量恢复正常，夜尿逐渐消失，体力开始恢复，一般需1～3个月。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">酒醉貌、球结膜水肿、出血，软腭、腋下有出血点，肋角有叩击痛。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">肾、肝功能检查:病程第3～4日患者血中尿素氮（BUN）和肌酐（Cr）即可升高，至少尿期末尿素氮达高峰。如24小时尿素氮上升超过4．6mmo1／L以上，肾功能严重受损。约有45％～80％患者肝功能异常，以单项丙氨酸转氨酶（ALT）升高最为常见。血胆红质升高为数亦不少，酷似病毒性肝炎。
+
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1. 血常规：红细胞及血红蛋白随休克期体液外渗、血液浓缩而增高，至少尿期回吸收血容量增多、血液稀释而降低。白细胞和中性粒细胞发热期多数升高，个别呈类白血病样反应。异常淋巴细胞增多，检出率达60％～100％，对诊断有意义。发热后期一般为10％左右，亦有高达50％～80％以上。异常淋巴细胞越高，预后越差。血小板变形肿大、数量减少，亦与病情发展、预后一致。
+2. 血清学检查：流行性出血热特异性免疫球蛋白（IgM）是本病诊断可靠依据，不需双份血清，当临床症状出现即可阳性。发热后期阳性率最高，持续3个月逐渐消失。IgG出现较晚。检查特异性IgM方法很多，常用间接免疫荧光法。近来有采用多聚酶链反应（PCR）直接检测病毒抗原方法。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">尿蛋白是肾脏损害早期标志，随着病情发展，尿中出现各类管型及红白细胞。少尿期出现各种形状的膜状物和包涵体细胞，更能反应本病特征。
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">病毒分离及免疫电镜观察病毒颗粒，技术设备条件要求高，虽可确诊，但不宜常规应用。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．本病早期应与上呼吸道感染、流行性感冒、败血症、伤寒和斑疹伤寒、流脑和钩端螺旋体病相鉴别。<br>
+2．有皮肤出血疹，须与血小板减少性紫癜、血液病相区别。<br>
+3．有蛋白尿应与急性肾盂肾炎、急性肾小球肾炎相区别。<br>
+4．腹痛者应注意与急性阑尾炎、胆囊炎等急腹症相区别。<br>
+5．各种出血（呕血、咯血等）要注意与消化性溃疡、支气管扩张、肺结核等鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准：<br>
+1．临床症状消失，血压基本正常。<br>
+2．血象及肾功能（尿比重、尿常规、尿量及肾功能）均恢复正常。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病为自限性疾病。无并发症时半个月即开始缓解，逐渐恢复。1～3个月即可恢复体力活动，一般不留后遗症，且可获得终身免疫。本病在60年代前病死率可高达20％～40％，近年来由于治疗措施改进等，病死率已下降到1％～5％以下。影响本病预后主要因素有：①病毒型别差异；②有无误诊误治；③有无早期合理治疗等。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">迄今为止，本病尚缺乏特异性治疗，治疗原则有：<br>
+①根据本病病机主要是病毒及免疫反应造成的双重病理损害，早期应以抗病毒，减少抗原及减轻免疫反应为主。<br>
+②根据本病发展的阶段性和前后病程相互关联特点，治疗本病应强调计划性与预见性，要求做好“三早一就”，即早发现、早诊断、早治疗以及就地治疗的原则。把好“休克、出血、肾衰”三关，是降低病死率有效的措施。<br>
+③根据本病自限性疾病的特点，治疗过程中特别要强调采取保护性措施，针对临床各期表现，防治休克、少尿，输注平衡盐为主，保护肾功、血透等治疗尿毒症措施，使患者顺利渡过各期，以达痊愈。<br>
+1．发热期<br>
+①卧床休息：给予高热量、易消化流质饮食，不能口服者静脉补充至每日3000ml液体，注意调整酸碱平衡，维持内环境稳定。<br>
+②高热时给予物理降温，不用解热剂，伴有呕吐或精神症状者可给予1～3日氢化考的松，每日100～200mg静点，以减轻中毒症状，缩、短并减轻以后各期病情。<br>
+③静点病毒唑600mg每日2～3次至热退为止。临床应用疗效肯定，应尽早使用，可降低血管内皮和肾损害，降低病死率；<br>
+④必要时肌注或静滴出血热特异性免疫血清或球蛋白。<br>
+2．休克期&nbsp;<br>
+①发热后期要密切注意血压动向。如有血压下滑应及时预防和纠正。<br>
+②补充血容量，按早期、快速、适量原则进行。常用液体以平衡盐为主（醋酸钠复方溶液等），其溶液渗透压、离子含量及酸碱度与正常细胞外液相似，可起到稳定机体内环境的作用。给液量的原则是迅速恢复维持血压在12．0～13．3kPa基本正常范围。晶胶液比例以3：1为宜，先给平衡盐后给低分子右旋糖酚。用量和速度随休克恢复情况而定。一般而论，24小时3000～5000ml左右。对少数顽固性休克可采用新鲜血浆、白蛋白注射液。对休克后期伴四肢厥冷者可同时推注654-2液，每次20～401ng，每15～30分钟1次，以改善微循环。<br>
+③休克后期并发DIC和RDS处理：DIC确诊为高凝状态应给予肝素，每次5000U静滴，再按试管凝血时间（正常8～30分钟）酌情重复给药。RDS发生主要是改善低氧状态，采用呼吸未正压给氧，同时尽量控制输液量，注意心肺功能的保护。<br>
+3．少尿期主要是加强利尿，控制氮质血症，防治出血及继发感染。输液量以“量出为人，宁少勿多”为原则。每日进量为前一日24小时排出量＋500m1。<br>
+①利尿：首先要注意识别肾前性少尿或是肾性少尿、尽早防止少尿或无尿发生。静推速尿每次20～200mg不等。若血容量不足也可酌情使用20％甘露醇150ml静点。<br>
+②导泻：对利尿效果不好，可口服甘露醇粉30g和50％硫酸镁40ml或口服或用1剂大承气汤导泻。<br>
+③透析疗法：有助于排除血中尿素氮和过多水分，纠正电解质和酸碱失衡，缓解尿毒症，为肾脏修复和再生争取时间。无腹腔出血和感染等情况可选用腹膜透析法；有条件，血液透析作用快、效果好，迅速改善尿毒症，为降低病死率收到良好效果。<br>
+④出血的防治：因血管损伤及凝血因子消耗引起的出血，以输新鲜血液疗效最好，并发DIC高凝状态或纤溶，并作试管凝血时间试验，监视凝血状态。若诊断明确，采用肝素抗凝或静注6-氨基己酸，每次4～6g，6小时1次抗纤溶。若因高血容量引起的分流出血，应重在预防，及时处理高血容量的发生。<br>
+⑤高血容量合并心衰和肺水肿：严格控制液体摄入量，采用高效利尿剂利尿，并给予西地兰或毒毛旋花子贰静脉注射。上述处理效果不明显，必要时采用放血200～400m1，以缓解心肺负担。血压高于20kPa以上，需采用利血平、导泻或透析疗法。<br>
+⑥继发性感染：要及早发现，及时处理，以防止第2次休克或加重肾衰。抗生素选用上，要注意选择对肾脏无损害的，如青霉素类，大环内酯类与喹诺酮类为宜。<br>
+⑦为减少蛋白分解，减轻氮质血症，肌注苯丙酸诺龙30mg，隔日一次。并注意补充维生素、钙、镁等电解质。<br>
+4．多尿期<br>
+目前所用的中西药对缩短多尿期过程疗效均不理想。本期治疗原则是调整水电解质平衡与防治继发感染。另外此期可发生多尿性肾衰，所以临床要防止蛋白饮食恢复过快，并注意肾功能监测。<br>
+5．恢复期<br>
+病至多尿期即提示进入恢复期。此时重要脏器如心、肝、肾等病理损害尚未完全恢复，故适当补充营养，避免受凉，注意休息，其体力恢复时间随病情程度不同而异。一般1～2个月可复常。但近年研究提示，肾功能完全恢复需半年以上，个别严重者须1年以上。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">出血热以热疫毒邪为主因，故治疗原则为清热解毒，顾护津液。本病病急证验，病初切忌辛温助阳发汗，也不可固执一法而终，应中西医结合运用多途径给药，以防变生险证。<br>
+1．发热期<br>
+（1）邪郁卫分：治法：辛凉解表，清热解邪。常用银翘散加减。银花、连翘、板蓝根解毒清热；薄荷透表；桔梗甘草轻宣肺气；鲜芦根生津止渴；黄芩清上焦之火；丹皮、丹参凉血化瘀；白茅根利尿祛湿，凉血清热。恶寒甚，卫表症状重加荆芥穗、豆豉、牛蒡子；渴甚加天花粉；壮热面赤如醉，脉洪为卫气同病，可加石膏；腰痛者加杜仲、知母；面红赤，胸腋瘀点外露，为“卫营”并见，加生地、赤芍、白薇等。<br>
+（2）热在气分：治法：辛凉清气，滋阴解毒。常见白虎汤加减。石膏清泻里热；知母清热生津；加双花连翘、板蓝根清热解毒；加麦冬、元参生津滋阴；竹叶清热利尿；大黄通腑泄热。<br>
+（3）热入营血：治法：清热解毒，清营凉血。常用清瘟败毒饮加减。方中石膏、知母清阳明气分大热；犀角（或水牛角代）、生地、丹皮、玄参清营凉血解毒；黄芩、栀子、银花清热泄火解毒：竹叶清心除烦；大黄通腑泄热；甘草调和诸药。出血重加三七粉、大小蓟；神昏谵语加安宫牛黄丸；痉厥抽搐加钩藤、僵蚕、羚羊粉等。&nbsp;<br>
+2．低血压期<br>
+（1）热厥：治法：清气凉营。益气生津，扶正祛邪。常用生脉散合清营汤加减。方中犀角、生地清营凉血；银花、连翘、黄连清热解毒；元参、麦冬滋阴生津；合用人参益气养阴。兼口渴、舌绛苔黄躁加用石膏、板蓝根；昏谵显著加安宫牛黄丸一丸化服；顺逆者加柿蒂10个，枳实6g;出血明显者加三七粉6g冲服。<br>
+（2）寒厥：治法：回阳救逆。常用方生脉散合参附汤。方中人参、附子回阳益气；麦冬、五味子生津止渴敛汗。汗出不止者加煅牡蛎、煅龙骨；正气衰者加用黄芪等；昏谵者加至宝丹化服。<br>
+3．少尿期<br>
+（1）热瘀阻闭：治法：凉血化瘀，通下利尿。常用方药有犀地猪苓汤加减。犀角、生地清热凉血；赤芍、丹皮凉血散血；猪苓、泽泻、滑石清热利湿，大黄清热降火等。<br>
+（2）肾阴衰竭：治法：补益气阴，滋肾利水，常用加味知柏地黄汤。配用导泄药，番泻叶15～30g，2次分服。此期可用中药透析一号：大黄30g、丹参30g、黄芪30g、槐花20g、红花20g、板蓝根12g，制成1000m1，结肠透析，每日6～8次。<br>
+（3）湿热犯肺：治法：泻肺利水，化瘀导滞。常用葶苈大枣泻汤合承气汤加减。痰多加竹沥、天竺黄、栝蒌。瘀滞严重加丹皮、桃仁、赤芍。<br>
+少尿期其它配用方药:<br>
+（1）导泻逐水疗法：①桔梗白散：桔梗、贝母、巴豆霜各400mg，冲水口服。②大黄、芒硝导泻：大黄30～60g、芒硝15g，泡水口服。③番泻叶导泻：番泻叶15g泡开水500m1，每小时1次，连服2～3次。或番泻叶15～30g煎至100m1，日分2次。<br>
+（2）中药结肠透析疗法。<br>
+（3）肾区热敷法：适用于肾失化气行水，膀胱无尿尿闭者。方药组成：丹参30g、桃仁15g、佩兰15g、赤芍15g、木香12g、细辛5g、忍冬藤15g、车前子20g、桂枝15g。每日两剂，加水适量煎30分钟，装入布质药袋，置于双肾区，持续湿热敷，冷则再行蒸热使用。<br>
+4.&nbsp;多尿期：肾气不固。证见尿频量多，入夜尤甚，、倦怠无力，头昏耳呜，口渴多饮，舌红苔少而干，脉虚大。严重者可因正气过损，再度虚衰。治以补肾固摄，育阴生津。常用右归丸加减。津液耗损明显，加用生地、玄参、麦冬育阴生津。<br>
+5.&nbsp;恢复期：气血两虚。证见头晕，腰酸、困倦无力，苔少舌质淡，脉虚软。治以调理脾胃，益气养血。常用八珍汤加菟丝子、制首乌、鸡血藤、陈皮、谷芽等。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">少尿期：主穴。中极、膀胱。阴陵泉。配穴：尺泽、曲泉、中强刺激，不留针或留针10～15分钟，每日1次。还可用耳针：肾上腺、肾、膀肮等。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">少尿的治疗：患者出现少尿现象时必须严格区别肾前性（低血容量性）抑或肾性少尿，确定后者时可按急性肾功能衰竭处理。限制入液量，可根据病人排出量决定摄入量；即前一日尿量、大便与呕吐量加400ml为宜，并以口服为主。利尿方面可用高效利尿药物呋塞米（速尿）、依他尼酸钠（利尿酸钠）等，呋塞米用量为40-&nbsp;&nbsp;&nbsp; 200mg静注，可用至每日1 000-2 000mg。依他尼酸钠剂量为每次25mg，肌注或静注。应用利尿剂无效者，说明肾脏发展到器质性损害阶段，常用导泻疗法，20％甘露醇250ml一次口服。效果不显时，可加用50％硫酸镁40ml同服，每日一次。中药可用大黄30g，芒硝15g，将前者泡水后冲服后者。应用导泻疗法无效者，可采用血液透析或腹膜透析。<br>
+出血的治疗：输新鲜血是治疗出血的基本疗法。血小板明显减少的病人，可输血小板。有鼻出血者可针刺合谷、迎香穴。消化道出血，可口服云南白药、三七粉、白及粉等。<br>
+
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．自动免疫&nbsp;&nbsp;本病为灶型自然疫源性疾病，免疫应答稳定，隐性感染率低，最适用于疫苗注射。目前国内灭活疫苗工作临床前期试验，抗体反应较好，预计可很快投入使用。<br>
+2.易感人群预防对开荒、野营等进入疫区的人群，应从饮食、住宿、个人皮肤叮咬等方面，采取防鼠、防蜱措施。<br>
+3．疫区的防疫&nbsp;&nbsp;加强疫区防病知识教育，减少感染机会，并做好“三早一就”，预防为主；灭鼠工作要求疫区定期、全区同步进行，采取以毒饵杀死为主综合措施，使疫区鼠率保持在24小时1％架次以下。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">本病从30年代初在黑龙江下游一带中俄交界地区发现，不少学者提出为一种过滤性病毒所致。直至1978年韩国李镐汪等采用间接免疫荧光法以及从疫区黑线姬鼠肺组织分离一种出血热病毒，现称汉但病毒（Hantoan&nbsp; Virus）。&nbsp; 1981年我国宋干等也分离到此病毒。这一病原学突破，促进了本病一系列研究进展。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

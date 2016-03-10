@@ -1,0 +1,921 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">慢性淋巴细胞白血病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=慢性淋巴细胞白血病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">chronic lymphocytic leukemia
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">MANXINGLINBAXIBAOBAIXUEBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">慢淋，中医：瘰疠，积，癥，虚劳，
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">造血器及淋巴系肿瘤，血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">慢性淋巴细胞白血病简称慢淋，是一种淋巴细胞恶性增殖性疾病，血液及骨髓内成熟淋巴细胞异常增多，增多的淋巴细胞免疫功能不全，患者常有免疫异常。淋巴组织被浸润，引起全身淋巴结及肝、脾肿大。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">慢淋的病因未明，但与放射线、化学物质关系不大，亦未证实与病毒有关。目前发现遗传因素可能具有一定作用，因为慢淋有明显的家族史。慢淋近亲中的发病率约为一般人群的3倍。同一家族内偶有数例慢淋发生，但确切的遗传方式仍未明。
+1．染色体异常  慢淋患者的染色体异常相当多见，包括数量和结构的异常。最常见的数目异常为增加一个12号染色（“＋12”），其次可见超数的3号、16号或18号染色体。常见的结构异常为14号染色体长臂的增加，12和11号染色体长臂相互易位、6号染色体短臂或长臂的缺失、11号染色体长臂的缺失、17号长臂的等臂染色体改变等。在慢淋中常可见到的是非随机性染色体易位t（14；19），该易位涉及一个新的原癌基因bcl-3，其可能的作用机理是刺激细胞增生，但并不使细胞转化。
+2．免疫学异常  慢淋为异常克隆起源。其淋巴细胞存活时间虽长，但免疫功能有缺陷。 主要是慢淋的淋巴细胞往往缺乏正常的转化和丝状分裂功能，对抗原和植物血凝素的刺激反应减低或缺乏，正常淋巴细胞接受植物血凝素刺激后，70％～90％在72h内转化，而慢淋需 7天时间。用各种菌苗刺激患者的淋巴细胞，常不能形成免疫抗体。引起慢淋淋巴细胞不能成熟为浆细胞和不能合成Ig的主要缺陷之因，是正常辅助性T细胞缺乏而抑制性T细胞相对增加，两者共同影响慢淋中B细胞分化和Ig合成，使慢淋患者经常发生严重感染。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">1．七情内伤《丹溪心法》曰：“为人忧郁愁遏，时曰时累……遂成隐核”。由于忧思郁怒，情志不畅，肝气郁结，气滞伤脾，脾失健运所致。
+2．饮食失调  饮食不节，或嗜酒过度，损伤脾胃，致使运化失常，正如《卫生宝鉴》中说：“凡人脾胃虚弱，饮食不节，或生冷过度，不能克化，致成积聚结块”。
+3．劳倦过度  平素体虚或久病之后，或劳倦过度，致使气阴不足，阴血耗损，精血亏虚，外来毒邪乘虚而入，与邪毒搏结而成。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">90％慢淋的发病年龄＞50岁。男性多见。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">慢淋在中国少见，占全部白血病的4％，占慢性白血病的10％。而在白人中常见，可占全部白血病的35％。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">肝喜条达而恶抑郁，情志不畅，肝气郁结，气机不利，气聚成形而成症积；脾主运化，输布水谷精微，为气血生化之源，后天之本。饮食失调，脾运失司，痰湿内生，痰滞挟气，聚而不散，痰气互阻，流窜经络，脉络壅塞，痰凝气结血瘀，日积月累，终成瘰疠、积块。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">慢淋的主要病理变化是淋巴结肿大，正常结构消失，代之以小淋巴细胞的大量汇集，肝脾肿大虽不严重，其结构亦为大量小淋巴细胞浸润取代。骨髓早期为斑片状，在正常骨髓中有淋巴细胞结节穿插其间。以后骨髓几乎均为淋巴细胞所取代，粒红及巨核细胞等均受到抑制，即形成“骨髓塞实”综合征。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）气滞血瘀：<br>
+证候：腔腹胀满、肋下有块，软而不坚，固定不移，苔薄脉弦。<br>
+证候分析：肝气郁结，脉络不和，积证初起，积犹未久，块物软而不坚，气滞则血行不畅，块物固定，胀痛一处，并无攻窜，弦为肝脉。<br>
+（2）正虚瘀结：<br>
+证候：积块坚硬，疼痛不移，神疲倦怠，不思饮食，消瘦脱形，面色萎黄，自汗盗汗，肌肤甲错，头晕心慌，唇甲少华，舌淡或暗，脉弦细或沉细。<br>
+证候分析：病势已久，正气已衰：脉络瘀阻故积块坚硬，疼痛加剧，脾胃运化无权，气血来源不足，故形体消瘦、神疲倦怠，不思饮食，面色萎黄，唇甲少华等。气虚卫外不固，阴液外泄、见自汗阴虚则盗汗。血虚肌肤失其营养则肌肤甲错。舌淡、暗，脉细为气血两亏挟瘀之象。<br>
+（3）热毒炽盛：<br>
+证候：壮热持续，汗出不解，烦躁不安，甚则谵语神昏，口燥而不甚渴，肋下肿块继增，&nbsp;硬痛不移，倦怠乏力，形体消瘦，面色晦暗，骨节剧痛，或衄血不止，舌红无苔，脉细数。<br>
+证候分析：邪热壅盛，汗出不解，内传营血，营阴受伤，心神被扰，以致烦躁不安，甚则热入心包，神志被蒙，故神昏谵语。邪热内的营阴，阴液已伤，虽口燥而不甚渴。若迫血妄行则衄血不止。病久不愈，气血两伤，气虚血瘀，结块增甚则肿大硬痛不移，骨节剧痛。气血不能上荣故面色晦暗，骨筋形体失其气血荣养则倦怠无力，形体消瘦。舌红无苔，脉细数为热邪深入营分，伤阴劫津之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1．慢性期<br>
+（1）临床表现：无症状或有低热、乏力、多汗、体重减轻等症状，有肝脾肿大或不肿大。<br>
+（2）血象：白细胞数增高，主要为中性中、晚幼和杆状核粒细胞，原始细胞（Ⅰ型十Ⅱ型）≤5％～10％，嗜酸、嗜碱粒细胞增多，可有少量有核细胞。<br>
+（3）骨髓象：增生明显至极度活跃，以粒系增生为主，中、晚幼粒和杆状核粒细胞增多，&nbsp;原始细胞（Ⅰ型十Ⅱ型）≤10％。<br>
+（4）染色体：有ph1染色体。<br>
+（5）CFU一GM&nbsp;培养：集落和集簇较正常明显增加。<br>
+2．加速期（具有下列两项者，可考虑为本期）<br>
+（1）不明原因的发热、贫血、出血加重，和（或）骨骼疼痛。<br>
+（2）脾脏进行性肿大。<br>
+（3）不是因为药物引起的血小板进行性降低或增高。<br>
+（4）原始细胞（Ⅰ型十Ⅱ型）在血中及（或）骨髓中＞10％。<br>
+（5）外周血嗜碱粒细胞＞20％。<br>
+（6）骨髓中有显著的胶原纤维增生。<br>
+（7）出现ph1以外的其他染色体异常。<br>
+（8）对传统的抗慢粒药物治疗无效。<br>
+（9）&nbsp; CFU-GM&nbsp;增殖和分化缺陷，集簇增多，集簇和集落的比值增高。<br>
+3．急变期（具有下列之一者，可诊断为本期）<br>
+（1）原始粒细胞（Ⅰ型十Ⅱ型）（或原淋十幼淋、或原单十幼单）在外周血或骨髓中≥20％。<br>
+（2）外周血中原始粒十早幼粒细胞≥30％。<br>
+（3）骨髓中原始粒十早幼粒细胞≥50％。<br>
+（4）有髓外原始细胞浸润。<br>
+此期临床症状、体征比加速期更恶化。&nbsp; CFU-GM&nbsp;培养呈小簇生长或不生长。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">本病临床诊断主要依靠病史、症状和体征、血象及骨髓象，慢粒的诊断即可成立。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">慢粒起病缓慢，早期多无症状，常因体检或诊治其他疾病检查血象而发现。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">存在引起该病的物理、化学、遗传等多方面的因素。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">主要表现为周身乏力、消瘦、多汗、食欲不振，腹胀、低热、部分病例有不同程度出血，如鼻衄、齿衄、 便血、尿血、阴道出血、眼底出血、皮下出血，甚至颅内出血，偶有脾出血和脾破裂急诊而发现本病者。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">脾肿大显著，一般呈中度或重度肿大，严重者可超过脐部入盆腔。急剧增大多提示急变的发生。脾栓塞或脾周围炎时，可有剧烈的腹痛，压痛和放射性左肩痛，脾区可听到摩擦音。<br>
+肝肿大一般较轻，超过肋下5cm者少见。淋巴结肿大、关节痛晚期可见。75％病例有胸骨压痛，在胸骨下部1／2或2／3处压痛。此外胫骨和肋骨之压痛也较常见。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">脾肿大显著、肝肿大一般较轻，淋巴结肿大，75％病例有胸骨压痛。此外胫骨和肋骨之压痛也较常见。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">（一）骨髓象
+骨髓增生明显活跃，淋巴细胞占优势，成熟的小淋巴细胞约占50％～90％，偶见原幼淋＜1％～2％，涂抹细胞和蓝状细胞多见，合并溶贫时，红系增生球形红细胞多见。
+（二）生化和组化检查
+淋巴细胞PAS反应强阳性，积分较正常人显著为高；中性粒细胞碱性磷酸酶活性正常或稍高；约1／3患者Coombs试验阳性（此时常合并自身溶血）。半数以上病例伴低丙种球蛋白血症（IgA、IgM 减少为主）。部分患者尿酸增高，  PHA 转化率明显降低，5％患者可有异常单株副蛋白（单株IgG或IgM）。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血常规中白细胞增多、一般在30～200×109／L，分类中成熟小淋巴细胞占80％～90％，异型淋巴细胞和幼淋巴细胞少见。血片中涂抹细胞和蓝状细胞明显增多。溶血时，网织红细胞升高，可见多染性细胞及幼红细胞。晚期见血红蛋白减低，血小板减少。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">在诊断本病的同时，常需与下列疾病相鉴别。<br>
+1．原发性骨髓纤维化贫血呈轻、中度并与脾肿大不一，白细胞减少或增多，但罕见有超过50×１０9／L者，骨髓干抽，活检示造血组织为纤维组织取代。无ph1阳性细胞。<br>
+2．原发性血小板增多症&nbsp;&nbsp;临床上以出血为主，白细胞＜50×１０9／L，血小板显著增高，可见异型血小板，骨髓巨核系增生为主，ph1染色体阴性。<br>
+3．真性红细胞增多症&nbsp;&nbsp;患者皮肤粘膜呈暗红色、口唇紫暗、红细胞增高显著，中性粒细胞碱性磷酸酶增强，ph1染色体一般均阴性，粒系无核浆发育不平衡现象。<br>
+4．慢性淋巴细胞白血病&nbsp;&nbsp;多见于老年人，脾肿大程度不如慢粒，白细胞通常在100×１０9／L，血象及骨髓分类以成熟淋巴细胞为主，偶有原淋、幼淋细胞。<br>
+5．类白血病反应&nbsp;&nbsp;多有原发病灶，临床上一般无贫血、出血及淋巴结、肝脾肿大，血象中虽见少数幼稚细胞，但以成熟细胞为主，细胞胞浆中有中毒性颗粒及空泡。骨髓增生明显活跃，伴有核左移现象，无明显的白血病变化，中性粒细胞碱性磷酸酶明显增高，ph1染色体阴性。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1．完全缓解<br>
+（1）白细胞计数＜10×109／L；分类正常，无幼稚粒细胞（原始、早、中、晚幼粒细胞）。<br>
+（2）血小板计数正常或不超过450×109／L。<br>
+（3）此病的临床症状、体征消失（如脾大消失）。<br>
+2．部分缓解&nbsp;<br>
+（1）白细胞计数降至治疗前的50％以上，及至少＜20×109／L。<br>
+（2）血白细胞计数正常，但仍存在幼稚细胞及脾大。<br>
+3．无效&nbsp;&nbsp;不能达部分缓解者。<br>
+4．细胞遗传学反应<br>
+（1）无细胞遗传学反应：&nbsp; ph染色体持续在所有分裂相中存在。<br>
+（2）微小细胞遗传学反应：&nbsp; ph染色体被抑制至占分裂相的35％～95％。<br>
+（3）部分细胞遗传学反应：&nbsp; ph染色体被抑制至分裂相的5％～34％。<br>
+（4）完全细胞遗传学反应：&nbsp; ph染色体细胞消失。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">慢粒由于个体差异、加之治疗方法不同，使就诊后生存期长短悬殊很大，一般21～45.5个月，长期存活7～20年以上病例仅为少数。多因急变而病情加剧恶化，约75％～85％的慢粒在1～5年内由稳定期转入急变期，慢粒一旦急变，预后不良，半数以上病例在3～6个月内死亡，仅极个别病例能超过1年，因此急变是慢粒的终末表现。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．慢性期治疗<br>
+（1）化学药物治疗<br>
+①单种药物：马利兰仍是目前治疗慢粒的首选药物，常用量4～8mg／日，最大不超过12mg，分2～3次服。待白细胞下降后逐渐减量，降至（10～15）×１０9／L时停用，缓解后以一定量维持白细胞在10×１０9／L左右。异靛甲，先从小剂量每日50mg开始，以后逐渐增量为每日75～150mg，分2～3次饭后口服。靛玉红每日剂量150～200mg，分3～4次口服。羟基脲对白细胞非常高的病例见效快，每天1.5～3.0g，1次或分次口服。维持量每天约0.5～ 1.0g。二溴甘露醇为马利兰无效时的二线药物，每日0.25～0.5g，分次服用，维持量0.25g／日～0.25g／每周，1，2:5，6-二去水卫矛醇每日50mg溶于20ml生理盐水中静推，用7天间歇7天为1疗程，视病情重复疗程，直到白细胞降至10×１０9／L左右。6-疏基嘌呤或6-TG，两药作用相似，剂量每日2.5～3mg／kg，白细胞下降后改为维持量。嘧啶苯芥适用于马利兰复发或无效病例，每日5～10mg，分次口服，5天一疗程，间歇7天，2～4疗程后改用维持量，每天5mg，每月连服5天。三尖杉酯碱，常用量每日4～8mg，静注，待白细胞下降至20×１０9／ L时剂量减半，下降到10×１０9／L以内即可停药。<br>
+②联合化疗:HT方案：羟基脲0.5～1.0g，2次／日或3次／日，连用7天；6-MP或6-TG 50mg，2次／日或3次／日，连用7天。休息5～7天重复应用，剂量视血象酌情加减直至完全缓解。COAP方案：环磷酰胺400mg，静注第1、4天；长春新碱1～2mg，静注第1天；&nbsp;阿糖胞苷50mg，静注每12小时一次，连用5～7天或9天；强的松20mg，1次／日，连用5天。停药7～10天后根据病情可重复应用直到完全缓解。HA方案：三尖杉酯碱4mg／日，静注连用3天，阿糖胞苷100～200mg／日，连用7天，静注，休息5～7天重复应用，共2～3疗程，以后三尖杉酯碱1mg／日，静注连用20天。上述方案缓解后改用下列三方案，每半年轮换1次，第一年每月1次，第2年2月1次，第3年3月1次。DA方案：环磷酰胺0.2～0.6g／日，静注，1次／日。连用3天，阿糖胞苷100～200mg／m2，静注，5～7天。HA方案：三尖杉酯碱2～4mg，静注，1次／日连用3天；阿糖胞苷100～200mg／m2，静注，5～7天。DA方案：柔红霉素40～60mg，静注连用3天；阿糖胞苷100～200mg／m2，静注，5～7天。<br>
+（2）干扰素（IFN）：是天然的细胞因子，有抗病毒、抑制细胞增殖、免疫调节及诱导分化作用。虽然临床可获得较好疗效，但由于价格昂贵，难以普遍推广。目前临床多采用肌肉注射或皮下注射，剂量为IFN-α-2b，2×１０6U／m2～5×１０6U／m2，也有用2×107U／m2。近年有人提出IFNγ与IFNα。合用，或化疗与IFN合用可以提高疗效。<br>
+2．加速期治疗&nbsp;&nbsp;多选用羟基脲、6-TG及联合化疗，参照慢性期用法。<br>
+3.急变期治疗&nbsp;&nbsp;慢性急变的防治仍无理想方法，一旦急变，治疗原则按急性白血病联合化疗方法进行，具体方案根据急变后的细胞类型确定。<br>
+（二）非药物治疗<br>
+1.&nbsp;放射治疗&nbsp;&nbsp;对病情进行性进展，白细胞数急剧增高，脾及淋巴结显著肿大的病例可进行脾区照射，5rad*开始，随后增至100～150rad，每日或隔日一次，当白细胞下降至20×109／L时停止照射，一般总剂量在1000～5000rad之间。<br>
+2．脾切除&nbsp;&nbsp;有下列情况者可考虑脾切除：①巨脾，压迫症状显著；②继发性脾功能亢进；&nbsp;③药物控制不理想或发生顽固性血小板减少者；④脾破裂、出血或栓塞者；⑤能耐受手术治疗者。<br>
+3．白细胞清除术&nbsp;&nbsp;适用于白细胞过高者，是防止栓塞的应急办法，在短时间内可使过高的白细胞总数下降。<br>
+4．造血干细胞移植&nbsp;&nbsp;同种异基因骨髓移植，是目前唯一能根除白血病细胞株，达到临床治愈的方法。选择慢性期患者，经预处理后，再接受HLA相合同胞的骨髓移植，使临床部分病例长期无病存活。<br>
+自体外周血干细胞移植和自体骨髓移植，一般在慢粒慢性期经治疗缓解后，用血细胞分离器自患者本身外周血中分离出白细胞或1次收集足够量的自身骨髓，深低温液氮保存，日后发生急变时经大量化疗和放疗预处理后，再将贮存的自身细胞或骨髓复温后回输给患者，使患者再回到慢粒慢性期。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）痰瘀隐伏：<br>
+治法：健脾益气。解毒疏壅。<br>
+方药：四君子汤加味。方中党参、白术、茯苓健脾补气，佐以陈皮化痰，配合白花蛇舌草、龙葵、半枝莲、山慈菇、黄药子、赤芍、莪术清热解毒、活血化瘀。生甘草调和诸药。<br>
+（2）气郁痰结：<br>
+治法：疏肝解郁，化痰散结。<br>
+方药：柴胡疏肝散合消瘰丸加减。方中柴胡、香附、枳壳疏肝解郁，肝为刚脏，喜柔恶刚，白芍养血柔肝，配合消瘰丸中贝母、牡蛎、夏枯草、昆布、胆南星、黄药子化痰软坚散结。<br>
+（3）痰瘀互结：<br>
+治法：益气养血，化痰祛瘀。<br>
+方药：和荣散坚丸合失笑散、消瘰丸加减。和荣散坚丸重在益气养血、如党参、白术、茯苓、当归、赤芍；失笑散活血化瘀散结，消瘰丸软坚化痰散结。<br>
+（4）痰瘀湿热：<br>
+治法：清利湿热，化痰软坚。<br>
+方药：茵陈四苓散加减。方中白术、茯苓、泽泻、猪苓健脾利湿，茵陈清利湿热，配以三棱、莪术、贝母、昆布、夏枯草、黄药子、陈皮活血化瘀，软坚化痰散结，肌肤疱疹时加用龙胆草、黄芩、栀子清利肝胆，佐以木通、车前子使湿热之邪从小便而出。<br>
+慢淋临床主要见证为淋巴结和肝脾肿大，且多为痰瘀所致。痰有寒热之分，瘀有虚实之别，因此临证时应根据患者的证候进行综合分析，以明辨是热是寒、是虚是实。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）小金丹：每次1粒，一日2次，早、晚以小半杯黄酒送服。<br>
+（2）西黄丸：每次3g，一日2次，以开水或黄酒温服。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">本病在内虚情况下由致癌因素作为变化的条件，通过“内虚”导致发病，内外合邪，引起人体气滞血瘀、痰凝毒结形成癌瘤，由于病邪日久，亦耗精伤血，损害元气，故本病即可因虚致病，又可因病致虚，形成恶性循环，因此治疗上要依据邪正的盛衰，相互的消长，把“扶正”和“祛邪”辨证地结合起来进行治疗。在O期患者主张以中药治疗，晚期患者可用化疗以治疗本病，中药以扶正祛邪为佐。合并感染、出血、贫血时，可根据病情选用足量的抗生素、止血药物和输注新鲜全血，同时加强支持疗法。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">加强体育锻炼，增强体质，视个人情况选择合适的锻炼方式，如气功、太极拳、五禽戏、&nbsp;散步、慢跑等，从而提高抗病能力。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

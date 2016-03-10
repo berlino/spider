@@ -1,0 +1,921 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">白细胞减少症和粒细胞缺乏症
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=白细胞减少症和粒细胞缺乏症"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">aleukemia of agranulocytosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">BAIXIBAOJIANSHAOZHENGHELIXIBAOQUEFAZHENG
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:气血虚,温病。别名：白细胞缺乏症
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">正常人的外周血中的白细胞数量虽与年龄的关系有一定波动，但总的来看一般都是在4．0×109／L～10．0×109/L之间。如果低于4．0×109／L称为白细胞减少症。而白细胞中主要是中性粒细胞及淋巴细胞，尤以中性粒细胞占主要成分，因此白细胞减少，常是中性粒细胞减少。当粒细胞绝对值低于2．0×109／L时，称为粒细胞减少症。若粒细胞继续下降，当低于0．5×109/L时，则称为粒细胞缺乏症。白细胞减少症一般可无明显表现或有乏力及易感染等。粒细胞缺乏症，临床常有头晕，乏力，低热及呼吸道、泌尿道等严重感染、高热等表现。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">1．急性感染
+（1）细菌感染：如伤寒、副伤寒杆菌感染、布氏杆菌病、粟粒性结核、败血症等，若骨髓储备功能差、营养不良、年老体弱者更易发生。
+（2）病毒感染：如流感、麻疹、病毒性肝炎、水痘、风疹、登革热、巨细胞病毒等均是引起粒细胞减少症的常见的致病原因。
+（3）立克次体病：如斑疹伤寒等。
+（4）原虫病：如黑热病、疟疾等。
+2．物理因素  放射线等。
+3．化学因素  苯及苯类化合物，如二甲苯、二硝基苯等。
+4. 药物  如抗癌药物、退热镇痛药、磺胺药、抗癫痫药、抗组织胺药等。
+5．造血系统疾病  再生障碍性贫血、白血病、淋巴瘤、多发性骨髓瘤、阵发性睡眠性血红蛋白尿、恶性肿瘤骨髓转移等疾病。
+6．伴有脾肿大疾病  肝炎后肝硬变、晚期血吸虫病并发门脉高压者，Banti综合征，Felty综合征，Gaucher病，脾淋巴瘤等。
+7．结缔组织疾病  如系统性红斑狼疮、类风湿性关节炎等。
+8. 过敏性疾病  如异种蛋白所引起的过敏及青霉素等抗生素引起的过敏性休克等。
+9．遗传性疾病  如小儿遗传性粒细胞缺乏症，家族性良性及严重粒细胞减少症等。
+10. 获得性或原因不明性粒细胞减少症  如周期性粒细胞减少症、慢性原发性粒细胞减少症等。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医学认为内因是由于先天禀赋不足，后天失养，肾、脾、心虚损所致。由于脏腑虚损，正气不足，外感六淫、邪毒，气血两虚。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">1．由于骨髓粒细胞生成障碍骨髓中的粒细胞生成出现障碍而血液中的粒细胞生存期正常。如细菌、病毒等感染（如粟粒结核、病毒性肝炎、传染性单核细胞增多症、败血症等），白血病、淋巴瘤、骨髓瘤。药物引起中性粒细胞减少，如氨基比林药物作为半抗原进入机体，与蛋白质结合成为全抗原而具有抗原活性，在体内产生抗体，由于抗原抗体反应而引起粒细胞破坏所致。抗肿瘤药物多为细胞毒，进入机体后对肿瘤细胞抑制的同时，往往引起诸多脏器组织细胞的损伤，对骨髓造血发生抑制等，直接影响中性粒细胞生成障碍。
+2．粒细胞破坏过多  由于感染细菌、病毒、立克次体、原虫等致使细胞破坏过多；抗体、补体及网状内皮系统吞噬功能亢进，都可使粒细胞破坏过多，而引起中性粒细胞减少。
+3．中性粒细胞异常分布  由于药物进入机体发生过敏性休克、异体蛋白输注发生反应、病毒血症及发生溶血时，均可使中性粒细胞过多的附着于毛细血管壁，导致循环池减少，此时白细胞总数不变，称之“假性粒细胞减少症”。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">中医学认为白细胞减少症的发生是由先天禀赋不足、缺陷，后天失养，形成脏腑虚损，尤其与肾、脾、心的关系最为密切。肾主骨、生髓，藏五脏六腑之精气，精化血。肾虚则化血之源枯竭而致血虚。肾虚则髓空，故腰膝酸软、头晕耳鸣等。脾为后天之本，主四肢，主肌肉、主运化。饮食入胃，经消化吸收成为精微，在中焦受气取汁化赤是谓血。脾虚则化血功能减少而致血亏气少，表现乏力、食纳差、腹胀满等。心生血、主脉。饮食经过中焦消化吸收，其精微吸收入血称为“营”，此为血的前身，其“营”经过心气的作用，化赤而为血。若心虚，心气不足，化血功能减弱而致血虚，表现心悸、脉弱，神不守舍而失眠、多梦等症。由于本病脏腑虚损，气血不足，卫外功能衰弱，极易遭受外邪侵袭而发病，表现发热、口渴、舌红、脉数、咽痛、咳嗽等症。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）气阴两虚型：证候：周身乏力，反复外感不愈，低热，五心烦热，咽干，咽痛，失眠盗汗，舌质红，苔薄白，脉细数，无力。证候分析：气虚则乏力，卫外功能失司，阴虚生内热，故五心烦热、咽干、舌红脉数等。<br>
+（2）心脾肺虚：证候：心悸气短，身倦乏力，头晕眠差，食纳不香，面色不华，舌质淡有齿痕，舌苔薄白，脉细无力。易于外感。证候分析：心生血、主脉，心虚则血少面色不华，脉沉细无力。脾主运化、主肌肉，脾虚则纳谷不香，身倦乏力，舌有齿痕等。肺气虚卫外不固，易于外感。<br>
+（3）肝肾阴虚：&nbsp;证候：头晕耳鸣，腰膝酸软，手足心热，遗精，眠差，多梦，舌质稍红，脉象细数。证候分析：中医认为肝肾同源，腰为肾之府，肾开窍于耳，入睡乃由心肾相交，肾虚则精关不固，阴虚生内热等而导致头晕耳鸣，腰膝酸软，失眠，遗精，手足心热等诸症发生。<br>
+（4）脾肾阳虚：证候：面色晄白、精神萎靡，畏寒肢冷，懒言少气，腹胀满，腰膝酸软，舌体胖大，舌质淡，有齿痕，苔薄白。证候分析：肾阳不足则精神萎靡、畏寒肢冷，脾阳虚则面色晄白，懒言少气，腹胀满，舌体胖大，舌质淡等。<br>
+（5）外感温热：主证：高热不退，面赤咽痛，口渴欲饮，甚则昏狂谵语，热伤脉络则吐血、衄血、便血、&nbsp;溲血等，舌质红绛，苔黄少津，脉滑数。证候分析：高热不退，热伤脉络故引起各部出血，热扰心神故昏狂谵语，高热伤阴故口渴欲饮、舌质红、少津等。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1.白细胞减少症：外周白血胞总数低于4.0×1O9/L×者。<br>
+2.粒细胞减少症：外周血中性粒细胞绝对值低于（1.5～1.8×109/L者。<br>
+3.粒细胞缺乏症：外周血中性粒细胞下降至20%～30%以下，其绝对值少于（0.5～1.0）×109/L者。<br>
+<br>
+<br>
+<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">本病诊断主要依据其临床表现乏力、头晕、发热等症状及肝、肿大等体征和白细胞计数和分类，可诊断白细胞减少症、中性粒细胞减少症。其病因诊断必须详细询问病史，如职业、所在环境、既往疾病史、服药史、是否接触化学毒品、放射线等接触史，结合发病的缓、急，发病年龄，发作规律，结合实验室有关的检查指标，对明确诊断是十分重要的。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">发病可急可缓。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">职业、所在环境、既往疾病史、服药史、是否接触化学毒品、放射线等接触史，有诱发此病的可能。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">乏力、头晕、发热等
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">白细胞减少症由于病因复杂，临床表现虽各有特点，但其临床表现的严重程度，随粒细胞减少的数量多少有直接关系。如因是慢性粒细胞减少症，其病因不明确，临床可无自觉症状或仅有乏力、倦怠、纳差等症。若其病因是由于严重感染所致，患者可表现高热、头晕、头痛、乏力、精神萎靡、咽痛、多汗等症。一般说来，若中性粒细胞减少，其绝对值仍在1．5×l09／L以上者，临床发生明显感染机会较少，若中性粒细胞降至0．5～1．0×109／L者，在临床上往往易发生感染，可出现发热、咽痛、周身不适等症，若中性粒细胞降至0．5×109／L以下者，则易发生严重感染，出现高热、败血症等。以下据白细胞减少的不同病因将症状分述如下。<br>
+1.&nbsp;感染性粒细胞减少症&nbsp;&nbsp;临床较为常见多在感染发热之后，就诊时发现粒细胞减少，如病毒性肝炎、传染性单核细胞增多症、流感、麻疹等。迁延性肝炎肝脾肿大者常见有粒细胞减少，血中可见少量异型淋巴细胞。细菌感染如伤寒、副伤寒、布氏杆菌、重症金黄色葡萄球菌败血症、革兰阴性杆菌及粟粒型肺结核等均可出现粒细胞减少症。原虫感染者以疟疾为多见，特别是反复发作及伴有脾肿大者。黑热病常有粒细胞减少及坏疽性口腔炎者在我国已基本消失。<br>
+2．药物性粒细胞减少症&nbsp;&nbsp;一般发生在中年人，常因反复用药，也有时用药量很少就引起严重粒细胞减少，国内报告以氯（合）霉素、磺胺类、复方阿司匹林为多，其中以氯（合）霉素为突出，因为所含硝基苯根，对骨髓造血有毒性作用，它能抑制幼稚细胞DNA及蛋白质合成。<br>
+3．放射性所致粒细胞减少症&nbsp;放射线对粒细胞影响程度与量有明显关系。关于放射线对粒细胞作用机理：一为杀死敏感的造血细胞和成熟粒细胞，二是引起细胞染色体的严重受伤，不仅使粒细胞数量减少，而且使粒细胞的胞浆出现中毒颗粒及空泡、胞核碎裂、溶解及棘突形成。<br>
+4．脾性粒细胞减少症&nbsp;这乃是脾功能亢进的表现。外周血有粒细胞减少及白细胞总数的减少。骨髓增生呈活跃或明显活跃，粒细胞系呈成熟障碍现象，红细胞、血小板也有不同程度的减少。若脾切除后数小时即可见白细胞明显增多，有时可高达20倍。此白细胞减少的原因，是增大的脾脏脾窦扩张，使白细胞过多的滞留和被破坏。<br>
+5．获得性免疫性粒细胞减少症&nbsp;乃结缔组织病及慢性活动性肝炎等，均可有粒细胞减少。血清中可查到抗白细胞抗体，使白细胞发生凝集而被肝、脾、肺等器官所破坏。<br>
+6．遗传性中性粒细胞减少症&nbsp;&nbsp;可分两型，①婴儿粒细胞减少症，为常染色体隐性遗传病。②家族性良注粒细胞减少症，为常染色体显性遗传，发病较晚，可有发作性粒细胞减少，在发作期可发生并发感染。<br>
+7．新生儿同种免疫性粒细胞减少症&nbsp;&nbsp;由于母亲与胎儿血型不同，母体内产生白细胞凝集素，进入胎儿体内，引起白细胞大量破坏，在出生后6～12周内，白细胞明显减少，常合并感染，经过几个月后可逐渐恢复。<br>
+8．周期性粒细胞减少症&nbsp;&nbsp;以婴幼儿为主，呈周期性粒细胞减少，每15～30天发作一次，一般3～4天可恢复，目前对其病因尚不清楚。<br>
+9.&nbsp;慢性原因不明性粒细胞减少症&nbsp;&nbsp;多发生于成年女性，一般临床很少见。多偶然发现，有的患者呈神经衰弱表现。<br>
+10．骨髓病性粒细胞减少症&nbsp;&nbsp;在淋巴瘤、多发性骨髓瘤、骨髓转移癌等的部分患者，可出现粒细胞减少。由于本病白细胞减少极易发生感染，主要体征与感染有关。如淋巴结肿大，局部感染可有红、肿、热、痛，也有伴脾脏肿大等。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">淋巴结肿大，局部感染可有红、肿、热、痛，也有伴脾脏肿大等。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">（一）骨髓象
+由于本病病因复杂，通过骨髓象检查，了解粒细胞增生程度、有无成熟障碍，或形态异常等。若骨髓增生亢进，则提示粒细胞有无效造血或破坏过多，若粒系增生低下或成熟障碍或退行性变，提示粒细胞减少乃增生不良所致，还可以了解骨髓有无肿瘤细胞转移等。
+（二）肾上腺素试验
+皮下注射0．1％肾上腺素0．1～0．3ml后，粒细胞可增加原来水平的一倍或达到正常人的水平，（其作用可持续20～30分钟）则提示为假性粒细胞减少症。血压高者不宜用。
+（三）骨髓储备能力检查
+1．初胆烷醇酮试验  静脉注射0．1mg／kg后半小时内，若正常者则白细胞减少，继之粒细胞骤增，至12小时达最高峰，  24小时后恢复到原有水平。此实验可了解骨髓潜在的储备能力。
+2．强的松龙试验  口服强的松龙40mg，正常者服药后5小时达高峰，粒细胞绝对值应大于2×109／L
+（四）破坏粒细胞因素的测定
+1．白细胞凝集试验  可有助于对某些因白细胞抗体引起白细胞凝集导致粒细胞减少的诊断。
+2．溶菌酶活力测定  血清溶菌酶活力增加提示血液中的中性粒细胞破坏过多所致。
+3．利用葡萄糖氧化作用释放出的CO2或四唑氮蓝还原试验  确定结合有抗体的中性粒细胞过多破坏程度。
+4．利用补体介导的细胞毒性作用  可检测白细胞抗体的存在。
+5．体外骨髓培养  适于因使用药物引起粒细胞减少者的体外鉴定，只适用于水溶性药物。
+（五）其它方法
+如：应用同位素32P、或51Cr标记自身粒细胞，然后进行其动力学检查，测定粒细胞生存期等。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">（一）定期检查血象怀疑为周期性粒细胞减少症，每周作三次检查粒细胞绝对值，若怀疑与遗传有关者，对其象庭成员有直接血缘关系者，都应测定血中粒细胞绝对值。
+（二）血象白细胞计数在4．0×l09／L以下者，要重复检查几次为宜。在白细胞分类中的中性粒细胞绝对值显著减少，淋巴细胞数相对增高，而且在中性粒细胞胞浆中，出现中毒颗粒、空泡等。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">临床表现白细胞减少的疾病很多如再生障碍性贫血、阵发性睡眠性血红蛋白尿、低增生性白血病等，上述疾病往往在血象表现，不仅是单一的白细胞减少，而有红细胞、血小板的减少，临床可出现面色苍白、皮肤粘膜等出血症状，骨髓象检查最具有鉴别诊断价值。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">一、由于应用药品或放射线物质接触所引起的白细胞减少。<br>
+1.显效：停止用药或脱离接触致病因素后，白细胞计数及分类恢复正常范围（5.0×1O9/L）者，或由2.O×1O9/L上升至4.O×1O9/L的时间比安慰剂对照组短，且有统计学意义者。<br>
+2.有效：白细胞计数多次连续检查，较治疗前提高1OO%，并维持一定时间。<br>
+3.无效：治疗后白细胞计数无明显增高。<br>
+二、因感染、免疫或原因不明引起的白细胞减少者。<br>
+1.显效：治疗后白细胞计数恢复正常或提高100%，分类有改善，并维持一定时间，同安慰剂对照组比较有统计学意义。<br>
+2.有效：治疗后白细胞提高50%以上，分类有改善，并维持一定时间，同定慰剂对照组比较有统计学意义。<br>
+3.无效：治疗后白细胞计数不增高或略有增高者。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病的预后与粒细胞减少的程度有密切关系，若是年幼者，可随着年龄的增长，粒细胞减少可能逐渐改善，严重感染者可致死。如因药物引起的白细胞减少者，尚能及时发现，及时停药，白细胞减少不严重者，一般经过数周可以恢复。但有的药物如氯霉素、保泰松等可引起较持久的粒细胞减少症，可历经数月至数年，少数人可达20年以上，一般预后良好。但若粒细胞持久减少，则易发生感染，可导致严重后果，少数患者可发生急性白血病。急性粒细胞缺乏症是一种严重的内科疾病，在抗生素产生之前死亡率曾达80％，抗生素应用之后死亡率已降至10％～20％，但必须早期诊断、早期治疗。目前有效抗生素的应用、粒细胞刺激因子等方法治疗，死亡率将会进一步降低。患者的预后与骨髓增生程度也有密切关系，若骨髓出现再生障碍型的预后较差。因持久的粒细胞缺乏必然引起严重感染而死亡，总之，由于粒细胞缺乏，所致的感染阶段，经中西医结合治疗安全度过，是预后良好的关键。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">常见的并发症：口腔感染、上呼吸道感染、泌尿系感染、肛周感染、痈、疖等，局部有红、肿、热、痛，严重者可并发菌血症、败血症等。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．促白细胞生成药及激素治疗<br>
+（1）维生素B4：10～20mg，口服一日3次。<br>
+（2）鲨肝醇：&nbsp; 25～50mg，口服一日3次。<br>
+（3）利血生：&nbsp; 10～20mg，口服一日3次。<br>
+（4）肌苷：&nbsp; 200～400mg／次，每日3次，口服或静脉点滴。<br>
+（5）康力龙：&nbsp; 2mg，一日服2～3次。注意肝功能损害。<br>
+（6）肾上腺皮质激素类药物：如强的松、氢化考的松、地塞米松等，剂量不宜大，中小剂量为宜，并须与抗生素合用，防止引起或加重感染。<br>
+（7）碳酸锂：&nbsp; 200mg，一日服3次。<br>
+2．对感染治疗&nbsp;&nbsp;本病常见伴有呼吸系统感染，如口腔、气管炎、肺炎等；消化系统感染，如肠炎、肛周感染等；及泌尿系感染。应用抗生素宜联合用药，剂量根据病情而定。如青霉素与庆大霉素、氧哌嗪与丁胺卡那的联合应用，或应用头孢菌素族抗生素等。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）气阴两虚型：治法：宜益气养阴。方药：生脉饮合当归补血汤加减，药用太子参、麦冬、五味子、黄芪、当归、鸡血藤、丹参、黄精、龟版胶、炙甘草。或者选用下方：人参、黄芪、女贞子、生地、黄精、麦冬、旱莲草、丹皮、当归、虎杖、鸡血藤、菟丝子。<br>
+（2）心脾肺虚：治法：益气补肺，健脾养心，宜归脾汤加减。白术、茯神（或茯苓）、黄芪、龙眼肉、酸枣仁、人参、当归、五味子、远志、甘草、大枣。本方重在益气养血，黄芪、人参为君，补中益气。龙眼肉、当归、酸枣仁补血和营、养心安神为臣。白术、木香健脾理气；茯神、远志交通心肾、安神定志；大枣健脾和胃，甘草调和诸药。也可用大全大补汤加减。<br>
+（3）肝肾阴虚：治法：滋肝肾、降虚火。宜用大补阴丸合归芍地黄汤。药用：熟地、山萸肉、山药、当归、白芍、丹皮、黄柏、龟版、女贞子、旱莲草、虎杖、甘草。方中熟地、山萸肉、女贞子&nbsp;龟版以滋阴益肝肾为君。黄柏、丹皮、旱莲草泻相火、凉血为臣，佐以当归、白芍养血，甘草调和诸药为使。<br>
+（4）脾肾阳虚：治法：温肾填精，补脾益气温阳。方用右归饮合保元汤加减。药用：熟地、山萸肉、山药、枸杞、杜仲、肉桂、制附子、黄芪、党参、甘草。方中附子、肉桂、黄芪、党参以温脾肾之阳气，熟地、山萸肉、枸杞滋阴补肾，山药补脾，甘草为使药。<br>
+（5）外感温热：治法：清热解毒、滋阴凉血。方用犀角地黄汤加减。药用：广角粉、丹皮、赤芍、生地、白茅根、元参、旱莲草、生石膏、知母、黄芩、鱼腥草、公英、贯众、银花、连翘、生甘草。方中广角清营凉血、清心解毒。生地、元参、生石膏、知母清热凉血、滋阴生津。黄芩、鱼腥草、公英、银花、贯众、连翘佐以清热解毒。甘草调合诸药。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以上各型在服汤剂治疗中，若身无热者，可酌加胎盘粉、人参粉、鹿茸粉白开水送服更佳。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）人参归脾丸：一日3次，一次一丸，空腹为宜，白水送下。<br>
+（2）六味地黄丸：一日3次，一次一丸，空服为宜，白水送下。<br>
+（3）紫河车胶囊：一日3次，一次5粒。<br>
+（4）十全大补丸（糖浆）：蜜丸9g重，每次一丸，每日3次。糖浆：每瓶120ml，一次10ml，儿童酌减。<br>
+（5）补骨脂：微炒、研细面，炼蜜为丸，每丸6g重，一日3次，每次1～3丸。若服细面（或盛胶囊）一日3次，一次3～9g。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">取穴：合谷、气海、足三里、关元、阳陵泉、三阴交、肾俞、脾俞、血海等。据临床辨证选用上述合适的穴位。用补的手法。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">白细胞减少症、粒细胞缺少症。目前中、西医治疗本病均无满意的治疗方法。以中西医结合治疗为宜。尤其患者并发明显感染者，加用高效抗生素积极控制感染非常重要，必要时应用成分血，单输白细胞有利于对感染的控制。中医按急则治其标，缓者治其本的原则。早期宜仙方活命饮等类方清热解毒，晚期宜用八珍汤等补气养血等结合治疗为宜。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．临床用药时，若应用可引起白细胞减少的药物要注意定期检查白细胞。如氯霉素、磺胺、保泰松、消炎痛、甲苯磺丁脲、丙基硫氧嘧啶等。其用药剂量不宜过大，如发现白细胞减少应及时停药观察或改用其它药物。在应用抗肿瘤药物时，要注意骨髓增生程度，严格按治疗计划进行，不可盲目加大剂量。<br>
+2．对接触放射线，如接触X线、γ射线、β射线、中子射线等的工作人员，注意安全防护措施，定期检查血象。如发现白细胞减少，立即脱离接触射线的工作环境，及时治疗。<br>
+3.&nbsp;对患营养障碍，维生素B12、叶酸等营养障碍者，应及时纠正。<br>
+4．对患传染病、血液病、免疫性疾病等患者，积极治疗其原发病。<br>
+5．对接触苯、二甲苯类、农药等有害的化学药物工作人员，要严格加强防护，定期检查血象。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

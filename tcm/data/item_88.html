@@ -1,0 +1,904 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">新生儿破伤风
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=新生儿破伤风"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">neonatal tetanus
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XINSHENGERPOSHANGFENG
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：脐风，撮口脐风，别名：四六风，七日风，锁口风,
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">新生儿疾病（儿科）
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">新生儿破伤风是由于断脐时消毒不严，破伤风杆菌侵入脐部引起的一种严重感染性疾病。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">新生儿破伤风临床以唇青口撮，牙关紧闭，苦笑面容，甚则四肢抽搐为主要特征。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">破伤风杆菌为革兰氏阳性梭形厌氧菌，广泛存在于泥土中。孕妇生产中应用消毒不彻底的器械或其他用具断脐，或接生者的手及包盖脐残端的棉花纱布未严格消毒时，均可导致破伤风杆菌侵入脐部。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">本病的发生主要是邪毒由脐带创口内侵而致。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">边远地区由于知识普及欠缺，发病率仍较高。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">1984年世界卫生组织(WHO)在发展中国家调查后综合报道，新生儿破伤风发病率占活产婴儿5～60‰，占新生儿总病死率的23～70%。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">破伤风杆菌为革兰氏阳性梭形厌氧菌，芽胞发芽滋长并产生外毒素——痉挛毒素和溶血毒素。前者对神经组织有强大亲合力，一经结合不能被抗毒素中和，它抑制神经组织释放抑制性神经介质，导致肌肉痉挛；后者可引起组织局部坏死和心肌损害。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">邪毒由脐带侵入后，使经络脉隧受阻，营卫壅滞，经脉为邪毒所闭，邪毒流注脏腑，引动肝风致成本病。病位主要在肝，亦可殃及其他脏腑。毒入心脾结于口舌，毒入肝肾筋脉拘急，毒入于肺喘促屏气。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1.风邪犯表<br>
+主证：喷嚏多啼，烦躁不安，张口不利，吮乳口松，无寒热，舌质淡红，苔薄白，指纹红。相当于本病的先兆期。<br>
+分析：本证多因风寒、水湿之邪由脐侵犯经络所致。肺主表，首先受邪所犯，肺气不宣，经脉失和，故见喷嚏。心脾二经受邪，则张口不利，吮乳口松。<br>
+2.邪犯肝脾<br>
+主证：抽搐阵作，牙关紧闭，口撮不乳，时吐涎沫，啼声不出，颈项强直，角弓反张，脐突肚紧，苦笑面容，面目青紫，指纹紫滞。相当于本病的痉挛期。<br>
+分析：本证多由于邪入经络，继犯五脏而致。病邪深入，经络营卫不得宣通，内风陡起，筋脉拘急，而牙关紧闭，四肢强直，角弓反张。气血运行不畅，气滞血瘀，故见面目青紫，指纹紫滞。<br>
+3.气阴两虚<br>
+主证：抽搐逐渐减轻，口撮渐松，可张口吮乳，四肢渐转柔和，肢体少动，动则汗出，苦笑容未除。舌质红绛，苔薄白，指纹色浅。相当于本病的恢复期。<br>
+分析：本证多由余邪未尽，气阴两虚而致。余邪未尽，故诸症未全消除。正气虚，气血未复，故见肢体少动。气虚卫表不固，故见动则汗出。<br>
+
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">参“破伤风”条。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">常在生后第6～7天发病
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">有旧法接生或断脐消毒不严史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1.潜伏期：3～14天，以4～7天发病最多。.<br>
+2.发病期：从牙关紧闭到抽搐开始。患儿烦躁不安，吮乳困难，渐至牙关紧闭，1～2天内出现抽搐。.<br>
+3.痉挛期：约7～14天。患儿面肌痉挛呈苦笑面容，吞咽困难，四肢呈阵发性强直性痉挛，角弓反张，重者喉肌、呼吸肌痉挛导致窒息、呼吸暂停。光、声等轻微刺激可诱发抽搐，抽后可呈软瘫状态。<br>
+4.恢复期：此期患儿仍有肌张力高、苦笑面容及四肢强直，但不引起窒息，吃奶恢复正常，肌张力的恢复需2～3个月。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">患儿脐部常有感染，分泌物涂片染色镜检及厌氧菌培养阳性。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.新生儿化脓性脑膜炎：可表现为烦躁不安，肌张力增高及抽搐，需与破伤风鉴别。但前者全身感染中毒症状明显，有前囟隆起等颅内压升高表现，腰椎穿刺脑脊液检查可确诊。<br>
+2.其他新生儿惊厥性疾病：如低钙血症、低糖血症、颅内出血及胆红素脑病等，均无牙关紧闭及苦笑面容，根据各病的病史、体检及实验室检查可予以鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">参“破伤风”条。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">晚期常并发肺炎、败血症等。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">一、止痉<br>
+止痉是治疗本病成败的关键。<br>
+1.安定：为首选药。具有抗惊厥及松弛肌肉作用。作用强而迅速，副作用小，安全范围大。首次缓慢静脉注射2～3mg，止痉后采用鼻饲法给药，轻者每日2.5～5mg/kg，重者每日7.5～1Omg/kg，分4～6次鼻饲，达"安定化"后，使患儿处于深睡状态。大剂量维持4～7天，逐渐减量至患儿张口吃奶，痉挛解除时停药。<br>
+2.苯巴比妥：止惊效果好，半衰期长达20～200小时，副作用小。负荷量为15～20mg/kg，维持量为每日5mg/kg。必要时监测血浓度。<br>
+3.氯丙嗪：每次1～2mg/kg，静脉点滴，6～8小时1次，作维持治疗。<br>
+4.水合氯醛：止惊快，安全。临床常用浓度为10%溶液，每次0.5ml/kg，灌肠或胃管注入。<br>
+5.副醛：每次0.1～0.2ml/kg，稀释成5%溶液，肌肉或静脉注射。<br>
+6.硫喷妥钠：如以上药物均无效时可选用。每次10～20mg/kg，配成2.5%溶液缓慢静注，止抽后立即停用。注意监测生命体征。<br>
+7.维生素B6：为促进氨基丁酸合成的辅酶，肌肉或静脉注射，每次lOOmg，每日1次。<br>
+二、病因治疗<br>
+1.破伤风抗毒素：须尽早应用破伤风抗毒素，中和未与神经组织结合的外毒素。脐周皮下封闭剂量为3000～500001U，静脉滴注剂量为每天1万～2万IU，连用2～3天。<br>
+2.人体破伤风免疫球蛋白：无过敏反应，半衰期比破伤风抗毒素长2～3倍，可用500单位深部肌肉注射。<br>
+3.抗生素：首选甲硝唑，剂量为日龄≤7天者每日15mg/kg，分2次，日龄>7天者每日30mg/kg，分3次，疗程7天。也可用青霉素，剂量为每日10万～20万u/kg，疗程7～10天。<br>
+4.伤口处理：用3%过氧化氢或1：4000高锰酸钾液清洗脐部，清除坏死组织，再涂以2%碘酒，然后以75%酒精脱碘，每日1次，至创面完全愈合为止。<br>
+三、合并症治疗<br>
+合并肺炎、败血症时，应加强抗生素及对症治疗。<br>
+<br>
+
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">本病的治疗重在驱风止痉，宣通经络。痰涎较盛者，加以豁痰开窍。大便不通者，宜理气通腑。如寒邪化热，应佐以清热解毒。后期痉挛渐止，诸脏已伤，则应调理气血，滋补肝肾，扶正固本，以利于康复。<br>
+一、辨证选方<br>
+1.风邪犯表<br>
+治法：祛风散邪，疏经活络。<br>
+方药：玉真散加减。防风、白芷各5g，地龙4g，南星、天麻、羌活、白附子各3g。脐疮末愈者加公英、连翘；咳嗽有痰加杏仁、陈皮。<br>
+2.邪犯肝脾<br>
+治法：祛风通络，化痰止痉。<br>
+方药：撮风散加减。钩藤、僵蚕各5g，蝎尾、蜈蚣各3g，朱砂、麝香各1g。高热加黄连、生石膏；便秘加大黄、枳实；痰多加陈皮、天竺黄。<br>
+3.气阴两虚<br>
+治法：益气养阴，健脾和胃。<br>
+方药：人参养荣汤加减。太子参、茯苓、黄芪、当归各5g，白术、白芍、熟地、甘草名3g，肉桂1.5g。四肢强直明显加地龙、僵蚕；汗多加龙骨、牡蛎；四肢厥逆，呼吸微弱者以参附汤回阳救逆。<br>
+二、外治法<br>
+1.贴敷：杏仁7粒，桃仁7粒，青黛3g，全蝎3尾，芒硝6g，山栀6g，薄荷6g。共研细末，加飞罗面30g，米醋煮沸调匀做饼。趁热敷于脐部，每日换药1次。适用于新生儿破伤风。<br>
+2.灌肠：以白附子、羌活、白芷、防风、天麻、南星为基本方。抽搐剧烈加钩藤、蝉衣、蜈蚣；发热加银花、连翘。上药文火煎取30ml，共煎2次，合计60ml，纱布过滤，灌肠，每日1剂。适用于本病痉挛期。<br>
+3.吹鼻：蜈蚣1条，蝎梢5个，僵蚕7个，瞿麦1.5g，为细末。每次取0.3g吹入鼻中。若有反应而啼者，取薄荷1g煎汤，调上药末0.6g，内服。适用于本病痉挛期。<br>
+三、专方验方<br>
+1.驱风开口液：紫苏15g，前胡15g，僵蚕&nbsp;(炒)15g。将上药水煎去渣，以棉花蘸药滴入病儿口中，频滴，以开口为度。适用于脐风撮口。<br>
+2.新破汤：全蝎1.5g，僵蚕6g，蝉衣6g，胆南星6g，葛根6g，田基黄6g，双花6g，防风6g，钩藤6g，蓖麻根15g。水煎至80～100ml，每服5ml，鼻饲给药，每2小时1次。适用于本病痉挛期。<br>
+3.驱风通络镇痉散：蜈蚣1.2g，蝎尾0.6g，僵蚕1.8g，朱砂&nbsp;(水飞)0.3g。上药共研细末，和匀，用竹沥调拌分服，每服0.9～1.5g，日服2～4次。适用于本病痉挛期。<br>
+4.于氏脐风方：僵蚕10个，蝉蜕10个，蜈蚣1条，朱砂1.5g，牛黄0.15g。前三药先炒黄，诸药共研末，每服1/4量，乳汁送服。适用于本病痉挛期。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1.玉真散：具有祛风散邪，疏经活络的功效。适用于本病初起者。每服1.5g，日服2次。<br>
+2.小儿脐风片：具有熄风止痉，消积解毒，祛痰镇惊的功效。适用于本病初起者。每服1/2片，日服2次。<br>
+3.小儿惊风散：具有镇惊熄风，宣通经络的功效。适用于本病属邪犯肝脾者。每服0.25g，日服2～3次。<br>
+4.人参固本丸：具有补益气阴，增元固本的功效。适用于本病恢复期。每服1.5g，日服2～3次。<br>
+5.人参养荣丸：具有温补气血的功效。适用于本病恢复期气血两亏者。每服1.5g，日服2～3次。<br>
+<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">主穴取大椎、风府、风门、颊车、合谷、曲池、承山穴。角弓反张配身柱、长强、昆仑、太冲穴；神昏配百会、人中、涌泉穴。以毫针刺，用泻法。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">1.新生儿破伤风一经确诊，应争取早期注射破伤风抗毒素，以中和病灶内尚未被吸收的破伤风毒素，从而减少毒素达到中枢神经系统。另外，应有针对性地应用抗生素，抗菌消炎，并防治并发症。中药在解痉、镇静方面有一定效果，中西医结合治疗，可提高疗效，尤其病情需要大量应用镇静剂时，为防止该类药物用量过多造成的呼吸抑制，以及反复使用造成的蓄积中毒，可使用中药熄风定搐之品，以减少西药毒副作用的发生。<br>
+2.病情基本控制后，患儿正气已虚，此时配合中药益气养阴，扶助正气，使阴生阳长，气&nbsp;运血生，虚损得补，余风尽除，并可增强小儿抗病能力。<br>
+
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">1.室内安静，光线要暗，集中安排各项护理。<br>
+2.及时清除痰液，保持呼吸道通畅，防止肺部继发感染。<br>
+3.保暖、保证液体入量及营养，给予鼻饲或静脉滴注高营养液。4.保持皮肤清洁，注意消毒隔离。5.必要时吸氧。<br>
+
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">必须采用新法接生，严格要求消毒操作。断脐用的剪刀要事先煮沸1h，或经高压蒸气消毒10min，或在1％升汞溶液中浸泡2—3h，或在苯酚溶液中浸10—12h，急需情况下可直接用火烧红，待冷却后用。如脐带未经无菌操作，应争取在24h内将脐残端剪去一段，重新结扎，断面可用3％过氧化氢液或1∶4000高锰酸钾液冲洗后涂以碘酒，同时肌注破伤风抗毒素3000U，并密切观察。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">《小儿卫生总微论方·脐风撮口论》指出：“初生剪脐，不定伤动，或风湿所乘，其轻则病在皮肤，而为脐疮不差，其重则病入腑脏，而为脐风撮口，亦如大人因破伤而感风。”已经认识到小儿脐风与成人破伤风是同一病原。<br>
+
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

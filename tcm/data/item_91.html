@@ -1,0 +1,921 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">新生儿惊厥
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=新生儿惊厥"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">neonatal convulsion
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XINSHENGERJINGJUE
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：急惊风，慢惊风，
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">新生儿疾病（儿科）
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">新生儿惊厥是指在新生儿期由于各种疾病或病理变化，使脑部兴奋性过高引起神经元过量放电，表现为肌肉抽动，并有伴肌张力和意识改变的临床症候群。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">①围产期损伤，如缺氧缺血性脑病、颅内出血等；②宫内感染及围产期感染；③代谢异常，如低血糖、低血钙、高血钠及低血钠、胆红素脑病等；④遗传代谢病，如苯丙酮尿症、枫糖尿症等；⑤先天脑发育畸形，如脑发育不全、小头畸形、脑积水等；⑥遗传缺陷，如良性家族性新生儿惊厥、色素失禁症、维生素B6依赖等；⑦药物。有时几种因素同时存在。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">惊厥是新生儿时期常见症状，其发生率约为5‰的活产婴儿，早产儿发生率更高。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">急惊风的病因多由外感时邪或暴受惊恐所致。新生儿肌肤薄弱，腠理不密，寒暖不能自调，极易感受外邪，由表入里，由卫转气，郁而化热化火，火甚生痰，热极生风。主要病机为热、痰、惊、风互相影响，互为因果。病位主要在心肝二经。慢惊风的病因多由喂养不当，或吐泻之后，脾胃损伤，脾虚肝旺，肝风内动，而引起虚风。亦可由于急惊邪恋不解，迁延不愈，正气已虚，肾阴亏损，水不涵木，致虚风内动。病在肝经，与脾肾有关。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">急惊风皆属实证，临证需辨别病邪，辨明表里，辨其病证。一般来说，在表为邪之轻浅，病情较轻，在里为邪之深重，病情较重。慢惊风多为虚证，亦可见虚中夹实之证，临证需辨明伤阴伤阳之不同，虚寒虚热之有异。<br>
+一、急惊风<br>
+1.感受风邪<br>
+主证：发热，烦躁，四肢拘急，双目上视，牙关紧闭，甚则壮热不退，手足躁动，舌质红苔黄，指纹色暗红。<br>
+分析：本证多由于感受风邪，入里化热，引动肝风所致。热灼经脉，肝风内动，故见四肢拘急，牙关紧闭等症。邪热逆传心包，扰其心神，故见烦躁。邪郁肌表，可见发热。邪热入里，其势壮盛，则壮热不退。<br>
+2.感受暑邪<br>
+主证：发热恶风，继而壮热，项强烦躁，四肢抽掣，惊厥不止，口渴、便秘，舌质红，舌苔黄，重者持续高热，反复抽搐，神志不清。<br>
+分析：本证多由于感受暑邪，郁遏肌表。暑邪上扰，经气壅滞，而见项强。暑热之邪熏灼筋脉，以致高热生痉。病重时暑邪化热化火，热极生风，劫伤阴液，筋脉失养，故见反复抽搐。<br>
+3.暴受惊恐<br>
+主证：面色时青时赤，频作惊惕，甚至惊厥，偶有发热，大便色青，舌无异常变化，指纹淡而滞。分析：本证多由于暴受惊恐，气机逆乱所致。惊则伤心，神志不宁，气机逆乱而见惊惕。肝经本色上泛，君火不守，上越于面，故见面色时青时赤。<br>
+二、慢惊风<br>
+1.脾胃虚弱<br>
+主证：脾阳虚者：精神萎靡，嗜睡露睛，面色萎黄，四肢欠温，抽搐无力，时作时止，舌淡苔白，脉细弱。胃阴虚者：皮肤干枯，目眶凹陷，烦躁，口渴，唇红，手足蠕动，舌红绛，无苔，脉细数。<br>
+分析：本证多由于脾胃损伤，土虚木贼而致。因虚生风，故抽搐无力，似搐非搐，时作时止。若阴液耗伤，筋脉失养，则手足蠕动。<br>
+2.脾肾阳虚<br>
+主证：精神淡漠，面色晄白，额汗不温，四肢厥冷，手足蠕动，舌质淡，苔薄白，脉沉细或微弱。<br>
+分析：本病多由于脾阳虚弱，阴寒内盛，损及肾阳，而成慢脾风。为本病危重阶段，临床多见纯阴无阳之候。<br>
+3.肝肾阴亏主证：虚烦低热，手足心热，震颤瘛疭，舌光红绛少津。<br>
+分析：本证多由急惊风经久不愈而致。阴虚生热，故见虚烦低热。阴不潜阳，水不涵木，筋脉失养，故抽搐无力。<br>
+
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">应详询病史，包括母亲疾病史、妊娠经过及分娩史。全面体格检查，包括详细的神经系统检查。根据初步印象选择必要的实验室检查项目，如血糖、钙、磷、镁之测定，血培养，尿液找巨细胞包涵体；头颅超声检查，头颅X线摄片及CT检查，硬脑膜穿刺，腰椎穿刺等。将上述资料行综合分析后才能得出比较确切的诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">母孕期健康情况及用药史，是否近亲婚配，有无家族癫痫史。围产期有无妊娠高血压、产程延长、难产、宫内窘迫及新生儿窒息史，有无产伤、羊膜早破及感染史。生后喂养情况，有何种感染性疾病及黄疸程度等。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">(一)惊厥发作类型<br>
+1.轻微型：是新生儿期惊厥最常见的一种发作类型，无肢体强直或阵挛抽动。表现为眼球水平或重直位偏斜，眼睑反复抽动，眨眼，流涎，吸吮及咀嚼动作，呼吸暂停，上下肢体呈现游泳样或踏板样动作。<br>
+2.多灶性阵挛型：是发生于儿个肢体，呈移行性，由一个肢体移向另一个肢体或身体一侧移向一侧的游走性、阵挛性抽动。有时一个肢体的限局性阵挛性抽动持续很长时间，然后出现其他部位的抽动。常伴有意识障碍。<br>
+3.局灶性阵挛型：是指身体某个部分限局性阵挛发作。如一个肢体或一侧面部抽动，可蔓延至同侧其他部位。常无意识障碍。<br>
+4.强直型：表现为四肢强直性伸展，有时上肢屈曲、下肢伸展并伴有头后仰。常伴呼吸暂停和眼球上翻，脑电图常有明显异常。<br>
+5.全身性肌阵挛型：此型新生儿期少见。表现为上肢和/或下肢同步性抽搐动作，常表示有弥漫性脑损伤。<br>
+(二)伴随症状各种引起惊厥的疾病，均可有各自疾病本身的临床表现。如低血糖可有面色苍白，肌张力减弱，反应低下；颅内出血可有兴奋、嗜睡、凝视、尖叫、前囱膨隆及肌张力、腱反射的改变；化脓性脑膜炎可有全身感染症状及神经系统表现等。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">头颅透照试验，头颅B超，脑电图，CT检查，必要时做磁共振检查。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">宫内感染实验室检查：血IgM测定，母亲及婴儿TORCH特殊抗体IgM及IgG测定等。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1.血红蛋白和红细胞压积：红细胞增多症时，血红蛋白>220g/L，细细胞压积>65%。
+2.血生化：测定血糖、钾、钠、氯、钙、镁、磷等，必要时测血、尿氨基酸及血氨。
+3.血气分析：注意是否有低氧血症和二氧化碳潴留以及酸中毒表现
+
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">脑脊液检查：注意外观是否混浊、血性，细胞数、蛋白及糖含量是否正常，必要时送细菌培养。
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.新生儿一些正常状态：正常新生儿由睡眠转为清醒时，可有突然的惊跳样动作。饥饿或哭闹时可有阵颤样动作及下颌或四肢抖动，易误为惊厥。但不伴有其他神经精神异常，脑电图正常。不影响智力及运动发育。<br>
+2.新生儿睡眠肌阵挛：是正常新生儿睡眠中常见的肌阵挛样动作，表现为肢体或面部肌肉突发性惊跳样动作，与惊厥发作类似。但无引起惊厥的原发病，精神运动发育正常，脑电图无异常放电。<br>
+3.新生儿破伤风：有旧法接生史，生后4～7天发病，典型表现为牙关紧闭、苦笑面容及面肌痉挛等，每遇声光等刺激时症状加重，脑电图一般无痫样放电。脐部分泌物涂片及厌氧菌培养可见致病菌。<br>
+。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">治疗原则以控制惊厥，去除病因及对症处理为主。<br>
+一、控制惊厥<br>
+新生儿惊厥的治疗措施与年长儿不同，在未找出病因前按下述顺序治疗。<br>
+1.先用20～25%葡萄糖10～15ml静脉注射，如抽搐停止，证实为低血糖，继续静点葡萄糖每分钟8～1Omg/kg，尽快进食，4～6小时监测血糖1次，正常后24小时逐渐减慢速率，48～72小时停药。<br>
+2.如仍继续抽搐，则以10%葡萄糖酸钙2ml/kg稀释1倍后静脉注射，有效者为低钙血症，需继续补钙4～5天&nbsp;(静脉或口服)。<br>
+3.50%硫酸镁0.1～0.2ml/kg肌注或2.5%硫酸镁2～4ml/kg静脉滴注，如止惊则为低镁血症，改口服10%硫酸镁，每次1～2ml/kg，每日2～3次，疗程5～7天。<br>
+4.维生素B6 50～1OOmg静脉注射。<br>
+5.以上药物均无效则给予止惊剂。苯巴比妥、安定为常用止惊药。苯巴比妥负荷量15～2Omg/kg静脉缓慢注射或肌注，维持量为每日3～5mg/kg口服；安定0.1～0.3mg/kg稀释后慢推至惊厥停止。如上述药无效还可选用苯妥英钠，负荷量15～2Omg/kg，溶于生理盐水中快速静滴，12小时后给维持量每天5mg/kg。<br>
+二、病因治疗治疗原发病十分重要，如上所述对低血糖、低血钙等的治疗，其他如缺氧缺血性脑病、颅内出血及感染等引起者，均应根据各自疾病的处理原则，给予及时的治疗。<br>
+三、对症处理&nbsp;：注意吸痰及保持呼吸道通畅。发绀者给氧，呼吸暂停及抽搐频繁者，可予持续或间歇正压给氧，以维持患儿正常的通气、换气功能。脑水肿时用地塞米松每次0.1～0.5mg/kg，每6小时1次，或20%甘露醇每次0.25～0.5g/kg，每4～6小时1次。为改善脑代谢及促进脑细胞功能恢复，可给予ATP、1，6二磷酸果糖等。<br>
+
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">急惊风当惊风发作时，应积极采取措施控制惊厥。抽止后根据辨证所得，依据清热、豁痰、镇惊、熄风为原则，区分主次缓急，按其主因主证而施治。慢惊风虽属惊风范畴，但似搐非搐，无惊可疗，无风可逐。若误用逐风镇惊之剂，非徒无益，反而有害，因慢惊风由虚生风，属于虚风，治病必求其本，"虚者补之"是慢惊风的治疗原则。<br>
+一、辩证选方：<br>
+(一)急惊风<br>
+1.感受风邪<br>
+治法：清热开窍，熄风镇惊。<br>
+方药：羚羊钩藤汤加减。水牛角1Og，钩藤、桑叶、菊花、川贝、白芍各6g，甘草3g。痰多加天竺黄、胆星；抽搐加菊花、僵蚕；神志不清加菖蒲、远志。<br>
+2.感受暑邪<br>
+治法：清热祛暑，开窍镇惊。<br>
+方药：清瘟败毒饮加减。水牛角1Og，生地、丹皮、连翘、玄参、竹叶各6g，山栀、黄连各3g。痰多加远志、天竺黄；呕吐加藿香、佩兰；抽搐加钩藤、郁金。<br>
+3.暴受惊恐<br>
+治法：镇惊安神。<br>
+方药：安神丸加减。茯神、橘红各6g，人参、五味子各5g，当归、甘草各4g。痰多加远志、半夏；手足抽搐加钩藤、菊花；眠不安者加酸枣仁。<br>
+(二)慢惊风<br>
+1.脾胃虚弱<br>
+治法：脾阳虚者温运脾阳，抑木扶土。胃阴虚者，酸甘化阴，清热平肝。<br>
+方药：脾阳虚者理中汤加减。人参、干姜、白术、甘草各3g，钩藤、白芍各6g。胃阴虚者连梅汤加减。生地、麦冬、阿胶各6g，黄连、乌梅各3g，钩藤、天麻各4.5g。<br>
+2.脾肾阳虚<br>
+治法：温补脾肾，回阳救逆。<br>
+方药：固真汤加减。人参、附子、肉桂各3g，龙骨、牡蛎各6g。痰多加菖蒲、竹茹；病程较长加蜈蚣、地龙。<br>
+3.肝肾阴亏<br>
+治法：育阴潜阳，滋水涵木。<br>
+方药：大定风珠加减。龟板、鳖甲、牡蛎各1Og，白芍、阿胶、五味子各6g，麦冬、甘草各3g。阴虚潮热加地骨皮、银柴胡。<br>
+二、其它疗法：灌肠：鲜地龙数条，洗净，捣烂，加开水、白糖适量取汁。频频灌肠。<br>
+三、专方验方<br>
+1.蒿柴薇丹汤：青蒿1Og，银柴胡1Og，白薇1Og，丹皮1Og，菊花6g，大青叶1Og。水煎，每日1剂。适用于新生儿惊厥高热不退者。<br>
+2．清热散：朱砂24g，琥珀15g，钩藤15g，薄荷1Og，滑石45g，柿霜30g，豆蔻15g，甘草45g。共为细面。每服0.3g，日服3次。适用于新生儿惊厥惊叫不安者。<br>
+3.防惊汤：蝉衣6g，钩藤8g，甘草8g，珍珠母1Og，炒枣仁1Og，栀子4g，黄连3g，防风3g，杭白芍8g，青黛3g。水煎服。每疗程服4周，第1周每日1剂，以后隔日1剂。适用于新生儿惊厥热退风止，善后调理。<br>
+4.天竺黄散：天竺黄、川郁金、山栀子、白僵蚕、蝉衣、甘草各等份。共研细末。每服0.3g，以薄荷汤送服。适用于新生儿惊厥痰多者。<br>
+5.牛黄丸：牛黄0.3g，炒蝉蜕0.3g，大黄15g，黄芩15g，龙齿15g。共研细末，炼蜜为丸，如麻子大。每服3g，薄荷汤送服，日服2次。适用于新生儿高热惊厥。<br>
+
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1.保婴散：具有除痰、定惊、清热解毒的功效。适用于新生儿惊厥痰涎壅盛者。每服0.3g，&nbsp;日服2次。<br>
+2.救急散：具有解表清热，镇惊化痰的功效。适用于新生儿惊厥属内热积滞，外感风寒者。每服0.3g，日服2次。<br>
+3．婴宁散：具有驱风、除痰、定惊、开窍的功效。适用于新生儿惊厥痰涎壅盛者。每服 0.2g，日服2次。<br>
+4.保幼化风丹：具有清热散风，止咳化痰的功效。适用于新生儿惊厥里热明显者。每服 1/2丸，日服2次。<br>
+5.保婴夺命散：具有镇惊熄风，清热豁痰的功效。适用于新生儿高热惊厥者。每服0.3g，&nbsp;日服2次。<br>
+6.小儿镇惊散：具有镇惊解热的功效。适用于新生儿惊厥属痰涎壅盛者。每服1/2丸，&nbsp;日服2次。<br>
+7.婴儿安片：具有祛风镇惊、消食、化痰、退热的功效。适用于新生儿高热惊厥者。每服1/2片，每晚服1次。<br>
+。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1、体针：惊厥者取双涌泉穴或人中、合谷穴，采用强刺激，提插捻转法；高热者取曲池、大椎穴，采用强刺激，并十宣放血；牙关紧闭者取下关、颊车穴，采用中强刺激。<br>
+2．贴敷：山栀、桃仁各等量。山栀为末，桃仁捣成泥，以面粉、鸡蛋清适量调成糊状。敷于双侧涌泉穴，日1次。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">急惊风欲作时，大敦穴上拿之，或鞋带穴拿之。惊风发作时，身向前曲者，将委中穴下掐住；若身向后抑，即将肘上鬼眼穴向下掐住。惊风停止后，揉运五经，推脾土，揉陴土，揉五指节，运内八卦，分阴阳，推上关，揉涌泉，揉足三里穴。
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">新生儿惊厥是新生儿时期常见的症状，引起的原因多种多样，治疗主要应针对原发病，就惊厥本身来说，可用中西医结合的方法予以控制，以防止反复惊厥而引起脑缺氧、脑水肿。惊厥发生时一般首先使用针刺疗法，可取人中、涌泉、合谷等穴，指压或毫针强刺激，如无速效可随即用镇惊药物，如10%水合氯醛、苯巴比妥纳、安定等。惊厥控制后，需进一步用中西医结合的方法治疗原发病，消除病因，方可达到标本兼治的目的。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

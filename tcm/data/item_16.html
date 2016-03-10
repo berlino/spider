@@ -1,0 +1,956 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">布鲁氏菌病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=布鲁氏菌病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">brucellosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">BULUSHIJUNBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">布病,布氏杆菌病,急性期属中医:温病，慢性期属:痹证,虚损。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">布鲁氏菌病是由布鲁氏菌引起的人畜共患传染病。是各型布氏杆菌所致的自然疫源性传染病。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">布鲁氏菌为革兰阴性短小杆菌，分为6个生物种及19个生物型，即羊种（3个生物型）、牛种（8个生物型）、猪种（5个生物型）、森林鼠种、绵羊附睾种和犬种（各1个生物型）。我国除森林鼠种外，其余5种均已分离到，感染人群的主要为前3种，其中羊种菌致病力最强，是国内的主要致病菌，猪种次之，牛种对人致病力弱。
+        本菌含A、M和G三种抗原成分，G为共同抗原，制备单价A、M抗原可用于鉴定菌种。
+        本菌对光、热、常用化学消毒剂等均很敏感，日光照射10～20分钟，湿热60℃10～20分钟，3％漂白粉澄清液等数分钟即可将其杀灭。在外界环境中生存力较强，在干燥土壤、皮毛和乳类制品中可生存数周至数月，在水中可生存5日至4个月。
+        布鲁氏菌仅产生内毒素，活菌及内毒素是其致病的主要因素。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">由于本病临床表现复杂，变化多端，故目前对其认识尚不一致，一般认为是。由机体外感湿热毒邪，病邪外犯肌表关节，内犯脏腑所致。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">布病遍布全球，中国多见于西北、东北、内蒙古、河南等地.
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">人群对本病普遍易感，感染后可获较强的免疫力。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">羊为主要传染源，其次为牛和猪。各型布氏杆菌在各种动物之间可有转移现象，其中以羊型菌转移到牛的意义为最大。病人的传染性很小。母畜患本病后常致流 产或死胎，母畜阴道分泌物、羊水、胎盘、死胎，以及病畜的奶（包括奶制品）、肉、内脏等均含大量细菌，故接羔、处 理流产物、饮生奶、屠宰、剥皮等时极易受染。羊毛、羊皮、 土壤、水源等也经常为病畜排泄物和分泌物所污染，故接 触未经处理的皮毛、饮用生水等也有被感染的机会。带菌的尘土也可经呼吸道和眼结膜进入人体。
+
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">布鲁氏菌自皮肤或粘膜进入人体后,即为吞噬细胞所吞噬，并循淋巴液到达局部淋巴结。如吞噬细胞未能将细菌杀灭，则在细胞内生长繁殖，形成局部原发病灶。细菌在吞噬细胞内大量繁殖导致吞噬细胞破裂，并随之大量进入淋巴液和血液形成菌血症。细菌随血液至全身，在肝、脾、淋巴结、骨髓等处的单核一吞噬细胞系统内繁殖，形成多发性病灶。由于变态反应及病原苗主要在细胞内繁殖，抗体及抗菌药物不易进入，故难以根治。当机体免疫功能正常时，细胞和体液免疫协同作用清除病菌而获痊愈。如果免疫功能不健全，或感染菌量大、毒力强，则部分细菌逃脱免疫，又可被吞噬细胞吞噬带人各组织器官形成新感染灶。经一定时期后感染灶的细菌生长繁殖再次入血，导致疾病复发。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">湿热毒邪经口或经皮肤经络外犯肌表，侵入中焦、伏于膜原，渐次入血，伤及肝脾，损及全身。湿热浸淫，表卫失权，发热多汗，邪郁经络，血行受阻，关节游走疼痛，肝脾肿大。热胜者，阴液耗损、壮热烦渴；湿胜者，气机受阻，头痛身重，肌肉关节酸痛。若病邪迁延，元气耗伤，气血阻滞，络脉凝瘀，则心烦失眠，关节疼痛，筋脉拘急。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">病理变化广泛，但以单核一吞噬细胞系统如肝、脾、淋巴结、骨髓等受累较著，有细胞增生及由上皮样细胞及大单核细胞组成的肉芽肿。
+网状内皮系统在急性期呈弥漫性增生，慢性期则可出现由上皮细胞、巨细胞、浆细胞、淋巴细胞等组成的肉芽肿，此系组织对细菌产生的变态反应。肝、脾、淋巴结及骨髓中均可有类似的病变。
+血管的增生破坏性病变也为变态反应所致，主要累及肝、脾、脑、肾等的小血管及毛细血管，导致血管内膜炎、血栓性脉管炎、脏器的浆液性炎症及微小坏死等。
+骨、关节和神经系统的变态反应性炎症主要表现为关节炎、关节强直、脊椎炎、骨髓炎、神经炎、神经根炎等。肺可有出血卡他性炎症，心脏病变较血管病变少见，有心内膜炎、心肌炎等。肾混浊肿胀，偶可见弥漫性肾炎和肾盂肾炎。此外，尚有睾丸炎、附睾炎、子宫内膜炎等。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">布氏杆菌骨髓炎：是血源性布氏杆菌感染在骨与 关节的局部表现。任何骨均可受累，但以脊柱炎最为多见。关节病变常侵犯大关节，故髓关节炎最常见。病变 先在骨髓中发展成为局限性上皮样结节。最常受累的部位是椎体，如腰椎。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1、辩证分型：<br>
+(1)&nbsp;湿热内蕴：证见畏寒发热，午后热甚，全身疲乏，身痛，多汗湿衣，胃脘痞满，纳呆食少，苔腻，脉濡数。证候分析：湿热之邪初犯肺卫、肌肤，则畏寒发热；热被湿遏，则身热不畅，午后为甚；湿热阻遏上中焦，则胃脘痞满，纳呆食少；苔腻，脉濡数均为湿热在卫之象。此相当于急性期，菌毒血症及病灶损害尚属轻浅阶段。（2）湿热伤营：证见烦热多汗，神疲乏力，关节疼痛，肝脾、睾丸肿痛，苔黄，脉细数。证候分析：湿热之邪伤营入络，经气不畅，则烦热多汗，湿热留滞经络，则关节痛、肝脾肿大；湿热留伏下焦，久而凝滞结聚，则睾丸肿痛。此时菌毒血症及脏器病损均较严重。（3）正虚邪恋：证见无热或微热、乏力、心烦失眠，或腰腿疼痛，舌瘀苔白腻，脉沉细。证候分析：久病正气耗伤，以致气血阻滞，故证见腰背疼痛；阴血两虚，则微热、乏力，心烦失眠，脉细。此为慢性期，已无菌毒血症，身体虚弱，以神经功能失调为主，或已有关节变形及活动受限。2．辨证要点&nbsp;&nbsp;本病辨证的关键在于是邪盛还是正虚。在疾病急性期湿热毒邪外犯肌表，内侵脏腑，患者多以邪实为主。慢性期由急性期误治、失治而来，湿热潜伏或热去湿存。久病正气耗伤，以致气血阻滞，经络闭阻。临床多呈现正虚邪恋之证候。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">布鲁氏菌病诊断标准:<br>
+1977年（于甘肃张掖）召开北方防治布氏杆菌病工作会议制订的诊断科治疗效果判定试行标准<br>
+布氏菌病的诊断是综合性的，主要靠：<br>
+1.流行病学接触史（包括患布病的家畜、野生动物及其产物，布氏菌培养物）。<br>
+2.临床症状和体征。<br>
+3.实验室检查---细菌学、血清学和皮内变态反应等。<br>
+凡具备1、2、3或2、3项阳性或培养出布氏菌即可确定为病人。对已接种过菌苗的人，因目前尚无确切的鉴别诊断方法，应以临床症状为主要依据，血清凝素效价高低，皮内变态反应强弱仅作参考。<br>
+不具有临床症状，不能诊断为病人。<br>
+1.血清学检查判定标准<br>
+（1）血清平板凝集试验：0.02（++）以上为阳性。<br>
+（2）试管凝集试验：1：100（++）以上为阳性。<br>
+（3）抗人体球蛋白试验（Coom'bs试验）：1：200（++）以上为阳性。<br>
+（4）补体结合试验：1：10（++）以上为阳性。<br>
+（5）半胱氨酸试验：1，25（++）以上为阳性（试行）。<br>
+上述试验有一项以上为阳性者，即认为是布氏菌病血清学检查阳性。<br>
+（6）皮内变态反应：皮试后48小时观察，皮肤红肿浸润范围在2.5cm×2.5cm以上为阳性。<br>
+确诊布病，应注意和风湿性关节炎、类风湿、结核等疾病相鉴别。血清凝集反应阳性，应注意区别沙门氏菌感染引起的交叉反应。<br>
+2.临床分型<br>
+（1）急性期：凡有发热和明显的其它症状、体征（包括慢性患者急性发作），并出现较高的血清学阳性效价者。<br>
+（2）慢性期活动型：凡体温正常或低烧，但症状、体征反复发作加重（即有慢性炎症存在），并出现稍高的血清学阳性效价或皮内变态反应阳性者。<br>
+（3）慢性期相对稳定型：体温正常，症状、体征较固定或功能障碍往往因气候变化、劳累过度而加重。<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">流行病学资料和职业对协助诊断有重要价值，若同时有本病的一些特殊临床表现，如波状热、大汗、睾丸疼痛等，则诊断可基本成立。血、骨髓、脓液等培养阳性为确诊依据、
+    免疫学试验应逐周测定，高效价或效价成倍升高者有诊断价值。慢性患者凝集试验阴性时宜作抗人球蛋白试验或酶联免疫吸附试验。为鉴别自然感染和人工免疫，或明确疾病是否活动，可作2-ME试验。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期1-3周，有的可一年后发病。起病大多缓慢，病情轻重不一。实验室感染者大多于10～50日内发病。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">其临床表现可多种多样而缺少特异性。症状轻重不一，羊型常较重，猪型次之，牛型最轻，部分病例可以不发热。
+ （一）急性期和亚急性期：3～6个月者为亚急性期。多数起病缓慢，急骤发病者仅占10％～30％。少数患者有一至数日的前驱症状，如无力、失眠、低热、纳差、上呼吸道炎等。主要临床表现为发热、多汗、关节痛、乏力和睾丸肿痛。
+（二）慢性期：病程超过6个月者。可由急性期发展而来，亦可无急性病史（尤其是牛型患者）。此期症状多种多样而更无特异性。全身非特异性症状类似神经官能症，如乏力、多汗、头痛、抑郁、烦躁、失眠及全身疼痛等。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">本病的病程一般可分为急性期、亚急性期和慢性期，牛型的急性期常不明显。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（一）急性期和亚急性期<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;病程在3个月以内者为急性期，3～6个月者为亚急性期。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．发热&nbsp;&nbsp;典型热型为波状热，其发热期平均为2～3周，继以3～5日至之周无热期后热再起，2～3波后常自然缓解，偶可达10余波，但此型目前少见，仅占5％～20％。常见者为长期不规则发热或弛张热。&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．多汗及全身乏力&nbsp;&nbsp;多汗是本病的突出症状，常于深夜清晨热急骤下降时出现大汗淋漓，甚至可湿透衣服。全身中毒症状常不明显。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．关节疼痛&nbsp;&nbsp;常较剧烈，患者辗转呻吟和痛楚难忍，可累及一个或数个关节，主要为骶髂、髋、膝、肩、腕、肘等大关节，呈游走性。部分患者可见关节红肿，偶有化脓。亦可见滑囊炎。腱鞘炎及关节周围炎。肌肉疼痛多见于大腿两侧及臀部，有时呈痉挛性疼痛。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．生殖系统病变&nbsp;&nbsp;睾丸肿痛占男性病例的20％～40％，是本病的特征性症状之一。可有睾丸炎及附睾炎，睾丸肿大多为单侧，可大如鹅卵。伴明显压痛，少数可伴鞘膜积液。女病人可有卵巢炎、输卵管炎及子宫内膜炎，可引起痛经、闭经及流产。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;次要表现可有头痛、神经痛、肝脾、淋巴结肿大及皮肤软组织病变，如皮疹、皮下结节及纤维织炎。亦可出现心肌炎、心内膜炎、咳嗽、鼻衄及便血等。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（二）慢性期<br>
+&nbsp;&nbsp;&nbsp;&nbsp;病程超过6个月者。可由急性期发展而来，亦可无急性病史（尤其是牛型患者）。<br>
+2．器质性损害&nbsp;&nbsp;可侵犯许多器官及系统。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）骨胳肌肉系统：最为常见，关节持续性钝痛，反复发作持续数年，固定而顽固者多见于羊型。亦可有滑膜炎及脊椎病变。久病者可发生关节强直或挛缩。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）神经系统：外周神经损伤多见，表现为神经痛、神经炎、神经根炎及神经丛神经炎等。中枢神经系统损害较少见，可有脑膜炎、脑膜脑炎及脑脊髓炎，而出现头痛、脑膜刺激征，昏迷、惊厥及瘫痪等表现。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）其他：亦可有泌尿生殖系病变、心肌炎、气管炎、间质性肺炎、胸膜炎及肝脾肿大等。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">心电图示P-R间期延长、心肌损害、低电压等。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">骨和关节X线检查可见软组织钙化、骨质修复反应强而破坏小，椎间盘和椎间隙变窄等。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">细菌培养：
+      血、骨髓、脑脊液、脓液和尿液培养可分离到病原菌。急性期羊型患者血培养阳性率可达60％～80％。骨髓培养阳性率高于血液，慢性期尤然。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">白细胞计数正常或稍偏低，淋巴细胞相对或绝对增多，有时可见异型淋巴细胞。严重病例或有迁徒性病灶者可有贫血。  血沉可增快。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">脑脊液检查适应于脑膜炎患者，脑脊液淋巴细胞升高，蛋白增加，糖、氯化物正常。
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa"><br>
+
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">1．血清凝集试验可检测血清中IgM、IgG2和IgA特异性抗体，以试管法应用最为广泛；平板法操作方便，适应于整个病期，但可出现假阳性。病程第2周呈阳性，效价达1：  100以上，高效价保持1年，以后显著下降，复发时再次上升。急性期阳性率80％，慢性期约30％。
+      接种霍乱或兔热菌苗及布鲁氏菌素皮内试验后，可使凝集效价增高。
+      2，补体结合试验补结抗体属IgG1和IgG3特异性抗体，病程第3周可超过1：16，具有较高特异性。阳性率高于凝集试验，但出现时间则晚于凝集试验。  3．抗人球蛋白试验用以测定体内不完全抗体。对急慢性病人均有诊断价值，敏感性较高，但操作较繁，仅适用于凝集试验阴性的可疑病例，效价＞1  ：  80为阳性。       4．酶联免疫吸附试验  可检测IgM和IgG抗体，阳性率高于凝集试验，可用于急慢性病人的诊断。
+      5．2-巯基乙醇（2-ME）试验可检测IgG抗体，用于鉴别自然感染与菌苗免疫。经2-ME处理后，凝集效价占处理前20％～30％以上者，提示疾病在活动。
+      6．皮内试验皮内注射布鲁氏菌素0．1m1，  48小时内见局部红肿硬结直径达2～6cm者为阳性，仅有局部红晕而无肿块者为阴性。阳性提示有本病或已患过本病，或者接种过布鲁氏菌菌苗。
+      7．其他反向被动血凝试验、协同凝集试验、放射免疫、间接免疫荧光试验等均可采用。
+有诊断及鉴定菌苗免疫效果的价值。布氏 菌素皮内试验为一种延迟超敏反应，感染后阳性可持续  数年至20年，故一般用于流行病学调查而不用于现症诊 断。
+
+
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．急性期病人须与下列疾病鉴别<br>
+本病急性期需与伤寒、风湿热、结核、败血症、黑热病、疟疾等鉴别。<br>
+（1）风湿热：二者均有发热和关节痛。但风湿热可有特殊的心脏病变、皮下结节及环形红斑，而肝脾肿大、睾丸炎及神经损害则极少见。血中性粒细胞增高、血沉增快更加明显，抗“O”阳性，水杨酸治疗有效。<br>
+（2）伤寒：二者均有发热、肝脾肿大及血白细胞减少。伤寒可有特殊热型及毒血症症状，玫瑰疹。血培养有伤寒杆菌生长，血清免疫学试验检测伤寒杆菌抗原、抗体阳性；<br>
+（3）败血症：二者均有发热、关节症状及肝脾肿大。败血症常有原发感染灶，中毒症状重，白细胞及中性粒细胞可明显升高，血培养可有其他致病菌生长。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;此外，尚需与类风湿关节炎、流感、疟疾、淋巴瘤等鉴别。<br>
+2．慢性期需与下列疾病鉴别：<br>
+慢性期应与骨、关节疾患和神经症等鉴别。<br>
+（1）神经官能症：二者症状类似，但神经官能症病人症状多，而无相应体征，发病多与精神刺激有关、布鲁氏菌病试验阴性。<br>
+（2）&nbsp;睾丸附睾结核：均有局部肿痛，但睾丸附睾结核可有硬结及窦道，布病特异性试验阴性，抗痨治疗有效。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;此外，还应与各种骨和关节疾病相鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈：<br>
+（1）体温恢复正常，其他临床症状、体征消失。<br>
+（2）体力和劳动能力恢复。<br>
+（3）原有布氏菌培养阳性者，应两次细菌培养转阴。临床化验检查各脏器功能正常。<br>
+2.基本治愈：<br>
+（1）体温恢复正常，其他主要临床症状、体征消失。<br>
+（2）体力和劳动能力基本恢复。<br>
+（3）原布氏菌培养阳性者，两次细菌培养转阴。<br>
+3.好转：上述三项指标达到两项者，或三项指标比治疗前有好转。<br>
+4.无效：<br>
+（1）治疗前后无显著变化或无改善者。<br>
+（2）治疗后有短时期的症状改善，但停药2周又复发者。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">预后良好，患者大多在3～6个月内康复，仅10％～15％病程超过6个月、未经抗菌药物治疗前病死率为2％～3％，采用抗菌治疗后很少死亡。主要死因为心内膜炎、严重中枢神经系统并发症、全血细胞减少症等。慢性患者可遗有关节病变、肌腱挛缩等而使肌体活动受限。骨病变可有"自愈"趋势，但为时较长，预后一般良好。
+
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1、急性期和亚急性期&nbsp;包括慢性期急性发作者，，以抗菌治疗为主。<br>
+（1）一般治疗：卧床休息，供给营养丰富的饮食和足量的水分；患者高热时可给予静脉补液及解热镇痛剂。<br>
+（2）抗菌治疗：为提高疗效，防止耐药，减少复发常采用联合用药。<br>
+①链霉素、四环素联合治疗：链霉素0.5g，肌注，每日2次；四环素0.5g，每日4次。疗程一般不少于3周，间歇5～7天，以2～3个疗程为宜。<br>
+②链霉素、强力霉素联合治疗：链霉素0．5g，每日2次，肌注2～3周；强力霉素每日0．2g，连服6周。国外学者认为是疗效较好的用药方案。<br>
+③卡那霉素或庆大霉素、四环素联合治疗：卡那霉素每日1．5g或庆大霉素24万U，稀释后静滴；四环素0．5g，每日4次，疗程3周。<br>
+④利福平、强力霉素联合治疗：利福平每日0.6～0．9g，强力霉素每日0．2g，顿服，疗程6周，共用2个疗程。利福平为广谱抗生素，易于透过细胞壁，疗效较佳，复发率低。<br>
+⑤复方新诺明：每次2片，每日3次，、疗程6周。<br>
+（3）&nbsp;肾本腺皮质激素：用于重症患者，如严重毒血症、睾丸显著肿胀、心脏、脑有严重病变或全血细胞减少者，常用氢化可的松200～300mg/日，或地塞米松10～20mg/日，稀释后静滴，疗程3～5日或依症状改善情况逐渐减量停药。<br>
+2.慢性期应采用抗菌治疗和特异性脱敏疗法为主的综合治疗。<br>
+&nbsp;&nbsp;&nbsp;（1）特异性脱敏疗法：可用菌苗、水解素、溶菌素，对慢性关节病及迁徒性病灶者为宜。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;①菌苗脱敏疗法：咸人一般用量（为灭活布鲁氏菌）为10万／20万、20万／30万、30万／50万、50万／100万、50万／250万、50万／500万个细菌，每一分数代表1日量，分子为准备量，分母为作用量，第1次静注准备量，第2次（给准备量后1．5～2.0小时后）给作用量。两次间隔3～5日，7～10次为一疗程。可根据注射后的反应逐次增加用量，以静注后体温波动于38～40℃为宜。本疗法可引起寒战、高热、大汗、关节痛等剧烈反应。多在注射后1～2小时开始，8～12小时达高峰，持续12～24小时缓解。菌苗疗法宜与抗菌药物合用。肝、肾功能不全。心血管疾病、活动性肺结核、孕妇忌用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;②水解素和溶菌素脱敏疗法：首剂以每日：1％1ml，以后根据情况渐增至2m1，10～15日为一疗程。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（2）抗菌治疗：一般认为链霉素联合四环素有一定疗效，但四环素的疗程应延长至6周以上，链霉素以4周为宜。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（3）手术治疗：适用于细菌性滑膜炎、关节炎、骨髓炎等。对脓性病灶可予手术引流。骨髓炎应予彻底清创，辅以长期抗菌治疗，除四环素初链霉素外，亦可试用氯霉素与庆大霉素联合疗法。脊椎炎或椎间盘感染一般无需外科引流。<br>
+3．合并症的治疗<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（1）布鲁氏菌性脑膜炎：治疗时应考虑药物是否通过血脑屏障。以氯霉素联合链霉素效果较好。氯霉素每日2～3g静滴，疗程2～3周。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（2）布鲁氏菌性心内膜炎：可采用氯霉素、链霉素、四环素、磺胺联合应用，疗程要长。亦可使用利福平联合链霉素治疗。除临床症状、栓塞现象消失，血培养多次阴性外，&nbsp; IgG抗体效价的明显下降，常提示病原菌的彻底清除。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">(1)湿热内蕴：治宜利湿化浊，清热解毒。方用甘露消毒汤加减。方中茵陈、本通清利湿热；黄芩清热燥湿&nbsp;；藿香、蔻仁、菖蒲芳香化浊，开畅气机；连翘清热解毒。若热甚去贝母加黄连、金银花，大青叶。食呆不纳者可加鸡内金、莱服子消导开胃。<br>
+（2）湿热伤营：治宜清热解毒，滋阴养血。方用清营汤合三仁汤加减。方中玄参、生地、麦冬清热养阴；黄连、连翘清心解毒；丹参清热凉血，活血散瘀；杏仁宣肺化湿；煎仁渗利湿热；滑石、芦根清利湿热。如咯血、便血、衄血者，加用大小蓟、藕节。<br>
+（3）正虚邪恋：治宜益气养血化瘀，并清除余邪。方用人参养营汤或独活寄生汤加减。方中人参补益正气；熟地养血滋阴；当归，白芍养血和血；丹参、赤芍凉血散瘀。失眠甚者加用夜交藤、枣仁、远志镇静安神。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）穿山龙：每日2m1，肌肉注射，内含生药1 g，15日为一疗程。近期疗效为30％。本品为一种非特异性脱敏疗法并有祛风除湿，舒筋活血的作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（2）0．2％黄连素注射液：每次4m1，肌肉注射，每日2～3次，疗程2～3周。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（3）雄蒜丸：雄黄30g，大蒜60瓣。将雄黄研末，大蒜捣成泥状，揉合为60丸，每次1丸，每日3次，连服20日为一疗程。配合针灸，可提高疗效。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（4）三黄汤：黄连15g.黄芩20g、黄柏hg，每日1剂，水煎服。连服20日。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">根据疼痛部位不同可选用下列穴位：&nbsp;&nbsp;<br>
+&nbsp;&nbsp;（1）头痛：太阳、头维、合谷。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（2）肩关节痛：巨骨、肩贞、肩三针。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（3）肘关节痛：阳池、曲泽、天井。、<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（4）腰痛：腰根（阿是穴）双肾俞、委中。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（5）髋关节痛，环跳、承扶配委中。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（6）膝关节痛：委中、阳陵泉、阴陵泉、内外膝眼、足三里、悬钟。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">1．物理疗法<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（1）热疗法：借用某种物质（如泥土、石蜡、麦麸等）将热传给机体而起治疗作用的一种疗法。主要用于局部病变的治疗，如关节痛，一般以10～20次为一疗程，每次15～40分钟。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（2）透热疗法：适用于关节病变的治疗。方法：将短波电疗机电缆电极置于患者胸部及大腿上方，电流量为200mA，作用时间为1．5小时，隔日1次，10次为一疗程。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;（3）封闭疗法：用于固定性关节疼痛及神经痛。常用药为0.25％～0．5％奴佛卡因，膝、肘、髋关节每次注射3～5m1，腕、踝关节每次注射1～3m1，一般注射3～5次为宜。<br>
+&nbsp;&nbsp;&nbsp;应坚持中西医结合治疗。急性期抗菌治疗效果较好，抗生素应早期、足量、全程，并可根据邪毒所犯部位和虚实施以清热除湿，解毒凉血汤药，可加速缓解临床症状，缩短病程，减少复发。慢性期西医尚无理想方法，中医治疗有一定优势，除采用抗菌治疗、脱敏疗法外，亦可选用具有免疫调节功能，增强巨噬细胞吞噬作用以及抑制变态反应，具有脱敏效果的中药，治疗时间宜长，疗程要足，并适当加大药量。当出现关节病变时可采用非药物疗法。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">预防接种和病畜管理是控制本病的主要措施。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．控制传染源发现病畜应予隔离，对流产胎羔应加生石灰深埋。急除期病人应隔离至症状消失，血尿培养阴性。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．切断传播途径&nbsp;&nbsp;加强粪水管理，防止病畜、病人的排泄物污染水源。加强畜产品的卫生监督，禁止销售与食用病畜肉类及乳品。对乳品、肉类、皮毛要严格消毒。个人做好防护工作。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．保护易感人群对健康牲畜的预防接种应有连续性（连续免疫3～5年）和连片性，采用减毒活菌苗，作皮下注射或气溶吸入。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对牧民、兽医、实验室工作人员均应预防接种，采用布病104M冻干活菌苗皮上划痕法接种，接种30天后抗体水平明显增高，6个月后开始下降，故每年应加强复种一次。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

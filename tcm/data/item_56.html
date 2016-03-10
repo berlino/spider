@@ -1,0 +1,928 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">多发性大动脉炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=多发性大动脉炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">multiple aorto-arteritis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">DUOFAXINGDADONGMAIYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">缩窄性大动脉炎，中医:脉痹,无脉。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">外周血管疾病，循环系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">多发性大动脉炎为主动脉及其分支的慢性、进行性、闭塞性的炎症，亦称缩窄性大动脉炎。由于受累动脉的不同而产生不同的临床类型，其中以头和臂部动脉受累引起的上肢无脉症为最多，其次是降主动脉、腹主动脉受累的下肢无脉症和肾动脉受累引起的肾动脉狭窄性高血压，也可见肺动脉和冠状动脉受累。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">本病的病因不明确，可能与下列因素有关：
+1．自身免疫性疾病结核杆菌、链球菌或立克次体等引起主动脉其分支动脉壁上的抗原抗体反应导致炎症。
+2．遗传因素  有人认为本症与组织相容抗原（HLA）系统中BW40、BW52位点有密切关系，属显性遗传。
+3. 其它  内分泌系统失调，雌激素过多可以造成主动脉及其分支的肌层萎缩、坏死和钙化，结合任何营养不良因素（如结核病）可诱致本病。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">1．正气不足  系因先天不足、后天失调，正气自虚，复感外邪，阻痹血脉而发本病。
+2．感受外邪  尤其是感受寒邪，更伤阳气，可以导致脉络瘀滞，甚至闭塞不通而无脉。
+此外感受热毒之邪，侵及脉络也可发为本病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">农村与城市无明显差别。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">本病女性多于男性，国内报告的患者中女性占67．7％～69％；发病年龄5～45岁，  30岁以下患者占89％。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">寒主收引，主痛，感受寒邪或在阳虚的基础上复感外邪，均可致寒凝血脉，血行不畅，而致脉伏不出，诚如《医学心悟》所云‘’脉伏不出者，寒气闭塞也、也可因感受热毒之邪，蒸腐血脉而致脉络闭阻，以致高热疼痛；气为血帅，气行则血行，气滞则血滞。气虚不能运血，亦可致血脉运行不畅，络脉失养，发为疼痛无脉之症；正气不足，邪伤气血，脏腑四肢百骸失于濡养则诸症迭生。总之，本病以本虚为主，可以有气、血、阴、阳之不足；邪实为标，可见寒湿、热毒、瘀血等。临床上以本虚标实者为多，但无论是正虚还是邪实，血瘀这一病理机制贯穿于疾病的始终。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">主要表现为慢性进行性全动脉炎及动脉侧支循环形成两种基本变化。前者主要发生于主动脉的大、中分支，病变由动脉外膜开始，向内扩展，动脉壁各层均有淋巴细胞和浆细胞为主的大量细胞浸润及结缔组织增生。中层有弹力纤维断裂和炎性肉芽组织增生，肉芽组织中有上皮样细胞、朗罕巨细胞（或异物细胞）和淋巴细胞浸润，内膜不规则增厚使管腔狭窄，并迟早引起血栓形成而闭塞。病变的血管呈灰白色，管壁僵硬、萎缩，与周围组织粘情况下，病变血管壁破坏广泛，而结缔组织修复不足，可能引起动脉扩张，甚至导致动脉瘤形成。个别可因升主动脉扩张而导致主动脉瓣关闭不全；后者如为动脉受累，其受累血管远端的血液供应可通过不同的动脉侧支而获得。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）活动期：&nbsp;<br>
+①风热痹阻，血瘀脉络：&nbsp;&nbsp;&nbsp;<br>
+证候：发热，头晕、头痛，关节酸痛，四肢酸胀，舌红，苔黄，脉细数。&nbsp;&nbsp;&nbsp;<br>
+证候分析：风热之邪侵入机体，客于血脉，邪气初犯，正气尚实，邪气相争故发热；脉络瘀阻，脑失所养，故头晕、头痛；四肢失养则关节酸痛；舌红，苔黄，脉细数为风热侵袭、脉络瘀阻之象。&nbsp;<br>
+②热入营血,脉络痹阻：&nbsp;&nbsp;<br>
+证候：发热或高热，汗出口渴，关节疼痛，身起红斑，舌红，苔黄，脉数或细数。&nbsp;&nbsp;<br>
+证候分析：热毒之邪侵入营血，痹阻脉络，邪正相争故发热；热邪迫津外泄故汗出；伤及阴液故口渴；经脉不通，关节失养则疼痛；热毒迫血妄行，溢于脉外则身出红斑。舌红，苔黄，脉数或细数皆热毒内侵之征。<br>
+（2）稳定期：&nbsp;<br>
+①气虚血弱，瘀血阻络：&nbsp;&nbsp;&nbsp;<br>
+证候：头晕眼花，视力减退，失眠多梦，健忘，胸闷气短，上肢无力、麻木或疼痛，舌质淡暗，苔薄白，脉细涩或脉伏不出。&nbsp;&nbsp;&nbsp;<br>
+证候分析：气血两亏，脏腑百骸失于濡养。目失所养则眼花、视力减退；脑失所养则头晕、失眠健忘；气虚无以运血，血瘀脉络，故胸闷、肢体麻木或疼痛；气虚则乏力、气短；舌淡暗，苔薄白，脉细涩或脉伏不出为气血两虚、瘀血内阻之象。&nbsp;&nbsp;&nbsp;<br>
+②肝肾阴虚，肝阳上亢：&nbsp;&nbsp;<br>
+证候：头痛，头晕，耳鸣，腰酸腿软，下肢发麻，舌红少苔，脉弦细数。&nbsp;&nbsp;<br>
+证候分析：肝肾阴虚，阴不制阳，肝阳浮动，血郁气逆，上盛下虚，故见头痛、头晕、耳鸣、腰酸腿软；肝肾阴虚，筋脉失养，故见肢体麻木。舌红少苔，脉弦细数为肝肾阴虚，热动肝风之象。<br>
+③阳虚寒凝，脉络痹阻：&nbsp;&nbsp;<br>
+证候：肢体冷凉、麻木或疼痛，甚至青紫，畏寒，舌质淡胖，苔薄白，脉微细如丝或无脉。&nbsp;&nbsp;<br>
+证候分析：寒湿伤阳，阳虚寒凝，脉络痹阻不通，故畏寒肢冷、麻木或疼痛，甚至青紫。舌淡暗，苔薄白，脉微细如丝或无脉为阳虚寒盛之象。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">多发性大动脉炎诊断标准:<br>
+1.多见于青年女性。<br>
+2.活动期中出现发热、盗汗、乏力，并可伴关节炎及结节性红斑等。<br>
+3.根据病变部位的不同，可分为四种类型。<br>
+（1）主动脉弓及其分支型（主动脉弓综合征），又称无脉症。上肢及头部缺血，而有手麻、无力、头昏、头痛、晕厥，伴单侧或双侧上肢动脉、颈动脉或颞动脉搏动减弱或消失，颈部或锁骨上部血管杂音。上肢血压低或测不出，可伴眼底贫血性改变，视力减退甚至失明，或鼻中隔穿孔，失语、偏瘫、昏迷。<br>
+（2）胸、腹主动脉及其分支型。表现为下肢缺血症状如下肢麻木、疼痛，或间歇性跛行。上肢血压显著升高，下肢血压减低或测不出，一侧或二侧股动脉搏动减弱或消失。累及肠系膜动脉时，可有腹痛；累及肾动脉时，有顽固性高血压，左心室增大或左心衰竭，眼底呈高血压眼底改变。在腹部及脊肋角区或胸、背部可听到高调收缩期血管杂音。<br>
+（3）混合型。具第一型和第二型表现。<br>
+（4）肺动脉型。可有气急、心悸、肺动脉瓣区收缩期杂音和肺动脉高压症。<br>
+4.实验室检查：活动期时，血沉增快，血白细胞增多，C反应蛋白阳性，血清γ球蛋白和免疫球蛋白G（IgG）增高，类风湿因子可呈阳性，循环中可存在抗血管壁抗原的自身抗体。<br>5.X线检查：可见受累动脉钙化影，左心室扩大。选择性主动脉造影或数字减影血管造影，可显示动脉狭窄的部位、程度及范围。<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">凡青少年，尤其是女性，具有下列一种以上表现者，应怀疑或诊断本病：①单侧或双侧肢体出现缺血症状，伴有动脉搏动减弱或消失，血压降低或测不出者。②脑动脉缺血症状，伴有单侧或双侧颈动脉搏动减弱或消失以及颈部有血管杂音者，左侧颈部血管杂音较右侧的病理意义为大。③近期发生的高血压或顽固性高血压，伴有上腹部二级以上高调收缩期血管杂音者。④原因不明的低热，伴有血管杂音，四肢脉搏或上下肢血压差有异常改变者。⑤有无脉病的眼底改变者。本病虽多发于青年，但中年亦可罹患，有怀疑者需进一步进行有关检查。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">有引起该病的病史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">1．全身症状  在活动期出现，可见发热、全身不适、食欲不振、出汗、苍白等，可能伴有关节炎和结节性红斑等。
+2．局部症状根据受累血管的不同可分为以下四型。
+（1）头臂动脉型：即上肢无脉症，占23％～24．5％。工作时上肢易疲劳，并有疼痛、发麻或发冷感觉；或出现咀嚼时颊部肌肉疼痛，情绪易激动，有眩晕、头痛，记忆力减退，易昏厥，视力减退和一过性眼前发黑等。严重者可有精神失常、抽搐、偏瘫和昏迷。少数重病患者由于局部缺血而产生鼻中隔穿孔，齿、发脱落，上颚和耳壳溃疡、面部萎缩、角膜混浊、虹膜萎缩和白内障等。缺血影响至基底动脉时，可出现眩晕、复视，甚至昏厥。
+（2）腹主动脉型：即下肢无脉型，约占17％。缺血产生下肢麻木、疼痛、发凉等感觉，易疲劳，并可有间歇性跛行。上肢血压持续增高者可有高血压的各种症状。严重者可有发生心力衰竭。
+（3）肾动脉型：本型约占22％。可见持续、严重而顽固的高血压以及由此所引起的各种症状。
+（4）肺动脉型：因肺动脉缺血可由来自支气管动脉系统的侧支循环代偿，故单纯肺动脉型一般无明显症状。严重者可有心悸、气短等症状。
+（5）混合型：约占38％～41．5％。病变同时累及上述两组或两组以上的血管。通常先有一组的局部症状，尔后随着病变的发展而逐渐演变为“混合型”，其中肾动脉受累者最多，约占此型的36．3％，故大多数患者有明显的高血压表现，其它症状随受累血管的不同而异。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．头臂动脉型&nbsp;&nbsp;单侧或双侧桡、肱、腋、颈或颞等动脉的搏动减弱或消失，而下肢动脉搏动正常，上肢血压测不出或明显减低，或两臂收缩压持续相差大于2.67kPa（20mmHg），下肢血压正常或增高。在动脉狭窄部位能听到血管杂音。约占43％～51．5％的患者在两侧颈部、锁骨上部及胸锁乳突肌外的三角区可听到连续性杂音或收缩期杂音。胸壁和背部皮肤可见扩张的浅表动脉。部分患者心率增快，左心室扩大。<br>
+2．胸腹主动脉型&nbsp;&nbsp;下肢从股动脉开始，可有一侧或两侧动脉搏动减弱或消失，血压测不出或明显降低，上肢血压增高。腹部或肾区可听到收缩期杂音。肩胛骨附近、两肩胛间、胸部或胸骨旁，可听到连续性或收缩期杂音。可有左心室增大或左心衰竭的体征。<br>
+3．肾动脉型：四肢血压均明显增高，上腹部和肾区可听到收缩期杂音，可有左心室增大或左心衰竭的体征。<br>
+4．肺动脉型：肺动脉瓣区、腋部和背部有收缩期杂音，严重者可有肺动脉瓣第二音亢进等肺动脉高压的表现。<br>
+5。混合型：体征随受累血管不同而异。累及到主动脉可导致主动脉瓣关闭不全：累及冠状动脉时可以发生心肌梗死而出现相应的体征。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">心电图所见，约半数病人为左心室肥厚，左心室高电压或劳损。个别表现右心室肥厚，由肺动脉狭窄引起肺动脉高压和（或）高血压引起右心室舒张晚期压力增高所致，左心室后负荷增加可能部分掩盖心电图右心室肥厚的特征。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">一、X线检查
+1．常规X线检查  在胸腹主动脉型和肾动脉型的胸片中可见左心室增大，前者肋骨下缘可见扩张的肋间动脉侵蚀所致的凹陷缺损。肺动脉型可见肺野外周纹理减少，肺动脉圆椎突出和右心室增大。
+2．选择性动脉造影  头臂动脉型可显示主动脉弓和（或）其分支有狭窄或阻塞；累及到主动脉者，可见到主动脉扩张和主动脉反流。在胸腹主动脉型可显示降主动脉或腹主动脉局部狭窄或阻塞。肾动脉型可显示肾动脉狭窄或阻塞，狭窄段前后血管可扩张，其附近可见粗大扭曲的侧支循环血管。肺动脉型可显示肺动脉或其分支的局部狭窄。
+3．排泄性尿路造影  肾动脉型静脉肾盂造影可见两肾大小差异，患侧肾缩小，两侧肾盂显影时间和浓度差异以及由侧支循环所致的输尿管压迹。
+4．数字减影血管造影（DsA）  适用于门诊筛选和术后随访检查。
+5。核磁共振显像（NMRI）可观察到动脉壁异常增厚，受累的胸腹主动脉狭窄。该法对本病的敏感性约38％。
+二、同位素检查
+放射性核素肾图显示患侧肾脏缺血性改变。同位素肺灌注扫描可见狭窄区血流减少。
+三、超声血管检查
+可显示狭窄部位，并可测到狭窄远端动脉血流量降低。
+四、脑血流图检查
+颈动脉受累者可显示脑血流量减少。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">一、眼底检查
+头臂动脉型中可见视乳头苍白，视神经萎缩，视网膜动静脉不同程度的扩张和相互吻合，外周血管闭塞，视网膜玻璃体出血及结缔组织增生，并发白内障、视网膜剥离等：胸腹主动 脉型和肾动脉型中可见高血压的眼底改变，眼底视网膜动脉硬化、狭窄或痉孪等。
+二、节段性肢体血压测定和脉波描记
+采用应变容积描记仪（SPG）、光电容积描记仪（PPG）可测定同侧肢体相邻段血压或两侧肢体对称部位的血压差，大于2.67kPa  （20mmHg）时提示压力降低的近端动脉狭窄或阻塞。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血液检查
+动脉炎活动期，血沉增快，抗链“O”滴度增高，C反应蛋白阳性，白细胞计数增多，部分患者有红细胞计数和血红蛋白降低；血清白蛋白降低而a和γ球蛋白增高，IgM、IgG增高，类风湿因子、抗主动脉抗体和Coombs试验阳性。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">C反应蛋白增高其临床意义与血沉相同。抗链球菌溶血素“O”和粘糖酶反应，仅说明患者近期有否溶血性链球菌感染，少数出现上述两种阳性反应。血清白蛋白降低，α1、α2和γ球蛋白增高。血清抗主动脉抗体测定对本病的诊断有一定价值，补体结合试验或血球凝集试验均发现大多数血清抗主动脉抗体的滴定和抗体价明显增高，但并非特异性，其他心血管疾病亦可见少数抗主动脉抗体增高，病变活动期抗体阳性者较非活动期多见。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．先天性动脉狭窄多见于男性，常在动脉导管相接处形成局限性狭窄，血管杂音限于心前区或背部，全身症状不明显。超声或选择性主动脉造影有助于鉴别。<br>
+2．血栓闭塞性脉管炎多发于男性，主要为四肢外周血管及静脉内膜炎。常发生于肢端，呈剧痛，溃烂，游走性静脉炎。<br>
+3．闭塞性动脉硬化症多发于50岁以上中老年人，男女均可发生，伴有动脉硬化的其它表现，血脂常增高，X线检查可见患肢的动脉壁有钙化阴影。<br>
+4.颈肋和前斜角肌综合征&nbsp;&nbsp;亦多见于青年女性，可见上肢发凉、麻木、疼痛、皮肤苍白或青紫，桡动脉傅动减弱或消失，可发生肢体营养障碍及坏疽。X线检查可见颈肋存在，或提拉前斜角肌时症状加重。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈：症状及体征基本消失，血压、实验室及X线检查恢复正常。<br>
+2.好转：症状减轻，血压接近正常。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病病程较长，预后主要取决于高血压程度、心脏功能状态和脑供血情况三个因素。常因手术或发生心力衰竭、脑血管意外、肾功能衰竭、尿毒症及其他并发症而死亡。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．活动期治疗&nbsp;&nbsp;活动期或全身症状明显者，可用强的松5～10mg或地塞米松0.75～1.5mg，口服，每日3～4次，至体温下降、血沉趋向正常后逐渐减量以至停药，但应密切观察，防止停药后复发。对少数患者其他疗法不能控制全身症状时，可以长期服用小剂量强的松（5～10mg／日），可能有一定的效果。对合并有结核、感染、高血压者，不宜长时间应用。对合并有结核或链球菌感染者，应同时给予抗结核药或抗生素治疗。<br>
+2．稳定期治疗<br>
+（1）血管扩张剂：盐酸妥拉苏林，&nbsp; 25～50mg，口服，一日3次；烟酸， 50～100mg，口服，一日3次；低分子右旋糖酐，&nbsp; 500ml，加入丹参注射液20ml，静脉滴注，每日1～2次，14天为一疗程；疏甲丙脯酸，&nbsp; 25～50mg，口服，一日3次；地巴唑，&nbsp; 10mg,口服，一日3次；己酮可可碱，&nbsp; 400mg，口服，一日3次。<br>
+（2）抗血小板药物：潘生丁, 25～50mg，口服，一日3次；阿斯匹林，0.15，口服，一日一次。<br>
+3．手术治疗漫性期，病情稳定半年或一年而病变局限者；或有严重脑、肾、肢体缺血，影响功能但脏器功能尚未消失者；或有严重顽固性高血压，药物治疗无效者;均可以考虑手术治疗。手术方法包括动脉内膜剥脱加自体静脉片修补术、血管重建、旁路移植术、自体肾移植术和肾切除术。<br>
+4．经皮腔内血管成形术（PTA）用于短段主动脉狭窄和肾动脉起始部位狭窄者。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">辨证分型治疗<br>
+（1）活动期：<br>
+①风热痹阻，血瘀脉络：治法：疏风清热，化瘀通痹。<br>
+方药：羌活胜湿汤加减。药用羌活、独活、双花、连翘、丹参、红花、当归、生地。<br>
+方选羌活，独活祛风除湿止痛；双花、连翘清热解毒；丹参、红花、当归活血化瘀；生地养阴清热、通血痹，并防诸药辛燥伤阴。热盛者可加入大青叶、板兰根、蒲公英以加强清热解毒之力；关节痛甚者加鸡血藤、络石藤、海风藤祛风通络。&nbsp;<br>
+②热入营血,脉络痹阻：治法：清热解毒，凉血散瘀。<br>
+方药：犀角地黄汤合四妙勇安汤加减。药用玄参、生地、水牛角、银花、生石膏、丹皮、当归、丹参、鸡血藤。<br>
+方用玄参、生地、水牛角清热凉血；银花、生石膏清热解毒；丹皮凉血活血；当归、丹参、鸡血藤养血活血通脉。<br>
+（2）稳定期：<br>
+①气虚血弱，瘀血阻络：&nbsp;治法：补益气血，活血通脉。<br>
+方药：黄芪桂枝五物汤加减。药用黄芪、桂枝、当归、白芍、大枣、赤芍、秦艽、地龙、鸡血藤。<br>
+方以黄芪益气通脉，扶正祛邪；桂枝温通血脉；当归、白芍、大枣补血；赤芍、秦艽、地龙、鸡血藤活血通络。气虚明显，四肢乏力较重者可加党参或人参加强益气补虚之效；肢体酸麻者，加桑枝、伸筋草、川芎舒筋通络。<br>
+②肝肾阴虚，肝阳上亢：治法：滋补肝肾，平肝熄风。<br>
+方药：天麻钩藤饮加减。药用天麻、钩藤、石决明、炒山栀、杜仲、桑寄生、牛膝、益母草、当归、鸡血藤、夜交藤。<br>
+方以天麻、钩藤、石决明、炒山栀平肝潜阳；杜仲、桑寄生、牛膝补肝肾；益母草、当归、鸡血藤活血和血；夜交藤养心安神。阴虚口渴者。加天花粉、麦冬、天冬止渴生津；阴虚阳亢明显，头晕目眩、失眠多梦者可加入生龙骨、生牡蛎、代赭石、龟板以加强平肝潜阳之力。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+③阳虚寒凝，脉络痹阻：&nbsp;治法：温阳散寒，活血通脉。<br>
+方药：阳和汤加减。药用肉桂、干姜、鹿角胶、生地、麻黄、当归、川芎、丹参、鸡血藤、黄芪。<br>
+方以肉桂、干姜壮元阳、祛中寒，使寒去阳回，血脉通畅；鹿角胶、生地补肾填精，暖肝补血；麻黄与桂枝相伍，宣发营卫、温经散寒；当归、川芎、丹参、鸡血藤活血化瘀、通经络；黄芪益气以助血行。肾阳虚甚者，加巴戟天、仙灵脾、补骨脂温补肾阳；寒盛者，加附片温阳散寒；兼腰膝痛甚者，加川断、杜仲、寄生补肾活血止痛。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）愈风宁心片：5片／次，每日3次。用于本病脑供血不足的头痛、头晕。<br>
+（2）丹参或复方丹参片：3～5片／次，每日3次。用于本病之血瘀症。<br>
+（3）龙胆泻肝丸：&nbsp; 12g／次，每日3次。用于本病有高血压偏热者。<br>
+（4）毛冬青：&nbsp; 50～100g，水煎1～2小时，每日分1～2次服。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1．体针&nbsp;&nbsp;上肢无脉取内关、太渊、尺泽。配穴曲池、合谷、通里、肩井；下肢无脉取穴足三里、三阴交、太冲、太溪，每日一次，每次4～5穴，采用强刺激手法为主。体弱者宜平补平泻或补法，每次留针30分钟，7～10天为一疗程。<br>
+2．耳针&nbsp;&nbsp;主穴为心、交感、肾、皮质下、内分泌，配穴为脾及相应症状部位。每次2～3穴，耳针刺、埋针或用王不留行籽压穴。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">防止寒湿对人体的侵袭，避免居住潮湿之处，冬天注意保暖，及早发现、及时处理与本病有关的因素，如控制结核、感染等，防止病情进一步发展侵及血管。此外，还应注意加强锻炼，增强体质，增强机体的免疫机能，对本病的预防亦十分必要。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

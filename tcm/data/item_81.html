@@ -1,0 +1,1071 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">急性白血病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=急性白血病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">acute leukemia
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">JIXINGBAIXUEBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">血癌，中医：急劳，热劳，虚劳，血证，髎积，温病,
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">造血器及淋巴系肿瘤，血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">急性白血病是血液系统中的一种恶性疾病或称为血癌。在骨髓和其他造血组织中任何一系列白细胞广泛的异常增生，并向全身各组织、脏器浸润。破坏。在外周血液中的白细胞有质和量的改变，白细胞增多或减少，并伴有幼稚细胞增多。由于异常白细胞增生而影响造血组织的正常造血。临床常有贫血、发热、出血及肝、脾、淋巴结肿大等。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">白血病的病因比较复杂，迄今尚未被完全认识，其病因是非单一因素所引起的。目前认为与
+1．物理因素  电离辐射能诱导致白血病。
+2．化学因素  凡能引起骨髓不良增生的化学物质都有致白血病的可能，尤其是苯及其衍生物对造血组织有抑制作用，并可引起白血病，细胞毒药物尤其是烷化剂等可引起继发性白血病。
+3．遗传因素  有的遗传疾病和免疫缺陷征患者易发生白血病，如先天愚型约占20％可发生白血病，其它如范尼克贫血、遗传性毛细血管扩张、共济失调以及骨发育不全等遗传缺陷者也有发生白血病的报道。
+4．病毒因素  目前已有较多的证据证实，白血病病毒是一种逆转录病毒，在电镜下大多呈C型形态。逆转录病毒是RNA病毒，当逆转录细胞浆，去掉被膜后释放出RNA。在逆转录酶的作用下，以病毒RNA为模板，转录为互补DNA（即前病毒DNA）再经过DNA依赖性的DNA多聚酶作用，形成前病毒DNA。前病毒DNA能整合于宿主细胞的DNA内进行复制，但不影响宿主细胞的生存。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">白血病发病原因比较复杂，其内因为正气不足，而先天已有“胎毒”内伏，加之复感外邪瘟毒所致。《内经》中说：“邪之所凑，其气必虚”，正气虚，导致外感，内外合邪而致病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">急性白血病多见于儿童及青壮年。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">据统计白血病占恶性肿瘤发病率的第六位到第七位，约为3～4／10万人，其中急性多于慢性，急性者占70％以上，其中又以急粒占首位，次为急淋和急单。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">由于正气虚弱、先天“胎毒”内伏又复感邪毒，由表入里致脏腑受邪，骨髓受损。邪毒耗气伤阴，阴虚内热，内热熏蒸，热伤脉络，迫血妄行，气耗日久致气虚脾弱，气不能摄血，脾虚不能统血，也可发生出血诸症：鼻衄、齿衄、肌衄、咳血、吐血、便血、尿血、妇女可见崩漏等。由于正气不足，瘟毒、邪毒反复侵袭营血，血热炽盛，阴伤血败，见高热不退，故有“热劳”、“急劳”之称。病邪久恋不去，气血更虚，故面色苍白，乏力气短，心悸头晕，懒言嗜卧动则汗出，舌质淡、体胖，苔薄白，脉沉细无力。气为血之帅，气行血则行，气虚则血行不畅，日久则气滞血瘀或脉络瘀阻结于胁下等形成髎积，推之不移，临床表现肝、脾、淋巴结肿大、胸骨压痛等。白血病的整个疾病过程中，正邪的分争贯彻其始终。若邪毒由盛而衰，正气由虚而渐复，则疾病得以缓解。若外邪亢盛，日久不见平复，营血继续内耗，而致阴虚，阴虚则生内热，故两颊红、乙烦热、手足心热、口渴欲饮、夜间盗汗、舌质微红、脉细数等。由于热伤气损阳，久之阳气耗之愈甚而致阳虚。阳虚则外寒，四肢冷凉，喜暖踡卧，自汗出，大便溏，小便清长，舌胖、苔薄白，脉沉细无力，若正气仍不能机转，邪仍不去，病情则进一步恶化，气血阴阳虚甚，最后导致阴阳两竭而死亡。总之本病的发生发展有虚有实，是虚实夹杂、正邪分争，复杂的病理过程。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">白血病的病理主要表现有白血病细胞的增生与浸润。非特异性病变则为出血及组织营养不良和坏死、继发感染等。白血病细胞的增生和浸润主要发生在骨髓及其他造血组织中，但也可出现在全身其它组织中，致使正常的红系细胞、巨核系细胞显著减少。骨髓中可因某些白血病细胞增生明显活跃或极度活跃，而呈灰红色或黄绿色。淋巴组织也可被白血病细胞浸润，后期则淋巴结肿大。有50％～80％白血病死者有明显中枢神经系统白血病改变。常见者为血管内白细胞郁滞、血管周围白细胞增生。其它最常发生白血病浸润的脏器是肾、肺、心脏及胸腺、睾丸等。总的看来，急性白血病浸润组织脏器比较集中而且严重，破坏组织能力较大。白血病在疾病过程中，大多伴有不同程度的出血，可发生在任何部位，但多见于造血组织、皮肤粘膜、心包膜、脾、胃及中枢神经等。其出血常发生在有白血病细胞浸润的基础上。由于白血病细胞浸润、出血，梗死及全身代谢障碍，局部或全部组织可有营养不良与萎缩，甚至坏死等。近年来由于大量化疗药物和抗生素的应用，其尸检病理变化有新的表现，白血病细胞崩解浸润消失，出现了纤维蛋白渗出，组织细胞吞噬，继而纤维化。骨髓可出现萎缩或纤维化，某些霉菌、原虫的感染增多，药物引起的病变增多。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）气血（阴）两虚为主：<br>
+证候：以血虚、气虚为主，面色苍白，头晕心悸，疲乏无力，手足心热，自汗盗汗，舌质淡，脉象细数。<br>
+证候分析：面色苍白乃血液亏少表现，头晕心悸，属血不养脑、血不养心所致，血属阴，血少则阴亏，阴虚则生内热、阴虚盗汗。气属阳，气虚则疲乏无力，阳虚则自汗。<br>
+（2）热毒炽盛为主：证候：以发热为主，往往感染灶不明显，面赤，口渴思冷饮，周身不适，伴有贫血、轻度出血、胸骨压痛或肝、脾稍肿大，大便结，小便黄，舌苔黄少津,脉数或弦数。<br>
+证候分析：发热乃邪毒所致，外感邪毒后，正气与之相争，发热又是邪气与卫气相争的表现，热伤阴耗气，故口渴思冷饮，便结溲黄，周身不适。邪郁于内，故胸骨压痛，肝脾肿大等症出现。<br>
+（3）热毒入血：<br>
+证候：以出血症状为主，发热轻或重，有齿衄、鼻衄、皮肤瘀斑，甚者唇舌有血泡，咯血、吐血、便血、崩漏、中风，或有肝、脾、淋巴结肿大，舌质红绛，苔薄黄，脉细数。<br>
+证候分析：出血可由外感、内伤等多种原因所致，本病出血多由邪毒入血而发热，火热熏灼，迫血妄行，而致周身多部位出血。<br>
+（4）瘀血痰咳：<br>
+证候：面色晦暗，皮肤甲错，痛有定处，肝、脾、淋巴结肿大，伴有低热，贫血或轻度出血，舌质暗有瘀斑。脉象涩或弦数。<br>
+证候分析：上述诸症属一派瘀血症候。由于邪毒阻塞脉络，血行不畅，致血瘀内停所致。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">诊断标准：<br>
+1.急性白血病发病急骤或缓慢，病情发展迅速。<br>
+2.进行性贫血，发热，出血，肝、脾、淋巴结肿大，骨痛，尤其胸骨压痛。<br>
+3.白细胞计数常增高，有的多至（300～500）×1O9/L，也有部分少至（0.2～0.5）×1O9/L。<br>
+4.血片中可有原始、幼稚细胞。<br>
+5.骨髓增生多明显或极度活跃，也有少数增生不活跃或低下者。一般原始细胞加早幼粒（或加幼稚细胞）>30%，其他系细胞受抑。<br>
+[分型诊断标准]<br>
+1980年全国白血病分类分型交流讨论会（于苏州）拟订，全国内科学会血液病组会议（于广州）修订的根据细胞形态学分型的急性白血病诊断标准一、急性淋巴细胞型<br>
+1.第一型：以小淋巴细胞为主，核染色质较粗，每例结构较一致，核型规则，偶有凹陷或折迭，核仁少而不清楚，少或不见，胞浆量少，胞浆嗜碱性或中度，胞浆空泡不定。<br>
+2.第二型：以大淋巴细胞为主，核染色质较疏松，每例结构较不一致，核形不规则，凹陷和折迭常见，核仁清楚，1个或多个，胞浆量不定，常较多，胞浆嗜碱性不定，有些细胞深染，胞浆空泡不定。<br>
+3.第三型：以大淋巴细胞为主，大小较一致，核染色质呈细点状均匀，核仁明显，1个或多个，呈小泡状，胞浆量较多，胞浆嗜碱性深染，胞浆空泡常明显，呈蜂窝状。<br>
+上述各型不符合条件的细胞可高至20%左右，第一型的小细胞直径可大于正常小淋巴细胞的两倍（约13微米），第二型大细胞的直径可大于正常小淋巴细胞的两倍以上，第三型似Burkitt型。<br>
+急淋第一型有时与原粒细胞白血病未成熟型不易区别，过氧化物酶或苏丹黑染色有鉴别价值。原淋细胞呈阴性反应，阳性原始细胞一般不超过3%，可能是残余的正常原粒细胞。<br>
+二、急性非淋巴细胞型<br>
+1.粒细胞白血病未分化型（M1）：骨髓中绝大多数为原粒细胞，早幼粒细胞很少，中幼粒以下各阶段细胞不见或极罕见。过氧化物酶或苏丹黑阳性细胞超过3%。<br>
+2.粒细胞白血病部分分化型（M2）：多数病例骨髓中原粒和早幼粒细胞占5%以上，尚见或多或少的中幼粒、晚幼粒和成熟粒细胞。<br>
+以上两型的白血病细胞均可有Auer小体。<br>
+3.颗粒增多的早幼粒细胞白血病（M3）：骨髓中以颗粒增多的异常早幼粒细胞增生为主，其细胞核大小不一，常不规则，可分两型：<br>
+（1）粗颗粒型：大多数早幼粒细胞的胞浆中布满粗大、密集甚或融合的嗜苯胺兰颗粒，可掩盖整个胞浆甚至胞核，部分早幼粒细胞胞浆中可见较多的Auer小体，有时呈柴束样。有柴束样Auer小体的细胞，可无颗粒，胞浆清而淡染。<br>
+（2）细颗粒型：早幼粒细胞的胞浆中，嗜苯胺兰颗粒密集而细小，但过氧化物酶染色呈强阳性。非特异性酯酶虽可呈阳性反应，但氟化钠抑制不明显，以此可与单核细胞白血病相鉴别。此型与M2也不同，后者以原粒细胞为主。前者以多颗粒异常早幼粒细胞为主，染色体分带和透射电镜技术可帮助诊断。<br>
+4.粒-单核细胞白血病（M4）：此型白血病的骨髓或/和外周血中的粒系和单核系两种细胞，如以原粒和早幼粒细胞增生为主，则幼单和单核细胞应超过20%，如以原、幼单和单核细胞增生为主，则原粒+早幼粒细胞应超过20%，可藉过氧化物酶、苏丹黑、非特异性酯酶等组织化学染色，与M2、M3、M5等相鉴别。<br>
+此型部分细胞中可见Auer小体。<br>
+5.单核细胞白血病（M5）：骨髓或/和外周血中以原、幼单核细胞增生为主，少数细胞中可见Auer小体。可分两个亚型：<br>
+（1）未分化型：骨髓中以原单核细胞为主，幼单核细胞百分数较低，有时外周血中也以原单核细胞为主。<br>
+（2）部分分化型：骨髓和外周血中原单、幼单和单核细胞均可见，但以幼单核细胞为主，外周血中也可以单核细胞为主。<br>
+以上两型与M2、M4的鉴别有赖于氟化物抑制的酯酶反应。<br>
+6.红白血病（M6）：骨髓有核细胞中红系一般超过50%，且常有形态学异常，如幼红细胞巨幼样变、核碎裂、丛核、巨形核等。如“异形有核红细胞超过10%，则骨髓中红系占30%亦有诊断意义。原粒早幼粒细胞的比例不定，常在10%以上，外周血中可见数量不等的幼红、幼粒细胞，部分幼粒细胞中可见Auer小体。<br>
+7.亚急性粒细胞白血病（M7）：中国医学科学院血液学研究所（1962年）提出的一种急粒亚型，是另一种特异的粒系增生性白血病。此类白血病的形态学特点是骨髓中除原粒、早幼粒细胞异常增生外，可见较多核浆发育不平衡的异常中幼粒细胞，其胞浆中有较多的特异性颗粒，但核仁仍清楚可见，核染色质较松，核仁较大，胞体较大，胞浆丰富，有时出现空泡。特异性颗粒较小、色淡、分布较密集。<br>
+[附1]急性非淋巴细胞性白血病诊断标准（修订）<br>
+1986年召开白血病分类讨论会（于天津）关于急性非淋巴细胞白血病分型修改建议的急性非淋巴细胞白血病诊断标准<br>
+中日血液学学术讨论会对1980年9月在苏州制订的“全国白血病分类分型经验交流讨论会关于白血病分型的建议”进行了讨论，为便于国内和国际间学术交流，综合近年国内外关于白血病分型的新发展，对1980年建议作若干修订。<br>
+一、原粒细胞的形态分为二型<br>
+Ⅰ型：典型原粒细胞，胞浆中无颗粒；<br>
+Ⅱ型：有原粒细胞的特征，胞浆量较少，有少量细小颗粒。<br>
+原单核细胞和原淋巴细胞的形态分型与原粒细胞相似。<br>
+二、将1980年建议中的亚急性粒细胞白血病（M2）改为M2型的亚型，命名为M2b。<br>
+三、急性非淋巴细胞白血病增设“急性巨核细胞白血病（M7）”。<br>
+四、会议对急性非淋巴细胞白血病各亚型的诊断标准中原始及幼稚细胞比例和形态特点作如下具体规定，供试行中参考。会议强调分型的原始及幼稚细胞的百分比是相对的。具体分型为：<br>
+1.原粒细胞白血病未分化型（M1）：骨髓中原粒细胞≥90%（非红系细胞），早幼粒细胞很少，中幼粒细胞以下阶段不见或罕见。<br>
+2.原粒细胞白血病部分分化型（M2a）：骨髓中原粒细胞>30%～90%（非红系细胞），单核细胞<20%，早幼粒细胞以下阶段>10%.<br>
+3.原粒细胞白血病部分分化型（M2b）：骨髓中异常的原始及早幼粒细胞明显增多，以异常的中性中幼粒细胞增生为主，其胞核常有核仁，有明显的核浆发育不平衡，此类细胞>30%。<br>
+4.颗粒增多的早幼粒细胞白血病（M3）：骨髓中以颗粒增多的异常早幼粒细胞增生为主，>30%（非红系细胞），其胞核大小不一，胞浆中有大小不等的颗粒，可分为二型：<br>
+（1）粗颗粒型（M3a）--颗粒粗大、密集，甚或融合的嗜苯胺兰颗粒；<br>
+（2）细颗粒型（M3b）--嗜苯胺兰颗粒密集而细小。<br>
+5.粒-单核细胞白血病（M4）：按粒和单核细胞系形态不同可包括下列四种类型：<br>
+（1）M4a：原始和早幼粒细胞增生为主，原幼单和单核细胞>20%（非红系细胞）；<br>
+（2）M4b：原幼单核细胞增生为主，原始和早幼粒细胞>20%（非红系细胞）；<br>
+（3）M4c：原始细胞既具粒系又具单核系特征，>30%；<br>
+（4）M4EO：除上述特点外，有嗜酸颗粒粗大而圆、着色较深的嗜酸粒细胞，占1%～30%；<br>
+6.单核细胞白血病（M5）：分以下二型。<br>
+（1）未分化型（M5a）：骨髓中原始单核细胞（非红系细胞）≥80%；<br>
+（2）部分分化型（M5b）：骨髓中原始和幼稚单核细胞>30%（非红系细胞），原单核细胞<80%。<br>
+7.红白血病（M6）：骨髓中红系>50%，且常有形态学异常，骨髓非红系细胞中原粒细胞（或原始+幼单核细胞）>30%；若血片中原粒（或原单）细胞>5%，骨髓非红系细胞中原粒细胞（或原始幼单核细胞）>20%。<br>
+8.巨核细胞白血病（M7）<br>
+（1）外周血有原巨核（小巨核）细胞；<br>
+（2）骨髓中原巨核细胞>30%，<br>
+（3）原巨核有电镜或单克隆抗体证实；<br>
+（4）细胞少，往往干抽，活检有原始和巨核细胞增多，网状纤维增加。<br>
+[附2]<br>
+急性髓细胞性白血病（AML）的FAB分型诊断<br>
+1984年FAB（于伦敦）制订<br>
+1.所有骨髓如诊断为AML或怀疑MDS者必须计数粒与红之比。如原始细胞>30%和红系（E）<50%，可诊断为M1～M5。<br>
+2.如（E）<50%，原始细胞等于或少于30%，则要考虑MDS。<br>
+3.如（E）>50%，则计数原始细胞值需除去（E）的数值。如（E）65%，原始细胞14%则换算为14/100-65，即40%原始细胞。此时应诊断为M6而不是MDS。<br>
+4.M1～M5进一步的分型要靠非红系细胞（nonergtl hioidcell简称NEC）。<br>
+5.M1：≥90%原始细胞（NEC），其余的细胞分化的粒和/或单核细胞<br>
+6.M2：>30%～90%原始细胞（NEC），<20%单核细胞，>10%粒细胞。<br>
+7.M3：按原规定不变。<br>
+8.M4<br>
+（1）>30%原始细胞，20%～80%单核细胞（NEC），其余为粒系细胞。<br>
+（2）外周血单核细胞≥5×1O9/L（即5000/mm3）<br>
+（3）如单核细胞<5×1O9/L，需有溶菌酶大于正常值三倍以上者，和/或骨髓中的单核系统细胞的阳性酯酶细胞需>20%。<br>
+9.一种M4的新变异型称为M4EO，即1%～30%NEC嗜酸粒细胞，往往会有显著的嗜碱性颗粒以及其它的特征。<br>
+10.M5～M5A的判断：≥80%（NEC）如原单；M5B的判断：幼单和单核细胞占>20%，<br>
+[附3]浆细胞白血病诊断标准<br>
+1988年第二届全国血细胞学学会（于北京）建议<br>
+1.临床症状：发热、贫血、出血和肝、脾、淋巴结肿大等。<br>
+2.血片上浆细胞数>20%，绝对值≥2.O×1O9/L并有幼稚浆细胞。<br>
+3.骨髓增生不活跃或明显活跃，原始、幼稚浆细胞占30%～90%。<br>
+4.IgD、IgE、或非分泌型MM易合并浆细胞白血病。<br>
+[附4]慢性中幼粒细胞白血病（CNL）诊断标准<br>
+1988年第二届全国血细胞学学会（于北京）建议<br>
+1.血片中幼粒细胞持续明显增高，≥80%，且伴有形态异常，ALP活动明显增高。<br>
+2.骨髓粒系增生明显活跃或极度活跃，以中幼粒为主，≥50%，可伴有幼稚粒细胞增多，红系统受抑制≤10%。<br>
+[附5]幼淋巴细胞白血病（P-LL）诊断标准<br>
+1988年第二届全国血细胞学学会（于北京）建议<br>
+1.血液中以幼淋巴细胞为主，常>20%。此类细胞中等或较大，核染色质较粗糙，有核仁。<br>
+2.骨髓中幼淋巴细胞>40%，粒、红、巨核三系均受抑制。<br>
+[附6]毛细胞白血病诊断标准<br>
+1988年第二届全国血细胞学学会（于北京）建议<br>
+1.血液淋巴细胞增多，毛细胞>20%。<br>
+2.骨髓增生活跃，毛细胞≥30%。<br>
+3.细胞化学：ALP、酸性磷酸酶有特异性。<br>
+4.干抽时宜作骨髓活检。<br>
+[附7]巨核细胞白血病（m7）诊断标准<br>
+1988年第二届全国血细胞学学会（于北京）建议<br>
+1.骨髓中原始巨核细胞≥30%，其形态大小不一，形态不规则。<br>
+2.血片呈现巨核细胞或碎片，血小板数量不定，但多有形态的改变。<br>
+3.电镜PPO染色，核膜和内质网呈阳性。<br>
+4.骨穿时有“干抽”现象，而骨髓活检可见原始巨核和网状纤维增多。<br>
+[附8]白血病前期诊断标准<br>
+1985年东北、华北六省一市第五届血液学学术会议（于天津）作的关于白前的一些建议（参照FAB建议）<br>
+一、诊断标准<br>
+1.临床以贫血为主要症状，兼有发热或出血。<br>
+2.血象：全血细胞减少或任一二系血细胞减少，可有巨大红细胞、巨大血小板、有核红细胞等病态造血现象。<br>
+3.骨髓：有三系血细胞或任二系血细胞的病态造血。<br>
+4.除外其他病态造血性疾病，如慢粒、骨髓纤维化、红白血病、原发性血小板增多症、亚急粒细胞白血病等。<br>
+5.除外其他红系统增生性疾病，如溶血性贫血、巨幼细胞性贫血等。<br>
+6.除外全血细胞减少性疾病，如再障。诊断为白前或MDS后再进行分型或分期。<br>
+二、分型分期的建议<br>
+1.难治性贫血，血象原加早<1%，骨髓象原加早<5%。<br>
+2.难治性贫血伴有原始细胞增多，血象有原加早，骨髓血象原加早5%～20%。<br>
+3.难治性贫血伴有原始细胞增多，血象有原加早，骨髓象原加早20%～30%或出现Auer小体。<br>
+三、与白血病的分界<br>
+急粒血象为有原加早，骨髓象原加早>30%。红白血病血象为有原加早，骨髓象原加早≥其它阶段粒细胞红系PAS（+）。原加早的数据以髂后穿刺的骨髓为准。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">本病临床诊断主要依据病史发病急骤的特点，主要症状为发热、出血、贫血及胸骨压痛，肝、脾、淋巴结肿大体征。结合血象及骨髓穿刺报告：骨髓增生明显活跃、极度活跃，有核红细胞占全部有核细胞50％以下，原始细胞等于或大于30％，可诊断为急性白血病。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">1．起病急骤  多数患者以发热、进行性贫血、出血或骨关节疼痛为特点。少数病例起病稍缓，往往以乏力、心悸、气短、面色苍白、 虚热等表现。一旦症状明显，病情急转直下，则表现与发病急骤相同的特点。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">生活环境存在能诱发此病的物理、化学、遗传、生物因素。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa"> 1．发热  发热的主要原因是感染，可表现各种热型，常见于呼吸道、泌尿系、肛周等，往往感染灶不明显，严重者可致败血症。一般而言，中性粒细胞小于1．0×109／L时感染机会中度增加，小于0．5×109／L时感染机会显著增加，当小于0．1×109／L时几乎都有严重感染。由于粒细胞的趋化、游走、吞噬、杀菌功能降低，在感染时不产生正常的充血、红肿的炎症表现，且感染极易扩散。由于化疗及肾上腺皮质激素的应用等而加重了免疫功能的紊乱，免疫球蛋白合成减少，血清中调理素、抗体缺乏，使机体对具有荚膜的细菌如：肺炎双球菌、流感杆菌的防御能力减弱，患者易发生广泛的各种病原体感染如沙门菌、结核杆菌、军团菌、病毒、卡氏肺囊虫等及皮肤粘膜感染及住院病人交叉感染。肺炎、绿脓杆菌败血症等是白血病的主要死亡原因。 
+2．出血  出血部位可遍及全身，以皮下、口腔、鼻腔为最常见。颅内出血、消化系、呼吸道大出血可致死亡。血小板减少是出血的重要原因，尤其在（20～10）×109／L以下时极易出现严重出血；早幼粒细胞白血病与急性单核细胞性白血病容易并发播散性血管内凝血，可表现为多部位出血，皮下大出血，极易出现颅内出血而死亡。由于大量的白血病细胞在血管集聚停滞，损伤小静脉、小动脉的内皮，可引起局部严重的出血。感染细菌的多糖体有抑制凝血作用，因此感染常合并出血，抗白血病药物如氨甲喋呤、强的松、门冬酰胺酶等，可引起肝损伤以及胃粘膜溃疡出血等。 
+3．贫血  患者在早期即可出现面色苍白、心悸、乏力、浮肿等。贫血原因是白血病细胞恶性增生，干扰幼红细胞的增生，并使其对红细胞生成素的反应降低，无效性红细胞生成，出现隐性溶血。使用抗白血病药物如阿糖胞苷、氨甲喋呤、柔红霉素等干扰核酸代谢，使幼红细胞巨幼变，而加重贫血。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．肝、脾、淋巴结肿大&nbsp;&nbsp;这是白血病常见的体征，急淋初起约50％的患者有淋巴结肿大，急性非淋巴细胞白血病中以M5发生淋巴结肿大者多见。由于肝脾的肿大可引起食欲减退、腹胀、乏力、消瘦等。急性白血病中，急淋为显著，少数急非淋白血病也有轻、中度肿大。<br>
+2．神经系统的体征&nbsp;&nbsp;由于化疗药物不易透过血脑屏障，中枢神经系统白血病成为突出的问题。白血病细胞浸润临床症状，有的与脑瘤症状相似。若浸润脑膜者，症状类似脑膜炎，如颅内高压、头痛，恶心、呕吐、视乳头水肿、视力障碍等。脑脊液可查到白血病细胞，蛋白质正常或轻度增加。白血病细胞浸润颅神经、脊髓，临床可见口眼歪斜、眩晕、截瘫、大小便失禁等。半数以上的患者可有脑电图改变。病情严重者可出现昏迷，甚至死亡。中枢神经系统白血病可发生在白血病活动期或缓解期，尤其是儿童急淋发生中枢神经系统白血病可高达36％～83％。<br>
+3．骨骼和关节的体征&nbsp;&nbsp;急性白血病多有胸骨压痛，这对诊断有一定意义。白血病细胞浸润破坏骨皮质、骨髓和关节，关节痛多见于儿童，肢体骨骼痛多见于成人急淋。<br>
+4．口腔及皮肤的体征&nbsp;&nbsp;白血病细胞浸润口腔粘膜，表现为齿龈肿胀或巨舌，这多发生急性单核细胞白血病及急粒。单核细胞白血病，常伴有继发感染、出血、口干燥症等。白血病细胞浸润皮肤，表现有皮疹及淡紫色小丘疹、结节、斑块和溃疡等。活检皮肤印片有诊断意义。非特异性皮肤表现尚有荨麻疹、带状疱疹、瘙痒、多形红斑等。<br>
+5．心肺的体征&nbsp;&nbsp;白血病细胞对心脏的浸润，多见于心包，偶有心肌炎、心包炎、心力衰竭的表现。有报道发现60％以上严重白血病均有肺部浸润，尤其是急粒-单核细胞白血病多见。肺部浸润并发感染，在X线片上酷似结核，有时可出现胸腔积液。临床有发热。咳嗽、咯痰、胸闷、气短等。<br>
+6．性腺&nbsp;&nbsp;白血病细胞浸润睾丸，在发病初期己约有2％。是中枢神经系统外的第二个髓外复发部位。急粒、急淋、淋巴瘤的白血病期发生睾丸浸润者分别为3．7％、7．4％、23．5％。&nbsp;睾丸被浸润可无明显症状，可呈单侧或双侧弥漫性肿大、质硬、不透光，可经局部穿刺或活检证实，个别白血病患者有阴茎异常勃起，可能与海绵体内白血病细胞栓子有关。多见于急性淋巴细胞白血病。卵巢白血病症少见。<br>
+7．绿色瘤&nbsp;&nbsp;绿色瘤常见于儿童及青年急性粒细胞白血病患者，临床可见眼眶骨膜下不对称的突眼症，其次见干颞骨、鼻骨、胸骨、肋骨、骨盆等结节肿块，骨髓腔内，乳腺、肝、肾、肌肉等也可累及。绿色瘤浸润之处皆呈绿色，其绿色是由于含大量骨髓过氧化物酶所致。<br>
+8．其它部位&nbsp;&nbsp;胃肠道：约有25％患者在确诊白血病时已发生白血病细胞的浸润。临床症状有腹痛、腹泻、胃肠道出血、阑尾炎、肠梗阻等；泌尿系被浸润主要症状是血尿、尿路感染等症。白血病细胞浸润甲状腺、胰腺，并发糖尿病或低血糖等症。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">贫血貌及胸骨压痛，肝、脾、淋巴结肿大的体征。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">（一）骨髓象:
+骨髓象是诊断白血病的重要依据。典型骨髓象显示有核细胞增生明显活跃或极度活跃。但部分骨髓象显示增生活跃或增生低下者。而相应系列的原始细胞或幼稚细胞呈明显增高。其中原始细胞数大于30％，这些细胞大小不一，直径在10～30μm，核呈圆形或椭圆形，占细胞大部分。核染质呈细网状，有1个或多个核仁。白血病细胞与正常原始细胞、幼稚细胞有区别，常有形态异常或核、浆发育不一致，有的白血病细胞分化停滞状态，或者成熟细胞极少，呈裂孔现象，正常造血细胞增生严重的受到了抑制。在急淋骨髓象：其原始淋巴细胞的核常有裂隙或折叠者称为副原淋细胞。早幼粒细胞白血病骨髓象：早幼粒细胞一般在40％～50％ 以上，胞浆内含有粗大、致密的紫红色或紫色颗粒，可有呈束样的Auer小体，细胞核往往呈肾形或双叶。在急单骨髓象：以原单或幼单核细胞为主，也有组织细胞。在急粒－单核细胞白血病，在骨髓和外周血中有粒系和单核细两个成分都增生。幼单和单核细细胞均超过20％，同时原粒和早幼粒细胞也超过20％；在急粒或急单白血病中可见少颗粒的、核畸型的中性粒细胞；在红白血病中，常由急性红血病开始，多有全血细胞减少，骨髓中红系占百分率很高，甚至达80％以上。呈异形类巨幼红细胞，核扭曲分叶或有多核。随着原始白细胞增多，最后可变成急性白血病。在急性白血病的骨髓中，幼红细胞大多减少，在急单，浆细胞易见，骨髓含铁血黄素正常偏高，铁粒幼细胞增多。
+（二）组织化学:
+目前组织化学检查已成为诊断白血病的常规之一，借助组织化学的染色不同，可以帮助临床进一步诊断、鉴别白血病细胞分型。
+（三）骨髓培养:
+近年来对白血病患者进行了骨髓细胞培养研究，发现白血病活动期，正常粒单系祖细胞集落形成（GM-CFU）严重抑制，甚至一个集落也不形成，而白血病祖细胞集落（L-CFU）则增高。当白血病病情缓解时骨髓细胞培养，可见白血病祖细胞（L-CFU）极少量集落形成，甚至是零。而正常粒单祖细胞（GM-CFU）则恢复到正常水平。通过观察发现集落生长恢复正常比形态学恢复为早，更早于临床表现，故动态随访观察，有预测疗效和监视复发的意义。另外，通过细胞培养可以测定患者对抗白血病药物的敏感程度，从而指导化疗药物的个体化选择。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">白血病典型外周血象显示贫血，血小板减少，白细胞有质与量的改变。
+1．红细胞和血红蛋白一般显示正细胞、正色素性贫血，血片中有时可见幼红细胞，在红血病的患者则幼红细胞增多，网织红细胞常减少，但少数病例可有轻度增生。
+2．血小板  白血病的早期血小板的数目可正常或轻度减少，到中晚期可有明显减少，血小板的凝血功能也异常。
+3．白细胞  白细胞总数多时可达（300～500）× 109／L，低时少至（0．2～0．3）× l09／L （如低增生性白血病）。患者的白细胞特别低时往往病情严重，治疗困难，疗效很差。在外周血中出现白血病细胞是诊断白血病的重要依据。在急性白血病主要是原始细胞、早幼粒细胞 （幼稚细胞）大量出现。在白细胞总数高时诊断并不困难，在白细胞低时往往要浓缩涂片或在涂片的尾部才能找到白血病细胞。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">生物化学检查:<br>
+1．核酸代谢酶和核酸代谢产物&nbsp;&nbsp;核酸代谢在白血病病因诊断与治疗有着重要意义。①腺嘌呤核苷脱氨酶（ADA）：它催化腺嘌呤核苷脱氨形成次黄嘌呤核苷，在ADA同功酶谱中，急单有一与正常白细胞不同的活性带，此情况并不见于急粒与急淋。②核糖核酸酶（RNase）：RNase能将RNA或多聚尿嘧啶核苷或多聚胞嘧啶核苷分解成单核苷酸与寡核苷酸。RNase分碱性和酸性。成熟粒细胞RNase活性高，不成熟粒细胞其活性低。急粒的RNase活性为成熟粒细胞的1／10，慢粒则为1／2。③末端脱氧核苷酸转移酶（TdT）：TdT在正常人外周血白细胞中无活性，而在胸腺中具有较高的活性。&nbsp; TdT在多数的非T非B细胞及T细胞急淋及慢粒急淋变时活性增高。④逆向转录酶（RT）：RNA肿瘤病毒中有RT活性，用特异的模板与引物可区别于正常组织的酶活性。RT是寻找白血病病毒病因的主要指标之一。<br>
+尿中排泄的尿酸和β-氨基异丁酸是嘌呤和嘧啶分解代谢的产物，在白血病活动时，特别是经化疗后上述产物明显增加，患尿酸性肾病时，可有氮质滞留。<br>
+腐胺、精胺、精眯与细胞中核酸和蛋白质的合成密切关系。核酸、蛋白质合成速度快的哺乳动物中，上述胺浓度显著增高。<br>
+2．其他酶:<br>
+（1）溶菌酶：在人体血清中的溶菌酶，存在于许多组织中。人体血清中的溶菌酶主要来自血中的单核细胞、粒细胞。在急粒单、急单的血清中溶菌酶活性明显增高，急粒也可增高，而在急淋则正常或减低。酶的活力随着病情的缓解或复发而出现相应的改变。在正常时骨髓液的溶菌酶约为血浆的2～3倍。正常尿液中溶菌酶为阴性或活性很低，在急单的尿液中溶菌酶升高。<br>
+（2）碱性磷酸酶：在成熟粒细胞中活性最高，在原始细胞中缺乏。与正常粒细胞相比，慢粒或急粒的酶活性明显降低，当治疗获完全缓解时若酶活性恢复正常，则表示缓解较好。<br>
+3.&nbsp;维生素<br>
+急性白血病细胞含叶酸量增加，提示白血病细胞的叶酸代谢亢进，血清中叶酸往往降低。在正常情况下，脑脊液中的叶酸约为血清中的3倍。中枢神经系统白血病，脑脊液中叶酸与血清中叶酸的比率降低。<br>
+维生素C在血浆和白细胞中含量的平均值，在各型白血病、淋巴瘤和多发性骨髓瘤有明显降低，其原因可能因瘤细胞对维生素C的代谢利用增加有关。<br>
+4.&nbsp;微量元素&nbsp;&nbsp;<br>
+患慢粒、慢淋及急粒单白血病时的细胞中，锌含量低于正常，经治疗获得完全缓解时，又恢复正常。<br>
+5．血浆蛋白&nbsp;<br>
+白血病一般都有白蛋白减少、球蛋白增多，尤其急性白血病更明显。球蛋白中以γ、α2、α1球蛋白增多更著。在急单的IgG、IgA、IgM均有增加，在急粒则IgG增加。6．电解质、酸碱平衡在白血病治疗过程中可发生电解质和酸碱平衡紊乱。
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">本病要与常见的血液病，如再生障碍性贫血、原发性血小板减少性紫癜、溶血性贫血、类白血病反应、传染性单核细胞增多症、骨髓增生异常综合征、骨髓纤维化等相鉴别。主要根据血象，骨髓象细胞的形态、分类、数量等检查，结合临床表现进行鉴别诊断。<br>
+1．首先与较常见的再生障碍性贫血、血小板减少性紫癜、白细胞减少症相鉴别&nbsp;&nbsp;白血病发病急骤、发热、出血、贫血症状较突出，这些病血象、骨髓象无白血病细胞可资鉴别。<br>
+2．与传染性单核细胞增多症相鉴别&nbsp;&nbsp;临床症状较缓和，血象显示红细胞、血小板均正常，单核样细胞核染色质较粗，没有核仁；嗜异凝集实验滴定度常在1：100以上。牛细胞溶血素实验滴定度常超过1：400。<br>
+3．与类白血病反应相鉴别&nbsp;&nbsp;可因人体受严重感染、化学中毒、大量失血、溶血或体内某些恶性肿瘤等因素，刺激于造血组织，致白细胞增多，一般可达50×109／L以上，120×109／L以下，同时出现少量幼稚白细胞，当除去诱因后血象可恢复正常，白细胞胞浆中有中毒性颗粒、空泡，粒细胞碱性磷酸酶活性测定显著增高。<br>
+4．与骨髓增生异常综合征相鉴别&nbsp;&nbsp;以中老年人居多，临床其发热、贫血、出血等症状均比急性白血病轻，骨髓中的血细胞出现病态造血，骨髓或血象中，虽有原始细胞，但＜30％。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">（缓解标准）<br>
+1．完全缓解（CR）<br>
+（1）骨髓象：原粒细胞Ⅰ型十Ⅱ型（原单十幼稚单核细胞或原淋十幼稚淋巴细胞）≤5％，&nbsp;红细胞及巨核细胞系正常。<br>
+M2b型：原粒Ⅰ型十Ⅱ型≤5％，中性中幼粒细胞比例在正常范围。<br>
+M3型：原粒＋早幼粒≤5％。<br>
+M4型：原粒Ⅰ、Ⅱ型十原单及幼稚单核细胞≤5％。<br>
+M6型：原粒Ⅰ、Ⅱ型≤5％，原红十幼红以及红系细胞比例基本正常。<br>
+M7型：粒、红二系比例正常，原巨十幼稚巨核细胞基本消失。<br>
+（2）血象：Hb≥100g/L（男）或≥90g／L（女及儿童），中性粒细胞绝对值≥1.5×１０9／L，&nbsp;血小板≥100×１０9／L，外周血分类中无白血病细胞。<br>
+（3）&nbsp;&nbsp;临床：无白血病浸润所致的症状和体征，生活正常或接近正常。<br>
+2．部分缓解（PR）骨髓原粒细胞Ⅰ型十Ⅱ型（原单十幼单或原淋十幼淋）＞5％≤20％；或临床、血象2项中有1项未达完全缓解标准者。<br>
+3．未缓解（NR）&nbsp;骨髓象、血象及临床3项均未达上述标准者。<br>
+4．白血病复发&nbsp;&nbsp;有下列三者之一者称为复发：<br>
+（1）骨髓原粒细胞Ⅰ型十Ⅱ型、（原单十幼单或原淋十幼淋）＞5％又＜20％，经过有效抗白血病治疗1个疗程仍未能达到骨髓完全缓解标准者。<br>
+骨髓原粒细胞Ⅰ型十Ⅱ型（原单十幼单或原淋十幼淋）＞20％者。<br>
+（2）骨髓外白血病细胞浸润者。<br>
+5．持续完全缓解（CCR）&nbsp;&nbsp;指从治疗后完全缓解之日起计算，其间无白血病复发达3～ 5年者。<br>
+6．长期存活&nbsp;&nbsp;白血病自确诊之日起，存活时间（包括无病或带病生存）达5年或5年以&nbsp;上者。<br>
+7．临床治愈标准&nbsp;&nbsp;指停止化疗5年或无病生存达10年者。<br>
+&nbsp;注：凡统计生存率时，应包括诱导治疗不足1疗程者。诱导治疗满1疗程以上的病例应归入疗效统计范围。<br>
+急性白血病疗效标准草案（全国白血病防治协作会议，1978,南宁）<br>
+分完全缓解（CR）、部分缓解（PR）、未缓解（NR）。<br>
+1.CR标准：①临床：无贫血、出血、感染及白血病细胞浸润表现。②血象：血红蛋白>1OOg/L（儿童90g/L），白细胞计数正常或减低，分类无幼稚细胞，血小板>1OO×109/L。③骨髓象：原加早（幼）<5%，红系及巨核细胞正常。<br>
+2.PR标准：临床、血象、骨髓象三项中有1或2项未达完全缓解标准，骨髓象原始细胞加（早）幼稚细胞<20%.<br>
+3.NR标准：临床、血像及骨髓象三项均未达到CR标准，骨髓象原始细胞加（早）幼稚细胞>20%。<br>
+红白血病疗效标准，按急性白血病标准，CR者血象中应无幼稚细胞。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">1. 本病或称血癌，是恶性疾病，发病急骤者为多，如不及时正确的治疗病情迅速恶化，尤其合并感染、出血等更为严重，是导致死亡的主要原因。
+2．由于近年来免疫学的发展，分子医学进展很快，对本病的诊断已从细胞形态学、组织化学发展到细胞免疫学标记、分子医学、遗传学水平。在治疗方面由于新的抗白血病药物不断出现及细胞动力学的发展及许多有效的支持治疗和技术的应用，使急性白血病疗效明显提高。CR率由20％提高至65％～80％，长期无病存活率可达10％～30％。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">1.&nbsp;感染&nbsp;&nbsp;由于化疗、放疗、骨髓移植等，常使中性粒细胞明显减少而发生严重的感染，&nbsp;如并发败血症，主要是由革兰阴性杆菌，如绿脓杆菌、大肠杆菌等。由于急性白血病常用大量皮质激素，免疫功能降低而常并发病毒感染所致的带状疱疹等。霉菌病也有发生，此外卡氏肺囊虫、乙型肝炎、丙型肝炎等病也有发生。后两者与输血有明显关系。<br>
+2．出血&nbsp;&nbsp;约1/3的急性白血病有明显出血，有的并发DIC，在并发DIC的患者，病情危重，&nbsp;约有20％～25％患者死亡。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">急性白血病化疗&nbsp;&nbsp;<br>
+初治时的化疗称为诱导缓解治疗，待其达到完全缓解（CR）后则进行缓后化疗，这个治疗过程，又可分为巩固治疗，早期强化治疗与维持治疗三个阶段。一般急性淋巴细胞白血病经化疗缓解后，需要约3年的维持治疗。急性髓性白血病经化疗完全缓解后，也还需要巩固、强化、维持治疗。比较安全的办法是缓解后的2年时间内，每隔4个月左右进行一次较强的化疗。对白血病的治疗应采取尽早期给予足量药物治疗、联合方案治疗为宜。尚要注意髓外白血病的治疗，如中枢神经系统白血病、睾丸白血病等，还要注意化疗药对个体的敏感问题等，才能取得预期的效果。<br>
+1．常用的抗白血病药物&nbsp;。<br>
+（1）烷化剂：亦称为细胞核毒类药，如环磷酰胺、环己亚硝脲、双氯己基亚硝脲等，且后二种药物有通过血脑屏障的作用，能防止中枢神经系统白血病。此类药物通常在4～6周血象才能明显减少，因此需4～6周后应重复给药。环磷酰胺是常用化疗药物之一，治疗急淋、急非淋白血病均有效，常作为骨髓移植的预处理药物。通过大剂量的静脉点滴，同时伴用水化和碱化疗法，以减少出血性膀胱炎的发生。环磷酰胺在体内经过肿瘤组织磷酰胺酶和磷酸酶水解后，释放出氯乙烷基，后者与DNA磷酸键结合，形成不同类型的交差键链，因而使DNA变性。<br>
+（2）抗代谢类药：有氨甲喋呤、6-巯基嘌呤、6-硫鸟嘌呤、阿糖胞苷、环胞苷等。如氨甲喋呤其化学结构与叶酸相似，生物作用却与叶酸拮抗，使核酸合成受障碍，故又称核酸拮抗药。此外尚有嘌呤拮抗药6-巯基嘌呤、嘧啶拮抗药阿糖胞苷等，这类药物的原理主要是抑制DNA的合成。<br>
+（3）生物碱类：此类药物包括长春新碱、三尖杉酯碱等，这类药物对不同增殖周期的白血病细胞，均有不同程度的杀伤作用，其作用机理主要是对DNA合成的抑制，阻断细胞增殖周期G1期向S期移行，使大部分G2期细胞不能进入M期，还使白血病细胞胞核固缩、碎裂，但同时也使心肌细胞受到损害，对心肌有明显的毒副作用，表现为心动过速、心肌损害、完全性右束支传导阻滞及ST段、T波的改变等。因此对原有心脏病的患者禁用上述药物。<br>
+（4）蒽环类抗生素：此类药物包括柔红霉素、米托蒽醌、阿克拉霉素等，这类药物对白血病细胞微粒体的功能和结构产生破坏作用，而同时抑制钠离子、钾离子、ATP酶，故可对心肺产生毒性作用。本药仅能静脉注射且要快速滴注给药。药液若渗出血管外，易发生组织坏死。肝功能异常者要审慎用药。<br>
+（5）其他类药：如左旋门冬酰胺酶、羟基脲、胺苯吖啶、表鬼臼素、维甲酸等，这类药物分别影响蛋白质的合成、DNA合成或抑制白血病细胞分裂作用，诱导分化成熟作用。<br>
+2．急性淋巴细胞白血病（ALL）的治疗目前对儿童的ALL的完全缓解（CR）已达95％以上，8年的生存率已达56％～70％，而成年人的完全缓解仅达50％～80％。<br>
+（1）诱导缓解：&nbsp; VP方案是治疗ALL基本的有效方案：长春新碱1．5mg／m2静注，每周一次，强的松40～60mg／日，每日分成2～4次口服，直至完全缓解（CR）为止。在治疗VP方案基础上，可加左旋门冬酰胺酶（L-ASP）或加蒽环类抗生素：如柔红霉素、阿霉素、米托蒽醌、阿克拉霉素等。这样完全缓解率可达50％～88％，但成人的急淋中数缓解期、5年存活率都远不及儿童的急淋。另外，&nbsp; POMP方案对初治的或复发的ALL治疗效果均较好，即在 VP方案基础上再加MTX及6-MP。还有的学者用阿糖胞苷和柔红霉素（DA方案）或阿糖胞苷和阿霉素（AA方案），治疗成人难治性ALL，缓解率可达68％。<br>
+（2）防治中枢神经系统白血病（CNL）：在ALL并发CNL者约占7％～75％，可发生白血病的活动期或缓解期。因为大部分化疗药物不能透过血脑屏障，白血病细胞却能通过，中枢神经系统成为白血病的庇护所。预防CNL的方法：&nbsp; MTX10mg／m2加地塞米松5mg鞘内注射，每周2次，共用5次，还应并用颅脑照射。若已发生CNL也用上述方法治疗，治疗时间以达到正常脑脊液指标为准。<br>
+（3）缓解后的治疗：早期巩固强化治疗是取得长期无病存活的关键。一般在CR&nbsp; 2～4周开始治疗。也可选用原诱导缓解方案，每1～2个月一次强化治疗，持续进行1～2年。维持治疗可选用二种药联合应用。如：MTX 10～20mg／m2每周2次，口服或静注，6-MP&nbsp; 2～ 2．5mg／kg每日分三次服，CYT 200mg／每周2次口服。维持治疗与强化巩固治疗方案交替进行，以达到长期缓解。目前睾丸逐渐成为ALL的CR期重要的复发部位之一。有人统计，长期随访7年以上者，睾丸白血病发生率为25％。其治疗宜用放疗或手术切除，继以全身化疗。对骨髓复发者应积极争取二次缓解，可选用MOAD方案，缓解后也可考虑进行骨髓移植。<br>
+3．急性非淋巴细胞白血病（ANLL）的治疗&nbsp;。近年来对ANLL化疗CR已达65％～68％，中数缓解期达10～16个月，5年存活率10％～15％。<br>
+（1）&nbsp; ANLL诱导缓解：目前DA方案或AA方案被认为是较好的方法。DA方案： Ara－C 100mg／m2每日分2次静点，连续7天。柔红霉素或阿霉素30mg／m2静注或静点每日一次，连续3天。CR达50％～80％，而VAP或COAP等方案疗效都不及前者。<br>
+（2）ANLL缓解后治疗：ANLL患者缓解后，其维持缓解时间约5周～13周，而后复发，所以宜在缓解2周后用阿糖胞苷加蒽醌类抗生素进行巩固强化治疗。有人用VAPA方案，分4个阶段治疗，第一个阶段用DA方案，每3～4周为一疗程，共进行4个疗程，第二阶段用DNR加5－氮杂胞苷（Aza－C.&nbsp;即嘧啶环5位上的碳原子为氮原子所取代）。每4周1&nbsp;疗程，共4个疗程；第三个阶段用长春新碱（VCR）加甲基强的松龙加6-MP加MTX，每3周一个疗程，共4个疗程。第四个阶段用阿糖胞苷，每3周一个疗程，共4个疗程。整个治疗持续15个月。<br>
+（3）复发后再诱导缓解：ANLL复发后，可用原方案（如AA或DA）再诱导治疗，约25％～40％的患者可再获完全缓解（CR）。但缓解期短，主要原因是耐药白血病细胞株的增殖。故应选用无交叉耐药的新药如阿克拉霉素、米托蒽醌、表鬼臼素、胺苯吖啶等，与阿糖胞苷联合治疗效果较好。也有应用大剂量阿糖胞苷而取得再缓解者。<br>
+（4）残留白血病细胞的检测与清除：残留白血病细胞的检测对指导化疗，预防复发，了解骨髓净化的效果有着重要意义。应用单克隆抗体、流式细胞仪光度计技术，能准确测定白血病细胞的残存情况。因此定期应用这些技术可以测定出白血病患者的病情，以早期预测可能的复发，从而采取相应的控制治疗的措施。<br>
+（5）特殊类型AML的治疗：①既往对M3的联合化疗，往往易发生致命性的出血死亡。②对M7的治疗，目前尚无满意的方案，建议选用DT方案或小剂量（LD）&nbsp; Ara-C&nbsp;方案。③对高细胞性AML的治疗缓&nbsp;&nbsp;&nbsp;&nbsp;解率较低，可采用细胞分离机单采白细胞的方法，分离出大部分白血病细胞，当白细胞总数小于50×109／L后，再应用DA方案，宜配合颅内照射及口服别嘌呤醇，以防止尿酸性肾病发生等。<br>
+4．其它疗法<br>
+（1）支持疗法：①感染的防治非常重要，急性白血病缓解期由于感染而死亡者约占20～30％。发生感染时应用大剂量、联合、广谱抗生素，如青霉素类：氨苄青霉素、羧苄青霉素。&nbsp;氨基糖甙类：庆大霉素、卡那霉素、丁胺卡那霉素。先锋霉素类：第一代如：头孢噻吩钠、头孢氨苄。第二代如：头孢克罗等。第三代如：头孢哌酮钠（先锋必）、头孢噻甲羧肟。大环内酯类：红霉素、麦迪霉素、螺旋霉素。多肽类：硫酸多粘菌素E、盐酸万古霉素。抗霉菌类如：制霉菌素、克霉唑、酮康唑等。上述抗生素使用原则是由低级到高级，联合应用两种不同抗菌谱药。若连续应用4天尚无效时，可更换其它种类抗生素。②如有明显出血可输成分血，输血小板悬液。③有贫血者可适当输新鲜全血。④高尿酸症防治：要有充分的液体入量，鼓励&nbsp;&nbsp;&nbsp;&nbsp;多饮水，并服别嘌呤醇。⑤及时注意电解质的失衡的纠正。（2）免疫疗法：在巩固化疗的基础上，应用免疫疗法，可延长患者缓解期，如应用卡芥苗、百日咳疫苗、短小棒杆菌等以增强人体免疫力，或用左旋咪唑、猪呤多糖等。<br>
+（3）基因治疗：这是应用基因工程治疗疾病的方法。其基本原理是①使异常表达的癌基因得到逆转，阻止癌基因的转录和翻译。②引入抑癌基因。③将某些基因如白细胞介素等导入自身淋巴细胞中，以增强抗肿瘤作用，目前基因疗法还有许多难题未解决，但在实验室研究进展已取得一些令人鼓舞的结果。<br>
+（4）骨髓移植治疗：骨髓移植（BMT）分为异基因BMT和同基因BMT。即将他人的骨髓移植到患者体内。其目的是以具有正常造血和免疫活性的供者细胞，代替受者（患者）恶变、缺陷或缺乏的造血和免疫细胞，并重建受者（患者）的造血和免疫系统的作用。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）气血（阴）两虚为主：<br>
+治法：益气补血滋阴佐以祛邪。<br>
+方药：①黄芪、党参（或人参）、当归、生地、熟地、天冬、首乌、龟板、浮小麦、半枝莲、土茯苓、龙葵。②人参（或党参）、熟地、黄柏、砂仁、甘草、半枝莲、山慈菇、紫草、&nbsp;天冬、白英。<br>
+（2）热毒炽盛为主：<br>
+治法：清热解毒。<br>
+方药：①白花蛇舌草、贯众、青黛、土茯苓、山豆根、生石膏、栀子、黄芩、当归、仙鹤草、生地、知母，②广角、生地、生石膏、黄连、栀子、桔梗、黄芩、知母、赤芍、元参、连翘、丹皮、竹叶、生甘草。<br>
+（3）热毒入血：<br>
+治法：清热解毒，凉血止血。<br>
+方药：①广角（或水牛角）、生地、白芍、丹皮、栀子、山豆根、白花蛇舌草、半枝莲、旱莲草、紫草、女贞子、黄芪。②广角（或水牛角）、生地、元参、生石膏、地骨皮、龟板、鳖甲、大青叶、芦荟、黄芪、生地榆、丹皮。<br>
+（4）瘀血痰咳：<br>
+治法：活血化瘀，行气散结。<br>
+方药：①当归、川芎、三棱、莪术、夏枯草、山慈菇、牡蛎、木香、黄芪、党参。②桃仁、红花、熟地、白芍、川芎、当归、山慈菇、黄芪、党参、青皮、厚朴。其他治疗&nbsp;&nbsp;气功疗法：适合白血病患者缓解期，为调动机体各系统组织器官正常功能活动，增强体质，可以按照《气功自控疗法》采用“松静疏泄功”、“坐乾坤功”、“摩肾益精功”、“践步运化功”等，也可作太极拳等。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）治疗白血病中成药：六神丸、牛黄解毒丸、当归龙荟丸、紫金锭、西黄丸、猪苓多糖。<br>
+（2）单味药：蟾酥、肿节风、雷公藤、青黛、雄黄、长春花、喜树、广豆根、白花蛇舌草等。<br>
+（3）复方：①杀癌七号方：白花蛇舌草、苡仁、黄药子、乌梅、田三七。②青黄散：青黛、雄黄。③抗白丹：雄黄、巴豆、生川乌、郁金、槟榔各3g，朱砂为衣，大枣肉合丸。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">1．中医的辨证与西医的辨病相结合，这对治疗采取措施与判断预后有积极意义。<br>
+2．化疗与中药治疗相结合，如在化疗期间可应用防治化疗药物毒副作用如小柴胡汤等方。在化疗间歇期，可应用帮助机体尽快恢复化疗损伤的补益药物相配合，如十全大补汤等方。<br>
+3．感染发热是白血病重要合并症，可应用西药广谱抗生素与中药清热解毒之品相结合，中药许多是有抗病毒感染功能的如用银花、连翘、贯众、大青叶、板蓝根等可取得良好疗效。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">目前认为白血病的病因与病毒、物理、化学、遗传等因素有关，因此预防针对上述病因采取积极措施。<br>
+1．对接触电离辐射的工作人员、接触苯类化学物质人员等，要按工作防护常规进行操作，并定期进行身体检查。<br>
+2．对有抑制骨髓药物、致癌的药物如氯霉素、磺胺类、保泰松、环磷酰胺等药物应用必须在医生指导下谨慎应用，并及时检查血象和用药反应。<br>
+3．生活有节，起居有常，避寒暑，劳逸结合，适当锻炼身体，保持健康的体魄。<br>
+4．精神思想应乐观向上，心情舒畅、豁达，忌郁怒。“精神内守，病安从来”。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

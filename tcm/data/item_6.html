@@ -1,0 +1,909 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">慢性肝炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=慢性肝炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">chronic hepatitis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">MANXINGGANYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:胁痛，膨胀。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">慢性肝炎系以乙型、丙型为主，也可以是乙、丙，乙、丁或乙、丙、丁型肝炎病毒重叠感染。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">慢性肝炎的病原学以感染乙、丙、丁型肝炎病毒为主，但导致急性肝炎演变成慢性肝炎的原因很多，例如失治、误治、过劳、饮酒等，但机体免疫功能失调是其主要原因。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">有关慢性肝炎的中医病因虽众说不一，但大多系湿热余邪未尽而引起全身脏腑功能失调。所以慢性肝炎是一个病因病机复杂的疾病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">在我国及东南亚地区慢性肝炎为多发病.
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">肝炎病毒进入人体，引起免疫应答，造成肝脏损害，出现临床症状及肝功能异常。正常人参与免疫应答的网络有单核巨噬细胞、T细胞、B细胞。单核巨噬细胞含有一种溶酶体，可以溶解侵入人体的病毒，HBV抗原决定簇与巨噬细胞形成抗原-RNA复合物，后者作为信息，吸引并调动淋巴细胞（主要是NK细胞）破坏靶细胞，引起肝细胞损伤；还可分泌白细胞介素（IL-1）及激活B细胞产生抗体。T淋巴细胞（包括0KT3、OKT4、OKT8）起决定作用的是毒性T细胞，在识别肝细胞表面抗原后，可起到破坏靶细胞、杀灭病毒作用。而NK细胞不需要通过识别抗原可直接杀伤靶细胞，清除病毒。B细胞主要产生抗体，慢性肝炎T4／T8比例平行，NK细胞活性下降或数量减少，因此病毒难以清除。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">慢性肝炎病位其始在气，继则及血，因此常涉及到气血及与血气有关的脏腑和经络。
+（1）湿热：病初感受湿热之邪，由于失治、误治而导致余邪未尽；但也有病久伤脾，湿久化热；也有反复感受湿热之邪，例如慢性肝炎在长夏季节再感受湿热之邪而复发，临床上有湿邪或湿热之邪弥散三焦见症。
+（2）气滞血瘀：人体情志的舒畅、气机的协调、脾机的运化、血液的生发均与肝的疏泄密切相关。肝有体阴用阳的特殊性，故有可寒、可热、可虚、可实的病理结局，而且病久必郁，病久必瘀。所以气滞血瘀是慢性肝炎常见的病因病机。
+（3）脾虚：病久必虚，所以脾虚为慢性肝炎主要病因。脾虚可由于肝郁所致；亦可因湿邪困脾日久而使之运化失调；亦可因久用苦寒之辈伤脾等原因所致。
+（4）肝肾阴虚：  肝肾同源，肝藏血，肝郁则血瘀，瘀久暗伤营血，营血既伤，必致肾阴不足，或久用苦寒之品、苦能伤阴化燥，亦可导致肝肾阴虚。
+（5）血瘀血热：血瘀日久化热，故血瘀血热是慢性肝炎，特别是CAH中、重型的主要病因病机。
+总之，慢性肝炎的发生发展过程，是正邪相争的过程，正系指人体正气，邪代表致病之因，正不胜邪则病久不愈。“正气内存，邪不可干”，“邪之所凑，其气必虚”。由于正邪相争日久，则机体脏腑俱虚，不能胜邪，所以形成正虚邪实之病因病机。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">慢性肝炎的病理诊断，包括病因、病变程度。病变程度可分为轻、中、重三度。
+（1）轻度慢性肝炎：包括慢性迁延性肝炎（CPH）、轻型慢性活动型肝炎（CAH）。有肝细胞变性，点状及灶性坏死。嗜酸性小体，汇管区有（无）炎性浸润，可见轻度碎屑样坏死；小叶结构完整。
+（2）中度慢性肝炎（相当于原CAH中型）：汇管区炎症明显，伴有中度碎屑样坏死；小叶内炎症重，伴桥型坏死；纤维间隔形成，小叶结构大部分保存。
+（3）重度慢性肝炎（相当于原CAH重型）：汇管区炎症重或伴重度碎屑样坏死，桥型坏死广泛，累及多个肝小叶；有多数纤维问膈，导致小叶结构紊乱，或形成早期肝硬化。
+西医慢性肝炎分级、分期慢性肝炎按病变轻重而分级（G0-4）、分期（S0-4）。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）湿热中阻证：临床表现为胁胀脘闷，恶心厌油，纳呆，身目发黄而色泽鲜明，尿黄，口粘口苦，大便粘滞秽臭或先干后溏，口渴欲饮或饮而不多，肢体困重，倦怠乏力，舌苔黄腻，脉象弦数或弦滑数。<br>
+主证：①身目发黄，色泽鲜明；②苔黄腻。<br>
+次证：①恶心，厌油，纳呆；②胁胀脘闷；③尿黄。<br>
+辨证要求：具备主证①、②者，即属本证。具备主证②及次证三项中的任何两项者，即属本证。具备主证①及次证①、②者，即属本证。<br>
+（2）肝郁脾虚证；临床表现为胁肋胀满疼痛，胸闷太息，精神抑郁，性情急躁，纳食减少，口淡乏味，脘痞腹胀，午后为甚，少气懒言，四肢倦怠，面色萎黄，大便溏泄或食谷不化，每因进食生冷油腻及不易消化的食物而加重，舌质淡有齿痕，苔白，脉沉弦。<br>
+主证：①胁肋胀满；②腹胀便溏。<br>
+次证：①抑郁烦闷；②身倦乏力；③舌淡有齿痕。<br>
+辨证要求：具备主证①、②者，即属本证。具备主证①及次证②、③两项者，即属本证。具备主证②及次证①者，即属本证。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+（3）肝肾阴虚证：临床表现为右胁隐痛，腰膝酸软，四肢拘急，筋惕肉跳，头晕目眩，耳鸣如蝉，两目干涩，口燥咽干，失眠多梦，潮热或五心烦热。形体消瘦，面色黛黑，毛发不荣，牙龈出血，鼻衄，男子遗精，女子经少或经闭、舌体瘦，舌质红、少津，有裂纹，花剥苔或少苔，或舌红无苔，脉细数无力。<br>
+主证：①头晕目涩；②腰膝酸软；③舌红少津。<br>
+次证：①五心烦热；②少寐多梦；③胁肋隐痛，遇劳加重；④脉细数。<br>
+辨证要求：具备主证①、②、③者，即属本证。<br>
+具备主证三项中的任何两项及次证四项中的任何两项者，即属本证。具备主证三项中的任何一项及次证四项中的任何三项者，即属本证。具备次证①、②、③、④者，即属本证。<br>
+（4）瘀血阻络证：临床表现为面色晦暗，或见赤缕红丝，两胁刺痛，肝脾肿大，质地较硬，蜘蛛痣，肝掌，妇女行经腹痛，经血色暗有块，舌质暗或有瘀斑，脉沉细涩。<br>
+主证：①面色晦暗或赤缕红丝；②肝脾肿大，质地较硬。<br>
+次证：①舌质暗或有瘀斑；②肝掌，蜘蛛痣；③两胁刺痛；④女子行经腹痛或经色暗红有块。&nbsp;<br>
+辨证要求：具备主证①、②项者，即属本证。具备主证及次证各一项者，即属本证。具备次证①、②、③项者；女子具备次证①、②、③项中的两项及第④项者，即属本证。<br>
+（5）脾肾阳虚证：临床表现为畏寒喜暖，四肢不温，精神疲倦，面色不华或晦黄，少腹腰膝冷痛，食少脘痞，腹胀便溏或晨泄，完谷不化，甚则滑泄失禁，小便不利或余沥不尽或尿频失禁，下肢或全身浮肿，甚则水膨，阴囊湿冷或阳屡，舌淡胖有齿痕，苔白腻或滑，脉沉细弱或沉迟。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;、<br>
+主证：①畏寒肢冷；②神疲脉弱；<br>
+次证：①少腹腰膝冷痛：②食少便溏，甚至晨泄；③下肢浮肿；④阴囊湿冷或阳痿。<br>
+辨证要求：具备主证①、②者，即属本证。具备主证①或②及次证四项中的任何两项者，即属本证。具备次证①、②、③项；男子具备次证①、②、③项中的两项及第④者，即属本证。<br>
+特殊见症：慢性肝炎有些特殊见症，能反映脏腑“肝”的某些实质性改变。重视这些特殊见症有助于加强针对性治疗，兹举2～3则如下。<br>
+①爪甲枯裂：“肝主筋，其华在爪”，有此症者提示肝阴不足。<br>
+②咽干喜唾涎沫：本症在慢性肝炎极为常见。此为脾虚津液不能上承，故咽干，但又有湿邪中阻，故喜唾涎沫。<br>
+③胃脘振水声：60％以上的慢性肝炎有此症。即心下有留饮，属肺、脾、肾三脏俱虚，常伴有腰冷沉重、肩背酸痛。<br>
+④黄腻苔：黄腻苔在慢性肝炎很常见，不属特殊见症。但对黄腻苔的治疗则常有误，因黄腻苔主里湿热证，故一见黄腻苔则以湿热论治，用苦寒之品。肝炎是感受六淫之邪所致，病程早期以湿热为主，由于失治、误治或身体素质等因素，致使湿邪留滞，日久化火，灼伤阴液，导致肝肾阴虚。后者又可加重肝郁，木郁克土，脾虚失运，造成水湿内停。因此慢性肝炎之湿，主要是内生。但因受累脏腑及病变程度不同、湿邪停滞部位各异，临床表现亦有区别。有的为留饮，有的寒聚成痰；有的与时令相应；也有湿困脾阳久而导致脾胃虚寒，湿久化热。湿与热结成为湿热，客观上表现为黄腻苔，但该是脏腑功能失调的病理产物，是标而不是本。因此应在辨证基础上，弄清黄腻苔病因，而不宜尽用苦寒清泻之品。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">（1）慢性乙型肝炎：临床符合慢性肝炎，并有一项HBV感染标志阳性。慢性HBsAg携带者，无任何临床症状和体征，肝功能正常，HBsAg持续阳性6个月以上，这种病人，尤其是HBeAg或抗-HBe阳性者，肝活检证明90％以上有慢性肝炎病变，一旦过劳、大量饮酒或身患其它重病均可导致肝炎急性发作，临床常诊断为急性肝炎，但肝活检均为慢性肝炎。
+（2）慢性丙型肝炎：临床符合慢性肝炎，血清抗-HCV、血清及（或）肝内HCVRNA阳性。
+（3）慢性丁型肝炎：临床符合慢性肝炎，血清抗-HDVIgG持续阳性，HDVRNA持续阳性，肝内HDVRNA及（或）HDAg阳性。因HDV为缺陷病毒，依赖HBsAg才能复制，所以单独慢性丁型肝炎少见，大多为HBV-HDV重叠感染的慢性肝炎。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">轻度慢性肝炎（相当于原CPH或CAH轻型），病情较轻，症状不明显，或有轻度乏力、纳差、腹胀、肝区不适。中度（相当于CAH中型），症状介于轻度和重度之间。重度（相当于CAH重型）有明显的乏力、纳差、腹胀，便溏或便干，睡眠差，多梦，眼干涩，腰膝酸沉等症状。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">轻度慢性肝炎有肝脏肿大、压痛。重度有面色晦暗、肝掌（朱砂掌）、蜘蛛痣（蟹爪纹）、面部毛细血管扩张（红丝缕缕）、肝脾肿大等体征。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">心电图
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">B超、胸片及胃肠道钡餐及CT。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">病原学  应检测乙、丙、丁肝炎病毒标记物，若系急性发作应查甲、戊及其它病毒标记物，以确定有无重叠感染。
+
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">生化指标应查ALT、Bi1、T／A、Ep、PA。轻、中、重度三型的生化指标值可参考。
+其它检查包括血象（尤应注意白细胞及血小板计数）.
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">尿常规（尤应注意尿蛋白、红细胞，以查明是否有肝外表现）.
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">便常规
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">必要时行肝活检
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">对慢性肝炎有乙、丙、丁型肝炎病毒标志阳性者，诊断并不困难，但有两点需要鉴别。<br>
+（1）脂肪肝：由于经济条件好转，生活改善，特别是长期大量饮酒，临床上常有肝区不适、肝掌、肝脏肿大，长期单项ALT升高者，肝炎病毒标记物阴性，肝活检大多为脂肪肝。<br>
+（2）肝炎合并脂肪肝：慢性肝炎病人由于过分强调高营养，加之活动少，故常有肝炎合并脂肪肝。若慢性肝炎，身体肥胖，血脂高于正常，肝脏明显肿大，宜通过肝活检确诊。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">（1）&nbsp;&nbsp;临床基本治愈：①该证候的主次证消失；②肝脏肿大稳定无变动或回缩，肝区无压痛及叩痛；③肝功能检查恢复正常；④乙型肝炎病人则要求病毒复制指标阴转而且HBsAg仍可阳性；⑤以上各项保持稳定6～12个月者。<br>
+（2）显效：①该证候中的主次证消失占半数以上或好转占三分之二以上；②肝脏肿大稳定无变动或回缩，肝区无压痛或叩痛；③肝功能检查正常或轻微异常，&nbsp; TTT≤8马氏单位，ALT（GPT）≤37． 5IU&nbsp;&nbsp;（正常值以30IU为准）；④乙型肝炎病人要求病毒复制指标有一项阴转而HBsAg仍可阳性。<br>
+（3）好转：①该证候中的主次证消失占三分之一以上，或好转占半数以上；②肝脏肿大稳定无变动或回缩，肝区无压痛及叩痛；③肝功能检查较原检测值下降一半以上；④乙型肝炎病人的病毒复制指标有所下降而且HBsAg仍可阳性。<br>
+（4）无效：未达到上述标者。说明：本标准中“该证候的主次证”均按“消失”、“好转”、“无变化”，三级判定。<br>
+慢性肝炎近期临床基本治愈不难，但易出现病情反复。因此对住院病人一般不宜做出“痊愈”的判断；对住院或门诊病人，肝功能复常后，至少应随访与治疗1～2年。若肝功能”始终保持正常，肝炎病毒复制标志始终阴性，则可认为达到治愈标准。感染性指标（HBsAg、抗-HBcIgG）转阴很难，有的甚至终身阳性。但对病人预后无重大影响。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">慢性肝炎系难治性疾病之一，若为水平传播，肝功能正常，血清中肝炎病毒复制标志转阴后，肝细胞内复制标志尚未转阴，坚持治疗6～12个月可获痊愈而不复发。若系母婴垂直传播，则因其细胞免疫功能低下或缺陷，治疗难度很大，给予恰当治疗，坚持用药3～5年有可能阻断其发展为肝硬化或肝癌。约有70％的丙肝呈慢性临床经过，主要表现为轻至中度ALT升高，若控制不好，则发展为慢性肝炎，其中约有15％～30％发展为肝硬化，10％左右发生癌变。乙、丙，乙、丁或乙、丙、丁重叠感染则预后更差。乙、丙重叠感染者约有80％发展为慢性重型肝炎，  70％左右癌变、乙、甲或乙、戊重叠感染的慢性乙肝，常常病情迅速恶化，临床类似于亚急性重型肝炎，但病死率高达90％以上。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">西药治疗用于治疗慢性肝炎的西药很多，并主张以抗病毒治疗为主。<br>
+（1）抗病毒理想方案应为：①必须有抗病毒活性；②药物必须具备和抗原结合的特性；③必须有调控免疫的作用；④防止肝细胞损伤。目前尚无理想药物同时具备上述四个条件。<br>
+（2）抗病毒药物与用法：目前大多为联合用药。<br>
+①强的松+α-干扰素；<br>
+②胸腺肽+α-干扰素；<br>
+③双脱氧鸟苷+萘啶酸；<br>
+④鞣酸+木脂类复合物；<br>
+⑤胸腺肽+黄酮类药物；<br>
+⑥干扰素+肝细胞刺激因子（HGF）；<br>
+⑦免疫球蛋白+(HGF)。<br>
+（3）&nbsp;抗病毒药物的疗效：用抗病毒药治疗慢性肝炎，远期效果不理想。其原因有二，①病毒存在部位。&nbsp; HBV中的超螺旋共价闭环形（CCCDNA）为HBV中复制的核心，在肝细胞核中复制。抗病毒药物不可能进入细胞内，更不可能进入细胞核，即使血液中抗病毒药物达到相当浓度，细胞内却达不到有效浓度，因此达不到抗病毒作用。②某些药物作用于病毒的一个环节，而不是病毒复制的全过程。如阿糖腺苷、无环鸟苷等对HBV-DNAp及双股HBV-DNA有作用；磷甲酸、苏拉明等对逆转单股HBVDNA有作用；干扰素使HBV前基因降解，阻止单、双股DNA及DNA合成，因此用药后血清HBVM有一过性转阴，&nbsp;&nbsp;但HBV复制并未终止。因此停药后又出现阳性。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">中药治疗应用中药治疗肝炎有以下思路方法：第一辨证论治：应用传统辨证方法（宏观辨证）即运用望闻问切手段和中医理论归纳分析，“司内揣外”。强调“探微求索”、‘防微杜渐”，追求辨证的精确入微。这种治法有利于辨证分型，有针对性地治疗特殊证型和特殊见症。但对慢性肝炎发病机理、肝功异常等现代医学研究尚嫌不足。第二宏观辨证与微观辨证相结合：即针对现代医学对慢性肝炎发病机理、生化、免疫、病毒指标，结合宏观辨证的证型选药。因为这些药物难以直接杀灭病毒，故应针对下述问题考虑治疗。<br>
+（1）调控免疫：许多中草药对免疫有较好的调节作用。其中能增强网状内皮系统功能的有黄芪、人参、党参、白术、白花蛇舌草、鱼腥草、黄连、黄柏、黄芩、栀子等；能提高白细胞数量及促进其吞噬功能者有灵芝、蘑菇、人参、黄芪、白术、甘草、金银花、补骨脂、山芋肉、女贞子、生地、鸡血藤、元参、益智仁、苡仁、紫河车等；能增加T淋巴细胞数量及提高其转化率者有白木耳、黄芪、淫羊霍、五味子、茯苓、桑寄生、红花、丹参、王不留、黄连、黄芩、蒲公英、地丁、水牛角、金银花等；能促进抗体形成或延长其半衰期者有鳖甲、元参、天冬、麦冬、沙参。肉桂、仙茅、菟丝子、锁阳、黄精，人参等；能抑制抗体形成的有大枣、黄芪、甘草、大黄、桃仁、牛膝、生地、当归、川芎、红花，丹参等。解裂免疫复合物的有柴胡、葛根、竹叶、防己、秦艽、徐长卿、豨莶、茜草等。<br>
+（2）降酶：降ALT归纳为疏肝理气、清泄邪热、健脾益气、，气血双补、活血化瘀、祛风解毒、攻补兼施、清热利湿、酸收、泻肺等降酶法。<br>
+①降低病人反应性：一部分慢性肝炎病人ALT持久不降与过敏体质有关。临床常有过敏现象，如慢性荨麻疹。皮肤划痕试验阳性或者瘙痒，过敏性鼻炎，外周嗜酸性细胞增高等表现。改变这些病人全身反应性，有助于改变肝细胞的通透性，减少酶的释放，从而达到降酶、的目的。能抑制反应性炎症，解除过敏状态的中药有丹皮、三七、徐长卿、白茅根、夏枯草、龙胆草、苦参等。<br>
+②调整肝细胞的酸碱环境：肝细胞处于偏酸环境则酶的释放少，因此许多酸味中药有降酶作用。对热象和毒邪较盛者选用酸寒之品，如牛膝、鱼腥草、马齿苋、酢浆草、白芍等；对脾肾虚者选用健脾固肾的赤石脂、乌梅、复盆子、山芋肉等。<br>
+③调整病人脂肪代谢：慢性肝炎病人脂肪代谢不正常，有ALT升高，轻则低酶，重则高酶，调整脂肪代谢有助于降酶。常用药物有生地、熟地、白术、苍术、山药、茯苓、丹皮、地骨皮、泽泻、茵陈、生山楂等。<br>
+（3）调整蛋白：<br>
+①提高白蛋白：因白蛋白降低和虚证有关，故多用补益法。对有轻度白蛋白降低者（白蛋白30．1～34．9g／L）在口服辨证论治中药基础上，加水牛角粉：1．5g，2次／日：有重度白蛋白降低者（白蛋白<30g/L），再加用三七粉1．5g,2次／日。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+②降低球蛋白：球蛋白中主要是γ球蛋白升高，对有γ球蛋白轻度升高者（20．1％～30％），用桃仁、红花、当归、川芎；重度γ球蛋白升高者（＞30．1％）用三棱、莪术、桃仁，、红花；上述各类中一律加茜草、豨莶、萆藓等药物。<br>
+（4）消退黄疸：慢性肝炎重度黄疸（T.Bil＞171μmo1／L）详见本节“淤胆型肝炎”。轻、中度黄疸根据胆红素的结合与排泄障碍分别论治。结合障碍（D／T.&nbsp; Bil＜60％或更低＝可用丹参，葛根；若系排泄障碍（D／TBil＞60％，尿胆红素强阳性）可用行气破血药。<br>
+以上药物由于性味归经主治功能不同，均应根据证型选药组方。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">对慢性肝炎尚无预防措施。使病人了解、认识本病的有关知识,劝其戒酒、防止过劳、心情舒畅、生活规律、营养适度、定期复查，在条件允许的况下，坚持治疗，保持肝功稳定，避免病情反复波动。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

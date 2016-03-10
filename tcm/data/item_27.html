@@ -1,0 +1,891 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">细粒棘球绦虫病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=细粒棘球绦虫病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">unilocular hydatid disease
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XILIJIQIUTAOCHONGBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">寄生虫病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">细粒棘球绦虫病（包虫病）是动物源性寄生虫，狗为终末宿主,它是该病的主要传染源。羊为主要中间宿主，牛、马、猪、骆驼等也可感染，并成为传染源。感染者主要是经过消化道误食虫卵而被感染。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">细粒棘球绦虫是绦虫类中体积最细小的，成虫不能在人体内寄生，而能寄生于狗、狼等 动物的小肠和空肠内，因而又称为狗绦虫。虫卵被牛、羊、马、猪、兔以及人吞食后，在12 指肠内孵出六钩蚴，侵入肠壁，随门静脉血流侵入肝脏，少数则进入肺脏、脑、骨骼及其他脏器，并在内寄生。经数月发育，形成棘球蚴，多数六钩蚴在肝脏内发育成棘球蚴，引起肝包虫囊肿病。 细粒棘球绦虫病是绦虫危害较为严重的病。其危害程度，与棘球蚴的大小、数量以及寄生的部位有密切的关系。寄生在人体各部位的情况是：肝脏约占70％，肺脏约占20％，其他 部位约占10％。巨大的棘球蚴常见于腹腔。棘球蚴发育较慢，有些患者感染多年后无任何症状。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为：本病的发生是由于人吞入了细粒棘球绦虫虫卵而被感染。而虫卵则主要是源于感染了细粒棘球绦虫病的狗粪便。本病是以虫、痰、瘀、湿为纲，以积聚渐成为目，病久则脾胃受损，化源不足，加之细粒棘球绦虫吸取水谷精微，使气血两虚，虫邪外袭为其因，以痰瘀胶结、津留成积为其本，以耗气伤津滞络化热为其标，积之所成，病程漫长，难以治愈。总之，细粒棘球绦虫病是因饮食不洁，吃入体内的食物中沾有虫卵；再加之饮食不节，损伤脾胃，内生湿热，所致虫居脏腑得以生存和繁殖而发病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">包虫病为自然疫源性疾病，其分布广泛，遍及全世界。此病主要流行于畜牧区。包虫病在我国主要分布于新疆、西藏、内蒙古、青海、宁夏、甘肃、陕西、四川西部、河北、吉林、黑龙江等省、自治区。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">本病人群普遍易感、儿童感染后至青春期才出现症状。男女发病率无差异。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">幼虫期称为棘球蚴（包虫），通常为单房型。有两个主要株，即北方株和欧洲株。北方株分布在世界的北方地区，其终末宿主力狼和鹿。欧洲 株的终末宿主主要是家犬和牛、羊、马等动物。细粒棘球绦虫的成虫体长2～7mm，有4～5个体节，头节、幼节、成节、孕节各1个。虫卵对外界的抵抗力较强，在室温的水中，可存活7～16日；在干燥环境中，可存活11～12日；在0℃时，可存活116日；在蔬菜水果中，不 易被化学杀虫剂杀灭；煮沸与直射阳光对虫卵有致死作用。虫卵在50℃中，1小时即死亡。由于虫卵抵抗力强，不易被杀灭，故虫卵可随狗、狼等动物的粪便不断排出体外，而污染牧场、 畜舍、皮毛、蔬菜、水果、水源、土壤等。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">儿童时期被感染，到20岁～40岁方发病者占发病总人数的60％～70％。感染一般在40岁以下者为多见，占80％。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">幼虫期称为棘球蚴（包虫），通常为单房型。有两个主要株，即北方株和欧洲株。北方株分布在世界的北方地区，其终末宿主力狼和鹿。欧洲 株的终末宿主主要是家犬和牛、羊、马等动物。细粒棘球绦虫的成虫体长2～7mm，有4～5个体节，头节、幼节、成节、孕节各1个。虫卵对外界的抵抗力较强，在室温的水中，可存活7～16日；在干燥环境中，可存活11～12日；在0℃时，可存活116日；在蔬菜水果中，不 易被化学杀虫剂杀灭；煮沸与直射阳光对虫卵有致死作用。虫卵在50℃中，1小时即死亡。由于虫卵抵抗力强，不易被杀灭，故虫卵可随狗、狼等动物的粪便不断排出体外，而污染牧场、 畜舍、皮毛、蔬菜、水果、水源、土壤等。细粒棘球蚴寄生在人体时，所产生的直接危害主要是机械性损伤和毒素作用。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">细粒棘球绦虫病的中医病机，主要是痰于胶结，水湿留滞而成积聚。患者脾胃损伤，虫邪外袭，痰浊瘀血凝滞，津液留而不行，久聚不散，渐成积聚，在肝或在肺，或瘀血，或滞气，所以作胀、作痛，其出现的证候不一。而积之所成，皆气血津液所化，积久伤气耗血，必然会影响身体健康，可出现体软无力等多种症状出现。如果积聚郁而发热，则又可见溃脓等病变。若积聚破裂、致湿痰瘀溃流，毒害机体，阻滞经络，则可并发多种中毒及出现脏腑阻塞症。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">细粒棘球 蚴生长缓慢，需5～20年始达到较大程度，逐渐对邻近的器官组织产生破坏作用，而使患者出现明显的临床症状。被寄生的器官和组织周围，常出现炎症性和纤维组织反应。从而引起  器官组织的萎缩、坏死和功能失常。细粒棘球蚴可以在人体各器官寄生。如寄生于肝脏内，逐渐增大时，肝内胆小管受压迫，或胆小管破入囊腔，容易引起继发性细菌感染。肺部细粒棘 球蚴破裂进入支气管时，往往会出现继发细菌感染。如果寄生在不受器官组织限制的部位，可长成巨大型，一旦囊体出现破裂，囊液流出，囊液中含有的毒性蛋白质，使患者产生变态反应，诱发过敏性休克，抢救不及时可导致死亡.细粒棘球蚴在人体内寄生的部位，以肝脏最多，肺脏次之，其余分布于腹盆腔、脾脏、脑、骨、肾脏、纵隔、胸壁、膈肌、胰腺、咽、肌肉等部位。细粒棘球蚴一般感染多为单个。但多个感染的也并不少见，约20％以上，以2～6个较为常见。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">细粒棘球绦虫病诊断标准:<br>
+细粒棘球绦虫病的诊断标准，分为肝、肺、脑棘球蚴病加以分别论述。<br>
+1．肝棘球蚴病&nbsp;①有牧区工作或居住史、或与犬、羊、牛密切接触史。②病程长、生长缓慢、季肋部可们及圆形肿块，光滑，弹性感，及包虫囊肿震颤。③超声探查显示肝内液平段。CT可证实肝内囊肿。④包虫免疫学检查多种试验结果阳性。<br>
+2．肺棘球蚴病&nbsp;①有牛、羊、狗接触史。咳嗽、胸闷或无症状，②X线检查，肺内有圆形、边缘清晰、密度均匀的阴影，可为单发或多发。透视下动态观察可见囊肿随呼吸变形。③免疫试验阳性。<br>
+3．脑棘球蚴病①病前有牧区接触史。②颅内压增高和癫痫发作。③存在内脏包虫病的阳性所见。④脑血管造影和头颅CT所见包虫病的相应表现。⑤包虫免疫试验阳性。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">（一）临床表现:患者有与狗、羊等动物的密切接触史。患者在临床上早期无明显症状，病程时间长。在病情较严重时，出现过敏症状及消瘦等。患肝棘球蚴病时，患者的右上腹部隆起，形成囊状物，触诊时有震颤感。患肺棘球蚴绦虫病时，患者出现咳嗽、咯血等症状。当可疑本病时，应对患者进行X线、超声波、同位素扫描，以及CT、核磁共振等项检查，并应进行实验室检查。但是，要确定诊断本病，必须从患者的痰、胸腔积液、腹水、尿液中检查出棘球蚴或在手术中取出棘球蚴，这些是诊断本病的可靠依据。
+（二）实验室检查
+1．血液检查  患者血常规检查中的白细胞计数一般正常，嗜酸性粒细胞增多，一般不超过10％。
+2．免疫学检查
+（1）皮内试验：试验方法是以棘球蚴囊液抗原0．1～0．2ml注射在被检者的前臂内侧，如果15～20分钟局部呈红色丘疹，出现伪足者，称为即刻阳性反应；若2小时～2.5小时后消退，约12～24小时皮下出现红肿和硬结者，称为延迟阳性反应，可持续1～3日。皮内试验灵敏度较高，特异性差，阳性率一般在90％左右。
+（2）酶联免疫吸附试验：本试验对棘球绦虫病患者有较高的特异性和敏感性，有条件的医疗单位和预防单位，可将此作为常规试验，其有助于疾病的诊断。
+（3）嗜酸性粒细胞过敏试验：给患者皮内注射0．3ml抗原，待30分钟后，血内嗜酸粒细 胞绝对值较试验前下降10％以上者，即为阳性反应。本试验对细粒棘球绦虫病有辅助诊断的价值。
+（4）间接血凝试验：此试验特异性强，阳性率一般在80％以上。但要引起注意的是，有时被检查可出现假阳性反应，这需结合其它检查加以鉴别。
+（5）还有6种试验可用于细粒棘球绦虫病的检查，而且，其结果对本病的诊断也有辅助诊断的价值。这6种试验是：免疫电泳试验、乳胶凝集试验、琼脂扩散试验、补体结合试验、皂粘土絮状沉淀试验、间接荧光抗体试验等。
+免疫血清试验的结果和很多因素有关，例如：棘球蚴寄生在人体器官的部位、距手术治疗后的时间长或短、患者的年龄以及棘球绦虫的虫株或虫种，均与试验结果有关。肺包虫病、
+脑包虫病的患者以及病儿的血清免疫反应较弱。因此，诊断本病首先应采用敏感性高和准确 性高的实验方法。许多研究者透析棘球蚴液做抗原，以用来检验本病。有些学者用亲和层析法和聚丙烯酰胺凝胶电泳来浓集和分离各反应成份，并从活的或死的原头蚴中获取特异性的抗原。在棘球蚴液和原头蚴中，具有共同的和特有的反应成分。培养原头蚴所获得的特异性抗原，可用于化验检查，对本病的明确诊断有帮助。
+（三）物理诊断
+人体包虫病常用的物理诊断技术有放射录相、放射断层图像法、同位素扫描、超声诊断和超声显色诊断等技术。现在，还出现了更先进的PET  （正电子计算机断层显像），此仪器除能显示形态学的变化外，还能定量分析脏器的功能、代谢、受体、基因的变化，对本病和其它疾病的确诊很有帮助。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">细粒棘球绦虫病的症状决定于其寄生的部位，囊肿的大小以及有无并发症患者的表现有所不同。有部分患者早期无症状，在尸检中偶然发现此病。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">常见的症状有：<br>
+1．过敏反应。患者出现血管神经性水肿。荨麻疹、嗜酸性粒细胞增多，甚至发生过敏性休克等。&nbsp;<br>
+2．患者局部受累的部位轻度疼痛与坠胀感。<br>
+3.&nbsp;患者晚期出现全身中毒症状，如消瘦、食欲低下、恶心、呕吐、乏力、衰弱、失眠、头痛等。患者的体征随细粒棘球绦虫寄生的部位不同，而各有其特征，在检查时需注意。现将其特征简述如下：<br>
+（一）肝细粒棘球绦虫病:<br>
+肝细粒棘球绦虫病到一定程度时，出现局部隆起，也可以在患者腹部摸到一个囊性包块，包块表面大多平整光滑，具有一定的弹性或韧性感，境界清楚，质地在中等度以下，多数患者无症状，个别患者可触摸到特有的“包虫震颤”。囊肿大多位右叶，仅多位于表面；位于左&nbsp;&nbsp;叶者仅1／4。囊肿位于右叶中心部位时，肝脏呈弥漫性肿大。囊肿向上发展压迫胸腔时，可引起反应性胸腔积液及肺不张等。囊肿向下、向前生长时，则向腹腔鼓出。<br>
+（二）肺细粒棘球绦虫病:<br>
+肺细粒棘球绦虫病患者常有干咳、咯血等症状，有2／3的患者病变位于右肺，以下叶为多见。囊肿的形状为圆形、卵圆形或多环形囊肿，边缘清晰，肿块光滑，囊肿随呼吸而变形，&nbsp;钙化者很少。患者体内的囊肿破裂并进&nbsp;入胸腔时，可发生严重的气胸。个别患者可因囊液的大量溢出而引起窒息。<br>
+（三）脑细粒棘球绦虫病:<br>
+脑细粒棘球绦虫病的发病率为1％～2％，多见于儿童。脑棘球蚴大多发生于患者的脑内顶叶，其次，为硬脑膜和颅骨。包囊多为单个，多数位于皮层下。患者的临床表现为癫痫发作和颅内压增加症状。细粒棘球绦虫病在身体其他处，如心包、肾脏、脾脏、骨骼、肌肉、胰腺等处发病较少见，如果发现患病，患者的症状也类似于良性肿瘤。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">患者肝脏超声波检查，见平段，肝同位素扫描出现占位性病变。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">肝包虫囊退化后，X线检查囊壁可呈弧形钙化。CT也有助于此病的诊断。患者的脑血管造影显示：巨大球形物，围绕脑血管有移位现象，有不 规则钙化影。患者的囊肿破裂，囊液排出后，在X线上呈空洞型。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">多数患者的肝功能  正常，体内血浆白蛋白降低、球蛋白增高。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．原发性肝癌&nbsp;&nbsp;原发性肝癌患者的病情进展迅速，患者出现消瘦、恶液质，常伴有发热、&nbsp;黄疸、肝脏肿大且坚硬、肝脏表面有结节、有腹水发生，肝脏疼痛明显。患者的甲胎蛋白对流免疫电泳呈阳性，血清5’一核苷酸、磷酸二酯酶、r-谷氨酰转肽酶、铁蛋白、醛缩酶、同功&nbsp;酶A等的含量增加。患者影像检查显示为占位性病变。如果患者通过肝脏穿刺活检或手术、腹<br>
+腔镜下肝脏活组织检查，证实为肝癌者，即可确定诊断结果。肝包虫病患者有与犬等动物接&nbsp;触史，患者肝脏肿大，表面光滑呈囊肿感，甲胎蛋白试验阴性。患者肝脏手术摘除的囊肿或&nbsp;排出物，经病源学鉴定为棘球蚴的组织，如头节、小钩等即可鉴别。肝包虫病患者的血清免&nbsp;疫试验，如间接免疫荧光、酶联免疫吸附、间接血凝等检测均出现阳性反应。因此，通过以上方法，肝癌与肝包虫病可鉴别。<br>
+ 2．支气管肺癌有持续刺激性咳嗽，顽固性胸痛，持续性痰内带血。胸部X线检查，有&nbsp;单侧肺门部肿块，孤立性圆形阴影，常呈分叶状，或弥漫性结节状阴影。痰脱落细胞检查或胸水检查及纤维支气管镜检查（细胞刷片或冲洗液）可查到癌细胞即可鉴别。肺包虫病与支&nbsp;气管癌有明显不同点，如肺包虫病患者的胸片X线检查可见单个或多、圆形或卵圆形、边缘清晰而光滑的肿块。实验室检查，多种血清免疫试验性、手术摘除的囊肿中可以查到棘球蚴&nbsp;的组织等项，均可确诊为肺包虫病。<br>
+3．阿米巴肝脓肿&nbsp;&nbsp;常有阿米巴痢疾或慢性腹泻史。肝肿大有压痛。肝脓肿穿刺液呈红棕色，涂片检查多数可查出阿米巴滋养体。查粪便也能查到阿米巴滋养体或包囊。有条件者可做阿米巴培养或血清学检查，即可得到确诊。<br>
+4．其他&nbsp;&nbsp;如包虫病需要与卵巢囊肿、肠系膜囊肿、肺脓肿、肺结核球、脑瘤、骨瘤、巨&nbsp;型肾积水等疾病鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准:<br>
+1．肝棘球蚴病&nbsp;&nbsp;内囊摘除或肝叶切除后，症状和体征消失，切口愈合、无并发症。<br>
+2．肺棘球蚴病&nbsp;&nbsp;内囊摘除，外囊碟形术，或肺叶切除手术治疗后，无咯血及感染，余肺膨胀满意，情况良好。<br>
+3．脑棘球蚴病&nbsp;&nbsp;临床症状消失或仍残留某些神经特征，包虫免疫试验均转为阴性。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">单发性包虫囊肿，病程短，无并发症、早期确诊、早期有效而彻底的治疗者，预后较好。病程长、有并发症、治疗不及时而且不彻底者，预后较差。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">（一）西药治疗<br>
+包虫病的西药治疗范围，有如下条件者可用药物治疗。<br>
+患者年老体弱，或有内存严重内脏器质性病变不能耐受手术治疗者可用药物治疗。或内&nbsp;脏脏器患多发性包虫病不能一次摘除者也可药物治疗。手术时对肝包囊肿疑有囊液外溢种植的可能，或并发腹腔内破裂而施行手术之后者，可用药物治疗。还有继发性包虫病而包虫囊肿较大遍及全腹腔，需要手术治疗，同时仍用药物配合治疗者，疗效较佳。常用西药如下：<br>
+1.&nbsp;甲苯咪唑&nbsp;&nbsp;本药用于不宜手术的患者，也可作为手术前后的辅助治疗。最初3～4日，&nbsp;每日0．2g,其后增到每日3～4g，疗程1个月以上，或每日每公斤体重40mg，疗程1～2个月。<br>
+2．丙硫苯咪唑&nbsp;&nbsp;在组织中与包虫囊内浓度高，每天10～40mg／kg，分二次服，30天为一疗程，其疗效尚称满意。<br>
+3．氟化甲苯咪唑&nbsp;&nbsp;每日2g，疗程6～12月。<br>
+4．吡喹酮&nbsp;&nbsp;近年来用于棘球绦虫病的治疗，其疗效尚满意。其剂量为每公斤体重10mg，每日3次，连用6～10日。<br>
+（二）手术治疗<br>
+棘球绦虫病的首选疗法是手术治疗。手术应在压迫症状或并发症出现之前进行。手术主要是内囊摘除。手术时先用细针将囊液抽完，防止囊液外溢。在手术摘除包虫内囊之前注入 5％～10％福尔马林，5～10分钟以杀死棘球蚴，然后切开囊腔，取出子囊，将内囊摘除而外囊必须用福尔马林液涂擦。并发细菌感染者，则行引流手术。<br>
+&nbsp;肝包虫病的手术治疗，除上述治疗外，若患者手术后囊腔长期不闭合或残留胆瘘；多个囊肿局限于肝的一叶或巨大囊肿已将该叶肝组织严重破坏；局限于肝左外叶、囊壁坚厚或钙&nbsp;化而不易塌陷的较大囊肿或囊肿继发感染形成慢性厚壁肝脓肿等，可考虑作肝部分切除术或肝叶切除术。<br>
+肺包虫病的手术治疗，除上述的内囊摘除术后，有并发感染的病例，可作肺叶或肺段切除术。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">细粒棘球绦虫病外因于虫邪，内因于脾气损伤，而痰浊的生成与流注，则是在内外因作用之下的必然产物，并成为本病发生与演变的中心环节，辨证论治原则是以健脾祛湿、化痰散结、化瘀杀虫为主。本病病程较长，而长期应用攻治之药必然伤耗脾气，且药物之作用又&nbsp;须赖脾气的转输布达，所以健脾是治疗本病扶正以祛邪的基本治疗方法。若脾气复常，则痰&nbsp;浊可逐渐化解，各种病变可逐渐好转，若脾虚难复，或病久脾虚益甚，则不易治疗，且易导&nbsp;致多脏腑器官之损害。特别是肝、肺、脑之损害，可造成久治不愈的严重后果。争取早日治疗，实力治愈本病的重要条件。根据不同的病变部位，病情、病期的表现，应用不同的方药辩证论治。治疗可用<br>
+灭消包虫汤加减：黄芪、党参、炒白术、海藻、补骨脂、槟榔、蛇蜕、蝉蜕、炙&nbsp;山甲、土鳖虫、露蜂房、雷丸（研末冲服）。<br>
+病在肺者加瓜篓、枳壳；病在肝者加柴胡、香附。每日1剂，常规水煎服，4周为一疗程，或制为丸剂，每丸重10g，每次服1丸或1丸半，每日2～3次，4周为一疗程。方中黄芪、党参补中益气，补骨脂、白术补肾健脾、燥湿利水、海藻软坚散结化痰，山甲、土鳖虫化瘀破血通络、槟榔、雷丸消积杀虫、蛇蜕、露蜂房解毒杀虫。病在肝者加柴胡、香附以疏肝利胆行气；病在肺者加瓜蒌、枳壳、以开胸散结行气，且各引诸药以达到疾病治愈。<br>
+内消瘰疬丸：夏枯草、海藻、浙贝母、薄荷叶、天花粉、玄参、青盐、海蛤粉、白蔹、连&nbsp;翘、熟大黄、生地黄、甘草、桔梗、枳壳、当归、硝石等，治疗肝、肺、腹腔包虫病，有较好的疗效。<br>
+先杀虫理气，后健脾养胃者，用①槟榔汤：槟榔90～120g水煎，清晨空服1次，服后2小时，始能进食易消化的食物。②驱绦汤：槟榔80g，南瓜子（去壳）100g，清晨空服先服南瓜子，2小时后服槟榔剂（煎成200ml），再过半小时口服硫酸镁粉剂20g并多喝白开水。③&nbsp;雷丸粉末，每次10～15g，每日三次。④鹤虱60g，使君子45g，雷丸60g，槟榔120g，共研&nbsp;细末，每日早晚各服6g。⑤驱绦散：南瓜子150g，使君子30g，山楂肉30g，槟榔100g，芒&nbsp;硝10g。将南瓜子、使君子、山楂肉研为细末，清晨空服一次服完，服药后2小时再把槟榔、芒硝煎水服下。<br>
+&nbsp;肝包虫并发肝胆郁热，症见畏寒发热，或伴黄疸、肝肿大，且持续疼痛、压痛明显者，可&nbsp;试用小柴胡汤合茵陈蒿汤；并发胆道郁滞、症见黄疸出现较快、胁痛甚、恶心腹胀、尿赤灼&nbsp;热、大便色白或见便秘者，可试用大柴胡汤合茵陈蒿汤治疗。<br>
+肺包虫病并发肺痈，症见咳嗽、胸痛、发热、吐脓痰者，可试用千金苇茎汤治疗。并发胸水、腹水者，可试用十枣汤或中满分消丸治疗。用驱虫药后调补脾胃，可用参苓白术散：党参12g、白术12g、茯苓15g、甘草6g、山药 15g、白扁豆15g、莲子肉12g、薏苡仁15g、缩砂仁6g、桔梗9g。水煎服。或用香砂六君子汤或四君子汤。四君子汤：党参12g、白术9g、茯苓12g、炙甘草6g。水煎服。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1．体针&nbsp;&nbsp;针刺治疗可以减轻包虫病用药后的毒副反应并缓解症状，有辅助作用。有消化道症状者可针刺内关、足三里、中脘、天枢。有呼吸道症状者针刺列缺、尺泽。头痛头晕者针刺百会，合谷、太阳、上星。胸闷不适者针刺内关、间使、巨阙。<br>
+ 2．耳针&nbsp;&nbsp;服治疗包虫病的药物后，出现体软、恶心、头昏、头痛、失眠者可用耳针，可辨证选穴2～3个，如皮质下、配额、枕、心、胃、交感等穴。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">包虫病的预防，在牧区进行卫生宣传教育工作，注意饮食卫生及环境卫生，避免密切接触狗和其它可能受感染的肉食动物。可能受污染的蔬菜和果类应洗净后方可食用。牲畜内脏应充分煮透才能给狗吃，以免狗被感染。对已感染的狗给与治疗或捕杀。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

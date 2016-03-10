@@ -1,0 +1,880 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">机会性真菌感染
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=机会性真菌感染"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">motility mycotic infection
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">JIHUIXINGZHENJUNGANRAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">深部真菌病，中医：肺热病
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">感染性疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">机会性真菌感染是指在一定条件下，如机体免疫力低下，原不致病的真菌，此时也可以致病。机会性真菌感染，可以成为播散性的，并侵及几乎所有深部脏器，但侵袭性肺部感染常是临床上的主要表现。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">中医根据其临床主要表现为发热、咳嗽、呼吸急促等，认为是因"内脏失调"的内伤基础上发生的外感，由外邪侵肺而引起的肺热病。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">机会性真菌主要包括念珠菌、曲霉菌、隐球菌（它也是真性致病菌）、毛霉菌、镰刀菌、地丝菌、毛孢子菌、球拟酵母菌、某些青霉菌等。这些主要是腐物寄生菌，只是在机体免疫功能受损害时才对组织进行侵袭，这一类除念珠菌外，肺是主要入侵门户，故首先表现为侵袭性肺炎，多脏器损害和真菌血症较真性致病性真菌病为多见。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为本征属内伤咳嗽，乃由七情饥饱等自内而发，损伤诸脏扰及肺脏功能而成，有内脏失调病史，这有别于外感咳嗽，后者为六淫之邪自外而入侵肺脏而成。起初时多为表征，然后由表入里，属实证。内伤咳嗽多无表证，属虚证，或为虚中夹实之证。《三因方》认为内伤七情，外合六淫皆能单复倚互为病，《景岳全书》认为咳嗽之要，止惟二证，一曰外感，一曰内伤，而尽之矣。而谓外感之咳是阳邪，阳邪自外而入，故治宜辛温，内伤之咳是阴病，是阴气受伤于内，故治以甘平养阴。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">主要有以下四个方面的因素：1、抗生素、激素和细胞毒药物的广泛使用。认为机会性真菌感染，是抗生素、激素和细胞毒药物世纪的产物。激素是重要的免疫抑制剂，它为机会性真菌对组织的侵袭创造了条件，但在宿主免疫功能正常或用中等剂量激素时，机会性真菌感染并不常见，而当机体免疫功能受损害，又应用大剂量激素时，这种危险性就显著地增大、其次，在大剂量、长期应用广谱抗生素时，很容易导致体内菌群失去平衡，使本来处于腐物寄生状态的机会性真菌大量增殖，并对组织进行侵袭，最近证明了某些抗生素对机体免疫功能同样有抑制作用。
+     2．免疫受损害的情况在增加。如白血病、淋巴瘤和艾滋病的增加可能是一个重要原因。
+    3．一些新的内科和外科治疗方法的发展增加了机会性真菌感染的机会，尤其是心脏及深部脏器手术、脏器移植、气管切开、胃肠道外高营养以及各种内导管，将普通存在的机会性真菌带入深部组织，从而导致机会性真菌感染。
+    4．人群年龄的老化。这是世界性人口发展的总趋势。老年人随着年龄的增加，使抗原特异性CD4+T细胞（这可保护性抵抗感染原-包括机会性真菌）和自体调控T细胞（这是预防自身免疫性疾病的）都下降了，由于免疫功能相对的降低，使产生机会性真菌感染的基础性疾病如肿瘤和慢性阻塞性肺病（COPD）增多，这也是机会性真菌感染增加的一个因素。
+
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">1．温邪上受，首先犯肺  肺主气属卫，为五脏之华盖，位居上焦，上通口鼻，外合皮毛、因上感风热温邪；或从口鼻，或从皮毛，先犯上焦肺卫，外则卫气郁阻，皮毛开合不利，内则肺气不宣，肃降失职，故一般均具有风温犯肺，少数初期有风寒束肺，继则温邪化热，肺受炎迫的临床证候。
+2．痰热壅遏，肺络失和  肺金清降失权，势必上逆，肺气上逆则水液输化不力，留滞肺络，凝而为痰，或肺络受伤，则咳铁锈色痰或痰中带血。复因温邪化热，灼津炼液，亦能成痰，因而气道痹阻，痰随气逆，可出现壮热烦躁，喘咳痰多，甚则痰声漉漉，若温邪不从外解，易于逆转，因热邪侵犯营血，内陷心包，可突然呼吸急促，唇甲青紫，惊厥昏迷，甚至骤死，此外，温邪亦可由卫而气，先犯于肺，不从外解，则里结而顺传于胃。
+3．正虚邪陷，阳气不振  由于邪气鸱张，或由正气虚弱，正不胜邪，可导致心气不足，心阳不振等变症，危象丛生，心阳不振则不能温运血脉，同时因脉道瘀滞，又可加重肺气的痹阻，两者互为因果，形成恶性循环。心肺同病，则出现一系列的咳嗽痰壅，呼吸迫促，口唇青紫，肝脏肿大，四肢厥冷，脉象虚数等症；若邪气内陷，阳气骤脱，正衰不能敌邪，临床上可见突然面色苍白，额汗涔涔，四肢逆冷。脉微细或虚弱等，显示阳云欲脱，中毒症象严重，病情危重。
+4．正虚邪恋，气阴不足  经过正邪剧烈交争之后，可因气阳不足，营虚卫弱，或久咳久热，耗伤肺阴，余邪留恋，临床上表现可有四肢倦怠，言怯声微，口渴，舌红少津，或咳嗽痰少等症，皆由气阴两虚所致。
+
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">有大约10％的病例有胸膜炎，除肺炎外，根据多处尸检报告，其它脏器按侵袭的频率为肾、心脏、肠道、肝脏、脑、脾、甲状腺、胰、胃、食道等。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">机体对真菌感染的防御机制分为非特异性的（正常的）和特异性的（免疫的）两种，非特异性的机制构成防御的第一线，包括物理学的屏障，炎性反应和吞噬作用，这与防御细菌感染相似，真菌细胞壁的多糖很容易经过补体活化的旁路，激活C3，使真菌与吞噬细胞、多形核白细胞和单核细胞发生粘连。
+        另方面C3a和C5a在引起发炎的过程中起了介体的作用。由于C3a和C5a刺激肥大细胞，使其释放出化学介质，导致吞噬细胞和体液在感染部位聚集。多形核细胞、单核细胞和巨噬细胞是主要的吞噬细胞，它们吞进并破坏真菌细胞。它们杀灭真菌细胞是通过许多机制。其中重要的是在出现骨髓过氧化酶的条件下，这些细胞产生反应性氧中间产物（reaction oxygen intermediates,ROI）。另方面巨噬细胞的杀伤机制必须在淋巴因子（1ymphokines）活化后才能发挥。
+    一些体液因子也能增加正常宿主对真菌感染的易感性，黄体酮（progesterone）能特异地与白色念珠菌结合，从而增强了它与表皮细胞的粘连。
+    当真菌突破了第一道防线后，面临着第二道防御机制--特异性免疫反应，事实证明，人和动物对真菌感染的抗体反应一般说是较低的。当细胞免疫功能受到损害时，容易发生真菌感染。
+
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1.邪犯肺卫型：&nbsp;&nbsp;温邪侵袭肺卫，卫气与之相争则发热，卫气郁阻则形寒怕风，肺主皮毛，皮毛开合失利，则无汗或少汗，肺气不宣，肃降失职，则咳嗽或呛咳气急；邪在卫分侵犯太阴经脉，故头痛、倦怠，舌苔薄白，脉浮数，若风热邪耗伤津液，则口微渴，舌边尖红。 2．热盛痰壅型：&nbsp;&nbsp;邪热由卫分入气分，里热转甚，故但热不恶寒，苔黄，脉数，肺胃热盛，津液耗损，不能上润口舌，则口渴。肺失宣肃；故咳嗽气急，肺气壅滞，肺络不和，故胸痛、胸闷，邪热熏津灼液，故咳痰黄稠；肺络之血内溢。血随痰出，或邪热内盛，肠胃燥结，则腹满便秘。3．正虚邪陷型主要为阳气不振。<br>
+（1）&nbsp;阳不振：肺主气，肺为血之府，肺气贯心肺，因外邪犯肺，肺气闭塞，咳嗽痰壅，并导致血脉不畅，心阳不振，故面色苍白，四肢厥冷，甚至心脉瘀滞而出现紫疳；因血运不利，致肝血瘀滞，故肝脏肿大，因血脉运转功能减弱。故脉虚数或微细欲绝。（2）阳气虚脱：由初起邪犯肺卫，继则正不胜邪，热毒内陷，故发热咳嗽，不久即出现面青汗多，肢冷，呼吸急促，昏厥。脉细微欲绝，危象丛生。 4．正虚邪恋型：&nbsp;&nbsp;主要力气阴不足。因久热久咳，气阴两虚，余邪留恋证。肺气既伤，阴液亦耗，故低热汗出，神疲乏力，舌红苔薄，脉细数，因余邪恋肺，咳嗽痰少。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">深部真菌病诊断标准:<br>
+1.&nbsp;有长期使用广谱抗生素、糖皮质激素或抗肿瘤药物史，有原发或继发性疾病所致免疫功能低下者，如严重烧伤、肝病、肾病、糖尿病、血液病及癌肿等。<br>
+2.发热、咳嗽、血痰、腹痛、腹泻、头痛及神志异常等表现，可出现相应系统的体征，如肺部呼吸音减低或湿啰音、脑膜刺激征等<br>
+3.白细胞总数及中性粒细胞增多。<br>
+4.根据病变的部位及性质酌情取痰、血、尿、粪、脑脊液及脓液等做涂片检查真菌及培养。<br>
+5.有条件者以免疫学方法检测病原菌抗原、抗体。<br>
+[附]临床分型<br>
+1.肺型：发热、咳嗽、咯粘液性痰或粘液胶冻样痰，甚至痰中带血及气急。体征少，可有呼吸音减低或浊音，一般多无啰音。<br>
+2.胃肠型：有腹痛、腹泻，重者伴咖啡色呕吐物、黑便或血便。<br>
+3.脑膜炎型：有发热、头痛，并日益加剧，恶心、呕吐、眩晕等。&nbsp;随着病情发展，可有意识障碍、昏睡等。体征有轻度或中度颈部强直、克氏征及布氏征阳性、颅神经瘫痪、巴彬斯奇征阳性等。<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">深部真菌病的临床表现常常是非特异性的。从周身反应可以发热、寒战、白细胞增加，甚至出现中毒性休克。从局部来讲，因为它几可侵及人体的每个脏器、每个系统，由于侵犯的部位不同，临床就出现各种各样的表现。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">最常见的是肺炎，大部分有咳嗽和咯痰。约一半病例有血丝痰、血性痰和咖啡样痰，相对说体征较少，&nbsp; 60％左右的病例可闻粗或细的湿性啰音。因此，临床上可以出现各种表现，尤其应注意的出现脑膜刺激征、腹泻、血尿、肝、脾肿大等。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线胸像目前尚无公认的分类方法，根据我们的观察，随着病变不同的发展过程，大致可分为五个类型：纹理增粗间有小斑点阴影、局限性小片状阴影、大片融合模糊阴影、空洞形成和圆形结节性真菌瘤。各型之间可以移行和重叠。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">真菌培养培养需要的时间较长，阳性率很低，而且即使培养为阳性，对阳性结果（评价常常也是不肯定的，因为机会性感染的真菌常是人体内的腐物寄生菌，污染的机会极多所以培养出的真菌未必就是负责感染的致病真菌，反之，培养阴性，也不能排除对它的诊断若在基础病存在的条件下，出现深部真菌病的临床征状，若直接从痰的涂片上发现菌丝或孢子，或得到阳性培养结果，就表明深部真菌病存在的可能性，应立即采取积极的治疗措施，如果取得两次以上痰液培养的阳性结果，或采集的标本是在无菌条件下获得的，如血液、脑脊液、腹水、胸水、支气管肺泡洗液、中段尿或活检组织中培养出真菌来，无疑是有助于确立诊断，要注意的是同时有几种真菌，或真菌与其它致病菌或条件致病菌发生二重或三重感的问题，是比较普遍的。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈：症状及体征消失；血、脑脊液等常规检查正常，培养转阴。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">机会性真菌感染的一个特点是常常并发于一个原始病或基础病。这种基础病为机会性真菌感染的发生和发展创造了条件，而机会性真菌感染又进一步加剧了基础病，并成为基础病重要的死亡原因，有报告癌肿病人末期有50％以上的和艾滋病病人有70％以上的最后死亡于周身性真菌病。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">抗真菌药物的发展较之抗细菌药物为慢，一个重要的原因是哺乳类的细胞和真菌细胞都具有真核细胞的某些特性，所以一些抗真菌药物也同样对机体正常细胞产生毒性作用。机会性真菌感染的病死率仍保持在80％左右，随着分子真菌学的发展，进一步拓宽了抗真菌药物靶位的发现和选择。目前，可供抗机会性真菌感染的药物主要有以下几种：<br>
+&nbsp;&nbsp;&nbsp; 1．两性霉素B（amphotericin&nbsp; B）它与真菌细胞膜上的麦角甾结合，使真菌细胞膜产生多孔性，增加渗透性，使钠、钾和氢离子漏逸，最后导致细胞死亡。它也与其它类固醇如胆固醇有较少的结合，这可能与它的毒性作用有关。由于它的毒性作用，尤其对肾脏的毒性作用，使它的临床应用受到限制，但它对大部分性致病性和机会性真菌病的疗效较高，目前尚无适当的替代药物，故仍被喻为"黄金标准"；近年来，为了减少它的毒性作用，进行了广泛的研究，主要包括：①减少用量，联合用药。②补充钠盐，降低对肾脏的毒性作用。③应用前列腺素E抑制剂，以降低寒战和发热反应。④脂质体两性霉素B的应用，既能保持甚至提高其疗效，又能显著地降低其毒性作用。最近又发展了一系列新的两性霉素B的脂质剂型，包括两性霉素B脂质复合物（amphotericin B lipid&nbsp; comp1ex，&nbsp; ABLC）小单层微囊（small unilemella&nbsp; vesicle，&nbsp; SUV）、两性霉素B胶质散剂（amphotericin&nbsp; B&nbsp; colloidal&nbsp; dispersion，ABCD）和两性霉素B甲基乙酯（amphotericin&nbsp; B&nbsp; methyl ester，&nbsp; AME）等；其脂质的成分、脂质分子的比例以及脂质体的大小，都直接影响它的杀真菌活力和毒性作用。这些都正在临床观察之中，其最显著的意义在于它们迅速被网状内皮系统摄取，减少与蛋白质的结合,因而减少了对哺乳类细胞的毒性作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．5-氟胞嘧啶（5-f1uorocytosin）：它是胸腺嘧啶脱氧核苷酸盐合成的抑制体，被胞嘧啶透明质酶摄取，并代谢为三磷酸5-氟尿嘧啶核苷和5-氟脱氧尿苷酸盐。它们抑制了RNA的合成而改变了氨基酸池；抑制了DNA的合成而中断了蛋白质的合成，所以严重地影响着真菌细胞的生长。其主要缺点是抑制骨髓和产生耐药性，而且抗真菌谱较窄，但它开始时的作用迅速、急性毒性作用低和具有杀真菌作用，常与两性霉素B及其它药物联合，选用于隐球菌病、念珠菌病和曲霉菌病的治疗。<br>
+&nbsp;&nbsp;&nbsp; 3．咪唑类抗真菌药&nbsp;&nbsp;它们的作用机理是抑制依赖于细胞色素P450的羊毛甾醇14α去甲酶。它的吡咯环上的一个氮原子与这种去甲酶的红血素分子结合，因而中断了从羊毛甾醇向麦角甾醇的转变，使羊毛甾醇的堆积在真菌细胞膜上，产生了阻滞作用；加上吡咯化合物可能抑制细胞色素C的氧化作用和过氧化酶的作用，因而影响真菌细胞膜的完整性，现在已发展到40多个品种，主要有以下几种应用于临床。①咪康唑（miconazole）和酮康唑（ketoconazo1e）：在体外，它们具有广谱的抗真菌活性，但临床上并未取得预期的效果，尤其&nbsp;&nbsp;&nbsp;&nbsp;酮康唑有明显的副作用，如抑制睾丸酮合成的C17-20溶酶，产生抗雄激素的作用，包括男子女性型乳房、精子减少及男子性欲降低等。由于它抑制了依赖细胞色素P450酶的合成及肾上腺皮质类固醇的合成，而引起暂时性的、剂量依赖性的对ACTH反应的降低。它对肝脏具有不同程度的毒性作用。大约2％～8％的患者转氨酶不正常。因此，酮康唑只被选择性地应用于非免疫损害的病人及非脑膜性真菌感染，如副球孢子菌病、皮炎芽生菌病、慢性空洞性和播散性组织胞浆菌病以及粘膜念珠菌病，包括慢性粘膜皮肤念珠菌病。不适用于隐球菌病、黄色酵母菌病或皮肤孢子丝菌病，尤其不适用于免疫受损害病人中的播散性或局部深部内脏念珠菌病。实际上酮康唑对深部念珠菌病不如两性霉素B有效。②伊曲康唑（itraconazole）&nbsp;&nbsp;：属于脂溶性三唑类，抗致病性真菌作用较酮康唑为好，有较宽的抗真菌谱。它对曲霉菌和申克氏孢子丝菌都敏感、有较好的药代动力学特性及较小的毒性。最近以鼠隐球菌病和肺曲霉菌病为模型，检测了脂质体伊曲康唑的组织分布和抗真菌效率，表明它能增加在体内的浓度和抗真菌效率。故除了两性霉素B外，在严重的真菌病时，脂质体伊曲康唑可能是较好的一种剂型。它的副作用很少，而且多是暂时性的，包括胃肠道不适、眩晕、头痛、性欲抑制（其睾丸酮水平正常）和白细胞减少、对肝脏的毒性很小，极少数病人有暂时性肝功不正常。它不影响睾丸或肾上腺产生类固醇。在用大剂量时，有些病例出现高血压和低血钾症，对免疫机制不产生抑制。对于侵袭性曲霉菌病和曲霉菌瘤、念珠菌病和AIDS病人隐球菌病均有较好的疗效。可以口服，并能长期使用。③氟康唑（f1uconazo1e）：是一个氟置换的双三唑化合物，它对免疫功能正常和受损害的病人的各种真菌感染都有效。能抑制真菌的C14去甲酶，而对哺乳类的酶明显无效。故它是真菌细胞色素P450介导反应的比较特异的抑制体。它的药代动力学与其它咪唑衍生物不同，不取决于给药的途径和剂型。可以口服和注射，其半衰期较长，成人为27～37小时，儿童为17小时。它能较好地穿透到各组织，特别重要的是能有效地穿越到脑脊液中，脑脊液与血清中浓度的比例为0．5～0．9。在脑膜病变的情况下，增至0.8～0.9。它亦可穿越到脑实质，所以它对脑膜和皮质下真菌感染同样有效。而且它还能到达眼睛、肺、肝、肾、脾、阴道和皮肤。&nbsp; 90％以上由尿排出，其中80％为原药。11％为代谢产物，因其主要由肾排泄；故肾衰病人要减量，如肌苷清除率为21～50m1／分钟，则剂量减半，如清除率<20m1／分钟，则剂量要减少75％。在各种动物模型中，对曲霉菌、皮炎芽生菌、白色念珠菌、隐球菌、粗球孢子菌和组织胞浆菌均有抵抗作用。已经证明它是抑制性治疗剂，主要用于治疗AIDS和其它病人并发的隐球菌脑膜炎。比两性霉素B好，对播散性念珠菌病同样有效，副作用很少，少于5％的病人有恶心、其它有胃肠道症状和转氨酶升高；不影响类固醇激素的合成。④其它：如沙康唑（saperconazole）、SCH39304&nbsp;&nbsp;（SM8668）、SDZ89-485、ICI 195739和依莱克曲唑（electrazole，&nbsp; BAY-R-3783）等。均正在进行临床前和不同临床期的观察之中。<br>
+&nbsp;&nbsp;&nbsp; 4．鲨烯环氧化酶抑制体&nbsp;&nbsp;烯丙胺（al1ylamine）是从杂环螺旋萘（heterocyclic&nbsp; spironaphalene）衍生出来的一类抗真菌药，它的抗真菌谱包括曲霉菌、念珠菌和申克孢子丝菌，其作用机理是抑制鲨烯环氧化酶，导致羊毛甾醇的缺乏。使麦角甾醇的生物合成缺乏来源，并产生鲨烯的堆积，致真菌被杀死。同时，由于细胞膜类固醇含量的改变，而中断了壳质的合成，哺乳类胆固醇的生物合成对烯丙胺的敏感性较真菌为小，它不抑制细胞色素P450的去甲酶，所以不改变类固醇激素的水平。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;烯丙胺的衍生物主要有：萘替芬（naftifine）、特比萘芬（terbinafine）、SDZ-87-469、KP-363和托萘酯（tolnaftate）。这些主要用于皮肤真菌病，都正在临床观察中。<br>
+&nbsp;&nbsp;&nbsp; 5．其它&nbsp;&nbsp;麦角甾醇生物合成的其它抑制体，如阿莫罗芬（amorolfine）；细胞壁合成抑制体如棘念珠菌素（echinocandins）、多氧菌素（po1yoxins）、尼可霉素（nikkomycins）。普拉霉素（pradimycin）和贝那诺霉素；微管蛋白结合剂诺考达唑（nocodazole）等。以及许多植物中提取的具有抗真菌活性的物质，如壳质酶（chitinase）、葡聚糖酶（glucanase）、zeamatin、大蒜提取物等。都正在试验观察之中。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">机会性真菌感染临床主要表现为发热和咳嗽，中医辨证可分为以下诸型：<br>
+1.邪犯肺卫型：治则辛凉解表，泄卫透邪，方药：银翘散加减：银花30g、连翘18g、桔梗9g&nbsp;、薄荷6g、前胡9g、生石膏15g、元参9g、鲜芦根30g。方中银花、连翘、生石膏清热宣透，薄荷疏表祛邪、桔梗、前胡宣肺、祛痰、止咳；芦根、元参生津、养阴。<br>
+2.热盛痰壅型：治则清热解毒，宣肺化痰。方药：麻杏石甘汤合苇茎汤加减，炙麻黄6g、杏仁9g、&nbsp;生石膏60g（先煎）、鱼腥草30g、冬瓜仁15g、桃仁99、生薏仁30g、生甘草9g、鲜芦根60g。方中麻杏石甘清宣肺热而平咳喘；鲜芦根清肺热，生津液；薏仁、冬瓜仁、桃仁化浊行瘀。鱼腥草解毒祛脓痰。&nbsp;<br>
+3．正虚邪陷型：主要为阳气不振。<br>
+（1）心阳不振：治则：扶阳强心，宣肺开闭。方药：四阳返本汤和三扪汤加减。人参、白术、炒干姜、甘草、陈皮、制半夏、制附子各9g；丁香、茯苓、白豆寇各7g；炒神曲3．4g，沉香1.5克；加生姜三片，大枣两枚。为了宣肺开闭，可加用麻黄（不去根节）和杏仁（不去尖皮）。<br>
+（2）阳气虚脱：治则：回阳救逆，固脱复脉。方药：以参附龙牡汤，生脉散加减；人参、制附子各9g，生龙骨、生牡蛎各18g。为了养阴生津，可加麦门冬，为了改善心肌功能，可加用五味子，为了活血化瘀，可加用丹参，赤芍、红花和桃仁。4．正虚邪恋型：治则：益气养阴，润肺化痰。方药：清金保肺汤加减。黄芩、陈皮、茯苓、贝母、人参各9g；麦冬、杏仁、桑白皮各6g、五味子、生地、炒白术各15g，甘草6g。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">辨证中尤应注意机会性真菌感染除温邪侵肺外，由于正不胜邪，邪毒内陷，几可累及五腑六腑，故有分肺咳、脾咳、，乙咳、肝咳、肾咳等。应根据所及脏器所司，临床上主证表现，依《温病条辨》中所说："凡温病者，始于上焦，在手太阴。""肺病逆传则为心包：上焦病不治，则传中焦，，胃与脾也；中焦病不治，即传下焦。肝与肾也。始上焦、终下焦。"予以适当辨证论治。不赘。&nbsp;&nbsp;&nbsp;其次，应强调的是机会性真菌感染，常常是在免疫功能降低的基础病上发生的。所以抗真菌感染的同时，要加强对基础病的治疗。特别是给予适当的免疫调节剂，以改善病人的免疫功能，这与中医邪正与虚实的辨证关系是一致的，机会性真菌感染的全过程，始终处于邪正斗争中，当"邪气盛则实"时，治当祛邪为主，当邪盛正衰时，治当祛邪扶正，甚至扶正尤急。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">对于机会性真菌感染易感人群，应该采取积极的预防措施。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．严密监视。尤其对癌症患者在应用强力细胞毒化疗和放疗而引起的长期颗粒细胞减少，或应用激素治疗而引起的细胞免疫损害、或大剂量广谱抗生素的使用而引起菌群失调的情况，若发现发热、咳嗽、腹泻、尿血、意识障碍以及原来颗粒细胞减少而现在出现颗粒细胞增加等，都是机会性真菌感染的危险信号，应采取抗真菌药物进行预防。对用以预防的抗真菌药物的选择经过了广泛的研究，以口服或静脉注射每天400mg的氟康唑为较佳方案。此外，应用重组人的细胞因子，如粒细胞克隆刺激因子（G-CSF）、粒细胞。巨噬细胞克隆刺激因子（GM-CSF）、巨噬细胞克隆刺激因子（M-CSF）以及输给外周血干细胞，可以明显地减少侵袭性真菌感染的危险。最近的重组细胞因子如白细胞介素1、3、6，干细胞因子以及成血二戊烯肽都可改善骨髓再生不良，从而增强了杀菌功能和减少侵袭性真菌病的危险。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．曲霉菌主要是空气传播，并曾在室内引起过暴发性流行，所以强调在高危险病室要安装空气净化装置。可明显地减少这种流行的机会。在免疫功能低下的病人使用广谱抗生素时，&nbsp;应警惕和预防菌群失调，以防止侵袭性念珠菌病的发生。<br>
+
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">中医学对机会性真菌感染强调了预防为主的思想，如《素问.四气调神大论》指出："圣人不治已病治未病，不治已乱治未乱，此之谓也。夫病已成而后药之，乱已成而后治之，譬犹渴而穿井，斗而铸锥，不亦晚乎。"《内经》主张"避其毒气"，"虚邪贼风，避之有时"。《素问（遗篇）刺法论》强调"正气存内，邪不可干"。这些都与机会性真菌感染的预防的策略完全一致。一方面强调对致病性真菌感染的避免和控制，另方面必须增强机体防御功能。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

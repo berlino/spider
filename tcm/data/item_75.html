@@ -1,0 +1,901 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">地中海贫血
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=地中海贫血"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">thalassemia
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">DIZHONGHAIPINXUE
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：虚劳，积聚，疳证，童子劳。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">地中海贫血是一类由于常染色体遗传性缺陷，引起珠蛋白链合成障碍，使一种或几种株蛋白数量不足或完全缺乏，不能形成正常血红蛋白，因而红细胞易被溶破的溶血性贫血。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">遗传性常染色体缺陷。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">多因禀赋不足、肾气虚弱引起。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">地中海、中东、阿拉伯、印度、东南亚地区β地中海贫血发病率最高；东南亚、包括我国南方是α地中海贫血的高发区。由于这些地区都临接海洋，所以亦称为 海洋性贫血。我国广东、广西、四川、台湾诸省α和β地中海贫血都较常见，长江以南省市浙江、福建，江苏，上海、贵州、江西、湖北等都有散在病例报道。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">正常成人红细胞所含主要血红蛋白HbA（α2β2），由两条α珠蛋白链和两条β珠蛋白链组成，其余2％～3％HbA2（α2β2），2％以下是HbF（α2γ2）。地中海贫血的基因突变是异质、多态性的，加之纯合子、杂合子的差异，因而有非常不同的表现型。基因完全缺失或基因突变使某一种或两种珠蛋白完全不能合成者，称为α°、β°或（αβ）°地中海贫血，尚能部分合成者，称为α+、β+或（αβ）+地中海贫血。
+        1．α地中海贫血的基因基础  人α珠蛋白基因组织位于第16号染色体短臂，其基因排列顺序已清楚。已明了α地中海贫血的基因的α珠蛋白基因有10多种基因突变，包括缺失型和非缺失型两大类。缺失型中缺失一个α基因形成α+地中海贫血，α2 基因区缺失42kb片断的称为左侧缺失（一α/或一α4.2），α2 基因到α1 基因区之间缺失 3．7kb片断的称为右侧缺失（α-/或一α3.7/）。
+        2．β地中海贫血的基因基础人β珠蛋白基因组织在第11号染色体短臂上，至今世界上已发现β地中海贫血的珠蛋白基因的51种点突变和三个 基因缺失区。这些基因点突变累及基因表达的各个阶段，包括影响mRNA切接、转录、翻译 等，或使mRNA生成减少，或生成无功能mRNA，形成β°或β+地中海贫血。β珠蛋白基因 缺失不仅影响β珠蛋白合成形成βO地中海贫血，
+        3．地中海贫血的红细胞缺陷及溶血原因  正常成人及胎儿血红蛋白中都有α链，胎儿主要血红蛋白是HbF（α2γ2），当αO纯合子，4个α基因全部缺失，完全缺乏α珠蛋白链时，形成HbBart’s  （γ4），由于HbBart’s 氧亲合力高，向组织释放氧极少，胎儿期即因缺氧死亡，此即HbBart胎儿水肿综合征。αO与α+杂合子仍有一个α基因存在，可产生部分α链,过剩的β链形成β四聚体β4（HbH），即血红蛋白H病。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">1．禀赋不足  父母先天不足，肾精亏虚。
+2．肾精不充，肾为先天之本，“肾藏精、主骨、生髓”，禀赋不足为肾精不充先天之因。
+3．脾胃虚弱
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）脾肾阳虚：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：病程长，面色萎黄或晄白，食少纳呆，腹胀或便溏腹泻，腰酸腿软，怕冷、乏力懒言，或有腹内结块，舌质淡，苔薄白，脉细弱。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：幼小发病，病在先天，禀赋不足。肾藏精、主骨生髓，为先天之本；脾为后天之本，气血生化之源。血为精所化，若肾精不足，髓海空虚无以化血，必致血虚。脾失健运，则气血生化乏源；故脾肾两虚终至精气血俱虚。可见面色无华，四肢无力，腰酸腿软，便溏，夜尿频数，食纳不佳，畏冷等证。病位在脾肾，其性属虚。<br>
+（2）肝肾阴虚：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：面白颧红，耳鸣目眩，腰膝酸软，潮热盗汗，咽干，甲爪枯槁，肌肤甲错，或有鼻衄，皮肤瘀斑，舌红少苔，脉细数。病位在肝肾，其性属虚。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：肝肾同源，肝肾阴不足时相火偏亢，血虚生风，故有面白颧红，耳鸣目眩，腰膝酸软，潮热盗汗，咽干等证；阴虚生内热，的伤脉络而有鼻衄，皮肤瘀斑。<br>
+（3）湿热壅盛：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：身目发黄，面色晦暗，胁下结块，腹胀纳呆，或见皮肤瘀斑；舌见瘀点：苔白或黄，脉细数或有结代。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：素体亏虚，脾胃虚弱，运化失常，湿浊内生，日久化为湿热，或复感湿热外邪，湿热交蒸，发为黄疸，湿热败血下注膀胱，而尿色深重。病位在气、血分，其性属实。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1． HbH<br>
+（1）&nbsp;临床可有贫血、黄疸、肝脾肿大。<br>
+（2）血液学①血红蛋白降低或正常，网织红细胞增高或正常；②红细胞大小不均、中心浅染及靶形红细胞；③MCH降低；④红细胞渗透脆性降低；⑤骨髓增生活跃以上，以红细胞系统为主。<br>
+（3）生化检查：血红蛋白电泳出现HbH区带。<br>
+（4）遗传：家族中可有HbH病患者。<br>
+（5）有条件应做α/β链合成速率比，基因分析。<br>
+2．&nbsp;β地中海贫血（不包括基因缺失δβ珠蛋白生成障碍性贫血和HPHF）<br>
+（1）临床：同HbH。<br>
+（2）血液学：同HbH。<br>
+（3）生化检查：HbA2＞3．5％， HbF＞2．O％。<br>
+（4）遗传：纯合体：父母均为本病杂合子；杂合体：父母之一为本病杂合子。<br>
+（5）同 HbH。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">诊断主要依据血红蛋白分析和基因诊断。临床上发现的病例大部具有：①轻重不一的贫血、小细胞低色素性红细胞、靶形红细胞多见；②黄疸、肝脾肿大或发育障碍。③红细胞脆性降低。④骨髓红系增生。铁粒幼细胞增多。⑤HbA2轻度增多或有异常血红蛋白。⑥家族调查中，父母有遗传证据。初步诊断后，可进一步行DNA分析，以确定基因缺陷。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">由于遗传缺陷不同，本病表现轻重程度极度不一，有在胎儿及婴幼儿即因极重的溶血性贫血致死者，也有虽有血红蛋白异常而一生无任何临床症状者。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1．纯合子地中海贫血&nbsp;&nbsp;婴儿期（生后6～9月）发病，进行性贫血，肝脾进行性肿大，皮肤苍白，黄疸，消瘦，因为发育迟缓可形成特殊外观，如头大，额、顶、枕骨隆起，两颊突出，鼻梁低平，两眼距离增宽。骨骼改变遍及全身，主要由于骨髓长期显著增生，使骨髓腔变宽、骨皮质变薄。多数患者于幼年即死亡，死亡原因多为感染、晚期血色病所致脏器损害。如能存活至性发育期，常因发育障碍而无第二性征，其他内分泌功能障碍亦较常见。患者常因脾肿大、脾功能亢进而有白细胞、血小板减少，出现各种感染及出血症状。<br>
+&nbsp;&nbsp;&nbsp; 2．杂合子地中海贫血多数患者无症状，少数可有轻度贫血、脾大。患者常感乏力。生<br>
+长发育均正常，无骨骼改变，一般在家族调查或普查时才发现。<br>
+&nbsp;&nbsp;&nbsp; 3．中间型地中海贫血&nbsp;&nbsp;如前所述，此型包含着许多种遗传基础不同的患者。贫血程度不一，脾轻至中度肿大，多数患者可存活呈成年。<br>
+&nbsp;&nbsp;&nbsp; 4．血红蛋白H病（α+地中海贫血）多在1岁左右血红蛋白H逐渐增多时出现症状，主要表现轻中度慢性贫血，黄疸，约2／3患者有肝脾肿大，因感染或其他原因可加重贫血，一<br>
+般无发育障碍，骨骼改变极轻。<br>
+&nbsp;&nbsp; 5．HbBart胎儿水肿综合征（α°地中海贫血）妊娠30～40周时，胎儿死亡流产或早产后死亡，胎儿全身水肿、苍白，肝脾肿大，腹水，胸腔及心包亦常有积液，心脏扩大，骨髓红系增生。<br>
+&nbsp; 6．静止型α地中海贫血和标准型α地中海贫血静止型α地中海贫血是α+与正常α基因杂合子，无任何临床形状。标准型α地中海贫血是α°与基因正常α基因纯合子，患者亦无任<br>
+何临床症状。但有轻微血细胞形态等改变。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">1．骨髓象  有贫血者，均显示红系高度增生，铁粒幼细胞增多。
+ 2．α与β链合成速度测定正常时，α与β链合成速度大致相等（α：β＝1：1），纯合子地中海贫血，β链完全不能合成或α链的合成速度超过β链的数倍，甚至高达15倍。杂合子β地中海贫血α/β合成速率比约为2.0～2.5，血红蛋白H病α/β合成速率比减少到0．3～0．6。
+      血红蛋白Bart综合征完全无α链合成，静止型α地中海贫血α/β合成速率比接近正常，标准型α/β合成比例减少到0．7。
+3．DNA分析DNA分析方法有多种，用于地中海贫血基因诊断。①限制性内切酶酶谱：用特定的限制性内切酶可将基因DNA切割成一定大小的片断，分离后与特定的放射性珠蛋白基因探针杂交后，用放射自显影术即可显示相应DNA片断有无异常，主要用于各种缺失型地中海贫血基因诊断。②限制性片断长度多态性联锁分析：人类DNA上大约每100个核苷酸中就会出现一个个体间的差异，此即多态性。用特定的限制酶切割成不同长度的DNA片断即限制性长度多态性。用几种限制酶切割可将β珠蛋白基因切断，并与相应珠蛋白基因探针杂交后，可进行限制酶酶谱分析，个体间不同的限制性片断长度组合，称为单体型。地中海贫血不同的分子缺陷都有相对应的单体型。国内已鉴定出中国地中海贫血的8种βT单体型、其中3种与国外文献报道的中国人β地中海贫血单体型相同。③寡核苷酸探针杂交：人工合成与已知点突变DNA序列互补的核苷酸探针及相应片断正常β基因探针，利用此一对探针与患者DNA片断杂交，由于只有核苷酸顺序完全相同者才能杂交，故对侦出患者是否具有已知的β地中海贫血点突变。④聚合酶链反应：利用聚合酶链反应，在体外可把欲测DNA扩增数十万倍。用扩增的DNA进行上述各种NDA分析，可大大提高基因诊断的敏感性。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1．血象  小细胞低色素性贫血见于各类型地中海贫血。贫血轻重程度不一，纯合子地中海贫血血色素可低达20～30g／L，杂合子地中海贫血一般Hb＞70g/L; 血红蛋白H病一般Hb70～100g／L，亦可低至30g／L。静止型及标准型α地中海贫血无贫血。红细胞形态大小不等、异形，泪滴样红细胞多见，大多有靶形红细胞增多（静止型α地中海贫血无形态改变）。有贫血者网织红细胞增高。外周血可见有核红细胞，纯合子地中海贫血及血红蛋白H病红细胞经煌焦油蓝孵育后，可分别见到α链包涵物及HbH包涵物。白细胞、血小板大多正常，有感染时白细胞增高，有脾功能亢进时，血小板、白细胞均可降低。 2．红细胞渗透脆性试验  除静止型α地中海贫血外，都有程度不同的红细胞渗透脆性降低。
+3．血红蛋白分析  血红蛋白分析是诊断地中海贫血的主要实验依据。β地中海贫血因β链合成障碍，HbA（α2β2）减少，HbA2（α2δ2）及HbF（α2γ2）增多。在纯合子地中海贫血，主要血红蛋为HbF，大多数病例占60％以上，有的甚至高达100％，HbA2可增高、正常或减少；杂合子地中海贫血HbA2增高，HbF正常或轻度增高，一般不超过5％，其余为HbA。血红蛋白H病HbH约占5％～40％，HbA2减少，HbF大多在正常范围，其余为HbA。HbBart胎儿水肿综合征血红蛋白几乎全部是HbBart （γ4），可有微量HbH，无HbA2及F。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">主要是各型之间的鉴别。只要想到本病一般不易与内科其他疾病混淆，误诊主要因素是缺乏警惕性，如发现低色素贫血易误为缺铁性贫血，发现肝脾肿大易误为肝炎、肝硬化等。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1．缓解&nbsp;&nbsp;治疗前Hb＜50g／L，需经常输血，治疗后不再输血， Hb＞100g/L，维持一年以上。<br>
+2．显效&nbsp;&nbsp;治疗前Hb＜50g／L，需经常输血，治疗后不再输血或输血间隔延长，Hb＞80g/L，维持一年。<br>
+3．有效&nbsp; Hb有上升，输血次数减少。<br>
+4．无效&nbsp;&nbsp;无变化。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">纯合子β地中海贫血患者多于幼年因继发感染、严重贫血、血色病所致脏器功能衰竭，特别是心力衰竭等死亡，即使有活到性成熟期，也多有发育障碍。中间型及杂合子β地中海贫血患者，多能生存至成年。α地中海贫血中HbBart综合征多无存活者， HbH一般病情稳定，除在感染等情况下，血红蛋下降，一般可正常生活。静止型与标准形α地中海贫血可与正常人一样工作生活，但应注意向下一代的遗传问题。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．产前诊断与基因治疗。地中海贫血是一类常染色体遗传性疾患，制服这类遗传性疾病有两条途径，一条是给予地中海贫血家庭正确的遗传咨询，利用如前所述的各种分子水平的DNA分析基因诊断方法进行产前诊断及治疗性人工流产，指导地中海贫血家庭的生育，从根本上控制与消灭地中海贫血基因的传播与扩散。另一条途径是寻找对现存地中海贫血患者的有效治疗方法。<br>
+2．异体骨髓移植。<br>
+3．国内有人用5一氮杂胞苷、羟基脲、Ara－C等试用于β地中海贫血和HbS病的治疗。均可不同程度地使HbF与血红蛋白水平提高。<br>
+4．对症治疗。对症治疗目的是使有症状患者能尽量接近正常人的生活，延迟血色病的发生，防治感染等。<br>
+（1）输血<br>
+（2）铁螯合剂<br>
+（3）脾切除
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）脾肾阳虚：&nbsp;治法：补肾健脾。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方剂：十四味建中汤加减。黄芪20g、党参10g、白术10g、当归10g、熟地10g、茯苓10g、甘草10g，白芍10g、附子10g、补骨脂10g、肉苁蓉10g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;偏阴虚者加何首乌10g、女贞子10g、玄参10g；偏阳虚者加制附片10g、仙灵脾10g；黄疸未净者加茵陈10g、泽泻10g。有血瘀者加赤芍10g、川芎10g、桃仁10g、红花10g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方解：本方基本为十全大补汤基础加补肾药物补骨脂、肉苁蓉等组成，四君子汤补中益气、健脾和胃，四物汤活血补血，补骨脂、肉苁蓉等补肾助阳温脾。<br>
+（2）肝肾阴虚：治法：滋养肝肾，填精补血。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方剂：左归丸加味。熟地15g、山药15g、山萸肉10g、菟丝子15g、枸杞子15g、何首乌15g、牛膝10g、鹿角胶10g、龟板胶10g、元参10g、女贞子12g、旱莲草10g、山药10g、丹皮10g，有黄疸者加茵陈、泽泻、栀子；腹中积块加三棱、莪术。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方解：本方为滋补肾阴基本方左归丸加味。<br>
+（3）湿热壅盛：<br>
+&nbsp;治法：清利湿热为主，佐以益气养血。<br>
+&nbsp;方剂：血府逐瘀汤合茵陈蒿汤加减。茵陈20g、茯苓10g、莪术10g、白术10g、泽泻10g、赤芍10g、当归10g、夏枯草10g、桂枝10g、甘草10g、桃仁10g、红花10g、香附10g、鳖甲10g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有气血两虚者加党参15g、黄芪30g、当归10g，白芍10g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方解：方中二苓、泽泻、白术健脾利水，桂枝内通阳气，使气化宣行，小便通畅；加茵陈、栀子、夏枯草苦寒泻热，能使湿热之邪从下而解。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">本病西医尚无根治疗法。对症治疗主要针对贫血及延缓血色病发生，提高生存质量。中医药治疗常可改善症状。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．产前诊断可指导地中海贫血家庭的生育，从根本上控制与消灭地中海贫血基因的传播与扩散。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.&nbsp;补脾肾中药常可改善病人症状、可根据病人情况辨证给药。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．对贫血重者应输血，使Hb维持在100g/L以上，适时给以铁螯合剂。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">广泛有效的遗传咨询及产前诊断，可防止绝大多数地中海贫血婴儿出生，为最有效的预防手段。应加强在多发区普及知识及预防患婴出生的宣传，尽可能多地实施产前诊断及治疗性人工流产。我国产前诊断方法已达国际水平，应努力推广应用。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

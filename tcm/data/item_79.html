@@ -1,0 +1,914 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">特发性血小板减少性紫癜
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=特发性血小板减少性紫癜"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">idiopathic thrombocytopenic purpura
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">TEFAXINGXUEXIAOBANJIANSHAOXINGZIDIAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:血证,
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">血液和造血系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">特发性血小板减少性紫癜是以各种出血表现为主要临床症状，以外周血血小板计数减少、骨髓巨核细胞数正常或增多并伴有成熟障碍为主要临床特征的常见出血性疾病。本病有急性和慢性之分，在疾病早期很难鉴别，两者病因病机及转归截然不同。儿童80％为急性型，多数有病毒感染史，为自限性疾病，一般认为是急性病毒感染后一种天然免疫反应，一旦病源清除，疾病在6～12个月痊愈。而成人ITP  95％以上为慢性型，迁延难愈，属自身免疫性疾病的一种。本病病死率约为1％，多数是因颅内出血而死亡。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">本病病因不清，已知本病患者体内存在抗血小板抗体，致使血小板寿命缩短、破坏过多、 数量减少，从而引起各种出血表现。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为本病的病因可概括为外感和内伤、外感六淫之邪，入里化为邪热，或内伤肝脾肾三脏，功能失调，均能导致本病的发生。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">儿童春冬两季易发病。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">儿童无性别差异，成人好发于生育年龄妇女，男女之比约1：3。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">本病发病原理未完全阐明，但其体液免疫、细胞免疫和血小板功能的异常已被公认。
+          1．体液免疫  目前普遍认为本病患者体内的血小板抗体可分别属于IgG、IgM、IgA及补体C3，抗体水平与血小板计数和血小板寿命均呈负相关关系，相继建立的许多检测方法证明78．6％～100％的CITP患者的PAIgG值高于正常，治疗有效者PAIgG值可下降或降至正常范围。但PAIgG在所有免疫性血小板减少性紫癜和一些非免疫性血小板减少症中均可升高，因此并非特异诊断指标。30％～84％本病患者PAIgM可升高，因为IgM具有较高的结合价和聚集力，一个分子的IgM抗体即可激活补体，故IgM具有极强的溶细胞活力，能使血小板破坏加速。临床发现PAIgM升高的病人，出血症状明显，随治疗好转，PAIgM可降低。PAIgA在ITP诊断特异性较其它指标为高。本病血小板抗体的相关抗原可因人而异呈不均一性表现，血清中可检测出抗血小板膜蛋白（GP）Ⅱb、Ⅲa、Ⅰb自身抗体。骨髓是产生血小板抗体的另一场所，特别是切脾疗效不好病人，骨髓可能是生成抗体的主要来源，肝脏也能产生少量抗体。血小板破坏的场所主要在脾、肝和骨髓。其中以脾最为重要。本病血小板在体内破坏可有血管外破坏（脾脏等器官）和激活补体导致的血管内破坏，其破坏与巨噬细胞的活性水平有关，当病毒感染时巨噬细胞上的Fc或C3b受体数量增加，亲和力升高，使血小板更易破坏。这就是病毒感染可使ITP病情加重的原因。
+        2．细胞免疫  本病与其它自身免疫性疾患相反，抑制性T细胞(T8)百分值增高，辅助性T细胞（T4）／抑制性T细胞（T8）比值下降甚至倒置。T4+8+ 双标记阳性细胞增多，这种双标记细胞可能为功能及表型均未完全成熟提前释放入血的胸腺细胞，在ITP发病中有其特殊意义。同时发现，总T细胞功能下降、T8功能减低而B细胞功能正常。此结论提示ITP主要缺陷在T细胞功能而不在B细胞。
+        3. 血小板功能  一般认为血小板数量减少是ITP出血的主要原因。本病出血原因：①血小板抗体引起血小板破坏增多导致血小板减少是出血的主要原因。②当抗体固定在与功能相关的抗原上可引起血小板功能异常，GPⅠb和GPⅡb和（或）GPⅢa自身抗体可分别引起血小板粘附和聚集功能异常，还可通过对环氧化酶活性损伤和对花生四烯酸代谢及Ca2+通道开启的影响加重血小板聚集功能的异常。③抗体还可损伤毛细血管内皮细胞引起通透性增加而出血。总之，抗血小板抗体是通过各种途径导致出血的发生。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">可概括为外感邪热，血热妄行；或脾气虚损，气不摄血；或脾肾阳虚，统摄无权；或肝肾阴虚，虚火上炎；或瘀血内阻，血不循经。有关论述散见于“血证”、“发斑”、“葡萄疫”等范畴。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）肝肾阴虚型：&nbsp;证候：紫癜呈暗红色，下肢多见。经期提前，量多色暗红，鼻、齿龈出血，便血，尿血，出血量大而猛，色暗红，可伴见手足心热，盗汗，口干、便干，舌红蜂少苔或光苔，脉细数&nbsp;或弦细数，因常伴有高血压或糖尿病等激素合并症，故可伴见肝肾阴虚阳亢表现，如头晕目眩、耳鸣、腰酸、腿软、梦遗、急躁、多梦等。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：本型病位在肝和肾，肝藏血，血养肝，肾藏精，精血互生，肝肾阴虚，可生内热，血随火动而溢出于脉络外，可见各种出血表现。手足心热、盗汗、口干、便干，舌红绛少苔或光苔，脉细数或弦细数，均为肝肾阴虚之象，阴虚阳亢者还可见头晕目眩、耳鸣、腰酸、腿软、梦遗、急躁、多梦等症状。<br>
+（2）气血两虚型：主证：起病徐缓，紫癜色淡红而稀疏，时隐时现，月经后延，龈衄多见，出血量少，色浅而渗血不止，伴见头晕、乏力、心悸、气短、自汗，活动后诸症加重，舌淡苔白，脉沉细无力。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：本型病位在心脾，心主血脉，脾主统血，心脾两虚，统摄无权，血不循经而走失不归，则见各种出血表现。气为血帅，血为气母，亡血伤气，可见头晕、乏力、心悸、气短、自汗，活动后诸症加重等各种气血虚损表现，苔脉均为一派气血亏损之象。<br>
+（3）血热妄行型：主证：起病急骤，出血量大而猛，紫癜色鲜红而密集，舌红，苔黄或黄腻，脉数有力。无气、血、阴、阳虚损见症，常可伴见畏寒、发热、咽痛等外感症状。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：本病基本病因病机为火热毒邪内伏营血，或阳明胃热炽盛，复感六淫外邪，以致化火动血，灼伤络脉，血热迫血妄行，络伤血溢，故可见紫癜色鲜红而密集，出血量大而猛，病为实热证，故脉数有力，舌红，苔黄，若兼湿邪，则可见苔黄腻。（<br>
+4）脾肾阳虚型：主证：临床表现在气血两虚型基础上伴见畏寒怕冷，面色晄白，舌体胖大有齿痕，脉沉迟，还可见腹胀、便溏、浮肿、腰酸等脾肾阳虚表现。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：脾虚不能统血可导致血行障碍而错行脉外可见各种出血表现。脾肾阳虚，命门火衰，则畏寒怕冷，面色晄白；水湿不化则见腹胀、便溏、浮肿，腰为肾之府，失其所养可见腰酸，苔脉均为脾肾阳虚表现。<br>
+（5）阴阳两虚型：主证：病势较急，出血部位广泛而严重，既可见畏寒、便溏，可见五心烦热盗汗、多表现为上热下寒，阳虚阴虚症状杂见。均为久治不愈患者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：本型基本病因病机为：五脏虚损，阴阳两虚，阴虚火旺，迫血妄行；阳虚不摄，血溢脉外，气随血脱，阴阳离绝。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1986年首届中华血液学学会全国血栓与止血学术会议（于西安）修订<br>
+1.多次化验检查血小板减少。<br>
+2.脾脏不增大或仅轻度增大。<br>
+3.骨髓检查巨核细胞数增多或正常，有成熟障碍。<br>
+4.①强的松治疗有效：②切脾治疗有效；③PAlg增多；④PAC3增多；⑤血小板寿命测定缩短。以上五项中应具备任何一项。<br>
+5.排除继发性血小板减少症。<br>
+[附]原发性血小板减少性紫癜的诊断标准<br>
+全国血液学会议，洛阳，1984<br>
+1.血小板减少伴或不伴出血性贫血。<br>
+2.巨核细胞增多或正常伴成熟障碍现象。<br>
+3.无明显脾肿大。<br>
+4.无结缔组织病及其他继发性血小板减少症。<br>
+5.符合下列3项中之一者：①肾上腺皮质激素或脾切除治疗有效；②血小板表面IgG、IgM或补体增高；③血小板生成时间缩短。<br>
+病程6个月以内，发病急，血小板减少严重，巨核细胞趋向幼稚者属急性型；病程较长（一般超过12个月），发病较缓慢者为慢性型。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据临床上有各种出血表现，多次检查外周血血小板计数减少，脾脏不增大或轻度增大，  骨髓检查巨核细胞正常或增多同时伴成熟障碍可作出初步诊断。血小板抗体增高或血小板寿命缩短或泼尼松治疗有效任何一项均可协助诊断。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">急性型ITP 起病急骤。慢性型ITP一般起病隐袭。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">1．急性型ITP： 起病前1～2周常有病毒感染史。2．慢性型ITP：多数在确诊前数月甚至数年已有易发紫癜等病史。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">1．急性型ITP  可伴发热、畏寒，突然发生广泛严重的皮肤粘膜出血。鼻、龈出血也较为常见，还可伴有胃肠道、泌尿系统出血等，颅内、脊髓及脑膜出血较少见，但如见有口腔、舌大片紫斑或血疱，又伴见头痛或呕吐，往往为颅内出血先兆，要特别警惕。一般出血程度与血小板减少程度成正比。其病程多为4～6周，最长半年可自愈。
+2．慢性型ITP：出血程度不一，一般较轻，牙龈渗血多于鼻出血，月经过多者常伴有缺铁性贫血。在本病急性发作时，亦可见消化道、泌尿系统出血，甚至因颅内出血或失血性休克而死亡。多因上呼吸道感染或过劳诱发急性发作，每次发作可延续数周甚至数月。缓解期出血不明显，仅有血小板计数减少。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">急性型皮肤出血表现为全身淤点或淤斑，密集色红，以四肢及易于碰撞部位多见，严重者可融合成片甚或形成血肿；慢性型紫癜散在色淡，多发生在下肢，很少出现血肿或血疱。本病不管是急性还是慢性型肝及淋巴结一般不肿大，&nbsp; 10％～20％患者可有轻度脾肿大。颅内出血时可出现相应神经系统病理反射。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">急性型全身皮肤淤点或淤斑，密集色红，以四肢及易于碰撞部位多见，严重者可融合成片甚或形成血肿；慢性型紫癜散在色淡，多发生在下肢，很少出现血肿或血疱。淋巴结一般不肿大，部分患者可有轻度脾肿大。颅内出血时可出现相应神经系统病理反射。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">（一）骨髓象
+        骨髓增生活跃，粒系无异常，红系可轻度增生，其特征性变化是巨核细胞计数正常或增多，伴成熟障碍，以颗粒性巨核细胞和裸核为主，产血小板巨核细胞少见或不见，血小板罕见。
+（二）血小板动力学检查
+        可采用核素法（51In或111In标记血小板）或丙二醛法可检测血小板生存时间，ITP患者的血小板寿命较正常人明显缩短。
+
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">外周血象
+        血小板计数减少，在急性型或慢性型急性发作期血小板计数常在20×109／L以下，在10×109／L以下时可有广泛或自发性出血。慢性型慢性期一般在（30～80）×109／L之间，在50×109／L以上者可无症状；血红蛋白和红细胞计数可减少，多呈小细胞低色素缺铁性贫血；白细胞计数正常；出血时间可延长；凝血时间正常。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">血小板抗体的检测
+        用酶联免疫或荧光免疫法检测ITP患者血小板相关抗体PAIgG、PAIgM、PAIgA、PAC3均可增高，与血小板破坏及减少程度成正比，其中PAIgG增高者占95％，PAIgM 增高者占20％左右，后者常伴有较严重出血；另外ITP患者血清中抗血小板膜糖蛋白GPⅡb、Ⅲa、Ⅰb 自身抗体和抗心磷脂酶抗体ACA-IgG、ACA-IgM 亦可增高，但均无诊断特异性。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">应注意与以下疾病鉴别：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．过敏性紫癜&nbsp;&nbsp;属于变态反应性毛细血管炎，因此血小板计数正常，其紫癜与ITP不同之处在于高出皮肤并伴瘙痒。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．继发性血小板减少性紫癜<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）血小板生成障碍：如早期再生障碍性贫血（AA）、骨髓增生异常综合征（MDS）、放、化疗药物引起的血小板减少性紫癜等，外周血白细胞计数多减少，骨髓巨核细胞减少或缺如或有病态造血，骨髓可见小巨核。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）其它自身免疫性疾病引起如红斑狼疮、类风湿关节炎、伊文氏综合症、甲状腺功能亢进、慢性肝炎等均可以血小板减少性紫癜为首发症状，经过一段演变过程才显现出原发病特点，其紫癜的发病机理与ITP相同，但因抗体作用部位较ITP广泛，因此可通过免疫学检查如抗核抗体、类风湿因子、补体、Coombs、T3、T4、TSH及肝功能检查来鉴别。这类疾病往往可有外周血白细胞计数减低，肝或脾肿大等特征。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）血小板分布异常所引起：如脾功能亢进、骨髓纤维化、肝硬化、血吸虫病等所致脾肿大，可使血小板在肝脏、脾脏滞留，鉴别要点是明显肝脾肿大，外周血白细胞计数可减少。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于外周血白细胞计数减少，骨髓巨核细胞减少的血小板减少性紫癜患者，即使未找到原发病灶，亦不可诊为ITP，应定期随访，密切观查病情变化，往往经数年甚至更长时间才能暴露出原发病灶。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.显效<br>
+（1）无出血症状。<br>
+（2）血小板恢复正常。<br>
+以上表现持续3个月以上者为显效，维持2年以上无复发者为基本治愈。<br>
+2.良效<br>
+（1）无或基本无出血症状。<br>
+（2）血小板升至50×109/L以上，持续2个月以上。<br>
+3.进步<br>
+（1）出血症状改善。<br>
+（2）血小板有所上升，持续2周以上。<br>
+4.无效：血小板计数及出血症状无改善或恶化。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">急性ITP，多发生在儿童，与病毒感染有关。本型虽起病急骤，出血症状也较严重，但治疗后，  80％的患者可以在6月内缓解。大多数患者恢复后不再复发，少数在下次感染后复发，约10％～20％患者病程超过6个月而进入慢性期。个别患者急性期可因颅内出血而死亡，病死率在1％左右。慢性ITP一般病程较长，常发作与缓解交替出现，有的患者呈周期性发作。
+          —般来说，慢性ITP不能自发缓解，但危及生命者少。只有当本病急性发作，血小板极度减少时，才有颅内出血或内脏出血的危险，此为本病的主要致死原因。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">1．缺铁性贫血&nbsp;&nbsp;常见青年妇女月经过多者。<br>
+2．内脏出血&nbsp;&nbsp;较少见，可见消化道、泌尿道出血或崩漏不止，严重者能引起失血性休克。颅内出血更少见，但为死亡的主要原因。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">1．肾上腺皮质激素（简称激素）激素是西医治疗ITP的首选药物，作用机理为：抑制抗体生成，抑制抗原抗体反应，抑制单核。巨噬细胞系统，以减少血小板的过多破坏，减少脾脏对致敏血小板的清除作用；此外能降低毛细血管脆性，改善出血症状；同时也有刺激骨髓造血的作用，常用剂量：泼尼松1～2mg／kg，2～4周，超过4周不管有否疗效均应减量，逐渐减至维持量5～10mg／日后，再维持3～6月逐渐停药。在出血严重、血小板计数低于10×109／L时，亦可选用甲基强的松龙或地塞米松冲击治疗，或氢化可的松每日静滴200～300mg。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;多数患者用药后疗效迅速出现，数天后出血即停止，血小板数上升，&nbsp; 60％～70％的病例可缓解。但停药后复发率高，副作用如高血压、糖尿病、激素性溃疡出血等常见。去除有自愈倾向的急性型，维持长期缓解率者小于20％。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．脾切除&nbsp;&nbsp;是西医治疗ITP的一种重要方法，在急性型或慢性型急性发作期的ITP患者，出现颅内出血先兆，有危及生命体征时，有条件者也做为紧急抢救手段之一，一般手术后24小时血小板即有明显回升，1～2周达高峰。脾切除指征：皮质激素治疗3～6月无效的，或皮质激素治疗有效而每天必须依赖激素治疗者。其作用机理在于减少血小板抗体的生成，消除血小板的破坏场所，其近期完全缓解率可达70％～80％，但其中30％～50％病例可复发，复发原因与副脾的存在或肝脏参与血小板的破坏有关。近年来国内流行脾动脉栓塞术亦基于上述原理，但疗效不如脾全切。因为切脾是一种创伤性治疗方法，故不易被患者接受。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．免疫抑制剂&nbsp;&nbsp;适用于激素疗效不佳，不能切脾或切脾疗效不佳者，为三线药，有效率在10％～20％左右。目前常用的是长春新碱、环磷酰胺和硫唑嘌呤。长春新碱抑制单核一巨噬细胞的吞噬功能。每周静注1～2mg连用4周，一般在1周左右血小板数上升，但大多数患者在停药后作用不持久。对难治性ITP，可采用长春新碱溶于1000ml生理盐水中，缓慢静脉滴注6～8小时，疗效优于一般静脉注射。环磷酰胺每日1．5～3mg／kg，分三次口服，或0．3～0．6g／m2静脉注射，每3～7天一次。也可每日口服硫唑嘌呤1～3mg／kg，但常需2月以上方可见效。要注意这类药物的毒副作用，用药要慎重。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．其它新疗法：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）静点免疫球蛋白：0．4g／kg连用5天，每10～15天再静注一次0．4g／kg，或于血小板减少时周期性给予0．5g／kg，用药后2～10天血小板明显上升并能维持数天或数十天，可做为紧急救治的最有效方法之一。其作用机理为：①封闭单核－巨噬细胞FC受体；②干扰单核-巨噬细胞的免疫廓清作用；③提高抑制T细胞功能，抑制抗体产生：④清除体内存在的慢性病毒感染灶。但价格昂贵。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）达那唑：是一类人工合成的无男性化副作用的雄性激素，可能的机理是抑制T细胞的作用，使抗体生成减少，提高血小板数。剂量为每日200～400mg，可与激素合用，需服用2个月以上方可见疗效。国内报道有效率60％，但价格昂贵，有肝功损害副作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）他莫昔芬：可与雌二醇竞争免疫细胞上的雌激素受体、减少雌激素与T8结合所引起的功能缺陷。用法：每次10mg，日服3次，饭后服。见效慢，应持续用药3月以上，血小板正常后继服两月再停药，国内报道有效率约50％。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）血浆置换术：能去除血浆中存在的大量抗血小板抗体，使病情缓解，可做为急救措施之一。置换液可用新鲜血浆1～3L／次，至少连续2～3次。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1&nbsp;辨证论治：<br>
+（1）肝肾阴虚型：治法：滋阴清热、凉血止血。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：知柏地黄丸合二至丸加味。方中六味地黄丸三补三泻共奏滋阴清热之功，知母、黄柏加强滋阴降火之力，现代药理证实可制约大剂量激素治疗所引起的副作用。加用二至丸滋阴补血止血，当归、丹参活血化瘀以止血，白芍酸敛收涩亦可敛阴补血，平肝柔肝；补骨脂佐之，取阳中求阴，阴中求阳之意，本身可收敛止血，现代药理学证实有抑制抗体作用。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减法：出血严重者可酌加白茅根20g、藕节20g、鹤草30g、土大黄15g，肝肾阴虚阳亢盛者去补骨脂加煅龙牡30g（先煎）、川芎10g、龟板20g（先煎）。（2）气血两虚型：治法：益气健脾，摄血止血。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：归脾汤加味。方中重用炙黄芪和党参为君药，补气健脾，辅以当归、龙眼肉养血和营，用白术、木香以健脾理气，使补而不滞，茯神、远志、枣仁以养心安神，使以甘草、生姜、大枣和胃健脾，以资生化，气旺则血充而归经矣。加用淮山药补气养阴，收敛止血，炒白芍补血敛阴止血调经，阿胶滋阴补血止血，共奏益气健脾、摄血止血之功。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减法：月经淋漓不止者可加山萸肉10～20g，五味子10g，以养肝收涩止血，龈衄者可加五倍子10g配藕节20～30g，能收涩止血不留瘀，肌衄者可加仙鹤草30g、紫草10g以补虚止血。（3）血热妄行型：治法：清热解毒、凉血止血。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：犀角地黄汤加味。方中以水牛角代犀角，配合生地清热凉血，解血分热毒，生地尚可养阴，防热甚伤阴，赤药、丹皮清热凉血，活血散瘀，加生军泻肺胃实火、凉血止血；白茅根加强凉血止血之力，板蓝根、土大黄、贯众加强清热解毒抗病毒之力，现代药理研究证实：生军、土大黄均有提升血小板及止血之功。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加减：鼻衄者加黄芩10g、牛膝6～10g、丹皮10～20g清肺热以引火下行，齿衄者加生石膏先煎20～30g、黄连6～10g以清胃热以止血；便血加槐角10～15g、地榆10g清热利湿止血，尿血加大小蓟10～20g、藕节30g以清热利尿，凉血止血，剧烈头痛、呕吐，口腔大血泡，往往是脑出血先兆，为本病危症，需立即抢救，除紧急切脾或输血小板、静点免疫球蛋白、大剂量激素冲击外，可酌情加服安宫牛黄丸或至宝丹或三七粉3g、云南白药3g吞服。<br>
+（4）脾肾阳虚型：治法：温补脾肾，填精补血。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：右归丸加味。方中附子、肉桂温肾阳、暖下元，亦可对长期服用激素ITP患者撤除激素后所出现的肾上腺皮质功能低下症进行纠正；鹿角胶、菟丝子、杜仲补肾益精血；熟地、山萸肉、枸杞子、淮山药、当归滋肾阴、养肝血；加用锁阳、巴戟天、补骨脂加强温补脾肾之力，现代药理证实锁阳有升提血小板功能；加减：若血崩有寒者加艾叶10g、炮姜10g、血余炭10g、五味子10g以温中止血；伴面色晄白、头晕、乏力者可加炙黄芪10～20g、党参10～20g以加强补气健脾之力；便黑可加伏龙肝30～60g、白芨粉3g分冲以收涩止血。<br>
+（5）阴阳两虚型：治则：宁络止血，固脱收涩，塞流先治其标，止血后再澄源与复旧。方剂：塞流可用十灰散加味，澄源复旧可用知柏地黄汤合十全大补汤加味。方中以大小蓟、白茅根、侧柏叶、荷时、茜草凉血止血；棕榈皮收涩止血；赤石脂、五味子、生牡蛎、金樱子、补骨脂固涩止血；女贞子、旱莲草滋阴清热止血；生军、童便化瘀清热以止血。澄源复旧所用知柏地黄汤滋补三阴清虚热，十全大补汤气血双补以固下元，共奏温下元、清虚火、止血安血之功。加减：大失血出现休克表现时，急用参附汤回阳固脱；崩漏不止可加乌贼骨10～30g、艾叶炭10g收涩止血，便血不止可加伏龙肝25～30g、白芨粉3～6g、三七粉3g、生大黄粉3g、&nbsp;化瘀止血；咳血不止可加代赭石（先煎）20g引血下行；龈衄不止者可用五倍子10～20g、炙甘草10g，煎水200ml频繁漱口。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为瘀血是贯穿本病发展全过程的病理现象，出血与紫癜本身即属瘀血范畴，故不单列瘀血内阻一型。临证经验&nbsp; ITP的病因病机有如下特点，急性型多因外感热毒或热伏营血，以致火盛动血，灼伤脉络发病，临床表现为实证，治疗上以清热解毒。凉血止血为大法，还应注意辨证施治，挟有湿邪患者可用甘露消毒丹或龙胆泻肝汤加昧，往往会有奇效；慢性型急性发作期则为本虚标实证，本为阴阳两虚，上热下寒，标为复感外邪，虚热动血，迫血妄行，治疗上急则治标，缓则标本兼治，往往需要中西医结合抢救，方可转危为安，重新转入慢性期。慢性型慢性期治疗应以补肝、脾、肾三脏为主，特别应注意养肝柔肝，对于长期服用激素用量来调整治疗原则，当泼尼松每日含量大于20mg时，往往有肝肾阴虚表现，可用知母、黄柏或知柏地黄丸抵抗之。当泼尼松每日含量小于10mg时，往往有脾肾阳衰表现，可用附子、肉桂抵抗之。具体治疗经验可详见辨证论治各型处方及加减。<br>
+2&nbsp;其他疗法：<br>
+（1）食疗：常用食物如花生衣、藕、红枣、猪蹄等。<br>
+（2）气功：本病患者易采取静功或放松功。常用功法有大雁功、香功、太极拳等。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">仅适宜慢性型慢性期患者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）人参归脾丸：功能健脾益气，养血止血。适于气血两虚型患者，每日3次，每次1丸。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）乌鸡白凤丸：功能主治适应证同人参归脾丸。每日2次，每次1丸。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）知柏地黄丸：功能滋阴清热，凉血止血。适于肝肾阴虚型患者，每日2次，每次1丸。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）金匮肾气丸：功用补肾助阳，填精补血。适于脾肾阳虚型患者，每日2次，每次1丸。<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">由于ITP发病机理未完全阐明，目前西医尚无根治手段，激素、免疫抑制剂、切脾治疗均存在副作用，且易复发，而中西医结合治疗本病可互相取长补短，有很大优越性。总的治疗原则是急性型或慢性型急性发作期适宜中西医结合治疗，而慢性型慢性期适于纯中药治疗。&nbsp;&nbsp;&nbsp;&nbsp;在疾病初发时有时很难分清急性型与慢性型，可采用下列治疗原则：<br>
+1．对于初发病患者，若外周血血小板计数大于20×109／L，全身出血表现不严重，仅局限在皮肤粘膜者，应首选中医辨证论治，尽可能不用激素或其它西药，中医具体治疗方法详见辨证论治部分。<br>
+2．对于初发病患者，若外周血血小板计数小于20×109／L，有广泛严重的皮肤、粘膜甚至内脏出血，如是儿童，有明显的病毒感染史者，急性型可能性大，主张中医辩证论治加静点免疫球蛋白0．4g／kg连用5天疗法，因为急性型为病毒感染后一种天然免疫反应，可自愈，故尽可能避免使用激素，可避免一系列副作用。但急性期亦有因颅内出血死亡者，所以治疗应积极，静点免疫球蛋白既能使患者渡过严重出血关，又能通过其抗病毒作用促进该病菌的清除，缩短病程。以上情况若为成人，可考虑同时应用小剂量或中等剂量激素，口服泼尼松20～30mg／日可控制出血，与中医辨证施治配合，既可改善症状，又可减轻激素副作用。<br>
+3．不管是初发病患者，还是慢性型急性发作期患者，若外周血血小板计数低于10×109／L，并有严重内脏出血或颅内出血先兆患者，应中西医结合，争分夺秒，积极抢救患者生命，不能有半点延误，若救治及时，急性型可自愈，慢性型急性发作期亦可在短时期内恢复到慢性期。一般患者出现口腔血疱、伴头痛、项强、呕吐，以及血小板低于10×109／L者，为颅内出血先兆。①可立即输单采浓缩血小板悬液，每日输入1×1011／m2，可使血小板数提高1～2×109／L连续3～5天。②静点大剂量丙种球蛋白0．4g／kg连用5天。③血浆置换。④静点大剂量激素，如地塞米松、氢考、甲基强的松龙。⑤在各种疗法无效，又有充分准备条件下，可考虑紧急脾切除术。⑥加强支持疗法，如止血合剂静点，甘露醇降颅压，抗生素抗感染等；若为消化道出血，激素禁忌，可给中药白芨粉、生大黄粉、三七粉各3g口服，2次／日，有良效；崩漏不止者可用丙酸睾丸酮50～100mg／日，肌注直至月经停止；龈血不止者可用五倍子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10～20g、白茅根10～20g，浓煎漱口，一日数次；鼻衄不止者可用局部填塞法。总之在出血不止情况下可灵活选用以上各法。合并失血性休克者还应输注全血，有严重缺铁性贫血患者应注意补铁。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">因为急性型ITP的发生与病毒感染有关，故预防病毒感染是关键，平素可常冲服板蓝根冲剂预防。发病期间应卧床休息，密切观察，避免外伤。慢性型慢性期ITP患者，应注意避免：①过劳。②外感。两者是加重病情转为急性发作期的诱因。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

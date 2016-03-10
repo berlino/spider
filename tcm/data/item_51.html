@@ -1,0 +1,965 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">病毒性心肌炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=病毒性心肌炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">viral  myocarditis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">BINGDUXINGXIJIYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：温病，风温症，心悸，胸痹，喘症，水肿。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">感染性疾病，循环系统疾病，
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">病毒性心肌炎是指人体感染嗜心性病毒，引起心肌非特异间质性炎症。该炎症可呈局限性或弥漫性；病程可以是急性、亚急性或慢性。急性病毒性心肌炎患者多数可完全恢复正常，很少发生猝死，一些慢性发展的病毒性心肌炎可以演变为心肌病。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">现在发现引起病毒性心肌炎的所谓嗜心性病毒可以是一组病毒：肠道病毒、粘病毒、腺病毒、麻疹、腮腺炎、乙型脑炎、肝炎、巨细胞病毒等。但是绝大多数病毒性心肌炎是由肠道病毒中的柯萨奇病毒和埃可病毒引起。其中柯萨奇病毒B组的1～5型和A组中的1、4、9、16和23型病毒以及埃可病毒中的6、11、12、16、19、22和25型病毒最为常见。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">关于病毒性心肌炎的产生，中医研究认为该病是由内因和外因相互作用而产生。外因包括有“温邪”、“毒气”等外邪以及产生外邪的非时之寒暑、疾风淫雨、山岚瘴气等岁时不和的环境因素。关于外邪，《温疫论》中记载有：“然此气无形可求，无象可见，况无声复无臭，何能得睹得闻？人恶得知是气也”。该书作者吴又可显然是将不能直视到，又不能听到、嗅到 的物质定义为气。即他认为气的众多内涵中包含有极为微小物质的一个层面，而使人致病的气则属于“毒气”。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">多发生于秋冬季。
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">病毒性心肌炎发生于40岁以下患者为多，约为75％～80％，男性多于女性。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">病毒性心肌炎以柯萨奇B组病毒引起的最多，近些年来，病毒性心肌炎的发生率显著增高，成为我国当前最常见的心肌炎。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">尽管目前世界对病毒性心肌炎发病机理尚未完全明了，但是随着现代病毒性心肌炎实验动物模型和培养搏动心肌细胞感染柯萨奇B组病 毒致心肌病变模型的建立，对该病发生机理的阐明已有了很大的发展。以往认为该病过程有 二个阶段：①病毒复制期；②免疫变态反应期。但是近来研究结果表明，第一阶段除有病毒复制直接损伤心肌外，也存在有细胞免疫损伤过程。
+
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">中医认为该病病位于心，病机为：易患本病之人多为年轻未达筋骨隆盛、本气尚未充满之时或素体禀赋不足之人。或因肺卫失司，感 受温热病邪；或为脾胃适逢亏欠，感受湿热疫毒。凡为热邪，皆具耗气伤阴的特点。热耗气于心脉，则致心气虚衰，并可继发气虚帅血无力的气虚血瘀之变。这一类病症表现有心悸怔忡，气短懒言，神疲乏力，胸痛胸闷，舌红或暗，脉软少力或结代。热伤阴于心血，则可使 心阴不足，表现为五心烦热，口干及心神不宁、夜寐欠安，脉细数，舌红少津等症。总之本 病以禀赋不足或心肺脾肾有不同程度亏虚为本，温热邪气、湿浊瘀血为标，正邪交争，相互作用，形成了不同类型的病理过程。当温热或湿热病邪耗气伤阴至极，则又可变生阳虚阴衰的阴阳两虚重症，临床表现为喘息胸满不得卧，浮肿乏力不能行，脉虚结代，或迟缓。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">病毒性心肌炎的病理改变可分为局灶性和弥漫性心肌炎；实质性和间质性心肌炎。实质性心肌炎是以心肌细胞溶解、坏死、变性和肿胀为主要特征的病理改变。间质性心肌炎以心 肌纤维之间和血管周围结缔组织中有炎性细胞浸润为主的病理改变。以柯萨奇病毒B3感染的 心肌炎病理改变为例，在急性期早期有心肌细胞肿胀，细胞横纹不清，胞浆染色嗜酸性增强， 胞核出现核固缩和核碎裂。早期尚未见炎性细胞浸润，随后心肌细胞可发生坏死、崩解、胞 核和细胞轮廓消失，周围出现单核细胞及淋巴细胞为主的炎性细胞浸润，坏死灶中蓝色钙化  颗粒物质增多，形成散在点状、灶性或片状心肌细胞坏死和炎性细胞浸润，心脏间质和血管多未受累。部分病毒性心肌炎进入慢性期。其主要病理改变是炎性细胞逐渐减少，纤维细胞开始增多，形成纤维疤痕组织，部分心肌可有增生、肥大，在病灶内可钙化以及心脏扩大、心 内膜增厚及附壁血栓形成等等。在急性或慢性阶段，心肌炎均可累及心脏传导系统，引起传导阻滞或各种心律失常。无论是实质性心肌炎还是间质性心肌炎，也都会引起不同程度的心肌松软无力，发生心脏功能减损。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">第一阶段病毒复制期，该阶段是病毒经血液直接侵犯心肌，病毒直接作用，产生心肌细胞溶解作用。第二阶段免疫变态反应期。对于大多数病毒性心肌炎（尤其是慢性期者），病毒在该时期内可能已不存在，但心肌仍持续受损。目前认为该期发病机理是通过免疫变态反应，主要是T细胞免疫损伤致病。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）急性热盛型：<br>
+证候：该型多为发病6个月内，伴有发热、咽痛等上呼吸道感染症状，且还有心悸、胸闷痛，便于尿赤，脉疾数或结代，苔黄，舌尖红。证候分析：风热、疫毒之邪外侵，由皮毛侵入肺系，咽为肺之门户，故咽痛、咳嗽等，邪热郁于肌表则发热，热邪耗伤心之气阴，则心悸、胸闷痛，热邪的津则便干尿赤，脉数或结代，舌质红，舌苔黄乃热盛伤阴之象。<br>
+（2）心阴虚损型：<br>
+证候：多为恢复期，病程在6个月或一年以上。症见心悸、气短、胸憋闷，心烦口干，手足心热或常有低热，脉细数或结代，舌质红，无苔或少苔。证候分析：热邪久炽，心阴被耗，心失所养，则心悸、气短、胸闷，阴津不能上承则口干，心神被扰则心烦，手足心热及低热乃阴虚内热所致。舌红少苔，脉细数或结代乃心阴亏损之征。<br>
+（3）气阴两虚型：<br>
+证候：多为慢性期或后遗症期见到该型。症状表现为：心悸，怔忡，气短，胸闷，乏力，面色晄白，自汗盗汗，舌胖嫩，边有齿痕，苔薄或剥脱，脉细数或促代或虚数。证候分析：罹病日久，心之气阴两伤，心失所养，则心悸、怔忡、气短、乏力、胸闷；阴血不能上华于面，则面色晄白；卫外不固，阴不内守，则自汗盗汗，舌胖嫩有齿痕，苔薄或花剥，脉细数或结代乃气阴两虚之征。<br>
+（4）阴阳两虚型：<br>
+证候：多属慢性期，也可见于急性暴发型。症见心悸气促，动则喘急，肢冷畏寒或自汗不止，乏力，浮肿，面色晦暗或紫暗，倚息不得卧，脉细数结代，舌暗淡，苔薄白。证候分析：气阴两虚日久可形成阴阳两虚。心阳虚日久，肾阳亦亏。心气不足则心悸气&nbsp;短，动则喘急，阳不达于四末则肢冷，阳不卫外，则自汗不止。肾阳虚，不能化气行水，则浮肿、面色晦暗。水邪上凌心肺则倚息不得卧。舌暗淡，苔薄白，脉结代乃阴阳两虚之征。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">之一、1980年10月（于北京）九省市心肌炎协作组修订<br>
+根据九省市心肌炎协作组两年中就诊的病毒性心肌炎、心肌病和心内膜弹力纤维增生症2000余例经验总结，对小儿病毒性心肌炎的诊断指标建议作了进一步修改，并将良性早搏、心肌病和心内膜弹力纤维增生症的诊断意见附后以资鉴别。<br>
+1.病原学诊断依据<br>
+（1）自患儿粪便、咽拭子分离出病毒，且在恢复期血清中同型病毒抗体滴度较第一份血清升高4倍以上或下降400%以上；或用分离到的病毒接种动物能产生心肌炎。<br>
+（2）自患儿心包穿刺液或血液中分离出病毒。<br>
+（3）患儿死后自其心包、心肌或心内膜分离出病毒，或特异性荧光抗体检查阳性。<br>
+2.临床诊断依据<br>
+（1）&nbsp;主要指标：①急、慢性心功能不全，或心脑综合征。②有奔马律或心包摩擦音。③心脏扩大。④心电图示严重心律失常。或明显的ST-T改变，或运动试验阳性。<br>
+（2）次要指标：①发病同时或1～3周前有上呼吸道感染、腹泻等病毒感染史。②有明显乏力、苍白、多汗、心悸、气短、胸闷、头晕、心前区痛、手足凉、肌痛等症状，至少两种；婴儿可有拒食、发绀、四肢凉、双眼凝视等；新生儿可结合母亲流行病学史作出诊断。③心尖区第一心音明显低钝或安静时心动过速。④心电图有轻度异常。⑤病程早期可有血清肌酸磷酸激酶（CPK）、谷草转氨酶（GOT）或乳酸脱氢酶（LDH）增高，病程中多有抗心肌抗体（AHA或HRA）增高。<br>
+3.确诊条件<br>
+（1）具有主要指标两项，或主要指标一项及次要指标两项者（都要求有心电图指标），可临床诊断为心肌炎。<br>
+（2）同时具备病原学第1～3项之一者，诊断为病毒性心肌炎。发生心肌炎同时，身体其他系统如有明显的病毒感染，而无条件进行病毒学检查，结合病史临床上可考虑心肌炎亦系病毒引起。<br>
+（3）凡不全具备以上条件，但临床怀疑为心肌炎，可作为“疑似心肌炎”进行长期随诊。如有系统的动态变化，亦可考虑为心肌炎，或在随诊中除外。<br>
+（4）在考虑上述条件时，应先除外下列疾病：风湿性心肌炎、中毒性心肌炎、结核性心包炎、先天性心脏病、胶原性疾病和代谢性疾病的心肌损害、原发性心肌病、先天性房室传导阻滞、高原性心脏病、克山病、神经功能或电解质紊乱，以及药物引起的心电图改变等。<br>
+4.临床分期：主要根据病情变化分期，病程长短仅作参考。<br>
+（1）急性期：新发病，临床症状明显而多变。病程多在6个月内。<br>
+（2）恢复期：实验室临床症状和心电图改变等逐渐好转，但尚未痊愈。病程一般在6个月以上。<br>
+（3）慢性期：临床症状、心电图和X线检查，病情反复或迁延不愈，实验室检查，有病情活动的表现者。病程多在1年以上。<br>
+（4）后遗症期：患心肌炎时间久，临床已无明显症状，但遗留较稳定的心电图异常，如房室或束支传导阻滞，过早搏动及交界性心律等。<br>
+说明，①严重心律失常，包括除频发或偶发及良性早搏以外的异位节律；Ⅱ度二型以上房室、窦房、完全左、双和三束支传导阻滞。②心电图轻度异常，指除上项以外的心电图异常。<br>
+[附1]良性早搏诊断依据<br>
+1.无心脏病史，常偶然发现。<br>
+2.临床无自觉症状，活动如常，心脏不大，无器质性杂音。<br>
+3.早搏在夜间或休息时多，活动后心率增快，早搏明显减少或消失。<br>
+4.心电图示早搏呈单源性、配对型，无R波落在T波上，无其他心电图异常。<br>
+[附2]原发性心内膜弹力纤维增生症诊断依据<br>
+1.早期发生充血性心力衰竭，多因呼吸道感染或肺炎诱发。对洋地黄类药物虽尚敏感，但心力衰竭常较顽固，反复加重。极少数早期病例可无心力衰竭出现。<br>
+2.杂音较轻或无，少数可有提示二尖瓣关闭不全的Ⅲ级杂音。<br>
+3.X线检查显示心脏增大，左心为主，透视可见心搏减弱。<br>
+4.心电图示左室肥厚。除左心前导联电压增高外，常伴左心前区T波呈缺血性倒置。极个别病例左室肥厚不明显。心律不齐少见。<br>
+5.排除其他心血管疾病。<br>
+[附3]关于“病毒性心肌炎诊断依据参考”修改的几点说明<br>
+一、1983年（于西安）九省市心肌炎协作组修订<br>
+1.&nbsp;关于病原学诊断依据，因有的单位已开展心内膜活检工作，可从活体得到心脏的病理、病毒学材料，不必单提“死后”。另外，血液分离到病毒与心脏分离到的病毒（高度相关）不同，只能说明有病毒血症，所以将原有的3条整理为2条；①自患儿心包穿刺液、心包、心肌或心内膜分离到病毒或特异性荧光抗体检查阳性。②自患儿粪便、咽拭子或血液分离出病毒，且在患儿的恢复期血清中同型病毒中和抗体滴度较第一份血清升高或降低4倍以上。<br>
+2.主要指标中，心包炎是重要诊断依据，而心包炎除心包摩擦音外，尚有其他有诊断意义的临床表现，且心包摩擦音并非每例都有，存在时间也不长，容易漏诊，所以第二条“心包摩擦音”改为“心包炎表现”。<br>
+心肌炎临床多数属轻型，中、重型较少。原来主要指标要求有“严重心律失常”，此时传导阻滞要在Ⅱ度二型以上。当时考虑可避免将神经功能紊乱的传导阻滞误诊为心肌炎。但这样对轻型心肌炎容易漏诊。此次考虑在确诊条件中已明确“必须除外神经功能紊乱的心电图改变”，除外后，心电图示Ⅰ度或Ⅱ度一型传导阻滞，应作为心电图诊断的主要指标。故将原第4条“严重心律失常”改为“明显心律失常”，包括除偶发及频发早搏以外的异位节律，窦性停搏，Ⅰ度以上的房室、窦房、完全左或右和双、三束支传导阻滞。<br>
+ST-T改变过去叙述不明确，现改为“除标准Ⅲ导联外的ST-T改变连续3天以上或运动试验阳性”。<br>
+3.确诊条件中，应除外的疾病增加了“皮肤粘膜淋巴结综合征和良性早搏”。因前者近来各地多有发生，需要和心肌炎鉴别；良性早搏很常见，有的误诊为心肌炎。<br>
+4.临床分期方面，常见一些患儿病程拖长，常在感冒后症状反复或心电图改变重新出现，病情迁延不愈，但心功能尚能维持，故增加迁延期，而将反复心衰、病情活动的重症患者保留为慢性期，比较切合实际情况，也可减少一些家长的思想负担。后遗症应是已稳定不变，留下的后遗病，不是病的一个期，而是后遗症，所以去掉后遗症期，而将第3、4条改为：“③迁延期：临床症状反复出现，心电图和X线改变迁延不愈，实验室检查有病情活动表现者，病程多在1年以上。④慢性期：进行性心脏增大或反复心力衰竭，病程在1年以上。”<br>
+之二、1987年全国心肌炎心肌病专题座谈会（于江苏张家港）拟定成人急性病毒性心肌炎诊断标准<br>
+1.在上呼吸道感染、腹泻等病毒感染后1～3周内或急性期中出现心脏表现（如舒张期奔马律、心包摩擦音、心脏扩大等）及/或充血性心力衰竭或阿斯综合征者。<br>
+2.上述感染后1～3周内或发病同时新出现的各种心律失常而在未服抗心律失常药物前出现下列心电图改变者。<br>
+（1）房室传导阻滞或窦房阻滞、束支传导阻滞；<br>
+（2）2个以上导联S-T段呈不平型或下斜型下移≥0.05mV，或多个导联S-T段异常抬高或有异常Q波者；<br>
+（3）频发多形、多源成对或并行性早搏；短阵、阵发性室上速或室速，扑动或颤动等；<br>
+（4）2个以上以R波为主波的导联T波倒置、平坦或降低<R波的1/10；<br>
+（5）频发房早或室早。<br>
+注：具有（1）至（3）任何一项即可诊断。<br>
+具有（4）或（5）或无明显病毒感染史者要补充下列指标以助诊断：①左室收缩功能（减弱经无创或有创检查证实）；②病程早期有CPK、CPK-MB、GOT、LDH增高。<br>
+3.如有条件应进行以下病原学检查<br>
+（1）粪便、咽拭分离出柯萨奇或其它病毒及/或恢复期血清中同型病毒抗体滴度较第一份血清升高4倍（双份血清应相隔2周以上），或首次滴度>640者为阳性，320者为可疑；<br>
+（2）心包穿刺液分离出柯萨奇或其它病毒等；<br>
+（3）人心内膜、心肌或心包分离出病毒或特异性荧光抗体检查阳性。<br>
+（4）对尚难明确诊断者可长期随访。在有条件时可作心肌活检以帮助诊断。<br>
+（5）在考虑病毒性心肌炎诊断时，应除外甲状腺功能亢进症、β受体功能亢进症及影响心肌的其它疾患，如风湿性心肌炎、中毒性心肌炎、冠心病、结缔组织病及代谢性疾病等。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">病毒性心肌炎的临床症状具有轻重程度差异大，症状表现常缺少特异典型性的特点。约有半数患者在发病前（约1～3周）有上呼吸道感染和消化道感染史。但他们的原病症状常轻重不同，有时常轻到易被患者所忽视，须仔细询问才被注意到。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">一、症状：<br>
+1．心脏受累的症状可表现为胸闷、心前区隐痛、心悸、气促等。<br>
+2．有一些病毒性心肌炎是以一种与心脏有关或无关的突出症状为主要或首发症状而就诊的。如①经常见到以心律失常为主诉和首发症状就诊者。②少数以突然剧烈的胸痛为主诉者，而全身症状很轻。此类情况多见于病毒性心肌炎累及心包或胸膜者。③少数以急性或严重心功能不全症状为主就诊。④极少数以身痛、发热、少尿、昏厥等全身症状严重为主、心脏症状不明显而就诊。<br>
+二、体征：<br>
+1．心率改变或为心率增快，并与体温升高不相称，或为心率缓慢。<br>
+2．心律失常&nbsp;&nbsp;节律常呈不整齐，早搏最为常见，成为房性或为室性早搏。其他缓慢性心律失常：房室传导阻滞，病态窦房结综合征也可出现。<br>
+3．心界扩大&nbsp;&nbsp;病轻者心脏无扩大，一般可有暂时性扩大，可以恢复。<br>
+4．心音及心脏杂音心尖区第一心音可有减低或分裂，也可呈胎心样心音。发生心包炎时有心包磨擦音出现。心尖区可听到收缩期吹风样杂音。此系发热、心腔扩大所致；也可闻及心尖部舒张期杂音，也为心室腔扩大、相对二尖瓣狭窄所产生。<br>
+5．心力衰竭体征&nbsp;&nbsp;较重病例可出现左心或右心心力衰竭的体征，甚至极少数出现心源性休克的一系列体征。<br>
+三、分期:<br>
+病毒性心肌炎根据病情变化和病程长短，可分为四期。<br>
+1．急性期&nbsp;&nbsp;新发病、临床症状和检查发现明显而多变，病程多在6个月以内。<br>
+2．恢复期&nbsp;&nbsp;临床症状和客观检查好转，但尚未痊愈，病程一般在6个月以上。<br>
+3．慢性期&nbsp;&nbsp;部分病人临床症状、客观检查呈反复变化或迁延不愈，病程多在年以上。<br>
+4.&nbsp;后遗症期&nbsp;&nbsp;患心肌炎时间已久，临床已无明显症状，但遗留较稳定的心电图异常，如室性早搏、房室或束支传导阻滞、交界区性心律等。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">1．心电图检查包括常规静息心电图检查和24小时动态心电图检查。通过该类检查可 获心律失常和（或）心肌缺血的发现，尤其对心律失常的诊断，心电图检查具有很高的敏感性。①心律失常：室性早搏占病毒性心肌炎各类早搏的70％左右。有文献报告，病毒性心肌炎的早搏大多无固定的联律间距，这反映了异位的兴奋性；若患者除早搏外无其他发现，则可能反映了病变的局灶性。其次是房室传导阻滞，尤以I度房室传导阻滞为多，一般可于治 疗后1～2周恢复。病毒性心肌炎还可引起束支传导阻滞，但多数传导阻滞是暂时性的，也有少数长期存在或恢复正常后又可因过度劳累或再次感染而复发。心肌的疤痕灶是心律失常持续或反复出现的病理基础。②心肌缺血：病毒性心肌炎的心电图中T波的倒置或减低并不少见，有时可达到缺血型T波的程度，  ST段可有轻度的下移。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">1、X线检查  有作者报告经X线检查的病毒性心肌炎患者中约有25％的病人有程度不同的心脏扩大。严重病例可见有肺淤血或肺水肿征象。病毒性心肌心包炎可见心包积液。超声心动图检查  病毒性心肌炎在该检查中无特异性，结果从正常到明显异常都可见到。异常所见有：①心脏扩大，可有左心室或右心室的增大。②区域性室壁运动异常，主要是运动减弱、消失甚至矛盾运动。对于中年以上患者出现该种情况需与冠心病相鉴别。③左心室收缩功能障碍，表现为EF射血分数减小，短轴缩短分数减小等；左室舒张功能障碍，表现为多普勒超声心动图中二尖瓣血流频谱E峰低，A峰增大，E／A比值减小等。
+2、放射性核素检查  该类检查可以对病毒性心肌炎的心肌坏死、损伤程度（局灶、弥漫）以及估价心功能状态有相当高的敏感性。如应用201 TL和99mTc一MIBI心肌灌注显象对诊断
+局灶性或弥漫性心肌坏死有价值。111 In标记单克隆抗肌凝蛋白抗体显象检查心肌坏死的敏感性达到100％。有作者认为这一方法的应用优于心内膜心肌活检的病理检查。但是正如绝大多
+数高灵敏度方法都存在有特异性问题一样,111 In标记单克隆抗肌凝蛋白抗体显象方法的特异性是58％。经放射性核素多门电路心血管造影检查在病毒性心肌炎患者中可以发现左心室功能的异常，表现为左室喷血指数降低，高峰喷血率、高峰充盈率、相对搏出容量、相对舒张末期容量、相对心输出量都有降低等。
+
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">病毒学检查
+①病毒分离检查：包括咽、肛拭病毒的分离、心肌活检组织的病毒分离。
+此项检查在临床中很少有阳性发现，甚至有的文献报告为“罕见”。原因是多数病毒性心肌炎属免疫变态反应所致，因此在临床出现心脏症状时，咽拭、粪便和心脏内的病毒多已不存在。
+②病毒中和抗体测定：是对本病急性期的病初血清与相距3～4周的第二次血清分别测定病毒中和抗体效价。如果第二次血清效价比第一次高4倍，或第一次为≥1：640，则都是阳性表现。如果第一次血清病毒中和抗体效价是1 ：320，则为可疑阳性。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血清酶学检查:血清谷草转氨酶（AST，GOT）、肌酸磷酸激酶（CK）和它的同功酶（CK一MB）以及乳酸脱氢酶（LDH）都可因病毒性心肌炎的不同时期。（急性期的最初、中晚阶段一慢性期一慢性活动期）而有升高一降低一再升高的动态改变，并且其升高程度与病变严重程度有正性相关关系。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">内膜心肌活检  这是一种有创检查方法。检查时将活检钳经右颈静脉或股静脉送入
+    右心室、在室间隔右侧钳夹心内膜心肌2～3mm大小，用以病理学、免疫组织化学和特异性
+    病毒RNA诊断。但由于提供的标本受取材的部位、数量的多少、取材的大小和在疾病的不同
+    时期的影响，致使结果也带有一定的偏差。
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">（1）风湿性心肌炎：常有扁桃体炎或咽峡炎等链球菌感染史，因此咽拭物培养常有链球菌生长，抗O增高，血沉明显增快。风湿性心肌炎还可以有典型风湿热表现，即急骤的起病，有低到中度的发热，并还有多发性关节炎：以膝、踝、肘、腕、肩等大关节对称性、游走性&nbsp;关节发炎，局部红肿热痛（现大多己少见），或仅为关节的游走酸痛。四肢内侧或躯干皮肤有&nbsp;渗出型的边缘红斑，无痛痒感，压之退色。可有皮下结节（现已很少见）。病毒性心肌炎无风&nbsp;湿热的关节、皮肤症状，抗O不增高，但血清病毒中和抗体检查呈阳性发现。风湿性心肌炎常因有心内膜炎而产生二尖瓣返流性收缩期杂音，又可因瓣膜炎症水肿而有舒张期杂音。与&nbsp;此不同的是病毒性心肌炎多无舒张期杂音。<br>
+（2）β受体功能亢进综合征：多见于年轻女性。主诉症状多而易变化，客观体征却少，绝无心脏扩大、心功能不全的体征。心电图常有窦性心动过速，ST段和T波改变。且易发生于&nbsp;Ⅱ、Ⅲ、aVF导联上。经普萘洛尔试验即可使这些异常的心电图恢复正常。病毒性心肌炎经&nbsp;普萘洛尔试验的短期内不能恢复正常，并常有心律失常、心功能受损的器质性心脏病表现。<br>
+（3）冠心病：是冠状动脉粥样硬化引起冠状循环改变导致心肌缺血缺氧的心脏病。非冠&nbsp;状动脉性血液动力学改变引起的心肌缺血不包括在内。冠状动脉粥样硬化在临床中有四个重&nbsp;要易患因素：高脂血症、高血压、糖尿病和吸烟。诊断冠状动脉粥样硬化的最有价值的方法&nbsp;是：作选择性冠状动脉造影，可以明确见到左或右冠状动脉及其直径小到100μm的分支的阻&nbsp;塞情况。心电图则可以有效诊断心肌缺血并确定特定部位的ST一T缺血性改变。结合临床心绞痛症状即可明确诊断冠心病。冠心病虽然有发病年龄年轻化的趋向，但其发病仍多在40岁&nbsp;以上，并且其血清病毒中和抗体亦无阳性发现。病毒性心肌炎不是由于冠状动脉供血障碍引起的心肌病变，故其冠状动脉造影检查是正常的，临床上形成冠状动脉粥样硬化的易患因素经常缺如。需提请注意的是：在怀疑为病毒性心肌炎的急性期时，心电图运动负荷试验属于禁忌。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈<br>
+（1）临床症状及体征消失，实验室检查正常。<br>
+（2）心电图恢复正常。<br>
+（3）X线片显示心胸比例约为50%.<br>
+2.好转<br>
+（1）临床症状控制或好转，实验室检查正常或好转。<br>
+（2）心电图好转。<br>
+（3）X线检查心脏阴影有所缩小，但心胸比例大于50%。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">急性病毒性心肌炎患者多数可以完全恢复正常，很少发生猝死。一些慢性发展可成为心肌病。部分患者在心肌疤痕明显形成后，留有后遗症表现：一定程度的心脏扩大、心功能减退、心律失常或心电图持续异常。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">目前病毒性心肌炎尚无特效治疗方法。一般治疗原则以休息、对症处理和中西医综合治疗为主。本病多数患者经休息和治疗后可以痊愈。<br>
+（一）休息<br>
+休息对本病的治疗意义是减轻心脏负担，防止心脏扩大、发生心衰和心律失常；即使是已有心脏扩大者，经严格休息一个相当长的时间后，大多数也可使心脏恢复正常。具体做法是：卧床休息，一般卧床休息需3个月左右，直至症状消失、心电图正常。如果心脏已扩大或有心功能不全者，卧床时间还应延长到半年，直至心脏不能继续缩小、心衰症状消失。其后在严密观察下，逐渐增加活动量。在病毒性心肌炎的恢复期中，应适当限制活动3～6个月。<br>
+（二）西医药治疗<br>
+1．改善心肌营养和代谢具有改善心肌营养和代谢作用的药物有维生素C、B、B12。辅&nbsp;酶A、肌苷、细胞色素C。三磷酸腺苷（ATP）、三磷酸胞苷（CTP）、辅酶Q10等。其中维生&nbsp;素C在心肌炎治疗中常有大剂量用法，每日维生素C用量可达3～5g、静脉滴注。辅酶A用量为50～100U、肌苷用量200～400mg，两药均可以每日肌注或静脉注射一次。细胞色素C&nbsp;必须经皮试后，无过敏反应才可以应用。其用量为15～30mg，每日静脉注射1～2次。ATP或CTP用量为20～40mg，肌注每日1～2次。&nbsp; ATP现已有口服和静脉制剂，用量同肌注。辅酶Q10每日口服30～60mg，而肌注或静脉注射辅酶Q10每次10mg，每日2次。在临床中可以根据病情对以上药物适当搭配或联合应用2～3种即可，10～14天为一个疗程。<br>
+2.&nbsp;调节细胞免疫功能&nbsp;&nbsp;目前常试用的药物有人白细胞干扰素，胸腺素、免疫核糖核酸等。<br>
+目前由于各地在这类药物生产中质量、含量的不一致，在使用时需对一些副反应、过敏反应注意。但中药黄芪已在调节细胞免疫功能方面显示出良好作用。<br>
+3．治疗心律失常和心力衰竭&nbsp;&nbsp;详见心律失常和心力衰竭有关内容。需提醒注意的是：心肌炎患者对洋地黄类药物耐受性低，敏感性高，用药量需减至常规用药量的1／2～2／3，以防止发生洋地黄类药物过量反应。<br>
+4.&nbsp;治疗重症病毒性心肌炎&nbsp;&nbsp;重症病毒性心肌炎表现为短期内心脏急剧增大、高热不退、急性心力衰竭、休克，高度房室传导阻滞者。<br>
+治疗重症病毒性心肌炎采用：<br>
+（1）肾上腺皮质激素治疗。肾上腺皮质激素可以抑制抗原抗体，减少过敏反应，有利于保护心肌细胞、消除局部的炎症和水肿，有利于挽救生命，安度危险期。药物选用地塞米松每日10～30mg，分次静注，连用3～7天，病情好转改为口服，并迅速减量和停用。如果开始用肾上腺皮质激素7天无效则应停用。<br>
+地塞米松等肾上腺皮质激素对于一般急性病毒感染性疾病属于禁用药。病毒性心肌炎是&nbsp;否可以应用此类激素治疗，现也意见不一。因为肾上腺皮质激素有抑制干扰素的合成，促进病毒繁殖和炎症扩散的作用，有加重病毒性心肌炎心肌损害的可能，所以现在一般认为病毒性心肌炎在急性期，尤其是前二周内，除重症病毒性心肌炎患者外，一般是禁用肾上腺皮质激素的。<br>
+（2）治疗重症病毒性心肌炎高度房室传导阻滞或窦房结损害病人需先及时应用人工心脏起搏器度过急性期。<br>
+（3）对于重症病毒性心肌炎患者，特别是并发心力衰竭或心源性休克者，近期有人提出应用1，6－二磷酸果糖（FDP）5g&nbsp;静脉滴注，每日1～2次。1，6－二磷酸果糖是糖代谢过程的底物，具有增加能量的作用，有利于心肌细胞能量的代谢。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1．辨证分型治疗&nbsp;<br>
+（1）急性热盛型:&nbsp;<br>
+治则：清热泻火，兼养心阴。<br>
+方药：以银翘散、五味消毒饮、泻心汤、竹叶石膏汤等加减。药用金银花、连翘、黄芩、蒲公英、知母、大青叶、麦冬、元参、甘草。方义分析：方以金银花、连翘、黄芩、蒲公英、大青叶清热泻火解毒，兼以透邪外出；石膏清热解肌透邪；竹叶清下焦之邪热。知母、麦冬、元参、甘草滋养心阴。诸药共奏清热解毒，滋阴之效。<br>
+(2）心阴虚损型：<br>
+治则：养阴清热，兼以安神。<br>
+方药：一贯煎、酸枣仁汤、补心丹等加减。药用生地、麦冬、沙参、元参、莲心、炒枣&nbsp;仁、蒲公英、茯神。琥珀粉（冲）五味子、紫石英、板兰根、丹参。&nbsp;&nbsp;&nbsp;&nbsp;方义分析：方以生地、元参、莲心滋心阴、清心火，麦冬、沙参、炒枣仁、五味子、茯神养心阴、安心神，琥珀、紫石英重镇安神；丹参活血养血。佐以蒲公英、板蓝根以清余邪。诸药合凑养阴清热、安神之功。<br>
+（3）气阴两虚型：&nbsp;治则：益气养阴，复脉宁心。<br>
+方药：生脉散、炙甘草汤和加减复脉汤。药用党参、黄芪、麦冬、五味子、生地、丹参、&nbsp;琥珀粉（冲）、炙甘草。<br>
+方义分析：方以党参、黄芪益心气；麦冬、生地、五味子滋心阴；丹参养血活血；琥珀宁心安神；炙甘草益气兼能调和诸药。诸药相合，共收益气养阴、复脉宁心之效。<br>
+（4）阴阳两虚型：<br>
+治则：温阳救逆，利水平喘。<br>
+方药：以参附汤、右归丸、真武汤、济生肾气汤加减，药用人参、附子、生黄芪、桂枝、&nbsp;生龙牡，枸杞子、泽泻、白术、干姜、五味子、炙甘草。<br>
+方义分析：方以人参、黄芪、白术、炙甘草益气健脾利水；附子、桂枝、干姜温补心肾&nbsp;之阳；杞果、泽泻、五味子滋补心肾之阴，取阴生阳长之意；生龙牡重镇以安心神，合而共奏温阳行水之效。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">黄芪：味甘，性微温，归脾、肺经，是补气要药。黄芪治疗病毒性心肌炎具有抗病毒，调节免疫功能和正性肌力作用。&nbsp;丹参：味苦，微寒，人心、心包，肝经。是中西医结合活血化瘀研究中应用最多的传统活血、养血药。&nbsp;有抗病毒作用的中药有：金银花、连翘、黄芩、蒲公英、大青叶、板蓝根、黄柏、地丁、&nbsp;鱼腥草、野菊花、茵陈、贯仲、大黄、穿心莲、虎杖、蚤休、射干等。<br>
+&nbsp;有抗链球菌作用的中药：四季青、金银花、黄连、虎杖、鱼腥草、野菊花等。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">对少数病毒感染，如麻疹、脊髓炎等可通过预防接种达到预防目的。<br>
+预防链球菌感染也可抑制病毒危害，因此及时服用一些解表、清热解毒中药和平时体育锻炼，增强体质仍是本的预防措施。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

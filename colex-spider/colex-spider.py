@@ -1,4 +1,5 @@
 #coding:utf-8
+
 from Tkinter import *
 #import requesocks as requests
 import requests
@@ -14,27 +15,35 @@ import threading
 
 
 MainUrl=u"https://www.colex-export.com"
-PROXY=[{},{"http":"socks5://127.0.0.1:1080","https":"socks5://127.0.0.1:1080"},{"http":"http://113.10.188.148:808","https":"https://113.10.188.148:808"},{"http":"http://116.255.208.193:808","https":"https://116.255.208.193:808"}]
+ExtendedUrl="https://www.colex-export.com/colex/AppServlet?m=PaginationCtrl.requestPage&page=2"
+
+#PROXY=[{},{"http":"socks5://127.0.0.1:1080","https":"socks5://127.0.0.1:1080"},{"http":"http://113.10.188.148:808","https":"https://113.10.188.148:808"},{"http":"http://116.255.208.193:808","https":"https://116.255.208.193:808"}]
+PROXY=[{}]
+
 headers={'user-agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36',
          'X-Requested-With': 'XMLHttpRequest',
          'Referer':'https://www.colex-export.com/colex/en/home',
          'Origin':'https://www.colex-export.com',
          }
-API="http://svip.kuaidaili.com/api/getproxy/?orderid=953882825069567&num=12&carrier=2&protocol=2&method=1&sp1=1&quality=2&sort=1&format=json&sep=1"
+API="http://svip.kuaidaili.com/api/getproxy/?orderid=945673754549881&num=12&carrier=2&protocol=2&method=1&sp1=1&quality=2&sort=1&format=json&sep=1"
+API_REFRESH="http://svip.kuaidaili.com/api/getproxy/?orderid=945673754549881&num=13&carrier=2&protocol=2&method=1&sp1=1&quality=2&sort=1&dedup=1&format=json&sep=1"
 
-API_REFRESH="http://svip.kuaidaili.com/api/getproxy/?orderid=953882825069567&num=13&carrier=2&protocol=2&method=1&sp1=1&quality=2&sort=1&dedup=1&format=json&sep=1"
+CSVHeader=('id','name','price','pc','box')
 
-Header=('id','name','price','pc','box')
-#s=requests.Session()
-#s.proxies=proxies
 payload={'m':'CustomerLoginCtrl.requestCustomerLogin','viewLogonid':'di.lu@ccscasbl.org','viewPassword':'nikitamagic8848'}
 LoginUrl="https://www.colex-export.com/colex/AppServlet?m=CustomerLoginCtrl.requestCustomerLogin"
-#data=tablib.Dataset(encoding='utf-8')
-#data.headers=Header
-if not os.path.exists("img"):
-    os.makedirs('img')
 
-ExtendedUrl="https://www.colex-export.com/colex/AppServlet?m=PaginationCtrl.requestPage&page=2"
+#number of spider
+SPIDER_NUM=2
+
+#global queue
+proxyQueue=Queue.Queue()
+#html desciption queue
+itemQueue=Queue.Queue()
+#csv header queue
+resultQueue=Queue.Queue()
+#exclude the using proxies
+usingSet=set()
 
 #get proxy from kuaidaili
 def GetProxy(api):
@@ -44,31 +53,12 @@ def GetProxy(api):
     ProxyList=json[u'data'][u'proxy_list']
     return ProxyList
 
-
-
-def ResolveItem(content):
-    global MainUrl
-    soup2=BeautifulSoup(content,'html.parser')
-    try:
-        pc=soup2.find('div','colli').contents[-1]
-        box=soup2.find('div','order').contents[1].contents[0]
-        price=soup2.find('p','price').contents[0]
-        price=u"".join(price[-6:-1].split(u","))
-        imgUrl=MainUrl+soup2.find('img','img-zoom')['src']
-        return [pc[1:-2],box,price,imgUrl]
-    except AttributeError:
-        return None
-    except TypeError:
-        return [pc[1:-2],box,price,'0']
-
-def RetrieveImg(iNo,imgUrl,session):
-            imgFileName="./img/"+iNo+'.jpg'
-            if imgUrl!='0':
-                #print iNo+" Getting image from "+imgUrl
-                imgUrl=imgUrl.replace('200x200','500x500')
-                tmpObj=Image.open(cStringIO.StringIO(session.get(imgUrl,verify=False).content))
-                tmpObj.save(imgFileName)
-                del tmpObj
+#Refresh the proxy queue
+def Refresh():
+    ReProxy=GetProxy(API)
+    for p in ReProxy:
+        proxyQueue.put({"https":p.encode('ascii','ignore')})
+        #proxyQueue.task_done()
 
 class Spider(threading.Thread):
     def __init__(self,InQueue,OutQueue,proxy=None):
@@ -77,6 +67,47 @@ class Spider(threading.Thread):
         self.InQueue=InQueue
         self.OutQueue=OutQueue
         self.proxy=proxy
+
+
+    #parse the single web page
+    def parseItem(self,content):
+        global MainUrl
+        soup2=BeautifulSoup(content,'html.parser')
+        pc=soup2.find('div','colli').contents[-1]
+        box=soup2.find('div','order').contents[1].contents[0]
+        price=soup2.find('p','price').contents[0]
+        #price=u"".join(price[-6:-1].split(u","))
+
+        try:      
+            tmpEmp=soup2.find('div','details').find('li','first').contents[1].split(u'\u20ac')[-1]
+            empties="".join(tmpEmp.split(","))
+            tmpTax=soup2.find('div','details').find('li','').contents[-1].contents[0].split(u"\x80\xa0")[-1].strip()
+            tax="".join(tmpTax.split(","))
+        except:
+            empties='0'
+            tax='0'
+
+        try:
+            imgUrl=MainUrl+soup2.find('img','img-zoom')['src']
+        except:
+            imgUrl='0'
+
+        try:
+            date=soup2.find('p','date').contents[0]
+        except:
+            date='0'
+
+        return [pc[1:-2],box,price,empties,tax,date,imgUrl]
+
+    #fetch the image
+    def retrieveImg(self,iNo,imgUrl,session):
+                imgFileName="./img/"+iNo+'.jpg'
+                if imgUrl!='0':
+                    #print iNo+" Getting image from "+imgUrl
+                    imgUrl=imgUrl.replace('200x200','500x500')
+                    tmpObj=Image.open(cStringIO.StringIO(session.get(imgUrl,verify=False).content))
+                    tmpObj.save(imgFileName)
+                    del tmpObj
 
     #update the proxy of not in use
     def update(self):
@@ -108,11 +139,11 @@ class Spider(threading.Thread):
                 iName=itemSoup.contents[0].contents[0]
                 #print iUrl
                 r=self.session.get(iUrl,verify=False)
-                tResult=ResolveItem(r.content)
+                tResult=self.parseItem(r.content)
                 if tResult:
-                    pc,box,price,imgUrl=tResult
-                    RetrieveImg(iNo,imgUrl,self.session)
-                    self.OutQueue.put([iNo,iName,price,pc,box])
+                    pc,box,price,empties,tax,date,imgUrl=tResult
+                    self.retrieveImg(iNo,imgUrl,self.session)
+                    self.OutQueue.put([iNo,iName,price,pc,box,empties,tax,date])
                 print threading.currentThread(),iNo
                 self.InQueue.task_done()
             # if error occurs,put it into queue for another processing
@@ -131,17 +162,19 @@ class Storer(threading.Thread):
 
     def SetFile(self,file):
         self.file=file
+
     def run(self):
         while True:
-            iNo,iName,price,pc,box=self.queue.get()
-            self.file.write("%s,%s,%s,%s,%s\n" %(iNo,iName,price,pc,box))
+            iNo,iName,price,pc,box,empties,tax,date=self.queue.get()
+            self.file.write(u"%s,%s,%s,%s,%s,%s,%s,%s\n" %(iNo,iName,price,pc,box,empties,tax,date))
             text.insert(END, u"抓取到"+iNo+u"号商品\n")
             root.update_idletasks()
             self.queue.task_done()
 
 
-#Refresh the queue
+#update queues
 def FetchInfo():
+    #fetch the filename
     text.insert(END,u"抓取中\n")
     targetUrl=v2.get()
     FetchName=targetUrl.split("/")[-1]
@@ -151,81 +184,79 @@ def FetchInfo():
         Extended=True
     else:
         Extended=False
-    file=codecs.open(filename,'w',encoding='utf-8')
-    file.write(u'id,name,price,pc,box\n'.encode('utf-8'))
-    Storer_1.SetFile(file)
-    FetchItemSession=requests.Session()
-    FetchItemSession.proxies=PROXY[3]
-    r=FetchItemSession.get(targetUrl,verify=False)
-    soup=BeautifulSoup(r.text,'html.parser')
-    itemList=soup.find_all('td','description')
-    #session is not thread safe,so make request before the queue
-    for i in itemList:
-        itemQueue.put(i)
-    if Extended:
-        r=FetchItemSession.get(ExtendedUrl,verify=False)
+
+    with codecs.open(filename,'w',encoding='utf-8') as f:
+        f.write(u'id,name,price,pc,box,empties,tax,date\n'.encode('utf-8'))
+        Storer_1.SetFile(f)
+
+        #update the queues in item table page
+        FetchItemSession=requests.Session()
+        FetchItemSession.proxies=PROXY[0]
+        r=FetchItemSession.get(targetUrl,verify=False)
         soup=BeautifulSoup(r.text,'html.parser')
         itemList=soup.find_all('td','description')
-        print "Extended ",len(itemList)
+        #session is not thread safe,so make request before the queue
         for i in itemList:
             itemQueue.put(i)
-    itemQueue.join()
-    printQueue.join()
-    file.close()
+        if Extended:
+            r=FetchItemSession.get(ExtendedUrl,verify=False)
+            soup=BeautifulSoup(r.text,'html.parser')
+            itemList=soup.find_all('td','description')
+            print "Extended ",len(itemList)
+            for i in itemList:
+                itemQueue.put(i)
+        itemQueue.join()
+        resultQueue.join()
     text.insert(END,u"抓取完毕\n")
 
-def Refresh():
-    ReProxy=GetProxy(API)
-    for p in ReProxy:
+if __name__=="__main__":
+    #img path
+    if not os.path.exists("img"):
+        os.makedirs('img')
+
+    #proxyqueue for updating the proxy in real time
+    proxy_list=GetProxy(API)
+    print proxy_list
+    for p in proxy_list:
         proxyQueue.put({"https":p.encode('ascii','ignore')})
-        #proxyQueue.task_done()
 
-root = Tk()
-root.title("Colex抓取工具")
-v1 = StringVar()
-v2 = StringVar()
-v3=StringVar()
-V_1=Entry(root, width=100,textvariable=v1, stat="readonly")
-V_1.grid(row=0)
-v1.set("输入网址")
-V_2=Entry(root, width=100,textvariable=v2)
-V_2.grid(row=1)
-v2.set("http://colex-export.com")
-B_O=Button(root, text="抓取", fg="blue",bd=2,width=20,command=FetchInfo)
-B_O.grid(row=2)
+    #set up few spiders and one storer
+    #update the item queue and resultqueue,the flow goes well
+    for i in xrange(SPIDER_NUM):
+        if i<len(proxy_list):
+            tmpProxy=proxyQueue.get()
+            t=Spider(itemQueue,resultQueue,tmpProxy)
+            usingSet.add(tmpProxy["https"])
+            #print tmp
+        else:
+            t=Spider(itemQueue,resultQueue,{})
+        t.setDaemon(True)
+        t.start()
+    Storer_1=Storer(resultQueue)
+    Storer_1.setDaemon(True)
+    Storer_1.start()
 
 
-proxy_list=GetProxy(API)
-print proxy_list
+    #using the tk gui
+    root = Tk()
+    root.title("Colex抓取工具")
+    v1 = StringVar()
+    v2 = StringVar()
+    v3=StringVar()
+    V_1=Entry(root, width=100,textvariable=v1, stat="readonly")
+    V_1.grid(row=0)
+    v1.set("输入网址")
+    V_2=Entry(root, width=100,textvariable=v2)
+    V_2.grid(row=1)
+    v2.set("http://colex-export.com")
+    B_O=Button(root, text="抓取", fg="blue",bd=2,width=20,command=FetchInfo)
+    B_O.grid(row=2)
+    text=Text(root,height=40)
+    text.grid(row=5)
+    L_O=Label(root, width=100,text="Xberlino")
+    L_O.grid(row=6,sticky=W)
 
-itemQueue=Queue.Queue()
-printQueue=Queue.Queue()
-#proxyqueue for updating the proxy in real time
-proxyQueue=Queue.Queue()
-usingSet=set()
-for p in proxy_list:
-    proxyQueue.put({"https":p.encode('ascii','ignore')})
-
-for i in range(0,4):
-    if i<len(proxy_list):
-        tmp=proxyQueue.get()
-        t=Spider(itemQueue,printQueue,tmp)
-        usingSet.add(tmp["https"])
-        #print tmp
-    else:
-        t=Spider(itemQueue,printQueue,{})
-    t.setDaemon(True)
-    t.start()
-Storer_1=Storer(printQueue)
-Storer_1.setDaemon(True)
-Storer_1.start()
-
-text=Text(root,height=40)
-text.grid(row=5)
-L_O=Label(root, width=100,text="Xberlino")
-L_O.grid(row=6,sticky=W)
-
-root.mainloop()
+    root.mainloop()
 
 
 

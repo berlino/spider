@@ -1,0 +1,921 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">淤胆型肝炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=淤胆型肝炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">intrahepatic cholestasis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">YUDANXINGGANYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：黄疸。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">传染病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">指各种原因（包括各型肝炎病毒、药物、内分泌、自身免疫性疾病等）引起的肝内胆红素结合与排泄障碍，而导致黄疸持久不退或进行性加深，因此淤胆是一种病因诸多、发病机理复杂的综合征，而不是单独疾病。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">病毒性肝炎发生肝内胆汁淤积的原因是多方面的。肝内胆管损伤：感染肝炎病毒、发生肝内炎症，特别是汇管区的严重炎症使肝内毛细胆管、小胆管、胆小管连接部位、赫氏管、叶间胆小管等受压；或胆汁在这些胆管中积留日久而形成胆栓，均可影响胆汁排泄；如果高胆红素血症（T  Bil＞171μmo1／L）持续时间过长，肝细胞有大量Bi1，特别是非结合性Bil（D Bil）沉积，可抑制Bil结合所需之葡萄糖醛酸转换酶和微粒体催化酶等酶的活性，而导致Bil结合障碍，Bil结合与排泄障碍均可发生胆汁淤积。此外，在急性或慢性病毒性肝炎、肝硬化淤胆型的病人常有胆汁淤积因子（cholestatic  factor，CF）产生，内毒素血症、胆管黏膜分泌的血栓素B2（TXB2）大量增长以及用激素治疗，肝脏微循环障碍，超微结构的破坏均可使胆汁淤积的黄疸进一步加重，所以胆汁淤积的病因非常复杂。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">如果系急性肝炎淤胆型，病程短者，其病因病机多为湿热：若其病程超过1个月，或在慢性肝炎、肝硬化基础上发生的淤胆，其病因为瘀热互结发黄。
+（1）血瘀原因：
+①久病致瘀：张景岳说：“诸黄虽多湿热，经脉久病，不无瘀血阻滞也”。
+②因湿致瘀：久病伤脾，水湿内生，。或湿邪残留未尽，阻于经脉，血脉不通。
+③因热致瘀：热邪内遏，素体阴虚，久病血瘀，暗伤营血，灼热耗津或气郁化火。
+④气虚致瘀：久病伤脾或长期服用苦寒之品伤气，致使气机失运，血行不畅。所谓气为血帅，若气虚则血失所帅，必然致瘀。
+⑤阳虚致瘀：感受寒湿之邪或久服激素，则导致阳虚。阳虚生寒，血见寒则凝。
+（2）血热原因：
+①肝郁：各型肝炎病初为湿热，其病位在肝胆脾胃，但病久必导致肝郁。
+②久服温药：有的病人形似阴黄而用肉桂、附子等温药；有的长期服用激素（助阳），均可导致里热炽盛；也有久服苦寒之品，苦能化燥伤阴，而致热盛。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">病程日久之急性肝炎及慢性肝炎、肝硬化发生胆汁淤积之病因病机为瘀热互结。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">急性或慢性肝炎及肝硬化淤胆型，其肝脏病理改变与其相关肝炎的基本病变相同，但在细胆管中胆栓形成较明显，而且与Bil值成正比，  Bil值越高，胆栓越多，存在的部位越广泛。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">一、诊断：本病是由于湿热之邪不解入于血分，阻滞血脉，逼迫胆液外溢，浸入肌肤所致，故中医称之为瘀热痰阻证。临床表现为黄疸较深，经月不退，自觉症状较轻，皮肤瘙痒或有灼热感，抓后有细小出血点及瘀斑，右胁胀痛，肝脏肿大，稍感乏力，口咽干燥，小便深黄，大便色浅或灰白，舌质暗红，苔少，脉使有力。<br>
+主证：①黄疸较深，经月不退，色泽晦滞；②皮肤瘙痒。<br>
+次证：①舌质暗红；②右胁胀痛；③大便色浅或灰白。辨证要求：具备主证①、②者，即属本证。具备主证①及次证三项中的两项者，即属本证。&nbsp;&nbsp;&nbsp;<br>
+瘀热发黄辨证要点<br>
+对血瘀血热病人进行中医辨证并不困难，掌握以下要点则可准确辨证。<br>
+（1）病史，本证有慢性肝炎病史或病程日久的急性肝炎长期高黄疸。<br>
+（2）临床症状体征：其中舌质尤为重要，皮肤抓痕可供参考。<br>
+（3）小便自利：具有重要临床意义.。这是同湿热发黄鉴别的关键。<br>
+（4）要注意兼证：慢性肝炎病因病机复杂，变证丛生，注意兼证的存在，以利加减用药，方可取得满意疗效。<br>
+二、辨证：瘀热发黄，包括血瘀、血热两种见症。<br>
+（1）血瘀见症：小便自利是血症黄疸的特点，《普济方》中说“血症之黄，小便自利耳”。沈金鳌说：“诸黄皆小便不利，唯血瘀发黄小便自利也”。小便自利与否，可作为湿热发黄与血瘀发黄之鉴别要点。血瘀发黄尚有渴喜热饮，多梦，蜘蛛痣（蟹爪纹），面色晦暗，舌质紫暗，瘀斑瘀点，舌下脉增粗延长，肝肿大。<br>
+（2）血热见症：血分热可有口咽干燥，喜热饮，大便秘结；皮肤瘙痒，抓后有出血点，皮肤灼热；出血倾向，瘀斑，系因脾胃有热，热伤于心，心主血，热气盛，故发黄而动血。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">淤胆型肝炎的诊断，根据临床症状、体征和生化指标，诊断并不困难。以下几点可作为诊断依据。
+（1）随着黄疸加深，全身及消化道症状改善。
+（2）PA＜60％（或更低）用维生素K1治疗5～7天能得到纠正。
+（3）T／D  Bil比例（PP）＜60％（或更低），用酶激活剂治疗1～2周可以升至60％以上，并且PA、PP呈同步改善。
+（4）很少有早期出现酶疸分离。
+（5）虽有一过性血氨升高，但通便后可降至正常。
+（6）可以有腹水，但在中等量以下，并可自行消退。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">全身症状轻，食欲好，有较明显的黄疸，大便色浅或灰白，尿黄，约70％的病人有皮肤瘙痒，其中有1／3的病人为严重瘙痒；抓后有出血点，甚至因奇痒而影响睡眠。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">有较明显的黄疸，大便色浅或灰白，尿黄，约70％的病人有皮肤瘙痒，其中有1／3的病人为严重瘙痒；抓后有出血点，甚至因奇痒而影响睡眠。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">B型超声：B型超声尤其是彩超的基本特点是观察肝内外扩张的胆管。如总胆管下端梗阻则肝外胆管扩张，直径＞0．6cm，可见平行管征（扩张的胆管与门静脉或其分支相平行）以及胆囊扩大，若肝门附近梗阻则肝内小胆管扩张。肝外梗阻的另一点是肝内胆管形态改变，扩张了的胆管呈树叉状，有时可呈“星状结构”。肝外胆管扩张日超发现率为90％，在黄疸出现前即可见到肝内胆管扩张。但是也有假阴性。本院曾收治经手术证实的肝外梗阻性黄疸，血清胆红素均>340μmo1／L，多次行B超检查均未发现肝内胆管扩张。因此B型超声不能作为鉴别淤胆型肝炎及肝外梗阻性黄疸的唯一手段，还需借助其它方法。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">1．ALT急性淤胆型肝炎早期类似于普通急性黄疸型肝炎，65％的病例ALT值常在500U／L以上。但应注意以下两点。
+（1）酶疸分离：淤胆型肝炎病程2～3周后随着黄疸加深，ALT下降，有64％的病例出现酶疸分离，肝外梗阻性黄疸和重型肝炎也可出现酶疸分离，因此酶疸分离对三种黄疸没有鉴别意义。
+（2）ALT值：肝外梗阻性黄疸有少数病例早期ALT可达500U／L以上，这是因为在梗阻早期胆道内压升高， 胆汁酸对肝细胞的刺激而有一过性高酶表现；相反，淤胆型肝炎在病程第2～3周后ALT很快降至500U／L以下乃至正常，因此对ALT值应结合病程考虑其临床意义，不可根据一次结果作结论。
+2．碱性磷酸酶（AKP） 淤胆型肝炎由于肝内胆道内压升高、胆酸的刺激，肝细胞合成AKP亢进，故可有AKP升高；但淤胆型肝炎胆道内压升高不如肝外梗阻性黄疸明显，因此AKP值低于肝外梗阻性黄疸。淤胆型肝炎及肝外梗阻性黄疸AKP升高率分别为83.05％及95．92％；但淤胆型肝炎AKP值为4．10～19．3（平均7．82士3．21）布氏单位，肝外梗阻性黄疸为4．38～41．6（平均：16．30士8．49）布氏单位），t=6.53，有显著性差异。若有AKP明显升高应多考虑为肝外梗阻性黄疸。
+3．5’-核苷酸酶（5’-NT）5’-NT由胆道系统排泄，梗阻性黄疸时5’-NT升高。淤胆型肝炎5’-NT阳性率为36．17％、肝外梗阻性黄疸时为94．44％，χ=15．46，P＜0.01；两者5’-NT的平均值分别为26．45士12．96及118．70士80．60m-IU，P＜0.01。
+4．γ-GT 以γ-GT 作为胆汁淤积的指示酶，不如AKP、亮氨酸氨肽酶更为恰当；但因γ-GT由胆道排泄，梗阻性黄疸时可以升高，而且肝外梗阻性黄疸比淤胆型肝炎明显。淤胆型肝炎、肝外梗阻性黄疸γ-GT 的阳性率分别为78．O及97．44％，χ=5．53，P＜0．05；两组病例的平均值分别为141．58士141．16及494.20士257．76U％，P＜0．01。
+5．脂蛋白X（Lp-X） Lp-X对淤胆型肝炎、肝外梗阻性黄疸的鉴别有较重要的价值。检测经解剖学证实的280例淤胆型肝炎患者，Lp-X阳性率为98％，无胆汁淤积的277例中阳性率仅3％。肝外梗阻性黄疸Lp-X阳性率为82．5％，淤胆型肝炎仅11％。定量测定淤胆型肝炎平均为23mg％，肝外梗阻性黄疸平均为158mg％。可见定量测定有助于鉴别淤胆型肝炎及肝外梗阻性黄疸。但原发性胆汁性肝硬化Lp-X值可达600～1783mg％，最高达5360mg％。所以在考虑鉴别诊断时必须结合临床及（或）组织学。随诊观察：肝外梗阻性黄疸，当原因未解除时，Lp-X的浓度随着病程延长而逐渐上升，而淤胆型肝炎则随着病程延长而下降。分别测定Lp -  X1、Lp-X2，淤胆型肝炎时血浆中大部分为Lp-X1，而肝外梗阻性黄疸Lp-X2于早期出现，其后逐渐以Lp-X1为主。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1．血沉  血沉增快是淤胆型肝炎和肝外梗阻性黄疸的特点之一，尤其肝外梗阻性黄疸更为明显。淤胆型肝炎、肝外梗阻性黄疸的血沉增快率分别为52．94及83．33，x2＝6．19，P＜0．01；血沉平均值淤胆型肝炎、肝外梗阻性黄疸分别为31．0士12．88及59．27士30．44mm／小时，P＜0．01。2．血浆氨基酸分析  实验动物或临床病人均证实血浆氨基酸分析对鉴别淤胆型肝炎与肝外梗阻性黄疸有实用价值，经手术证实的肝外梗阻性黄疸病人血浆氨基酸谱基本正常，经组织学证实的淤胆型肝炎病人，除支链氨基酸外其它所有氨基酸都有显著升高。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">（1）淤胆型肝炎同肝外梗阻性黄疸的鉴别：在鉴别诊断中首先要注意黄疸诊断程序。至于同肝外梗阻性黄疸的鉴别，可参照实验室与特殊检查项目。<br>
+（2）淤胆型肝炎同重型肝炎鉴别要点：以下几点可以作为临床诊断淤胆型肝炎的指征，并有助于同慢性重型肝炎（慢重肝）的鉴别：<br>
+①淤胆型肝炎黄疸迅速加深，消化道症状及全身症状不加重，并逐步改善；慢重肝症状则进行性加重。<br>
+②淤胆型肝炎随着黄疸加深，肝脏迅速增大而不是缩小，慢重肝则肝脏缩小。<br>
+③淤胆型肝炎各项生化指标（包括5’-NT、AKP、γ-GT等升高）提示有肝内梗阻情况；慢重肝梗阻酶谱也可升高，但升高幅度不大。<br>
+④淤胆型肝炎D Bil占T Bil的60%以上，或＜6%用酶诱导剂或活血化瘀中药能迅速提高其比例，尿胆红素强阳性。慢重肝则常<60％，并进行性下降。<br>
+⑤淤胆型肝炎PA低于60%，密切观察无继续下降的趋势，且用维生素K1治疗5～7天能恢复正常；慢重肝很难恢复。<br>
+⑥淤胆型肝炎可有少量腹水，轻度血氨升高，但未经特殊治疗可自行恢复。慢重肝常为大量腹水，利尿剂效果不好，血氨常>正常2倍。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">急性轻型淤胆型肝炎为自限性疾病，预后良好。但慢性肝炎、肝硬化及病程日久的急性淤胆型肝炎重度黄疸，黄疸持久不退或进行性加深，则可发生胆汁性肝硬化或肝细胞液化性坏死、凝固性坏死而演变成慢性重型肝炎、亚急性重型肝炎，前者病死率高达75％～100％，因此对淤胆型肝炎有重度黄疸者，应加速黄疸消退，以改善其预后。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">（1）常规治疗：&nbsp;&nbsp;&nbsp;<br>
+①&nbsp;支持疗法：若在慢性肝炎、肝硬化基础上发生的淤胆型肝炎，可适当补充人血白蛋白。&nbsp;&nbsp;&nbsp;&nbsp;<br>
+②&nbsp;对症治疗：若消化道症状较重，可适当补液；有皮肤瘙痒者可用洗澡及口服消胆胺、巴比妥等药物；若因重度瘙痒影响睡眠可用安定。PA＜60％者，可肌注或静点维生素K1。<br>
+（2）退黄药物：<br>
+①目前国内外治疗淤胆型肝炎退黄药物有下述几种。<br>
+激素系治疗淤胆型肝炎常用药物，但退黄有效率仅56％。有效病例副作用严重，黄疸反跳率高，故目前已逐渐趋向于少用或不用。<br>
+②其它药物：<br>
+a．熊去氧胆酸（ursodeoxy&nbsp; cholic acid，简称UDCA）：UD-CA的利胆作用可以理解为在肝细胞内蓄积，因而称之为分泌型利胆剂。用法与用量：日用300～600mg口服。<br>
+临床疗效：UDCA是一种作用很强的利胆剂。以往认为在有严重肝损害时禁用。近来的经验证明该品对一部分淤胆型肝炎退黄有效。用UDCA治疗慢性活动性肝炎病人有明显作用。<br>
+<br>
+b．胰高血糖素-胰岛素（G-I）疗法：其作用机制：增加胆汁流量。胰高血糖素对胆汁流量及其成分有影响。Rayford证明胰高血糖素及胰岛素均为多肽激素，系作用很强的利胆剂。随着胰高血糖素用量增加而使胆汁流量增加，但当加至2μg/kg／h，胆汁流量达到高峰，增至4～8μg／kg／h时，则&nbsp;胆汁流量不再增加。促进胆汁分泌。胰高血糖素加肠促胰分泌素对胆汁分泌有加强作用。从中看出胰高血糖素加肠促胰分泌素对胆汁分泌及其中电解质有影响。增加肝脏血流量。胰高血糖素的利胆作用机理可能与增加肝动脉、门静脉或全肝血流量有关。增加肝细胞中环磷腺苷（cyc1ic&nbsp; adenosine／mon ophosphate，cAMP）。胰高血糖素能提高肝细胞中cAMP浓度，同时通过第二信息使cAMP增加，而且cAMP的蛋白激活酶还可触发磷酸化反应，而cAMP能增加胆汁流量，推测胰高血糖素的利胆作用主要是增加胆汁酸非依存性部分的分泌。用法与用量：一般用量为G-I1（mg）：10（U），但也用G：I为2～4mg：10～24U；<br>
+临床疗效：&nbsp;有待进一步证实。<br>
+注意事项：对慢活肝、肝硬化淤胆型重度黄疸应用G-I疗法应注意乳酸性酸中毒。血中乳酸50％来自葡萄糖，20％来自丙氨酸，其余来自肌糖原和各种氨基酸。G-I疗法与葡萄糖并用，葡萄糖摄取后血中乳酸增加，正常人静脉注射0．5g／kg葡萄糖30分钟后乳酸较注射前增加0．046mmo1。急性肝炎在注射后30分钟血中乳酸与正常人相同，但60分钟后则明显增加。肝功严重损害时糖负荷增加后乳酸明显增加而且持续时间长。注射葡萄糖后，肝内酵解增加引起乳酸升高，待摄取血中乳酸超过其释放时乳酸才下降。<br>
+慢性肝脏疾病由于血液粘滞度增加、血液流变学障碍、组织细胞供氧减少、加之肝脏摄取乳酸能力下降，并常有血中游离脂肪酸增加，使丙酮酸氧化受损，乳酸产生增加，因此35％的慢性肝炎病人有高乳酸血症。正是反映组织对氧的需求和实际供氧二者之间是否平衡。乳酸增多症若长期得不到纠正则产生乳酸性酸中毒。对这种酸中毒用大剂量碳酸氢钠难以纠正，用吸氧疗法，每天4～6次，每次15～30分钟可得到纠正。<br>
+<br>
+C.酶诱导剂：常用的药物有苯巴比妥、D-860、大仑丁等。其作用机理很复杂，以苯巴比妥为例介绍如下。<br>
+作用机理，诱发脲嘧啶二磷酸葡萄糖醛酸转换酶，加强胆红素同葡萄糖醛酸的结合。诱发肝内Y蛋白，加强胆红素运输。提高肝细胞对胆红素的摄取和排泄能力。苯巴比妥能特异性增加毛细胆管膜上的Na+-K+&nbsp;-ATP酶活性，使胆汁流量，特别是胆酸非依存性部分分泌增加。苯巴比妥能使肝脏从胆固醇生成胆酸有关的降解酶增加。因此，苯巴比妥能使胆固醇分解并排出体外，而使血浆中胆酸浓度下降。促进牛石胆酸与葡萄糖醛酸结合，苯巴比妥能增加牛石胆酸的结合并使之从尿中排泄，减少牛石胆酸在体内蓄积，减轻牛石胆酸引起的继发性胆汁淤积，有助于疾病的恢复。<br>
+用法用量：&nbsp; 30～60mg，每天2～3次口服，每天总量为120～200mg。一般在治疗后5～7天黄疸开始下降。2周左右血清胆红素约下降40％～60％，可考虑减量，总疗程为4～8周，也有长达4个月而无不良反应。<br>
+临床疗效：遣井报告用激素治疗无效的急性淤胆型肝炎，用本品有效。本品对小儿慢性淤胆型肝炎能降低血清胆红素，止痒也有效；苯巴比妥治疗淤胆型肝炎，初期胆红素下降较快，后期较慢。此外，将苯巴比妥与导眠能并用治疗慢性淤胆型肝炎可使血清胆固醇及总脂质明显下降，治疗2～3个月血清总脂质可自4％～6g％降至2g％以下，黄色瘤消失，停药后脂质可轻度回升，再用仍有效。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为应用苯巴比妥治疗淤胆型肝炎多系个案报道，而且多用于急性淤胆型肝炎，所以尚难做出肯定评价。<br>
+注意事项：苯巴比妥对肝脏有一定的损害作用，长期大剂量服用应警惕加重肝损害，尤其是对慢活肝、肝硬化病人，原来肝脏损害较重，应予注意。对慢性重型肝炎容易加重肝昏迷不宜用。<br>
+<br>
+d.门冬氨酸钾镁：是钾盐与镁盐的等量混合物。在人体内因门冬氨酸是草酰乙酸的前体，在三羧酸循环中起重要作用，同时也参与鸟氨酸循环，使体内的氨（NH3）与二氧化碳结合生成尿素，这对稳定人体的内环境起一定作用。钾离子是细胞生存的必需物质，也是高能磷酸化合物合成和分解的催化剂。镁离子是多种酶的激活剂，有利于改善代谢，改善脏器的血流，从而有利于肝脏病恢复、胆汁分泌和排泄。故临床用于治疗淤胆型肝炎重度黄。<br>
+<br>
+e.强力宁：由甘草酸单胺、L-半胱氨酸、甘氨酸配伍制成。本品可诱发免疫活性高效价γ-干扰素，提高NK细胞活性，增强单核巨细胞吞噬能力，能减轻肝细胞变性坏死，防止脂肪性变，阻止肝纤维化形成，促使肝细胞修复，并有解毒、抗炎、抗过敏等药理作用。甘草酸在体内被葡萄糖醛酸水解酶水解为葡萄糖醛酸和甘草次酸。肝脏有类固醇代谢酶，由于甘草酸与该酶亲和力大于类固醇，从而障碍了皮质激素和醛固酮的灭活，故使用强力宁没有明显的皮质激素样反应，因此有人主张用强力宁治疗慢性肝炎，包括淤胆型肝炎。有人对用强力宁的病人血浆皮质醇浓度进行检测：用药后第15天，结果比用药前水平增加51％～100％，最高增加400％，由此说明应用强力宁治疗等同于应用肾上腺皮质激素。<br>
+用强力宁同样有副作用，但比激素作用轻，主要表现为胸闷、胃脘部不适，口渴、少数病人有低钾、钠潴留，长期应用可有血压升高及柯兴综合征等临床表现。<br>
+<br>
+（3）血浆交换疗法：主要用于急性肝功能衰竭者。但用血浆交换疗法价格昂贵，不适宜在我国普遍推广。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）急性淤胆型肝炎：病程短，黄疸轻（T&nbsp; Bil＜171μmo1／L，有湿热见症者，可用清利法。用茵陈蒿汤，该方三味药，苦寒通泄，使湿热之邪从小便而出，湿去热清，则黄自退。若热重于湿，可用栀子柏皮汤为治。<br>
+（2）慢性肝炎、肝硬化度（或）病程日久之急性肝炎淤胆型重度黄疸（T&nbsp; Bi1＞171μmo1／L）,根据其瘀热互结之病因病机，采用凉血活血法为治。<br>
+①选药原则有三：1）针对病因病机及重度黄疸的主要证型；2）参照古代医家治验；3）结合现代医学重度黄疸发生机理，根据临床及实验研究对各个环节有作用的药物。如具有抑制胆汁淤积因子、降低TXB2、PGF1α、ACE及血液粘滞度，肝脏微循环，加强胆红素摄取、结合、转运、弥散及排泄，同时有利胆、利尿、减少肝肠循环等作用的药物。<br>
+②基本方：以赤芍（重用）、丹参、葛根、瓜蒌、茵草、丹皮为基本方。<br>
+③加减：凉血活血重用赤芍，仅为基本治法，并不是每个病人都需将上述药物全部列入方中，应视病情轻重、病人证型而加减，为了便于临床应用，将加减法列后。<br>
+a.&nbsp;有心下停饮者，可与苓桂术甘汤并用。一般只取其中桂枝之温化气，茯苓之平走下，以消饮液，术草味甘有滋腻之弊，弃而不用。<br>
+b．有中焦虚寒者，可与理中汤并用。一般只取其中党参、甘草；若系老年人，即使无中焦虚寒，伍用少许干姜，以佐赤芍之凉性，可减少胃脘不适。<br>
+c.有阳明腑实者，可与承气汤并用。一般只取大黄、元明粉；若胃脘胀满，可以莱菔子代替厚朴或枳实。<br>
+d．有皮肤严重瘙痒者，可加凉血祛风止痒剂，如丹皮、牛蒡子、浮萍、连翘、薄荷、绿豆、蚕砂。<br>
+e.有精神紧张、夜寐不实者，可重用丹参至30g。<br>
+f．有汗闭者，可重用葛根至30g，适当配伍解表发汗之品，如有表寒者用小剂量麻黄，体虚者可用生黄芪。<br>
+g.有呕吐者，可加少许生姜或姜半夏。<br>
+h．有夹湿热者，可加少许清热利湿之品，一般用黄芩15g、白茅根15g即可。但有黄腻苔者，应辨清虚实，若系脾胃虚寒，湿久化热，当针对病因论治，不可一见黄腻苔，即投以大剂苦寒之品。<br>
+i．有出血倾向者，可并用三七、水牛角粉，尤其是对慢活肝高黄疸，用之尤宜。水牛角苦咸寒，清热凉血解毒。<br>
+j．有冷球蛋白血症而引起的关节痛。瘀斑、皮疹等合并症者，可加茜草（重用）、秦艽、豨莶。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">急性肝炎淤胆型的预防措施同甲、乙、丙、丁、戊型肝炎；慢性肝炎、肝硬化淤胆型目前尚无有效预防措施，若临床、生化证实为淤胆型，宜早期采用有效退黄治法，顿挫黄疸，以阻止其向重度黄疸发展。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">历代医家对血瘀、血热黄疸的论述甚多。《诸病源候论》中说“血瘀在内，则时时体热而发黄。《临证指南》中说“气血不行则发黄”。李挺说“伤寒发黄虽不一，皆因误用温药或被火攻太甚，或失汗与泻下，以致阳明经中血热见真色于皮肤”。《素问·痿论》中云，“肝气热则胆泻”，“胆泻则发黄”。《寓意草》中说“胆气热，汁满而溢于外，以渐渗于经络，则身目俱黄”。《临证指南》中也指出“阳黄之作，湿从火化，瘀热在里，胆热液泻”。陆渊雷说，“黄疸之成因，必因胆汁混入血液循环所致……，若因病原体传染，瘀字又暗含郁滞之意，胆汁郁滞，入于血液循环，以发生黄疸，谓之瘀热以行”。
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

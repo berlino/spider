@@ -1,0 +1,890 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">姜片虫病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=姜片虫病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">fasciolopsiasis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">JIANGPIANCHONGBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医：赤虫病；扁虫病；虫证。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">寄生虫病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">姜片虫病是布氏姜片虫（F. buski）寄生人体小肠后引起的寄生虫病。临床上主要表现为腹泻、腹痛、营养不良等。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">以大便检查有姜片虫卵，一般表现有腹痛腹泻，面黄体瘦，甚至影响小儿生长发育为主要表现的寄生虫病。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">姜片虫是寄生在人体内最大的吸虫。新鲜虫体呈肉红色，质地柔软不透明，呈长椭圆形。经甲醛液或乙醇固定后，呈灰白色，边缘颜色较深、质地变硬，相似姜片，所以称为姜片虫。其引起的疾病则被称为姜片虫病。虫体长约20～75mm  （个别可达104mm），宽8～20mm，厚0．5～3mm。雌雄同体，虫体的前端和腹面各有1个口吸盘和腹吸盘。成虫多寄生在人和猪的12指肠和空肠内，偶尔也寄生于胃及大肠内。虫卵随粪便排出体外后进入水中，在适宜的温度（27～32℃）和湿度下，经过3～7周孵化成毛蚴。毛蚴自卵中逸出后钻入扁卷螺（中间宿主）内，经过约25～30日的发育繁殖，自胞蚴发育成雷蚴以至成尾蚴，后离开螺体，吸附在水生植物如水红菱、菱白、荸荠、藕等的外皮上形成囊蚴。人和猪吞食囊蚴而感染。囊蚴经胃内消化后在12指肠内脱囊而变成幼虫，并吸附在12指肠或空肠粘膜上吸取营养，约经1～3个月后发育为成虫并产卵。成虫寿命约为2年左右。寿命长者可达4～5年。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为姜片虫病是姜片虫侵体而发病。姜片虫人体后，人脏腑功能失调，则导致多种病变。患病初期是湿热虫毒，未经治疗或久治不愈者，则脾虚湿滞、气血两虚为主要之证。人吞食囊蚴后，囊蚴吸附在小肠上，导致胃肠气机失调，运化失司，出现腹胀便溏、恶心、呕吐、饮食怪癖、腹泻和便秘交替等症状。病深日久，虫在肠中，损伤脾胃。由于脾胃为后天之本，气血生化之源，虫毒内积，耗损水谷之精微，以致脾胃虚损严重，气血化源不足，所以出现四肢无力、眩晕眼花、营养不良，由脾胃损及心肾，导致心肾两虚。病损及心，则心悸气短，出现心脾两虚证；病损及于肾，肾虚水泛，出现浮肿，严重者可出现腹水等脾肾两虚证。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">本病呈地方性流行，多见于东南亚和南亚的一些国家。在中国分布最广，主要集中在东南沿海及长江中下游的16个省、市、区，水源丰富、盛产菱藕等水生植物的地区。
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">本病在5～20岁的儿童和青少年中患病率较高。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">人和猪是姜片虫的主要传染源。粪便污染水源是本病流行的重要因素。
+
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">姜片虫的幼虫在12指肠逸出后，寄生在小肠的上段发育为成虫。成虫的吸盘肌肉发达，吸附力强，被吸附的粘膜及其附近组织可发生炎症、点状出血、水肿，以至形成溃疡或脓肿。在病变严重的局部肠壁，可见出血现象。成虫有时寄生在幽门或结肠，同样也引起局部的炎症性反应。成虫在其生长和繁衍过程中分泌的一些代谢产物，可引起机体的毒性反应。如全身或局部浮肿、嗜酸性细胞增多、过敏反应和毒性反应等。重度感染者出现不同程度的 营养不良和消化功能障碍，症状有消瘦、贫血、浮肿、腹水等。大量感染时，肠腔内成虫过多，虫体成团，堵塞肠腔，可引起肠梗阻。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">姜片虫病的主要病机是以脾胃不和、气机不利和脏腑虚弱为主。人吞食囊蚴后而感染姜片虫病，囊蚴侵入胃肠后，则损伤脾胃，产生温热内蕴，或脾胃虚弱，姜片虫居肠胃得以生存与繁殖，而致此病发生。由于脾胃不和，运化失常，所以出现食欲不振、恶心、呕吐、腹泻、腹胀等症状。姜片虫久居胃肠，阻滞胃肠气机，使肝胃失调，脾胃受损，引起多种症状。脏腑虚弱也是姜片虫病的主要病机。由于姜片虫在肠道吸吮水谷积微，耗伤气血，导致脾胃运化失司，脏腑虚弱，出现四肢无力、精神萎靡、头痛、头昏、耳 鸣、失眠等。虫积日久，气机郁阻，气血耗伤，所以出现腹泻与便秘交替、腹胀、体软无力、面色苍白等。脾胃不和、气机不利、脏腑虚弱是有密切联系的，是互为因果的。姜片虫病早期是以邪实为主，以气机失调为病机，病期长而久治不愈时，则以脏腑虚弱、正虚为主，兼有气机郁滞。姜片虫病是邪实正虚的病证。
+赤虫病是因吞食粘有赤虫（姜片虫）幼虫的水生植物后，赤虫寄生于人体小肠，以致气机阻滞，脾失健运。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">受损的肠粘膜炎症部位可见中性粒细胞、淋巴细胞，间或也有嗜酸性粒细胞的浸润。粘膜上皮细胞的粘液增加。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">1．轻型和中型&nbsp;&nbsp;证见上腹部或全腹隐隐作痛，腹胀或有腹泻、或出现便秘、食欲不振、营养不良等症状。。<br>
+2．重型&nbsp;&nbsp;姜片虫病久治不愈，损伤脾胃，气血两虚，证见面色萎黄，消瘦，疲倦无力，头昏失眠，舌淡，脉细.
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1．患者居住或去过姜片虫病流行地区，与该病患者或病猪有接触史，或有饮用污染水、生食菱角、生荸荠等污染食物，接触污染粪便史。<br>
+2．反复腹部隐痛或钝痛、腹泻或便秘、恶心、食欲减低、消瘦无力、头痛、失眠、肝肿大、浮肿、贫血等症状和体征。<br>
+3．姜片虫病患者血液白细胞计数与嗜酸性粒细胞均有轻度增加。<br>
+4．采用诊断性治疗，如服吡喹酮或槟榔等有效药物治疗之后，病情好转与否，可以判定本病的诊断。<br>
+5．粪便用涂片法或沉淀法，可以检查出姜片虫卵，粪便中也可找到成虫。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">（一）临床表现
+  １．有生食水生食物（如生菱角、荸荠等）史。
+２．好发于５～１４岁的儿童。
+３．轻者仅有间歇性轻微腹痛、腹泻，或有腹胀、恶心，重者腹痛频作，恶心呕吐，大便量多腥臭，挟有未消化食物残渣，偶或挟有姜片状肉虫，或便稀如水，纳食减少，形瘦肚大，精神萎顿，疲乏无力，夜卧不安，喜磨牙，甚至发育迟缓，浮肿，萎黄等。
+（二）实验室检查
+          1．血象  轻度贫血，白细胞数略有增加，嗜酸性细胞数增加，在10％～20％左右，少数患者可高达40％。
+          2．粪便检查  潜血反应偶呈阳性。常用的粪检方法有涂片法和沉淀法。虫卵较少者可用
+      沉淀法检查，沉淀法的阳性率为100％。使用一次3张涂片法的阳性率为91．3％。一般涂片
+      法大多可查出姜片虫卵。查获虫卵是确诊姜片虫病的依据。
+          镜检时，姜片虫卵与肝片吸虫卵和棘隙吸虫卵形态相似，应进行鉴别。肝片吸虫卵的形
+      态特征是，纵径略长（130～150μm），卵盖略大，卵壳周围往往有较浓的胆汁色素颗粒附着，
+      内容物有时呈黄色，卵黄细胞较少，其颗粒又细又少，呈散在分布，胚细较易看到，位于前
+      端较大而透明。棘隙吸虫卵为草黄色，较短而宽，卵壳后端较厚，多形成结节状的突起。
+          3．排虫  姜片虫病患者常有从粪便中排出成虫，若检测到，即可得到确诊。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期1～3个月。感染轻者可无明显症状，或机体反应不敏感者无症状，或症状极轻微。姜片虫病无症状者约8.4％～30.4％。感染重者出现不同的症状和体征者约占69．6％～91．6％。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">姜片虫病的主要临床表现为恶心、呕吐、腹部隐痛或腹泻等消化道症状。体软无力、精神萎靡等症状也在早期出现。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">姜片虫病的主要临床表现为恶心、呕吐、腹部隐痛或腹泻等消化道症状。体软无力、精神萎靡等症状也在早期出现。腹痛多在上腹部或右季肋下部或脐部。一般早晨空腹或餐后出现隐痛，也可是剧痛或绞痛，类似于溃疡病样疼痛，进食后疼痛可缓解。患者腹泻一日多次，腹泻与便秘交替出现者较多。此症状晚期以慢性腹泻为主，大便量多且含有不消化食物，奇臭。血性下痢者少见，隐血试验呈阳性。腹部膨隆，肠蠕动亢进，肠鸣音增强是本病的特殊体征。少数患者可自然排虫或可吐出姜片虫。重症患者出现眼睑以及全身浮肿，并伴有腹水，易与肾病混淆不清。但是，姜片虫病患者尿液无异常改变。浮肿的出现率约占患者总数的0．4％～65．7％。可根据临床症状的轻重、粪便虫卵计数来衡量姜片虫病患者感染的轻重，一般分为轻、中、重三型。1．轻型&nbsp;&nbsp;每毫升粪便中虫卵数少于2000者为轻重感染。患者只有比较轻的消化系统症状，此型约占患者总数的62．4％。 2．中型&nbsp;&nbsp;每毫升粪便中虫卵数在2000～10&nbsp; 000者为中度感染。患者经常出现恶心、呕吐、腹痛、腹泻、失眠、面部有轻度浮肿等症状和体征。此型约占患者总数的36．1％。3．重型&nbsp;&nbsp;每毫升粪便中虫卵数在10&nbsp; 000个以上者为重度感染。患者出现倦怠无力、食欲减低、消瘦、营养不良、维生素缺乏、贫血、浮肿、腹水、胸水、全身衰竭等重症症状出现。此型约占患者总数的1．5％。对儿童患者来说，其身体和智力发育将受到不利影响。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">腹部膨隆，肠蠕动亢进，肠鸣音增强是本病的特殊体征。重症患者出现眼睑以及全身浮肿，并伴有腹水。
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">姜片虫病患者常有从粪便中排出成虫，若检测到，即可得到确诊。粪便检查如直接涂片法、水洗沉淀法或离心沉淀集卵法，可找到姜片虫卵；
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">血象  轻度贫血，白细胞数略有增加，嗜酸性细胞数增加，在10％～20％左右，少数患者可高达40％。
+
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">潜血反应偶呈阳性。常用的粪检方法有涂片法和沉淀法。虫卵较少者可用沉淀法检查，沉淀法的阳性率为100％。使用一次3张涂片法的阳性率为91．3％。一般涂片法大多可查出姜片虫卵。查获虫卵是确诊姜片虫病的依据。 镜检时，姜片虫卵与肝片吸虫卵和棘隙吸虫卵形态相似，应进行鉴别。肝片吸虫卵的形 态特征是，纵径略长（130～150μm），卵盖略大，卵壳周围往往有较浓的胆汁色素颗粒附着，内容物有时呈黄色，卵黄细胞较少，其颗粒又细又少，呈散在分布，胚细较易看到，位于前 端较大而透明。棘隙吸虫卵为草黄色，较短而宽，卵壳后端较厚，多形成结节状的突起。
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．华枝睾吸虫病&nbsp;&nbsp;华枝睾吸虫病的临床症状与姜片吸虫病相似。但实验室检查，如皮内试验、间接血凝试验、补体结合试验，免疫电泳等试验，华枝睾虫病获得阳性反应，并可在粪便或12指肠引流胆汁中查到华枝睾虫虫卵。姜片虫病患者的粪便中可查到姜片虫卵，即可得到鉴别。<br>
+2．钩虫病&nbsp;&nbsp;有钩虫病流行地区。消化道症与姜片虫病有类似之处，但其它的如皮炎、呼吸道、血液等症状及体征不同。粪便常规检查可查到钩虫卵，必要时可用集卵法找钩虫虫卵，或筛洗粪便找钩虫的成虫，即可获得明确诊断。<br>
+3．病毒性肝炎&nbsp;&nbsp;病毒性肝炎病人患病前有与肝炎患者的接触史，而且各型肝炎抗原、抗体试验获得阳性反应。粪便检查无姜片虫卵。姜片虫病患者粪便中，则易查到姜片虫卵或成虫。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">１．黄胖病：以善食易饥，消瘦，皮肤萎黄；浮肿为特征，大便检查可找到钩虫卵。<br>
+２．蛔虫病：亦有阵发性腹痛，体瘦腹大等症，但大便常排出蛔虫或粪便中有较多蛔虫卵。<br>
+３．鞭虫病：常有神疲，乏力，食少，腹痛，腹泻等症，大便检查可找到鞭虫卵。
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">治愈标准<br>
+1．经治疗后症状、体征消失。<br>
+2．粪便使用沉淀法或涂片法查虫卵阴性者。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">姜片虫病患者经有效杀虫治疗后，多可全愈。慢性患者在接受病原治疗之后，绝大多数症状消失，体重、重力、营养状况等有明显的增进或恢复，粪便阴转，并长期保持健康状态。晚期患者若进行有效的驱虫、支持疗法之后，也可症状逐渐减轻，体力恢复，健康状态好转。姜片虫病的预后，根据其感染的轻、中、重，病程的长短，年龄，并发症和异位损害及药物治疗的情况不同，而取得的疗效也不同。早期治疗者预后较好。一般患者的预后较好。诊断正确、治疗得当的患者预后较好。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">对姜片虫重症患者先进行积极的支持疗法，改善营养和纠正贫血，体力和精神恢复到一定程度后再酌情驱虫，驱虫药的剂量也不宜过大。<br>
+1．硫双二氯酚（别丁，bithionol，bitin）有明显杀虫作用。对姜片虫病的剂量为50mg／kg，一次顿服或连服2天，便秘者可加服轻泻药。一次服药后疗效可达70％左右，粪便检查阴转率达71．4％～96．O％。这说明，此药物疗效高。本药毒性较低，不良反应一般轻微，主要为胃肠道反应，如恶心、腹胀、腹泻等；也可导致头痛、头昏及皮肤瘙痒等，停药后不良反应可消失，也可因用药导致肝功能不良及中毒性肝炎，此时，必须立即停止用此药治疗。<br>
+2．呋喃丙胺（furapromide，F30066）呋喃丙胺对姜片虫病有杀灭作用，其代谢产物5－硝基呋喃丙酰胺也有杀虫作用。呋喃丙胺口服后，主要是在小肠内吸收、大部分在肝脏内迅速破坏而失效。其代谢产物从尿内和胆汁中排出。剂量为：成人每日2g，儿童每日每公斤体重60mg。每日分3～4次，半空腹胶囊吞服，连服2天，治愈率为96．55％。如果采用成年人剂量每日3g，儿童每日每公斤体重70毫克，一次顿服，则阴转率为82．9％。本药毒性低，排<br>
+泄较快，对心、肝脏无明显损害作用。服药后常见的不良反应有恶心、呕吐、食欲减低、腹痛、腹泻、便血等明显的消化系统症状。常见的副作用还有阵发性肌肉痉挛，多见于腓肠肌、手指、足趾等肌肉。神经系统的症状表现为头痛、头昏、失眠、健忘，少数患者可出现精神障碍，一般停药后可恢复。有上消化道出血史、精神病史、癫痫病史、黄疸、肝功能障碍、慢性肾炎者不宜使用本药。<br>
+3．吡喹酮（praziquantel）吡喹酮对姜片虫有杀灭作用。口服后可迅速从肠道吸收，服药后0．5～1小时血中浓度即达最高峰。但是，血清中浓度比较低。其在体内不仅代谢快，而且排泄也迅速在服药后24小时内几乎完全可以排出。吡喹酮主要通过肾脏排泄。吡喹酮成人或儿童的服用剂量为：每千克体重5～10mg，1次顿服，治愈率可达90％以上。若剂量＞每公斤体重15mg时，治愈率可达100％。目前，吡喹酮是驱治姜片虫病较为有效的药物。吡喹酮的不良反应较轻，表现为头昏、乏力、头痛、出汗、失眠、肌肉震颤、失眠、腹痛、恶心，少数患者出现心悸、胸闷、早搏、心率减慢、皮肤瘙痒、皮疹等。<br>
+ 4．噻苯咪唑（噻苯哒唑，tiabendazole，mintezol）对姜片虫驱虫效力较强，疗效高，口服药从胃肠吸收，1～3小时血浆浓度达到高峰，在体内代谢成5一羟噻苯咪唑，在尿中以葡萄糖醛酸或硫酸结合形式出现,5天内排出94％，其余从粪便中排出。大部分排泄产物在24小时内排出。本药对姜片虫在组织中移动的幼虫和寄生在肠腔或者附着、包埋在肠壁的成虫都同样有治疗作用。成人按25mg／kg／日，早晚分服，连服3日，每日总量不可超过3g。不良反应较轻，有头昏、恶心、呕吐、厌食、腹痛、腹泻、嗜睡等。偶见有用药后心率减慢、血压降低、虚脱等严重反应。因此，有肝、肾功能障碍者慎用，有过敏史者禁用。患者用药时应注意观察。<br>
+ 5.&nbsp;槟榔&nbsp;&nbsp;此药是祖国医学中最早用来治疗姜片虫的药物之一。槟榔中含有槟榔素，能够麻痹姜片虫体的神经系统，增进人的肠道蠕动，因此，有驱姜片虫的作用。槟榔治疗姜片虫的方法有多种。其使用方法，西医常用的是：槟榔成人用量为50g，加水300ml，煎煮1个小时，浓缩到100ml，晨空腹服1次或分2次服用。儿童每年龄组（每岁）每次服2～3g，每次总量不超过30g，加水煎服，连服3天。姜片虫病用槟榔治疗的方剂、剂量等项，见本文中药治疗项目。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">治疗原则以驱杀姜片虫为主，并要兼顾全身健康情况。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.轻型（1）槟雷汤：槟榔120～150g，雷丸60～75g，将上述药用水浸渍一夜，翌日用火煎服2～3小时，留药液400～500ml，中午空腹顿服。一般服药后约1小时左右出现腹痛、腹泻。本药剂仅适用于体质健壮者，小儿、老年人、体弱者用药量酌减或忌用。（2）槟榔片煎剂：将槟榔浸渍后切成簿片晒干，加三倍量水浸泡12小时，再煎煮2小时去渣。成人用量150ml，小儿按每岁10ml计算，一次顿服。(3）槟榔粉剂：将槟榔打碎磨成粉末，用40孔过筛，&nbsp; 10岁以上儿童和成人用50g，10岁以下儿童每岁5g，用开水调服，或制成水泛丸剂便于顿服，也可与等量黑（白）丑粉混和同服，在短期内可以驱出虫体。（4）槟榔粉煎剂：将槟榔打碎，磨成细粉，加4倍量水,浸泡12小时，煎煮2小时，滤去沉渣。成人用量200ml，小儿按每岁10ml计算，一次顿服。(5）槟榔雷丸散：生槟榔9g，生雷丸2～3g，研细末为1次量，每小时服1次，连服4～ 5次。另用鲜石榴皮45g，煎水，分4～5次冲服散剂。（6）槟榔南瓜煎剂：槟榔24g、新鲜南瓜子45g、黑丑9g、新鲜石榴皮15g，水煎。早晨空腹服，服后可进食。（7）槟榔、南瓜子联合疗法：空腹口服50～90g南瓜子仁粉，2小时以后服槟榔煎剂（槟榔片80g&nbsp;加水500ml，煎至150～200ml滤液），再过30分钟，服硫酸镁30g，水煎服。（8）鲜山楂合槟榔煎剂：用鲜山楂1000g，洗净去核、于下午3时左右服用，至晚上10时服完，禁食晚餐。次晨用槟榔60g煎至1小茶杯，一次服完。(9）复方槟榔煎剂：槟榔30g、使君子11g、二丑9g、枳实6g、广木香5g、神曲9g、山楂9g、黄连3g、白术6g，水煎，一日1剂。本方具有杀虫健脾，行气通便的作用，对姜片虫病有较好的疗效。(10）杀虫剂：槟榔7500g、榧子肉750g、生牡蛎1000g、苏子1000g、木瓜250g，上药共研细末，水泛为丸如胡椒大，每服10g，每日上午及下午各服1次，温开水送服，连服20天为1疗程。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．重型&nbsp;应调健脾胃、补养气血、兼以驱虫。继续用槟榔多种方剂调配使用，主要以扶正杀虫。脾胃未复，重则调健脾胃，方用参苓白术散：党参12g、白术12g、服苓15g、甘草6g。山药15g、白扁豆15g、莲子肉12g、薏苡仁15g、缩砂仁6g、桔梗9g。水煎服。或用香砂六君子汤：党参12g、白术9g、服苓12g、灸甘草6g，加陈皮、半夏、木香、砂仁、生姜等。水煎服。补脾养血用归脾汤（丸）：白术9g、服苓9g、黄芪12g、龙眼肉9g、酸枣仁9g、党参12g、木香6g、甘草5g、当归9g、远志10g，加生姜6g、大枣3枚。水煎服。要密切观察，积极治疗。<br>
+辨证论治：<br>
+１．虫积肠道证：腹中时痛，得食稍减，大便常稀，便中每挟有不消化之食，甚或挟有肉红色虫体如姜片，腹胀肠鸣，夜卧不宁而磨牙，烦躁口干，舌淡红，苔厚而腐，脉滑。杀虫消积。化虫丸加减。<br>
+２．脾虚虫积证：面黄肌瘦，毛发稀疏，腹痛频作，恶心呕吐，大便完谷不化，或便稀如水，腹大如鼓，食少神疲，或全身浮肿，唇舌色淡，苔腻，脉细。健脾驱虫。参苓白木散合肥儿丸加减。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1．体针&nbsp;&nbsp;取足三里、阳陵泉、阴陵泉、三阴交等穴，用捻转中等刺激，有针感后留针3&nbsp;～10分钟，隔天针刺1次，&nbsp; 10天为1疗程。有腹痛者针刺中脘、足三里、天枢、合谷、神阙。腹泻者针刺天枢、足三里、阴陵泉、合谷、上巨虚。便秘者针刺脾俞、胃俞、大肠俞、三阴交、足三里、天枢等。<br>
+ 2.&nbsp;耳针&nbsp;&nbsp;胃、脾、肝、交感、皮质下、配三焦、神门等，每次酌选3～5穴。隔日治疗 1次， 10次为1疗程。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">１严重营养不良，贫血者，应注意改善营养，纠正贫血。<br>
+２．驱虫可选吡喹酮、硫双二氯酚等。<br>
+３．单方验方：<br>
+（１）摈榔１５～２０ｇ，水煎两次浓缩成１００ｍ１，早晨空腹１次服，连服３日。<br>
+（２）雷丸、使君子、鹤虱、榧子、摈榔各等分为未，每次服３～５ｇ，空腹白开水送下。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．猪是姜片虫的重要寄生宿主，因此，防治猪姜片虫病是一项预防人体感染此病不可缺少的一环。<br>
+2．加强卫生宣传工作，特别要教育儿童不要吃带皮壳的生菱、生荸荠等。若需生食，应充分洗净，然后用刀削去皮壳再食用。当然，煮熟后食用为好。<br>
+3．加强粪便管理，防止虫卵入水是切断传播途径的有效方法。姜片虫病流行地区应建立无害化粪池，推广沼气池，粪尿密封贮存等，此法一般18天可杀灭姜片虫卵。粪便中加1：1000的生石灰，3小时后可杀灭虫卵。应禁止在水源附近如江河湖泊、水库中洗刷粪具，更不要把粪便倒入江河湖泊、水库中，这是防止虫卵入水的有效措施。<br>
+4．杀灭中间宿主扁卷螺，可采用下列方法：放养鸭、或放养鲤鱼，黑鲩鱼、非洲鲫鱼等肉食性鱼类，它们均能吞食大量扁卷螺；也可用药物灭螺，常用的灭螺药物有：硫酸铜、生石灰、硫酸铵、巴豆粉、巴豆油、茶子饼、石灰氮、80％滴滴畏、90％敌百虫等药物都有杀灭扁卷螺、毛蚴、尾蚴的效果。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">我国早在1600年前的东晋时代，范东阳就记载了寄生于人体的姜片虫病。在1300多年前的隋代，巢元方在《诸病源候论》中，曾描述过赤虫状如生肉，片如鸡肝，这与姜片虫的形态十分相符。1960年，我国学者在广州检查了两具1513年的明代于尸，发现粪便中有姜片虫卵，这就说明，早在460多年前我国已有姜片虫病的流行。&nbsp;我国古代医书《诸病源候论》中论述的赤虫状如生肉，片如鸡肝，描述相似姜片虫。由于时代的局限性，当时尚不能明确其为姜片虫，而统归于虫证。虫证是指寄生于人体内的各种虫类所引起的病证。赤虫病之名出《诸病源候论·九虫病诸候·九虫候》“八曰赤虫，状如生肉。”
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

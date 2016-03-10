@@ -1,0 +1,899 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">绦虫病
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=绦虫病"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">cestodiasis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">TAOCHONGBING
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">寸白虫病；
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">寄生虫病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">绦虫病是由于绦虫寄生在人体小肠所引起的疾病。临床主要症状为大便排出白色节片，轻度肛痒，或有腹痛、腹泻、食欲亢进、恶心、体重减轻等。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">以腹痛腹泻，善食而瘦，大便检查有绦虫卵等为主要表现的寄生虫病。
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">国内寄生人体的绦虫有四大类，即带绦虫、膜壳绦虫、棘球绦虫和裂头绦虫。
+带绦虫有肥胖带绦虫（牛带绦虫Taenia  Saginata）和链状带绦虫（猪带绦虫Teania  Solium）  两种，前者以成虫寄生于人体，后者以成虫和（或）幼虫寄生于人体。棘球绦虫和裂头绦虫  在国内均以幼虫寄生于人体，前者详见“包虫病”，后者以局部敷贴生蛙肉而致眼内感染最为  常见。肥胖带绦虫和链状带绦虫成虫乳白色，扁长如带状，可分头节、颈节、体节三部分。二者在形态上略有不同。肥胖带绦虫和链状带绦虫的成虫均寄生于人体小肠上部，头节多固定  于十二指肠和空肠由下40～50cm处，其妊娠节片内充满虫卵，常单独从链体脱落随粪便排 出，也可自动排出体外，在土壤中虫卵可生存数周之久。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为绦虫病的主要病因是由于人吃了未煮熟的、含囊虫的猪肉或牛肉，囊虫吸附在肠壁上，颈节逐渐分裂，形成体节，约经2～3个月发育为成虫，而发病。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">绦虫在国内分布较广，见于东北、华北、河南、江苏、云南、广西、贵州、青海、西藏等地，少数民族地区尤多。多发生于东北、华北，内蒙古、西藏等地.
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">绦虫病患者的年龄不拘，但以21～40岁多见，婴儿则极罕见。男性较女性稍多，但在少数地区肥胖带绦虫病者以女性居多。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">造成绦虫病感染和流行的因素是：①饮食习惯与烹调
+    方法：某些地区习惯以新鲜牛肉加盐晒干，放入坛内，加大米饭发酵，作成酸牛肉取食而感染。亦有生熟菜同用一砧板，从生肉脱落的囊尾蚴污染熟食，致素食者亦可患病。南方人喜欢食生猪肉，故感染链状带绦虫者为多；西南及西北地区则以肥胖带绦虫病居多，其患病率 5～8倍于链状带绦虫病。②饲养方法：东北地区常将猪成群放牧，因此吞食人粪机会较多，其囊虫感染率高，感染程度亦较重。
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">大多系单虫感染，但在流行区约半数的患者为多虫感染，每人平均多达8条，最多可达30条。短膜壳绦虫可自身感染虫卵，多者可达3万余条。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">成熟的虫卵被中间宿主牛或猪吞食 后，发育成囊尾蚴、导致牛或猪的囊虫病。人进食未煮熟、含有囊尾蚴的牛肉或猪肉，经消化液作用，囊尾蚴中的头节在肠中翻出吸附肠壁，颈节渐渐分裂形成连患的体节，约经2～3 月发育为成虫。肥胖带绦虫成虫寿命较长，一般宿主死后其生命才结束、甚至可长达60年以 上；链状带绦虫寿命可在25年以上，人体不但是链状带绦虫的终宿主，也可成为中间宿主，发生囊虫病。
+        寄生我国人体内的膜壳绦虫有短膜壳绦虫、长膜壳绦虫和克氏假裸头绦虫。成虫体长约 数十至数百毫米，也寄生于人体小肠内。短膜壳绦虫可直接污染食物感染或自身感染，亦可通过中间宿主（如蚤类、多种面粉甲虫、赤拟谷盗等）。长膜壳绦虫和克氏假裸头绦虫的发育必须经过中间宿主。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">成虫居于肠中,阻滞肠道气机，扰动不安则腹部隐痛。腹胀不适；影响脾胃运化功能，气机升降失常,则恶心、便溏或便结：虫体脱节，故见寸白虫排出体外、肛痒；绦虫吸食人体 水谷精微而致面黄肌瘦、头晕、乏力等虚证。总之，绦虫所致之病机，早期为肠胃功能失调，病久则脾胃受损，生化不足，气血两虚。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">绦虫寄生于人体的小肠腔中，以头节附着于肠粘膜上，其固着器官和微毛对人体肠壁的    机械性刺激和虫体代谢产物的毒素刺激引起肠粘膜炎症，甚至溃疡，故可出现腹泻、腹痛、消 化不良和神经衰弱、头痛等症状。对病人进行肠粘膜活检，可发现多数病人有轻度亚急性炎 症反应。从链体活动的节片沿着肠壁活动，当遇到回盲瓣的阻挡时，活动加强使病人产生回盲部剧痛，也可能因虫体而造成肠梗阻，偶致肠穿孔，多并发阑尾炎。同时绦虫在肠道中吸 收大量营养物质，如氨基酸、糖类、脂肪酸、维生素、嘌呤、嘧啶及核苷等，导致人体营养不良。病人中度嗜酸性粒细胞增多，约占患者的5％～46％。
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）初期：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：上腹部或脐周隐隐作痛，腹胀，或有腹泻，或有便秘，肛门作痒，大便内或衬裤、衣服有时发现白色节片。舌淡红、苔薄白腻，脉细。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：虫居肠中，扰动不安则腹胀、腹痛；脾胃运化失常则腹泻或便秘，虫体脱节，爬出肛门，短暂活动则肛门作痒、大便内或衬裤、衣服有时发现白色节片。苔薄白腻，脉细为脾胃失运之征。<br>
+（2）后期：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：面色萎黄，形体消瘦，身倦乏力、头晕失眠，饮食不振，舌质淡，苔薄白，脉细弱。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：绦虫病久、损伤脾胃，加之虫体耗伤水谷精微，气血两虚故见面色萎黄，形体消瘦，身倦乏力，头晕失眠；脾胃虚弱，运化无力则饮食不振；舌质淡，苔薄白，脉细弱均为气血两亏之征。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">绦虫病诊断标准:<br>
+1.有进食未煮熟猪肉或牛肉史。<br>
+2.消瘦、腹痛、腹泻等，或大便中排出虫体节片。猪绦虫囊尾蚴在人体肌肉、皮下组织形成囊肿。头部、躯干皮下可摸到不痛不痒、不粘连无炎症反应的结节。若侵入脑部可致癫痫、颅内压增高、失明、精神失常等。<br>
+3.大便检查可找到绦虫卵或节片。血嗜酸细胞增高。皮下小结节病理检查有囊尾蚴。<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">（一）流行病学资料
+        有去流行区进食未煮熟的猪、牛肉病史。
+ （二）临床征象
+        有肛门作痒、腹胀、腹痛、恶心、便溏或便结、睡眠不安等症状，粪便中有白色面条状
+    或带状能活动的虫体排出，可作出诊断。
+ （三）实验室检查
+        大便常规检验及肛门拭子涂片检查，可以找到绦虫卵。检查妊娠节片内子宫分枝的数目
+    与形状有助于鉴别绦虫的种类。免疫学检查，虫体匀浆或虫体蛋白质作抗原试验阳性。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">潜伏期约2～3月左右，临床症状视其感染虫数和种类而异。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">症状多轻微，以大便中发现虫体节片最为常见。约占98％。妊娠节片常在大便时成串排出，或单个爬出肛门，或在衬裤上、衣服上发现。当节片自肛门爬出时，在肛门周围作短时间的蠕动，可有肛门瘙痒或不愉快的感觉，这一症状几乎所有患者都有。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">腹痛约见于1/3～1／2的患者，通常并不剧烈，呈隐痛性质，一般限于上腹部或脐周，少数病人可引起绞痛或灼痛，&nbsp;位置不固定，且腹痛常在早晨明显，往往进食后可缓解，部分患者有腹泻、恶心、呕吐、食&nbsp;欲亢进，或食欲减退、体重减轻；少数患者有头痛、乏力、头晕、失眠、神经过敏，甚至有&nbsp;类似美尼尔病。另外有喉部堵塞感，大多见于中年妇女。儿童感染后多出现食欲改变、腹痛、&nbsp;癫痫样发作、发育迟缓等。&nbsp;短膜壳绦虫感染患者的临床症状较多，有时酷似十二指肠溃疡。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线检查
+        在散发地区，对可疑的牛带绦虫采用肠道钡餐透视，可有助于诊断。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">大多患者血象检查正常，约1／4的患者有嗜酸性粒细胞增高。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">粪便及肛拭检查
+因妊娠节片脱离母体后能伸缩活动，同时将子宫内虫卵散布在肠道粪便中，故在大多数病例粪便中，可找到绦虫卵，尤以粪便厚涂片的检出阳性率较高。肛拭检查虫卵，对肥胖带绦虫感染者阳性率明显高于粪便检查，而链状带绦虫感染的肛拭检查阳性率远较肥胖带绦虫感染者为低。
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">以不同虫体匀浆或虫体蛋白质作抗原进行皮内试验、环状沉淀试验、补体结合试验、乳胶凝集试验等，阳性率可达73％～99％，但可呈假阳性反应（约7％～20％）。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">１．胃痞：以长期食少，脘痞，腹泻，消瘦为主要表现，大便无带状白节片，镜检无绦虫卵，胃镜检查可助诊断。<br>
+２．脾痿消：多因慢性胃肠疾病所致，大便无带状白色节片，亦查不到绦虫卵，胃肠镜检可明确诊断。<br>
+３．疳积：多见于小儿，以体瘦、面色萎黄、腹胀、青筋、精神不振为特征，大便镜检或肛拭等检查可资鉴别。
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">绦虫病疗效判定标准:<br>
+1.治愈：驱虫后找到排出绦虫头节，症状消失；粪检查虫卵消失，未再见虫体节片排出。驱虫后随访3个月无节片排出，多次复查粪未找到虫卵。<br>
+2.好转：症状好转或消失，但仍偶见虫体节片排出或粪找到虫卵。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">本病的病程虽长，但预后每多良好。链状绦虫病并发脑囊虫病者预后较差。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">极个别病人可并发阑尾炎，在阑尾中可发现虫卵或大量节片，一般常见于肥胖带绦虫病者。
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">驱绦虫药物种类较多，经治疗绝大多数能迅速排出虫体而痊愈，偶尔有未经治疗绦虫自&nbsp;动排出而痊愈者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．吡喹酮&nbsp;&nbsp;本品为广谱驱虫药物，对带绦虫、膜壳绦虫、裂头绦虫病疗效均高，为治疗&nbsp;绦虫病的首选药物。剂量为15～25mg／kg（儿童以15mg／kg为宜），一次口服。服药后偶有头昏、眩晕、乏力等不适，但数日内可自行消失。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．苯并咪唑类药物&nbsp;&nbsp;&nbsp;近年来新衍生物有甲苯咪唑、（mebendazole）、氟苯咪唑（flubendazole）、丙硫咪唑（albendazole）等，均为广谱驱虫药物。甲苯咪唑300mg，日2次，疗程3天，疗效可达100％。对链状带绦虫也极有效，副反应少，优于其他药物，排出体节完&nbsp;整，治疗后一般不会出现囊虫病。治疗短膜壳绦虫病、长膜壳绦虫病的疗程可延长至5天。动&nbsp;物实验本品有致畸作用，故不宜用于孕妇。丙硫咪唑治疗牛带绦虫和链状带绦虫的疗效与剂&nbsp;量、疗程有关，若剂量为800mg／日，共2天，其疗效分别为88．9％与70％，当剂量提高到1200mg／日，共3天，疗效则分别为95％与92％。本品对短膜壳绦虫亦有驱虫作用，剂量为 800mg／日，共3天，治愈率67％，本品也不宜用于孕妇。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．硫酸二氯酚（别丁）本品亦有驱涤虫作用，且作用迅速，疗效可靠、经济方便。因有轻泻作用，一般不给泻剂。成人剂量为3g，空腹分2次服完。服药后35分钟即有虫体排出，平均6小时。部分患者有肠鸣、腹泻、腹痛、恶心、呕吐等副作用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．灭绦灵（氯硝柳胺）本品对链状带绦虫、肥胖带绦虫和短膜壳绦虫均有作用，但疗&nbsp;&nbsp;效不如吡喹酮、甲苯咪唑，可作为次选药物。成人（链状和肥胖带绦虫患者）可空腹口服2g，分2次服，间隔1小时，药片宜嚼碎。链状带绦虫患者服药前宜给止吐剂。服药后2小时给&nbsp;服硫酸镁导泻以驱出全部未消化的虫体。短膜壳绦虫感染患者宜采用7天疗法，第1天2g，第&nbsp; 2～7天每日1g（儿童酌用半量），一月后再复治一次、以消灭后成熟的幼虫。服本品后，绦&nbsp;虫头节和近端节片接触药物后即被杀死，头节脱离肠壁而排出，因死虫易被消化，应用泻剂&nbsp;&nbsp;后粪内头节和节片不易识别。本品副作用甚轻，合并心、肝、肾等病的患者或孕妇均可服用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5．巴龙霉素&nbsp;&nbsp;本品在胃肠内不吸收，有驱虫作用，但机理不明。每日30～35mg／kg，1～5天疗法。据称治疗后随访3～4个月，粪便治愈率达93％。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）初期：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;治法：驱杀绦虫。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：中药有良好的驱绦效果，可选下列方药中一种应用。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;①槟榔、南瓜子联合应用，成人空服口服南瓜子仁50～90g&nbsp;&nbsp;（带皮南瓜子80～125g），2小时后服槟榔煎剂（槟榔80g加水500ml煎至150～200ml的滤液）。再过半小时后服芒硝30g水煎液。一般在3小时内即有完整而活动的虫体排出。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②槟榔雷丸散：生槟榔9g、生雷丸3g，研细末为一次量。每小时服一次，连服4～5次。另用鲜石榴皮45g煎水，分4～5次冲服散剂。如服药最后一次未见腹泻者，另用芒硝30g煎汤顿服，以助泻下。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③槟雷汤：槟榔120～150g，雷丸60～75g，将上药用水浸渍一夜，次日用文火煎沸2～3小时，留药液400～500ml，晨起后不漱口，不进食，等中午12时左右顿服。一般用药后1小时即觉腹痛、腹泻，应尽量推延排便时间，到忍不可忍时再坐便盆，坐便盆后大力努责，使之一涌而下，如无头节排出，可过半月后重复一次，以期虫体虫头全部排出。本法适用于体质壮实者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④南瓜槟榔煎剂：新鲜南瓜子45g，新鲜石榴皮15g，槟榔24g，黑丑9g，水煎早晨空腹服，服后可进食。服药前晚上可先服一些酸味水果，如山楂、葡萄等，效果更好。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑤南瓜子合槟丑粉：南瓜子炒熟去皮或不去皮研粉，清晨空腹开水送服带皮南瓜子100g（不带皮60～70g），2～3小时后再用开水一次冲服槟丑粉35g&nbsp;（槟榔、二丑），又2小时后服硫酸镁30g。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑥仙鹤草散剂：将深秋采集的仙鹤草冬芽、洗净、刮去外皮，晒干碾粉，早晨温开水冲服30～60g。因本药有泻下作用，不需另服泻药。一般在服药后5～6小时排出虫体。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑦复方槟榔煎：槟榔30g、使君子10g、二丑9g、枳实6g、广木香5g、神曲9g、山楂9g、黄连3g、白术6g，水煎一日一剂。本方具有杀虫健脾、行气通便之作用，适用于体质较弱者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑧鲜山楂合槟榔煎剂：用鲜山楂1000g，洗净去核，于下午三时左右开始服用，至晚上十时服完，晚饭禁食。次晨用槟榔60g煎至一小茶杯，一次服完，卧床休息，药后虫体可排出。本方适用于素体无吞酸者。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑨加味千金槟榔散：药用槟榔120g，大腹皮、芒硝各10g，川椒、乌梅、仙鹤草各15g,南瓜子50g、大黄30g。研粗末后水煎频服，服药前先嗅炒鸡蛋香味片刻，然后吃一小口，1～2分钟后再服药。（2）后期：治法：健运脾胃、补养气血，兼以驱虫。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：香砂六君子汤或归脾汤加减。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;若绦虫已驱，脾胃不健，重在健运脾胃，方中香砂六君子汤加减，方中人参、白术、茯<br>
+&nbsp;&nbsp;&nbsp;&nbsp;苓健脾益气；陈皮、半夏、木香、砂仁理气和胃：甘草调中。气血亏虚明显者，以归脾汤加减，方中当归、龙眼肉养血；人参、黄芪、白术、炙甘草、姜、枣甘温益气健脾，以资气血之源；酸枣仁、茯神、远志安神定志；辅以木香行气，使之补而不滞。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;若绦虫未出而脾胃已亏，可在上方基础上加槟榔、南瓜子、雷丸等杀虫驱虫；若腹冷隐痛、手足不温者可加肉桂、干姜温补脾阳；若兼见阴虚火旺，口干面红、五心烦热等加麦冬、沙参、生地滋阴清热；若伴失眠者可加夜交藤、柏子仁养心安神。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">中药治疗绦虫，在我国最早的《神农本草经》中即注明了三种草药，到唐代《千金方》中已列出治疗绦虫方已11方，以至《外台秘要》中更收集了可治寸白虫的药方24方，其中常用药有槟榔、雷丸，狼牙、石榴根等，至今应用仍证明确有疗效，总之，中药治疗绦虫病是以杀虫驱虫为主，应配用泻下药以促进虫体排出。当绦虫驱除后，则调理脾胃、补养气血，以善其后。<br>
+（1）雷丸研粉：每次20g，一日一次，连服3天。不用泻剂，亦可加服少许白糖、减少恶心副作用。<br>
+（2）石榴根皮：25g，水煎服。胃病患者不宜选用此药。<br>
+（3）槟榔：60～120g，文火煎2小时，于清晨空腹顿服。服后4小时无大便排出者，可&nbsp;&nbsp;冲服芒硝10g。<br>
+（4）参苓白术散：每次1袋，每日2次，用于驱虫后脾胃不健，体质虚弱的患者。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">中西医结合治疗原则与方法<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因我国从古代起就对绦虫病有正确的认识，在应用中草药治疗绦虫病方面积累了很多宝贵经验，找到了效果较好的药物，尤其是据近代临床观察和药理研究，确实证明槟榔，雷丸、南瓜于等药具有较好的驱杀绦虫的疗效，且付作用小。患者易于接受，故在治疗时应首先选用中药治疗；若合并阑尾炎、癫痫等其他病证时，宜针对情况采取中西医结合方法治疗。治疗时应注意的事项：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．治疗过程中，应告知患者在排虫时切勿用手将其拉断，冷天可用温水坐盆，以防虫体受冷刺激后强行收缩而中断，影响虫体的完整排出。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．驱虫后应留24小时全部粪便，以寻找虫头，未获虫头者不一定表示失败，因虫头不一定在治疗当日排出，或驱虫剂使虫头变形而不易辨认。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.&nbsp;给链状绦虫病患者驱虫时，应尽量预防呕吐反应，以免虫卵反流入胃而导致囊虫病。故服药前宜给止吐剂，服药后则给泻剂，以利肠腔内绦虫体节完全排出。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.&nbsp;治疗后3～4个月粪便检查未发现虫卵者，可视为治愈；若出现虫卵或体节,&nbsp;则应复治。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.&nbsp;对于驱出之成虫，应及时深埋土中，防止动物食后造成播散。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">1．早期和彻底治疗绦虫病患者。对屠宰场工作人员应予定期检查和及时彻底治疗。加强牛、猪的管理，提倡牛有栏，猪有圈，做到人畜分开。<br>
+2.&nbsp;大力开展卫生宣教工作，依靠和发动群众，移风易俗，提高整个民族的文化、卫生水&nbsp;平。提倡不吃生的或半生不熟的猪肉或牛肉。一般囊尾蚴在71℃下5分钟即死亡，而煮肉失去红色呈一致性灰色时即达到这一温度（但大块肉的内部不易达到此温度）。切生熟菜的刀和砧板应严格分开，避免污染。短膜壳绦虫可经自身虫卵感染，应提倡便后、饭前洗手，不吃&nbsp;生的未煮熟的蔬菜。<br>
+3.&nbsp;肉品的检验&nbsp;&nbsp;&nbsp;肉品检验囊虫已有数十年历史，牛的咬肌、心肌、舌肌、肩胛肌是囊尾蚴检出最多的部位。对受染的屠体通常采用冰冻或煮熟的方法有效地杀死囊尾蚴，一10℃，3&nbsp;&nbsp;～10天可杀死囊尾蚴。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">我国远在汉朝时代已认识到，绦虫病的传染与吃肉，尤其是吃生肉和炙而未熟的肉有密切关系，故古医籍中称之为寸白虫或白虫。《金匮要略·禽兽鱼虫禁忌并治》篇指出：“食生肉，饱饮乳，变成白虫”，《诸病源候论·寸白虫候》说：“以桑枝贯牛肉炙食“会引起本病。《金匮要略。禽兽鱼虫禁忌并治》“牛肉共猪肉食之，必作寸白虫。《诸病源候论·九虫病诸候。寸白虫候》：“寸虫者，九虫内之一虫也，长一寸而色白，形小扁。”
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

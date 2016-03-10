@@ -1,0 +1,913 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">新生儿硬肿症
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=新生儿硬肿症"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">neonatal scleredema
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">XINSHENGERYINGZHONGZHENG
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">新生儿皮脂硬化症，中医：五硬，胎寒，
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">新生儿疾病（儿科）
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">新生儿硬肿症是指新生儿期由于多种原因引起的皮肤和皮下脂肪变硬兼有水肿的一种严重疾病，常伴有低体温及多器官功能低下。单纯由寒冷致病者称新生儿寒冷损伤。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">有报道新生儿硬肿症占同期新生儿疾病的24.9%，
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">发病机理尚未完全明了，可能与下列因素有关：①新生儿特别是早产儿体温调节中枢发育不完善，体温易随着环境温度波动；②新生儿体表面积相对较大，皮下脂肪少，皮肤薄，血管分布较多，易于散热；③新生儿皮下脂肪中饱和脂肪酸成分相对多，熔点高，体温低时易凝固；④新生儿产热主要靠棕色脂肪，并需要氧的参与，当缺氧、寒冷、酸中毒等因素存在时，产热过程极易受抑制，早产儿此种脂肪储存不足。以上新生儿解剖生理特点，是引起新生儿硬肿症的发病基础。此外，寒冷、摄入不足、感染、窒息及酸申毒等是引起本病的重要诱发因素。新生儿硬肿症时由于血流变慢、微循环障碍、组织缺氧、缺血及自由基产生增多等，易引起DIC和心、肾功能障碍，重症病例可致死亡。
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">本病形成主要是由于小儿先天禀赋不足，气血不充，加之生后调护不当，感受寒邪所致。寒为阴邪，直中脏腑，伤及脾肾之阳，阳虚不能温煦肌肤四末。寒邪凝滞，气血运行不畅，气滞血瘀，故而导致肌肤不温，冷硬而肿。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">根据本病不同的表现，临床将其分为以下两种证候类型。<br>
+1.脾肾阳虚<br>
+主证：皮肤冰冷硬肿，皮色苍白或暗红，按之凹陷，精神萎靡，后应迟钝，僵卧少动，吸吮无力，哭声低怯，气息微弱，舌质暗，苔白水滑，指纹滞或隐伏不显。<br>
+分析：本证多因先天禀赋不足，感受寒邪，折伤脾肾阳气而致。元阳不振，正气虚衰，故见精神萎靡，反应迟钝。阳虚不能温煦肌肤，鼓动血脉，故见皮肤冰冷僵硬。<br>
+2.寒凝血滞<br>
+主证：面色紫暗，肌肤不温而硬肿，不易捏起，肌肤色紫，口鼻出血，精神萎靡，气息微弱，唇舌暗红，指纹紫滞。<br>
+分析：本证多因阴寒之邪凝滞血脉而致。阳虚阴盛则生寒，或外寒侵袭故见肌肤不温。寒凝经络，气滞血瘀，故见肤色紫暗，肌肤凉而硬肿。瘀血阻络，新血不得归经故见出血。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">新生儿硬肿症（新生儿皮脂硬化症）诊断标准:<br>
+1.&nbsp;多见于冬、春季，有受冷或保暖不当、异常分娩或感染史。<br>
+2.&nbsp;未成熟儿或低出生体重儿多见。<br>
+3.哭声低微，吸吮无力或不会吸吮，体温不升（多在35℃以下），反应低下。<br>
+4.皮肤发凉，皮下脂肪变硬，不能以手指捏起。多伴有水肿。皮肤颜色可正常、苍白、暗红或暗紫。<br>
+5.常并发肺炎、败血症等，严重时可发生肺出血及DIC。<br>
+6.肢体血流图显示血流量减少。<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">发病处于寒冷季节，环境温度过低或保温不当史；严重感染史；早产儿或足月小样儿；窒息、产伤等所致的摄入不足或能量供应低下。
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">1.一般表现：体温低下或不升，动作少，哭声低微或不哭，吸吮差。<br>
+2.皮肤及皮下脂肪：变硬兼水肿。病变最初出现在小腿外侧，继而蔓延至臀部、躯干、臂部及面颊。皮肤表面光滑，呈暗红或青紫色，与皮下组织紧贴，僵硬不易移动，按之似硬橡皮样，伴水肿者按之可有凹陷。<br>
+3.多器官功能损害：早期心率减慢，微循环障碍，严重时出现休克、DIC、肺出血、心力衰竭、肾功能衰竭等。早期哺乳差，哭声低，反应低下。病情加重后体温≤35℃，严重者<30℃，腋温一肛温差由正值变为负值，感染或夏季发病者不出现低体温。硬肿为对称性，依次为双下肢、臀、面颊、两上肢、背、腹、胸部等，严重时肢体僵硬，不能活动。多器官功能损害：早期心率低下，微循环障碍，严重时休克、心力衰竭、DIC、&nbsp;肺出血、肾功能衰竭等。<br>
+
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">心电图：部分病例可有改变，表现为P—R、Q—T时间延长、低电压、T波低平S—T段改变。
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">胸部X线检查：可有炎症、淤血、肺水肿及肺出血等改变。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">DIC篩查实验：1、血小板单位（100X109/L）；2、凝血酶原时间延长（日龄在4天内者大于等于20秒，日龄在第5天及以上者大于等于15秒）；3、部分凝血活酶时间延长（大于45秒）；4、纤维蛋白原降低（小于等于1.6g/L）；5、凝血酶时间延长（大于25秒）；6、3p实验阳性。上述指标中大于等于4项阳性者可确诊为DIC，符合3项者高度怀疑。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">1、血常规：一般白细胞总数无变化，合并感染时白细胞总数及中性粒细胞有不同程度的增高。
+2、血糖：低温时因拒乳，糖原及能力消耗增加，出现低血糖。
+3、血气分析：由于缺氧和酸中毒，血PH值下降，血氧分压降低，血二氧化碳分压生高。
+
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1.新生儿水肿：其原因为先天性心脏病、低蛋白血症及新生儿溶血病等引起血浆渗透压下降、毛细血管通透性增加、毛细血管静脉压增高所致，临床特点各自不同，易于鉴别。<br>
+2.新生儿皮下坏疽：多见于寒冷季节，但常有难产或产钳助产史，易在身体受压部如背部、臀部发生，皮肤变硬，略有红肿，迅速蔓延，边缘清楚。病变中央先硬后软，呈暗红，渐坏死形成溃疡。本病系由于皮下金黄色葡萄球菌或链球菌感染所致。<br>
+3.新生儿皮下脂肪坏死：本病与分娩时外伤、窒息、受冷和母患糖尿病有关。生后1～2周发病，患处皮肤发硬，边界清楚，继之皮肤萎陷，不扩展，X线可见钙化。患儿一般状况良好。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">1.治愈<br>
+（1）一般情况良好，吸吮有力，体温正常。皮肤硬肿消退，颜色正常。<br>
+（2）无并发症或并发症已愈。<br>
+2.好转<br>
+（1）一般情况好转，体温仍偏低。<br>
+（2）皮肤硬肿面积比治疗前缩小。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">一、复温<br>
+复温是治疗新生儿硬肿症低体温的重要措施，目前多主张快速复温法。<br>
+1.轻、中度(体温>30℃)患儿置于预热至30℃的暖箱内，调节箱温为30～34℃，通过减少患儿散热使体温升高，力争6～12小时内恢复正常体温。&nbsp;<br>
+2.重度(体温<30℃)患儿先以高于患儿体温1～2℃的暖箱温度开始复温，每小时提高箱温0.5～1℃(不超过34℃)，于12～24小时内恢复正常体温，并保持暖箱在适中温度。根据病情及医疗条件，也可选用恒温水浴、远红外台等方式复温。<br>
+二、热量及液体供给<br>
+1.热能：开始为每天168～21OkJ/kg(40～5Okcal/kg)，以后随体温上升逐渐增加至418.4～502.1kJ/kg(100～12Okcal/kg)。根据病情可从口给予部分或完全静脉滴注。<br>
+2.液量：液量按1ml/kcal给于，若患儿有尿少或无尿或有心肾功能损害，要严格限制入量及输液速度。一般输入液体为10%葡萄糖加1/4张氯化钠溶液。重症患儿可适当输入鲜血或血浆，每次20～25ml。<br>
+三、纠正器官功能障碍<br>
+(一)循环障碍有微循环障碍或休克体征时应给予扩容、纠酸及应用血管活性药物。<br>
+1.扩容：用2：1等张液15～20ml/kg于1小时内静脉滴入，明显酸中毒时可用1．4%碳酸氢钠代替。继之给予1/3或1/4张液，低于生理需要量&nbsp;(约每天70～90ml/kg)。<br>
+2.纠酸：用5%碳酸氢钠每次3～5ml/kg或以血气值计算：补充碳酸氢钠的mmol数=-BE×体重&nbsp;(kg)×O.5或&nbsp;(22-实测HCO3-mmol)×体重(kg)×O.5。先给1/2量，稀释成等渗液快速静脉滴入，余量于4～6小时内给予。<br>
+3.血管活性药：山茛菪碱&nbsp;(654-2)每次0.5～2mg/kg，每15～20分钟1次，重复使用，见效后减量并延长给药时间；多巴胺10mg加入100ml液体中，从小剂量开始，逐渐加量，一般每分钟<1Oug/kg；酚妥拉明常与多巴胺合用，每次0.3～0.5mg/kg加10～2Oml液体静注，&nbsp;最大剂量1mg/kg，1/2～1小时后可重复使用，一般每4小时1次。<br>
+(二)弥散性血管内凝血&nbsp;(DIC)重症硬肿症常伴DIC，是硬肿症死亡的重要原因，抓紧高凝期治疗是关键。<br>
+1.肝素：DIC确诊或高度怀疑时立即应用。首剂1mg/kg，6小时后按0.5～1mg/kg给予，&nbsp;若病情好转，改为8小时1次，逐渐停药。<br>
+2.潘生丁：抗血小板凝集，每天1Omg/kg，加入葡萄糖液中静脉滴注或分次口服。<br>
+3.低分子右旋糖酐：保护受损的血管内皮，减低血小板粘附和凝聚，减低血液粘稠度。每次10～15ml/kg，静脉滴注，每天1～2次。DIC晚期禁用。<br>
+(三)肺出血一经确立，早期给予气管内插管，进行正压呼吸治疗(CPAP或IPPV)。CPAP一般气流量为每分钟10～12L，最大压力不超过1.3～1.6kPa，若CPAP不能使动脉氧分压>6.6kPa时则需IPPV。IPPV时先调氧浓度为0.6～0.8，呼吸频率40次/分，吸气峰压2.45～2.94kPa，呼气末正压0.49～0.69kPa，吸呼比为1：1。30～40分钟后动脉氧分压仍低时逐渐上调各参数，延长吸气时间至动脉氧分压>6.6kPa以上。2～3天后病情好转减低呼吸参数，至气管内无血性分泌物、肺部罗音消失、呼吸困难征不明显，便可撤离呼吸机，由IMV逐渐过渡到CPAP，然后改头罩供氧。<br>
+(四)其他如出现急性肾功能衰竭、心功能衰竭等，应及时按各并发症的处理原则给予治疗。<br>
+四、控制感染由于硬肿症患儿多数伴有感染性疾病，有些则是继发于感染性疾病之后，故控制感染应作为治疗常规措施之一。根据感染性质选择药物，慎用对肾有毒性的药物。<br>
+五、其他治疗有缺氧或重症病人进行氧疗法。维生素E有抗氧化、稳定细胞膜、利尿等功效，每次10mg，口服或肌肉注射，每日1次，连用3～10日。<br>
+
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">本病的治疗以温阳通脉为主，同时注意活血化瘀，以调其阴阳，和其气血，抑盛扶衰。常用治法有以下两种。<br>
+一、辨证选方<br>
+1.脾肾阳虚<br>
+治法：益气温阳，通脉活血。<br>
+方药：参附汤加味。人参、黄芪各5g，附子、桂枝各2g，红花、川芎各3g，炙甘草1g。肿甚，小便不利加车前子、泽泻；肤色紫暗加鸡血藤、丹参。<br>
+2.寒凝血滞<br>
+治法：温阳通脉，活血化瘀。<br>
+方药：当归四逆汤加减。当归、白芍各6g，桂枝、炙甘草各3g，细辛0.5g。四肢不温加肉桂、干姜；气息微弱加人参、黄芪；瘀血明显加鸡血藤、红花。<br>
+二、其他疗法<br>
+1.熏洗：防风30g，艾叶30g，胡椒20粒，干姜15g。加水煎至2500ml，将其放入小儿浴盆，水温保持在40°～50℃，小儿放在浴盆支架上熏蒸，待水温适宜后洗浴，每日1次。<br>
+ 2.涂敷：桂枝1Og，细辛3g，红花6g，当归1Og，川芎1g，僵蚕1g，黄芩1Og，银花1Og，甘草5g。浓煎取汁，取药汁涂硬肿处后用食指、拇指指腹轻轻揉按，每日2次。<br>
+3.贴敷：肉桂6g，丁香9g，川草乌各7.5g，乳香、没药各7.5g，当归、红花、川芎、赤芍、透骨草各15g。焙干共研细末，用适量凡士林调和成膏。敷在硬肿处，外包塑料纸，当药物干燥而硬肿尚未痊愈时换第2付药。<br>
+4.药浴：艾叶500g，加水3000ml，煎后浓缩为1000ml，每次取250ml，加入温水浴盆中(水温37°～38℃)，洗浴过程中缓慢加入热水，保持水温39°～40℃，每次浸泡15～20分钟，浴后擦干，保暖。每日2～3次。危重不易搬动者用艾叶药渣热敷硬肿部位。<br>
+三、专方验方<br>
+1.温阳活血汤：附子2.4g，干姜2.4g，炙甘草3g，当归9g，红花6g，黄芪12g，水煎服。红参3g另煎后兑服，每日1剂，分3～4次服。适用于本病属寒凝血瘀者。<br>
+2.硬肿汤：生黄芪9g，茯苓9g，猪苓9g，白术6g，泽泻6g，麦冬6g，白人参2g，五味子0.6g，甘草3g。水煎服，每日1剂，分次频服。适用于新生儿硬肿症。<br>
+3.助阳化瘀方：桂枝5g，白芍5g，当归5g，木通5g，小茴香5g，丹参6g，红花2g，橘核12g，细辛1.3g，甘草1g。水煎服，每日1剂，分3次服。适用于本病属阳虚血瘀者。<br>
+4.益气温阳汤：人参2g，附子3g，黄芪5g，茯苓5g，桂枝3g，陈皮3g，白术3g，川芎3g，防风3g，肉桂2g，甘草2g。水煎服，每日1剂，分3～4次服。适用于本病属脾肾阳虚者。<br>
+5.温经通络汤：当归3g，赤芍3g，细辛0.3g，桂枝3g，木通3g，黄芪5g，党参5g，乌药3g，木香1.5g，甘草2g，生姜2片。水煎服，每日1剂，分3～4次服。适用于本病属寒凝血滞者。<br>
+<br>
+
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">1.复方丹参注射液：具有活血化瘀的功效。适用于各型新生儿硬肿症。肌肉注射每次1ml，每日l～2次。静脉滴注每次2～4ml，加入5%葡萄糖注射液中，每日1次。<br>
+2．四逆汤：具有回阳救逆的功效。适用于硬肿症脾肾阳虚者。每次服1～2ml，每日3～4次。<br>
+3.桂附理中丸：具有温中散寒，补益脾肾之功效。适用于脾肾虚寒之硬肿症者。每次服1/4丸，每日3次。<br>
+
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">预防本病的关键在避免早产、产伤、窒息和感染，出生时和生后做好保暖工作和及早喂母奶。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">中医学对本病病因的论述：《幼幼集成·五软五硬论治》中指出：“五硬乃胎气怯弱，禀受先天阳气不足，不耐寒暑，少为六淫所犯……，此阳气不荣四末也……。”<br>
+
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

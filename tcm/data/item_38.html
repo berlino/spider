@@ -1,0 +1,925 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">弥漫性肺间质纤维化
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=弥漫性肺间质纤维化"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">diffuse pulmonary interstitial fibrosis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">MIMANXINGFEIJIANZHIXIANWEIHUA
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">肺间质纤维化，中医:肺痿，咳嗽，喘证，虚劳。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">呼吸系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">弥漫性肺间质纤维化简称肺间质纤维化，是由于多种原因引起肺泡壁炎症，继之肺间质形成大量纤维结缔组织和肺结构紊乱的一组异型疾病，病种约有140种之多；临床以咳嗽、咳痰、气促、进行性呼吸困难为主要特征，晚期可发生肺心病及右心衰竭。本病在概念上有广义和狭义之分。广义包括特发性肺间质纤维化和已知病因引起的继发性肺间质纤维化。狭义系指原因不明，病变局 限于肺部的特发性肺间质纤维化。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">西医病因和分类
+        1．原因不明者  特发性肺间质纤维化、脱屑性间质性肺炎、慢性粒细胞性肺炎、组织细胞增多症X、肺泡蛋白沉着症、结节病等。
+        2．原因明确者
+        （1）药物诱发：常见有抗肿瘤药物和博莱霉素、氨甲喋呤、环磷酰胺等，抗菌药物如呋喃旦啶、青霉素类、四环素类、对氨水杨酸以及乙胺碘呋酮、苯妥英钠、青霉胺等引起。
+        （2）吸入有机尘埃：主要因吸入污染有放线菌和霉菌的尘埃引起。常见的病种如农民肺、蔗尘肺、蘑菇肺、薄荷肺、加湿器肺、空调肺等，尤指慢性外源性过敏性肺泡炎。
+        （3）吸入有害气体：如吸入硝酸、硫酸、盐酸的烟雾，毒气和溶剂气体等，不论急性大量吸入或慢性小量吸入，均可导致本病。
+        （4）感染性：细菌、真菌、病毒、支原体、嗜肺性军团杆菌、寄生虫等。
+        （5）放射性损害：如放射性肺炎。
+        3．全身系统性疾病
+        （1）结缔组织疾病：如类风湿性关节炎、硬皮病、混合结缔组织病、系统性红斑狼疮、结节性多动脉炎。
+        （2）其它：如类肉瘤病、嗜酸性肉芽肿、多发性神经纤维瘤、肺－肾出血综合征等。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医认为肺间质纤维化大多继发于许多慢性肺系疾病久治不愈以后，其病因可以分为以下两类：
+        1. 肺燥津伤  多由于肺脏自病，气阴重度耗伤所致，如肺痨、肺痈、消渴等。或温热伤 津、误治损阴，重伤肺胃津液，以致肺燥津枯、肺叶失荣，形成肺痿。
+        2．肺气虚冷  内伤久咳或冷哮不解、大病久病之后，耗伤阳气，致肺中虚冷而成。亦有因虚热肺痿，久而不愈，阴损及阳，寒从中生导致者。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">好发于40岁以后。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">不论特发性或继发性肺间质纤维化其发病率已逐年上升。
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">肺为娇脏，喜润恶燥，赖脾胃输津以濡润，且为水之上源，主持全身水津输布。若多种慢性肺系疾病久治不愈或正气虚衰，复感外邪，均可致肺脏虚损，津气严重耗伤，形成肺痿。因津伤则燥，燥盛则干，肺叶弱而不用则痿。如尤在泾所云：‘“盖肺为娇脏，热则气烁，故不用而痿；冷则气沮，故亦不用而痿也。”是以其病理性质有虚热、虚寒两类：虚热者乃热伤津液，阴虚内热，津枯肺燥，火逆上气则喘咳气促，虚火的津炼液而成浊唾涎沫，虚寒者为气化布散津液则反而聚为涎沫，肺失治节，膀胱失约则小便频数或遗尿失禁。津气两伤则气促，动后尤甚，血行不畅故面色晦暗，唇舌发绀。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">目前认为，不论何种间质性肺病，由于刺激或损伤因素导致肺脏早期的基础病变为肺泡炎，炎性和免疫细胞可引起肺泡结构紊乱和产生纤维化，肺泡炎可能自限或经治疗而好转或痊愈。但组织纤维化却无法逆转，甚至继续发展。不论在肺泡内、肺泡隔或间质腔，组织纤维化都十分活跃。肺泡内积聚纤维素或透明膜，以及间质腔内水肿和细胞浸润，都逐渐随成纤维细胞大量浸润而转变为纤维组织，使原来的组织结构完全变形，并失去弹性。病变部位的小支气管亦被纤维组织牵拉扭曲，导致管腔扩张或狭窄。部分未被累及的呼吸性细支气管出现代偿性囊状扩张。或汇合成较大囊泡。其发展过程为：刺激→肺泡炎→肺泡结构紊乱→蜂窝肺。以上病变可使肺弥散功能减损，通气／血流比例失调，出现呼吸困难。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）肺燥津伤<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：气逆喘促，干咳无痰，渐至咳吐粘稠涎沫，甚则带有血丝，口干咽燥，形体消瘦，皮毛干枯，舌红乏津，脉虚数。<br>
+（2）阴虚火旺<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：咳吐浊唾涎沫，或夹有血丝，发热，或午后潮热，颧红盗汗，咽干口燥，心烦失眠，手足心热，皮肤干燥，舌红，脉细数。<br>
+（3）气阴两虚<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：气短喘促，动则尤甚，神疲畏风，极易外感。乏力自汗，咳吐浊唾白沫。舌淡尖红，脉细弱无力。<br>
+（4）肺中虚冷<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：咳吐浊唾涎沫，清稀量多，喜热饮而不欲咽，短气不足以息，小劳则更著，畏寒肢冷，头目眩晕，舌质淡，脉虚弱。<br>
+
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">原发性间质性肺炎的诊断标准<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1．主要症状及体征<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）干咳。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）呼吸困难（Hugh－JonesⅡ°以上）。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）杵状指。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）特殊罗音（细捻发音或捻发音）。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2．胸部X线所见<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）阴影分布：弥漫性、散在性，下肺野＞上肺野，呈边缘性分布。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）阴影性质：细小的结节状、云絮状，细小细节状十蜂窝状（网状），多发性蜂窝状。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）肺野缩小：横膈上升，下肺野缩小。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3．肺功能检查<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）肺容量减少：％肺活量与％肺总容量减低。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）肺弥散功能减低：％DLco，％DLco／VA减低。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）低氧血症：PaO2减低，PA一aDO2扩大。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4．血液免疫学检查<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）血沉增快。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）乳酸脱氢酶（LDH）增高。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）类风湿因子阳性。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5．病理检查（尸检、肺活检）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与原发性间质性肺炎的病理改变相符合。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6．诊断判断<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）确诊：具备包括“2”在内的三大项以上，或全部具备“2”及“5”项。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）可疑：全部具备包括“2”在内的二大项。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）除外诊断：矽肺、肺结核、慢性支气管炎、肺炎、肺癌、结节病。胶原病、过敏性肺炎，放射性肺炎、药物诱发性肺炎。
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">根据IPF具有进行性加重的呼吸困难、咳嗽为主的症状，杵状指和两肺特征性罗音的体 征，以及肺部有弥漫性肺间质病变阴影、限制性通气功能障碍、弥散功能下降，结合支气管 肺泡灌洗、67镓核素扫描等资料，在除外继发性因素后即可诊断。最可靠的诊断方法为经纤维支气管镜肺活检获组织学证实，如为阴性可反复重复3次，仍难确诊者可作局限性开胸肺活检。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">IPF绝大多数为慢性型,平均病程5年，最长可达15年。起病隐袭.
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">进行性加重的呼吸困难是其最突出的症状。活动后加重，呼吸频率和心率加快可出现在疾病早期。大多数病人同时有不同程度的咳嗽，以干咳为主，常呈刺激性，晚期加重，可因劳累或深吸气诱发。有时咯少量白粘痰，如伴继发感染时痰量加多并变黄色。很少咯血，偶而痰中带血或小量咯血，不会大出血。部分患者有胸痛，盗汗、食欲减退、体重减轻、消瘦、无力等。易发生反复出现的自发性气胸。绝大多数病程持续发展，最终死于呼吸衰竭。极个别可自动缓解或长期稳定不变。
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">慢性型杆状指、趾的出现较早，约占40～80％。晚期出现紫绀，体检两肺对称性缩小，胸廓扁平，膈肌上抬，如原患肺气肿则此征不明显。多数患者于中下肺部听到细捻发音，少数为粗捻发音。有时肺部病变虽严重而呼吸音正常。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">X线表现
+          肺部出现十分典型的弥漫性间质阴影，起始于中下肺。早期呈毛玻璃样影，其内有隐约可见的结节，随后出现网结节，结节阴影小自粟粒状、小结节状、中结节状直到大结节阴影(直径＞5mm），但大多数为小网结节状（直径3mm）；病变中并有网纹和线条阴影增多。晚期出现蜂窝肺，大多数为小蜂窝，壁厚而不规则，与网结节的薄壁有明显差别。极少数病人表现为中下肺炎、片状阴影。膈肌附近胸膜可粘连增厚。随疾病发展肺体积逐渐缩小，各肺叶普遍缩小，故纵膈无移位，中下肺叶缩小明显，肺门下移多见。以上阴影常呈混合性，同一胸片可出现早、中、晚期病变。
+放射性核素扫描：用67镓核素技术检查、对间质性肺病的诊断有帮助，对慢性炎性组织的敏感性很高，但特异性较低,为近年检查弥漫性肺疾病有价值的方法。
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">（一）肺功能测定：示限制性通气功能障碍，肺活量、肺总量减少，弥散功能减低，A一aDO2增加，低氧血症，运动后加重。          （二）支气管肺泡灌洗：应用纤维支气管镜进行肺叶、肺段选择性局部灌洗，收集下呼吸道及肺泡表面液层及内含效应细胞、释放介质或其它与肺泡炎有关物质，可能对局部炎症和免疫情况作出判断，为诊断和治疗提供资料。IPF时中性粒细胞占多数。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">部分病人白细胞、血红蛋白增加，血沉加快，类风湿因子或抗体弱阳性，r 球蛋白升高。
+血气分析：pH正常或上升，PaCO2正常或下降，呈轻度碱血症， PaO2下降。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa"><br>
+
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">经支气管肺活检多可确定诊断，但不能全面地观察肺泡炎的范围和程度，且漏诊率较高。必要时需局限性开胸活检，对病理诊断更有帮助。
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">IPF应首先与易引起继发性肺间质纤维化的结缔组织疾病相鉴别，如严重的类风湿性关节炎、硬皮病、干燥综合征等。各类结缔组织疾病均有明显的肺外脏器损害以及不同的生化和抗体反应阳性，故诊断并不困难。其次，呈弥漫性肺部阴影的肺泡蛋白沉着症，发展迅速，如无发热的表现，也是以咳嗽和进行性呼吸困难为主，两者鉴别需有组织学证据。一些呈弥漫性阴影的晚期结节病和原发性肺组织细胞增多症X、慢性外源性过敏性肺泡炎等,X线表现与IPF都极相似，但其临床症状轻微。另外应与药物性肺间质纤维化相鉴别，后者停药后纤维化可停止发展，与IPF有明显差异。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IPF也有极少数为急性型，好发于年轻病人，起病急骤，先有高热、咳嗽、进行性呼吸困难和紫绀等，两肺可闻细捻发音,&nbsp;早期中下肺部出现类似支气管肺炎的点片状阴影，血白细胞、中性粒细胞增高，血沉加快，极似急性肺部感染，但经积极的抗感染治疗无效，而且短期内迅速出现符状指，即应高度疑为本病，争取及早作肺活检以获得组织学诊断。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">IPF为持续发展的疾病，预后不佳，其病程长短依赖于病情发展的快慢，急性型最短2周内死亡。最长的慢性型可长达15年。多数死于呼吸衰竭，只有少数患者经治疗后病情稳定或长期缓解。
+        继发性肺间质纤维化由全身性疾病引起者其发展速度、预后和原发疾病密切相关。由外因引起者，除去致病因素后肺间质纤维化可停止发展，预后较佳。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">IPF是一种持续发展的疾病，治疗原则主要在于积极控制肺泡炎并使之逆转，进而防止发展为不可逆的肺纤维化，但迄今尚无特效疗法。糖皮质激素仍为首选药物，其次为免疫抑制剂等。<br>
+1．皮质激素慢性型常规起始剂量为强的松30～40mg／日，分3～4次服用。待病情稳定，X线阴影不再吸收可逐渐减量，约持续4～6周后每次减5mg，待减至20mg/日，每次减2.5mg，如患者感病情不稳定，减量更应缓慢，甚至每次仅减1mg。维持量不小于10mg/日，疗程不应少于1年。如减量过程中病情反复，应再重新加大剂量控制病情，仍然有效。如病情需要，可终身服用。治疗开始后绝大多数病人于短期内临床症状好转或明显好转，而肺部X线阴影变化不明显。如为急性型或已发展到严重缺氧阶段则激素应自大剂量开始，以便迅速扭转病情。强的松60～80mg/日，分3～4次应用。如病情凶险开始即用冲击疗法，静脉注射甲基强的松龙500～1000mg/日，持续3～5天，病情稳走即改为口服，最后根据个体差异找出最佳维持量，避免复发。<br>
+2．免疫抑制剂&nbsp;&nbsp;皮质激素疗效不理想时，可改用免疫抑制剂或联合用药，但效果待定。<br>
+（1）硫唑嘌呤：为首选药物，剂量为100mg／日，每日一次口服，副作用小。<br>
+（2）环磷酰胺：剂量为100mg／日，口服。效果不及硫唑嘌呤。其副作用力骨髓抑制等，故应严密观察。<br>
+（3）雷公藤多甙：具有确切的抗炎、免疫抑制作用，与激素或免疫抑制剂联合应用可减少上述两药的剂量并增加疗效，剂量为10～20mg，每日3次，口服。<br>
+3.对症治疗&nbsp;&nbsp;如出现继发感染时应根据细菌类型选择抗菌素；低氧血症可给予低流量氧吸入。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">1．辨证分型治疗<br>
+（1）肺燥津伤<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;治法：滋阴清热，润肺生津。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：麦门冬汤合清燥救肺汤加减。<br>
+&nbsp;麦冬、党参、桑叶、石膏、阿胶、胡麻仁、杏仁、炙杷叶、半夏、川贝母、甘草。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中桑叶配生石膏清泄肺经燥热；麦冬、阿胶、胡麻仁滋阴润肺，生津止渴；党参、甘草补益肺气；杷叶、半夏、杏仁、川贝母化痰止咳。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如燥热甚者加沙参、花粉、元参以润燥生津；肺胃火盛，呛咳频作加芦根、竹叶以清热；午后潮热者加银柴胡、地骨皮、白薇以退虚热；痰中带血可加白芨、白茅根凉血止血。<br>
+（2）阴虚火旺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+治法：养阴清热，宁肺止嗽。<br>
+方药：紫菀散加减。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;紫菀、阿胶、党参、服苓、甘草、川贝母、桔梗、知母、柴胡、五味子、百合、麦冬。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中紫菀、阿胶以养阴润肺止咳；党参、服苓、甘草培土生金滋化源；川贝母、桔梗宣肺利气；柴胡、知母疏肝清热而降虚火；五味子敛肺而止唾沫；百合、麦冬生津润肺，宁心安神。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如痰中带血加丹皮、茅根凉血止血；心烦加元参、生地交通心肾降火除烦；咳吐如脓者加冬瓜子、芦根以清热排脓；咳甚加桑白皮、地骨皮清肺止嗽。<br>
+（3）气阴两虚治法：补益肺气，化痰养阴。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：升陷汤合生脉散加减。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生黄芪、知母、柴胡、升麻、桔梗、党参、麦冬、五味子、紫菀、百部、浙贝母、海浮石。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中用生黄芪、党参补益脾肺之气，柴胡、升麻、桔梗升举下陷大气以治气促；知母、麦冬、五味子养阴润肺止咳；紫菀、百部、浙贝母、海浮石化痰止咳除浊唾。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如虚热者加桑白皮、地骨皮清热止咳；口干加沙参、花粉生津润肺；痰粘稠加生苡仁、冬瓜子健脾化痰；极易外感加白术、防风以固表实卫。（4）肺中虚冷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+治法：温肺益气化饮止咳。<br>
+方药：甘草干姜汤加味<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;炙甘草、干姜、服苓、半夏、细辛、五味子。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方中甘草补脾益肺，取甘守津回之意；干姜温肺化饮，使气能化津。服苓健脾渗湿；五味子敛肺止咳：半夏、细辛燥湿化饮。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如兼表寒加桂枝、苏叶散寒温肺；尿频或遗尿加补骨脂、益智仁固肾缩尿；喘息明显加钟乳石、胡桃肉纳气归肾。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;弥漫性肺间质纤维化属中医肺痿范畴，总属肺虚，故发病缓，病程长，治疗应以扶正为主，重视调补脾肾之本。又因其病机以津枯肺燥，故在治疗过程中应时时注意保护津液，无论寒热，均不宜妄用燥热、苦寒、滋腻之品，以免苦燥伤阴，寒凉败胃，滋腻太过碍脾。病至晚期，发生肺心病及右心衰竭征象时，可参阅有疾病的中西医结合治疗。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）百合汤：百合30g，水煎服，每日一次，适用于虚热患者。<br>
+（2）紫河车1具，焙干研末。每次服3g，每日1次，适用于虚寒患者。<br>
+（3）止咳化矽糖浆：党参、沙参、百合、白芨、夜交藤、白花蛇舌草、金钱草、合欢皮、石苇、甘草熬制糖浆，每日口服50ml，并配合抗矽14h&nbsp;治疗，4个月为1疗程，适用于矽肺所致的弥漫性肺纤维化者。<br>
+（4）复方丹参注射液16ml，入500ml&nbsp;液中静滴，每日1次，2周为1疗程。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">1．体针&nbsp;&nbsp;有咳嗽、气喘者可选用肺俞、气海、肾俞、足三里、太渊、定喘等穴，进针5分～1寸，留针5～10分钟。<br>
+2．贴敷疗法&nbsp;&nbsp;用细辛、甘遂各15g，白芥子30g，共研细末，生姜汁调成糊，敷于直径3cm的油纸上，贴于双侧肺、脾、肾俞穴，外用胶布覆盖。<br>
+3．取穴疗法&nbsp;&nbsp;取耳穴支气管、肾上腺、前列腺。双耳同时取穴，贴上王不留行籽，每5天更换一次。
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">揉膻中、肺俞穴各50～100次。背、肋部捏脊和按摩分别为5和50&nbsp;次。每日1次，10日为一疗程，共3疗程。
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">弥漫性肺间质纤维化从肺泡炎演变为蜂窝肺及肺纤维化的各期病理变化可以相互重叠，因此不论确诊时为早期还是晚期，都应立即进行治疗，使新出现的肺泡炎吸收好转，部分纤维化亦可得以改善并可阻止其发展。早期应用皮质激素治疗是降低病死率的有效方法。而在治疗过程中应用中医润燥养阴、活血化瘀、软坚消痰、培补脾肾等治疗原则,&nbsp;亦有不可低估的防治作用。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">积极预防各种引起肺部疾患的原因，保护人类生态环境，防治大气、水源污染。注意改善工作环境及通气条件，防止各种有机粉尘，或者有害气体的吸入。农民要防止各种霉菌感染。医生用药时要避免使用可导致肺间质病变的各种药物。最根本的措施是积极开展体育锻炼，增强体质和抗病能力，降低呼吸道疾病的发病率。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>

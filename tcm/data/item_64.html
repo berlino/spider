@@ -1,0 +1,889 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head><meta name="Keywords" content="不孕症,不育症,中医临床,中医古籍,中医各科疾病,中医外科疾病,中医妇产科疾病,中医男科疾病,中医疾病分类,中医药信息数据库,中医药期刊,中医药疗法,中医证候分类,中医诊法,中药,中药化学,中药基础,中药方剂,中风,事实型,五官科疾病,信息,傣药,儿科病证,免疫系统疾病,冠心病,刺法,化学成份,古代文献,古籍,呼吸系统疾病,哮喘,国家标准,国标,实验研究,心血管系统疾病,数据库,文献,治法,治疗应用,海外,消化系统疾病,温病,灸法,瑶药,疾病,病毒性肝炎,神经系统疾病,糖尿病,维吾尔药,老年性痴呆,联合目录,肾病,肿瘤,苗药,蒙药,藏药,解放前,证候,诊疗术语,针灸疗法,预防和控制,骨科疾病,高血压" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<title>中国中医药数据库</title>
+ 
+<script>
+function getWord()
+ {
+
+	var txt = '';
+	var foundIn = '';
+	if (window.getSelection)
+	{
+		txt = window.getSelection();		
+	}
+	else if (document.getSelection)
+	{
+		txt = document.getSelection();	
+	}
+	else if (document.selection)
+	{
+		txt = document.selection.createRange().text;
+	}
+	
+	if(txt!="")
+	{
+		if(typeof(document.getElementById("searchword"))!="undefined")
+		{
+			document.getElementById("searchword").value=txt;
+			document.getElementById("searchword_ads").value=txt;
+		}	
+	}
+}
+function showLine(lineid,cont)
+{
+	if(cont.length>0)
+	{
+		document.all[lineid].style.display = "";
+	}
+}
+var ZYZDa;
+var XYZDBZa;
+var TZa;
+var QTZDa;
+var XYJBZDa;
+var ZYLZJBa;
+var LXPDBZa;
+var BFZa;
+var XYZLa;
+var ZYZLa;
+var ZYa;
+var ZJa;
+var TNNMa;
+var ZXYJHZLa;
+var BLa;
+var HLa;
+var KFa;
+var YFa;
+var LSKZa;
+function showLine1(lineid,cont)
+{
+	if(document.getElementById(cont).innerHTML!="")
+	{
+
+		var t=document.getElementById(cont).innerHTML;
+		if(cont=="LSKZa"){
+		 LSKZa=document.getElementById(cont).innerHTML;
+		}						
+		
+		if(cont=="YFa"){
+		 YFa=document.getElementById(cont).innerHTML;
+		}				
+
+		if(cont=="KFa"){
+		 KFa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="HLa"){
+		 HLa=document.getElementById(cont).innerHTML;
+		}		
+		
+		if(cont=="BLa"){
+		 BLa=document.getElementById(cont).innerHTML;
+		}		
+
+		if(cont=="ZXYJHZLa"){
+		 ZXYJHZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="TNNMa"){
+		 TNNMa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZJa"){
+		 ZJa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYa"){
+		 ZYa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="ZYZLa"){
+		 ZYZLa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYZLa"){
+		 XYZLa=document.getElementById(cont).innerHTML;
+		}
+		
+		if(cont=="BFZa"){
+		 BFZa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="LXPDBZa"){
+		 LXPDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="ZYLZJBa"){
+		 ZYLZJBa=document.getElementById(cont).innerHTML;
+		}
+
+		if(cont=="XYJBZDa"){
+		 XYJBZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="QTZDa"){
+		 QTZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="TZa"){
+		 TZa=document.getElementById(cont).innerHTML;
+		}
+	    if(cont=="ZYZDa"){
+		 ZYZDa=document.getElementById(cont).innerHTML;
+		}
+		if(cont=="XYZDBZa"){
+		 XYZDBZa=document.getElementById(cont).innerHTML;
+		}
+
+		t=t.length>1400?(t.substring(0,1000)+"......"+"<a onClick='Click("+"&quot;"+cont+"&quot;"+")' style='cursor:hand' class='time'>"+"更多内容"+"</a>"):t;
+		document.getElementById(cont).innerHTML=t;
+		document.getElementById(cont).style.display="";
+		document.getElementById(lineid).style.display = "";
+		
+	}
+}
+
+function Click(contid) 
+{ 
+
+var temp = contid;
+if(temp=="LSKZa"){
+document.all.frm1.con.value=LSKZa;
+document.all.frm1.bt.value="历史考证";
+document.frm1.submit();}
+
+if(temp=="YFa"){
+document.all.frm1.con.value=YFa;
+document.all.frm1.bt.value="预防";
+document.frm1.submit();}
+
+if(temp=="KFa"){
+document.all.frm1.con.value=KFa;
+document.all.frm1.bt.value="康复";
+document.frm1.submit();}
+
+if(temp=="HLa"){
+document.all.frm1.con.value=HLa;
+document.all.frm1.bt.value="护理";
+document.frm1.submit();}
+
+if(temp=="BLa"){
+document.all.frm1.con.value=BLa;
+document.all.frm1.bt.value="药理";
+document.frm1.submit();}
+
+if(temp=="ZXYJHZLa"){
+document.all.frm1.con.value=ZXYJHZLa;
+document.all.frm1.bt.value="中西医结合治疗";
+document.frm1.submit();}
+
+if(temp=="TNNMa"){
+document.all.frm1.con.value=TNNMa;
+document.all.frm1.bt.value="推拿按摩";
+document.frm1.submit();}
+
+if(temp=="ZJa"){
+document.all.frm1.con.value=ZJa;
+document.all.frm1.bt.value="针灸";
+document.frm1.submit();}
+
+if(temp=="ZYa"){
+document.all.frm1.con.value=ZYa;
+document.all.frm1.bt.value="中医";
+document.frm1.submit();}
+
+if(temp=="ZYZLa"){
+document.all.frm1.con.value=ZYZLa;
+document.all.frm1.bt.value="中医治疗";
+document.frm1.submit();}
+
+if(temp=="XYZLa"){
+document.all.frm1.con.value=XYZLa;
+document.all.frm1.bt.value="西医治疗";
+document.frm1.submit();}
+
+if(temp=="BFZa"){
+document.all.frm1.con.value=BFZa;
+document.all.frm1.bt.value="并发症";
+document.frm1.submit();}
+
+if(temp=="LXPDBZa"){
+document.all.frm1.con.value=LXPDBZa;
+document.all.frm1.bt.value="疗效评定标准";
+document.frm1.submit();}
+
+if(temp=="ZYLZJBa"){
+document.all.frm1.con.value=ZYLZJBa;
+document.all.frm1.bt.value="中医类证鉴别";
+document.frm1.submit();}
+
+if(temp=="XYJBZDa"){
+document.all.frm1.con.value=XYJBZDa;
+document.all.frm1.bt.value="西医鉴别诊断";
+document.frm1.submit();}
+if(temp=="QTZDa"){
+document.all.frm1.con.value=QTZDa;
+document.all.frm1.bt.value="其他诊断";
+document.frm1.submit();}
+if(temp=="TZa"){
+document.all.frm1.con.value=TZa;
+document.all.frm1.bt.value="体征";
+
+document.frm1.submit();}
+
+if(temp=="XYZDBZa"){
+document.all.frm1.con.value=XYZDBZa;
+document.all.frm1.bt.value="西医诊断标准";
+
+document.frm1.submit();}
+
+if(temp=="ZYZDa"){
+document.all.frm1.con.value=ZYZDa;
+document.all.frm1.bt.value="中医诊断";
+
+document.frm1.submit();}
+
+}
+
+</SCRIPT>
+</head>
+
+
+<LINK href="pics/alh.css" type=text/css 
+rel=stylesheet>
+<style type="text/css">
+<!--
+.STYLE5 {font-size: medium}
+.STYLE12 {font-size: 18px}
+-->
+</style>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgproperties="fixed"><!-- filename: head-1-nobor-usm01 -->
+<form action="detailtemplet/zgzysjkopen.jsp" name="frm1" method="post" target="_blank">
+<input type="hidden" name="con">
+<input type="hidden" name="bt">
+</form>
+<table width="1003" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="1433"><img src="pics/logo1.gif" width="469" height="106"><img src="pics/rtop1.gif" width="533" height="106"></td>
+  </tr>
+</table><br>
+<nobr><span class="p12black">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页 ></span><span class="p12black">
+  中医疾病诊疗数据库</span>
+</nobr>
+  <table width="1004" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1004" align="center"><span class="STYLE5">紫癜性肾炎
+    </span></td>
+  </tr>
+<script src="hitcounts/chnhitcounts.jsp?channelname=中医疾病诊疗数据库&username=guest&channelid=10140&ip=159.226.180.9&detailtitle=紫癜性肾炎"></script>
+</table>
+
+
+  <TABLE cellSpacing=2 width="990" align="center" border=0><!-- filename: full-999-body -->
+  <TBODY>
+<!--BEGIN -->
+  <tr style="display:none" id="YWJBMC">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疾病名称（英文）</TD>
+    <TD class=td1><div id="YWJBMCa">purpura nephritis
+    </div><script>showLine1('YWJBMC','YWJBMCa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="PY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">拚音</TD>
+    <TD class=td1><div id="PYa">ZIDIANXINGSHENYAN
+    </div><script>showLine1('PY','PYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">别名</TD>
+    <TD class=td1><div id="BMa">中医:斑疹,瘀斑。
+    </div><script>showLine1('BM','BMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医疾病分类代码</TD>
+    <TD class=td1><div id="XYJBFLDMa">泌尿系统疾病
+    </div><script>showLine1('XYJBFLDM','XYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYJBFLDM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医疾病分类代码</TD>
+    <TD class=td1><div id="ZYJBFLDMa">
+    </div><script>showLine1('ZYJBFLDM','ZYJBFLDMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病名定义</TD>
+    <TD class=td1><div id="XYBMDYa">紫癜性肾炎是指过敏性紫癜引起的肾脏损害，临床表现除有皮肤紫癜、关节肿痛、腹痛、便血外，主要为血尿和蛋白尿，多发生于皮肤紫癜后一个月内，有的或可以同时并见皮肤紫癜、腹痛，有的仅是无症状性的尿异常。如果蛋白丢失过多，亦可出现肾病综合征的表现，如果血尿、蛋白尿长期持续存在，亦可伴有肾功能减退，最后导致慢性肾功能衰竭。
+    </div><script>showLine1('XYBMDY','XYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBMDY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医释名</TD>
+    <TD class=td1><div id="ZYBMDYa">
+    </div><script>showLine1('ZYBMDY','ZYBMDYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医病因</TD>
+    <TD class=td1><div id="XYBYa">过敏性紫癜的发生，与机体本身的高敏状态有关。但病因一直未能明确。有的患者有过敏的历史。病前部分患者（约1／3）有上呼吸道感染史，但未能证实与链球菌感染有关。有的患者发病与药物（四环素、阿司匹林、奎尼丁等）、食物或预防性注射有关，但在绝大多数患者未能明确过敏原。。
+    </div><script>showLine1('XYBY','XYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病因</TD>
+    <TD class=td1><div id="ZYBYa">中医文献中对皮肤出现紫色斑点等，一般归属于“斑疹’门中，由于过敏性紫癜在病初常有外感，因过敏引起，故其病因多与风、湿、热、毒邪有关。
+    </div><script>showLine1('ZYBY','ZYBYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="JJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">季节</TD>
+    <TD class=td1><div id="JJa">
+    </div><script>showLine1('JJ','JJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">地区</TD>
+    <TD class=td1><div id="DQa">
+    </div><script>showLine1('DQ','DQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="RQ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">人群</TD>
+    <TD class=td1><div id="RQa">男性患者多于女性。
+    </div><script>showLine1('RQ','RQa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">强度与传播</TD>
+    <TD class=td1><div id="QDa">
+    </div><script>showLine1('QD','QDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病率</TD>
+    <TD class=td1><div id="FBLa">过敏性紫癜导致肾受累的比例为20％～100％
+    </div><script>showLine1('FBL','FBLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBJL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病机理</TD>
+    <TD class=td1><div id="FBJLa">
+    </div><script>showLine1('FBJL','FBJLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYBJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医病机</TD>
+    <TD class=td1><div id="ZYBJa">紫癜性肾炎其病机可以认为是患者素有血热内蕴，外感风邪或食物有动风之品，风热相搏或热毒炽盛，如灼伤血络，以致迫血妄行，外溢肌肤，内迫胃肠，甚则及肾，故有下肢皮肤紫癜、腹痛频作，甚则便血、尿血。如属虫咬后，局部红肿水泡，为虫毒浸淫所致，湿毒化热，阻于络脉，气血循行不畅，迫血妄行，故亦可出现紫癜，甚则尿血。如寒邪外侵，内滞于血络，亦可发为紫癜，气不摄血或虚火灼络，均可出现尿血。
+    </div><script>showLine1('ZYBJ','ZYBJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理</TD>
+    <TD class=td1><div id="BLa">本病一般病理学的特征是细小动脉的血管炎症，即血管内皮细胞肿大、增殖以及血管周围的多形核白细胞、单核细胞及少数嗜酸性白细胞浸润，常常伴有血管坏死、血栓形成，病变严重者血管周围可见出血。
+        肾脏组织学损害与临床表现的严重程度成比例，肾小球损害的变异很大。光镜检查所见：最常见为弥漫性系膜增生或局灶节段性增殖。也可伴不同程度的新月体形成。如有75％以上的肾小球有新月体形成，则预示着很快进展到肾功能衰竭，预后不良。电镜检查所见：光镜检查呈局灶、节段性肾炎者，有广泛的内皮细胞下和系膜区及毛细血管周围不规则电子致密物沉积。有上皮细胞足突融合，毛细血管内有纤维蛋白和血小板，亦可有血栓形成。免疫荧光检查：表现为弥漫性肾小球受累。以IgA呈颗粒样沉积为其特征性改变。也有IgG、C3、备解素和纤维蛋白原沉积。大部分分布于系膜，亦可在内皮细胞下区域出现。
+    </div><script>showLine1('BL','BLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BLSL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病理生理</TD>
+    <TD class=td1><div id="BLSLa">大量资料表明本病系一免疫复合物性疾病。患者血清中可测得循环免疫复合物；皮肤小血管及肾小球、肠系膜血管可测得IgA、C3 颗粒状沉着；移植后的正常肾脏亦可发生同样病变均支持本病的免疫复合物学说。对免疫复合物的分析表明：所有患者均具有IgA成分的免疫复合物；仅当紫癜肾受累时具有IgA及IgG两种成分的免疫复合物。免疫复合物通过旁路系统激活补体，引起炎症反应。肾小球毛细血管腔内发现血小板和纤维蛋白及血栓形成，提示有微血管内凝血问题，这对于导致肾脏损伤和细胞增殖有一定作用
+    </div><script>showLine1('BLSL','BLSLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断标准</TD>
+    <TD class=td1><div id="ZYZDBZa">
+    </div><script>showLine1('ZYZDBZ','ZYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医诊断</TD>
+    <TD class=td1><div id="ZYZDa">（1）风热搏结：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：初起可有发热、微恶风寒、咽痛口渴、心烦舌红、苔见薄黄等症，继则风热伤络而有下肢紫癜，甚则尿血。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：由于感受外邪，侵袭肌表，阻遏卫气，故见发热、微恶风寒；风热之邪上冲咽喉，故咽干而痛；热伤津液，故口渴、舌红、苔薄黄。热的脉络，血溢脉外，故出现皮下紫癜，热邪下注，扰伤肾络则见尿血。<br>
+（2）热盛迫血：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：热毒炽盛，病情较重，出血倾向亦重，下肢可见大片紫癜，肉眼血尿明显，烦躁不安，口干喜凉饮，舌质红降。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：由于热毒炽盛，迫血妄行，故出血倾向严重，可见大片紫癜，甚者伴有肉眼血尿：热毒内蕴，灼伤津液，故见烦躁不安、口干喜饮、舌质红绛等。（3）肝肾阴虚：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：虚火灼络亦可出现下肢紫癜及尿血，兼见手足心热，口干喜饮，大便干结，舌红少津。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：由于肝肾阴虚，虚火内生，灼伤血络，血随火动则发为紫癜，尿血；阴虚内热，故见手足心热；虚火上炎，则口干喜饮，舌红少津。<br>
+（4）湿热内阻：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：湿热阻滞络脉，迫血妄行，则见紫癜及尿血，兼见口苦口粘、口干不欲饮水、胸闷痞满、舌苔黄腻。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：由于虫咬，虫毒浸淫，湿毒化热，阻于络脉，气血循行不畅，迫血妄行，故见紫癜或尿血；湿热内蕴，则口苦口粘；湿热中阻，则口干不欲水，胸闷痞满，舌苔黄腻。<br>
+（5）寒凝血滞：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：素体阳虚，寒邪外侵，内滞血络可以引起皮肤紫癜或见尿血，兼见畏寒肢冷，神疲乏力，语声低怯、口淡不渴、舌体胖大而润。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：多由素体阳虚、寒邪外侵，内滞血络，血溢脉外，皮肤紫癜，尿血等；阳气不能外达，故见畏寒肢冷；神疲乏力、语声低怯等均为阳气不足所致。（6）脾气虚损：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候：脾虚失统，气不摄血亦能血溢成斑，或有尿血。同时可见气短乏力、食少懒言、心悸头晕、面色萎黄、舌淡齿痕等。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;证候分析：久病不愈，脾气不足，或素体脾虚，气不摄血，故见紫癜、尿血；脾虚气血生化无源，故面色萎黄，气短乏力，食少懒言；血不养心，则心悸，头晕；舌淡齿痕，均系脾气虚损的表现。
+    </div><script>showLine1('ZYZD','ZYZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断标准</TD>
+    <TD class=td1><div id="XYZDBZa">1．国际儿童肾脏病研究会（ISKDC）病理分类法&nbsp;&nbsp;Ⅰ度：为微小病变。&nbsp;&nbsp;Ⅱ度：为系膜增生。&nbsp;&nbsp;Ⅲ度：&nbsp;&nbsp;（a）局灶性和（b）弥漫性增生或硬化，新月体形成＜50％。&nbsp;&nbsp;Ⅳ度：&nbsp;&nbsp;（a）局灶性和（b）弥漫性系膜增生或硬化，新月体形成50％～75％。&nbsp;&nbsp;Ⅴ度：&nbsp;&nbsp;（a）局灶性和b（a）弥漫性系膜增生或硬化，新月体形成＞75％。&nbsp;&nbsp;Ⅵ度：膜性增生性病变。2．世界卫生组织（WHO）病理分级&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅰ．包括微小病变，微小病变伴局灶节段性显著，局灶性增生性肾小球肾炎轻度。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅱ：包括弥漫性增生性肾小球肾炎轻度，弥漫性增生性肾小球肾炎轻度伴局灶节段性显著。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅲ：包括局灶性增生性肾小球肾炎中等度，弥漫性增生性肾小球肾炎中等度。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ⅳ：包括弥漫性增生性肾小球肾炎重度，终末期肾。<br>
+<br>
+紫癜性肾炎诊断标准:<br>
+1.好发于青少年。<br>
+2.既往或新近有过敏性紫癜史：多数发生在过敏性紫癜发病后4周左右，或往往紫癜症状尚未全消之时。<br>
+3.病情较重者可伴有高血压及肾功能损害。<br>
+4.具备肾炎或肾病综合征临床特点。<br>
+<br>
+
+    </div><script>showLine1('XYZDBZ','XYZDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZDYZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医诊断依据</TD>
+    <TD class=td1><div id="XYZDYZa">基于临床表现，在儿童患者诊断不困难。多发生在6～7岁以上儿童，1～2岁以下罕见。秋末至春初多见。可有上感或食物、药物过敏因素。特征性过敏性紫癜，关节及胃肠症状都可帮助诊断。但反复细致尿常规的检查是早期发现肾受累的主要依据。在皮疹、关节及胃肠 症状不明显的患者，须注意除外急性链球菌感染后肾炎。二者不同点为：在本病患者通常无 高血压和水肿。蛋白尿、管型尿多不严重。血沉多不增快。血清补体和抗链“O”滴度多正常。必要时作肾活检以助诊断。成人患者的诊断，有时比较困难，在不典型的病例，仔细询问病史及细致的临床观察，努力发现肾外的表现是非常重要的。与结节性多动脉炎的鉴别有赖于 病理及免疫荧光检查。
+  过敏性紫癜性肾炎患者肾活检表现为弥漫性炎症者，有时在光镜下与膜增殖性肾炎不易 区别。但本病免疫荧光特征为以IgA为主的免疫球蛋白。而膜增殖性肾炎通常无沉积。
+    </div><script>showLine1('XYZDYZ','XYZDYZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FBING">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">发病</TD>
+    <TD class=td1><div id="FBINGa">病前有用药物（四环素、阿司匹林、奎尼丁等）、食物或预防性注射等而发病。
+    </div><script>showLine1('FBING','FBINGa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BS">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">病史</TD>
+    <TD class=td1><div id="BSa">患者有过敏史,有上呼吸道感染史
+    </div><script>showLine1('BS','BSa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">症状</TD>
+    <TD class=td1><div id="ZZa">
+    </div><script>showLine1('ZZ','ZZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体征</TD>
+    <TD class=td1><div id="TZa">（一）肾外表现<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;过敏性紫癜的特征性皮疹，发生在四肢远端、臀部及下腹部，加压不退色，为出血性斑点，稍高于皮肤表面，可有痒感。1～2周后逐渐消退。几乎全部患者均有此损害。常出现在上呼吸道感染、药物或食物过敏后，多发生在冬三月。关节肿痛约占2／3，多发生在膝、踝关节，偶发生在腕和手指关节。约半数有腹痛，可合并黑便、稀便。以上症状约在半数患者可反复出现，常在感冒后。<br>
+（二）肾脏受累的表现<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以发生在任何时间。但常发生在上述症状出现后的4周内。最常见的临床表现为镜下血尿或间断肉眼血尿。儿童患者出现肉眼血尿的较成人为多。出现血尿的同时可有蛋白尿，可以有下肢轻度浮肿。罕见合并有高血压。肾脏受累的表现可以持续几个月。少数患者可表现为肾病综合征，极个别患者起病后病情急骤进展，可在几个月内死于尿毒症。
+    </div><script>showLine1('TZ','TZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">体检</TD>
+    <TD class=td1><div id="TJa">
+    </div><script>showLine1('TJ','TJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="DZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">电诊断</TD>
+    <TD class=td1><div id="DZDa">
+    </div><script>showLine1('DZD','DZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YXZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">影像诊断</TD>
+    <TD class=td1><div id="YXZDa">
+    </div><script>showLine1('YXZD','YXZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="SYSZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">实验室诊断</TD>
+    <TD class=td1><div id="SYSZDa">1.毛细血管脆性试验阳性。2.血清抗链“O”滴度大多正常。3.咽培养亦未能证明本病与甲组链球菌感染有关。
+    </div><script>showLine1('SYSZD','SYSZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+<!--BEGIN -->
+  <tr style="display:none" id="XY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">血液</TD>
+    <TD class=td1><div id="XYa">出血、凝血时间正常，血小板正常，血沉通常正常或稍快。血肌酐浓度大多正常。
+    </div><script>showLine1('XY','XYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NIAO">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">尿</TD>
+    <TD class=td1><div id="NIAOa">尿中有多数红细胞或为肉眼血尿，蛋白尿及管型尿较轻，通常尿蛋白不超过2g／24小时在肾脏损害严重者，尿中纤维蛋白降解产物明显增加。
+    </div><script>showLine1('NIAO','NIAOa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="FB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">粪便</TD>
+    <TD class=td1><div id="FBa">
+    </div><script>showLine1('FB','FBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">脑脊液</TD>
+    <TD class=td1><div id="NJYa">
+    </div><script>showLine1('NJY','NJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="QTZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">其他诊断</TD>
+    <TD class=td1><div id="QTZDa">
+    </div><script>showLine1('QTZD','QTZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="NYX">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">免疫学</TD>
+    <TD class=td1><div id="NYXa">血清C3水平正常，血IgA水平增高。
+    </div><script>showLine1('NYX','NYXa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZZXJY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">组织学检验</TD>
+    <TD class=td1><div id="ZZXJYa">
+    </div><script>showLine1('ZZXJY','ZZXJYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYJBZD">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医鉴别诊断</TD>
+    <TD class=td1><div id="XYJBZDa">1．急性肾炎当HSP肾炎发生于皮疹已消退时需与急性肾炎鉴别。此时追询病史，包括回顾皮疹形态、分布、关节和胃肠道症状有助于本病诊断。缺乏上述症状，早期有血清补体降低则有助于急性肾炎诊断。抗“O”增高并不能作为鉴别点，因为HSP可有30％病例增高。而急性肾炎也可有30％不增高，必要时可作皮肤活检和肾活检作鉴别。<br>
+2．Goodparture综合征当HSP肾炎伴肺出血。咯血时应注意与此病鉴别。由于本病有典型皮疹和关节及胃肠症状，血清IgA增高等，鉴别并不困难，必要时可作肾活检，有助于鉴别。<br>
+3．狼疮性肾炎&nbsp;&nbsp;由于LN可有皮疹、关节痛和肾损害，故须与本病相鉴别，但HSP皮疹SLE皮疹无论在形态和分布上均有显著区别，诊断并不困难。两者在肾活检中有不同之处。<br>
+4．多动脉炎&nbsp;&nbsp;此病在临床上可类似于本病，但血清IgA多不增高，皮肤与肾检也无IgA沉积，免疫荧光除纤维蛋白外均为阴性。此外，此病少见于5～15岁少年儿童。<br>
+5．IgA肾病本病虽然临床上与IgA肾病不同，但肾组织学检查却十分相似，均可有皮肤小血管沉积，因此从组织学上两者难以鉴别。
+    </div><script>showLine1('XYJBZD','XYJBZDa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYLZJB">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医类证鉴别</TD>
+    <TD class=td1><div id="ZYLZJBa">
+    </div><script>showLine1('ZYLZJB','ZYLZJBa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LXPDBZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">疗效评定标准</TD>
+    <TD class=td1><div id="LXPDBZa">好转：同急性肾炎或肾病综合征。
+    </div><script>showLine1('LXPDBZ','LXPDBZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YH">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预后</TD>
+    <TD class=td1><div id="YHa">一般来说本病的预后较好，本病大多具有自限性，多数在半年内自愈，但早期出现肾病综合征和高血压或进行性肾功能减退者预后较差。
+    </div><script>showLine1('YH','YHa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="BFZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="12%">并发症</TD>
+    <TD class=td1><div id="BFZa">
+    </div><script>showLine1('BFZ','BFZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="XYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">西医治疗</TD>
+    <TD class=td1><div id="XYZLa">少年儿童患者大多数有自限倾向。起病数月后自然缓解。但成年患者预后较差，自然痊愈者仅50％。发现明确的致病因素，应尽力避免。可应用一般的抗过敏药物如苯海拉明、扑尔敏等口服。预防性的抗菌药物（如青霉素）应尽量避免使用。对关节症状可用氨基比林，一般用阿司匹林。如有水肿、高血压等其他肾脏疾病的表现，处理同慢性肾炎。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;肾上腺皮质激素对皮肤损害无明显效果，但对关节肿痛、腹痛及胃肠症状有益，对防止肾受损或促进肾损害恢复方面一般均认为无益。免疫抑制剂如环磷酰胺、硫唑嘌呤、苯丁酸氮芥等均有人应用，但效果均不肯定。
+    </div><script>showLine1('XYZL','XYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZYZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中医治疗</TD>
+    <TD class=td1><div id="ZYZLa">（1）风热搏结：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;治法：祛风清热，凉血散瘀。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：银翘汤加味。药用金银花、连翘、淡竹叶、生地、麦冬、藕节、白茅根、生甘草、桔梗等。如见腹痛便血者，加白芍、生地榆；如见尿血者，加大小蓟、马鞭草、生侧柏、茜草等。<br>
+（2）热盛迫血：治法：清热解毒，凉血散瘀。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：犀角地黄汤加味，药用犀角（或水牛角）。生地、丹皮、赤芍、银花、连翘、玄参、茜草、白茅根等。若尿血甚者，可合用小蓟饮子加减；血压偏高者，可加菊花、石决明、夏枯草等。如皮肤瘙痒者，可加地肤子、白藓皮、蝉蜕等；便血者，加生地榆、槐花等。<br>
+（3）肝肾阴虚：治法：滋养肝肾，凉血散瘀。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：小蓟饮子、知柏地黄汤或血府逐瘀汤加减。药用生地、丹皮、山药、山萸肉、当归、赤芍、大小蓟、生侧柏、马鞭草、益母草、白茅根等。（4）湿热内阻：治法：清热利湿，活血化瘀。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：三仁汤或四妙散加减，药用苡仁、苍术、黄柏、黄连、白蔻仁、川朴、法夏、滑石、通草、丹参、泽兰、马鞭草、赤芍、三七等。如有水肿，宣清热利水，佐以活血，方用大橘皮汤加丹参、泽兰、牛膝、车前子等。（5）寒凝血滞：治法：温经散寒，活血化瘀。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：当归四逆汤合桂枝茯苓丸，药用当归、白芍、桂枝、茯苓、川芎、细辛、黄芪等。如水肿明显者，可温阳利水，佐以活血，方用真武汤合桂枝茯苓丸，或当归芍药散加制附片、肉桂、川牛膝、车前子等。<br>
+（6）脾气虚损：&nbsp;治法：益气健脾，活血摄血。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方药：归脾汤合桂枝茯苓丸，药用黄芪、党参、白术、当归、远志、茯苓、桂枝、赤芍、丹参等。如兼阳虚，亦可加制附片、炮姜；水肿明显者，可用健脾利水，佐以活血，方用防己黄芪汤合防己茯苓汤，再加桂枝茯苓丸。
+    </div><script>showLine1('ZYZL','ZYZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZY">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中药</TD>
+    <TD class=td1><div id="ZYa">（1）地骨皮50g、徐长卿25g，水煎服，一日二次，适用于过敏性紫癜肾病早中期，以抗过敏。<br>
+（2）大枣4份、藕节1份，将藕节水煮至粘胶状，再加入大枣同煮，每天吃适量大枣。<br>
+（3）赤豆、苡仁、牡蛎各30g、甘草9g、玄参T2g、大枣1枚，治疗各种原因尿血，亦治衄血及紫癜。<br>
+（4）鲜地龙汤。生地龙50条、阿胶15g、乌贼骨10g、白糖100g。将活蚯蚓50条洗去泥土，置清水内，加入3～5滴食用油，以蚯蚓吐出腹中泥土至透明状为止，然后将其置干净钵内，撒上白糖，不久化为糖浆，另取阿胶15g，烊化后与地龙糖浆混合，冲服乌贼骨粉。以上为成人一日量，小儿酌减，分三次温服。<br>
+（5）鲜车前草、鲜藕、鲜大蓟草各60g，共捣汁空服，治各种尿血。
+    </div><script>showLine1('ZY','ZYa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZJ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">针灸</TD>
+    <TD class=td1><div id="ZJa">
+    </div><script>showLine1('ZJ','ZJa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="TNNM">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">推拿按摩</TD>
+    <TD class=td1><div id="TNNMa">
+    </div><script>showLine1('TNNM','TNNMa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="ZXYJHZL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">中西医结合治疗</TD>
+    <TD class=td1><div id="ZXYJHZLa">随着检测手段的不断提高，过敏性紫癜出现的肾脏损害也越来越多地被发现。由于其肾脏损害的程度决定着过敏性紫癜的预后，所以紫癜性肾炎受到中西医广泛重视。而肾上腺皮质激素对肾损害的治疗和阻止肾脏损害的进展方面，一般均认为无益，免疫抑制剂的疗效也不肯定，所以开展中医、中西医结合的方法治疗本病，具有十分重要的意义。对紫癜性肾炎的中医病因病机认识，多数医家强调血热和血瘀的重要性，其诱因多认为与感受风热毒邪有关，或感受阴邪化热；疾病后期，病久不愈，可内舍脏腑，病及于肾。中医理论认为，湿热毒邪最易耗气伤阴，故疾病后期肾阴虚的病机受到大多数医家的重视。
+    </div><script>showLine1('ZXYJHZL','ZXYJHZLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="HL">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">护理</TD>
+    <TD class=td1><div id="HLa">
+    </div><script>showLine1('HL','HLa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="KF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">康复</TD>
+    <TD class=td1><div id="KFa">
+    </div><script>showLine1('KF','KFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="YF">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">预防</TD>
+    <TD class=td1><div id="YFa">过敏性紫癜与呼吸道或肠道感染有关，感染可能是紫癜的过敏原因。因此，积极预防感染的发生，对紫癜性肾炎具有十分重要的意义。一旦得病，及时治疗，注意休息，防止复发。
+    </div><script>showLine1('YF','YFa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+<!--BEGIN -->
+  <tr style="display:none" id="LSKZ">
+<!-- 1 -->
+    <TD class=td1c id=bold noWrap width="10%">历史考证</TD>
+    <TD class=td1><div id="LSKZa">
+    </div><script>showLine1('LSKZ','LSKZa');</script></TD>
+<!-- 2-->
+  </tr>
+<!--END -->
+
+
+
+
+  </TBODY></TABLE>
+
+
+  
+<P align=right><BR>
+  <!-- tail-bar-include -->
+<HR>
+		   <table width="95%" border="0" align="center" cellpadding="0" cellspacing="5">
+
+		   </table>
+
+<CENTER>
+</CENTER><BR>
+<P class=copyright>Copyright.2007 中国中医科学院中医药信息研究所 版权所有 </P></BODY><script type="text/javascript">var pkBaseURL = (("https:" == document.location.protocol) ? "https://218.241.236.82/" : "http://218.241.236.82/");document.write(unescape("%3Cscript src='" + pkBaseURL + "bhang.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var bhangTracker = Bhang.getTracker(pkBaseURL + "bhang.php", 139);bhangTracker.trackPageView();bhangTracker.enableLinkTracking();} catch( err ) {};</script></html>
